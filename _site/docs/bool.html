@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+    <title>Boolean Algebra - CircuitVerse</title>
+
+    
+  
+
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-2709176-10', 'http://localhost:4000');
+      ga('send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+  
+
+  
+    <script type="text/javascript" src="http://localhost:4000/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Boolean Algebra | CircuitVerse</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Boolean Algebra" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A Book to learn Digital Logic Design." />
+<meta property="og:description" content="A Book to learn Digital Logic Design." />
+<link rel="canonical" href="http://localhost:4000/docs/bool.html" />
+<meta property="og:url" content="http://localhost:4000/docs/bool.html" />
+<meta property="og:site_name" content="CircuitVerse" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/docs/bool.html","headline":"Boolean Algebra","description":"A Book to learn Digital Logic Design.","@type":"WebPage","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="http://localhost:4000/" class="site-title fs-6 lh-tight">CircuitVerse</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+  <ul class="navigation-list">
+
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/" class="navigation-list-link">Home</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/binary.html" class="navigation-list-link">Binary Numbers</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="#7253ed" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="none">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item active">
+            
+            <a href="http://localhost:4000/docs/bool.html" class="navigation-list-link active">Boolean Algebra</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/gates.html" class="navigation-list-link">Gates</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/maps.html" class="navigation-list-link">K-Maps</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/combinational.html" class="navigation-list-link">Combinational Logic</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/navigation-structure.html" class="navigation-list-link">Navigation Structure</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/utilities" class="navigation-list-link">Utilities</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/utilities/responsive-modifiers.html" class="navigation-list-link">Responsive Modifiers</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/utilities/layout.html" class="navigation-list-link">Layout</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/utilities/color.html" class="navigation-list-link">Color</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/utilities/typography.html" class="navigation-list-link">Typography</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/ui-components" class="navigation-list-link">UI Components</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/ui-components/typography.html" class="navigation-list-link">Typography</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/ui-components/buttons.html" class="navigation-list-link">Buttons</a>
+                      
+                    </li>
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/ui-components/labels.html" class="navigation-list-link">Labels</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/ui-components/tables.html" class="navigation-list-link">Tables</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/ui-components/lists.html" class="navigation-list-link">Lists</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/ui-components/code.html" class="navigation-list-link">Code</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/search.html" class="navigation-list-link">Search</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/index-test.html" class="navigation-list-link">Markdown kitchen sink</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+
+  </ul>
+</nav>
+
+      </div>
+      <footer role="contentinfo" class="site-footer">
+      </footer>
+    </div>
+    <div class="main-content-wrap js-main-content" tabindex="0">
+      <div class="page-header">
+        <div class="main-content">
+          
+          <div class="search js-search">
+            <div class="search-input-wrap">
+              <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search CircuitVerse" aria-label="Search CircuitVerse" autocomplete="off">
+              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+            </div>
+            <div class="js-search-results search-results-wrap"></div>
+          </div>
+          
+          
+            <ul class="list-style-none text-small mt-md-1 mb-md-1 pb-4 pb-md-0 js-aux-nav aux-nav">
+              
+                <li class="d-inline-block my-0"><a href="//github.com/CircuitVerse">Circuitverse on GitHub</a></li>
+              
+            </ul>
+          
+        </div>
+      </div>
+      <div class="main-content">
+        
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <h1 class="no_toc" id="boolean-algebra">Boolean Algebra</h1>
+
+<h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
+
+<ol id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#rule-in-boolean-algebra" id="markdown-toc-rule-in-boolean-algebra">Rule in Boolean Algebra</a></li>
+  <li><a href="#boolean-laws" id="markdown-toc-boolean-laws">Boolean Laws</a>    <ol>
+      <li><a href="#and-law" id="markdown-toc-and-law">AND law</a></li>
+      <li><a href="#or-law" id="markdown-toc-or-law">OR law</a></li>
+      <li><a href="#inversion-law" id="markdown-toc-inversion-law">INVERSION law</a></li>
+      <li><a href="#associative-law" id="markdown-toc-associative-law">Associative law</a></li>
+      <li><a href="#distributive-law" id="markdown-toc-distributive-law">Distributive law</a></li>
+    </ol>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Boolean Algebra is used to analyze and simplify the digital (logic) circuits. 
+It uses only the binary numbers i.e. 0 and 1. 
+It is also called as Binary Algebra or logical Algebra. 
+Boolean algebra was invented by George Boole in 1854.</p>
+
+<h2 id="rule-in-boolean-algebra">Rule in Boolean Algebra</h2>
+<p>Following are the important rules used in Boolean algebra.</p>
+
+<ol>
+  <li>Variable used can have only two values. Binary 1 for HIGH and Binary 0 for LOW.</li>
+  <li>Complement of a variable is represented by an overbar (-). Thus, complement of variable B is represented as B Bar. Thus if B = 0 then B Bar = 1 and B = 1 then B Bar = 0.</li>
+  <li>ORing of the variables is represented by a plus (+) sign between them. For example ORing of A, B, C is represented as A + B + C.</li>
+  <li>Logical ANDing of the two or more variable is represented by writing a dot between them such as A.B.C. Sometime the dot may be omitted like ABC.</li>
+</ol>
+
+<hr />
+
+<h2 id="boolean-laws">Boolean Laws</h2>
+
+<p>There are six types of Boolean Laws.</p>
+
+<h3 id="and-law">AND law</h3>
+
+<p>These laws use the AND operation. Therefore they are called as <strong>AND</strong> laws.</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Example</span><span class="pi">:</span>  
+<span class="s">1. A.0 = 0</span>
+<span class="s">1. A.1 = A</span>
+<span class="s">1. A.A = A</span>
+<span class="s">1. A.!A = 0</span>
+</code></pre></div></div>
+
+<h3 id="or-law">OR law</h3>
+
+<p>These laws use the OR operation. Therefore they are called as <strong>OR</strong> laws.</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Example</span><span class="pi">:</span>  
+<span class="s">1. A+0 = A</span>
+<span class="s">1. A+1 = 1</span>
+<span class="s">1. A+A = A</span>
+<span class="s">1. A+!A = 1</span>
+</code></pre></div></div>
+
+<h3 id="inversion-law">INVERSION law</h3>
+
+<p>This law uses the NOT operation. The inversion law states that double inversion of a variable results in the original variable itself.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Example</span><span class="pi">:</span> <span class="kt">!!A</span> <span class="s">= A</span>
+</code></pre></div></div>
+
+<h3 id="associative-law">Associative law</h3>
+
+<p>This law states that the order in which the logic operations are performed is irrelevant as their effect is the same.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Example</span><span class="pi">:</span> <span class="s">(A.B).C = A.(B.C)                (A+B)+C = A+(B+C)</span>
+</code></pre></div></div>
+
+<h3 id="distributive-law">Distributive law</h3>
+
+<p>Distributive law states the following condition.</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Example</span><span class="pi">:</span>  <span class="s">A.(B+C) = A.B + A.C</span>
+</code></pre></div></div>
+
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
