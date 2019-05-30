@@ -664,9 +664,18 @@
       <li><a href="#how-do-we-count-using-binary" id="markdown-toc-how-do-we-count-using-binary">How do we Count using Binary?</a></li>
     </ol>
   </li>
-  <li><a href="#--in-binary" id="markdown-toc---in-binary">+,-,*,/ in Binary</a></li>
-  <li><a href="#compliment" id="markdown-toc-compliment">Compliment</a></li>
-  <li><a href="#signed-and-unsigned" id="markdown-toc-signed-and-unsigned">Signed and unsigned</a></li>
+  <li><a href="#mathematical-operators-in-binary" id="markdown-toc-mathematical-operators-in-binary">Mathematical Operators in Binary</a>    <ol>
+      <li><a href="#addition" id="markdown-toc-addition">Addition</a></li>
+      <li><a href="#subtraction" id="markdown-toc-subtraction">Subtraction</a></li>
+      <li><a href="#multiplication" id="markdown-toc-multiplication">Multiplication</a></li>
+      <li><a href="#division" id="markdown-toc-division">Division</a></li>
+    </ol>
+  </li>
+  <li><a href="#binary-system-complements" id="markdown-toc-binary-system-complements">Binary system complements</a>    <ol>
+      <li><a href="#1s-complement" id="markdown-toc-1s-complement">1’s complement</a></li>
+      <li><a href="#2s-complement" id="markdown-toc-2s-complement">2’s complement</a></li>
+    </ol>
+  </li>
 </ol>
 
 <hr />
@@ -753,9 +762,85 @@
 </div>
 <p><br style="clear:left" /></p>
 
-<h2 id="--in-binary">+,-,*,/ in Binary</h2>
-<h2 id="compliment">Compliment</h2>
-<h2 id="signed-and-unsigned">Signed and unsigned</h2>
+<h2 id="mathematical-operators-in-binary">Mathematical Operators in Binary</h2>
+
+<h3 id="addition">Addition</h3>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">1. 0 + 0 = 0</span>
+<span class="s">2. 0 + 1 = 1</span>
+<span class="s">3. 1 + 0 = 1</span>
+<span class="s">4. 1 + 1 = 1</span>
+</code></pre></div></div>
+
+<h3 id="subtraction">Subtraction</h3>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">1. 0 - 0 = 0</span>
+<span class="s">2. 1 - 0 = 1</span>
+<span class="s">3. 1 - 1 = 0</span>
+</code></pre></div></div>
+
+<h3 id="multiplication">Multiplication</h3>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>          <span class="s">1  1  0       (6)</span>
+      <span class="s">*   1  0  1       (5)</span>
+      <span class="s">------------</span>
+          <span class="s">1  1  0</span> 
+       <span class="s">0  0  0  x</span>
+    <span class="s">1  1  0  x  x</span>
+    <span class="s">--------------</span>
+    <span class="s">1  1  1  1  0       (30)</span>
+    <span class="s">--------------</span>   
+</code></pre></div></div>
+
+<h3 id="division">Division</h3>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>          <span class="s">1 1 1 1 0 / 1 0 1</span>
+         <span class="s">-    1 0 1                     1st</span> 
+        <span class="s">-------------</span>
+          <span class="s">1 1 0 0 1</span>
+         <span class="s">-    1 0 1                     2nd</span>
+        <span class="s">-------------</span>
+          <span class="s">1 0 1 0 0</span>
+         <span class="s">-    1 0 1                     3rd</span>
+        <span class="s">-------------</span>
+          <span class="s">0 1 1 1 1</span>
+         <span class="s">-    1 0 1                     4th</span>
+        <span class="s">-------------</span>
+            <span class="s">1 0 1 0</span>
+         <span class="s">-    1 0 1                     5th</span>
+        <span class="s">-------------</span>
+              <span class="s">1 0 1</span>
+         <span class="s">-    1 0 1                     6th</span> 
+        <span class="s">-------------                 -------</span>
+                  <span class="s">0                   ans = 6 (110)</span>
+        <span class="s">-------------                 -------</span>
+</code></pre></div></div>
+
+<h2 id="binary-system-complements">Binary system complements</h2>
+
+<p>As the binary system has base r = 2. So the two types of complements for the binary system are 2’s complement and 1’s complement.</p>
+
+<h3 id="1s-complement">1’s complement</h3>
+
+<p>The 1’s complement of a number is found by changing all 1’s to 0’s and all 0’s to 1’s. This is called as taking complement or 1’s complement. Example of 1’s Complement is as follows.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">Given number        1  0  1  0  1</span>
+<span class="s">1's complement      0  1  0  1  0</span> 
+</code></pre></div></div>
+<h3 id="2s-complement">2’s complement</h3>
+
+<p>The 2’s complement of binary number is obtained by adding 1 to the Least Significant Bit (LSB) of 1’s complement of the number.
+2’s complement = 1’s complement + 1</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">Given number        1  0  1  0  1</span>
+<span class="s">1's complement      0  1  0  1  0</span> 
+
+<span class="s">add 1               +           1</span>
+                   <span class="s">---------------</span>
+<span class="s">2's complement      0  1  0  1  1</span>             
+                   <span class="s">---------------</span> 
+
+</code></pre></div></div>
 
 <style>
 #binary			{width: 100%;}
