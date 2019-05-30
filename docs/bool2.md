@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Boolean Algebra
-nav_order: 4
+title: Boolean Function
+nav_order: 5
 ---
 
-# Boolean Algebra
+# Boolean Function
 {: .no_toc }
 
 
@@ -21,15 +21,27 @@ nav_order: 4
 ## Introduction
 
 
-Boolean Algebra is used to analyze and simplify the digital (logic) circuits. 
-It uses only the binary numbers i.e. 0 and 1. 
-It is also called as Binary Algebra or logical Algebra. 
-Boolean algebra was invented by George Boole in 1854.
+Boolean algebra deals with binary variables and logic operation.
+A **Boolean Function** is described by an algebraic expression called **Boolean expression** which consists of binary variables, the constants 0 and 1, and the logic operation symbols. 
+Consider the following example.
+```yaml
+Example:  
+
+      F(A,B,C,D)     =     A + BC + !(ADC)
+   Boolean Function      Boolean expression
+```
+Here the left side of the equation represents the output **Y**. So we can state 
+
+```yaml 
+          Y         =     A + BC + !(ADC)
+   Boolean Function      Boolean expression
+```
+## Truth Table Formation
+A truth table represents a table having all combinations of inputs and their corresponding result.
+
+It is possible to convert the switching equation into a truth table. For example, consider the following switching equation.
 
 
-
-## Rule in Boolean Algebra
-Following are the important rules used in Boolean algebra.
 
 1. Variable used can have only two values. Binary 1 for HIGH and Binary 0 for LOW.
 1. Complement of a variable is represented by an overbar (-) or (!). Thus, complement of variable B is represented as B Bar. Thus if B = 0 then !B  = 1 and B = 1 then !B  = 0.

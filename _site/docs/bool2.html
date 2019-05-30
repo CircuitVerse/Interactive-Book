@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
   
-    <title>Boolean Algebra - CircuitVerse</title>
+    <title>Boolean Function - CircuitVerse</title>
 
     
   
@@ -32,17 +32,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Boolean Algebra | CircuitVerse</title>
+<title>Boolean Function | CircuitVerse</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Boolean Algebra" />
+<meta property="og:title" content="Boolean Function" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A Book to learn Digital Logic Design." />
 <meta property="og:description" content="A Book to learn Digital Logic Design." />
-<link rel="canonical" href="http://localhost:4000/docs/bool.html" />
-<meta property="og:url" content="http://localhost:4000/docs/bool.html" />
+<link rel="canonical" href="http://localhost:4000/docs/bool2.html" />
+<meta property="og:url" content="http://localhost:4000/docs/bool2.html" />
 <meta property="og:site_name" content="CircuitVerse" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/docs/bool.html","headline":"Boolean Algebra","description":"A Book to learn Digital Logic Design.","@type":"WebPage","@context":"https://schema.org"}</script>
+{"url":"http://localhost:4000/docs/bool2.html","headline":"Boolean Function","description":"A Book to learn Digital Logic Design.","@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -191,21 +191,22 @@
 
           
           <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
-            <g id="CourseProfile" stroke="none" stroke-width="1" fill="#026e57" fill-rule="evenodd">
-              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="none">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
                 <circle id="Oval-10" cx="140.5" cy="357" r="5">
                 </circle>
               </g>
             </g>
           </svg>
 
+
           
 
         </div>
         <div class="sub_heading">
-          <li class="navigation-list-item active">
+          <li class="navigation-list-item">
             
-            <a href="http://localhost:4000/docs/bool.html" class="navigation-list-link active">Boolean Algebra</a>
+            <a href="http://localhost:4000/docs/bool.html" class="navigation-list-link">Boolean Algebra</a>
             
           </li>
         </div>
@@ -235,22 +236,21 @@
 
           
           <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
-            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
-              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="#026e57" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="none">
                 <circle id="Oval-10" cx="140.5" cy="357" r="5">
                 </circle>
               </g>
             </g>
           </svg>
 
-
           
 
         </div>
         <div class="sub_heading">
-          <li class="navigation-list-item">
+          <li class="navigation-list-item active">
             
-            <a href="http://localhost:4000/docs/bool2.html" class="navigation-list-link">Boolean Function</a>
+            <a href="http://localhost:4000/docs/bool2.html" class="navigation-list-link active">Boolean Function</a>
             
           </li>
         </div>
@@ -692,13 +692,13 @@
           
         
         <div id="main-content" class="page-content" role="main">
-          <h1 class="no_toc" id="boolean-algebra">Boolean Algebra</h1>
+          <h1 class="no_toc" id="boolean-function">Boolean Function</h1>
 
 <h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
 
 <ol id="markdown-toc">
   <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
-  <li><a href="#rule-in-boolean-algebra" id="markdown-toc-rule-in-boolean-algebra">Rule in Boolean Algebra</a></li>
+  <li><a href="#truth-table-formation" id="markdown-toc-truth-table-formation">Truth Table Formation</a></li>
   <li><a href="#boolean-laws" id="markdown-toc-boolean-laws">Boolean Laws</a>    <ol>
       <li><a href="#and-law" id="markdown-toc-and-law">AND law</a></li>
       <li><a href="#or-law" id="markdown-toc-or-law">OR law</a></li>
@@ -714,13 +714,23 @@
 
 <h2 id="introduction">Introduction</h2>
 
-<p>Boolean Algebra is used to analyze and simplify the digital (logic) circuits. 
-It uses only the binary numbers i.e. 0 and 1. 
-It is also called as Binary Algebra or logical Algebra. 
-Boolean algebra was invented by George Boole in 1854.</p>
+<p>Boolean algebra deals with binary variables and logic operation.
+A <strong>Boolean Function</strong> is described by an algebraic expression called <strong>Boolean expression</strong> which consists of binary variables, the constants 0 and 1, and the logic operation symbols. 
+Consider the following example.</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Example</span><span class="pi">:</span>  
 
-<h2 id="rule-in-boolean-algebra">Rule in Boolean Algebra</h2>
-<p>Following are the important rules used in Boolean algebra.</p>
+      <span class="s">F(A,B,C,D)     =     A + BC + !(ADC)</span>
+   <span class="s">Boolean Function      Boolean expression</span>
+</code></pre></div></div>
+<p>Here the left side of the equation represents the output <strong>Y</strong>. So we can state</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>          <span class="s">Y         =     A + BC + !(ADC)</span>
+   <span class="s">Boolean Function      Boolean expression</span>
+</code></pre></div></div>
+<h2 id="truth-table-formation">Truth Table Formation</h2>
+<p>A truth table represents a table having all combinations of inputs and their corresponding result.</p>
+
+<p>It is possible to convert the switching equation into a truth table. For example, consider the following switching equation.</p>
 
 <ol>
   <li>Variable used can have only two values. Binary 1 for HIGH and Binary 0 for LOW.</li>

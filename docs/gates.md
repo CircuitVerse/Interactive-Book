@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Gates
-nav_order: 4
+nav_order: 3
 ---
 # Logic Gates
 {: .no_toc }
