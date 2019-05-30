@@ -1,37 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12054f75-0372-416e-a75b-67d9b8de3152" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/bool2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/js/search-data.json" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/js/search-data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/docs/binary.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/binary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/docs/bool.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/bool.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/docs/combinational.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/combinational.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/docs/gates.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/gates.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/docs/index-test.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/index-test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/docs/maps.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/maps.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/docs/navigation-structure.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/navigation-structure.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/docs/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/docs/ui-components.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/ui-components.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/docs/ui-components/buttons.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/ui-components/buttons.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/docs/ui-components/code.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/ui-components/code.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/docs/ui-components/labels.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/ui-components/labels.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/docs/ui-components/lists.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/ui-components/lists.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/docs/ui-components/tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/ui-components/tables.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/docs/ui-components/typography.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/ui-components/typography.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/docs/utilities.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/utilities.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/docs/utilities/color.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/utilities/color.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/docs/utilities/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/utilities/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/docs/utilities/responsive-modifiers.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/utilities/responsive-modifiers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/docs/utilities/typography.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/utilities/typography.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/bool.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/bool.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/combinational.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/combinational.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/gates.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/gates.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/maps.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/maps.md" afterDir="false" />
-    </list>
+    <list default="true" id="12054f75-0372-416e-a75b-67d9b8de3152" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -128,7 +98,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_sass/custom/custom.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
+            <state relative-caret-position="980">
               <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
             </state>
           </provider>
@@ -149,7 +119,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_includes/nav.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-553">
+            <state relative-caret-position="240">
               <caret line="12" column="78" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
             </state>
           </provider>
@@ -189,6 +159,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -226,7 +197,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -267,17 +237,17 @@
       <updated>1559155002301</updated>
       <workItem from="1559155003541" duration="561000" />
       <workItem from="1559159863423" duration="4207000" />
+      <workItem from="1559249795606" duration="292000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4768000" />
+    <option name="totallyTimeSpent" value="5060000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496464" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2496464" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -291,7 +261,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32955974" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32955974" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32955974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -316,17 +286,13 @@
         <state relative-caret-position="-147" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-553">
-          <caret line="12" column="78" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/custom/custom.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+    <entry file="file://$PROJECT_DIR$/docs/binary.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="120">
+            <caret line="6" selection-start-line="6" selection-end-line="16" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -348,19 +314,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/binary.md">
+    <entry file="file://$PROJECT_DIR$/docs/gates.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="120">
-            <caret line="6" selection-start-line="6" selection-end-line="16" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/bool.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
+        <state split_layout="FIRST">
           <first_editor relative-caret-position="60">
             <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
           </first_editor>
@@ -368,9 +324,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/gates.md">
+    <entry file="file://$PROJECT_DIR$/docs/combinational.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
+        <state split_layout="SPLIT">
           <first_editor relative-caret-position="60">
             <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
           </first_editor>
@@ -388,13 +344,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/combinational.md">
+    <entry file="file://$PROJECT_DIR$/_sass/custom/custom.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="980">
+          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/bool.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="60">
             <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="78" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
         </state>
       </provider>
     </entry>
