@@ -3,6 +3,34 @@
   <component name="ChangeListManager">
     <list default="true" id="12054f75-0372-416e-a75b-67d9b8de3152" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/f427fc9422a53288947c7f8f6c4247a417501ece/custom.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/f427fc9422a53288947c7f8f6c4247a417501ece/custom.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/custom/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/custom/custom.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/css/just-the-docs.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/css/just-the-docs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/js/search-data.json" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/js/search-data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/docs/binary.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/binary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/docs/bool.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/bool.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/docs/combinational.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/combinational.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/docs/gates.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/gates.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/docs/index-test.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/index-test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/docs/maps.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/maps.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/docs/navigation-structure.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/navigation-structure.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/docs/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/docs/ui-components.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/ui-components.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/docs/ui-components/buttons.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/ui-components/buttons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/docs/ui-components/code.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/ui-components/code.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/docs/ui-components/labels.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/ui-components/labels.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/docs/ui-components/lists.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/ui-components/lists.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/docs/ui-components/tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/ui-components/tables.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/docs/ui-components/typography.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/ui-components/typography.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/docs/utilities.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/utilities.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/docs/utilities/color.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/utilities/color.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/docs/utilities/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/utilities/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/docs/utilities/responsive-modifiers.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/utilities/responsive-modifiers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/docs/utilities/typography.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/docs/utilities/typography.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/bool.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/bool.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/gates.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/gates.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,12 +52,100 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/just-the-docs.gemspec">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/binary.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-497">
+                <caret line="6" selection-start-line="6" selection-end-line="26" selection-end-column="3" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/ui-components/labels.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/ui-components/tables.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="260">
+                <caret line="13" selection-start-line="13" selection-end-line="18" selection-end-column="44" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docs/gates.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="152">
+                <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_sass/custom/custom.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/bool.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-361">
+                <caret line="63" column="1" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_sass/navigation.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-147" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/nav.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-553">
+              <caret line="12" column="78" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>pur</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,6 +154,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/docs/binary.md" />
+        <option value="$PROJECT_DIR$/_includes/nav.html" />
+        <option value="$PROJECT_DIR$/_sass/custom/custom.scss" />
+        <option value="$PROJECT_DIR$/docs/bool.md" />
+        <option value="$PROJECT_DIR$/docs/gates.md" />
       </list>
     </option>
   </component>
@@ -57,6 +178,44 @@
               <item name="Interactive-Book" type="b2602c69:ProjectViewProjectNode" />
               <item name="Interactive-Book" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Interactive-Book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Interactive-Book" type="462c0819:PsiDirectoryNode" />
+              <item name="_includes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Interactive-Book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Interactive-Book" type="462c0819:PsiDirectoryNode" />
+              <item name="_layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Interactive-Book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Interactive-Book" type="462c0819:PsiDirectoryNode" />
+              <item name="_sass" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Interactive-Book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Interactive-Book" type="462c0819:PsiDirectoryNode" />
+              <item name="_sass" type="462c0819:PsiDirectoryNode" />
+              <item name="custom" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Interactive-Book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Interactive-Book" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Interactive-Book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Interactive-Book" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="ui-components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Interactive-Book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Interactive-Book" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="utilities" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -67,6 +226,9 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.selected.package.stylelint" value="$PROJECT_DIR$/node_modules/stylelint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -93,18 +255,18 @@
       <option name="presentableId" value="Default" />
       <updated>1559155002301</updated>
       <workItem from="1559155003541" duration="561000" />
-      <workItem from="1559159863423" duration="255000" />
+      <workItem from="1559159863423" duration="3013000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="816000" />
+    <option name="totallyTimeSpent" value="3574000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2496464" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496464" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -118,7 +280,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32955974" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32955974" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32955974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -137,6 +299,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/just-the-docs.gemspec">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/navigation.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-147" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-553">
+          <caret line="12" column="78" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/custom/custom.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/bool.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-361">
+            <caret line="63" column="1" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/binary.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-497">
+            <caret line="6" selection-start-line="6" selection-end-line="26" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/ui-components/labels.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/ui-components/tables.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="260">
+            <caret line="13" selection-start-line="13" selection-end-line="18" selection-end-column="44" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/gates.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="152">
+            <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

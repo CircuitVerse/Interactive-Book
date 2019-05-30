@@ -158,7 +158,7 @@
 
           
           <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
-            <g id="CourseProfile" stroke="none" stroke-width="1" fill="#7253ed" fill-rule="evenodd">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="#026e57" fill-rule="evenodd">
               <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="none">
                 <circle id="Oval-10" cx="140.5" cy="357" r="5">
                 </circle>
@@ -666,6 +666,7 @@
       <li><a href="#and-law" id="markdown-toc-and-law">AND law</a></li>
       <li><a href="#or-law" id="markdown-toc-or-law">OR law</a></li>
       <li><a href="#inversion-law" id="markdown-toc-inversion-law">INVERSION law</a></li>
+      <li><a href="#commutative-law" id="markdown-toc-commutative-law">Commutative law</a></li>
       <li><a href="#associative-law" id="markdown-toc-associative-law">Associative law</a></li>
       <li><a href="#distributive-law" id="markdown-toc-distributive-law">Distributive law</a></li>
     </ol>
@@ -686,7 +687,7 @@ Boolean algebra was invented by George Boole in 1854.</p>
 
 <ol>
   <li>Variable used can have only two values. Binary 1 for HIGH and Binary 0 for LOW.</li>
-  <li>Complement of a variable is represented by an overbar (-). Thus, complement of variable B is represented as B Bar. Thus if B = 0 then B Bar = 1 and B = 1 then B Bar = 0.</li>
+  <li>Complement of a variable is represented by an overbar (-) or (!). Thus, complement of variable B is represented as B Bar. Thus if B = 0 then !B  = 1 and B = 1 then !B  = 0.</li>
   <li>ORing of the variables is represented by a plus (+) sign between them. For example ORing of A, B, C is represented as A + B + C.</li>
   <li>Logical ANDing of the two or more variable is represented by writing a dot between them such as A.B.C. Sometime the dot may be omitted like ABC.</li>
 </ol>
@@ -712,16 +713,22 @@ Boolean algebra was invented by George Boole in 1854.</p>
 <p>These laws use the OR operation. Therefore they are called as <strong>OR</strong> laws.</p>
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Example</span><span class="pi">:</span>  
 <span class="s">1. A+0 = A</span>
-<span class="s">1. A+1 = 1</span>
-<span class="s">1. A+A = A</span>
-<span class="s">1. A+!A = 1</span>
+<span class="s">2. A+1 = 1</span>
+<span class="s">3. A+A = A</span>
+<span class="s">4. A+!A = 1</span>
 </code></pre></div></div>
 
 <h3 id="inversion-law">INVERSION law</h3>
 
 <p>This law uses the NOT operation. The inversion law states that double inversion of a variable results in the original variable itself.</p>
 
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Example</span><span class="pi">:</span> <span class="kt">!!A</span> <span class="s">= A</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Example</span><span class="pi">:</span>  <span class="kt">!!A</span> <span class="s">= A</span>
+</code></pre></div></div>
+
+<h3 id="commutative-law">Commutative law</h3>
+
+<p>Any binary operation which satisfies the following expression is referred to as commutative operation.</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Example</span><span class="pi">:</span>  <span class="s">A.B = B.A                         A+B = B+A</span>
 </code></pre></div></div>
 
 <h3 id="associative-law">Associative law</h3>

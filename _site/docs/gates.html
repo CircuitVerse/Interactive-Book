@@ -199,7 +199,7 @@
 
           
           <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
-            <g id="CourseProfile" stroke="none" stroke-width="1" fill="#7253ed" fill-rule="evenodd">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="#026e57" fill-rule="evenodd">
               <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="none">
                 <circle id="Oval-10" cx="140.5" cy="357" r="5">
                 </circle>
@@ -655,7 +655,230 @@
           
         
         <div id="main-content" class="page-content" role="main">
-          
+          <h1 class="no_toc" id="logic-gates">Logic Gates</h1>
+
+<h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
+
+<ol id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#not-gate" id="markdown-toc-not-gate">NOT gate</a></li>
+  <li><a href="#and-gate" id="markdown-toc-and-gate">AND gate</a></li>
+  <li><a href="#or-gate" id="markdown-toc-or-gate">OR gate</a></li>
+  <li><a href="#nand-gate" id="markdown-toc-nand-gate">NAND gate</a></li>
+  <li><a href="#nor-gate" id="markdown-toc-nor-gate">NOR gate</a></li>
+  <li><a href="#xor-gate" id="markdown-toc-xor-gate">XOR gate</a></li>
+</ol>
+
+<hr />
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Logic gates are the basic building blocks of any digital system. 
+It is an electronic circuit having one or more than one input and only one output. The relationship between the input and the output is based on a certain logic. Based on this, logic gates are named as AND gate, OR gate, NOT gate etc.</p>
+
+<h2 id="not-gate">NOT gate</h2>
+
+<p>The NOT gate is also known as an inverter because the output is the exact opposite of the input. It has one input and one output. The two possibilities are written out in the table below. Tables listing all logical possibilities like this are known as truth tables.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Input1</th>
+      <th style="text-align: left">Input 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="and-gate">AND gate</h2>
+
+<p>The AND gate has two inputs and one output. The output is 1 if both inputs are 1, and for all other cases the output is 0.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Input1</th>
+      <th style="text-align: left">Input 2</th>
+      <th style="text-align: left">output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="or-gate">OR gate</h2>
+
+<p>The OR gate has two inputs and one output. If at least one of the inputs is 1, then the output will be 1. If neither input is 1, the output will be 0.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Input1</th>
+      <th style="text-align: left">Input 2</th>
+      <th style="text-align: left">output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="nand-gate">NAND gate</h2>
+
+<p>The NAND gate behaves in the opposite fashion to and AND gate. You can think of it as an AND gate followed immediately by a NOT gate. Its output is 0 when the two inputs are 1, and for all other cases, its output is 0. The name NAND comes from joining NOT and AND. The symbol for NAND is the same as that for AND except for the addition of a small circle on the right side.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Input1</th>
+      <th style="text-align: left">Input 2</th>
+      <th style="text-align: left">output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="nor-gate">NOR gate</h2>
+
+<p>The NAND gate behaves in the opposite fashion to and AND gate. You can think of it as an AND gate followed immediately by a NOT gate. Its output is 0 when the two inputs are 1, and for all other cases, its output is 0. The name NAND comes from joining NOT and AND. The symbol for NAND is the same as that for AND except for the addition of a small circle on the right side.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Input1</th>
+      <th style="text-align: left">Input 2</th>
+      <th style="text-align: left">output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="xor-gate">XOR gate</h2>
+
+<p>The NAND gate behaves in the opposite fashion to and AND gate. You can think of it as an AND gate followed immediately by a NOT gate. Its output is 0 when the two inputs are 1, and for all other cases, its output is 0. The name NAND comes from joining NOT and AND. The symbol for NAND is the same as that for AND except for the addition of a small circle on the right side.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Input1</th>
+      <th style="text-align: left">Input 2</th>
+      <th style="text-align: left">output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+    </tr>
+  </tbody>
+</table>
+
 
 
           

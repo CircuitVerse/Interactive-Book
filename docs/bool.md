@@ -32,7 +32,7 @@ Boolean algebra was invented by George Boole in 1854.
 Following are the important rules used in Boolean algebra.
 
 1. Variable used can have only two values. Binary 1 for HIGH and Binary 0 for LOW.
-1. Complement of a variable is represented by an overbar (-). Thus, complement of variable B is represented as B Bar. Thus if B = 0 then B Bar = 1 and B = 1 then B Bar = 0.
+1. Complement of a variable is represented by an overbar (-) or (!). Thus, complement of variable B is represented as B Bar. Thus if B = 0 then !B  = 1 and B = 1 then !B  = 0.
 1. ORing of the variables is represented by a plus (+) sign between them. For example ORing of A, B, C is represented as A + B + C.
 1. Logical ANDing of the two or more variable is represented by writing a dot between them such as A.B.C. Sometime the dot may be omitted like ABC.
    
@@ -59,9 +59,9 @@ These laws use the OR operation. Therefore they are called as **OR** laws.
 ```yaml
 Example:  
 1. A+0 = A
-1. A+1 = 1
-1. A+A = A
-1. A+!A = 1
+2. A+1 = 1
+3. A+A = A
+4. A+!A = 1
 ```
 
 ### INVERSION law
@@ -69,8 +69,16 @@ Example:
 This law uses the NOT operation. The inversion law states that double inversion of a variable results in the original variable itself.
 
 ```yaml
-Example: !!A = A
+Example:  !!A = A
 ```
+
+### Commutative law
+
+Any binary operation which satisfies the following expression is referred to as commutative operation.
+```yaml
+Example:  A.B = B.A                         A+B = B+A
+```
+
 
 ### Associative law
 

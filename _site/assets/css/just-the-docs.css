@@ -362,7 +362,7 @@ th {
 
 ::selection {
   color: #fff;
-  background: #7253ed; }
+  background: #026e57; }
 
 html {
   font-size: 14px !important; }
@@ -414,7 +414,7 @@ p {
   margin-bottom: 1em; }
 
 a {
-  color: #7253ed;
+  color: #026e57;
   text-decoration: none; }
 
 a:not([class]) {
@@ -424,7 +424,7 @@ a:not([class]) {
   background-position: 0 100%;
   background-size: 1px 1px; }
   a:not([class]):hover {
-    background-image: linear-gradient(rgba(114, 83, 237, 0.45) 0%, rgba(114, 83, 237, 0.45) 100%);
+    background-image: linear-gradient(rgba(2, 110, 87, 0.45) 0%, rgba(2, 110, 87, 0.45) 100%);
     background-size: 1px 1px; }
 
 code {
@@ -876,7 +876,7 @@ li .highlight {
   font-size: inherit;
   font-weight: 500;
   line-height: 1.5;
-  color: #7253ed;
+  color: #026e57;
   text-decoration: none;
   vertical-align: baseline;
   cursor: pointer;
@@ -892,7 +892,7 @@ li .highlight {
   .btn:focus:hover, .btn.selected:focus {
     box-shadow: 0 0 0 3px rgba(0, 0, 255, 0.25); }
   .btn:hover, .btn.zeroclipboard-is-hover {
-    color: #6a4aec; }
+    color: #02644f; }
   .btn:hover, .btn:active, .btn.zeroclipboard-is-hover, .btn.zeroclipboard-is-active {
     text-decoration: none;
     background-color: #f4f4f4; }
@@ -910,11 +910,11 @@ li .highlight {
     box-shadow: none; }
 
 .btn-outline {
-  color: #7253ed;
+  color: #026e57;
   background: transparent;
   box-shadow: inset 0 0 0 2px #e6e1e8; }
   .btn-outline:hover, .btn-outline:active, .btn-outline.zeroclipboard-is-hover, .btn-outline.zeroclipboard-is-active {
-    color: #6341eb;
+    color: #025a47;
     text-decoration: none;
     background-color: transparent;
     box-shadow: inset 0 0 0 3px #e6e1e8; }
@@ -927,19 +927,19 @@ li .highlight {
 
 .btn-primary {
   color: #fff;
-  background-color: #5739ce;
-  background-image: linear-gradient(#6f55d5, #5739ce);
+  background-color: #009273;
+  background-image: linear-gradient(#00b68f, #009273);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 4px 10px rgba(0, 0, 0, 0.12); }
   .btn-primary:hover, .btn-primary.zeroclipboard-is-hover {
     color: #fff;
-    background-color: #5132cb;
-    background-image: linear-gradient(#6549d2, #5132cb); }
+    background-color: #00886b;
+    background-image: linear-gradient(#00a683, #00886b); }
   .btn-primary:active, .btn-primary.selected, .btn-primary.zeroclipboard-is-active {
-    background-color: #4f31c6;
+    background-color: #008367;
     background-image: none;
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15); }
   .btn-primary.selected:hover {
-    background-color: #472cb2; }
+    background-color: #006953; }
 
 .btn-purple {
   color: #fff;
@@ -1043,7 +1043,7 @@ li .highlight {
     outline: 0;
     box-shadow: none; }
     .search-input:focus + .search-icon {
-      fill: #7253ed; }
+      fill: #026e57; }
   @media (min-width: 31.25rem) {
     .search-input {
       font-size: 18px !important; } }
