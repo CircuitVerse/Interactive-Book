@@ -93,5 +93,21 @@ Example: (A.B).C = A.(B.C)                (A+B)+C = A+(B+C)
 Distributive law states the following condition.
 ```yaml
 Example:  A.(B+C) = A.B + A.C
+
 ```
+
+
+## DeMorgan’s Theorem
+This theorem is useful in finding the **complement of Boolean function**. It states that the complement of logical OR of at least two Boolean variables is equal to the logical AND of each complemented variable.
+
+DeMorgan’s theorem with 2 Boolean variables x and y can be represented as
+```yaml
+  (x + y)’ = x’.y’
+```
+The dual of the above Boolean function is
+```yaml
+  (x.y)’ = x’ + y’
+```
+Therefore, the complement of logical AND of two Boolean variables is equal to the logical OR of each complemented variable. Similarly, we can apply DeMorgan’s theorem for more than 2 Boolean variables also.
+
 

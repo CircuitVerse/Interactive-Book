@@ -708,6 +708,7 @@
       <li><a href="#distributive-law" id="markdown-toc-distributive-law">Distributive law</a></li>
     </ol>
   </li>
+  <li><a href="#demorgans-theorem" id="markdown-toc-demorgans-theorem">DeMorgan’s Theorem</a></li>
 </ol>
 
 <hr />
@@ -779,7 +780,19 @@ Boolean algebra was invented by George Boole in 1854.</p>
 
 <p>Distributive law states the following condition.</p>
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Example</span><span class="pi">:</span>  <span class="s">A.(B+C) = A.B + A.C</span>
+
 </code></pre></div></div>
+
+<h2 id="demorgans-theorem">DeMorgan’s Theorem</h2>
+<p>This theorem is useful in finding the <strong>complement of Boolean function</strong>. It states that the complement of logical OR of at least two Boolean variables is equal to the logical AND of each complemented variable.</p>
+
+<p>DeMorgan’s theorem with 2 Boolean variables x and y can be represented as</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="s">(x + y)’ = x’.y’</span>
+</code></pre></div></div>
+<p>The dual of the above Boolean function is</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="s">(x.y)’ = x’ + y’</span>
+</code></pre></div></div>
+<p>Therefore, the complement of logical AND of two Boolean variables is equal to the logical OR of each complemented variable. Similarly, we can apply DeMorgan’s theorem for more than 2 Boolean variables also.</p>
 
 
 

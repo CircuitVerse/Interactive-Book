@@ -699,15 +699,8 @@
 <ol id="markdown-toc">
   <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
   <li><a href="#truth-table-formation" id="markdown-toc-truth-table-formation">Truth Table Formation</a></li>
-  <li><a href="#boolean-laws" id="markdown-toc-boolean-laws">Boolean Laws</a>    <ol>
-      <li><a href="#and-law" id="markdown-toc-and-law">AND law</a></li>
-      <li><a href="#or-law" id="markdown-toc-or-law">OR law</a></li>
-      <li><a href="#inversion-law" id="markdown-toc-inversion-law">INVERSION law</a></li>
-      <li><a href="#commutative-law" id="markdown-toc-commutative-law">Commutative law</a></li>
-      <li><a href="#associative-law" id="markdown-toc-associative-law">Associative law</a></li>
-      <li><a href="#distributive-law" id="markdown-toc-distributive-law">Distributive law</a></li>
-    </ol>
-  </li>
+  <li><a href="#methods-to-simplify-the-boolean-function" id="markdown-toc-methods-to-simplify-the-boolean-function">Methods to simplify the boolean function</a></li>
+  <li><a href="#karnaugh-map-or-k-map" id="markdown-toc-karnaugh-map-or-k-map">Karnaugh-map or K-map</a></li>
 </ol>
 
 <hr />
@@ -732,64 +725,79 @@ Consider the following example.</p>
 
 <p>It is possible to convert the switching equation into a truth table. For example, consider the following switching equation.</p>
 
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">A</th>
+      <th style="text-align: left">B</th>
+      <th style="text-align: left">C</th>
+      <th style="text-align: left">F</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="methods-to-simplify-the-boolean-function">Methods to simplify the boolean function</h2>
+
+<p>The methods used for simplifying the Boolean function are as follows −</p>
+
 <ol>
-  <li>Variable used can have only two values. Binary 1 for HIGH and Binary 0 for LOW.</li>
-  <li>Complement of a variable is represented by an overbar (-) or (!). Thus, complement of variable B is represented as B Bar. Thus if B = 0 then !B  = 1 and B = 1 then !B  = 0.</li>
-  <li>ORing of the variables is represented by a plus (+) sign between them. For example ORing of A, B, C is represented as A + B + C.</li>
-  <li>Logical ANDing of the two or more variable is represented by writing a dot between them such as A.B.C. Sometime the dot may be omitted like ABC.</li>
+  <li>Karnaugh-map or K-map</li>
+  <li>NAND gate method.</li>
 </ol>
 
-<hr />
+<h2 id="karnaugh-map-or-k-map">Karnaugh-map or K-map</h2>
 
-<h2 id="boolean-laws">Boolean Laws</h2>
-
-<p>There are six types of Boolean Laws.</p>
-
-<h3 id="and-law">AND law</h3>
-
-<p>These laws use the AND operation. Therefore they are called as <strong>AND</strong> laws.</p>
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Example</span><span class="pi">:</span>  
-<span class="s">1. A.0 = 0</span>
-<span class="s">1. A.1 = A</span>
-<span class="s">1. A.A = A</span>
-<span class="s">1. A.!A = 0</span>
-</code></pre></div></div>
-
-<h3 id="or-law">OR law</h3>
-
-<p>These laws use the OR operation. Therefore they are called as <strong>OR</strong> laws.</p>
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Example</span><span class="pi">:</span>  
-<span class="s">1. A+0 = A</span>
-<span class="s">2. A+1 = 1</span>
-<span class="s">3. A+A = A</span>
-<span class="s">4. A+!A = 1</span>
-</code></pre></div></div>
-
-<h3 id="inversion-law">INVERSION law</h3>
-
-<p>This law uses the NOT operation. The inversion law states that double inversion of a variable results in the original variable itself.</p>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Example</span><span class="pi">:</span>  <span class="kt">!!A</span> <span class="s">= A</span>
-</code></pre></div></div>
-
-<h3 id="commutative-law">Commutative law</h3>
-
-<p>Any binary operation which satisfies the following expression is referred to as commutative operation.</p>
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Example</span><span class="pi">:</span>  <span class="s">A.B = B.A                         A+B = B+A</span>
-</code></pre></div></div>
-
-<h3 id="associative-law">Associative law</h3>
-
-<p>This law states that the order in which the logic operations are performed is irrelevant as their effect is the same.</p>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Example</span><span class="pi">:</span> <span class="s">(A.B).C = A.(B.C)                (A+B)+C = A+(B+C)</span>
-</code></pre></div></div>
-
-<h3 id="distributive-law">Distributive law</h3>
-
-<p>Distributive law states the following condition.</p>
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Example</span><span class="pi">:</span>  <span class="s">A.(B+C) = A.B + A.C</span>
-</code></pre></div></div>
+<p>The Boolean theorems and the De-Morgan’s theorems are useful in manipulating the logic expression. We can realize the logical expression using gates. The number of logic gates required for the realization of a logical expression should be reduced to a minimum possible value by K-map method. This method is covered in detail in next module.</p>
 
 
 
