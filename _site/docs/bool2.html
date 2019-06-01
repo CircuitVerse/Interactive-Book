@@ -699,8 +699,10 @@
 <ol id="markdown-toc">
   <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
   <li><a href="#truth-table-formation" id="markdown-toc-truth-table-formation">Truth Table Formation</a></li>
+  <li><a href="#sum-of-product-expressions-sop" id="markdown-toc-sum-of-product-expressions-sop">Sum of Product Expressions (SOP)</a></li>
+  <li><a href="#example-algebraic-simplification" id="markdown-toc-example-algebraic-simplification">Example Algebraic Simplification</a></li>
+  <li><a href="#undefined-input--dont-cares" id="markdown-toc-undefined-input--dont-cares">Undefined Input &amp; Don’t Cares</a></li>
   <li><a href="#methods-to-simplify-the-boolean-function" id="markdown-toc-methods-to-simplify-the-boolean-function">Methods to simplify the boolean function</a></li>
-  <li><a href="#karnaugh-map-or-k-map" id="markdown-toc-karnaugh-map-or-k-map">Karnaugh-map or K-map</a></li>
 </ol>
 
 <hr />
@@ -786,6 +788,209 @@ Consider the following example.</p>
   </tbody>
 </table>
 
+<h2 id="sum-of-product-expressions-sop">Sum of Product Expressions (SOP)</h2>
+<p>Let’s consider a more complicated expression <code class="highlighter-rouge">F(ABCD)= AB'C+BD+CD+D</code> and generate its truth table:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>F(AB’C+BD+CD+D)</th>
+      <th style="text-align: center">A</th>
+      <th style="text-align: right">B</th>
+      <th style="text-align: right">C</th>
+      <th style="text-align: right">D</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">1</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">1</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">1</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">1</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">1</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">1</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>This example was definately more involved than the previous expressions. An interesting observation is that we are doing a sum of product evaluation, that is, <code class="highlighter-rouge">AB'C+BD+CD+D</code> is a sum of products. The significance of a sum of product is that when we are doing <code class="highlighter-rouge">+</code> we are in fact invoking the <code class="highlighter-rouge">OR</code> operator.</p>
+
+<p>Moreover, the <code class="highlighter-rouge">OR</code> operator returns <code class="highlighter-rouge">true</code> so long as any one of its arguements returns <code class="highlighter-rouge">true</code>. Therefore, if <em>any</em> of the terms in the sum of product (SOP) expressions is <code class="highlighter-rouge">true</code>, then we know that the final expression is <code class="highlighter-rouge">true</code> for certain.</p>
+
+<h2 id="example-algebraic-simplification">Example Algebraic Simplification</h2>
+
+<p>Let’s simplify our expression from the previous truth table example. We can apply ordinary algebra tricks such as factoring. Remember that the <code class="highlighter-rouge">+</code> operator invokes the <code class="highlighter-rouge">OR</code> gate, and that <code class="highlighter-rouge">true or x</code> always returns <code class="highlighter-rouge">true</code> regardless of <code class="highlighter-rouge">x</code> (as shown in our first truth table).</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>AB'C+BD+CD+D // Initial expression
+AB'C+BD+D(C+1) // Factor out a D
+AB'C+BD+D // Since (C+1) is always true, as C OR true is always true
+AB'C+D(B+1) // Factor out a D again
+AB'C+D // Since (B+1) is always true, as B OR true is always true
+=AB'C+D // Final expression
+</code></pre></div></div>
+
+<p>As an exercise to the reader, complete the truth table to show that they are logically equivalent.</p>
+
+<h2 id="undefined-input--dont-cares">Undefined Input &amp; Don’t Cares</h2>
+<p>The definition of a “Don’t care” is a combination of input values that is not known, and could be either <code class="highlighter-rouge">0</code> or <code class="highlighter-rouge">1</code>. For the purposes of variable simplification, we would choose the greedy approach of picking between {<code class="highlighter-rouge">0</code>, <code class="highlighter-rouge">1</code>} such that the simplified expression has less terms.</p>
+
+<p>Let’s consider the following truth-table:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>F(AB)</th>
+      <th style="text-align: center">A</th>
+      <th style="text-align: right">B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: right">0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: right">1</td>
+    </tr>
+    <tr>
+      <td>?</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: right">0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: right">1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>We observe that we have a <em>Don’t care</em>. Let’s observe the differences in cases for <code class="highlighter-rouge">F(1,0)</code>:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Case #1: F(1, 0) = 0
+=&gt; F(AB) = A'B' + A'B + AB
+
+Case #2: F(1, 0) = 1
+=&gt; F(AB) = A'B' + A'B + AB' + AB
+
+Simplifying the cases...
+F(AB) = A'B' + A'B + AB
+	  = A'(B' + B) + AB
+	  = A' + AB
+F(AB) = A'B' + A'B + AB' + AB
+	  = A'(B' + B) + A (B' + B)
+	  = A' + A
+	  = 1
+</code></pre></div></div>
+
+<p>We can clearly see, if we set <code class="highlighter-rouge">F(1, 0) = 1</code>, we get a true value for any input. Therefore, for the purposes of variable simplification, we can simply let <code class="highlighter-rouge">F(1, 0) = 1</code> thus implying <code class="highlighter-rouge">F(AB) = 1</code>.</p>
+
 <h2 id="methods-to-simplify-the-boolean-function">Methods to simplify the boolean function</h2>
 
 <p>The methods used for simplifying the Boolean function are as follows −</p>
@@ -794,10 +999,6 @@ Consider the following example.</p>
   <li>Karnaugh-map or K-map</li>
   <li>NAND gate method.</li>
 </ol>
-
-<h2 id="karnaugh-map-or-k-map">Karnaugh-map or K-map</h2>
-
-<p>The Boolean theorems and the De-Morgan’s theorems are useful in manipulating the logic expression. We can realize the logical expression using gates. The number of logic gates required for the realization of a logical expression should be reduced to a minimum possible value by K-map method. This method is covered in detail in next module.</p>
 
 
 
