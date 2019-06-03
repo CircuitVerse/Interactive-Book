@@ -1,32 +1,23 @@
 ---
 layout: default
-title: half Adder
+title: Half Subtractors
 parent: Combinational Logic
-nav_order: 1
+nav_order: 3
 ---
 
-# Half Adder
+# Half Subtractors
 {: .no_toc }
 
-Half adder is a combinational logic circuit with two inputs and two outputs. 
-The half adder circuit is designed to add two single bit binary number A and B. 
-It is the basic building block for addition of two single bit numbers. 
-This circuit has two outputs **carry** and **sum**.
-
-
-
-## Block Diagram
-{: .no_toc }
-
-<div style="text-align:center"><img src="../../assets/images/halfadder_blockdiagram.jpg" /></div>
-
+Half subtractor is a combination circuit with two inputs and two outputs (difference and borrow). 
+It produces the difference between the two binary bits at the input and also produces an output (Borrow) to indicate if a 1 has been borrowed. 
+In the subtraction (A-B), A is called as Minuend bit and B is called as Subtrahend bit.
 
 ## Truth Table
 {: .no_toc }
 
-<div style="text-align:center"><img src="../../assets/images/halfadder_truthtable.jpg" /></div>
+<div style="text-align:center"><img src="../../assets/images/halfsubstrator_truthtable.jpg" /></div>
 
 ## Circuit Diagram
 {: .no_toc }
 
-<div style="text-align:center"><img src="../../assets/images/halfadder_circuitdiagram.jpg" /></div>
+<div style="text-align:center"><img src="../../assets/images/halfsubstrator_circuitdiagram.jpg" /></div>

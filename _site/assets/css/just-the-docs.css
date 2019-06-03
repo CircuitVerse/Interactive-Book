@@ -662,7 +662,7 @@ body {
 .flex-container {
   display: flex;
   flex-direction: row;
-  align-items: center; }
+  align-items: baseline; }
 
 .connector {
   margin-right: 5%; }

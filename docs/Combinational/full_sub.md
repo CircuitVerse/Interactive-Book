@@ -1,23 +1,23 @@
 ---
 layout: default
-title: half Adder
+title: Full Subtractors
 parent: Combinational Logic
-nav_order: 3
+nav_order: 4
 ---
 
-# Half Subtractors
+# Full Subtractors
 {: .no_toc }
 
-Half subtractor is a combination circuit with two inputs and two outputs (difference and borrow). 
-It produces the difference between the two binary bits at the input and also produces an output (Borrow) to indicate if a 1 has been borrowed. 
-In the subtraction (A-B), A is called as Minuend bit and B is called as Subtrahend bit.
+The disadvantage of a half subtractor is overcome by full subtractor. 
+The full subtractor is a combinational circuit with three inputs A,B,C and two output D and C'. 
+A is the 'minuend', B is 'subtrahend', C is the 'borrow' produced by the previous stage, D is the difference output and C' is the borrow output.
 
 ## Truth Table
 {: .no_toc }
 
-<div style="text-align:center"><img src="../../assets/images/halfsubstrator_truthtable.jpg" /></div>
+<div style="text-align:center"><img src="../../assets/images/fullsubstrator_truthtable.jpg" /></div>
 
 ## Circuit Diagram
 {: .no_toc }
 
-<div style="text-align:center"><img src="../../assets/images/halfsubstrator_circuitdiagram.jpg" /></div>
+<div style="text-align:center"><img src="../../assets/images/fullsubstrator_circuitdiagram.jpg" /></div>
