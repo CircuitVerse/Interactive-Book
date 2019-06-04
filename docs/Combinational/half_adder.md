@@ -1,6 +1,6 @@
 ---
 layout: default
-title: half Adder
+title: Half Adder
 parent: Combinational Logic
 nav_order: 1
 ---
