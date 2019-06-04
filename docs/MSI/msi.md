@@ -12,9 +12,9 @@ permalink: /docs/msi
 Digital systems obtain binary-coded data and information that are continuously being operated on in some manner. 
 Some of the operations include:
 
-1. decoding and encoding
-2. multiplexing
-3. demultiplexing comparison
+1. Multiplexing
+2. Demultiplexing
+3. Decoding and Encoding
 
 All of these operations and others have been facilitated by the availability of numerous ICs in the MSI
 (medium-scale-integration) category.
