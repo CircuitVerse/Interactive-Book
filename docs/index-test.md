@@ -120,7 +120,7 @@ end
 
 ### Small image
 
-![](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
+![](https://guides.github.com/activities/hello-world/branching.png)
 
 ### Large image
 
