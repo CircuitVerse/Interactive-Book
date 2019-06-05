@@ -37,7 +37,43 @@ In the above figure, train of pulses is considered as clock signal. This signal 
 
 The reciprocal of the time period of clock signal is known as the frequency of the clock signal. All sequential circuits are operated with clock signal. So, the frequency at which the sequential circuits can be operated accordingly the clock signal frequency has to be chosen.
 
+## Types of Triggering
 
+Following are the two possible types of triggering that are used in sequential circuits.
+
+* Level triggering
+* Edge triggering
+
+### Level triggering
+
+There are two levels, namely logic High and logic Low in clock signal. Following are the two types of **level triggering**.
+
+* Positive level triggering
+* Negative level triggering
+
+If the sequential circuit is operated with the clock signal when it is in **Logic High**, then that type of triggering is known as **Positive level triggering**. It is highlighted in below figure.
+<div style="text-align:center"><img src="../assets/images/level_triggering.jpg" /></div>
+
+If the sequential circuit is operated with the clock signal when it is in **Logic Low**, then that type of triggering is known as **Negative level triggering**. It is highlighted in the following figure.
+
+<div style="text-align:center"><img src="../assets/images/negative_level_triggering.jpg" /></div>
+
+### Edge triggering
+
+There are two types of transitions that occur in clock signal. That means, the clock signal transitions either from Logic Low to Logic High or Logic High to Logic Low.
+
+Following are the two types of edge triggering based on the transitions of clock signal.
+
+* Positive edge triggering
+* Negative edge triggering
+
+If the sequential circuit is operated with the clock signal that is transitioning from Logic Low to Logic High, then that type of triggering is known as **Positive edge triggering**. It is also called as **rising edge triggering**. It is shown in the following figure.
+
+<div style="text-align:center"><img src="../assets/images/positive_edge_triggering.jpg" /></div>
+
+If the sequential circuit is operated with the clock signal that is transitioning from Logic High to Logic Low, then that type of triggering is known as **Negative edge triggering**. It is also called as **falling edge triggering**. It is shown in the following figure.
+
+<div style="text-align:center"><img src="../assets/images/negative_edge_triggering.jpg" /></div>
 
 
 
