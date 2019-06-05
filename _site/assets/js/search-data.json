@@ -36,195 +36,202 @@
   },
   "6": {
     "id": "6",
+    "title": "Clock Signal and Triggering",
+    "content": "Clock Signal and Triggering In this section, let us discuss about the clock signal and types of triggering one by one. Clock signal Clock signal Clock signal is a periodic signal and its ON time and OFF time need not be the same. We can represent the clock signal as a square wave, when both its ON time and OFF time are same. This clock signal is shown in the following figure. n the above figure, square wave is considered as clock signal. This signal stays at logic High (5V) for some time and stays at logic Low (0V) for equal amount of time. This pattern repeats with some time period. In this case, the time period will be equal to either twice of ON time or twice of OFF time. We can represent the clock signal as train of pulses, when ON time and OFF time are not same. This clock signal is shown in the following figure. In the above figure, train of pulses is considered as clock signal. This signal stays at logic High (5V) for some time and stays at logic Low (0V) for some other time. This pattern repeats with some time period. In this case, the time period will be equal to sum of ON time and OFF time. The reciprocal of the time period of clock signal is known as the frequency of the clock signal. All sequential circuits are operated with clock signal. So, the frequency at which the sequential circuits can be operated accordingly the clock signal frequency has to be chosen.",
+    "url": "http://localhost:4000/docs/clock.html",
+    "relUrl": "/docs/clock.html"
+  },
+  "7": {
+    "id": "7",
     "title": "Code",
     "content": "Code Inline code Syntax highlighted code blocks Code blocks with rendered examples Inline code Code can be rendered inline by wrapping it in single back ticks. Lorem ipsum dolor sit amet, &lt;inline code snippet&gt; adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, `&lt;inline code snippet&gt;` adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Syntax highlighted code blocks Use Jekyll’s built-in syntax highlighting with Rouge for code blocks by using three backticks, followed by the language name: // Javascript code with syntax highlighting. var fun = function lang(l) { dateformat.i18n = require(&#39;./lang/&#39; + l) return true; } js // Javascript code with syntax highlighting. var fun = function lang(l) { dateformat.i18n = require(&#39;./lang/&#39; + l) return true; } Code blocks with rendered examples To demonstrate front end code, sometimes it’s useful to show a rendered example of that code. After including the styles from your project that you’ll need to show the rendering, you can use a &lt;div&gt; with the code-example class, followed by the code block syntax. If you want to render your output with Markdown instead of HTML, use the markdown=&quot;1&quot; attribute to tell Jekyll that the code you are rendering will be in Markdown format… This is about to get meta… Link button [Link button](http://example.com/){: .btn } &lt;div class=&quot;code-example&quot; markdown=&quot;1&quot;&gt; [Link button](http://example.com/){: .btn } &lt;/div&gt; markdown [Link button](http://example.com/){: .btn }",
     "url": "http://localhost:4000/docs/ui-components/code.html",
     "relUrl": "/docs/ui-components/code.html"
   },
-  "7": {
-    "id": "7",
+  "8": {
+    "id": "8",
     "title": "Color",
     "content": "Color Utilities Light Greys Dark Greys Purples Blues Greens Yellows Reds All the colors used in Just the Docs have been systematized into a series of variables that have been extended to both font color and background color utility classes. Light Greys Color value Font color utility Background color utility grey-lt-000 .text-grey-lt-000 .bg-grey-lt-000 grey-lt-100 .text-grey-lt-100 .bg-grey-lt-100 grey-lt-200 .text-grey-lt-200 .bg-grey-lt-200 grey-lt-300 .text-grey-lt-300 .bg-grey-lt-300 Dark Greys Color value Font color utility Background color utility grey-dk-000 .text-grey-dk-000 .bg-grey-dk-000 grey-dk-100 .text-grey-dk-100 .bg-grey-dk-100 grey-dk-200 .text-grey-dk-200 .bg-grey-dk-200 grey-dk-250 .text-grey-dk-250 .bg-grey-dk-250 grey-dk-300 .text-grey-dk-300 .bg-grey-dk-300 Purples Color value Font color utility Background color utility purple-000 .text-purple-000 .bg-purple-000 purple-100 .text-purple-100 .bg-purple-100 purple-200 .text-purple-200 .bg-purple-200 purple-300 .text-purple-300 .bg-purple-300 Blues Color value Font color utility Background color utility blue-000 .text-blue-000 .bg-blue-000 blue-100 .text-blue-100 .bg-blue-100 blue-200 .text-blue-200 .bg-blue-200 blue-300 .text-blue-300 .bg-blue-300 Greens Color value Font color utility Background color utility green-000 .text-green-000 .bg-green-000 green-100 .text-green-100 .bg-green-100 green-200 .text-green-200 .bg-green-200 green-300 .text-green-300 .bg-green-300 Yellows Color value Font color utility Background color utility yellow-000 .text-yellow-000 .bg-yellow-000 yellow-100 .text-yellow-100 .bg-yellow-100 yellow-200 .text-yellow-200 .bg-yellow-200 yellow-300 .text-yellow-300 .bg-yellow-300 Reds Color value Font color utility Background color utility red-000 .text-red-000 .bg-red-000 red-100 .text-red-100 .bg-red-100 red-200 .text-red-200 .bg-red-200 red-300 .text-red-300 .bg-red-300",
     "url": "http://localhost:4000/docs/utilities/color.html",
     "relUrl": "/docs/utilities/color.html"
   },
-  "8": {
-    "id": "8",
+  "9": {
+    "id": "9",
     "title": "Combinational Logic",
     "content": "Digital Combinational Circuits Combinational circuits consist of Logic gates. These circuits operate with binary values. The output(s) of combinational circuit depends on the combination of present inputs. The following figure shows the block diagram of combinational circuit. This combinational circuit has ‘n’ input variables and ‘m’ outputs. Each combination of input variables will affect the output(s). Design procedure of Combinational circuits Find the required number of input variables and outputs from given specifications. Formulate the Truth table. If there are ‘n’ input variables, then there will be 2n possible combinations. For each combination of input, find the output values. Find the Boolean expressions for each output. If necessary, simplify those expressions. Implement the above Boolean expressions corresponding to each output by using Logic gates. We’re going to elaborate few important combinational circuits as follows.",
     "url": "http://localhost:4000/docs/combinational",
     "relUrl": "/docs/combinational"
   },
-  "9": {
-    "id": "9",
+  "10": {
+    "id": "10",
     "title": "Decoder",
     "content": "Multiplexers A decoder is a combinational circuit. It has n input and to a maximum m = 2n outputs. Decoder is identical to a demultiplexer without any data input. It performs operations which are exactly opposite to those of an encoder. Block Diagram Examples of Decoders are following. Code converters BCD to seven segment decoders Nixie tube decoders Relay actuator 2 to 4 Line Decoder The block diagram of 2 to 4 line decoder is shown in the fig. A and B are the two inputs where D through D are the four outputs. Truth table explains the operations of a decoder. It shows that each output is 1 for only a specific combination of inputs. Block Diagram Truth Table Logic Circuit",
     "url": "http://localhost:4000/docs/MSI/decoder.html",
     "relUrl": "/docs/MSI/decoder.html"
   },
-  "10": {
-    "id": "10",
+  "11": {
+    "id": "11",
     "title": "Demultiplexers",
     "content": "Demultiplexers A demultiplexer performs the reverse operation of a multiplexer i.e. it receives one input and distributes it over several outputs. It has only one input, n outputs, m select input. At a time only one output line is selected by the select lines and the input is transmitted to the selected output line. A de-multiplexer is equivalent to a single pole multiple way switch as shown in fig. Demultiplexers in multiple variations. 1 : 2 demultiplexer 1 : 4 demultiplexer 1 : 16 demultiplexer 1 : 32 demultiplexer Block Diagram Truth Table",
     "url": "http://localhost:4000/docs/MSI/demux.html",
     "relUrl": "/docs/MSI/demux.html"
   },
-  "11": {
-    "id": "11",
+  "12": {
+    "id": "12",
     "title": "Encoder",
     "content": "Encoder Encoder is a combinational circuit which is designed to perform the inverse operation of the decoder. An encoder has n number of input lines and m number of output lines. An encoder produces an m bit binary code corresponding to the digital input number. The encoder accepts an n input digital word and converts it into an m bit another digital word. Block Diagram Examples of Decoders are following. Priority encoders Decimal to BCD encoder Octal to binary encoder Hexadecimal to binary encoder Priority Encoder This is a special type of encoder. Priority is given to the input lines. If two or more input line are 1 at the same time, then the input line with highest priority will be considered. There are four input D0, D1, D2, D3 and two output Y0, Y1. Out of the four input D3 has the highest priority and D0 has the lowest priority. That means if D3 = 1 then Y1 Y1 = 11 irrespective of the other inputs. Similarly if D3 = 0 and D2 = 1 then Y1 Y0 = 10 irrespective of the other inputs. Block Diagram Truth Table Logic Circuit",
     "url": "http://localhost:4000/docs/MSI/encoder.html",
     "relUrl": "/docs/MSI/encoder.html"
   },
-  "12": {
-    "id": "12",
+  "13": {
+    "id": "13",
     "title": "Full Adder",
     "content": "Full Adder Full adder is developed to overcome the drawback of Half Adder circuit. It can add two one-bit numbers A and B, and carry c. The full adder is a three input and two output combinational circuit. Block Diagram Truth Table Circuit Diagram",
     "url": "http://localhost:4000/docs/Combinational/full_adder.html",
     "relUrl": "/docs/Combinational/full_adder.html"
   },
-  "13": {
-    "id": "13",
+  "14": {
+    "id": "14",
     "title": "Full Subtractors",
     "content": "Full Subtractors The disadvantage of a half subtractor is overcome by full subtractor. The full subtractor is a combinational circuit with three inputs A,B,C and two output D and C’. A is the ‘minuend’, B is ‘subtrahend’, C is the ‘borrow’ produced by the previous stage, D is the difference output and C’ is the borrow output. Truth Table Circuit Diagram",
     "url": "http://localhost:4000/docs/Combinational/full_sub.html",
     "relUrl": "/docs/Combinational/full_sub.html"
   },
-  "14": {
-    "id": "14",
+  "15": {
+    "id": "15",
     "title": "Gates",
     "content": "Logic Gates Introduction NOT gate AND gate OR gate NAND gate NOR gate XOR gate Introduction Logic gates are the basic building blocks of any digital system. It is an electronic circuit having one or more than one input and only one output. The relationship between the input and the output is based on a certain logic. Based on this, logic gates are named as AND gate, OR gate, NOT gate etc. NOT gate The NOT gate is also known as an inverter because the output is the exact opposite of the input. It has one input and one output. The two possibilities are written out in the table below. Tables listing all logical possibilities like this are known as truth tables. Input1 Input 2 0 1 1 0 AND gate The AND gate has two inputs and one output. The output is 1 if both inputs are 1, and for all other cases the output is 0. Input1 Input 2 output 0 0 0 0 1 0 1 0 0 1 1 1 OR gate The OR gate has two inputs and one output. If at least one of the inputs is 1, then the output will be 1. If neither input is 1, the output will be 0. Input1 Input 2 output 0 0 0 0 1 1 1 0 1 1 1 1 NAND gate The NAND gate behaves in the opposite fashion to and AND gate. You can think of it as an AND gate followed immediately by a NOT gate. Its output is 0 when the two inputs are 1, and for all other cases, its output is 0. The name NAND comes from joining NOT and AND. The symbol for NAND is the same as that for AND except for the addition of a small circle on the right side. Input1 Input 2 output 0 0 1 0 1 1 1 0 1 1 1 0 NOR gate The NAND gate behaves in the opposite fashion to and AND gate. You can think of it as an AND gate followed immediately by a NOT gate. Its output is 0 when the two inputs are 1, and for all other cases, its output is 0. The name NAND comes from joining NOT and AND. The symbol for NAND is the same as that for AND except for the addition of a small circle on the right side. Input1 Input 2 output 0 0 1 0 1 0 1 0 0 1 1 0 XOR gate The NAND gate behaves in the opposite fashion to and AND gate. You can think of it as an AND gate followed immediately by a NOT gate. Its output is 0 when the two inputs are 1, and for all other cases, its output is 0. The name NAND comes from joining NOT and AND. The symbol for NAND is the same as that for AND except for the addition of a small circle on the right side. Input1 Input 2 output 0 0 0 0 1 1 1 0 1 1 1 0",
     "url": "http://localhost:4000/docs/gates.html",
     "relUrl": "/docs/gates.html"
   },
-  "15": {
-    "id": "15",
+  "16": {
+    "id": "16",
     "title": "Half Adder",
     "content": "Half Adder Half adder is a combinational logic circuit with two inputs and two outputs. The half adder circuit is designed to add two single bit binary number A and B. It is the basic building block for addition of two single bit numbers. This circuit has two outputs carry and sum. Block Diagram Truth Table Circuit Diagram",
     "url": "http://localhost:4000/docs/Combinational/half_adder.html",
     "relUrl": "/docs/Combinational/half_adder.html"
   },
-  "16": {
-    "id": "16",
+  "17": {
+    "id": "17",
     "title": "Half Subtractors",
     "content": "Half Subtractors Half subtractor is a combination circuit with two inputs and two outputs (difference and borrow). It produces the difference between the two binary bits at the input and also produces an output (Borrow) to indicate if a 1 has been borrowed. In the subtraction (A-B), A is called as Minuend bit and B is called as Subtrahend bit. Truth Table Circuit Diagram",
     "url": "http://localhost:4000/docs/Combinational/half_sub.html",
     "relUrl": "/docs/Combinational/half_sub.html"
   },
-  "17": {
-    "id": "17",
+  "18": {
+    "id": "18",
     "title": "Markdown kitchen sink",
     "content": "Text can be bold, italic, or strikethrough. Link to another page. There should be whitespace between paragraphs. There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project. Header 1 This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere. Header 2 This is a blockquote following a header. When something is important enough, you do it even if the odds are not in your favor. Header 3 // Javascript code with syntax highlighting. var fun = function lang(l) { dateformat.i18n = require(&#39;./lang/&#39; + l) return true; } # Ruby code with syntax highlighting GitHubPages::Dependencies.gems.each do |gem, version| s.add_dependency(gem, &quot;= #{version}&quot;) end Header 4 This is an unordered list following a header. This is an unordered list following a header. This is an unordered list following a header. Header 5 This is an ordered list following a header. This is an ordered list following a header. This is an ordered list following a header. Header 6 head1 head two three ok good swedish fish nice out of stock good and plenty nice ok good oreos hmm ok good zoute drop yumm There’s a horizontal rule below this. Here is an unordered list: Item foo Item bar Item baz Item zip And an ordered list: Item one Item two Item three Item four And a nested list: level 1 item level 2 item level 2 item level 3 item level 3 item level 1 item level 2 item level 2 item level 2 item level 1 item level 2 item level 2 item level 1 item Nesting an ol in ul in an ol level 1 item (ul) level 2 item (ol) level 2 item (ol) level 3 item (ul) level 3 item (ul) level 1 item (ul) level 2 item (ol) level 2 item (ol) level 3 item (ul) level 3 item (ul) level 4 item (ol) level 4 item (ol) level 3 item (ul) level 3 item (ul) level 1 item (ul) And a task list Hello, this is a TODO item Hello, this is another TODO item Goodbye, this item is done Small image Large image Definition lists can be used with HTML syntax. Name Godzilla Born 1952 Birthplace Japan Color Green Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this. The final element.",
     "url": "http://localhost:4000/docs/index-test.html",
     "relUrl": "/docs/index-test.html"
   },
-  "18": {
-    "id": "18",
+  "19": {
+    "id": "19",
     "title": "Home",
     "content": "Interactive-Book Learn Digital Logic Design easily. Getting started Dependencies Interactive-Book is a digital logic design book built on jekyll, a static site generator. View the quick start guide for more information. Just the Docs requires no special Jekyll plugins and can run on GitHub Pages’ standard Jekyll compiler. Quick start clone the git repo $ git clone Run you local Jekyll server $ jekyll serve # .. or if you&#39;re using a Gemfile (bundler) $ bundle exec jekyll serve Point your web browser to http://localhost:4000 If you’re hosting your site on GitHub Pages, set up GitHub Pages and Jekyll locally so that you can more easily work in your development environment. About the project Interactive-Book is © 2019 by Aman SIngla.",
     "url": "http://localhost:4000/",
     "relUrl": "/"
   },
-  "19": {
-    "id": "19",
+  "20": {
+    "id": "20",
     "title": "Labels",
     "content": "Labels Use labels as a way to add an additional mark to a section of your docs. Labels come in a few colors. By default, labels will be blue. Default label Blue label Stable New release Coming soon Deprecated Default label {: .label } Blue label {: .label .label-blue } Stable {: .label .label-green } New release {: .label .label-purple } Coming soon {: .label .label-yellow } Deprecated {: .label .label-red }",
     "url": "http://localhost:4000/docs/ui-components/labels.html",
     "relUrl": "/docs/ui-components/labels.html"
   },
-  "20": {
-    "id": "20",
+  "21": {
+    "id": "21",
     "title": "Layout",
     "content": "Layout Utilities Spacing Vertical Alignment Display Spacing These spacers are available to use for margins and padding with responsive utility classes. Combine these prefixes with a screen size and spacing scale to use them responsively. Classname prefix What it does .m- margin .mx- margin-left, margin-right .my- margin top, margin bottom .mt- margin-top .mr- margin-right .mb- margin-bottom .ml- margin-left Classname prefix What it does .p- padding .px- padding-left, padding-right .py- padding top, padding bottom .pt- padding-top .pr- padding-right .pb- padding-bottom .pl- padding-left Spacing values are based on a 1rem = 16px spacing scale, broken down into these units: Spacer/suffix Size in rems Rem converted to px 1 0.25rem 4px 2 0.5rem 8px 3 0.75rem 12px 4 1rem 16px 5 1.5rem 24px 6 2rem 32px 7 2.5rem 40px 8 3rem 48px Examples In Markdown, use the {: } wrapper to apply custom classes: This paragraph will have a margin bottom of 1rem/16px at large screens. {: .mb-lg-4 } This paragraph will have 2rem/32px of padding on the right and left at all screen sizes. {: .px-6 } Vertical Alignment Classname What it does .v-align-baseline vertical-align: baseline .v-align-bottom vertical-align: bottom .v-align-middle vertical-align: middle .v-align-text-bottom vertical-align: text-bottom .v-align-text-top vertical-align: text-top .v-align-top vertical-align: top Display Display classes aid in adapting the layout of the elements on a page: Class   .d-block display: block .d-flex display: flex .d-inline display: inline .d-inline-block display: inline-block .d-none display: none Use these classes in conjunction with the responsive modifiers. Examples In Markdown, use the {: } wrapper to apply custom classes: This button will be hidden until medium screen sizes: [ A button ](#url) {: .d-none .d-md-inline-block } These headings will be `inline-block`: ### heading 3 {: .d-inline-block } ### heading 3 {: .d-inline-block }",
     "url": "http://localhost:4000/docs/utilities/layout.html",
     "relUrl": "/docs/utilities/layout.html"
   },
-  "21": {
-    "id": "21",
+  "22": {
+    "id": "22",
     "title": "Lists",
     "content": "Lists Unordered list Ordered list Task list Definition list Most lists can be rendered with pure Markdown. Unordered list Item 1 Item 2 Item 3 or Item 1 Item 2 Item 3 - Item 1 - Item 2 - Item 3 _or_ * Item 1 * Item 2 * Item 3 Ordered list Item 1 Item 2 Item 3 1. Item 1 1. Item 2 1. Item 3 Task list hello, this is a todo item hello, this is another todo item goodbye, this item is done - [ ] hello, this is a todo item - [ ] hello, this is another todo item - [x] goodbye, this item is done Definition list Definition lists require HTML syntax and aren’t supported with the GitHub Flavored Markdown compiler. Name Godzilla Born 1952 Birthplace Japan Color Green &lt;dl&gt; &lt;dt&gt;Name&lt;/dt&gt; &lt;dd&gt;Godzilla&lt;/dd&gt; &lt;dt&gt;Born&lt;/dt&gt; &lt;dd&gt;1952&lt;/dd&gt; &lt;dt&gt;Birthplace&lt;/dt&gt; &lt;dd&gt;Japan&lt;/dd&gt; &lt;dt&gt;Color&lt;/dt&gt; &lt;dd&gt;Green&lt;/dd&gt; &lt;/dl&gt;",
     "url": "http://localhost:4000/docs/ui-components/lists.html",
     "relUrl": "/docs/ui-components/lists.html"
   },
-  "22": {
-    "id": "22",
+  "23": {
+    "id": "23",
     "title": "K-Maps",
     "content": "K-Maps Introduction Enumeration and Gray Codes Simple Groupings Two Dimension Groupings Disjoint Groupings Overlapping Groupings Minimizing Group Count Introduction Karnaugh Maps are a way to visually display a boolean expression onto a 2D grid. We take the variables and bind them to an axis, and then enumerate through the possible combinations of input values that could occur for all those variables bounded to an axis (either horizontally or vertically). For example, we can display the following 2 variable Karnaugh Map: We have bounded to the vertical axis, the variable A, and we enumerate through the possible values for A (being {0, 1}). Similarily, we perform a similar operation for the B variable. Since we are using a 2 variable expression, we can bound one variable to each axis and the visualization works fine in a 2x2 matrix. Let’s instead look at a more involved example with 4 variables: We have now bounded the A and B variables to the vertical axis, while we bounded the C and D variables to the horizontal axis. We now enumarate through different combinations of the bounded variables for each axis in reflected binary code order (more on this in the following section). Lastly, we indicate on the matrix each true value by augmenting a 1 value. Enumeration and Gray Codes When enumerating through the variable input combinations for the binded axis, we take advantage of reflected binary code order, otherwise known as gray codes. If we observe carefully, we can notice that from one combination to another, we only vary by one bit. That is: ... 00 01 11 10 00 01 11 10 00 ... ^ ^ ^ ^ ^ ^ ^ ^ ^ Thus, we get this wrapping that allows us to switch by only one bit. This provides us the core for how Karnaugh Maps work. Simple Groupings The main idea for how Karnaugh Maps can be used to simplify expressions is to group pairs of 1 values that are adjacent, and exploit the fact that each one has only a bit difference from another. For the purpose of this example, let F(ABCD) = CELL. We start with the expression F(0000) = 1 and F(0001) = 1. However, notice that regardless of the value of the last bit, we still get 1. Hence, let’s take a look at the SOP expressions: F(ABCD) = A&#39;B&#39;C&#39;D&#39; + A&#39;B&#39;C&#39;D F(0000) = 1 F(0001) = 1 Since the last bit is the same, we can ignore the D value, thus: F(ABCD) = A&#39;B&#39;C&#39; We can confirm by simplifying algebraically: F(ABCD) = A&#39;B&#39;C&#39;D&#39; + A&#39;B&#39;C&#39;D = A&#39;B&#39;C&#39;(D&#39; + D) = A&#39;B&#39;C&#39; Therefore, the simplification is true. We can then extend this rule to work for rectangles and more! Two Dimension Groupings Extending the idea of isolating changing bits that retain a consistent value, we can then generalize this to work in a higher dimension. Consider the following example: Letting F(ABCD) = CELL: F(0000) = 1 F(0001) = 1 F(0100) = 1 F(0101) = 1 Observe that the bits do not change by one for all pairs of numbers, for example {0000, 0101} differ by two bits. However, we can take advantage of the fact that for any bit change horizontally or vertically, it’s irrelvant what that bit is. More concretely, take a look at the following example. 0000 0001 0100 0101 =&gt; A&#39;B&#39;C&#39;D&#39; + A&#39;B&#39;C&#39;D + A&#39;BC&#39;D&#39; + A&#39;BC&#39;D Regardless of the B variable, we still get true for all products in the SOP expression. This is bounded vertically: =&gt; A&#39;C&#39;D&#39; + A&#39;C&#39;D + A&#39;C&#39;D&#39; + A&#39;C&#39;D Regardless of the D variable, we still get true for all products in the SOP expression. This is bounded horizontally: =&gt; A&#39;C&#39; + A&#39;C&#39; + A&#39;C&#39; + A&#39;C&#39; =&gt; A&#39;C&#39; (1 + 1 + 1 + 1) =&gt; A&#39;C&#39; (1) =&gt; A&#39;C&#39; Since the differences in bits needs to generalize throughout a binding of an axis, you can only have a binding of size 2^n for a given axis. For example, 1x1, 1x2, 1x4, 2x2, 2x4, 4x4. Disjoint Groupings Consider the following example: The algorithm follows precisely as it did before, except that now the two groups are joined in the SOP expression. Letting F(ABCD) = CELL: F(0000) = 1 F(0001) = 1 F(1111) = 1 F(1011) = 1 This yields the following: A&#39;B&#39;C&#39;D&#39; + A&#39;B&#39;C&#39;D + ABCD + AB&#39;CD Breaking down the expression: (A&#39;B&#39;C&#39;D&#39; + A&#39;B&#39;C&#39;D) + (ABCD + AB&#39;CD) =&gt; (A&#39;B&#39;C&#39;(D + D&#39;)) + (ACD(B + B&#39;)) =&gt; (A&#39;B&#39;C&#39;) + (ACD) =&gt; A&#39;B&#39;C&#39; + ACD Clearly this is the exact same process as before, but iterated throughout all the disjoint sets. Overlapping Groupings Overlapping groupings become more complex, because there exist ambigious cases and sometimes what may appear to be a locally optimal solutuion is not a globally optimal solution. The general technique for evaluating for overlapping groups follows a greedy algorithm. Define an unvisited cell as a cell that has a value of 1 however it is currently not matched with a grouping yet. Iterate through all the cells, and once you find a cell with 1, if it is unvisited then find the largest possible square or rectangle such that each side length is a power of 2, where all the cells are 1 in its enclosed area. If there is a tie for size (ie, 1x4 vs 2x2), assign the one that is a square (this is by convention). Repeat this process for all remaining unvisited cells. Note: You can overlap the groupings with already visited nodes, but you never instantiate a new grouping unless the current node is unvisited. In this example, at F(0000), we can create a grouping of size 2 (because 2 is the largest possible grouping, 3 is not a power of 2). We then iterate through to F(0001), however F(0001) was already resolved to a grouping. For the latest active cell, F(0011) is not resolved to a grouping thus it’s unvisited. The largest possible grouping is also of size 2, thus we create another group. To resolve the groupings into an SOP expression, we iterate through the groups and identify changing bits: Group #1 =&gt; F(ABCD) = [0000, 0001] Group #2 =&gt; F(ABCD) = [0001, 0011] For Group #1: 0000 0001 ^ ^ F(ABCD) = A&#39;B&#39;C&#39;D&#39; + A&#39;B&#39;C&#39;D =&gt; A&#39;B&#39;C&#39;(D + D&#39;) =&gt; A&#39;B&#39;C&#39; For Group #2: 0001 0011 ^ ^ F(ABCD) = A&#39;B&#39;C&#39;D + A&#39;B&#39;CD =&gt; A&#39;B&#39;D(C&#39; + C) =&gt; A&#39;B&#39;D Now we add the two results: F(ABCD) = A&#39;B&#39;C&#39; + A&#39;B&#39;D =&gt; F(ABCD) = A&#39;B&#39;D + A&#39;B&#39;C&#39; (by commutative property) Minimizing Group Count The following example will ilustrate how the greedy approach may occasionally produce too many groups. Consider the following example: This grouping state is optimal. However, consider adding a 1 to F(1111). Following the previous algorithm, iterating top-bottom and left-right, when getting to F(0110), the algorithm can choose to make the largest grouping. However, there are two possible groupings: Candidate #1: F(ABCD) = [0011, 0010, 0111, 0110] Candidate #2: F(ABCD) = [0111, 0110, 1111, 1110] Both groupings have the same size, and are the same dimension. However, upon reaching F(1110), another grouping needs to be instantiated, in which case if the first candidate grouping was created then we made a group that was not neccessary increasing the size of our SOP expression. This illustrates the idea that this is a greedy algorithm, and does not always return the most simplified SOP expression. In later sections, algorithms illustrating a globally optimal algorithm will be discussed.",
     "url": "http://localhost:4000/docs/maps.html",
     "relUrl": "/docs/maps.html"
   },
-  "23": {
-    "id": "23",
+  "24": {
+    "id": "24",
     "title": "MSI Components",
     "content": "MSI Digital systems obtain binary-coded data and information that are continuously being operated on in some manner. Some of the operations include: Multiplexing Demultiplexing Decoding and Encoding All of these operations and others have been facilitated by the availability of numerous ICs in the MSI (medium-scale-integration) category. In this module, we will study many of the common types of MSI devices. For each type, we will start with a brief discussion of its basic operating principle and then introduce specific ICs. We then show how they can be used alone or in combination with other ICs in various applications.",
     "url": "http://localhost:4000/docs/msi",
     "relUrl": "/docs/msi"
   },
-  "24": {
-    "id": "24",
+  "25": {
+    "id": "25",
     "title": "Multiplexers",
     "content": "Multiplexers Multiplexer is a special type of combinational circuit. There are n-data inputs, one output and m select inputs with 2m = n. It is a digital circuit which selects one of the n data inputs and routes it to the output. The selection of one of the n inputs is done by the selected inputs. Depending on the digital code applied at the selected inputs, one out of n data sources is selected and transmitted to the single output Y. E is called the strobe or enable input which is useful for the cascading. It is generally an active low terminal that means it will perform the required operation when it is low. Block Diagram Multiplexers come in multiple variations 2 : 1 multiplexer 4 : 1 multiplexer 16 : 1 multiplexer 32 : 1 multiplexer Truth Table",
     "url": "http://localhost:4000/docs/MSI/mux.html",
     "relUrl": "/docs/MSI/mux.html"
   },
-  "25": {
-    "id": "25",
+  "26": {
+    "id": "26",
     "title": "Navigation Structure",
     "content": "Navigation Structure Main navigation Ordering pages Excluding pages Pages with children Child pages Auto-generating Table of Contents Children with children Auxiliary Navigation In-page navigation with Table of Contents Main navigation The main navigation for your Just the Docs site is on the left side of the page at large screens and on the top (behind a tap) on small screens. The main navigation can be structured to accommodate a multi-level menu system (pages with children and grandchildren). By default, all pages will appear as top level pages in the main nav unless a parent page is defined (see Pages with Children). Ordering pages To specify a page order, use the nav_order parameter in your pages’ YAML front matter. Example layout: default title: Customization nav_order: 4 Excluding pages For specific pages that you do not wish to include in the main navigation, e.g. a 404 page or a landing page, use the nav_exclude: true parameter in the YAML front matter for that page. Example layout: default title: 404 nav_exclude: true Pages with children Sometimes you will want to create a page with many children (a section). First, it is recommended that you keep pages that are related in a directory together… For example, in these docs, we keep all of the written documentation in the ./docs directory and each of the sections in subdirectories like ./docs/ui-components and ./docs/utilities. This gives us an organization like: +-- .. |-- (Jekyll files) | |-- docs | |-- ui-components | | |-- ui-components.md (parent page) | | |-- buttons.md | | |-- code.md | | |-- labels.md | | |-- tables.md | | +-- typography.md | | | |-- utilities | | |-- utilities.md (parent page) | | |-- color.md | | |-- layout.md | | |-- responsive-modifiers.md | | +-- typography.md | | | |-- (other md files, pages with no children) | +-- .. | |-- (Jekyll files) +-- .. On the parent pages, add 2 YAML front matter parameters: has_children: true (tells us that this is a parent page) permalink: set this to the site directory that contains the child pages Example layout: default title: UI Components nav_order: 2 has_children: true permalink: /docs/ui-components Here we’re setting up the UI Components landing page that is available at /docs/ui-components, which has children and is ordered second in the main nav. Child pages On child pages, simply set the parent: YAML front matter to whatever the parent’s page title is and set a nav order (this number is now scoped within the section). Example layout: default title: Buttons parent: UI Components nav_order: 2 The Buttons page appears as a child of UI Components and appears second in the UI Components section. Auto-generating Table of Contents By default, all pages with children will automatically append a Table of Contents which lists the child pages after the parent page’s content. To disable this auto Table of Contents, set has_toc: false in the parent page’s YAML front matter. Example layout: default title: UI Components nav_order: 2 has_children: true has_toc: false permalink: /docs/ui-components Children with children Child pages can also have children (grandchildren). This is achieved by using a similar pattern on the child and grandchild pages. Add the has_children attribute to the child Add the parent and grand_parent attribute to the grandchild Example layout: default title: Buttons parent: UI Components nav_order: 2 has_children: true layout: default title: Buttons Child Page parent: Buttons grand_parent: UI Components nav_order: 1 This would create the following navigation structure: +-- .. | |-- UI Components | |-- .. | | | |-- Buttons | | |-- Button Child Page | | | |-- .. | +-- .. Auxiliary Navigation To add a auxiliary navigation item to your site (in the upper right on all pages), add it to the aux_nav configuration option in your site’s _config.yml file. Example # Aux links for the upper right navigation aux_links: &quot;Just the Docs on GitHub&quot;: - &quot;//github.com/pmarsceill/just-the-docs&quot; In-page navigation with Table of Contents To generate a Table of Contents on your docs pages, you can use the {:toc} method from Kramdown, immediately after an &lt;ol&gt; in Markdown. This will automatically generate an ordered list of anchor links to various sections of the page based on headings and heading levels. There may be occasions where you’re using a heading and you don’t want it to show up in the TOC, so to skip a particular heading use the {: .no_toc } CSS class. Example # Navigation Structure {: .no_toc } ## {: .no_toc .text-delta } 1. TOC {:toc} This example skips the page name heading (#) from the TOC, as well as the heading for the Table of Contents itself (##) because it is redundant, followed by the table of contents itself.",
     "url": "http://localhost:4000/docs/navigation-structure.html",
     "relUrl": "/docs/navigation-structure.html"
   },
-  "26": {
-    "id": "26",
+  "27": {
+    "id": "27",
     "title": "Responsive Modifiers",
     "content": "Responsive modifiers Just the Docs spacing works in conjunction with a variety of modifiers that allow you to target specific screen sizes responsively. Use these in conjunction with spacing and display prefix and suffix classes. Modifier Screen size (none) All screens until the next modifier xs 320px (20rem) and up sm 500px (31.25rem) and up md 740px (46.25rem) and up lg 1120px (70rem) and up xl 1400px (87.5rem) and up",
     "url": "http://localhost:4000/docs/utilities/responsive-modifiers.html",
     "relUrl": "/docs/utilities/responsive-modifiers.html"
   },
-  "27": {
-    "id": "27",
+  "28": {
+    "id": "28",
     "title": "Search",
     "content": "Search Set up search Generate search index Enable search in configuration Hiding pages from search We use lunr.js to add a client-side search interface powered by a JSON index that Jekyll generates. All search results are shown in an auto-complete style interface (there is no search results page). By default, all generated HTML pages are indexed using the following data points: Page title Page content Page URL Set up search Generate search index Before you can use search, you must initialize the feature by running this rake command that comes with just-the-docs: $ bundle exec just-the-docs rake search:init This command creates the search-data.json file that Jekyll uses to create your search index. Alternatively, you can create the file manually in the assets/js/ directory of your Jekyll site with this content: {% raw %} { {% for page in site.html_pages %}{% if page.search_exclude != true %}&quot;{{ forloop.index0 }}&quot;: { &quot;id&quot;: &quot;{{ forloop.index0 }}&quot;, &quot;title&quot;: &quot;{{ page.title | replace: &#39;&amp;amp;&#39;, &#39;&amp;&#39; }}&quot;, &quot;content&quot;: &quot;{{ page.content | markdownify | strip_html | escape_once | remove: &#39;&#39; | remove: &#39;&#39; | remove: &#39;&#39; | replace: &#39; &#39;, &#39; &#39; | normalize_whitespace }}&quot;, &quot;url&quot;: &quot;{{ page.url | absolute_url }}&quot;, &quot;relUrl&quot;: &quot;{{ page.url }}&quot; }{% unless forloop.last %},{% endunless %} {% endif %}{% endfor %} }{% endraw %} Note: If you don’t run this rake command or create this file manually, search will not work (or it will use the search index data from this docs site, not your site’s content). Enable search in configuration In your site’s _config.yml, enable search: # Enable or disable the site search search_enabled: true Hiding pages from search Sometimes you might have a page that you don’t want to be indexed for the search nor to show up in search results, e.g, a 404 page. To exclude a page from search, add the search_exclude: true parameter to the page’s YAML front matter: Example layout: default title: Page not found nav_exclude: true search_exclude: true",
     "url": "http://localhost:4000/docs/search.html",
     "relUrl": "/docs/search.html"
   },
-  "28": {
-    "id": "28",
+  "29": {
+    "id": "29",
     "title": "Digital Sequential Circuits",
     "content": "Digital Sequential Circuits The combinational circuit does not use any memory. Hence the previous state of input does not have any effect on the present state of the circuit. But sequential circuit has memory so output can vary based on input. This type of circuits uses previous input, output, clock and a memory element. This sequential circuit contains a set of inputs and output(s). The output(s) of sequential circuit depends not only on the combination of present inputs but also on the previous output(s). Previous output is nothing but the present state. Therefore, sequential circuits contain combinational circuits along with memory (storage) elements. Some sequential circuits may not contain combinational circuits, but only memory elements. Following table shows the differences between combinational circuits and sequential circuits. Combinational Circuits Sequential Circuits Outputs depend only on present inputs. Outputs depend on both present inputs and present state. Feedback path is not present. Feedback path is present. Memory elements are not required. Memory elements are required. Clock signal is not required. Clock signal is required. Easy to design. Difficult to design. Types of Sequential Circuits Following are the two types of sequential circuits − Asynchronous sequential circuits Synchronous sequential circuits Asynchronous sequential circuits If some or all the outputs of a sequential circuit do not change (affect) with respect to active transition of clock signal, then that sequential circuit is called as Asynchronous sequential circuit. That means, all the outputs of asynchronous sequential circuits do not change (affect) at the same time. Therefore, most of the outputs of asynchronous sequential circuits are not in synchronous with either only positive edges or only negative edges of clock signal. Synchronous sequential circuits If all the outputs of a sequential circuit change (affect) with respect to active transition of clock signal, then that sequential circuit is called as Synchronous sequential circuit. That means, all the outputs of synchronous sequential circuits change (affect) at the same time. Therefore, the outputs of synchronous sequential circuits are in synchronous with either only positive edges or only negative edges of clock signal.",
     "url": "http://localhost:4000/docs/sequential.html",
     "relUrl": "/docs/sequential.html"
   },
-  "29": {
-    "id": "29",
+  "30": {
+    "id": "30",
     "title": "Tables",
     "content": "Tables Tables are responsive by default, allowing wide tables to have a horizontal scroll to access columns outside of the normal viewport. head1 head two three ok good swedish fish nice out of stock good and plenty nice ok good oreos hmm ok good zoute drop yumm | head1 | head two | three | |:-|:|:| | ok | good swedish fish | nice | | out of stock | good and plenty | nice | | ok | good `oreos` | hmm | | ok | good `zoute` drop | yumm |",
     "url": "http://localhost:4000/docs/ui-components/tables.html",
     "relUrl": "/docs/ui-components/tables.html"
   },
-  "30": {
-    "id": "30",
+  "31": {
+    "id": "31",
     "title": "Typography",
     "content": "Typography Utilities Font size Font weight Line height Font size Use the .fs-1 - .fs-10 to set an explicit font-size. Class Small screen size font-size Large screen size font-size .fs-1 9px 10px .fs-2 11px 12px .fs-3 12px 14px .fs-4 14px 16px .fs-5 16px 18px .fs-6 18px 24px .fs-7 24px 32px .fs-8 32px 38px .fs-9 38px 42px .fs-10 42px 48px Font size 1 Font size 2 Font size 3 Font size 4 Font size 5 Font size 6 Font size 7 Font size 8 Font size 9 Font size 10 In Markdown, use the `{: }` wrapper to apply custom classes: Font size 1 {: .fs-1 } Font size 2 {: .fs-2 } Font size 3 {: .fs-3 } Font size 4 {: .fs-4 } Font size 5 {: .fs-5 } Font size 6 {: .fs-6 } Font size 7 {: .fs-7 } Font size 8 {: .fs-8 } Font size 9 {: .fs-9 } Font size 10 {: .fs-10 } Font weight Use the .fw-300 - .fw-700 to set an explicit font-size. Font weight 300 Font weight 400 Font weight 500 Font weight 700 In Markdown, use the `{: }` wrapper to apply custom classes: Font weight 300 {: .fw-300 } Font weight 400 {: .fw-400 } Font weight 500 {: .fw-500 } Font weight 700 {: .fw-700 } Line height Use the lh- classes to explicitly apply line height to text. Class line-height value Notes .lh-0 0   .lh-tight 1.1 Default for headings .lh-default 1.4 Default for body (paragraphs) No Line height No Line height Tight line height Tight line height Default line height Default line height In Markdown, use the `{: }` wrapper to apply custom classes: No Line height No Line height {: .lh-0 } Tight line height Tight line height {: .lh-tight } Default line height Default line height {: .fh-default }",
     "url": "http://localhost:4000/docs/utilities/typography.html",
     "relUrl": "/docs/utilities/typography.html"
   },
-  "31": {
-    "id": "31",
+  "32": {
+    "id": "32",
     "title": "Typography",
     "content": "Typography Font stack Responsive type scale Headings Body text Inline elements Typographic Utilities Font stack By default, Just the Docs uses a native system font stack for sans-serif fonts: -apple-system, BlinkMacSystemFont, &quot;helvetica neue&quot;, helvetica, roboto, noto, &quot;segoe ui&quot;, arial, sans-serif ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz For monospace type, like code snippets or the &lt;pre&gt; element, Just the Docs uses a native system font stack for monospace fonts: &quot;SFMono-Regular&quot;, Menlo, Consolas, Monospace ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz Responsive type scale Just the Docs uses a responsive type scale that shifts depending on the viewport size. Selector Small screen size font-size Large screen size font-size h1, .text-alpha 32px 36px h2, .text-beta 18px 24px h3, .text-gamma 16px 18px h4, .text-delta 14px 16px h5, .text-epsilon 16px 18px h6, .text-zeta 18px 24px body 14px 16px Headings Headings are rendered like this: Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 # Heading 1 ## Heading 2 ### Heading 3 #### Heading 4 ##### Heading 5 ###### Heading 6 Body text Default body text is rendered like this: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Inline elements Text can be bold, italic, or strikethrough. Link to another page. Text can be **bold**, _italic_, or ~~strikethrough~~. [Link to another page](another-page). Typographic Utilities There are a number of specific typographic CSS classes that allow you to override default styling for font size, font weight, line height, and capitalization. View typography utilities",
     "url": "http://localhost:4000/docs/ui-components/typography.html",
     "relUrl": "/docs/ui-components/typography.html"
   },
-  "32": {
-    "id": "32",
+  "33": {
+    "id": "33",
     "title": "UI Components",
     "content": "UI Components To make it as easy as possible to write documentation in plain Markdown, most UI components are styled using default Markdown elements with few additional CSS classes needed.",
     "url": "http://localhost:4000/docs/ui-components",
     "relUrl": "/docs/ui-components"
   },
-  "33": {
-    "id": "33",
+  "34": {
+    "id": "34",
     "title": "Utilities",
     "content": "Utilities CSS utility classes come in handy when you to want to override default styles to create additional whitespace (margins/padding), correct unexpected shifts in font size or weight, add color, or hide (or show) something at a specific screen size.",
     "url": "http://localhost:4000/docs/utilities",
