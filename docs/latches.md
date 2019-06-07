@@ -4,7 +4,7 @@ title: Latches
 nav_order: 11
 ---
 
-# Clock Signal and Triggering
+# Latches
 {: .no_toc }
 
 There are two types of memory elements based on the type of triggering that is suitable to operate it.
