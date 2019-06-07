@@ -31,7 +31,7 @@ Now, let us discuss about SR Latch & D Latch one by one.
 
 SR Latch is also called as Set Reset Latch. This latch affects the outputs as long as the enable, E is maintained at ‘1’. The circuit diagram of SR Latch is shown in the following figure.
 
-<div style="text-align:center"><img src="../assets/images/sr_latchl.jpg" /></div>
+<div style="text-align:center"><img src="../assets/images/sr_latch.jpg" /></div>
 
 This circuit has two inputs S & R and two outputs Q(t) & Q(t)’. The **upper NOR gate** has two inputs R & complement of present state, Q(t)’ and produces next state, Q(t+1) when enable, E is ‘1’.
 Similarly, the **lower NOR gate** has two inputs S & present state, Q(t) and produces complement of next state, Q(t+1)’ when enable, E is ‘1’.
@@ -71,10 +71,10 @@ This circuit has single input D and two outputs Q(t) & Q(t)’. D Latch is obtai
 The following table shows the state table of D latch.
 
 
-| D      | Q(t + 1)       |
-|:-------------|:------------------|
-| 0            | 0     |
-| 1            | 1     |
+| D      | Q(t + 1)    |
+|:-------|:------|
+| 0      | 0     |
+|        | 1     |
 
 
 Therefore, D Latch Hold the information that is available on data input, D. That means the output of D Latch is sensitive to the changes in the input, D as long as the enable is High.
