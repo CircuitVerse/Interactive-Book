@@ -44,9 +44,9 @@ Similarly with Din = 1 and with the fourth negative clock edge arriving, the sto
 
 <div style="text-align:center"><img src="../../assets/images/siso_operation4.jpg" /></div>
 
-Truth Table
+## Truth Table
 <div style="text-align:center"><img src="../../assets/images/siso_truthtable.jpg" /></div>
 
-Waveforms
+## Waveforms
 <div style="text-align:center"><img src="../../assets/images/siso_waveform.jpg" /></div>
 
