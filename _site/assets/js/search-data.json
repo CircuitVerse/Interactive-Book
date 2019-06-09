@@ -155,41 +155,55 @@
   },
   "23": {
     "id": "23",
+    "title": "Parallel Input Parallel Output",
+    "content": "Parallel Input Parallel Output Introduction In this mode, the 4 bit binary input B0, B1, B2, B3 is applied to the data inputs D0, D1, D2, D3 respectively of the four flip-flops. As soon as a negative clock edge is applied, the input binary bits will be loaded into the flip-flops simultaneously. The loaded bits will appear simultaneously to the output side. Only clock pulse is essential to load all the bits. Block Diagram",
+    "url": "http://localhost:4000/docs/registers/pp.html",
+    "relUrl": "/docs/registers/pp.html"
+  },
+  "24": {
+    "id": "24",
+    "title": "Parallel Input Serial Output",
+    "content": "Parallel Input Serial Output Introduction Data bits are entered in parallel fashion. The circuit shown below is a four bit parallel input serial output register. Output of previous Flip Flop is connected to the input of the next one via a combinational circuit. The binary input word B0, B1, B2, B3 is applied though the same combinational circuit. There are two modes in which this circuit can work namely - shift mode or load mode. Load mode When the shift/load bar line is low (0), the AND gate 2, 4 and 6 become active they will pass B1, B2, B3 bits to the corresponding flip-flops. On the low going edge of clock, the binary input B0, B1, B2, B3 will get loaded into the corresponding flip-flops. Thus parallel loading takes place. Shift mode When the shift/load bar line is low (1), the AND gate 2, 4 and 6 become inactive. Hence the parallel loading of the data becomes impossible. But the AND gate 1,3 and 5 become active. Therefore the shifting of data from left to right bit by bit on application of clock pulses. Thus the parallel in serial out operation takes place. Block Diagram",
+    "url": "http://localhost:4000/docs/registers/ps.html",
+    "relUrl": "/docs/registers/ps.html"
+  },
+  "25": {
+    "id": "25",
     "title": "Digital Registers",
     "content": "Digital Registers Flip-flop is a 1 bit memory cell which can be used for storing the digital data. To increase the storage capacity in terms of number of bits, we have to use a group of flip-flop. Such a group of flip-flop is known as a Register. The n-bit register will consist of n number of flip-flop and it is capable of storing an n-bit word. The binary data in a register can be moved within the register from one flip-flop to another. The registers that allow such data transfers are called as shift registers. There are four mode of operations of a shift register.",
     "url": "http://localhost:4000/docs/register",
     "relUrl": "/docs/register"
   },
-  "24": {
-    "id": "24",
+  "26": {
+    "id": "26",
     "title": "Digital Sequential Circuits",
     "content": "Digital Sequential Circuits The combinational circuit does not use any memory. Hence the previous state of input does not have any effect on the present state of the circuit. But sequential circuit has memory so output can vary based on input. This type of circuits uses previous input, output, clock and a memory element. This sequential circuit contains a set of inputs and output(s). The output(s) of sequential circuit depends not only on the combination of present inputs but also on the previous output(s). Previous output is nothing but the present state. Therefore, sequential circuits contain combinational circuits along with memory (storage) elements. Some sequential circuits may not contain combinational circuits, but only memory elements. Following table shows the differences between combinational circuits and sequential circuits. Combinational Circuits Sequential Circuits Outputs depend only on present inputs. Outputs depend on both present inputs and present state. Feedback path is not present. Feedback path is present. Memory elements are not required. Memory elements are required. Clock signal is not required. Clock signal is required. Easy to design. Difficult to design. Types of Sequential Circuits Following are the two types of sequential circuits − Asynchronous sequential circuits Synchronous sequential circuits Asynchronous sequential circuits If some or all the outputs of a sequential circuit do not change (affect) with respect to active transition of clock signal, then that sequential circuit is called as Asynchronous sequential circuit. That means, all the outputs of asynchronous sequential circuits do not change (affect) at the same time. Therefore, most of the outputs of asynchronous sequential circuits are not in synchronous with either only positive edges or only negative edges of clock signal. Synchronous sequential circuits If all the outputs of a sequential circuit change (affect) with respect to active transition of clock signal, then that sequential circuit is called as Synchronous sequential circuit. That means, all the outputs of synchronous sequential circuits change (affect) at the same time. Therefore, the outputs of synchronous sequential circuits are in synchronous with either only positive edges or only negative edges of clock signal.",
     "url": "http://localhost:4000/docs/sequential.html",
     "relUrl": "/docs/sequential.html"
   },
-  "25": {
-    "id": "25",
+  "27": {
+    "id": "27",
     "title": "Serial Input Parallel Output",
     "content": "Serial Input Parallel Output Introduction In such types of operations, the data is entered serially and taken out in parallel fashion. Data is loaded bit by bit. The outputs are disabled as long as the data is loading. As soon as the data loading gets completed, all the flip-flops contain their required data, the outputs are enabled so that all the loaded data is made available over all the output lines at the same time. 4 clock cycles are required to load a four bit word. Hence the speed of operation of SIPO mode is same as that of SISO mode. Block Diagram",
     "url": "http://localhost:4000/docs/registers/sp.html",
     "relUrl": "/docs/registers/sp.html"
   },
-  "26": {
-    "id": "26",
+  "28": {
+    "id": "28",
     "title": "SR Flip-Flop",
     "content": "SR Flip-Flop SR flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, SR latch operates with enable signal. The circuit diagram of SR flip-flop is shown in the following figure. his circuit has two inputs S &amp; R and two outputs Q(t) &amp; Q(t)’. The operation of SR flipflop is similar to SR Latch. But, this flip-flop affects the outputs only when positive transition of the clock signal is applied instead of active enable. State table of SR flip-flop. S R Q(t+1) 0 0 Q(t) 0 1 0 1 0 1 1 1 - Here, Q(t) &amp; Q(t + 1) are present state &amp; next state respectively. So, SR flip-flop can be used for one of these three functions such as Hold, Reset &amp; Set based on the input conditions, when positive transition of clock signal is applied. Characteristic table of SR flip-flop. Therefore, SR Latch performs three types of functions such as Hold, Set &amp; Reset based on the input conditions. S R Q(t) Q(t+1) 0 0 0 0 0 0 1 1 0 1 0 0 0 1 1 0 1 0 0 1 1 0 1 1 1 1 0 x 1 1 1 x By using three variable K-Map, we can get the simplified expression for next state, Q(t + 1). The three variable K-Map for next state, Q(t + 1) is shown in the following figure. The maximum possible groupings of adjacent ones are already shown in the figure. Therefore, the simplified expression for next state Q(t + 1) is Q(t+1)=S+R′Q(t)",
     "url": "http://localhost:4000/docs/flipflop/sr_flipflop.html",
     "relUrl": "/docs/flipflop/sr_flipflop.html"
   },
-  "27": {
-    "id": "27",
+  "29": {
+    "id": "29",
     "title": "Serial Input Serial Output",
     "content": "Serial Input Serial Output Introduction Block Diagram Operation Introduction Let all the flip-flop be initially in the reset condition i.e. Q3 = Q2 = Q1 = Q0 = 0. If an entry of a four bit binary number 1 1 1 1 is made into the register, this number should be applied to Din bit with the LSB bit applied first. The D input of FF-3 i.e. D3 is connected to serial data input Din. Output of FF-3 i.e. Q3 is connected to the input of the next flip-flop i.e. D2 and so on. Block Diagram Operation Before application of clock signal, let Q3 Q2 Q1 Q0 = 0000 and apply LSB bit of the number to be entered to Din. So Din = D3 = 1. Apply the clock. On the first falling edge of clock, the FF-3 is set, and stored word in the register is Q3 Q2 Q1 Q0 = 1000. Apply the next bit to Din. So Din = 1. As soon as the next negative edge of the clock hits, FF-2 will set and the stored word change to Q3 Q2 Q1 Q0 = 1100. Apply the next bit to be stored i.e. 1 to Din. Apply the clock pulse. As soon as the third negative clock edge hits, FF-1 will be set and output will be modified to Q3 Q2 Q1 Q0 = 1110. Similarly with Din = 1 and with the fourth negative clock edge arriving, the stored word in the register is Q3 Q2 Q1 Q0 = 1111. Truth Table Waveforms",
     "url": "http://localhost:4000/docs/registers/ss.html",
     "relUrl": "/docs/registers/ss.html"
   },
-  "28": {
-    "id": "28",
+  "30": {
+    "id": "30",
     "title": "T Flip-Flop",
     "content": "T Flip-Flop T flip-flop is the simplified version of JK flip-flop. It is obtained by connecting the same input ‘T’ to both inputs of JK flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of T flip-flop is shown in the following figure. This circuit has single input T and two outputs Q(t) &amp; Q(t)’. The operation of T flip-flop is same as that of JK flip-flop. Here, we considered the inputs of JK flip-flop as J = T and K = T in order to utilize the modified JK flip-flop for 2 combinations of inputs. So, we eliminated the other two combinations of J &amp; K, for which those two values are complement to each other in T flip-flop. State table of T flip-flop. D Q(t+1) 0 Q(t) 1 Q(t)’ Here, Q(t) &amp; Q(t + 1) are present state &amp; next state respectively. So, T flip-flop can be used for one of these two functions such as Hold, &amp; Complement of present state based on the input conditions, when positive transition of clock signal is applied. Characteristic table of T flip-flop. T Q(t) Q(t + 1) 0 0 0 0 1 1 1 0 1 1 1 0 From the above characteristic table, we can directly write the next state equation as Q(t+1)=T′Q(t)+TQ(t)′ ⇒ Q(t+1)=T⊕Q(t) The output of T flip-flop always toggles for every positive transition of the clock signal, when input T remains at logic High (1). Hence, T flip-flop can be used in counters.",
     "url": "http://localhost:4000/docs/flipflop/t_flipflop.html",
