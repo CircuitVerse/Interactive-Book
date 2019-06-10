@@ -74,7 +74,7 @@ The following table shows the state table of D latch.
 | D      | Q(t + 1)    |
 |:-------|:------|
 | 0      | 0     |
-|        | 1     |
+| 1      | 1     |
 
 
 Therefore, D Latch Hold the information that is available on data input, D. That means the output of D Latch is sensitive to the changes in the input, D as long as the enable is High.
