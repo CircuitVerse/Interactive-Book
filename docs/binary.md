@@ -32,7 +32,7 @@ It is just like counting in decimal except we reach 10 much sooner.
 
 
 | Binary       | Explanation       |
-|:-------------|:------------------|
+|:-------------:|:------------------:|
 | 0            | We start at 0     |
 | 1            | Then 1            |
 | ???          | But then there is no symbol for 2 ... what do we do?  |
@@ -41,7 +41,7 @@ It is just like counting in decimal except we reach 10 much sooner.
 <h3>Well how do we count in Decimal?</h3>
 
 | Decimal       | Explanation            |
-|:-------------|:-----------------------|
+|:-------------:|:----------------------:|
 | 0            | We start at 0          |
 | 1            | Then 1                 |
 | 2-8          | Count 1,2,3,4,5,6,7,8  |

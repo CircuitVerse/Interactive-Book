@@ -62,7 +62,7 @@ he JA and KA inputs of FF-A are tied to logic 1. So FF-A will work as a toggle f
 ### Operation
 
 |Condition|Operation|
-|:--------|:--------|
+|:--------|:-------:|
 |**Initially let both the FFs be in the reset state**|QBQA = 00 initially.|
 |**After 1st negative clock edge**|As soon as the first negative clock edge is applied, FF-A will toggle and QA will change from 0 to 1.But at the instant of application of negative clock edge, QA , JB = KB = 0. Hence FF-B will not change its state. So QB will remain 0.QBQA = 01 after the first clock pulse.|
 |**After 2nd negative clock edge**|On the arrival of second negative clock edge, FF-A toggles again and QA changes from 1 to 0.But at this instant QA was 1. So JB = KB= 1 and FF-B will toggle. Hence QB changes from 0 to 1.QBQA = 10 after the second clock pulse.|

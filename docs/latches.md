@@ -47,7 +47,7 @@ At any time, only of those two inputs should be ‘1’. If both inputs are ‘1
 The following table shows the state table of **SR latch**.
 
 | S      |    R    |   Q(t+1) |
-|:-------|:--------|:---------|
+|:------:|:-------:|:--------:|
 |  0     |    0    |  Q(t)    |
 |  0     |    1    |    0     |
 |  1     |    0    |    1     |
@@ -72,7 +72,7 @@ The following table shows the state table of D latch.
 
 
 | D      | Q(t + 1)    |
-|:-------|:------|
+|:------:|:-----:|
 | 0      | 0     |
 | 1      | 1     |
 

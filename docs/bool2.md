@@ -42,7 +42,7 @@ A truth table represents a table having all combinations of inputs and their cor
 It is possible to convert the switching equation into a truth table. For example, consider the following switching equation.
 
 | A       | B       | C      | F      |
-|:--------|:--------|:-------|:-------|
+|:-------:|:-------:|:------:|:------:|
 | 0       | 0       | 1      |0       |
 | 0       | 1       | 0      |0       |
 | 0       | 1       | 1      |0       |
@@ -57,7 +57,7 @@ It is possible to convert the switching equation into a truth table. For example
 Let's consider a more complicated expression `F(ABCD)= AB'C+BD+CD+D` and generate its truth table:
 
 | F(AB'C+BD+CD+D)| A | B | C | D |
-| ----- |:-:| -:| -:| -:|
+| :-----: |:-:|:-:|:-:|:-:|
 | 0     | 0 | 0 | 0 | 0 |
 | 1     | 0 | 0 | 0 | 1 |
 | 0     | 0 | 0 | 1 | 0 |
@@ -99,7 +99,7 @@ The definition of a "Don't care" is a combination of input values that is not kn
 Let's consider the following truth-table:
 
 | F(AB)| A | B |
-| ---- |:-:| -:|
+| :----: |:-:| :-:|
 | 1    | 0 | 0 |
 | 1    | 0 | 1 |
 | ?    | 1 | 0 |

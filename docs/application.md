@@ -35,7 +35,7 @@ The 3-bit Ring counter contains only a 3-bit SIPO shift register. The output of 
 Assume, initial status of the D flip-flops from leftmost to rightmost is Q2Q1Q0=001. Here, Q2 & Q0 are MSB & LSB respectively. We can understand the working of Ring counter from the following table.
 
 |No of positive edge of Clock|	Serial Input = Q0 |	Q2(MSB) |	Q1	 |Q0(LSB)|
-|:---------------------------|:-------------------|:--------|:-------|:------|
+|:--------------------------:|:------------------:|:-------:|:------:|:-----:|
 |0	|-	|0	|0	|1  |
 |1	|1	|1	|0	|0  |
 |2	|0	|0	|1	|0  |
@@ -62,7 +62,7 @@ The 3-bit Johnson Ring counter also contains only a 3-bit SIPO shift register. T
 Assume, initially all the D flip-flops are cleared. So, Q2Q1Q0=000. Here, Q2 & Q0 are MSB & LSB respectively. We can understand the working of Johnson Ring counter from the following table.
 
 |No of positive edge of Clock|	Serial Input = Q0 |	Q2(MSB) |	Q1   |cQ0(LSB)|
-|:---------------------------|:-------------------|:--------|:-------|:-------|
+|:--------------------------:|:------------------:|:-------:|:------:|:------:|
 |0	|-	|0	|0	|0  |
 |1	|1	|1	|0	|0  |
 |2	|1	|1	|1	|0  |
