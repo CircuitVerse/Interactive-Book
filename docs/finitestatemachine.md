@@ -20,6 +20,7 @@ There are two types of FSMs.
 
 * Mealy State Machine
 * Moore State Machine
+
 Now, let us discuss about these two state machines one by one.
 
 ## Mealy State Machine
