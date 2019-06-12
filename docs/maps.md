@@ -68,7 +68,7 @@ We can then extend this rule to work for rectangles and more!
 ## Two Dimension Groupings
 Extending the idea of isolating changing bits that retain a consistent value, we can then generalize this to work in a higher dimension. Consider the following example:
 
-![](../assets/images/3.png)
+![](../assets/images/map3.png)
 
 Letting `F(ABCD) = CELL`:
 ```markdown
