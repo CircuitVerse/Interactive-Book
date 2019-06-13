@@ -1172,7 +1172,7 @@
   </tbody>
 </table>
 
-<h3>Well how do we count in Decimal?</h3>
+<h4>Well how do we count in Decimal?</h4>
 
 <table>
   <thead>
@@ -1205,7 +1205,110 @@
   </tbody>
 </table>
 
-<h3>Finally</h3>
+<h4>The same thing is done in binary ...</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Binary</th>
+      <th style="text-align: center">Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">We start at 0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">Then 1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><strong>1</strong>0</td>
+      <td style="text-align: center">Now start back at 0 again, <strong>but add 1 on the left</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">11</td>
+      <td style="text-align: center">1 more</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">???</td>
+      <td style="text-align: center">But NOW what … ?</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>What happens in Decimal?</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Decimal</th>
+      <th style="text-align: center">Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">99</td>
+      <td style="text-align: center">When we run out of digits, we …</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">100</td>
+      <td style="text-align: center">… start back at 0 again, but add 1 on the left</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>And that is what we do in binary ...</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Binary</th>
+      <th style="text-align: center">Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">We start a</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">Then 1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><strong>1</strong>0</td>
+      <td style="text-align: center">Now start back at 0 again, <strong>but add 1 on the left</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">11</td>
+      <td style="text-align: center">1 more</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><strong>1</strong>00</td>
+      <td style="text-align: center">start back at 0 again, and add one to the number on the left but that number is already at 1 so it also goes back to 0 and 1 is added to the next position on the left</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">101</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">110</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">111</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><strong>1</strong>000</td>
+      <td style="text-align: center">Start back at 0 again (for all 3 digits), add 1 on the left</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>See how it is done in this little demonstration</h3>
 
 <div id="binary">
 <div class="column"><div class="column_heading">128</div><div id="7" class="bit" onclick="toggle_bit(7);">0</div></div>
