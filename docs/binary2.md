@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Mathematical Operators in Binary
+title:  Operators in Binary
 nav_order: 2
 ---
 
@@ -100,6 +100,16 @@ add 1               +           1
                    --------------- 
 
 ```
+
+
+# Bitwise Operators
+
+|Operator   |    Explanation   |
+|:---------:|:----------------:|
+|op1 & op2 | The AND operator compares two bits and generates a result of 1 if both bits are 1; otherwise, it returns 0.|
+|op1 or op2 | The OR operator compares two bits and generates a result of 1 if the bits are complementary; otherwise, it returns 0.|
+|op1^ op2 | The EXCLUSIVE-OR operator compares two bits and returns 1 if either of the bits are 1 and it gives 0 if both bits are 0 or 1.|
+|~op1 | The COMPLEMENT operator is used to invert all of the bits of the operand.|
 
 <div id="container">
 <div class="binary">
