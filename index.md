@@ -12,35 +12,22 @@ permalink: /
 Learn Digital Logic Design easily.
 {: .fs-6 .fw-300 }
 
----
+Computer Logical Organization refers to the level of abstraction above the digital logic level, but below the operating system level. 
+At this level, the major components are functional units or subsystems that correspond to specific pieces of hardware built from the lower level building blocks.
 
-## Getting started
-
-### Dependencies
-
-Interactive-Book is a digital logic design book built on jekyll, a static site generator. View the [quick start guide](https://jekyllrb.com/docs/) for more information. Just the Docs requires no special Jekyll plugins and can run on GitHub Pages' standard Jekyll compiler.
-
-### Quick start
-
-1. clone the git repo
-```bash
-$ git clone
-```
-
-2. Run you local Jekyll server
-```bash
-$ jekyll serve
-```
-```bash
-# .. or if you're using a Gemfile (bundler)
-$ bundle exec jekyll serve
-```
-3. Point your web browser to [http://localhost:4000](http://localhost:4000)
-
-If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) so that you can more easily work in your development environment.
+This interactive book gives a complete understanding on Computer Logical Organization starting from basic computer overview till its advanced architecture.
+It is meant to provide the readers to know how to analyze and implement the combinational circuits and sequential circuits. Based on the requirement, we can use either combinational circuit or sequential circuit or combination of both. 
+After completing this book, you will be able to learn the type of digital circuit, which is suitable for specific application.
 
 ---
+
+## Audience
+
+This reference has been prepared for the students pursing either Bachelors or Masters in Computer Science/Electronics to help them understand the basic-to-advanced concepts related to Computer Logical Organization.It is also meant for thosewho are aspiring to learn the concepts of digital circuits. Digital circuits contain a set of Logic gates and these can be operated with binary values, 0 and 1.
+
+### Prerequisites
+Before you start proceeding with this Book, I'm making an assumption that you are already aware of basic computer concepts like what is keyboard, mouse, monitor, input, output, primary memory, secondary memory, etc.
+A basic idea regarding the initial concepts of Digital Electronics is enough to understand the topics covered in this tutorial.
 
 ## About the project
-
-Interactive-Book is &copy; 2019 by [Aman SIngla](http://github.com/amansingla97).
+Interactive-Book is &copy; 2019 by [Aman Singla](http://github.com/amansingla97).
