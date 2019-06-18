@@ -72,6 +72,20 @@ This law uses the NOT operation. The inversion law states that double inversion 
 Example:  !!A = A
 ```
 
+
+<div id="boolean">
+<div id="0_bool" class="switch" onClick="toggle_switch(0);"></div> 
+<select id="operator" onChange="show_result();">
+<option value="AND">AND</option>
+<option value="OR"> OR</option>
+<option value="EOR">EOR</option>
+<option value="NOT">NOT</option>
+</select> 
+<div id="1_bool" class="switch" onClick="toggle_switch(1);"></div> <div style="float: left; font-size: 60px; margin: 20px"> = </div> 
+<div id="result" class="bulb"></div>
+</div>
+
+
 ### Commutative law
 
 Any binary operation which satisfies the following expression is referred to as commutative operation.
@@ -111,3 +125,17 @@ The dual of the above Boolean function is
 Therefore, the complement of logical AND of two Boolean variables is equal to the logical OR of each complemented variable. Similarly, we can apply DeMorgan’s theorem for more than 2 Boolean variables also.
 
 
+
+
+
+<style>
+#boolean	{width: 585px; margin: auto;}
+#too_big		{display: none; font-style: italic; clear: left}
+#operator	{display: inline; width: 185px; float: left; background: transparent; border: 0; font-size: 60px; text-align: center; margin: 20px}
+.bulb		{float: left; background-image:url(graphics/bulb_off.png); width: 60px; height: 100px; margin: 5px}
+.switch		{float: left; background-image:url(graphics/switch_off.png); width: 87px; height: 90px; margin: 10px 5px 0px 5px}
+@media screen and (max-width: 600px) {
+	#boolean	{display: none}
+	#too_big	{display: block}
+}
+</style>

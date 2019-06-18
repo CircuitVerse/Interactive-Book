@@ -88,6 +88,7 @@ function do_bitwise()
     }
     document.getElementById("result").innerHTML = " = " + decimal;
 }
+
 function disableSelection(target)
 {
     if(typeof target.onselectstart!="undefined") //IE route
@@ -99,3 +100,65 @@ function disableSelection(target)
     target.style.cursor = "default";
 }
 
+var bit_bool = new Array(2);
+bit_bool[0] = false;
+bit_bool[1] = false;
+var image_cache1 = new Image();
+image_cache1.src = "../../assets/images/bulb_on.png";
+var image_cache2 = new Image();
+image_cache2.src = "../../assets/images/switch_on.png";
+var bit_display_bool = new Array(2);
+var switch_display = new Array(2);
+bit_display_bool[false] = "url(../../assets/images/bulb_off.png)";
+bit_display_bool[true] = "url(../../assets/images/bulb_on.png)";
+switch_display[false] = "url(../../assets/images/switch_off.png)";
+switch_display[true] = "url(../../assets/images/switch_on.png)";
+
+function toggle_switch(switch_no)
+{
+    document.getElementById(switch_no+"_bool").style.backgroundImage = switch_display[bit_bool[switch_no+"_bool"] = !bit_bool[switch_no+"_bool"]];
+    +
+    show_result();
+}
+
+
+
+function show_result()
+{
+    if(document.getElementById("operator").value == "NOT")
+    {
+        document.getElementById("0").style.backgroundImage = "none";
+    }
+    else
+    {
+        document.getElementById("0").style.backgroundImage = switch_display[bit_bool[0]];
+    }
+
+    switch(document.getElementById("operator").value)
+    {
+        case "AND":
+            document.getElementById("result").style.backgroundImage = bit_display_bool[bit_bool[0] && bit_bool[1]];
+            break;
+        case "OR":
+            document.getElementById("result").style.backgroundImage = bit_display_bool[bit_bool[0] || bit_bool[1]];
+            break;
+        case "EOR":
+            document.getElementById("result").style.backgroundImage = bit_display_bool[bit_bool[0] != bit_bool[1]];
+            break;
+        default:
+            document.getElementById("result").style.backgroundImage = bit_display_bool[!bit_bool[1]];
+    }
+}
+
+
+
+function disableSelection(target)
+{
+    if(typeof target.onselectstart!="undefined") //IE route
+        target.onselectstart=function(){return false;}
+    else if(typeof target.style.MozUserSelect!="undefined") //Firefox route
+        target.style.MozUserSelect="none";
+    else //All other route (ie: Opera)
+        target.onmousedown=function(){return false;}
+    target.style.cursor = "default";
+}
