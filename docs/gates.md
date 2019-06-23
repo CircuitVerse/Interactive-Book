@@ -114,9 +114,9 @@ The NAND gate behaves in the opposite fashion to and AND gate. You can think of 
 </div>
 <div id="3" class="switch" onClick="toggle_switch_2(3);"><div class="label">Downstairs</div></div> 
 </div>
-<div style="margin: 30px 0px 0px 10px; float: left"><img src="graphics/input.png" width="91" height="201" alt="Upstairs"></div>
+<div style="margin: 30px 0px 0px 10px; float: left"><img src="../assets/images/input.png" width="91" height="201" alt="Upstairs"></div>
 <div id="Q2" class="drop"></div><input id="R2" onChange="show_result_2(2);" type="hidden">
-<div style="margin: 28px 5px 0px 0px; float: left"><img src="graphics/output.png" width="91" height="201" alt="Downstairs"></div>
+<div style="margin: 28px 5px 0px 0px; float: left"><img src="../assets/images/output.png" width="91" height="201" alt="Downstairs"></div>
 <div id="result2" class="bulb"></div>
 </div></div>
 <div class="circuit">
@@ -127,9 +127,9 @@ The NAND gate behaves in the opposite fashion to and AND gate. You can think of 
 <div id="0" class="dark" onClick="toggle_switch_2(0);"><div class="label">Darkness</div></div>
 <div id="1" class="burglar" onClick="toggle_switch_2(1);"><div class="label">Movement</div></div> 
 </div>
-<div style="margin: 30px 0px 0px 10px; float: left"><img src="graphics/input.png" width="91" height="201" alt="Darkness"></div>
+<div style="margin: 30px 0px 0px 10px; float: left"><img src="../assets/images/input.png" width="91" height="201" alt="Darkness"></div>
 <div id="Q1" class="drop"></div><input id="R1" onChange="show_result_2(1);" type="hidden">
-<div style="margin: 28px 5px 0px 0px; float: left"><img src="graphics/output.png" width="91" height="201" alt="Movement"></div>
+<div style="margin: 28px 5px 0px 0px; float: left"><img src="../assets/images/output.png" width="91" height="201" alt="Movement"></div>
 <div id="result1" class="bulb"></div></div>
 </div></div>
 
@@ -137,10 +137,10 @@ The NAND gate behaves in the opposite fashion to and AND gate. You can think of 
 <style>
 .container		{width: 450px; margin: auto}
 .circuit		{display: inline-block; float: left; width: 48%; min-width: 450px; border: 1px solid black; padding: 0px 5px 0px 5px; height: 460px; margin: 2px}
-.bulb			{float: left; background-image:url(graphics/bulb_off.png); width: 60px; height: 100px; margin: 80px 0px 0px 5px}
-.dark			{background-image:url(graphics/dark_off.png); background-repeat: no-repeat; width: 100px; height: 115px; margin: 10px; padding: 1px}
-.burglar		{background-image:url(graphics/burglar_off.png); background-repeat: no-repeat; width: 100px; height: 115px; margin: 10px; padding: 1px}
-.switch			{background-image:url(graphics/switch_off.png); background-repeat: no-repeat; width: 87px; height: 105px; margin: 25px 5px 15px 5px; padding: 1px}
+.bulb			{float: left; background-image:url(../assets/images/bulb_off.png); width: 60px; height: 100px; margin: 80px 0px 0px 5px}
+.dark			{background-image:url(../assets/images/dark_off.png); background-repeat: no-repeat; width: 100px; height: 115px; margin: 10px; padding: 1px}
+.burglar		{background-image:url../assets/images/burglar_off.png); background-repeat: no-repeat; width: 100px; height: 115px; margin: 10px; padding: 1px}
+.switch			{background-image:url(../assets/images/switch_off.png); background-repeat: no-repeat; width: 87px; height: 105px; margin: 25px 5px 15px 5px; padding: 1px}
 .label			{margin-top: 100px; text-align: center; font-style:italic}
 .drop 			{height: 105px; width: 105px; padding: 5px; border: 1px dashed black; float: left; margin: 75px -9px 0 -22px}
 .tile			{margin-left: 5px; float:left; max-width: 105px; max-height: 105px; height: 15%; width: 15%}
