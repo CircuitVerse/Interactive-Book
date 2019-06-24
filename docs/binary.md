@@ -79,23 +79,4 @@ It is just like counting in decimal except we reach 10 much sooner.
 
 <h3>See how it is done in this little demonstration</h3>
 
-
-<div id="binary">
-<div class="column"><div class="column_heading">128</div><div id="7c" class="bit" onClick="toggle_bitc(7);">0</div></div>
-<div class="column"><div class="column_heading">64</div><div id="6c" class="bit" onClick="toggle_bitc(6);">0</div></div>
-<div class="column"><div class="column_heading">32</div><div id="5c" class="bit" onClick="toggle_bitc(5);">0</div></div>
-<div class="column"><div class="column_heading">16</div><div id="4c" class="bit" onClick="toggle_bitc(4);">0</div></div>
-<div class="column"><div class="column_heading">8</div><div id="3c" class="bit" onClick="toggle_bitc(3);">0</div></div>
-<div class="column"><div class="column_heading">4</div><div id="2c" class="bit" onClick="toggle_bitc(2);">0</div></div>
-<div class="column"><div class="column_heading">2</div><div id="1c" class="bit" onClick="toggle_bitc(1);">0</div></div>
-<div class="column"><div class="column_heading">1</div><div id="0c" class="bit" onClick="toggle_bitc(0);">0</div></div>
-<div id="decimal1">= 0</div>
-</div><br style="clear:left">
-
-<style>
-#binary			{width: 100%;}
-#decimal1		{font-family: Arial, Helvetica, sans-serif; float: left; font-size: 5vw; width: 21vw; margin: 2.7vw 0 0 2vw; float: left}
-.column			{font-family: Arial, Helvetica, sans-serif; float: left; text-align: center; width: calc((100% - 23.5vw) / 8)}
-.column_heading	{font-size: 1.6vw; color: #666666}
-.bit			{font-size: 5vw; background-color: #FFFFFF; color:#000000; border-radius: 1.3vw; margin: 0.25vw; border: 1px solid black}
-</style>
+{% include binary.html %}
