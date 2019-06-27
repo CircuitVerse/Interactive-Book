@@ -16,7 +16,7 @@
 title: CircuitVerse
 description: A Book to learn Digital Logic Design.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://circuitverse.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://learn.circuitverse.org" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink:
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
