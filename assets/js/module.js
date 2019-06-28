@@ -130,7 +130,7 @@ function show_result()
         case "OR":
             document.getElementById("result").style.backgroundImage = bit_display_bool[bit_bool[0] || bit_bool[1]];
             break;
-        case "EOR":
+        case "XOR":
             document.getElementById("result").style.backgroundImage = bit_display_bool[bit_bool[0] != bit_bool[1]];
             break;
         default:
@@ -193,7 +193,7 @@ function show_result_2(circuit_no)
         case "NOR":
             document.getElementById("result"+circuit_no).style.backgroundImage = bit_display_2[!(bit[a] || bit_2[b])];
             break;
-        case "EOR":
+        case "XOR":
             document.getElementById("result"+circuit_no).style.backgroundImage = bit_display_2[bit[a] != bit_2[b]];
             break;
         case "NXOR":

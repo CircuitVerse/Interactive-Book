@@ -126,7 +126,7 @@ add 1               +           1
 <div id="operators"><select id="operator" onChange="change_operator();">
   <option value="AND">AND</option>
   <option value="OR"> OR</option>
-  <option value="EOR">EOR</option>
+  <option value="XOR">XOR</option>
 </select>
 <div class="opcol">AND</div>
 <div class="opcol">AND</div>
