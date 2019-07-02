@@ -171,8 +171,11 @@ switch_display_2[3][true] = "url(../assets/images/switch_on.png)";
 
 function toggle_switch_2(switch_no)
 {
-    document.getElementById(switch_no).style.backgroundImage = switch_display[switch_no][bit_2[switch_no] = !bit_2[switch_no]];
-    if(switch_no < 2) { show_result_2(1); } else { show_result_2(2); }
+    document.getElementById(switch_no + 'd').style.backgroundImage = switch_display_2[switch_no][bit_2[switch_no] = !bit_2[switch_no]];
+    if(switch_no < 2)
+        { show_result_2(1); }
+    else
+        { show_result_2(2); }
 }
 
 function show_result_2(circuit_no)
