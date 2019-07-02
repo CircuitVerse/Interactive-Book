@@ -126,6 +126,16 @@ F(AB) = A'B' + A'B + AB' + AB
 
 We can clearly see, if we set `F(1, 0) = 1`, we get a true value for any input. Therefore, for the purposes of variable simplification, we can simply let `F(1, 0) = 1` thus implying `F(AB) = 1`.
 
+
+## Let us try this interactive truth table generator for better understanding
+
+---
+
+{% include truth_table.html %}
+
+
+---
+
 ## Methods to simplify the boolean function
 
 The methods used for simplifying the Boolean function are as follows −

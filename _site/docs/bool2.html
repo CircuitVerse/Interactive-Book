@@ -1136,6 +1136,7 @@
   <li><a href="#sum-of-product-expressions-sop" id="markdown-toc-sum-of-product-expressions-sop">Sum of Product Expressions (SOP)</a></li>
   <li><a href="#example-algebraic-simplification" id="markdown-toc-example-algebraic-simplification">Example Algebraic Simplification</a></li>
   <li><a href="#undefined-input--dont-cares" id="markdown-toc-undefined-input--dont-cares">Undefined Input &amp; Don’t Cares</a></li>
+  <li><a href="#let-us-try-this-interactive-truth-table-generator-for-better-understanding" id="markdown-toc-let-us-try-this-interactive-truth-table-generator-for-better-understanding">Let us try this interactive truth table generator for better understanding</a></li>
   <li><a href="#methods-to-simplify-the-boolean-function" id="markdown-toc-methods-to-simplify-the-boolean-function">Methods to simplify the boolean function</a></li>
 </ol>
 
@@ -1424,6 +1425,105 @@ F(AB) = A'B' + A'B + AB' + AB
 </code></pre></div></div>
 
 <p>We can clearly see, if we set <code class="highlighter-rouge">F(1, 0) = 1</code>, we get a true value for any input. Therefore, for the purposes of variable simplification, we can simply let <code class="highlighter-rouge">F(1, 0) = 1</code> thus implying <code class="highlighter-rouge">F(AB) = 1</code>.</p>
+
+<h2 id="let-us-try-this-interactive-truth-table-generator-for-better-understanding">Let us try this interactive truth table generator for better understanding</h2>
+
+<hr />
+
+<main id="main">
+    <!-- Input -->
+    <div class="align-center container">
+        <h1>Truth Table Generator</h1>
+        <p>Enter your boolean logic expression in the following format:<br />
+            AND = <span class="example">AB</span>&emsp;
+            OR = <span class="example">A+B</span>&emsp;
+            NOT = <span class="example">A'</span><br />
+            NAND = <span class="example">(AB)'</span>
+            NOR = <span class="example">(A+B)'</span></p>
+        <input autofocus="" id="expression" oninput="build()" placeholder="Example: (AB)'C+D" type="text" />
+        <noscript>
+            <p>This app requires JavaScript to run. Please enable JavaScript and refresh this page.</p>
+        </noscript>
+    </div>
+    <br />
+    <!-- Output -->
+    <div class="align-center container">
+        <div id="table-placeholder"></div>
+    </div>
+</main>
+
+<style>
+
+    * {
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        text-transform: none;
+        font-weight: normal;
+        font-variant: normal;
+    }
+
+    body {
+        padding: 50px;
+    }
+
+    h1 {
+        color: black;
+        margin: 0;
+    }
+
+    input {
+        width: 500px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 8px;
+        font-family: 'Source Code Pro', monospace;
+        max-width: 100%;
+    }
+
+    p {
+        color: #444;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin: 0 auto;
+    }
+
+    th, td {
+        font-family: 'Source Code Pro', monospace;
+        letter-spacing: 1em;
+        padding: 0.5em 0 0.5em 1em;
+        text-align: center;
+    }
+
+    td {
+        border: 1px solid #ddd;
+    }
+
+    .align-center {
+        text-align: center;
+    }
+
+    .example {
+        background-color: #eee;
+        color: black;
+        font-family: 'Source Code Pro', monospace;
+        padding: 0 0.3em;
+    }
+
+    @media screen and (max-width: 768px) {
+        body {
+            padding: 10px;
+        }
+    }
+</style>
+
+<hr />
 
 <h2 id="methods-to-simplify-the-boolean-function">Methods to simplify the boolean function</h2>
 
