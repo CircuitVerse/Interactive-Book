@@ -185,22 +185,22 @@ function show_result_2(circuit_no)
     switch(document.getElementById("R"+circuit_no).value)
     {
         case "AND":
-            document.getElementById("result"+circuit_no).style.backgroundImage = bit_display_2[bit[a] && bit_2[b]];
+            document.getElementById("result"+circuit_no).style.backgroundImage = bit_display_2[bit_2[a] && bit_2[b]];
             break;
         case "OR":
-            document.getElementById("result"+circuit_no).style.backgroundImage = bit_display_2[bit[a] || bit_2[b]];
+            document.getElementById("result"+circuit_no).style.backgroundImage = bit_display_2[bit_2[a] || bit_2[b]];
             break;
         case "NAND":
-            document.getElementById("result"+circuit_no).style.backgroundImage = bit_display_2[!(bit[a] && bit_2[b])];
+            document.getElementById("result"+circuit_no).style.backgroundImage = bit_display_2[!(bit_2[a] && bit_2[b])];
             break;
         case "NOR":
-            document.getElementById("result"+circuit_no).style.backgroundImage = bit_display_2[!(bit[a] || bit_2[b])];
+            document.getElementById("result"+circuit_no).style.backgroundImage = bit_display_2[!(bit_2[a] || bit_2[b])];
             break;
         case "XOR":
-            document.getElementById("result"+circuit_no).style.backgroundImage = bit_display_2[bit[a] != bit_2[b]];
+            document.getElementById("result"+circuit_no).style.backgroundImage = bit_display_2[bit_2[a] != bit_2[b]];
             break;
         case "NXOR":
-            document.getElementById("result"+circuit_no).style.backgroundImage = bit_display_2[!(bit[a] != bit_2[b])];
+            document.getElementById("result"+circuit_no).style.backgroundImage = bit_display_2[!(bit_2[a] != bit_2[b])];
             break;
         default:
             document.getElementById("result"+circuit_no).style.backgroundImage = bit_display_2[false];
@@ -210,8 +210,10 @@ function show_result_2(circuit_no)
 
 function receive_drop(e)
 {
-    if(e.target.tagName == "IMG") { var drop_area = e.target.parentNode.id; } else { var drop_area = e.target.id; }
-    var answer_area = "R" + drop_area.substring(1);
+    if(e.target.tagName == "IMG")
+        { var drop_area = e.target.parentNode.id; }
+    else { var drop_area = e.target.id; }
+        var answer_area = "R" + drop_area.substring(1);
     e.preventDefault();
     if(e.dataTransfer.getData('Text') != null && e.dataTransfer.getData('Text').substring(0,4) != "http")
     {
@@ -226,7 +228,10 @@ function receive_drop(e)
 
 function clicked(e)
 {
-    if(e.target.tagName == "IMG") { var drop_area = e.target.parentNode.id; } else { var drop_area = e.target.id; }
+    if(e.target.tagName == "IMG")
+        { var drop_area = e.target.parentNode.id; }
+    else
+        { var drop_area = e.target.id; }
     var answer_area = "R" + drop_area.substring(1);
     e.preventDefault();
     if(document.getElementById("clipboard").innerHTML > "")
