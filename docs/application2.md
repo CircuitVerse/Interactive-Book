@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Applications
+title: Basic Applications
 nav_order: 3
 ---
 # Basic Apllications
