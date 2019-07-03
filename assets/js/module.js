@@ -260,7 +260,7 @@ function decode()
 
 function update_display()
 {
-    var values = document.querySelectorAll('input[type="text"]');
+    var values = document.querySelectorAll('input[type="text_2"]');
     var pixels = document.querySelectorAll('.pixel');
 
     for(var i = 0; i<64; i+=8)
