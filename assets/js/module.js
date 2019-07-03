@@ -228,3 +228,61 @@ function build() {
         }
     }
 }
+
+
+var subject_name = new Array("English", "Maths", "Science", "Computing", "History", "Geography", "French", "German");
+
+function decode()
+{
+    if(isNaN(document.getElementById("homework").value) | document.getElementById("homework").value < 0 | document.getElementById("homework").value > 255)
+    {
+        alert("The code must be a number between 0 and 255");
+    }
+    else
+    {
+        var subject_text;
+        if(document.getElementById("homework").value == 0)
+        {
+            subject_text = "<p>There is no homework today.</p>";
+        }
+        else
+        {
+            subject_text = "<p>Today's homework:</p><ul>";
+            for(var i = 0; i<=78; i++)
+            {
+                if(document.getElementById("homework").value & Math.pow(2, i)) { subject_text = subject_text + "<li>" + subject_name[i] + "</li>"; }
+            }
+            subject_text = subject_text + "</ul>";
+        }
+        document.getElementById("subjects").innerHTML = subject_text;
+    }
+}
+
+function update_display()
+{
+    var values = document.querySelectorAll('input[type="text"]');
+    var pixels = document.querySelectorAll('.pixel');
+
+    for(var i = 0; i<64; i+=8)
+    {
+        if(isNaN(values[i/8].value) || values[i/8].value > 255 || values[i/8].value < 0)
+        {
+            alert("Only enter numbers between 0 and 255.");
+            values[i/8].select();
+        }
+        else
+        {
+            for(var n = 0; n<8; n++)
+            {
+                if(values[i/8].value & Math.pow(2,n))
+                {
+                    pixels[i+(7-n)].style.backgroundColor = "#404040";
+                }
+                else
+                {
+                    pixels[i+(7-n)].style.backgroundColor = "#F0F0F0";
+                }
+            }
+        }
+    }
+}
