@@ -368,6 +368,39 @@
 
           
           <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/kmapi.html" class="navigation-list-link">Interactive Karnaugh Map</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
             <g id="CourseProfile" stroke="none" stroke-width="1" fill="#026e57" fill-rule="evenodd">
               <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="none">
                 <circle id="Oval-10" cx="140.5" cy="357" r="5">
@@ -522,6 +555,8 @@
                 
                   
                 
+                  
+                
               </ul>
             
           </li>
@@ -624,6 +659,8 @@
                       <a href="http://localhost:4000/docs/MSI/encoder.html" class="navigation-list-link">Encoder</a>
                       
                     </li>
+                  
+                
                   
                 
                   
@@ -889,6 +926,8 @@
                 
                   
                 
+                  
+                
               </ul>
             
           </li>
@@ -995,6 +1034,8 @@
                       <a href="http://localhost:4000/docs/registers/pp.html" class="navigation-list-link">Parallel Input Parallel Output</a>
                       
                     </li>
+                  
+                
                   
                 
                   
@@ -1339,75 +1380,6 @@ F(ABCD) = <span class="p">[</span><span class="nv">0111, 0110, 1111, 1110</span>
 <p>Both groupings have the same size, and are the same dimension. However, upon reaching <code class="highlighter-rouge">F(1110)</code>, another grouping needs to be instantiated, in which case if the first candidate grouping was created then we made a group that was not neccessary increasing the size of our SOP expression.</p>
 
 <p>This illustrates the idea that this is a greedy algorithm, and does not always return the most simplified SOP expression. In later sections, algorithms illustrating a globally optimal algorithm will be discussed.</p>
-
-<script language="JavaScript" type="text/javascript">
-    var karnaugh = -1;
-    var qmc = -1;
-    function run() {
-        qmc = new QuineMcCluskey("fakeDivId", 2, 4, 0);
-        //qmc = new QuineMcCluskey("myQmcDisplay", 2, 4, 0); // enable for debugging
-        qmc.init();
-
-        karnaugh = new KarnaughMap("myKarnaughMap", qmc);
-        karnaugh.init();
-    }
-
-    function noOfVarsChanged() {
-        var d = document.getElementById("noOfVarsChanged_id").value;
-        karnaugh.setNoOfVars(d);
-    }
-
-    function dontCareChanged() {
-        var d = document.getElementById("select_dontCare").value;
-        karnaugh.allowDontCares(d);
-    }
-
-    function dontShowChanged() {
-        var d = document.getElementById("select_dontShow").value;
-        karnaugh.setDontShowResult(d);
-    }
-
-</script>
-
-<style type="text/css">
-    .qmcMathFont{font-family:"Times New Roman",Georgia,Serif;}
-</style>
-
-<body onload="run();">
-
-
-<h1>Interactive Karnaugh Map </h1>
-<p>This interactive Karnaugh-Veitch map represents the function  <span class="qmcMathFont"><i>y</i>&nbsp;=&nbsp;f(<i>x</i><sub><small>n</small></sub>,...,<i>x</i><sub><small>1</small></sub>, <i>x</i><sub><small>0</small></sub>)</span>.
-    You can manually edit this function by clicking on the cells of the map. Alternatively, you can generate a random function by pressing the "Random example" button.</p>
-<p>
-    <button type="button" onclick="karnaugh.genRandom();">Random example</button> <button type="button" onclick="karnaugh.clear();">Reset</button><br />
-    Number of input variables:
-    <select onchange="noOfVarsChanged();" id="noOfVarsChanged_id">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4" selected="">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-    </select>&nbsp;&nbsp;&nbsp;&nbsp; Allow Don’t-Care:
-    <select onchange="dontCareChanged();" id="select_dontCare">
-        <option value="0" selected="">no</option>
-        <option value="1">Yes</option>
-    </select>&nbsp;&nbsp;&nbsp;&nbsp; Hide result:
-    <select onchange="dontShowChanged();" id="select_dontShow">
-        <option value="0" selected="">no</option>
-        <option value="1">Yes</option>
-    </select>  <br />
-</p>
-
-
-<div id="myKarnaughMap"> </div>
-
-<div id="myQmcDisplay"></div>
-
-</body>
 
 
 
