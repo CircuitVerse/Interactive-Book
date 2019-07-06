@@ -1,10 +1,12 @@
 
 <body onload="run();">
 
-<p>This interactive Karnaugh-Veitch map represents the function  <span class="qmcMathFont"><i>y</i>&nbsp;=&nbsp;f(<i>x</i><sub><small>n</small></sub>,...,<i>x</i><sub><small>1</small></sub>, <i>x</i><sub><small>0</small></sub>)</span>.
+<p>This interactive Karnaugh-Veitch map represents the function  <i>y</i>&nbsp;=&nbsp;f(<i>x</i><sub><small>n</small></sub>,...,<i>x</i><sub><small>1</small></sub>, <i>x</i><sub><small>0</small></sub>).
     You can manually edit this function by clicking on the cells of the map. Alternatively, you can generate a random function by pressing the "Random example" button.</p>
 <p>
-    <button type="button" onclick="karnaugh.genRandom();">Random example</button> <button type="button" onclick="karnaugh.clear();">Reset</button><br>
+    <button type="button" onclick="karnaugh.genRandom();">Random example</button>
+    <button type="button" onclick="karnaugh.clear();">Reset</button>
+    <br>
     Number of input variables:
     <select onchange="noOfVarsChanged();" id="noOfVarsChanged_id">
         <option value="1">1</option>
