@@ -181,3 +181,6 @@ Both groupings have the same size, and are the same dimension. However, upon rea
 
 This illustrates the idea that this is a greedy algorithm, and does not always return the most simplified SOP expression. In later sections, algorithms illustrating a globally optimal algorithm will be discussed.
 
+
+
+{% include kmap.html %}
