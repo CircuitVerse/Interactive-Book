@@ -1,5 +1,5 @@
 ---
-layout: default2
+layout: kmap
 title: Interactive Karnaugh Map
 nav_order: 7
 ---
