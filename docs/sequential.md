@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Digital Sequential Circuits
-nav_order: 9
+nav_order: 11
 ---
 
 # Digital Sequential Circuits

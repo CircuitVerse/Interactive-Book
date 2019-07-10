@@ -163,7 +163,7 @@
   "24": {
     "id": "24",
     "title": "Interactive Karnaugh Map",
-    "content": "Interactive Karnaugh Map This interactive Karnaugh-Veitch map represents the function y&nbsp;=&nbsp;f(xn,...,x1, x0). You can manually edit this function by clicking on the cells of the map. Alternatively, you can generate a random function by pressing the &quot;Random example&quot; button. Random example Reset Number of input variables: 1 2 3 4 5 6 7 8 &nbsp;&nbsp;&nbsp;&nbsp; Allow Don’t-Care: no Yes &nbsp;&nbsp;&nbsp;&nbsp; Hide result: no Yes",
+    "content": "Interactive Karnaugh Map This interactive Karnaugh map represents the function Y&nbsp;=&nbsp;f(xn,...,x1, x0). You can manually edit this function by clicking on the cells of the map. Alternatively, you can generate a random function by pressing the &quot;Random example&quot; button. Random example Reset Number of input variables: 1 2 3 4 5 6 7 8 &nbsp;&nbsp;&nbsp;&nbsp; Allow Don’t-Care: no Yes &nbsp;&nbsp;&nbsp;&nbsp; Hide result: no Yes",
     "url": "http://localhost:4000/docs/kmapi.html",
     "relUrl": "/docs/kmapi.html"
   },
