@@ -45,3 +45,5 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 ```yaml
           Q(t+1)=JQ(t)′+K′Q(t)
 ```
+
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/12263" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
