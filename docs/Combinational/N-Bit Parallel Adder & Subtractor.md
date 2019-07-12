@@ -44,3 +44,6 @@ If A > B then Cout = 0 and the result of binary form (A-B) then Cout = 1 and the
 
 <div style="text-align:center"><img src="../../assets/images/fourbitsubstractor_blockdiagram.jpg" /></div>
 
+
+## 8 Bit Full Adder And Subtractor   
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/2018" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
