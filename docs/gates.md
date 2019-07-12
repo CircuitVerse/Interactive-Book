@@ -32,6 +32,8 @@ The NOT gate is also known as an inverter because the output is the exact opposi
 | 1            | 0            | 
 
 
+<iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/738" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+
 ## AND gate
 
 The AND gate has two inputs and one output. The output is 1 if both inputs are 1, and for all other cases the output is 0.
@@ -42,6 +44,9 @@ The AND gate has two inputs and one output. The output is 1 if both inputs are 1
 | 0            | 1            | 0      |
 | 1            | 0            | 0      |
 | 1            | 1            | 1      |
+
+<iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/734" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+
 
 
 ## OR gate
@@ -55,6 +60,7 @@ The OR gate has two inputs and one output. If at least one of the inputs is 1, t
 | 1            | 0            | 1      |
 | 1            | 1            | 1      |
 
+<iframe width="100%" height="220px"  src="https://circuitverse.org/simulator/embed/737" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ## NAND gate
 
@@ -67,6 +73,7 @@ The NAND gate behaves in the opposite fashion to and AND gate. You can think of 
 | 1            | 0            | 1      |
 | 1            | 1            | 0      |
 
+<iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/741" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 ## NOR gate
 
 The NAND gate behaves in the opposite fashion to and AND gate. You can think of it as an AND gate followed immediately by a NOT gate. Its output is 0 when the two inputs are 1, and for all other cases, its output is 0. The name NAND comes from joining NOT and AND. The symbol for NAND is the same as that for AND except for the addition of a small circle on the right side.
@@ -77,6 +84,8 @@ The NAND gate behaves in the opposite fashion to and AND gate. You can think of 
 | 0            | 1            | 0      |
 | 1            | 0            | 0      |
 | 1            | 1            | 0      |
+
+<iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/742" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 
 ## XOR gate
@@ -90,6 +99,6 @@ The NAND gate behaves in the opposite fashion to and AND gate. You can think of 
 | 1            | 0            | 1      |
 | 1            | 1            | 0      |
 
+<iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/740" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 
-{% include gates.html %}
