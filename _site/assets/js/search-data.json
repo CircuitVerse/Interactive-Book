@@ -114,7 +114,7 @@
   "17": {
     "id": "17",
     "title": "Full Adder",
-    "content": "Full Adder Full adder is developed to overcome the drawback of Half Adder circuit. It can add two one-bit numbers A and B, and carry c. The full adder is a three input and two output combinational circuit. Block Diagram Truth Table Circuit Diagram",
+    "content": "Full Adder Full adder is developed to overcome the drawback of Half Adder circuit. It can add two one-bit numbers A and B, and carry c. The full adder is a three input and two output combinational circuit. Block Diagram Truth Table Circuit Diagram Full adder from 2 Half Adder Ripple Carry Adder",
     "url": "http://localhost:4000/docs/Combinational/full_adder.html",
     "relUrl": "/docs/Combinational/full_adder.html"
   },

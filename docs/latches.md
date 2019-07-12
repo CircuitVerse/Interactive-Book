@@ -56,6 +56,10 @@ The following table shows the state table of **SR latch**.
 
 Therefore, SR Latch performs three types of functions such as Hold, Set & Reset based on the input conditions.
 
+
+
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/13774" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+
 ## D Latch
 
 There is one drawback of SR Latch. That is the next state value can’t be predicted when both the inputs S & R are one. So, we can overcome this difficulty by D Latch. It is also called as Data Latch. The circuit diagram of D Latch is shown in the following figure.
@@ -80,3 +84,6 @@ The following table shows the state table of D latch.
 Therefore, D Latch Hold the information that is available on data input, D. That means the output of D Latch is sensitive to the changes in the input, D as long as the enable is High.
 
 In this module, we implemented various Latches by providing the cross coupling between NOR gates. Similarly, you can implement these Latches using NAND gates.
+
+
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/4276" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
