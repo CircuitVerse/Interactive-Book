@@ -33,3 +33,7 @@ E is called the strobe or enable input which is useful for the cascading. It is 
 {: .no_toc }
 
 <div style="text-align:center"><img src="../../assets/images/two_onemultiplexer_truthtable.jpg" /></div>
+
+
+
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/746" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
