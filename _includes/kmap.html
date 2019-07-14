@@ -1,4 +1,42 @@
 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=240" />
+    <script src="../assets/js/module.js"></script>
+    <script language="JavaScript" type="text/javascript">
+        var karnaugh = -1;
+        var qmc = -1;
+        function run() {
+            qmc = new QuineMcCluskey("fakeDivId", 2, 4, 0);
+            //qmc = new QuineMcCluskey("myQmcDisplay", 2, 4, 0); // enable for debugging
+            qmc.init();
+
+            karnaugh = new KarnaughMap("myKarnaughMap", qmc);
+            karnaugh.init();
+        }
+
+        function noOfVarsChanged() {
+            var d = document.getElementById("noOfVarsChanged_id").value;
+            karnaugh.setNoOfVars(d);
+        }
+
+        function dontCareChanged() {
+            var d = document.getElementById("select_dontCare").value;
+            karnaugh.allowDontCares(d);
+        }
+
+        function dontShowChanged() {
+            var d = document.getElementById("select_dontShow").value;
+            karnaugh.setDontShowResult(d);
+        }
+
+    </script>
+    <style type="text/css">
+        .qmcMathFont{font-family:"Times New Roman",Georgia,Serif;font-size:30px}
+    </style>
+</head>
 <body onload="run();">
 
 <p>This interactive Karnaugh map represents the function  <i>Y</i>&nbsp;=&nbsp;f(<i>x</i><sub><small>n</small></sub>,...,<i>x</i><sub><small>1</small></sub>, <i>x</i><sub><small>0</small></sub>).
@@ -37,4 +75,4 @@
 
 
 </body>
-
+</html>

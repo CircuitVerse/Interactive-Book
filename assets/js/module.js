@@ -1330,7 +1330,7 @@ function QuineMcCluskey(parentDivId, columns, language) {
                 myCell.innerHTML = "<i>x</i><sub><small>" + (this.cols-2-j) + "</small></sub>";
                 myCell.setAttribute('class', 'qmcHeaderX qmcBit');
             } else {
-                myCell.innerHTML = "<i>y</i>";
+                myCell.innerHTML = "<i>Y</i>";
                 myCell.setAttribute('class', 'qmcHeaderY qmcBit');
             }
             myRow.appendChild(myCell);
@@ -1458,7 +1458,7 @@ function QuineMcCluskey(parentDivId, columns, language) {
 
 
         var termDiv = document.createElement('div');
-        termDiv.innerHTML = "<p><strong>" + labels['minExp']+ ":</strong> </p> <p ><span class='qmcMathFont'><i>y</i>&nbsp;=&nbsp;" + this.data.coloredMinimalTerm; +"</span></p>";
+        termDiv.innerHTML = "<p><strong>" + labels['minExp']+ ":</strong> </p> <p ><span class='qmcMathFont'><i>Y</i>&nbsp;=&nbsp;" + this.data.coloredMinimalTerm; +"</span></p>";
         myInnerDiv.appendChild(termDiv);
         myDiv.appendChild(myInnerDiv);
     };
@@ -2265,9 +2265,9 @@ function KarnaughMap(parentDivId, qmcRef) {
         var termStyle = resultStyle + 'max-width:' + data.fieldPerLine * data.fieldWidth + 'px;';
         overlays[data.noOfVars + 1].setAttribute('style', termStyle);
         if(!dontShowResult) {
-            overlays[data.noOfVars + 1].innerHTML = "<span class='qmcMathFont'><i>y</i>&nbsp;=&nbsp;" + qmc.data.coloredMinimalTerm + "</span></p>";
+            overlays[data.noOfVars + 1].innerHTML = "<span class='qmcMathFont'><i>Y</i>&nbsp;=&nbsp;" + qmc.data.coloredMinimalTerm + "</span></p>";
         }else{
-            overlays[data.noOfVars + 1].innerHTML = "<span class='qmcMathFont'><i>y</i>&nbsp;=&nbsp;" + "<span style='color:rgb(255,0,0)'>hidden</span>"+ "</span></p>";
+            overlays[data.noOfVars + 1].innerHTML = "<span class='qmcMathFont'><i>Y</i>&nbsp;=&nbsp;" + "<span style='color:rgb(255,0,0)'>hidden</span>"+ "</span></p>";
         }
     };
 
@@ -2338,9 +2338,8 @@ function KarnaughMap(parentDivId, qmcRef) {
         }
 
         mx = e.pageX - offsetX;
-        my = e.pageY - offsetY;
-
-        console.log(mx + " " + my);
+        my = e.pageY - offsetY + document.getElementById("scrollcount").scrollTop;
+        console.log(mx + " " + my + " " + document.getElementById("scrollcount").scrollTop );
         return {x: mx, y: my};
     }
 }
