@@ -1238,11 +1238,28 @@
           </div>
           
           
-            <ul class="list-style-none text-small mt-md-1 mb-md-1 pb-4 pb-md-0 js-aux-nav aux-nav">
-              
-                <li class="d-inline-block my-0"><a href="//github.com/CircuitVerse">Circuitverse on GitHub</a></li>
-              
-            </ul>
+          <ul class="list-style-none text-small mt-md-1 mb-md-1 pb-4 pb-md-0 js-aux-nav aux-nav">
+            <li class="d-inline-block my-0 mr-2 btn js-toggle-dark-mode"><a>Dark Mode</a></li>
+            
+            <li class="d-inline-block my-0 btn"><a href="//github.com/CircuitVerse">Circuitverse on GitHub</a></li>
+            
+          </ul>
+
+
+          <script>
+            const toggleDarkMode = document.querySelector('.js-toggle-dark-mode')
+            const cssFile = document.querySelector('[rel="stylesheet"]')
+            const originalCssRef = cssFile.getAttribute('href')
+            const darkModeCssRef = originalCssRef.replace('just-the-docs.css', 'dark-mode-preview.css')
+
+            addEvent(toggleDarkMode, 'click', function(){
+              if (cssFile.getAttribute('href') === originalCssRef) {
+                cssFile.setAttribute('href', darkModeCssRef)
+              } else {
+                cssFile.setAttribute('href', originalCssRef)
+              }
+            })
+          </script>
           
         </div>
       </div>
