@@ -102,7 +102,7 @@ add 1               +           1
 ```
 
 
-# Bitwise Operators
+## Bitwise Operators
 
 |Operator   |    Explanation   |
 |:---------:|:----------------:|
@@ -110,4 +110,6 @@ add 1               +           1
 |op1 or op2 | The OR operator compares two bits and generates a result of 1 if the bits are complementary; otherwise, it returns 0.|
 |op1^ op2 | The EXCLUSIVE-OR operator compares two bits and returns 1 if either of the bits are 1 and it gives 0 if both bits are 0 or 1.|
 |~op1 | The COMPLEMENT operator is used to invert all of the bits of the operand.|
+
+
 {% include binary2.html %}
