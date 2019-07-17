@@ -64,7 +64,7 @@ It is just like counting in decimal except we reach 10 much sooner.
 
 | Binary     | Explanation   |
 |:----------:|:-------------:|
-| 0          | We start a    |
+| 0          | We start at 0    |
 | 1          | Then 1        |
 | **1**0     | Now start back at 0 again, **but add 1 on the left**|
 | 11         | 1 more        |
@@ -78,5 +78,6 @@ It is just like counting in decimal except we reach 10 much sooner.
 
 
 <h3>See how it is done in this little demonstration</h3>
+*Click on the box to toggle between 0 and 1*
 
 {% include binary.html %}
