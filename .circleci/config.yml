@@ -1,0 +1,26 @@
+defaults: &defaults
+  working_directory: ~/repo
+version: 2
+jobs: # a collection of steps
+  build:
+    <<: *defaults
+    docker:
+      - image: circleci/ruby:2.5
+    environment:
+      BUNDLE_PATH: ~/repo/vendor/bundle
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - cv-interactive-book-{{ checksum "Gemfile.lock" }}
+            - cv-interactive-book-
+      - run:
+          name: Bundle Install
+          command: bundle check || bundle install
+      - save_cache:
+          key: cv-interactive-book-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+      - run:
+          name: Jekyll build
+          command: bundle exec jekyll build
