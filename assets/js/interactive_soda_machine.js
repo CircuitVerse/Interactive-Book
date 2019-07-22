@@ -96,7 +96,7 @@ soda_machine_fsm.update = function() {
 }
 
 soda_machine_fsm.initialize = function() {
-  soda_machine_fsm.paper = Raphael("soda_machine_fsm_canvas",900,300);
+  soda_machine_fsm.paper = Raphael("soda_machine_fsm_canvas",1200,400);
   with(soda_machine_fsm){
     paper.setViewBox(0,-25,950,400,0);
 	fsm_circles = new Array();
@@ -387,7 +387,7 @@ soda_machine_graphics.create10Coin = function (x0,y0) {
 };
 
 soda_machine_graphics.createSoda = function (x0,y0) {
-  return soda_machine_graphics.paper.image('/images/SodaCan.jpg',x0,y0,50,30);;
+  return soda_machine_graphics.paper.image("../assets/images/SodaCan.jpg",x0,y0,50,30);
 };
 
 soda_machine_graphics.dropChange = function () {
