@@ -42,7 +42,7 @@
 <meta property="og:url" content="http://localhost:4000/docs/bool.html" />
 <meta property="og:site_name" content="CircuitVerse" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/docs/bool.html","headline":"Boolean Algebra","description":"A Book to learn Digital Logic Design.","@type":"WebPage","@context":"https://schema.org"}</script>
+{"description":"A Book to learn Digital Logic Design.","headline":"Boolean Algebra","@type":"WebPage","url":"http://localhost:4000/docs/bool.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -146,14 +146,6 @@
     
       
         
-      
-    
-      
-        
-      
-    
-      
-        
         <div class="flex-container">
         <div class="connector">
 
@@ -182,6 +174,14 @@
         </div>
 
 
+        
+      
+    
+      
+        
+      
+    
+      
         
       
     
@@ -277,10 +277,6 @@
     
       
         
-      
-    
-      
-        
         <div class="flex-container">
         <div class="connector">
 
@@ -358,6 +354,14 @@
     
       
         
+      
+    
+      
+        
+      
+    
+      
+        
         <div class="flex-container">
         <div class="connector">
 
@@ -386,10 +390,6 @@
         </div>
 
 
-        
-      
-    
-      
         
       
     
@@ -513,8 +513,6 @@
                   
                 
                   
-                
-                  
                     <li class="navigation-list-item ">
                       
                       <a href="http://localhost:4000/docs/Combinational/full_adder.html" class="navigation-list-link">Full Adder</a>
@@ -523,19 +521,19 @@
                   
                 
                   
+                
+                  
+                
+                  
+                
+                  
+                
+                  
                     <li class="navigation-list-item ">
                       
                       <a href="http://localhost:4000/docs/Combinational/half_sub.html" class="navigation-list-link">Half Subtractors</a>
                       
                     </li>
-                  
-                
-                  
-                
-                  
-                
-                  
-                
                   
                 
                   
@@ -566,6 +564,8 @@
                       <a href="http://localhost:4000/docs/Combinational/N-Bit%20Parallel%20Adder%20&%20Subtractor.html" class="navigation-list-link">N-Bit Parallel Adder & Subtractor</a>
                       
                     </li>
+                  
+                
                   
                 
                   
@@ -639,10 +639,6 @@
                   
                 
                   
-                
-                  
-                
-                  
                     <li class="navigation-list-item ">
                       
                       <a href="http://localhost:4000/docs/MSI/mux.html" class="navigation-list-link">Multiplexers</a>
@@ -655,21 +651,17 @@
                   
                 
                   
+                
+                  
+                
+                  
+                
+                  
                     <li class="navigation-list-item ">
                       
                       <a href="http://localhost:4000/docs/MSI/demux.html" class="navigation-list-link">Demultiplexers</a>
                       
                     </li>
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
                   
                 
                   
@@ -693,11 +685,19 @@
                   
                 
                   
+                
+                  
+                
+                  
+                
+                  
                     <li class="navigation-list-item ">
                       
                       <a href="http://localhost:4000/docs/MSI/encoder.html" class="navigation-list-link">Encoder</a>
                       
                     </li>
+                  
+                
                   
                 
                   
@@ -892,15 +892,13 @@
                   
                 
                   
+                
+                  
                     <li class="navigation-list-item ">
                       
                       <a href="http://localhost:4000/docs/flipflop/d_flipflop.html" class="navigation-list-link">D Flip-Flop</a>
                       
                     </li>
-                  
-                
-                  
-                
                   
                 
                   
@@ -926,21 +924,23 @@
                   
                 
                   
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
                     <li class="navigation-list-item ">
                       
                       <a href="http://localhost:4000/docs/flipflop/t_flipflop.html" class="navigation-list-link">T Flip-Flop</a>
                       
                     </li>
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
                   
                 
                   
@@ -1018,13 +1018,15 @@
                   
                 
                   
+                
+                  
+                
+                  
                     <li class="navigation-list-item ">
                       
                       <a href="http://localhost:4000/docs/registers/ss.html" class="navigation-list-link">Serial Input Serial Output</a>
                       
                     </li>
-                  
-                
                   
                 
                   
@@ -1054,6 +1056,8 @@
                   
                 
                   
+                
+                  
                     <li class="navigation-list-item ">
                       
                       <a href="http://localhost:4000/docs/registers/ps.html" class="navigation-list-link">Parallel Input Serial Output</a>
@@ -1070,17 +1074,13 @@
                   
                 
                   
-                
-                  
-                
-                  
-                
-                  
                     <li class="navigation-list-item ">
                       
                       <a href="http://localhost:4000/docs/registers/pp.html" class="navigation-list-link">Parallel Input Parallel Output</a>
                       
                     </li>
+                  
+                
                   
                 
                   
@@ -1290,13 +1290,26 @@
             const cssFile = document.querySelector('[rel="stylesheet"]')
             const originalCssRef = cssFile.getAttribute('href')
             const darkModeCssRef = originalCssRef.replace('just-the-docs.css', 'dark-mode-preview.css')
+            var modeValue = sessionStorage.getItem("darkMode")
+            if (modeValue == 1){
+              cssFile.setAttribute('href', darkModeCssRef)
+            } else
+            {
+              modeValue = 0
+              sessionStorage.setItem("darkMode", "0")
+            }
 
             addEvent(toggleDarkMode, 'click', function(){
-              if (cssFile.getAttribute('href') === originalCssRef) {
-                cssFile.setAttribute('href', darkModeCssRef)
-              } else {
-                cssFile.setAttribute('href', originalCssRef)
-              }
+
+                if(modeValue == 0) {
+                    cssFile.setAttribute('href', darkModeCssRef)
+                    sessionStorage.setItem("darkMode", "1")
+                    modeValue = 1
+                } else {
+                    cssFile.setAttribute('href', originalCssRef)
+                    sessionStorage.setItem("darkMode", "0")
+                    modeValue = 0
+                }
             })
           </script>
           
