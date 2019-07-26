@@ -31,3 +31,6 @@ A basic idea regarding the initial concepts of Digital Electronics is enough to 
 
 ## About the project
 Interactive-Book is &copy; 2019 by [Aman Singla](http://github.com/amansingla97).
+
+
+{% include disqus.html %}
