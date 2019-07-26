@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Gates
+comments: true
 nav_order: 3
 ---
 # Logic Gates
@@ -102,3 +103,4 @@ The NAND gate behaves in the opposite fashion to and AND gate. You can think of 
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/740" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 
+{% include disqus.html %}

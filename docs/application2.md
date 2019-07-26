@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Basic Applications
+comments: true
 nav_order: 4
 ---
 # Basic Apllications
@@ -64,3 +65,6 @@ You can design a character in the same way by entering numbers from **0-255** in
 Fonts on a modern computer would be made up of a lot more than **64 pixels**, but the principle is the same.
 
 If you can't see how the numbers are converted into the patterns of black and white blocks, try looking at the page on binary.  If you can see the link between the number and the pattern, then think about how the web page works
+
+
+{% include disqus.html %}

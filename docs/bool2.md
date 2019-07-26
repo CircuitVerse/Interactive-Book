@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Boolean Function
+comments: true
 nav_order: 5
 ---
 
@@ -146,4 +147,5 @@ The methods used for simplifying the Boolean function are as follows −
 
 
 
+{% include disqus.html %}
 

@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  Interactive FSM
+comments: true
 nav_order: 18
 ---
 
@@ -36,3 +37,5 @@ Basically, what we’ll do now is translating the options we stated above into a
 {% include fsm.html %}
 
 
+
+{% include disqus.html %}

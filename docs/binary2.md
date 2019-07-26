@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  Operators in Binary
+comments: true
 nav_order: 2
 ---
 
@@ -113,3 +114,6 @@ add 1               +           1
 
 
 {% include binary2.html %}
+
+
+{% include disqus.html %}

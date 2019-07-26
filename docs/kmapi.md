@@ -1,6 +1,7 @@
 ---
 layout: kmap
 title: Interactive Karnaugh Map
+comments: true
 nav_order: 7
 ---
 
@@ -8,3 +9,5 @@ nav_order: 7
 {: .no_toc }
 
 {% include kmap.html %}
+
+{% include disqus.html %}

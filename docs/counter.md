@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Digital Counters
+comments: true
 nav_order: 16
 ---
 
@@ -71,4 +72,5 @@ he JA and KA inputs of FF-A are tied to logic 1. So FF-A will work as a toggle f
 
 
 
+{% include disqus.html %}
 
