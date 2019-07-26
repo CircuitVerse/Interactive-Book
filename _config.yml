@@ -39,8 +39,3 @@ ga_tracking: UA-112678513-3
 plugins:
   - jekyll-seo-tag
 
-# Disqus Comments
-disqus:
-  # Leave shortname blank to disable comments site-wide.
-  # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
-  shortname: "disqus_d6KeszEXjT"
