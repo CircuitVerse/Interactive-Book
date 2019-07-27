@@ -30,7 +30,7 @@
           {% if site.aux_links != nil %}
           <ul class="list-style-none text-small mt-md-1 mb-md-1 pb-4 pb-md-0 js-aux-nav aux-nav">
             <li class="d-inline-block my-0{% unless forloop.last %} mr-2{% endunless %} btn js-toggle-dark-mode"><a>Dark Mode</a></li>
-            <li class="d-inline-block my-0{% unless forloop.last %} mr-2{% endunless %} btn "><a href="{% raw %}{% github_edit_link %}{% endraw %}">Improve this page</a></li>
+            <li class="d-inline-block my-0{% unless forloop.last %} mr-2{% endunless %} btn "><a href="{{ site.github.repository_url }}/tree/master/{{ page.path }}">Edit on Github</a></li>
 
           </ul>
 
