@@ -38,4 +38,5 @@ ga_tracking: UA-112678513-3
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-github-metadata
 

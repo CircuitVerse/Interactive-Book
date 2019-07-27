@@ -17,6 +17,8 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.2.7)
+    faraday (0.15.4)
+      multipart-post (>= 1.2, < 3)
     ffi (1.10.0)
     forwardable-extended (2.6.0)
     http_parser.rb (0.6.0)
@@ -35,6 +37,9 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
+    jekyll-github-metadata (2.12.1)
+      jekyll (~> 3.4)
+      octokit (~> 4.0, != 4.4.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
     jekyll-seo-tag (2.6.1)
@@ -48,6 +53,9 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
     mercenary (0.3.6)
+    multipart-post (2.1.1)
+    octokit (4.14.0)
+      sawyer (~> 0.8.0, >= 0.5.3)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (3.0.3)
@@ -63,12 +71,16 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+    sawyer (0.8.2)
+      addressable (>= 2.3.5)
+      faraday (> 0.8, < 2.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   bundler (~> 2.0.1)
+  jekyll-github-metadata
   just-the-docs!
 
 BUNDLED WITH
