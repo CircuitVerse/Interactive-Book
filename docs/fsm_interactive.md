@@ -31,11 +31,11 @@ There are quite few options:
 5. putting 10¢ followed by 5¢ and getting the can
 6. putting 5$ followed by 5¢ followed by 5¢ => getting a can.
 
-## FSM diagrame
+## FSM diagram
 Basically, what we’ll do now is translating the options we stated above into a flow chart/FSM diagram:
 
 {% include fsm.html %}
 
-
+Lets try the soda can vending machine and look for the corresponding state changes FSM diagram in each of the above mentioned possibilities.
 
 {% include disqus.html %}
