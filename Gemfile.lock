@@ -106,6 +106,7 @@ DEPENDENCIES
   bundler (~> 2.0.1)
   jekyll-admin
   jekyll-github-metadata
+  jekyll-seo-tag
   just-the-docs!
 
 BUNDLED WITH
