@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>State Table Generator</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+		<style>
+			body {
+				padding-top:50px;
+				padding-bottom:20px;
+				font-family:Segoe UI;
+				font-size:15px;
+			}
+			.title {
+				font-size:50px;
+			}
+			.init {
+				position:absolute;
+				left:-9999px;
+			}
+		</style>
+
+		<link rel="stylesheet" href="../assets/css/bootstrap-theme.min.css">
+
+
+		<script src="../assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="container">
+				<!-- <div class="col-md-9"> -->
+				<div class="row">
+					<p>
+						<h1 class="title">State Table Generator</h1>
+					</p>
+					<!--<div class="step1"></div>
+					<div class="step2">
+					<p>Type in all flip-flop input/output functions:</p>
+					</div>
+					<div class="step3">
+					<p>Summary of inputs provided by the user:</p>
+					</div>
+					<div class="step4">
+					<p>Summary of inputs provided by the user:</p>
+					</div> -->
+				</div>
+				<div class="row" id="about">
+					<p>
+						"A <i>State Table</i> is a tabular representation of the time sequence of inputs, outputs, and flip-flop states. The table consists of four sections marked as <i>present table</i>, <i>next state</i>, and the <i>output</i>. The present-state section shows the states of flip-flops at any given time t. The input section gives a value for each possible present state. The next-state section lists the state of flip-flops one clock period later at time t + 1. Lastly, the output section gives the value for each present state."
+					</p>
+					<p>
+						<h4>Press <strong>f</strong> to begin.</h4>
+					</p>
+				</div>
+				<div class="row init" id="step1">
+					<br />
+					<p>
+						<strong>STEP 1. </strong>Provide the following.&nbsp;&nbsp;
+						<button type="button" id="confirmStep1">
+							Next
+						</button>
+						<br />
+						<br />
+						<select id="flipflop" class="required">
+							<option value="f0">FLIP-FLOP TYPE</option>
+							<option value="JK">JK</option>
+							<option value="RS">RS</option>
+							<option value="D">D</option>
+							<option value="T">T</option>
+						</select>
+						&nbsp;&nbsp;
+						<select id="flipflopCount" class="required">
+							<option value="c0">FLIP-FLOP COUNT</option>
+							<option value="c1">1</option>
+							<option value="c2">2</option>
+						</select>
+						&nbsp;&nbsp;
+						<select id="input" class="required">
+							<option value="i0">INPUT COUNT</option>
+							<option value="i1">1</option>
+							<option value="i2">2</option>
+						</select>
+						&nbsp;&nbsp;
+						<select id="output" class="required">
+							<option value="o0">OUTPUT</option>
+							<option value="o1">YES</option>
+							<option value="o2">NO</option>
+						</select>
+					</p>
+				</div>
+
+				<div class="row init" id="step2">
+					<p>
+						<br />
+						<strong>STEP 2. </strong>
+						Input the required flip-flop input/output functions.&nbsp;&nbsp;
+						<button type="button" id="backToStep1">
+							Back
+						</button>
+						&nbsp;
+						<button type="button" id="confirmStep2">
+							Next
+						</button>
+						<br/>
+						<br/>
+					</p>
+					<p class="form-inline"></p>
+				</div>
+				<div class="row init" id="summary">
+					<div id="summa"></div>
+					<p>
+						Feel free to review your input before generating your state table.&nbsp;&nbsp;
+						<button type="button" id="backToStep2">
+							Back
+						</button>
+						&nbsp;
+						<button type="button" id="confirmSummary">
+							Confirm
+						</button>
+					</p>
+				</div>
+				<div class="row init" id="stateTable"></div>
+				<div class="row footer">
+					<hr>
+					<p>
+						<footer>
+							<p>
+								<!-- &nbsp;&nbsp; Created by <a href="https://twitter.com/ironmaurus">@ironmaurus</a> -->
+							</p>
+						</footer>
+					</p>
+				</div>
+				<!-- </div> -->
+				<!-- <div class="col-md-3">
+				<div class="sideNav">
+				<div class="nav">
+				<ul class="nav sideNav">
+				<li class="active">
+				<a href="#sim">Simulator</a>
+				</li>
+				<!-- <li>
+				<a href="#">Simulator</a>
+				</li>
+				<li>
+				<a href="#">Docs</a>
+				</li> -->
+				<!--	</ul>
+				</div>
+				</div>
+				</div> -->
+			</div><!-- /container -->
+			<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+			<script>
+				window.jQuery || document.write('<script src="../assets/js/vendor/jquery-1.11.0.min.js"><\/script>')
+			</script>
+
+			<script src="../assets/js/vendor/bootstrap.min.js"></script>
+
+			<script src="../assets/js/flipflop.js"></script>
+			<!-- <script>
+			var input = {
+			'flipflop' : 'JK',
+			'flipflopCount' : 'c2',
+			'input' : 'i2'
+			};
+			var flipflops = {};
+			var ioFunctions = "";
+			var functionCount = 1;
+			var outputCount = 0;
+
+			var inputCount = 2;
+			var flipflopCount = 2;
+
+			var inp = {'JA':"Bx+By",
+			'KA':"B'xy'",
+			'JB':"A'x",
+			'KB':"A+xy'",
+			'Z':"Axy+Bx'y'"};
+
+			generateStateTable(flipflopCount, inputCount, inp, input['flipflop']);
+
+			</script> -->
+			<script>
+				$('#step1').hide();
+				$('#step1').css('position', 'relative');
+				$('#step1').css('left', '0px');
+
+				$('#step2').hide();
+				$('#step2').css('position', 'relative');
+				$('#step2').css('left', '0px');
+
+				$('#summary').hide();
+				$('#summary').css('position', 'relative');
+				$('#summary').css('left', '0px');
+
+				$('#stateTable').hide();
+				$('#stateTable').css('position', 'relative');
+				$('#stateTable').css('left', '0px');
+
+				$(document).keypress(function(event) {
+					if (String.fromCharCode(event.which) == 'f') {
+						if ($('#about').is(':visible')) {
+							$('#step1').fadeIn();
+							$('#about').hide();
+						}
+					}
+				});
+
+				var input = {};
+				var flipflops = {};
+				var ioFunctions = "";
+				var functionCount = 1;
+				var inputCount = 0;
+				var flipflopCount = 0;
+				var outputCount = 0;
+				$('#confirmStep1').click(function() {
+					if ($('#flipflop').val() == "f0") {
+						$('#flipflop').focus();
+					} else if ($('#input').val() == "i0") {
+						$('#input').focus();
+					} else if ($('#output').val() == "o0") {
+						$('#output').focus();
+					} else if ($('#flipflopCount').val() == "c0") {
+						$('#flipflopCount').focus();
+					} else {
+						input = {};
+						ioFunctions = "";
+						functionCount = 1;
+						input['flipflop'] = $('#flipflop').val();
+						input['flipflopCount'] = $('#flipflopCount').val();
+						input['input'] = $('#input').val();
+						input['output'] = $('#output').val();
+
+						if (input['flipflopCount'] == "c2") {
+							functionCount *= 2;
+							flipflopCount = 2;
+						} else if (input['flipflopCount'] == "c1") {
+							flipflopCount = 1;
+						}
+
+						if (input['input'] == "i1") {
+							inputCount = 1;
+						} else if (input['input'] == "i2") {
+							inputCount = 2;
+						}
+
+						if (input['flipflop'] == "JK") {
+							for (var i = 0; i < functionCount; i++) {
+								var alph = String.fromCharCode(65 + i);
+								flipflops['J' + alph] = "";
+								flipflops['K' + alph] = "";
+								ioFunctions += "<input type='text' style='width:150px' class='form-control' id='J" + alph + "' placeholder='J" + alph + "' required>&nbsp;";
+								ioFunctions += "<input type='text' style='width:150px' class='form-control' id='K" + alph + "' placeholder='K" + alph + "' required>&nbsp;";
+							}
+						} else if (input['flipflop'] == "RS") {
+							for (var i = 0; i < functionCount; i++) {
+								var alph = String.fromCharCode(65 + i);
+								flipflops['S' + alph] = "";
+								flipflops['R' + alph] = "";
+								ioFunctions += "<input type='text' style='width:150px' class='form-control' id='S" + alph + "' placeholder='R" + alph + "' required>&nbsp;";
+								ioFunctions += "<input type='text' style='width:150px' class='form-control' id='R" + alph + "' placeholder='S" + alph + "' required>&nbsp;";
+							}
+						} else if (input['flipflop'] == "D") {
+							for (var i = 0; i < functionCount; i++) {
+								var alph = String.fromCharCode(65 + i);
+								flipflops['D' + alph] = "";
+								ioFunctions += "<input type='text' style='width:150px' class='form-control' id='D" + alph + "' placeholder='D" + alph + "' required>&nbsp;";
+							}
+						} else {
+							for (var i = 0; i < functionCount; i++) {
+								var alph = String.fromCharCode(65 + i);
+								flipflops['T' + alph] = "";
+								ioFunctions += "<input type='text' style='width:150px' class='form-control' id='T" + alph + "' placeholder='T" + alph + "' required>&nbsp;";
+							}
+						}
+
+						if (input['output'] == "o1") {
+							outputCount = 1;
+							ioFunctions += "<input type='text' style='width:150px' class='form-control' id='Z' placeholder='Z ( Output )' required>&nbsp;";
+						}
+
+						$('#step2 p.form-inline').append(ioFunctions);
+						$('#step1').hide();
+						$('#step2').fadeIn();
+					}
+				});
+
+				$('#backToStep1').click(function() {
+					$('#step2 p.form-inline').empty();
+					$('#step2').hide();
+					$('#step1').fadeIn();
+				});
+				var flag = null;
+				$('#confirmStep2').click(function() {
+					var inp = $("#step2 p.form-inline").find('input');
+					for (var i = 0; i < inp.size(); i++) {
+						if (inp[i].value == "") {
+							inp[i].focus();
+							flag = i;
+							break;
+						} else {
+							//alert(inp[i].id + ":" + inp[i].value);
+							flipflops[inp[i].id] = inp[i].value;
+						}
+					}
+
+					if (flag != null) {
+						inp[flag].focus();
+						flag = null;
+					} else {
+						var summary = '<p><strong>Summary of User Input.</strong>&nbsp;&nbsp;A sequential circuit that has <strong>' + flipflopCount + '</strong> <strong>' + input['flipflop'] + '</strong> flipflops( ';
+
+						for (var i = 0; i < flipflopCount; i++) {
+							summary += String.fromCharCode(65 + i) + ' ';
+						}
+
+						summary += '), <strong>' + inputCount + '</strong> inputs( ';
+
+						for (var i = 0; i < inputCount; i++) {
+							summary += String.fromCharCode(97 + 25 - inputCount + i) + ' ';
+						}
+
+						summary += ' )';
+
+						if (outputCount == 1) {
+							summary += 'and an output(Z).';
+						} else {
+							summary += '.';
+						}
+
+						summary += ' The flip-flop input functions and the circuit function are as follows:</p>';
+						summary += '<p class="form-inline">';
+
+						var keys = Object.keys(flipflops);
+
+						for (var i = 0; i < keys.length; i++) {
+							summary += '<h3>' + keys[i] + ' = ' + flipflops[keys[i]] + '</h3> ';
+						}
+
+						summary += '</p>';
+
+						$('#summary #summa').append(summary);
+						$('#step2').hide();
+						$('#summary').fadeIn();
+					}
+				});
+				$('#backToStep2').click(function() {
+					$('#summary #summa').empty();
+					$('#summary').hide();
+					$('#step2').fadeIn();
+				});
+
+				$('#confirmSummary').click(function() {
+					var output = [];
+					output = generateStateTable(flipflopCount, inputCount, flipflops, input['flipflop']);
+
+					var table = "<p><table class='table'><thead>";
+
+					// //table += "<th colspan=" + flipflopCount + ">Present State</th><th colspan=" + inputCount + ">Input</th><th colspan=" + flipflopCount + ">Next State</th><th colspan=" + flipflops.length + ">FlipFlop Inputs</th>";
+					// table += "<th>Present State</th><th>Input</th><th>Next State</th><th>FlipFlop Inputs</th>";
+					// if (outputCount == 1) {
+						// table += "<th>Output</th></thead>";
+					// }
+
+					//table += "<tbody><tr>";
+
+					for (var j = 0; j < output.length; j++) {
+						table += "<th>" + output[j].col + "</th>";
+					}
+					table += "</thead><tbody>";
+
+					var temp = "";
+					var rowCount = Math.pow(2, flipflopCount + inputCount);
+					for (var i = 0; i < rowCount; i++) {
+						table += "<tr>"
+
+						for (var j = 0; j < output.length; j++) {
+							temp = output[j].row.charAt(i);
+							table += "<td>" + temp + "</td>";
+						}
+						table += "</tr>";
+					}
+
+					table += "</tbody></p>";
+
+					$('#stateTable').append(table);
+					$('#summary').hide();
+					$('#stateTable').fadeIn();
+
+				});
+
+			</script>
+
+
+		</div>
+	</body>
+</html>

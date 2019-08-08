@@ -113,160 +113,167 @@
   },
   "17": {
     "id": "17",
+    "title": "FLIPFLOP Interaction",
+    "content": "&lt;!DOCTYPE html&gt; State Table Generator State Table Generator &quot;A State Table is a tabular representation of the time sequence of inputs, outputs, and flip-flop states. The table consists of four sections marked as present table, next state, and the output. The present-state section shows the states of flip-flops at any given time t. The input section gives a value for each possible present state. The next-state section lists the state of flip-flops one clock period later at time t + 1. Lastly, the output section gives the value for each present state.&quot; Press f to begin. STEP 1. Provide the following.&nbsp;&nbsp; Next FLIP-FLOP TYPE JK RS D T &nbsp;&nbsp; FLIP-FLOP COUNT 1 2 &nbsp;&nbsp; INPUT COUNT 1 2 &nbsp;&nbsp; OUTPUT YES NO STEP 2. Input the required flip-flop input/output functions.&nbsp;&nbsp; Back &nbsp; Next Feel free to review your input before generating your state table.&nbsp;&nbsp; Back &nbsp; Confirm Please enable JavaScript to view the comments powered by Disqus.",
+    "url": "http://localhost:4000/docs/flipflop2.html",
+    "relUrl": "/docs/flipflop2.html"
+  },
+  "18": {
+    "id": "18",
     "title": "Flip-Flops",
     "content": "Flip-Flops In previous module, we discussed about Latches. Those are the basic building blocks of flip-flops. We can implement flip-flops in two methods. In first method, cascade two latches in such a way that the first latch is enabled for every positive clock pulse and second latch is enabled for every negative clock pulse. So that the combination of these two latches become a flip-flop. In second module, we can directly implement the flip-flop, which is edge sensitive. In this module, let us discuss the following flip-flops using second method. Conclusion In this module, we will implemented various flip-flops by providing the cross coupling between NOR gates. Similarly, you can implement these flip-flops by using NAND gates.",
     "url": "http://localhost:4000/docs/flipflop",
     "relUrl": "/docs/flipflop"
   },
-  "18": {
-    "id": "18",
+  "19": {
+    "id": "19",
     "title": "Interactive FSM",
     "content": "Interactive FSM In this module, we will learn how to implement a final state machine(FSM) that describes the functionality of a Soda vending machine: Problem Suppose we have a vending machine that sells soda cans that costs a 15¢ each. Moreover we have only 2 types of coins: 10¢ and 5¢. Our objective is to design a state machine that determines when to dispense a can, how to return the change. Note: in this design we will ignore the capacity of the stock, which means, we’ll assume that there will always be can in the vending machine. Also, we can assume that only one action could be made in every “clock cycle” or state RULES First give back the change then dispense the can. Understanding the possibilities There are quite few options: entering no money putting 5¢ followed by another 10¢ =&gt; getting the can putting 10¢ followed by 10¢ =&gt; receiving change =&gt; getting a can putting 5¢ followed by 5¢ followed by followed by 10¢=&gt; receiving change =&gt; getting a can putting 10¢ followed by 5¢ and getting the can putting 5$ followed by 5¢ followed by 5¢ =&gt; getting a can. FSM diagram Basically, what we’ll do now is translating the options we stated above into a flow chart/FSM diagram: Finite State Machines The “idle” state is the first state the machine gets into after its been “turned on”, also this is the state we “Reset” the machine into. Note that the FSM is a Moore machine, since the output relates to the current state. Experiment Lets try the soda can vending machine and look for the corresponding state changes FSM diagram in each of the above mentioned possibilities. Please enable JavaScript to view the comments powered by Disqus.",
     "url": "http://localhost:4000/docs/fsm_interactive.html",
     "relUrl": "/docs/fsm_interactive.html"
   },
-  "19": {
-    "id": "19",
+  "20": {
+    "id": "20",
     "title": "Full Adder",
     "content": "Full Adder Full adder is developed to overcome the drawback of Half Adder circuit. It can add two one-bit numbers A and B, and carry c. The full adder is a three input and two output combinational circuit. Block Diagram Truth Table Circuit Diagram Full adder from 2 Half Adder Ripple Carry Adder",
     "url": "http://localhost:4000/docs/Combinational/full_adder.html",
     "relUrl": "/docs/Combinational/full_adder.html"
   },
-  "20": {
-    "id": "20",
+  "21": {
+    "id": "21",
     "title": "Full Subtractors",
     "content": "Full Subtractors The disadvantage of a half subtractor is overcome by full subtractor. The full subtractor is a combinational circuit with three inputs A,B,C and two output D and C’. A is the ‘minuend’, B is ‘subtrahend’, C is the ‘borrow’ produced by the previous stage, D is the difference output and C’ is the borrow output. Truth Table Circuit Diagram",
     "url": "http://localhost:4000/docs/Combinational/full_sub.html",
     "relUrl": "/docs/Combinational/full_sub.html"
   },
-  "21": {
-    "id": "21",
+  "22": {
+    "id": "22",
     "title": "Gates",
     "content": "Logic Gates Introduction NOT gate AND gate OR gate NAND gate NOR gate XOR gate Introduction Logic gates are the basic building blocks of any digital system. It is an electronic circuit having one or more than one input and only one output. The relationship between the input and the output is based on a certain logic. Based on this, logic gates are named as AND gate, OR gate, NOT gate etc. NOT gate The NOT gate is also known as an inverter because the output is the exact opposite of the input. It has one input and one output. The two possibilities are written out in the table below. Tables listing all logical possibilities like this are known as truth tables. Input1 Input 2 0 1 1 0 AND gate The AND gate has two inputs and one output. The output is 1 if both inputs are 1, and for all other cases the output is 0. Input1 Input 2 output 0 0 0 0 1 0 1 0 0 1 1 1 OR gate The OR gate has two inputs and one output. If at least one of the inputs is 1, then the output will be 1. If neither input is 1, the output will be 0. Input1 Input 2 output 0 0 0 0 1 1 1 0 1 1 1 1 NAND gate The NAND gate behaves in the opposite fashion to and AND gate. You can think of it as an AND gate followed immediately by a NOT gate. Its output is 0 when the two inputs are 1, and for all other cases, its output is 0. The name NAND comes from joining NOT and AND. The symbol for NAND is the same as that for AND except for the addition of a small circle on the right side. Input1 Input 2 output 0 0 1 0 1 1 1 0 1 1 1 0 NOR gate The NAND gate behaves in the opposite fashion to and AND gate. You can think of it as an AND gate followed immediately by a NOT gate. Its output is 0 when the two inputs are 1, and for all other cases, its output is 0. The name NAND comes from joining NOT and AND. The symbol for NAND is the same as that for AND except for the addition of a small circle on the right side. Input1 Input 2 output 0 0 1 0 1 0 1 0 0 1 1 0 XOR gate The NAND gate behaves in the opposite fashion to and AND gate. You can think of it as an AND gate followed immediately by a NOT gate. Its output is 0 when the two inputs are 1, and for all other cases, its output is 0. The name NAND comes from joining NOT and AND. The symbol for NAND is the same as that for AND except for the addition of a small circle on the right side. Input1 Input 2 output 0 0 0 0 1 1 1 0 1 1 1 0 Please enable JavaScript to view the comments powered by Disqus.",
     "url": "http://localhost:4000/docs/gates.html",
     "relUrl": "/docs/gates.html"
   },
-  "22": {
-    "id": "22",
+  "23": {
+    "id": "23",
     "title": "Interactive Gates",
     "content": "Interactive Logic Gates You can also click/tap a symbol to copy it and then click/tap to paste it into the box. Two-Way Light Switch In your house you probabably have a light with more than one switch - e.g. landing lights often have switches upstairs and downstairs. Add the correct logic gate to the circuit and see if you can get this light work to work in the same way. You can click on Upstairs and Downstairs switches to change them. Upstairs Downstairs Security Light You can buy security lights that come on only when it&#39;s dark and they sense some movement. Add the correct logic gate to the circuit and see if you can get it to work (you can click on Darkness and Movement to change them). Darkness Movement Unfortunately your screen is too small to display this page correctly. If you are using a tablet or phone you could try turning it round to landscape orientation. Please enable JavaScript to view the comments powered by Disqus.",
     "url": "http://localhost:4000/docs/gatesi.html",
     "relUrl": "/docs/gatesi.html"
   },
-  "23": {
-    "id": "23",
+  "24": {
+    "id": "24",
     "title": "Half Adder",
     "content": "Half Adder Half adder is a combinational logic circuit with two inputs and two outputs. The half adder circuit is designed to add two single bit binary number A and B. It is the basic building block for addition of two single bit numbers. This circuit has two outputs carry and sum. Block Diagram Truth Table Circuit Diagram",
     "url": "http://localhost:4000/docs/Combinational/half_adder.html",
     "relUrl": "/docs/Combinational/half_adder.html"
   },
-  "24": {
-    "id": "24",
+  "25": {
+    "id": "25",
     "title": "Half Subtractors",
     "content": "Half Subtractors Half subtractor is a combination circuit with two inputs and two outputs (difference and borrow). It produces the difference between the two binary bits at the input and also produces an output (Borrow) to indicate if a 1 has been borrowed. In the subtraction (A-B), A is called as Minuend bit and B is called as Subtrahend bit. Truth Table Circuit Diagram",
     "url": "http://localhost:4000/docs/Combinational/half_sub.html",
     "relUrl": "/docs/Combinational/half_sub.html"
   },
-  "25": {
-    "id": "25",
+  "26": {
+    "id": "26",
     "title": "Home",
     "content": "Interactive-Book Learn Digital Logic Design easily. Computer Logical Organization refers to the level of abstraction above the digital logic level, but below the operating system level. At this level, the major components are functional units or subsystems that correspond to specific pieces of hardware built from the lower level building blocks. This interactive book gives a complete understanding on Computer Logical Organization starting from basic computer overview till its advanced architecture. It is meant to provide the readers to know how to analyze and implement the combinational circuits and sequential circuits. Based on the requirement, we can use either combinational circuit or sequential circuit or combination of both. After completing this book, you will be able to learn the type of digital circuit, which is suitable for specific application. Audience This reference has been prepared for the students pursing either Bachelors or Masters in Computer Science/Electronics to help them understand the basic-to-advanced concepts related to Computer Logical Organization.It is also meant for thosewho are aspiring to learn the concepts of digital circuits. Digital circuits contain a set of Logic gates and these can be operated with binary values, 0 and 1. Prerequisites Before you start proceeding with this Book, I’m making an assumption that you are already aware of basic computer concepts like what is keyboard, mouse, monitor, input, output, primary memory, secondary memory, etc. A basic idea regarding the initial concepts of Digital Electronics is enough to understand the topics covered in this tutorial. About the project Interactive-Book is © 2019 by Aman Singla. Please enable JavaScript to view the comments powered by Disqus.",
     "url": "http://localhost:4000/",
     "relUrl": "/"
   },
-  "26": {
-    "id": "26",
+  "27": {
+    "id": "27",
     "title": "JK Flip-Flop",
     "content": "JK Flip-Flop JK flip-flop is the modified version of SR flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of JK flip-flop is shown in the following figure. This circuit has two inputs J &amp; K and two outputs Q(t) &amp; Q(t)’. The operation of JK flip-flop is similar to SR flip-flop. Here, we considered the inputs of SR flip-flop as S = J Q(t)’ and R = KQ(t) in order to utilize the modified SR flip-flop for 4 combinations of inputs. State table of SR flip-flop. J K Q(t+1) 0 0 Q(t) 0 1 0 1 0 1 1 1 Q(t)’ Here, Q(t) &amp; Q(t + 1) are present state &amp; next state respectively. So, JK flip-flop can be used for one of these four functions such as Hold, Reset, Set &amp; Complement of present state based on the input conditions, when positive transition of clock signal is applied. Characteristic table of SR flip-flop. J K Q(t) Q(t+1) 0 0 0 0 0 0 1 1 0 1 0 0 0 1 1 0 1 0 0 1 1 0 1 1 1 1 0 1 1 1 1 0 By using three variable K-Map, we can get the simplified expression for next state, Q(t + 1). The three variable K-Map for next state, Q(t + 1) is shown in the following figure. The maximum possible groupings of adjacent ones are already shown in the figure. Therefore, the simplified expression for next state Q(t+1) is Q(t+1)=JQ(t)′+K′Q(t)",
     "url": "http://localhost:4000/docs/flipflop/jk_flipflop.html",
     "relUrl": "/docs/flipflop/jk_flipflop.html"
   },
-  "27": {
-    "id": "27",
+  "28": {
+    "id": "28",
     "title": "Interactive Karnaugh Map",
     "content": "Interactive Karnaugh Map This interactive Karnaugh map represents the function Y&nbsp;=&nbsp;f(xn,...,x1, x0). You can manually edit this function by clicking on the cells of the map. Alternatively, you can generate a random function by pressing the &quot;Random example&quot; button. Random example Reset Number of input variables: 1 2 3 4 5 6 7 8 &nbsp;&nbsp;&nbsp;&nbsp; Allow Don’t-Care: no Yes &nbsp;&nbsp;&nbsp;&nbsp; Hide result: no Yes Please enable JavaScript to view the comments powered by Disqus.",
     "url": "http://localhost:4000/docs/kmapi.html",
     "relUrl": "/docs/kmapi.html"
   },
-  "28": {
-    "id": "28",
+  "29": {
+    "id": "29",
     "title": "Latches",
     "content": "Latches There are two types of memory elements based on the type of triggering that is suitable to operate it. Latches Flip-flops Latches operate with enable signal, which is level sensitive. Whereas, flip-flops are edge sensitive. We will discuss about flip-flops in next module. Now, let us discuss about SR Latch &amp; D Latch one by one. SR Latch D Latch SR Latch SR Latch is also called as Set Reset Latch. This latch affects the outputs as long as the enable, E is maintained at ‘1’. The circuit diagram of SR Latch is shown in the following figure. This circuit has two inputs S &amp; R and two outputs Q(t) &amp; Q(t)’. The upper NOR gate has two inputs R &amp; complement of present state, Q(t)’ and produces next state, Q(t+1) when enable, E is ‘1’. Similarly, the lower NOR gate has two inputs S &amp; present state, Q(t) and produces complement of next state, Q(t+1)’ when enable, E is ‘1’. We know that a 2-input NOR gate produces an output, which is the complement of another input when one of the input is ‘0’. Similarly, it produces ‘0’ output, when one of the input is ‘1’. If S = 1, then next state Q(t + 1) will be equal to ‘1’ irrespective of present state, Q(t) values. If R = 1, then next state Q(t + 1) will be equal to ‘0’ irrespective of present state, Q(t) values. At any time, only of those two inputs should be ‘1’. If both inputs are ‘1’, then the next state Q(t + 1) value is undefined. The following table shows the state table of SR latch. S R Q(t+1) 0 0 Q(t) 0 1 0 1 0 1 1 1 - Therefore, SR Latch performs three types of functions such as Hold, Set &amp; Reset based on the input conditions. D Latch There is one drawback of SR Latch. That is the next state value can’t be predicted when both the inputs S &amp; R are one. So, we can overcome this difficulty by D Latch. It is also called as Data Latch. The circuit diagram of D Latch is shown in the following figure. This circuit has single input D and two outputs Q(t) &amp; Q(t)’. D Latch is obtained from SR Latch by placing an inverter between S amp;&amp; R inputs and connect D input to S. That means we eliminated the combinations of S &amp; R are of same value. If D = 0 → S = 0 &amp; R = 1, then next state Q(t + 1) will be equal to ‘0’ irrespective of present state, Q(t) values. This is corresponding to the second row of SR Latch state table. If D = 1 → S = 1 &amp; R = 0, then next state Q(t + 1) will be equal to ‘1’ irrespective of present state, Q(t) values. This is corresponding to the third row of SR Latch state table. The following table shows the state table of D latch. D Q(t + 1) 0 0 1 1 Therefore, D Latch Hold the information that is available on data input, D. That means the output of D Latch is sensitive to the changes in the input, D as long as the enable is High. In this module, we implemented various Latches by providing the cross coupling between NOR gates. Similarly, you can implement these Latches using NAND gates. Please enable JavaScript to view the comments powered by Disqus.",
     "url": "http://localhost:4000/docs/latches.html",
     "relUrl": "/docs/latches.html"
   },
-  "29": {
-    "id": "29",
+  "30": {
+    "id": "30",
     "title": "K-Maps",
     "content": "K-Maps Introduction Enumeration and Gray Codes Simple Groupings Two Dimension Groupings Disjoint Groupings Overlapping Groupings Minimizing Group Count Introduction Karnaugh Maps are a way to visually display a boolean expression onto a 2D grid. We take the variables and bind them to an axis, and then enumerate through the possible combinations of input values that could occur for all those variables bounded to an axis (either horizontally or vertically). For example, we can display the following 2 variable Karnaugh Map: We have bounded to the vertical axis, the variable A, and we enumerate through the possible values for A (being {0, 1}). Similarily, we perform a similar operation for the B variable. Since we are using a 2 variable expression, we can bound one variable to each axis and the visualization works fine in a 2x2 matrix. Let’s instead look at a more involved example with 4 variables: We have now bounded the A and B variables to the vertical axis, while we bounded the C and D variables to the horizontal axis. We now enumarate through different combinations of the bounded variables for each axis in reflected binary code order (more on this in the following section). Lastly, we indicate on the matrix each true value by augmenting a 1 value. Enumeration and Gray Codes When enumerating through the variable input combinations for the binded axis, we take advantage of reflected binary code order, otherwise known as gray codes. If we observe carefully, we can notice that from one combination to another, we only vary by one bit. That is: ... 00 01 11 10 00 01 11 10 00 ... ^ ^ ^ ^ ^ ^ ^ ^ ^ Thus, we get this wrapping that allows us to switch by only one bit. This provides us the core for how Karnaugh Maps work. Simple Groupings The main idea for how Karnaugh Maps can be used to simplify expressions is to group pairs of 1 values that are adjacent, and exploit the fact that each one has only a bit difference from another. For the purpose of this example, let F(ABCD) = CELL. We start with the expression F(0000) = 1 and F(0001) = 1. However, notice that regardless of the value of the last bit, we still get 1. Hence, let’s take a look at the SOP expressions: F(ABCD) = A&#39;B&#39;C&#39;D&#39; + A&#39;B&#39;C&#39;D F(0000) = 1 F(0001) = 1 Since the last bit is the same, we can ignore the D value, thus: F(ABCD) = A&#39;B&#39;C&#39; We can confirm by simplifying algebraically: F(ABCD) = A&#39;B&#39;C&#39;D&#39; + A&#39;B&#39;C&#39;D = A&#39;B&#39;C&#39;(D&#39; + D) = A&#39;B&#39;C&#39; Therefore, the simplification is true. We can then extend this rule to work for rectangles and more! Two Dimension Groupings Extending the idea of isolating changing bits that retain a consistent value, we can then generalize this to work in a higher dimension. Consider the following example: Letting F(ABCD) = CELL: F(0000) = 1 F(0001) = 1 F(0100) = 1 F(0101) = 1 Observe that the bits do not change by one for all pairs of numbers, for example {0000, 0101} differ by two bits. However, we can take advantage of the fact that for any bit change horizontally or vertically, it’s irrelvant what that bit is. More concretely, take a look at the following example. 0000 0001 0100 0101 =&gt; A&#39;B&#39;C&#39;D&#39; + A&#39;B&#39;C&#39;D + A&#39;BC&#39;D&#39; + A&#39;BC&#39;D Regardless of the B variable, we still get true for all products in the SOP expression. This is bounded vertically: =&gt; A&#39;C&#39;D&#39; + A&#39;C&#39;D + A&#39;C&#39;D&#39; + A&#39;C&#39;D Regardless of the D variable, we still get true for all products in the SOP expression. This is bounded horizontally: =&gt; A&#39;C&#39; + A&#39;C&#39; + A&#39;C&#39; + A&#39;C&#39; =&gt; A&#39;C&#39; (1 + 1 + 1 + 1) =&gt; A&#39;C&#39; (1) =&gt; A&#39;C&#39; Since the differences in bits needs to generalize throughout a binding of an axis, you can only have a binding of size 2^n for a given axis. For example, 1x1, 1x2, 1x4, 2x2, 2x4, 4x4. Disjoint Groupings Consider the following example: The algorithm follows precisely as it did before, except that now the two groups are joined in the SOP expression. Letting F(ABCD) = CELL: F(0000) = 1 F(0001) = 1 F(1111) = 1 F(1011) = 1 This yields the following: A&#39;B&#39;C&#39;D&#39; + A&#39;B&#39;C&#39;D + ABCD + AB&#39;CD Breaking down the expression: (A&#39;B&#39;C&#39;D&#39; + A&#39;B&#39;C&#39;D) + (ABCD + AB&#39;CD) =&gt; (A&#39;B&#39;C&#39;(D + D&#39;)) + (ACD(B + B&#39;)) =&gt; (A&#39;B&#39;C&#39;) + (ACD) =&gt; A&#39;B&#39;C&#39; + ACD Clearly this is the exact same process as before, but iterated throughout all the disjoint sets. Overlapping Groupings Overlapping groupings become more complex, because there exist ambigious cases and sometimes what may appear to be a locally optimal solutuion is not a globally optimal solution. The general technique for evaluating for overlapping groups follows a greedy algorithm. Define an unvisited cell as a cell that has a value of 1 however it is currently not matched with a grouping yet. Iterate through all the cells, and once you find a cell with 1, if it is unvisited then find the largest possible square or rectangle such that each side length is a power of 2, where all the cells are 1 in its enclosed area. If there is a tie for size (ie, 1x4 vs 2x2), assign the one that is a square (this is by convention). Repeat this process for all remaining unvisited cells. Note: You can overlap the groupings with already visited nodes, but you never instantiate a new grouping unless the current node is unvisited. In this example, at F(0000), we can create a grouping of size 2 (because 2 is the largest possible grouping, 3 is not a power of 2). We then iterate through to F(0001), however F(0001) was already resolved to a grouping. For the latest active cell, F(0011) is not resolved to a grouping thus it’s unvisited. The largest possible grouping is also of size 2, thus we create another group. To resolve the groupings into an SOP expression, we iterate through the groups and identify changing bits: Group #1 =&gt; F(ABCD) = [0000, 0001] Group #2 =&gt; F(ABCD) = [0001, 0011] For Group #1: 0000 0001 ^ ^ F(ABCD) = A&#39;B&#39;C&#39;D&#39; + A&#39;B&#39;C&#39;D =&gt; A&#39;B&#39;C&#39;(D + D&#39;) =&gt; A&#39;B&#39;C&#39; For Group #2: 0001 0011 ^ ^ F(ABCD) = A&#39;B&#39;C&#39;D + A&#39;B&#39;CD =&gt; A&#39;B&#39;D(C&#39; + C) =&gt; A&#39;B&#39;D Now we add the two results: F(ABCD) = A&#39;B&#39;C&#39; + A&#39;B&#39;D =&gt; F(ABCD) = A&#39;B&#39;D + A&#39;B&#39;C&#39; (by commutative property) Minimizing Group Count The following example will ilustrate how the greedy approach may occasionally produce too many groups. Consider the following example: This grouping state is optimal. However, consider adding a 1 to F(1111). Following the previous algorithm, iterating top-bottom and left-right, when getting to F(0110), the algorithm can choose to make the largest grouping. However, there are two possible groupings: Candidate #1: F(ABCD) = [0011, 0010, 0111, 0110] Candidate #2: F(ABCD) = [0111, 0110, 1111, 1110] Both groupings have the same size, and are the same dimension. However, upon reaching F(1110), another grouping needs to be instantiated, in which case if the first candidate grouping was created then we made a group that was not neccessary increasing the size of our SOP expression. This illustrates the idea that this is a greedy algorithm, and does not always return the most simplified SOP expression. In later sections, algorithms illustrating a globally optimal algorithm will be discussed. Please enable JavaScript to view the comments powered by Disqus.",
     "url": "http://localhost:4000/docs/maps.html",
     "relUrl": "/docs/maps.html"
   },
-  "30": {
-    "id": "30",
+  "31": {
+    "id": "31",
     "title": "MSI Components",
     "content": "MSI Digital systems obtain binary-coded data and information that are continuously being operated on in some manner. Some of the operations include: Multiplexing Demultiplexing Decoding and Encoding All of these operations and others have been facilitated by the availability of numerous ICs in the MSI (medium-scale-integration) category. In this module, we will study many of the common types of MSI devices. For each type, we will start with a brief discussion of its basic operating principle and then introduce specific ICs. We then show how they can be used alone or in combination with other ICs in various applications.",
     "url": "http://localhost:4000/docs/msi",
     "relUrl": "/docs/msi"
   },
-  "31": {
-    "id": "31",
+  "32": {
+    "id": "32",
     "title": "Multiplexers",
     "content": "Multiplexers Multiplexer is a special type of combinational circuit. There are n-data inputs, one output and m select inputs with 2m = n. It is a digital circuit which selects one of the n data inputs and routes it to the output. The selection of one of the n inputs is done by the selected inputs. Depending on the digital code applied at the selected inputs, one out of n data sources is selected and transmitted to the single output Y. E is called the strobe or enable input which is useful for the cascading. It is generally an active low terminal that means it will perform the required operation when it is low. Block Diagram Multiplexers come in multiple variations 2 : 1 multiplexer 4 : 1 multiplexer 16 : 1 multiplexer 32 : 1 multiplexer Truth Table",
     "url": "http://localhost:4000/docs/MSI/mux.html",
     "relUrl": "/docs/MSI/mux.html"
   },
-  "32": {
-    "id": "32",
+  "33": {
+    "id": "33",
     "title": "Parallel Input Parallel Output",
     "content": "Parallel Input Parallel Output Introduction In this mode, the 4 bit binary input B0, B1, B2, B3 is applied to the data inputs D0, D1, D2, D3 respectively of the four flip-flops. As soon as a negative clock edge is applied, the input binary bits will be loaded into the flip-flops simultaneously. The loaded bits will appear simultaneously to the output side. Only clock pulse is essential to load all the bits. Block Diagram",
     "url": "http://localhost:4000/docs/registers/pp.html",
     "relUrl": "/docs/registers/pp.html"
   },
-  "33": {
-    "id": "33",
+  "34": {
+    "id": "34",
     "title": "Parallel Input Serial Output",
     "content": "Parallel Input Serial Output Introduction Data bits are entered in parallel fashion. The circuit shown below is a four bit parallel input serial output register. Output of previous Flip Flop is connected to the input of the next one via a combinational circuit. The binary input word B0, B1, B2, B3 is applied though the same combinational circuit. There are two modes in which this circuit can work namely - shift mode or load mode. Load mode When the shift/load bar line is low (0), the AND gate 2, 4 and 6 become active they will pass B1, B2, B3 bits to the corresponding flip-flops. On the low going edge of clock, the binary input B0, B1, B2, B3 will get loaded into the corresponding flip-flops. Thus parallel loading takes place. Shift mode When the shift/load bar line is low (1), the AND gate 2, 4 and 6 become inactive. Hence the parallel loading of the data becomes impossible. But the AND gate 1,3 and 5 become active. Therefore the shifting of data from left to right bit by bit on application of clock pulses. Thus the parallel in serial out operation takes place. Block Diagram",
     "url": "http://localhost:4000/docs/registers/ps.html",
     "relUrl": "/docs/registers/ps.html"
   },
-  "34": {
-    "id": "34",
+  "35": {
+    "id": "35",
     "title": "Digital Registers",
     "content": "Digital Registers Flip-flop is a 1 bit memory cell which can be used for storing the digital data. To increase the storage capacity in terms of number of bits, we have to use a group of flip-flop. Such a group of flip-flop is known as a Register. The n-bit register will consist of n number of flip-flop and it is capable of storing an n-bit word. The binary data in a register can be moved within the register from one flip-flop to another. The registers that allow such data transfers are called as shift registers. There are four mode of operations of a shift register.",
     "url": "http://localhost:4000/docs/register",
     "relUrl": "/docs/register"
   },
-  "35": {
-    "id": "35",
+  "36": {
+    "id": "36",
     "title": "Digital Sequential Circuits",
     "content": "Digital Sequential Circuits The combinational circuit does not use any memory. Hence the previous state of input does not have any effect on the present state of the circuit. But sequential circuit has memory so output can vary based on input. This type of circuits uses previous input, output, clock and a memory element. This sequential circuit contains a set of inputs and output(s). The output(s) of sequential circuit depends not only on the combination of present inputs but also on the previous output(s). Previous output is nothing but the present state. Therefore, sequential circuits contain combinational circuits along with memory (storage) elements. Some sequential circuits may not contain combinational circuits, but only memory elements. Following table shows the differences between combinational circuits and sequential circuits. Combinational Circuits Sequential Circuits Outputs depend only on present inputs. Outputs depend on both present inputs and present state. Feedback path is not present. Feedback path is present. Memory elements are not required. Memory elements are required. Clock signal is not required. Clock signal is required. Easy to design. Difficult to design. Types of Sequential Circuits Following are the two types of sequential circuits − Asynchronous sequential circuits Synchronous sequential circuits Asynchronous sequential circuits If some or all the outputs of a sequential circuit do not change (affect) with respect to active transition of clock signal, then that sequential circuit is called as Asynchronous sequential circuit. That means, all the outputs of asynchronous sequential circuits do not change (affect) at the same time. Therefore, most of the outputs of asynchronous sequential circuits are not in synchronous with either only positive edges or only negative edges of clock signal. Synchronous sequential circuits If all the outputs of a sequential circuit change (affect) with respect to active transition of clock signal, then that sequential circuit is called as Synchronous sequential circuit. That means, all the outputs of synchronous sequential circuits change (affect) at the same time. Therefore, the outputs of synchronous sequential circuits are in synchronous with either only positive edges or only negative edges of clock signal. {% include disqus.html %}",
     "url": "http://localhost:4000/docs/sequential.html",
     "relUrl": "/docs/sequential.html"
   },
-  "36": {
-    "id": "36",
+  "37": {
+    "id": "37",
     "title": "Serial Input Parallel Output",
     "content": "Serial Input Parallel Output Introduction In such types of operations, the data is entered serially and taken out in parallel fashion. Data is loaded bit by bit. The outputs are disabled as long as the data is loading. As soon as the data loading gets completed, all the flip-flops contain their required data, the outputs are enabled so that all the loaded data is made available over all the output lines at the same time. 4 clock cycles are required to load a four bit word. Hence the speed of operation of SIPO mode is same as that of SISO mode. Block Diagram",
     "url": "http://localhost:4000/docs/registers/sp.html",
     "relUrl": "/docs/registers/sp.html"
   },
-  "37": {
-    "id": "37",
+  "38": {
+    "id": "38",
     "title": "SR Flip-Flop",
     "content": "SR Flip-Flop SR flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, SR latch operates with enable signal. The circuit diagram of SR flip-flop is shown in the following figure. his circuit has two inputs S &amp; R and two outputs Q(t) &amp; Q(t)’. The operation of SR flipflop is similar to SR Latch. But, this flip-flop affects the outputs only when positive transition of the clock signal is applied instead of active enable. State table of SR flip-flop. S R Q(t+1) 0 0 Q(t) 0 1 0 1 0 1 1 1 - Here, Q(t) &amp; Q(t + 1) are present state &amp; next state respectively. So, SR flip-flop can be used for one of these three functions such as Hold, Reset &amp; Set based on the input conditions, when positive transition of clock signal is applied. Characteristic table of SR flip-flop. Therefore, SR Latch performs three types of functions such as Hold, Set &amp; Reset based on the input conditions. S R Q(t) Q(t+1) 0 0 0 0 0 0 1 1 0 1 0 0 0 1 1 0 1 0 0 1 1 0 1 1 1 1 0 x 1 1 1 x By using three variable K-Map, we can get the simplified expression for next state, Q(t + 1). The three variable K-Map for next state, Q(t + 1) is shown in the following figure. The maximum possible groupings of adjacent ones are already shown in the figure. Therefore, the simplified expression for next state Q(t + 1) is Q(t+1)=S+R′Q(t)",
     "url": "http://localhost:4000/docs/flipflop/sr_flipflop.html",
     "relUrl": "/docs/flipflop/sr_flipflop.html"
   },
-  "38": {
-    "id": "38",
+  "39": {
+    "id": "39",
     "title": "Serial Input Serial Output",
     "content": "Serial Input Serial Output Introduction Block Diagram Operation Truth Table Waveforms Introduction Let all the flip-flop be initially in the reset condition i.e. Q3 = Q2 = Q1 = Q0 = 0. If an entry of a four bit binary number 1 1 1 1 is made into the register, this number should be applied to Din bit with the LSB bit applied first. The D input of FF-3 i.e. D3 is connected to serial data input Din. Output of FF-3 i.e. Q3 is connected to the input of the next flip-flop i.e. D2 and so on. Block Diagram Operation Before application of clock signal, let Q3 Q2 Q1 Q0 = 0000 and apply LSB bit of the number to be entered to Din. So Din = D3 = 1. Apply the clock. On the first falling edge of clock, the FF-3 is set, and stored word in the register is Q3 Q2 Q1 Q0 = 1000. Apply the next bit to Din. So Din = 1. As soon as the next negative edge of the clock hits, FF-2 will set and the stored word change to Q3 Q2 Q1 Q0 = 1100. Apply the next bit to be stored i.e. 1 to Din. Apply the clock pulse. As soon as the third negative clock edge hits, FF-1 will be set and output will be modified to Q3 Q2 Q1 Q0 = 1110. Similarly with Din = 1 and with the fourth negative clock edge arriving, the stored word in the register is Q3 Q2 Q1 Q0 = 1111. Truth Table Waveforms",
     "url": "http://localhost:4000/docs/registers/ss.html",
     "relUrl": "/docs/registers/ss.html"
   },
-  "39": {
-    "id": "39",
+  "40": {
+    "id": "40",
     "title": "T Flip-Flop",
     "content": "T Flip-Flop T flip-flop is the simplified version of JK flip-flop. It is obtained by connecting the same input ‘T’ to both inputs of JK flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of T flip-flop is shown in the following figure. This circuit has single input T and two outputs Q(t) &amp; Q(t)’. The operation of T flip-flop is same as that of JK flip-flop. Here, we considered the inputs of JK flip-flop as J = T and K = T in order to utilize the modified JK flip-flop for 2 combinations of inputs. So, we eliminated the other two combinations of J &amp; K, for which those two values are complement to each other in T flip-flop. State table of T flip-flop. D Q(t+1) 0 Q(t) 1 Q(t)’ Here, Q(t) &amp; Q(t + 1) are present state &amp; next state respectively. So, T flip-flop can be used for one of these two functions such as Hold, &amp; Complement of present state based on the input conditions, when positive transition of clock signal is applied. Characteristic table of T flip-flop. T Q(t) Q(t + 1) 0 0 0 0 1 1 1 0 1 1 1 0 From the above characteristic table, we can directly write the next state equation as Q(t+1)=T′Q(t)+TQ(t)′ ⇒ Q(t+1)=T⊕Q(t) The output of T flip-flop always toggles for every positive transition of the clock signal, when input T remains at logic High (1). Hence, T flip-flop can be used in counters.",
     "url": "http://localhost:4000/docs/flipflop/t_flipflop.html",
