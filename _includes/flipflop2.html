@@ -1,6 +1,6 @@
 
 <html class="no-js">
-	<!--<![endif]-->
+
 	<head>
 		<meta charset="utf-8">
 		<meta name="description" content="">
@@ -28,21 +28,12 @@
 	<body>
 		<div class="container-fluid">
 			<div class="container">
-				<!-- <div class="col-md-9"> -->
+
 				<div class="row">
 					<p>
 						<h1 class="title">State Table Generator</h1>
 					</p>
-					<!--<div class="step1"></div>
-					<div class="step2">
-					<p>Type in all flip-flop input/output functions:</p>
-					</div>
-					<div class="step3">
-					<p>Summary of inputs provided by the user:</p>
-					</div>
-					<div class="step4">
-					<p>Summary of inputs provided by the user:</p>
-					</div> -->
+
 				</div>
 				<div class="row" id="about">
 					<p>
@@ -120,19 +111,9 @@
 					</p>
 				</div>
 				<div class="row init" id="stateTable"></div>
-				<div class="row footer">
-					<hr>
-					<p>
-						<footer>
-							<p>
-								<!-- &nbsp;&nbsp; Created by <a href="https://twitter.com/ironmaurus">@ironmaurus</a> -->
-							</p>
-						</footer>
-					</p>
-				</div>
 
-			</div><!-- /container -->
-			<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+
+			</div>
 			<script>
 				window.jQuery || document.write('<script src="../assets/js/vendor/jquery-1.11.0.min.js"><\/script>')
 			</script>
@@ -140,29 +121,7 @@
 			<script src="../assets/js/vendor/bootstrap.min.js"></script>
 
 			<script src="../assets/js/flipflop.js"></script>
-			<!-- <script>
-			var input = {
-			'flipflop' : 'JK',
-			'flipflopCount' : 'c2',
-			'input' : 'i2'
-			};
-			var flipflops = {};
-			var ioFunctions = "";
-			var functionCount = 1;
-			var outputCount = 0;
 
-			var inputCount = 2;
-			var flipflopCount = 2;
-
-			var inp = {'JA':"Bx+By",
-			'KA':"B'xy'",
-			'JB':"A'x",
-			'KB':"A+xy'",
-			'Z':"Axy+Bx'y'"};
-
-			generateStateTable(flipflopCount, inputCount, inp, input['flipflop']);
-
-			</script> -->
 			<script>
 				$('#step1').hide();
 				$('#step1').css('position', 'relative');
