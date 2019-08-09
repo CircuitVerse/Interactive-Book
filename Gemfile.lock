@@ -50,6 +50,8 @@ GEM
       sass (~> 3.4)
     jekyll-seo-tag (2.6.1)
       jekyll (>= 3.3, < 5.0)
+    jekyll-tagging (1.1.0)
+      nuggets
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     kramdown (1.17.0)
@@ -61,6 +63,7 @@ GEM
     mercenary (0.3.6)
     multi_json (1.13.1)
     multipart-post (2.1.1)
+    nuggets (1.6.0)
     octokit (4.14.0)
       sawyer (~> 0.8.0, >= 0.5.3)
     pathutil (0.16.2)
@@ -107,6 +110,7 @@ DEPENDENCIES
   jekyll-admin
   jekyll-github-metadata
   jekyll-seo-tag
+  jekyll-tagging
   just-the-docs!
 
 BUNDLED WITH
