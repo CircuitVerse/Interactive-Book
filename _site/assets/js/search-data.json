@@ -9,7 +9,7 @@
   "2": {
     "id": "2",
     "title": "References",
-    "content": "References http://american.cs.ucdavis.edu/academic/ecs154a.sum14/postscript/cosc205.pdf https://en.wikipedia.org/wiki/Digital_electronics https://brilliant.org/wiki/finite-state-machines/ https://electronicsforu.com/resources/learn-electronics/flip-flop-rs-jk-t-dputting 10¢ followed by 5¢ and getting the can https://en.wikipedia.org/wiki/Finite-state_machine https://en.wikipedia.org/wiki/Karnaugh_map https://www.oreilly.com/library/view/digital-logic-design/9780750645829/xhtml/B9780750645829500068.htm https://www.electronics-tutorials.ws/sequential/seq_1.html https://study.com/academy/lesson/arithmetic-logic-unit-alu-definition-design-function.html",
+    "content": "References http://american.cs.ucdavis.edu/academic/ecs154a.sum14/postscript/cosc205.pdf https://en.wikipedia.org/wiki/Digital_electronics https://brilliant.org/wiki/finite-state-machines/ https://electronicsforu.com/resources/learn-electronics/flip-flop-rs-jk-t-dputting 10¢ followed by 5¢ and getting the can https://en.wikipedia.org/wiki/Finite-state_machine https://en.wikipedia.org/wiki/Karnaugh_map https://www.oreilly.com/library/view/digital-logic-design/9780750645829/xhtml/B9780750645829500068.htm https://www.electronics-tutorials.ws/sequential/seq_1.html https://study.com/academy/lesson/arithmetic-logic-unit-alu-definition-design-function.html https://www.geeksforgeeks.org/digital-logic-latches/",
     "url": "http://localhost:4000/docs/References.html",
     "relUrl": "/docs/References.html"
   },
