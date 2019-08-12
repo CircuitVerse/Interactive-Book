@@ -17,4 +17,5 @@ nav_order: 20
 8. https://www.electronics-tutorials.ws/sequential/seq_1.html
 9. https://study.com/academy/lesson/arithmetic-logic-unit-alu-definition-design-function.html
 10. https://www.geeksforgeeks.org/digital-logic-latches/
+11. https://www.geeksforgeeks.org/flip-flop-types-and-their-conversion/
 
