@@ -40,13 +40,24 @@
             const cssFile = document.querySelector('[rel="stylesheet"]')
             const originalCssRef = cssFile.getAttribute('href')
             const darkModeCssRef = originalCssRef.replace('just-the-docs.css', 'dark-mode-preview.css')
+            var darkModeValue = localStorage.getItem("DarkMode")
+            if(darkModeValue == 1){
+              cssFile.setAttribute('href', darkModeCssRef)
+            } else if (darkModeValue == 0 || darkModeValue == null){
+              darkModeValue = 0
+              localStorage.setItem("DarkMode", "0")
+              cssFile.setAttribute('href', originalCssRef)
+            }
 
             addEvent(toggleDarkMode, 'click', function(){
-              if (cssFile.getAttribute('href') === originalCssRef) {
-                cssFile.setAttribute('href', darkModeCssRef)
-              } else {
-                cssFile.setAttribute('href', originalCssRef)
-              }
+              darkModeValue = localStorage.getItem("DarkMode")
+                if (darkModeValue == 0) {
+                    cssFile.setAttribute('href', darkModeCssRef)
+                    localStorage.setItem("DarkMode", "1")
+                } else if (darkModeValue == 1){
+                    cssFile.setAttribute('href', originalCssRef)
+                    localStorage.setItem("DarkMode", "0")
+                }
             })
           </script>
           {% endif %}
