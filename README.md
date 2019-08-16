@@ -1,6 +1,10 @@
 
 # Interactive-Book
 
+[![Slack](https://img.shields.io/badge/chat-on_slack-pink.svg)](https://join.slack.com/t/circuitverse-team/shared_invite/enQtNjc4MzcyNDE5OTA3LTdjYTM5NjFiZWZlZGI2MmU1MmYzYzczNmZlZDg5MjYxYmQ4ODRjMjQxM2UyMWI5ODUzODQzMDU2ZDEzNjI4NmE)
+
+[Join Mailing List](https://circuitverse.us20.list-manage.com/subscribe?u=89207abda49deef3ba56f1411&id=29473194d6)
+
 ## About the project
 The aim of this project is to create an online interactive guide for digital logic design. The primary goal is to develop an open source book with quality content which teaches digital logic design. It will enable students to learn digital design by interacting with circuits,truth table and other interactive elements as they proceed through the book.The professors and students all over the world can read and contribute to the same.
 
@@ -43,7 +47,13 @@ This should start serving the website on http://0.0.0.0:4000/ - simply make chan
 
 ## Contribute!
 
-We are open to all contributions by members of our organization, and we encourage all new members to create their own [Members Page](http://www.codeandcoffeelb.org/members/) using the [instructions provided on our website](http://www.codeandcoffeelb.org/members/#member_howto)
+We are open to all contributions by anyone, and we encourage all new members to create join our slack and discord channel.
+Here are links to our:
+
+[![Slack](https://img.shields.io/badge/chat-on_slack-pink.svg)](https://join.slack.com/t/circuitverse-team/shared_invite/enQtNjc4MzcyNDE5OTA3LTdjYTM5NjFiZWZlZGI2MmU1MmYzYzczNmZlZDg5MjYxYmQ4ODRjMjQxM2UyMWI5ODUzODQzMDU2ZDEzNjI4NmE)
+
+[![Discord](https://img.shields.io/discord/552660710232948749.svg)](https://discord.gg/95x8H7b) - This is an official fan communication channel. Thanks to [@jbox1](https://github.com/jbox144) for this initiative.
+
 
 **However, we do have some rules and general guidelines we would like you to follow:**
 
@@ -80,7 +90,7 @@ If you're looking for support for Jekyll, there are a lot of options:
 
 * Read [Jekyll Documentation](https://jekyllrb.com/docs/)
 * If you have a question about using Jekyll, start a discussion on [the Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll)
-* Chat with Jekyllers &mdash; Join [our Gitter channel](https://gitter.im/jekyll/jekyll) or [our IRC channel on Freenode](irc:irc.freenode.net/jekyll)
+* Chat with Jekyllers &mdash; Join [slack channel](https://join.slack.com/t/circuitverse-team/shared_invite/enQtNjc4MzcyNDE5OTA3LTdjYTM5NjFiZWZlZGI2MmU1MmYzYzczNmZlZDg5MjYxYmQ4ODRjMjQxM2UyMWI5ODUzODQzMDU2ZDEzNjI4NmE)
 
 There are a bunch of helpful community members on these services that should be willing to point you in the right direction.
 
