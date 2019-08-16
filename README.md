@@ -89,7 +89,7 @@ If you're looking for support for Jekyll, there are a lot of options:
 
 * Read [Jekyll Documentation](https://jekyllrb.com/docs/)
 * If you have a question about using Jekyll, start a discussion on [the Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll)
-* Chat with Jekyllers &mdash; Join [slack channel](https://join.slack.com/t/circuitverse-team/shared_invite/enQtNjc4MzcyNDE5OTA3LTdjYTM5NjFiZWZlZGI2MmU1MmYzYzczNmZlZDg5MjYxYmQ4ODRjMjQxM2UyMWI5ODUzODQzMDU2ZDEzNjI4NmE)
+* Chat with slackers &mdash; Join [slack channel](https://join.slack.com/t/circuitverse-team/shared_invite/enQtNjc4MzcyNDE5OTA3LTdjYTM5NjFiZWZlZGI2MmU1MmYzYzczNmZlZDg5MjYxYmQ4ODRjMjQxM2UyMWI5ODUzODQzMDU2ZDEzNjI4NmE)
 
 There are a bunch of helpful community members on these services that should be willing to point you in the right direction.
 
@@ -100,10 +100,8 @@ There are a bunch of helpful community members on these services that should be 
 
 [Watch videos](/jekyllconf/) from members of the Jekyll community speak about interesting use cases, tricks they’ve learned or meta Jekyll topics.
 
-## Jekyll on Twitter
 
-The [official Jekyll Twitter account](https://twitter.com/jekyllrb).
-
+---
 
 
 Interactive-Book is &copy; 2019 by [Aman SIngla](http://github.com/amansingla97).
