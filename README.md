@@ -51,7 +51,8 @@ Here are links to our:
 
 [![Slack](https://img.shields.io/badge/chat-on_slack-pink.svg)](https://join.slack.com/t/circuitverse-team/shared_invite/enQtNjc4MzcyNDE5OTA3LTdjYTM5NjFiZWZlZGI2MmU1MmYzYzczNmZlZDg5MjYxYmQ4ODRjMjQxM2UyMWI5ODUzODQzMDU2ZDEzNjI4NmE)
 
-[![Discord](https://img.shields.io/discord/552660710232948749.svg)](https://discord.gg/95x8H7b) - This is an official fan communication channel. Thanks to [@jbox1](https://github.com/jbox144) for this initiative.
+[![Discord](https://img.shields.io/discord/552660710232948749.svg)](https://discord.gg/95x8H7b) 
+- This is an official fan communication channel. Thanks to [@jbox1](https://github.com/jbox144) for this initiative.
 
 
 **However, we do have some rules and general guidelines we would like you to follow:**
@@ -88,7 +89,13 @@ There are a bunch of helpful community members on these services that should be 
 
 **Reminder: Jekyll's issue tracker is not a support forum.**
 
+## Plugins used
 
+* jekyll-seo-tag
+* jekyll-github-metadata
+* jekyll/tagging
+
+In addition to these plugins Interactive book also inherit's all the plugins used in [Just-the-Docs](https://https://github.com/pmarsceill/just-the-docs)
 ## Jekyllconf
 
 [Watch videos](/jekyllconf/) from members of the Jekyll community speak about interesting use cases, tricks they’ve learned or meta Jekyll topics.
@@ -97,6 +104,6 @@ There are a bunch of helpful community members on these services that should be 
 ---
 
 
-Interactive-Book is &copy; 2019 by [Aman SIngla](http://github.com/amansingla97).
+Interactive-Book is &copy; 2019 by [Aman Singla](http://github.com/amansingla97).
 
 
