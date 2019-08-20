@@ -75,7 +75,34 @@ Here are links to our:
 	* [Who-T - On Commit Messages](http://who-t.blogspot.com/2009/12/on-commit-messages.html)
 	
 	
+## Code Structure
 
+Jekyll is, at its core, a text transformation engine. The concept behind the system is this: you give it text written in your favorite markup language, be that Markdown, Textile, or just plain HTML, and it churns that through a layout or a series of layout files. Throughout that process you can tweak how you want the site URLs to look, what data gets displayed in the layout, and more. This is all done through editing text files; the static web site is the final product.The structure of Interactive Book looks something like this:
+
+├── _config.yml
+├── _data
+|   └── members.yml
+├── _drafts
+|   ├── begin-with-the-crazy-ideas.md
+|   └── on-simplicity-in-technology.md
+├── _includes(contains module specific interactions along with their respective css)
+|   ├── binary.html
+|   └── gates.html
+├── _layouts(includes layout types)
+|   ├── default.html
+|   └── home.html
+├── assets
+|   ├── css(contains css of book's layout)
+|   └── js(contains all the javascript required for module specific intteractions as well as book layout)
+|   └── images(contains all the images required in the project)
+├── docs(contains all the the modules)
+|   ├── Combinational
+|   |   ├── full_adder.md
+|   |   └── half_adder.md
+|   └── binary.md
+├── _site
+├── .jekyll-metadata
+└── index.html 
 
 ## Where to get support
 
