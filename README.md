@@ -78,7 +78,7 @@ Here are links to our:
 ## Code Structure
 
 Jekyll is, at its core, a text transformation engine. The concept behind the system is this: you give it text written in your favorite markup language, be that Markdown, Textile, or just plain HTML, and it churns that through a layout or a series of layout files. Throughout that process you can tweak how you want the site URLs to look, what data gets displayed in the layout, and more. This is all done through editing text files; the static web site is the final product.The structure of Interactive Book looks something like this:
-
+<pre>
 ├── _config.yml
 ├── _data
 |   └── members.yml
@@ -102,8 +102,8 @@ Jekyll is, at its core, a text transformation engine. The concept behind the sys
 |   └── binary.md
 ├── _site
 ├── .jekyll-metadata
-└── index.html 
-
+└── index.md 
+</pre>
 ## Where to get support
 
 If you're looking for support for Jekyll, there are a lot of options:
