@@ -69,7 +69,7 @@ It will include quality content which would be gathered from various books (prim
 There would be two types of Interactions.
 
 1. **Circuit Interactions-** This would include designing optimal circuits which would help to clearly understand the logic. The student would be able to clearly detect the variation of output with the change in input via these circuits. With each Interaction module, there would be a set of instructions that would guide the user to see the desired changes.
-2. **ModuleSpecificInteractions-** This would include interaction which are designed for individual module like kmap simulator , truth table generatoretc.
+2. **Module Specific Interactions-** This would include interaction which are designed for individual module like kmap simulator , truth table generatoretc.
 
 **However, we do have some rules and general guidelines we would like you to follow:**
 
@@ -120,6 +120,18 @@ Jekyll is, at its core, a text transformation engine. The concept behind the sys
 ├── .jekyll-metadata
 └── index.md 
 </pre>
+
+## Plugins used
+
+* [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag)
+    A Jekyll plugin to add metadata tags for search engines and social networks to better index and display your site's content.
+* [jekyll-github-metadata](https://github.com/jekyll/github-metadata)
+    Jekyll plugin to propagate the `site.github` namespace and set default values for use with GitHub Pages.
+* [jekyll-tagging](https://github.com/pattex/jekyll-tagging)
+    Jekyll plugin to automatically generate a tag cloud and tag pages.
+* [jekyll-admin](https://github.com/jekyll/jekyll-admin)
+    A Jekyll plugin that provides users with a traditional CMS-style graphical interface to author content and administer Jekyll sites.
+
 ## Where to get support
 
 If you're looking for support for Jekyll, there are a lot of options:
@@ -131,12 +143,6 @@ If you're looking for support for Jekyll, there are a lot of options:
 There are a bunch of helpful community members on these services that should be willing to point you in the right direction.
 
 **Reminder: Jekyll's issue tracker is not a support forum.**
-
-## Plugins used
-
-* jekyll-seo-tag
-* jekyll-github-metadata
-* jekyll/tagging
 
 In addition to these plugins Interactive book also inherit's all the plugins used in [Just-the-Docs](https://github.com/pmarsceill/just-the-docs)
 ## Jekyllconf
