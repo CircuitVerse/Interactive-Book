@@ -123,13 +123,13 @@ Jekyll is, at its core, a text transformation engine. The concept behind the sys
 
 ## Plugins used
 
-* [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag)
+* [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag):
     A Jekyll plugin to add metadata tags for search engines and social networks to better index and display your site's content.
-* [jekyll-github-metadata](https://github.com/jekyll/github-metadata)
+* [jekyll-github-metadata](https://github.com/jekyll/github-metadata):
     Jekyll plugin to propagate the `site.github` namespace and set default values for use with GitHub Pages.
-* [jekyll-tagging](https://github.com/pattex/jekyll-tagging)
+* [jekyll-tagging](https://github.com/pattex/jekyll-tagging):
     Jekyll plugin to automatically generate a tag cloud and tag pages.
-* [jekyll-admin](https://github.com/jekyll/jekyll-admin)
+* [jekyll-admin](https://github.com/jekyll/jekyll-admin):
     A Jekyll plugin that provides users with a traditional CMS-style graphical interface to author content and administer Jekyll sites.
 
 ## Where to get support
