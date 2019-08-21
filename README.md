@@ -153,6 +153,6 @@ In addition to these plugins Interactive book also inherit's all the plugins use
 ---
 
 
-Interactive-Book is &copy; 2019 by [Aman Singla](http://github.com/amansingla97).
+Interactive-Book is &copy; 2019 by [Aman Singla](http://github.com/amansingla97) (Gsoc19 project)
 
 
