@@ -56,20 +56,20 @@ Here are links to our:
 
 
 ## Overview
-The Interactive book would have two components in it. 
+The Interactive book have two components in it. 
 1. Content
 2. Interactions
 
 <div style="text-align:center"><img src="/assets/images/ib.png" /></div>
 
 ### Content
-It will include quality content which would be gathered from various books (primarily from ‘​Digital Design​’ by ​Morris Mano as its copyright has expired and is in public domain) and online material. Basic notes have already been prepared to reference the aforementioned book and are attached in the table below.
+It include's quality content which would be gathered from various books (primarily from ‘​Digital Design​’ by ​Morris Mano as its copyright has expired and is in public domain) and online material. Basic notes have already been prepared to reference the aforementioned book and are attached in the table below.
 
 ### Interactions
 There would be two types of Interactions.
 
-1. **Circuit Interactions-** This would include designing optimal circuits which would help to clearly understand the logic. The student would be able to clearly detect the variation of output with the change in input via these circuits. With each Interaction module, there would be a set of instructions that would guide the user to see the desired changes.
-2. **Module Specific Interactions-** This would include interaction which are designed for individual module like kmap simulator , truth table generatoretc.
+1. **Circuit Interactions-** This include designing optimal circuits which would help to clearly understand the logic. The student would be able to clearly detect the variation of output with the change in input via these circuits. With each Interaction module, there would be a set of instructions that would guide the user to see the desired changes.
+2. **Module Specific Interactions-** This include interaction which are designed for individual module like kmap simulator , truth table generatoretc.
 
 **However, we do have some rules and general guidelines we would like you to follow:**
 
