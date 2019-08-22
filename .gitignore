@@ -6,3 +6,4 @@ Gemfile.lock
 node_modules
 .idea
 .idea/workspace.xml
+package.json
