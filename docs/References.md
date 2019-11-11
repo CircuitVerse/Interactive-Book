@@ -19,8 +19,7 @@ nav_order: 20
 10. https://www.geeksforgeeks.org/digital-logic-latches/
 11. https://www.geeksforgeeks.org/flip-flop-types-and-their-conversion/
 
-# Videos
-1. https://www.youtube.com/user/nesoacademy/playlists?view=50&sort=dd&shelf_id=10
-2. 
+# Video
+1. https://www.youtube.com/user/nesoacademy/playlists?view=50&sort=dd&shelf_id=10 
 
 
