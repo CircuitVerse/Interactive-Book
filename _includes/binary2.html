@@ -23,7 +23,7 @@
         <div class="opcol">AND</div>
         <div class="opcol">AND</div>
         <div class="opcol">AND</div>
-    </div><input type="button" value="Calculate" onClick="set_bits();" class="ok" style="margin-top: 22px"><br style="clear: left">
+    </div><input type="button" value="Calculate" onClick="set_bits();" class="ok" style="color: #182521 !important; margin-top: 22px"><br style="clear: left">
     <div class="binary">
         <div class="column"><div class="column_heading">128</div><div id="15" class="bit" onClick="toggle_bit(15);">0</div></div>
         <div class="column"><div class="column_heading">64</div><div id="14" class="bit" onClick="toggle_bit(14);">0</div></div>
@@ -33,7 +33,7 @@
         <div class="column"><div class="column_heading">4</div><div id="10" class="bit" onClick="toggle_bit(10);">0</div></div>
         <div class="column"><div class="column_heading">2</div><div id="9" class="bit" onClick="toggle_bit(9);">0</div></div>
         <div class="column"><div class="column_heading">1</div><div id="8" class="bit" onClick="toggle_bit(8);">0</div></div>
-        <div class="decimal">= <input type="text" id="value_B" onInput="set_bits();" size="3" maxlength="3"></div>
+        <div class="decimal">= <input type="text" id="value_B" onInput="set_bits();" size="3" maxlength="3" color="black"></div>
     </div><br style="clear: left">
     <div class="binary">
         <div class="opeq">=</div>
@@ -76,7 +76,7 @@
     .opeq			{float: left; text-align: center; padding-bottom: 10px; width: 54px; height: 30px; font-size: 38px; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -o-transform:rotate(90deg); -ms-transform:rotate(90deg)}
     .bit			{font-size: 64px; background-color: #FFFFFF; color:#000000; border-radius: 7px; margin: 2px; border: 1px solid black}
     #operator		{display: inline;  background: transparent; border: 0; font-size: 37px; width: 120px; margin: auto; float: left; margin-top: 11px}
-    #value_A, #value_B	{font-size: 32px; width: 58px; vertical-align: top; padding-top: 0px; margin-top: 6px}
+    #value_A, #value_B	{ color: #182521 !important; font-size: 32px; width: 58px; vertical-align: top; padding-top: 0px; margin-top: 6px}
     @media screen and (max-width: 720px) {
         #container	{display: none}
         #too_big	{display: block}
