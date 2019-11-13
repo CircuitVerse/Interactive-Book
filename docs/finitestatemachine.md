@@ -14,7 +14,7 @@ nav_order: 17
 ---
 
 ## Introduction
-The most general model of a sequential circuit has inputs, outputs and internal states. A sequential circuit is referred to as a **finite state machine(FSM)**. A FSM is an abstract model that describes the synchronous sequential machine. Since in a sequential circuit, the output depends on the present input as well as on the past inputs,i.e, on the past histories and since a machine might have an infinite varieties of possible histories, it would need an infinite capacity for storing them. Since it's impossible to implement machines whihc have infinite storage capabilities, we consider only FSM. FSM are sequential circuits whose past history can affect their future behaviour in only a finite number of ways,i.e, they are machines with fixed number of states. These machines can distinguish among a finite number of classes of input histories. These classes of inputs are referred to as the **internal states** of the machines. Every FSM therefore contains a finite number of memory devices.
+The most general example of a sequential circuit has inputs, outputs and internal states. A sequential circuit is referred to as a **finite state machine(FSM)**. An FSM is an abstract model that describes the synchronous sequential machine. Since in a sequential circuit, the turnout depends on the present input as well as on the past inputs, i.e., on the past histories and since a machine might have an infinite variety of possible histories, it would need an infinite capacity for storing them. Since it's impossible to implement machines which have infinite storage capabilities, we consider only FSM. FSM is sequential circuits whose past history can bear on their future behavior in only a finite number of ways, i.e, they are machines with fixed number of states. These machines can distinguish among a finite number of classes of input histories. These categories of inputs are referred to as the **internal states** of the machines. Every FSM therefore contains a finite number of memory devices.
 Depending on the type of output, it can be categorised into following types:
 
 
@@ -50,23 +50,23 @@ These states are labelled inside the circles & each circle corresponds to one st
 Transitions between these states are represented with directed lines. Here, 0 / 0, 1 / 0 & 1 / 1 denotes **input / output**. 
 In the above figure, there are two transitions from each state based on the value of input, x.
 
-In general, the number of states required in Mealy state machine is less than or equal to the number of states required in Moore state machine. 
-There is an equivalent Moore state machine for each Mealy state machine.
+ To summarise, the number of states required in Mealy state machine is less than or equal to the number of states required in Moore state machine and
+there is an equivalent Moore state machine for each Mealy state machine.
 
 ## Moore State Machine
 A Finite State Machine is said to be Moore state machine, if outputs depend only on present states. The block diagram of Moore state machine is shown in the following figure.
 
 <div style="text-align:center"><img src="../assets/images/moore_state_machine.jpg" /></div>
 
-Similiar to Mealy machine, there are two parts present in Moore state machine -combinational logic and memory. But here the present inputs and present states determine the next states. So, based on next states, Moore state machine produces the outputs. Therefore, the outputs will be valid only after transition of the state.
+Similiar to Mealy machine, there are two parts present in Moore state machine -combinational logic and memory. But here the present inputs and present states determine the next states.Based on next states, Moore state machine produces the outputs. Therefore, the outputs will be valid only after transition of the state.
 
 The state diagram of Moore state machine is shown in the following figure.
 
 <div style="text-align:center"><img src="../assets/images/state_diagram_of_moore_state_machine.jpg" /></div>
 
-In the above figure, there are four states, namely A, B, C & D. These states and the respective outputs are labelled inside the circles. Here, only the input value is labeled on each transition. In the above figure, there are two transitions from each state based on the value of input, x.
+In the above diagram, there are four states- A, B, C & D. These states and the respective outputs are labelled inside the circles. Only the input value is labeled on each transition. There are two transitions from each state based on the value of input, x.
 
-In general, the number of states required in Moore state machine is more than or equal to the number of states required in Mealy state machine. There is an equivalent Mealy state machine for each Moore state machine. So, based on the requirement we can use one of them.
+To summarise, the number of states required in Moore state machine is more than or equal to the number of states required in Mealy state machine. There is an equivalent Mealy state machine for each Moore state machine. 
 
 
 
@@ -74,9 +74,10 @@ In general, the number of states required in Moore state machine is more than or
 
 # FSM without output
 # Deterministic Finite Automata
-Unlike Mealy and Moore machine, this type of FSM doesn't have memory and combinational logic.The finite automata are called deterministic finite automata if the machine can read one symbol from the input string at a time.
-There is only one path for specific input from the current state to the next state. 
-It does not accept the null move, i.e., the DFA cannot change state without any input character.
+Unlike Mealy and Moore machine, this type of FSM doesn't have memory and combinational logic. 
+The finite automata are called deterministic finite automata if the machine can read one symbol from the input string at a time.
+There is merely one path for specific input from the current state to the next state. 
+It does not accept the null move, i.e., the DFA cannot change state without any input character. 
 It can contain multiple final states. 
 
  The state diagram of DFA has following features:
@@ -109,7 +110,7 @@ F = {q2}
 
 | Present State | Next state for Input 0 | Next State of Input 1 |
 | ------------- | -----------------------| --------------------- | 
-| →q0            |q0                      | q1|
+| q0            |q0                      | q1|
 | q1 | q2 | q1|
 | q2 | q2 | q2|
 
@@ -151,7 +152,7 @@ Transition Diagram:
 
 | Present State | Next state for Input 0 | Next State of Input 1 |
 | ------------- | -----------------------| --------------------- | 
-| →q0           |q0, q1                  | q1|
+| q0           |q0, q1                  | q1|
 | q1 | q2 | q0|
 | q2 | q2 | q1, q2|
 
