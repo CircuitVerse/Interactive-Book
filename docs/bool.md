@@ -22,19 +22,16 @@ nav_order: 4
 ## Introduction
 
 
-Boolean Algebra is used to analyze and simplify the digital (logic) circuits. 
-It uses only the binary numbers i.e. 0 and 1. 
-It is also called as Binary Algebra or logical Algebra. 
-Boolean algebra was invented by George Boole in 1854.
+Boolean Algebra is used to break down and simplify the digital (logic) circuits. It utilizes only the binary numbers i.e. 0 and 1. It is also called as Binary Algebra or logical Algebra. Boolean algebra was invented by George Boole in 1854.
 
 
 
-## Rule in Boolean Algebra
+## Rules in Boolean Algebra
 Following are the important rules used in Boolean algebra.
 
-1. Variable used can have only two values. Binary 1 for HIGH and Binary 0 for LOW.
-1. Complement of a variable is represented by an overbar (-) or (!). Thus, complement of variable B is represented as B Bar. Thus if B = 0 then !B  = 1 and B = 1 then !B  = 0.
-1. ORing of the variables is represented by a plus (+) sign between them. For example ORing of A, B, C is represented as A + B + C.
+1. Variables used can have only two values. 1 for high and 0 for low.
+1. Complement of a variable is interpreted by an overbar (-) or exclamation mark (!). Thus, the complement of variable B is represented as B Bar. Thus, if B = 0 then !B  = 1 and B = 1 then !B  = 0.
+1. ORing of the variables is represented by a plus (+) sign between them. For example, ORing of A, B, C is represented as A + B + C.
 1. Logical ANDing of the two or more variable is represented by writing a dot between them such as A.B.C. Sometime the dot may be omitted like ABC.
    
 ---
@@ -106,11 +103,11 @@ This theorem is useful in finding the **complement of Boolean function**. It sta
 
 DeMorgan’s theorem with 2 Boolean variables x and y can be represented as
 ```yaml
-  (x + y)’ = x’.y’
+  (A + B)’ = A’.B’
 ```
 The dual of the above Boolean function is
 ```yaml
-  (x.y)’ = x’ + y’
+  (A.B)’ = A’ + B’
 ```
 Therefore, the complement of logical AND of two Boolean variables is equal to the logical OR of each complemented variable. Similarly, we can apply DeMorgan’s theorem for more than 2 Boolean variables also.
 
