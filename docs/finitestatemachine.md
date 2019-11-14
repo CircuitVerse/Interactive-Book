@@ -144,7 +144,7 @@ Q = {q0, q1, q2}
 q0 = {q0}  
 F = {q2}  
 
-Transition Diagram:
+**Transition Diagram:**
 
 <div style="text-align:center"><img src="../assets/images/nfa.png" /></div>
 
