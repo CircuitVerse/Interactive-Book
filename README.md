@@ -14,7 +14,9 @@ As contributors and maintainers of this project, and in the interest of fosterin
 
 ## Clone this repo!
 
-First things first. Make a local clone of this repo so you can work on it from your own computer.
+First things first. Make a local clone of this repo so you can work on it from your own computer or either setup this project on Gitpod and get going.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/CircuitVerse/Interactive-Book)
 
 ## Install, and Serve!
 
