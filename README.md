@@ -1,9 +1,13 @@
 
 # Interactive-Book
 
+
+![download](https://user-images.githubusercontent.com/35162705/69917985-7f323900-1492-11ea-994e-6c2bdc999cc0.png)
+
 [![Slack](https://img.shields.io/badge/chat-on_slack-pink.svg)](https://join.slack.com/t/circuitverse-team/shared_invite/enQtNjc4MzcyNDE5OTA3LTdjYTM5NjFiZWZlZGI2MmU1MmYzYzczNmZlZDg5MjYxYmQ4ODRjMjQxM2UyMWI5ODUzODQzMDU2ZDEzNjI4NmE)
 
 [Join Mailing List](https://circuitverse.us20.list-manage.com/subscribe?u=89207abda49deef3ba56f1411&id=29473194d6)
+
 
 ## About the project
 The aim of this project is to create an online interactive guide for digital logic design. The primary goal is to develop an open source book with quality content which teaches digital logic design. It will enable students to learn digital design by interacting with circuits,truth table and other interactive elements as they proceed through the book.The professors and students all over the world can read and contribute to the same.
