@@ -36,7 +36,7 @@
   }
 
   @include mq(lg) {
-    width: calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width});
+    width: calc((100% - #{$nav-width + $content-width}) / 4 + #{$nav-width});
     min-width: $nav-width;
   }
 }
@@ -70,7 +70,7 @@
 
   @include mq(lg) {
     padding-left: $gutter-spacing;
-    margin-left: calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width});
+    margin-left: calc((100% - #{$nav-width + $content-width}) / 4 + #{$nav-width});
   }
 }
 
