@@ -69,6 +69,10 @@
     }
   }
 
+  &:active {
+    box-shadow: 0 0 13px rgba(84, 245, 245, 0.7), inset 0 0 3px #fff;
+  }
+
   @include fs-5;
 
   @include mq(sm) {
@@ -109,10 +113,6 @@
 
   &:hover {
     color: $body-heading-color;
-    background-color: darken($body-background-color, 4%);
-  }
-
-  &:active {
-    box-shadow: 0 0 13px rgba(84, 245, 245, 0.7), inset 0 0 3px #fff;
+    background-color: darken($body-background-color, 2%);
   }
 }
