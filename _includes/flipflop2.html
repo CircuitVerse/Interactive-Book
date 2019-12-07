@@ -35,6 +35,11 @@
 					<p>
 						"A <i>State Table</i> is a tabular representation of the time sequence of inputs, outputs, and flip-flop states. The table consists of four sections marked as <i>present table</i>, <i>next state</i>, and the <i>output</i>. The present-state section shows the states of flip-flops at any given time t. The input section gives a value for each possible present state. The next-state section lists the state of flip-flops one clock period later at time t + 1. Lastly, the output section gives the value for each present state."
 					</p>
+					<ul>
+						<li>A flip-flop is a type of circuit that contains two states and used to store state information.</li>
+						<li>Flip-flops are used in a number of electronics, including computers and communications equipment.</li>
+						<li>There are a basically 4 types of flip-flops: <ol><li>D flip-flop</li><li>SR flip-flop</li><li>T flip-flop</li> <li>JK flip-flop</li></ol></li>
+					</ul>
 					<p>
 						<h4>Press <strong>f</strong> to begin.</h4>
 					</p>
@@ -73,6 +78,34 @@
 							<option value="o1">YES</option>
 							<option value="o2">NO</option>
 						</select>
+					</p>
+					<br>
+					<p>
+						<strong>FLIP-FLOP TYPE:</strong>
+						<br>
+						<br>
+						Here you should select the type of flip-flop.
+						<br>
+						<br>
+						JK: The JK flip flop is nothing but a gated SR flip-flop, with the addition of a clock that prevents the invalid output condition that can occur when both inputs S and R are equal to 1.
+						<br>
+						<br>
+						RS: An RS Flip Flop is an arrangement of logic gates that maintains a stable output even after the inputs are turned off.
+						<br>
+						<br>
+						D(delay or data): The D flip-flop captures the value of the D-input at a definite portion of the clock cycle. The value which is captured becomes the Z output.
+						<br>
+						<br>
+						T(toggle): In the T flip-flop if the output is currently logic high, it changes to logic low; if it’s currently logic low, it changes to logic high.
+						<br>
+						<br>
+						<strong>FLIP-FLOP COUNT:</strong> Select the number of flip-flops.
+						<br>
+						<br>
+						<strong>INPUT COUNT:</strong> Select the number of inputs.
+						<br>
+						<br>
+						<strong>OUTPUT:</strong> Select if you want the output.
 					</p>
 				</div>
 
@@ -189,6 +222,10 @@
 								flipflops['K' + alph] = "";
 								ioFunctions += "<input type='text' style='width:150px' class='form-control' id='J" + alph + "' placeholder='J" + alph + "' required>&nbsp;";
 								ioFunctions += "<input type='text' style='width:150px' class='form-control' id='K" + alph + "' placeholder='K" + alph + "' required>&nbsp;";
+								if (i === 0)
+								$("#step2").append("<strong>JA</strong>: Next state input for J.<br><strong>KA</strong>: Next state input for K.");
+								else if (i === 1)
+								$("#step2").append("<br><strong>JB</strong>: Next state input for J.<br><strong>KB</strong>: Next state input for K.");
 							}
 						} else if (input['flipflop'] == "RS") {
 							for (var i = 0; i < functionCount; i++) {
@@ -197,24 +234,37 @@
 								flipflops['R' + alph] = "";
 								ioFunctions += "<input type='text' style='width:150px' class='form-control' id='S" + alph + "' placeholder='R" + alph + "' required>&nbsp;";
 								ioFunctions += "<input type='text' style='width:150px' class='form-control' id='R" + alph + "' placeholder='S" + alph + "' required>&nbsp;";
+								if (i === 0)
+								$("#step2").append("<br><strong>RA</strong>: Next state input for R.<br><strong>SA</strong>: Next state input for S.");
+								else if (i === 1)
+								$("#step2").append("<br><strong>RB</strong>: Next state input for R.<br><strong>SB</strong>: Next state input for S.");
 							}
 						} else if (input['flipflop'] == "D") {
 							for (var i = 0; i < functionCount; i++) {
 								var alph = String.fromCharCode(65 + i);
 								flipflops['D' + alph] = "";
 								ioFunctions += "<input type='text' style='width:150px' class='form-control' id='D" + alph + "' placeholder='D" + alph + "' required>&nbsp;";
+								if (i === 0)
+								$("#step2").append("<strong>DA</strong>: Next state input for D.");
+								else if (i === 1)
+								$("#step2").append("<br><strong>DB</strong>: Next state input for D.");
 							}
 						} else {
 							for (var i = 0; i < functionCount; i++) {
 								var alph = String.fromCharCode(65 + i);
 								flipflops['T' + alph] = "";
 								ioFunctions += "<input type='text' style='width:150px' class='form-control' id='T" + alph + "' placeholder='T" + alph + "' required>&nbsp;";
+								if (i === 0)
+								$("#step2").append("<strong>TA</strong>: Next state input for T.");
+								else if (i === 1)
+								$("#step2").append("<br><strong>TB</strong>: Next state input for T.");
 							}
 						}
 
 						if (input['output'] == "o1") {
 							outputCount = 1;
 							ioFunctions += "<input type='text' style='width:150px' class='form-control' id='Z' placeholder='Z ( Output )' required>&nbsp;";
+							$("#step2").append("<br><strong>Z</strong>: It is the output value");
 						}
 
 						$('#step2 p.form-inline').append(ioFunctions);
