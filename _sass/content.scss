@@ -112,3 +112,28 @@
     font-weight: 500;
   }
 }
+
+#sidebar {
+  min-width: 250px;
+  max-width: 680px;
+}
+
+#sidebar.active {
+  margin-left: -680px;
+}
+
+#main-content.moved {
+
+  margin-left: calc((100% - 1032px) / 2 + -80px);
+  overflow-x: scroll;
+
+}
+#headerid.moved {
+  margin-left: calc((100% - 1032px) / 2 + 65px)
+
+}
+
+#sidebarCollapse.moved {
+  margin-left: calc((100% - 1032px) / 2 + -80px);
+
+}
