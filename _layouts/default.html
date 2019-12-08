@@ -5,8 +5,15 @@
 <script src="../assets/js/module.js"></script>
 <body>
 
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- Popper.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
   <div class="page-wrap">
-    <div class="side-bar">
+    <div class="side-bar wrapper" id="sidebar">
       <a href="{{ site.url }}{{ site.baseurl }}" class="site-title fs-6 lh-tight">{{ site.title }}</a>
       <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
       <div class="navigation main-nav js-main-nav">
@@ -17,7 +24,7 @@
     </div>
     <div class="main-content-wrap js-main-content" tabindex="0">
       <div class="page-header">
-        <div class="main-content">
+        <div id="headerid" class="main-content">
           {% if site.search_enabled != nil %}
           <div class="search js-search">
             <div class="search-input-wrap">
@@ -28,6 +35,8 @@
           </div>
           {% endif %}
           {% if site.aux_links != nil %}
+
+
           <ul class="list-style-none text-small mt-md-1 mb-md-1 pb-4 pb-md-0 js-aux-nav aux-nav">
             <li class="d-inline-block my-0{% unless forloop.last %} mr-2{% endunless %} btn js-toggle-dark-mode"><a>Dark Mode</a></li>
             <li class="d-inline-block my-0{% unless forloop.last %} mr-2{% endunless %} btn "><a href="{{ site.github.repository_url }}/tree/master/{{ page.path }}">Edit on Github</a></li>
@@ -52,7 +61,20 @@
           {% endif %}
         </div>
       </div>
-      <div class="main-content">
+
+      <div id="mainhome" class="main-content">
+        <div id="content">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+              <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <i class="fas fa-align-left"></i>
+                <span>Toggle Sidebar</span>
+              </button>
+
+            </div>
+          </nav>
+        </div>
         {% unless page.url == "/" %}
           {% if page.parent %}
             <nav class="breadcrumb-nav">
@@ -91,6 +113,23 @@
       </div>
     </div>
   </div>
+
+
+<script>$(document).ready(function () {
+
+  $('#sidebarCollapse').on('click', function () {
+    $('#sidebar').toggleClass('active');
+    $('#main-content').toggleClass('moved');
+    $('#headerid').toggleClass('moved');
+    $('#sidebarCollapse').toggleClass('moved');
+
+  });
+
+});</script>
+
+
+
+
 
 </body>
 </html>
