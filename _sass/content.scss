@@ -131,9 +131,6 @@
   #sidebarCollapse {
     display: none;    
   } }
-#sidebarCollapse.colored {
-  background-color: #7fffd4; 
-}
 #sidebarCollapse.new.colored {
   background-color: $grey-light;
   color: $dark-green;
