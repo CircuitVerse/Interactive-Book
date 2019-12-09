@@ -115,32 +115,25 @@
 
 #sidebar {
   min-width: 250px;
-  max-width: 680px;
-  
+  max-width: 680px;  
 }
 #sidebar.active {
-  margin-left: -680px;
-  
+  margin-left: -680px;  
 }
 @media only screen and (min-width: 739px) {  
   #main-content.moved {
-    margin-left: calc((100% - 739px) / 2 + -80px);
-    
+    margin-left: calc((100% - 739px) / 2 + -80px);    
   }
   #headerid.moved {
-    margin-left: calc((100% - 739px) / 2 + 65px);
-    
+    margin-left: calc((100% - 739px) / 2 + 65px);    
   }
   #sidebarCollapse.moved {
-    margin-left: calc((100% - 739px) / 2 + -80px);
-    
+    margin-left: calc((100% - 739px) / 2 + -80px);   
   } }
 @media only screen and (max-width: 739px) {
   #sidebarCollapse {
-    display: none;
-    
+    display: none;    
   } }
 #sidebarCollapse.colored {
-  background-color: #7fffd4;
-  
+  background-color: #7fffd4; 
 }
