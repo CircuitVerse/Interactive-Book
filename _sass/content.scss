@@ -132,10 +132,10 @@
     display: none;    
   } }
 #sidebarCollapse.new.colored {
-  background-color: $grey-light;
-  color: $dark-green;
+  background-color: $base-button-color;
+  color: $link-color;
 }
 #sidebarCollapse.new {
-  background-color: $dark-green;
-  color: $white;
+  background-color: $link-color;
+  color: white;
 }
