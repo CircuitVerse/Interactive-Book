@@ -121,6 +121,7 @@
   margin-left: -680px;
 }
 @media only screen and (min-width: 739px) {
+  
   #main-content.moved {
     margin-left: calc((100% - 739px) / 2 + -80px);
   }
@@ -131,9 +132,10 @@
     margin-left: calc((100% - 739px) / 2 + -80px);
   } }
 @media only screen and (max-width: 739px) {
+  
   #sidebarCollapse {
     display: none;
   } }
-#sidebarCollapse.colored{
-  background-color: aquamarine;
+#sidebarCollapse.colored {
+  background-color: #7fffd4;
 }
