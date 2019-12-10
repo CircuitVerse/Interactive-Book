@@ -115,6 +115,7 @@
 #sidebar.active {
   display: none;
 }
+
 @media only screen and (min-width: 739px) {
   #main-content.moved {
     margin-left: calc((100% - 739px) / 2 + -80px);
@@ -125,6 +126,7 @@
   #sidebarCollapse.moved {
     margin-left: calc((100% - 739px) / 2 + -80px);
   } }
+
 @media only screen and (max-width: 739px) {
   
   #sidebarCollapse {
@@ -132,6 +134,7 @@
     
   }
 }
+
 #sidebarCollapse.new.colored {
   background-color: $base-button-color;
   color: $link-color;
