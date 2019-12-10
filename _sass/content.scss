@@ -124,10 +124,12 @@
   }
   #sidebarCollapse.moved {
     margin-left: calc((100% - 739px) / 2 + -80px);   
-  }
-  #sidebarCollapse {
-    display: block;
   } }
+  @media only screen and (max-width: 739px) {
+  #sidebarCollapse {
+    display: none;
+  }
+}  
 #sidebarCollapse.new.colored {
   background-color: $base-button-color;
   color: $link-color;
