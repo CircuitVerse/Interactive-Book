@@ -33,6 +33,14 @@ External clock is applied to the clock input of flip-flop A and QA output is app
 
 <div style="text-align:center"><img src="../assets/images/ripple_counter_diagram.jpg" /></div>
 
+### Types 
+
+* 3 bit Asynchronous up counter
+* 3 bit Asynchronous down counter
+* 4 bit Asynchronous up counter
+* 4 bit Asynchronous down counter
+
+
 ### Operation
 
 |Condition|Operation|
@@ -54,7 +62,14 @@ If the "clock" pulses are applied to all the flip-flops in a counter simultaneou
 
 ### 2-bit Synchronous up counter
 
-he JA and KA inputs of FF-A are tied to logic 1. So FF-A will work as a toggle flip-flop. The JB and KB inputs are connected to QA.
+The JA and KA inputs of FF-A are tied to logic 1. So FF-A will work as a toggle flip-flop. The JB and KB inputs are connected to QA.
+
+### Types 
+
+* 3 bit synchronous up counter
+* 3 bit synchronous down counter
+* 4 bit synchronous up counter
+* 4 bit synchronous down counter
 
 ### Logical Diagram
 
