@@ -5,6 +5,7 @@
   {% if site.plugins.jekyll-seo == nil %}
     <title>{{ page.title }} - {{ site.title }}</title>
 
+
     {% if page.description %}
     <meta name="Description" content="{{ page.description }}">
     {% endif %}
@@ -29,6 +30,10 @@
   <script type="text/javascript" src="{{ "/assets/js/just-the-docs.js" | absolute_url }}"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script defer src="\assets\js\vendor\fontawesome-solid.js"></script>
+  <script defer src="assets\js\vendor\fontawesome-main.js"></script>
+
 
 {% seo %}
 </head>

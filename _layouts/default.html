@@ -4,9 +4,10 @@
 {% include head.html %}
 <script src="../assets/js/module.js"></script>
 <body>
+  <script src="\assets\js\vendor\jquery-3.3.1.slim.min.js"></script>
 
   <div class="page-wrap">
-    <div class="side-bar">
+    <div class="side-bar" id="sidebar">
       <a href="{{ site.url }}{{ site.baseurl }}" class="site-title fs-6 lh-tight">{{ site.title }}</a>
       <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
       <div class="navigation main-nav js-main-nav">
@@ -17,7 +18,7 @@
     </div>
     <div class="main-content-wrap js-main-content" tabindex="0">
       <div class="page-header">
-        <div class="main-content">
+        <div id="headerid" class="main-content">
           {% if site.search_enabled != nil %}
           <div class="search js-search">
             <div class="search-input-wrap">
@@ -33,8 +34,6 @@
             <li class="d-inline-block my-0{% unless forloop.last %} mr-2{% endunless %} btn "><a href="{{ site.github.repository_url }}/tree/master/{{ page.path }}">Edit on Github</a></li>
 
           </ul>
-
-
           <script>
             const toggleDarkMode = document.querySelector('.js-toggle-dark-mode')
             const cssFile = document.querySelector('[rel="stylesheet"]')
@@ -52,7 +51,18 @@
           {% endif %}
         </div>
       </div>
-      <div class="main-content">
+      <div id="mainhome" class="main-content">
+        <div id="content">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+              <button type="button" id="sidebarCollapse" class="btn btn-info new">
+                <i class="fas fa-align-left"></i>
+                <span>Sidebar</span>
+              </button>
+            </div>
+          </nav>
+        </div>
         {% unless page.url == "/" %}
           {% if page.parent %}
             <nav class="breadcrumb-nav">
@@ -87,10 +97,17 @@
           {% endif %}
         </div>
         <br>
-
       </div>
     </div>
   </div>
-
+<script>$(document).ready(function () {
+  $('#sidebarCollapse').on('click', function () {
+    $('#sidebar').toggleClass('active');
+    $('#main-content').toggleClass('moved');
+    $('#headerid').toggleClass('moved');
+    $('#sidebarCollapse').toggleClass('moved');
+    $('#sidebarCollapse').toggleClass('colored');
+  });
+});</script>
 </body>
 </html>
