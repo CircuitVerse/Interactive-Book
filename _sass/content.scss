@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 //
 // Styles for rendered markdown in the .main-content container
 //
@@ -111,4 +110,40 @@
     margin-left: 1em;
     font-weight: 500;
   }
+}
+
+#sidebar.active {
+  display: none;
+}
+
+@media only screen and (min-width: 739px) {
+
+  #main-content.moved {
+    margin-left: calc((100% - 739px) / 2 + -80px);
+  }
+  #headerid.moved {
+    margin-left: calc((100% - 739px) / 2 + 65px);
+  }
+  #sidebarCollapse.moved {
+    margin-left: calc((100% - 739px) / 2 + -80px);
+
+  } }
+
+@media only screen and (max-width: 739px) {
+
+  #sidebarCollapse {
+    display: none;
+
+  }
+}
+
+#sidebarCollapse.new.colored {
+  background-color: $base-button-color;
+  color: $link-color;
+
+}
+#sidebarCollapse.new {
+  background-color: $link-color;
+  color: $white;
+
 }
