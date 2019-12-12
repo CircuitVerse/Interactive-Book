@@ -11,3 +11,8 @@ Please include and link all the related issues here.
 
 ***Attach Screenshots (if any)*** <br>
 Please make sure to include all the screenshots related to the pull request.
+
+***Additional Information*** <br>
+Include all additional information here.
+
+<h3>Thank You! Your help makes CircuitVerse better!</h3>
