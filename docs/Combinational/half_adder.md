@@ -31,4 +31,4 @@ This circuit has two outputs **carry** and **sum**.
 
 <div style="text-align:center"><img src="../../assets/images/halfadder_circuitdiagram.jpg" /></div>
 
-<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/12140" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/42972" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
