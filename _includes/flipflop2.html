@@ -136,7 +136,7 @@
 				$('#stateTable').css('left', '0px');
 
 				$(document).keypress(function(event) {
-					if (String.fromCharCode(event.which) == 'f') {
+					if (String.fromCharCode(event.which) == 'f' || String.fromCharCode(event.which) == 'F') {
 						if ($('#about').is(':visible')) {
 							$('#step1').fadeIn();
 							$('#about').hide();
