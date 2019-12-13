@@ -39,6 +39,8 @@ It is known as ripple counter because of the way the clock pulse ripples its way
 
 <div style="text-align:center"><img src="../assets/images/2bit_up_counter.png" height="300"/></div>
 
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/43064" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+
 <br>
 
 * **2 bit ripple down counter:** It contains two flip flops. A 2-bit ripple counter can count up to 4 states. It is known as down counter as it counts down from 3 to 0.
