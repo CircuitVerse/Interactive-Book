@@ -231,7 +231,7 @@
 				var flag = null;
 				$('#confirmStep2').click(function() {
 					var inp = $("#step2 p.form-inline").find('input');
-					for (var i = 0; i < inp.size(); i++) {
+					for (var i = 0; i < inp.length; i++) {
 						if (inp[i].value == "") {
 							inp[i].focus();
 							flag = i;
