@@ -6,7 +6,7 @@ nav_order: 7
 ---
 
 # Interactive Karnaugh Map
-{: .no_toc }
+{: .No_toc }
 
 {% include kmap.html %}
 
