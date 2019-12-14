@@ -255,7 +255,11 @@ function decode()
             subject_text = subject_text + "</ul>";
         }
         document.getElementById("subjects").innerHTML = subject_text;
-        document.getElementById("subjects").style.height = "fit-content";
+        var p = document.getElementById("subjects").getElementsByTagName("p")[0];
+        var ul = document.getElementById("subjects").getElementsByTagName("ul")[0];
+        if(typeof ul !== undefined){
+            document.getElementById("subjects").style.height = p.offsetHeight + ul.offsetHeight + "px";
+        }
     }
 }
 
