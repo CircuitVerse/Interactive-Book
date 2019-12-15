@@ -28,9 +28,6 @@ search_enabled: true
 aux_links:
   "Circuitverse on GitHub":
     - "//github.com/CircuitVerse"
- 
-# Repository name for Setting up Netlify
-repository: CircuitVerse/Interactive-Book
 
 # Color scheme currently only supports "dark" or nil (default)
 color_scheme: nil
