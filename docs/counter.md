@@ -97,7 +97,9 @@ The JA and KA inputs of FF-A are tied to logic 1. So FF-A will work as a toggle 
 
 ### Logical Diagram
 
-<div style="text-align:center"><img src="../../assets/images/synchronous_counter_diagram.jpg" /></div>
+<div style="text-align:center"><img src="../assets/images/synchronous_counter_diagram.jpg" /></div>
+
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/43082" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ### Operation
 
