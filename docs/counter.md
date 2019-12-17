@@ -98,7 +98,7 @@ The JA and KA inputs of FF-A are tied to logic 1. So FF-A will work as a toggle 
 <div style="text-align:center"><img src="../assets/images/4bit_decade_counter.png" height="300"/></div>
 <br>
 
-* **Ring Counter:** The ring counter is a cascaded connection of flip flops, in which the output of last flip flop is connected to input of first flip flop. In ring counter if the output of any stage is 1, then its reminder is 0. The Ring counters transfers the same output throughout the circuit.
+* **Ring Counter:** The ring counter is a application of shift register, in which the output of last flip flop is connected to input of first flip flop. In ring counter if the output of any flip flop is 1, then the output of remaining flip flops is 0. The Ring counters transfers the same output throughout the circuit.
 
 <div style="text-align:center"><img src="../assets/images/ring_counter.png" height="300"/></div>
 <br>
