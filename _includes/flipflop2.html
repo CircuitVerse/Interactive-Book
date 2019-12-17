@@ -74,7 +74,7 @@
 							<option value="o2">NO</option>
 						</select>
 						<br />
-						<h4>Press <strong>n</strong> to  proceed or <strong>r</strong> for reload the page.</h4>
+						<h4>Press <strong>n</strong> to  proceed</h4>
 					</p>
 				</div>
 
@@ -93,7 +93,7 @@
 						<br/>
 					</p>
 					<p class="form-inline"></p>
-					<h4>Press <strong>n</strong> to  proceed or <strong>b</strong> to  go back or <strong>r</strong> for reload to reload the page.</h4>
+					<h4>Press <strong>n</strong> to  proceed or <strong>l</strong> to  go back.</h4>
 				</div>
 				<div class="row init" id="summary">
 					<div id="summa"></div>
@@ -107,7 +107,7 @@
 							Confirm
 						</button>
 						<br />
-						<h4>Press <strong>c</strong> to <strong>confirm</strong> or <strong>b</strong> to  go back or <strong>r</strong> to reload the page.</h4>
+						<h4>Press <strong>n</strong> to <strong>confirm</strong> or <strong>l</strong> to  go back.</h4>
 					</p>
 				</div>
 				<div class="row init" id="stateTable"></div>
@@ -140,7 +140,6 @@
 				$('#stateTable').css('left', '0px');
 
 				var next = 0;
-				var conf = 0;
 
 				$(document).keypress(function(event) {
 					if (String.fromCharCode(event.which) == 'f' || String.fromCharCode(event.which) == 'F') {
@@ -150,19 +149,22 @@
 							next++;
 						}
 					}
-					if (String.fromCharCode(event.which) == 'R' || String.fromCharCode(event.which) == 'r') {
-						location. reload();
-						next = 0;
-					}
-					if (String.fromCharCode(event.which) == 'N' || String.fromCharCode(event.which) == 'n') {
+					// if (String.fromCharCode(event.which) == 'R' || String.fromCharCode(event.which) == 'r') {
+					// 	location. reload();
+					// 	next = 0;
+					// }
+					if (String.fromCharCode(event.which) == 'n' || String.fromCharCode(event.which) == 'N') {
 						if(next === 1) {
 								$('#confirmStep1').click();
 							}
 						if (next === 2) {
 								$('#confirmStep2').click();
 							}
+							if (next === 3) {
+						 		$('#confirmSummary').click();
+						 	}
 						}
-						if (String.fromCharCode(event.which) == 'B' || String.fromCharCode(event.which) == 'b') {
+						if (String.fromCharCode(event.which) == 'L' || String.fromCharCode(event.which) == 'l') {
 						if(next === 2) {
 								$('#backToStep1').click();
 							}
@@ -170,10 +172,11 @@
 								$('#backToStep2').click();
 							}
 						}
-						if (String.fromCharCode(event.which) == 'C' || String.fromCharCode(event.which) == 'c') {
-							if (conf === 1) {
-								$('#confirmSummary').click();
-							}
+						if (next ===0) {
+							if (String.fromCharCode(event.which) == 'R' || String.fromCharCode(event.which) == 'r') {
+						location. reload();
+						next = 0;
+					}
 						}
 				});
 
@@ -253,7 +256,7 @@
 						$('#step2 p.form-inline').append(ioFunctions);
 						$('#step1').hide();
 						$('#step2').fadeIn();
-						next++;
+						next= next +1;
 					}
 				});
 
@@ -265,6 +268,7 @@
 				});
 				var flag = null;
 				$('#confirmStep2').click(function() {
+					setTimeout(function() {
 					var inp = $("#step2 p.form-inline").find('input');
 					for (var i = 0; i < inp.length; i++) {
 						if (inp[i].value == "") {
@@ -315,16 +319,16 @@
 						$('#summary #summa').append(summary);
 						$('#step2').hide();
 						$('#summary').fadeIn();
-						next++;
-						conf = 1;
+						next = next + 1;
 					}
+					clearInterval();
+					}, 0 );  
 				});
 				$('#backToStep2').click(function() {
 					$('#summary #summa').empty();
 					$('#summary').hide();
 					$('#step2').fadeIn();
 					next = 2;
-					conf = 0;
 				});
 
 				$('#confirmSummary').click(function() {
@@ -364,13 +368,10 @@
 					$('#stateTable').append("<h4>Press <strong>r</strong> to reload the page.</h4>");
 					$('#summary').hide();
 					$('#stateTable').fadeIn();
-					conf = 0;
 					next = 0;
 				});
 				
 			</script>
-
-
 		</div>
 	</body>
 </html>
