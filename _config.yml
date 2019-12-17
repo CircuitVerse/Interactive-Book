@@ -21,8 +21,8 @@ url: "https://learn.circuitverse.org" # the base hostname & protocol for your si
 permalink:
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile", "vendor"]
 
-#gets rid of Netlify error
-repository: NumberC/Interactive-Book
+
+
 
 # Enable or disable the site search
 search_enabled: true
@@ -32,8 +32,7 @@ aux_links:
   "Circuitverse on GitHub":
     - "//github.com/CircuitVerse"
  
-# Repository name for Setting up Netlify
-repository: CircuitVerse/Interactive-Book
+
 
 # Color scheme currently only supports "dark" or nil (default)
 color_scheme: nil
