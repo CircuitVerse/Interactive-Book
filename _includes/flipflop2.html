@@ -74,7 +74,7 @@
 							<option value="o2">NO</option>
 						</select>
 						<br />
-						<h4>Press <strong>n</strong> to  proceed</h4>
+						<h4>Press <strong>enter</strong> to  proceed</h4>
 					</p>
 				</div>
 
@@ -93,7 +93,7 @@
 						<br/>
 					</p>
 					<p class="form-inline"></p>
-					<h4>Press <strong>n</strong> to  proceed or <strong>l</strong> to  go back.</h4>
+					<h4>Press <strong>enter</strong> to  proceed or <strong>l</strong> to  go back.</h4>
 				</div>
 				<div class="row init" id="summary">
 					<div id="summa"></div>
@@ -107,7 +107,7 @@
 							Confirm
 						</button>
 						<br />
-						<h4>Press <strong>n</strong> to <strong>confirm</strong> or <strong>l</strong> to  go back.</h4>
+						<h4>Press <strong>enter</strong> to <strong>confirm</strong> or <strong>l</strong> to  go back.</h4>
 					</p>
 				</div>
 				<div class="row init" id="stateTable"></div>
@@ -141,7 +141,7 @@
 
 				var next = 0;
 
-				$(document).keypress(function(event) {
+				$(document).keydown(function(event) {
 					if (String.fromCharCode(event.which) == 'f' || String.fromCharCode(event.which) == 'F') {
 						if ($('#about').is(':visible')) {
 							$('#step1').fadeIn();
@@ -149,11 +149,7 @@
 							next++;
 						}
 					}
-					// if (String.fromCharCode(event.which) == 'R' || String.fromCharCode(event.which) == 'r') {
-					// 	location. reload();
-					// 	next = 0;
-					// }
-					if (String.fromCharCode(event.which) == 'n' || String.fromCharCode(event.which) == 'N') {
+					if (event.which == 13) {
 						if(next === 1) {
 								$('#confirmStep1').click();
 							}
@@ -172,11 +168,11 @@
 								$('#backToStep2').click();
 							}
 						}
-						if (next ===0) {
+						if (next === 0) {
 							if (String.fromCharCode(event.which) == 'R' || String.fromCharCode(event.which) == 'r') {
 						location. reload();
 						next = 0;
-					}
+							}
 						}
 				});
 
@@ -192,10 +188,10 @@
 						$('#flipflop').focus();
 					} else if ($('#input').val() == "i0") {
 						$('#input').focus();
-					} else if ($('#output').val() == "o0") {
-						$('#output').focus();
 					} else if ($('#flipflopCount').val() == "c0") {
 						$('#flipflopCount').focus();
+					} else if ($('#output').val() == "o0") {
+						$('#output').focus();
 					} else {
 						input = {};
 						ioFunctions = "";
@@ -275,7 +271,8 @@
 							inp[i].focus();
 							flag = i;
 							break;
-						} else {
+						}
+						 else {
 							//alert(inp[i].id + ":" + inp[i].value);
 							flipflops[inp[i].id] = inp[i].value;
 						}
@@ -309,7 +306,6 @@
 						summary += '<p class="form-inline">';
 
 						var keys = Object.keys(flipflops);
-
 						for (var i = 0; i < keys.length; i++) {
 							if (keys[i] !== "Z"){
 							summary += '<h3>' + keys[i] + ' = ' + flipflops[keys[i]] + '</h3> ';
