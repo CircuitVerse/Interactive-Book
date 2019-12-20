@@ -310,13 +310,8 @@
 							if (keys[i] !== "Z"){
 							summary += '<h3>' + keys[i] + ' = ' + flipflops[keys[i]] + '</h3> ';
 							}
-							else {
-								if (flipflops[keys[i]][length-1] === "n" || flipflops[keys[i]][length-1] === "N"){
-								summary += '<h3>' + keys[i] + ' = ' +  flipflops[keys[i]].slice(0,-1) + '</h3> ';
-								}
-								else{
+							else {	
 									summary += '<h3>' + keys[i] + ' = ' +  flipflops[keys[i]] + '</h3> ';
-								}
 							}
 						}
 
