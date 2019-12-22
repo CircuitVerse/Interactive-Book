@@ -58,6 +58,10 @@ Here are links to our:
 [![Discord](https://img.shields.io/discord/552660710232948749.svg)](https://discord.gg/95x8H7b) 
 - This is an official fan communication channel. Thanks to [@jbox1](https://github.com/jbox144) for this initiative.
 
+## Contributors
+Thanks to everyone who has contributed to the Interactive Book so far!
+<a href="https://github.com/CircuitVerse/Interactive-Book/graphs/contributors"><img src="https://contributors-img.firebaseapp.com/image?repo=CircuitVerse/Interactive-Book" alt="Image of contributors"></a>
+
 
 ## Overview
 The Interactive book have two components in it. 
