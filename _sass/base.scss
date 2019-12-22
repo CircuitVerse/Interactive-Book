@@ -59,6 +59,18 @@ h6 {
   color: $body-heading-color;
 }
 
+select {
+  color: #5c5962;
+}
+
+input{
+  color: black;
+}
+
+path{
+  stroke: $body-text-color;
+}
+
 p {
   margin-bottom: 1em;
 }
