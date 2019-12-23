@@ -31,24 +31,24 @@ External clock is applied to the clock input of flip-flop A and QA output is app
 
 ### Logical Diagram
 
-<div style="text-align:center"><img src="../assets/images/ripple_counter_diagram.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/ripple_counter_diagram.jpg" /></div>
 
 ### Types 
 It is known as ripple counter because of the way the clock pulse ripples its way through the flip-flops. The flip-flop applied with external clock pulse act as LSB (Least Significant Bit) in the counting sequence.The flip-flop toggles the output either for every positive edge of clock signal or for negative edge of clock signal.
 * **2 bit ripple up counter:** It contains two flip flops. A 2-bit ripple counter can count up to 4 states. It counts from 0 to 3.
 
-<div style="text-align:center"><img src="../assets/images/2bit_up_counter.png" height="300"/></div>
+<div style="text-align:center"><img src="/assets/images/2bit_up_counter.png" height="300"/></div>
 
 <br>
 
 * **2 bit ripple down counter:** It contains two flip flops. A 2-bit ripple counter can count up to 4 states. It is known as down counter as it counts down from 3 to 0.
 
-<div style="text-align:center"><img src="../assets/images/2bit_down_counter.png" height="300"/></div>
+<div style="text-align:center"><img src="/assets/images/2bit_down_counter.png" height="300"/></div>
 
 * **3 bit ripple up counter:** It contains three flip flops. A 3-bit ripple counter can count up to 8 states. It counts from 0 to 7.
 
 * **3 bit ripple down counter:** It contains three flip flops. A 3-bit ripple counter can count up to 8 states.It counts down from 7 to 0.
-<div style="text-align:center"><img src="../assets/images/3bit_counter.png" height="300"/></div>
+<div style="text-align:center"><img src="/assets/images/3bit_counter.png" height="300"/></div>
 
 ### Operation
 
@@ -63,7 +63,7 @@ It is known as ripple counter because of the way the clock pulse ripples its way
 
 ### Truth Table 
 
-<div style="text-align:center"><img src="../assets/images/ripple_counter_truthtable.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/ripple_counter_truthtable.jpg" /></div>
 
 ## Synchronous counters
 
@@ -76,28 +76,28 @@ The JA and KA inputs of FF-A are tied to logic 1. So FF-A will work as a toggle 
 ### Types 
 * **4 bit synchronous up counter:** In the up counter the 4 bit binary sequence starts from 0000 and increments up to 1111, i.e from 0 to 15.
 
-<div style="text-align:center"><img src="../assets/images/4bit_up_counter.png" height="300"/></div>
+<div style="text-align:center"><img src="/assets/images/4bit_up_counter.png" height="300"/></div>
 <br>
 
 * **4 bit synchronous down counter:** Down counter counts the numbers in decreasing order i.e from 15 to 0.
 
-<div style="text-align:center"><img src="../assets/images/4bit_down_counter.png" height="300"/></div>
+<div style="text-align:center"><img src="/assets/images/4bit_down_counter.png" height="300"/></div>
 <br>
 
 * **4 bit synchronous up/down counter:** This counter has two modes of counting i.e. up counting and down counting. There is a mode switch which switches between the two modes of the counter. When the mode M = 0 it counts up & when mode M = 1 then it counts down.
 
-<div style="text-align:center"><img src="../assets/images/4bit_up_down_counter.png" height="300"/></div>
+<div style="text-align:center"><img src="/assets/images/4bit_up_down_counter.png" height="300"/></div>
 <br>
 
 * **4-Bit Synchronous Decade Counter:** A BCD decade counter exhibits a truncated binary sequence and goes from 0000 through the
 1001 state. Rather than going from the 1001 state to the 1010 state, it recycles to the 0000 state. 
 
-<div style="text-align:center"><img src="../assets/images/4bit_decade_counter.png" height="300"/></div>
+<div style="text-align:center"><img src="/assets/images/4bit_decade_counter.png" height="300"/></div>
 <br>
 
 ### Logical Diagram
 
-<div style="text-align:center"><img src="../../assets/images/synchronous_counter_diagram.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/synchronous_counter_diagram.jpg" /></div>
 
 ### Operation
 

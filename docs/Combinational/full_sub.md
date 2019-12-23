@@ -15,11 +15,11 @@ A is the 'minuend', B is 'subtrahend', C is the 'borrow' produced by the previou
 ## Truth Table
 {: .no_toc }
 
-<div style="text-align:center"><img src="../../assets/images/fullsubstrator_truthtable.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/fullsubstrator_truthtable.jpg" /></div>
 
 ## Circuit Diagram
 {: .no_toc }
 
-<div style="text-align:center"><img src="../../assets/images/fullsubstrator_circuitdiagram.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/fullsubstrator_circuitdiagram.jpg" /></div>
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/12119" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>

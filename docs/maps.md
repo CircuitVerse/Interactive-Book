@@ -22,13 +22,13 @@ Karnaugh Maps are a way to visually display a boolean expression onto a 2D grid.
 
 For example, we can display the following 2 variable Karnaugh Map:
 
-![](../assets/images/map11.png)
+![](/assets/images/map11.png)
 
 We have bounded to the vertical axis, the variable `A`, and we enumerate through the possible values for `A` (being `{0, 1}`). Similarily, we perform a similar operation for the `B` variable. Since we are using a 2 variable expression, we can bound one variable to each axis and the visualization works fine in a `2x2` matrix.
 
 Let's instead look at a more involved example with 4 variables:
 
-![](../assets/images/map1.png)
+![](/assets/images/map1.png)
 
 We have now bounded the `A` and `B` variables to the vertical axis, while we bounded the `C` and `D` variables to the horizontal axis. We now enumarate through different combinations of the bounded variables for each axis in *reflected binary code order* (more on this in the following section). Lastly, we indicate on the matrix each true value by augmenting a `1` value.
 
@@ -45,7 +45,7 @@ Thus, we get this wrapping that allows us to switch by only one bit. This provid
 ## Simple Groupings
 The main idea for how Karnaugh Maps can be used to simplify expressions is to group pairs of `1` values that are adjacent, and exploit the fact that each one has only a bit difference from another. 
 
-![](../assets/images/map2.png)
+![](/assets/images/map2.png)
 
 For the purpose of this example, let `F(ABCD) = CELL`. We start with the expression `F(0000) = 1` and `F(0001) = 1`. However, notice that _regardless_ of the value of the last bit, we still get `1`. Hence, let's take a look at the SOP expressions:
 
@@ -69,7 +69,7 @@ We can then extend this rule to work for rectangles and more!
 ## Two Dimension Groupings
 Extending the idea of isolating changing bits that retain a consistent value, we can then generalize this to work in a higher dimension. Consider the following example:
 
-![](../assets/images/map3.png)
+![](/assets/images/map3.png)
 
 Letting `F(ABCD) = CELL`:
 ```markdown
@@ -101,7 +101,7 @@ Since the differences in bits needs to generalize throughout a binding of an axi
 
 ## Disjoint Groupings
 Consider the following example:
-![](../assets/images/map4.png)
+![](/assets/images/map4.png)
 
 The algorithm follows precisely as it did before, except that now the two groups are joined in the SOP expression. Letting `F(ABCD) = CELL`:
 ```markdown
@@ -130,7 +130,7 @@ Iterate through all the cells, and once you find a cell with `1`, if it is unvis
 
 Repeat this process for all remaining unvisited cells. Note: You can overlap the groupings with already visited nodes, but you never instantiate a new grouping unless the current node is unvisited.
 
-![](../assets/images/map5.png)
+![](/assets/images/map5.png)
 
 In this example, at `F(0000)`, we can create a grouping of size 2 (because 2 is the largest possible grouping, 3 is not a power of 2). We then iterate through to `F(0001)`, however `F(0001)` was already resolved to a grouping. For the latest active cell, `F(0011)` is not resolved to a grouping thus it's unvisited. The largest possible grouping is also of size 2, thus we create another group.
 
@@ -162,11 +162,11 @@ F(ABCD) = A'B'C' + A'B'D
 ## Minimizing Group Count
 The following example will ilustrate how the greedy approach may occasionally produce too many groups. Consider the following example:
 
-![](../assets/images/map6.png)
+![](/assets/images/map6.png)
 
 This grouping state is optimal. However, consider adding a `1` to `F(1111)`.
 
-![](../assets/images/map7.png)
+![](/assets/images/map7.png)
 
 Following the previous algorithm, iterating top-bottom and left-right, when getting to `F(0110)`, the algorithm can choose to make the largest grouping. However, there are two possible groupings:
 

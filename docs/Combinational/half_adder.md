@@ -18,17 +18,17 @@ This circuit has two outputs **carry** and **sum**.
 ## Block Diagram
 {: .no_toc }
 
-<div style="text-align:center"><img src="../../assets/images/halfadder_blockdiagram.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/halfadder_blockdiagram.jpg" /></div>
 
 
 ## Truth Table
 {: .no_toc }
 
-<div style="text-align:center"><img src="../../assets/images/halfadder_truthtable.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/halfadder_truthtable.jpg" /></div>
 
 ## Circuit Diagram
 {: .no_toc }
 
-<div style="text-align:center"><img src="../../assets/images/halfadder_circuitdiagram.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/halfadder_circuitdiagram.jpg" /></div>
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/12140" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>

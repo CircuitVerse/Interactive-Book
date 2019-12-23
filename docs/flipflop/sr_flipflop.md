@@ -9,7 +9,7 @@ nav_order: 1
 
 SR flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, SR latch operates with enable signal. The circuit diagram of SR flip-flop is shown in the following figure.
 
-<div style="text-align:center"><img src="../../assets/images/sr_flipflop.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/sr_flipflop.jpg" /></div>
 
 his circuit has two inputs S & R and two outputs Q(t) & Q(t)’. The operation of SR flipflop is similar to SR Latch. But, this flip-flop affects the outputs only when positive transition of the clock signal is applied instead of active enable.
 
@@ -41,7 +41,7 @@ Therefore, SR Latch performs three types of functions such as Hold, Set & Reset 
 
 By using three **variable K-Map**, we can get the simplified expression for next state, Q(t + 1). The three variable K-Map for next state, Q(t + 1) is shown in the following figure.
 
-<div style="text-align:center"><img src="../../assets/images/3_variable_k_map_next_state.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/3_variable_k_map_next_state.jpg" /></div>
 
 The maximum possible groupings of adjacent ones are already shown in the figure. Therefore, the simplified expression for next state Q(t + 1) is
 ```yaml

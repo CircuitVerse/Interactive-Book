@@ -25,5 +25,5 @@ nav_order: 2
 ## Block Diagram
 
 
-<div style="text-align:center"><img src="../../assets/images/sipo_blockdiagram.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/sipo_blockdiagram.jpg" /></div>
 

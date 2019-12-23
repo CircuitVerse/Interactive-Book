@@ -17,7 +17,7 @@ It performs operations which are exactly opposite to those of an encoder.
 ## Block Diagram
 {: .no_toc }
 
-<div style="text-align:center"><img src="../../assets/images/decoder_blockdiagram.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/decoder_blockdiagram.jpg" /></div>
 
 ### Examples of Decoders are following.
    
@@ -37,15 +37,15 @@ It shows that each output is 1 for only a specific combination of inputs.
 ## Block Diagram
 {: .no_toc }
 
-<div style="text-align:center"><img src="../../assets/images/two_fourdecoder_blockdiagram.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/two_fourdecoder_blockdiagram.jpg" /></div>
 
 ## Truth Table
 
-<div style="text-align:center"><img src="../../assets/images/two_fourdecoder_truthtable.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/two_fourdecoder_truthtable.jpg" /></div>
 
 ## Logic Circuit
 
-<div style="text-align:center"><img src="../../assets/images/two_fourdecoder_logiccircuit.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/two_fourdecoder_logiccircuit.jpg" /></div>
 
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/763" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>

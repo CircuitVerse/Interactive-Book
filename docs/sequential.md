@@ -12,7 +12,7 @@ The combinational circuit does not use any memory.
 Hence the previous state of input does not have any effect on the present state of the circuit. 
 But sequential circuit has memory so output can vary based on input. This type of circuits uses previous input, output, clock and a memory element.
 
-<div style="text-align:center"><img src="../assets/images/sequential_circuit_blockdiagram.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/sequential_circuit_blockdiagram.jpg" /></div>
 
 This sequential circuit contains a set of inputs and output(s). 
 The output(s) of sequential circuit depends not only on the combination of present inputs but also on the previous output(s). 

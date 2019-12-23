@@ -24,29 +24,29 @@ Let all the flip-flop be initially in the reset condition i.e. Q3 = Q2 = Q1 = Q0
 ## Block Diagram
 
 
-<div style="text-align:center"><img src="../../assets/images/siso_blockdiagram.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/siso_blockdiagram.jpg" /></div>
 
 ## Operation
 
 Before application of clock signal, let Q3 Q2 Q1 Q0 = 0000 and apply LSB bit of the number to be entered to Din. So Din = D3 = 1. Apply the clock. On the first falling edge of clock, the FF-3 is set, and stored word in the register is Q3 Q2 Q1 Q0 = 1000.
 
-<div style="text-align:center"><img src="../../assets/images/siso_operation1.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/siso_operation1.jpg" /></div>
 
 Apply the next bit to Din. So Din = 1. As soon as the next negative edge of the clock hits, FF-2 will set and the stored word change to Q3 Q2 Q1 Q0 = 1100.
 
-<div style="text-align:center"><img src="../../assets/images/siso_operation2.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/siso_operation2.jpg" /></div>
 
 Apply the next bit to be stored i.e. 1 to Din. Apply the clock pulse. As soon as the third negative clock edge hits, FF-1 will be set and output will be modified to Q3 Q2 Q1 Q0 = 1110.
 
-<div style="text-align:center"><img src="../../assets/images/siso_operation3.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/siso_operation3.jpg" /></div>
 
 Similarly with Din = 1 and with the fourth negative clock edge arriving, the stored word in the register is Q3 Q2 Q1 Q0 = 1111.
 
-<div style="text-align:center"><img src="../../assets/images/siso_operation4.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/siso_operation4.jpg" /></div>
 
 ## Truth Table
-<div style="text-align:center"><img src="../../assets/images/siso_truthtable.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/siso_truthtable.jpg" /></div>
 
 ## Waveforms
-<div style="text-align:center"><img src="../../assets/images/siso_waveform.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/siso_waveform.jpg" /></div>
 

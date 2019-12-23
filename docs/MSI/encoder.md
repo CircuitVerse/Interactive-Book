@@ -15,7 +15,7 @@ The encoder accepts an n input digital word and converts it into an m bit anothe
 ## Block Diagram
 {: .no_toc }
 
-<div style="text-align:center"><img src="../../assets/images/encoder_blockdiagram.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/encoder_blockdiagram.jpg" /></div>
 
 ### Examples of Decoders are following.
    
@@ -37,14 +37,14 @@ That means if D3 = 1 then Y1 Y1 = 11 irrespective of the other inputs. Similarly
 ## Block Diagram
 {: .no_toc }
 
-<div style="text-align:center"><img src="../../assets/images/priorityencoder_blockdiagram.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/priorityencoder_blockdiagram.jpg" /></div>
 
 ## Truth Table
 
-<div style="text-align:center"><img src="../../assets/images/priorityencoder_truthtable.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/priorityencoder_truthtable.jpg" /></div>
 
 ## Logic Circuit
 
-<div style="text-align:center"><img src="../../assets/images/priorityencoder_logiccircuit.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/priorityencoder_logiccircuit.jpg" /></div>
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/762" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>

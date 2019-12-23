@@ -18,7 +18,7 @@ E is called the strobe or enable input which is useful for the cascading. It is 
 ## Block Diagram
 {: .no_toc }
 
-<div style="text-align:center"><img src="../../assets/images/n_onemultiplexer_blockdiagram.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/n_onemultiplexer_blockdiagram.jpg" /></div>
 
 
 
@@ -32,7 +32,7 @@ E is called the strobe or enable input which is useful for the cascading. It is 
 ## Truth Table
 {: .no_toc }
 
-<div style="text-align:center"><img src="../../assets/images/two_onemultiplexer_truthtable.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/two_onemultiplexer_truthtable.jpg" /></div>
 
 
 

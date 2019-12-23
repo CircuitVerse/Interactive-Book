@@ -17,18 +17,18 @@ The full adder is a three input and two output combinational circuit.
 ## Block Diagram
 {: .no_toc }
 
-<div style="text-align:center"><img src="../../assets/images/fulladder_blockdiagram.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/fulladder_blockdiagram.jpg" /></div>
 
 
 ## Truth Table
 {: .no_toc }
 
-<div style="text-align:center"><img src="../../assets/images/fulladder_truthtable.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/fulladder_truthtable.jpg" /></div>
 
 ## Circuit Diagram
 {: .no_toc }
 
-<div style="text-align:center"><img src="../../assets/images/fulladder_circuitdiagram.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/fulladder_circuitdiagram.jpg" /></div>
 
 ## Full adder from 2 Half Adder
 

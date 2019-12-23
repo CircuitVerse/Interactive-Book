@@ -38,5 +38,5 @@ Thus the parallel in serial out operation takes place.
 ## Block Diagram
 
 
-<div style="text-align:center"><img src="../../assets/images/piso_blockdiagram.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/piso_blockdiagram.jpg" /></div>
 

@@ -23,5 +23,5 @@ Only clock pulse is essential to load all the bits.
 ## Block Diagram
 
 
-<div style="text-align:center"><img src="../../assets/images/pipo_blockdiagram.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/pipo_blockdiagram.jpg" /></div>
 
