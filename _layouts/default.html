@@ -43,7 +43,8 @@
 
             addEvent(toggleDarkMode, 'click', function(){
               if (cssFile.getAttribute('href') === originalCssRef) {
-                cssFile.setAttribute('href', darkModeCssRef)
+                cssFile.setAttribute('href', darkModeCssRef)}
+              else {
                 cssFile.setAttribute('href', originalCssRef)
               }
             })
