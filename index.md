@@ -31,7 +31,18 @@ Before you start proceeding with this Book, I'm making an assumption that you ar
 A basic idea regarding the initial concepts of Digital Electronics is enough to understand the topics covered in this tutorial.
 
 ## About the project
-Interactive-Book is &copy; 2019 by [Aman Singla](http://github.com/amansingla97).
+Interactive-Book is fully open-sourced and is maintained by [CircuitVerse](https://circuitverse.org/), a free & open source Online Digital Logic Circuit Simulator.
+
+Interactive-Book is a [GSoC 2019](https://summerofcode.withgoogle.com/archive/2019/projects/5293060282384384/) project by [Aman Singla](http://github.com/amansingla97).
+
+### Contributors
+
+All the people who made this project possible.
+<a href="https://github.com/CircuitVerse/Interactive-Book/graphs/contributors"><img src="https://contributors-img.firebaseapp.com/image?repo=CircuitVerse/Interactive-Book" alt="Image of contributors"></a>
+
+### Contact Us
+
+<a href="https://join.slack.com/t/circuitverse-team/shared_invite/enQtNjc4MzcyNDE5OTA3LTdjYTM5NjFiZWZlZGI2MmU1MmYzYzczNmZlZDg5MjYxYmQ4ODRjMjQxM2UyMWI5ODUzODQzMDU2ZDEzNjI4NmE"><img src="https://img.shields.io/badge/chat-on_slack-pink.svg?style=for-the-badge" alt="Slack Channel"></a>
 
 
 {% include disqus.html %}

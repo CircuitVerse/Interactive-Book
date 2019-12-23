@@ -15,7 +15,6 @@ The aim of this project is to create an online interactive guide for digital log
 As contributors and maintainers of this project, and in the interest of fostering an open and welcoming community, we pledge to respect all people who contribute through reporting issues, posting feature requests, updating documentation, submitting pull requests or patches, and other activities.
 
 
-
 ## Clone this repo!
 
 First things first. Make a local clone of this repo so you can work on it from your own computer.
@@ -50,7 +49,7 @@ This should start serving the website on http://0.0.0.0:4000/ - simply make chan
 
 ## Contribute!
 
-We are open to all contributions by anyone, and we encourage all new members to create join our slack and discord channel.
+We are open to all contributions by anyone, and we encourage all new members to join our slack and discord channel.
 Here are links to our:
 
 [![Slack](https://img.shields.io/badge/chat-on_slack-pink.svg)](https://join.slack.com/t/circuitverse-team/shared_invite/enQtNjc4MzcyNDE5OTA3LTdjYTM5NjFiZWZlZGI2MmU1MmYzYzczNmZlZDg5MjYxYmQ4ODRjMjQxM2UyMWI5ODUzODQzMDU2ZDEzNjI4NmE)
@@ -58,6 +57,10 @@ Here are links to our:
 [![Discord](https://img.shields.io/discord/552660710232948749.svg)](https://discord.gg/95x8H7b) 
 - This is an official fan communication channel. Thanks to [@jbox1](https://github.com/jbox144) for this initiative.
 
+### Contributors
+
+All the people who made this project possible.
+<a href="https://github.com/CircuitVerse/Interactive-Book/graphs/contributors"><img src="https://contributors-img.firebaseapp.com/image?repo=CircuitVerse/Interactive-Book" alt="Image of contributors"></a>
 
 ## Overview
 The Interactive book have two components in it. 
