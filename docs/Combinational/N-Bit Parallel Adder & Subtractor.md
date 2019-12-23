@@ -22,7 +22,7 @@ The rest of the connections are exactly same as those of n-bit parallel adder is
 
 ## Block Diagram
 
-<div style="text-align:center"><img src="../../assets/images/fourbitadder_blockdiagram.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/fourbitadder_blockdiagram.jpg" /></div>
 
 
 # N-Bit Parallel Subtractor
@@ -42,7 +42,7 @@ If A > B then Cout = 0 and the result of binary form (A-B) then Cout = 1 and the
 
 ## Block Diagram
 
-<div style="text-align:center"><img src="../../assets/images/fourbitsubstractor_blockdiagram.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/fourbitsubstractor_blockdiagram.jpg" /></div>
 
 
 ## 8 Bit Full Adder And Subtractor   

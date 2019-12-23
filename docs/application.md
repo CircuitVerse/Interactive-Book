@@ -29,7 +29,7 @@ Similarly, ‘N’ bit Ring counter performs the similar operation. But, the onl
 
 The block diagram of 3-bit Ring counter is shown in the following figure.
 
-<div style="text-align:center"><img src="../assets/images/ring_counter.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/ring_counter.jpg" /></div>
 
 The 3-bit Ring counter contains only a 3-bit SIPO shift register. The output of rightmost D flip-flop is connected to serial input of left most D flip-flop.
 
@@ -56,7 +56,7 @@ The operation of Johnson Ring counter is similar to that of Ring counter. But, t
 
 Johnson Ring counter is also called as Twisted Ring counter and switch tail Ring counter. The block diagram of 3-bit Johnson Ring counter is shown in the following figure.
 
-<div style="text-align:center"><img src="../assets/images/twisted_ring_counter.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/twisted_ring_counter.jpg" /></div>
 
 The 3-bit Johnson Ring counter also contains only a 3-bit SIPO shift register. The complemented output of rightmost D flip-flop is connected to serial input of left most D flip-flop.
 

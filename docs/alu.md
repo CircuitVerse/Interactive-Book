@@ -27,7 +27,7 @@ The purpose of the ALU is to perform mathematical operations such as addition, s
 ## In Detail
 So with the above building blocks i.e. half adder and full adder discussed in Combinational Analysis, lets construct a simple ALU that performs a arithmetic operation (1 bit addition)and does 3 logical operations namely AND, NOR and XOR as shown below. The multiplexer selects only one operation at a time. The operation selected depends on the selection lines of the multiplexer as shown in the truth table.
 
-<div style="text-align:center" ><img src="../assets/images/1bitALU.jpg" /></div>
+<div style="text-align:center" ><img src="/assets/images/1bitALU.jpg" /></div>
 
 **Input = M1,M0 & 
 Output = Operation**
@@ -42,7 +42,7 @@ Output = Operation**
 
 Now we can take up the 1 bit ALU as block and construct a 4 bit ALU, which performs all the functions of the 1 bit ALU on the 4 bit inputs. Thus a single building block can be constructed and used recursively. The inputs A and B are four bits and the output is 4 bit as well. Figure below illustrates it:
 
-<div style="text-align:center" ><img src="../assets/images/360px-4BITALU.jpg" /></div>
+<div style="text-align:center" ><img src="/assets/images/360px-4BITALU.jpg" /></div>
 
 There are a few important takeaways here:
 * The selection lines MO and M1 select the function ALU performs. These selection lines combined with the input arguments and desired functions a Instruction Set can be formed.

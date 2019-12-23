@@ -11,7 +11,7 @@ permalink: /docs/combinational
 
 Combinational circuits consist of Logic gates. These circuits operate with binary values. The output(s) of combinational circuit depends on the combination of present inputs. The following figure shows the **block diagram** of combinational circuit.
 
-<div style="text-align:center"><img src="../../assets/images/combinational1.jpg" /></div>
+<div style="text-align:center"><img src="/assets/images/combinational1.jpg" /></div>
 
 This combinational circuit has ‘n’ input variables and ‘m’ outputs. Each combination of input variables will affect the output(s).
 

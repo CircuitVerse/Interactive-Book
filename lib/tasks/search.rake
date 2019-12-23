@@ -16,7 +16,7 @@ namespace :search do
     "id": "{{ forloop.index0 }}",
     "title": "{{ page.title | replace: \'&amp;\', \'&\' }}",
     "content": "'+content+'",
-    "url": "{{ page.url | absolute_url }}",
+    "url": "{{ page.url | relative_url }}",
     "relUrl": "{{ page.url }}"
   }{% unless forloop.last %},{% endunless %}
   {% endif %}{% endfor %}
