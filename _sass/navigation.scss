@@ -18,6 +18,12 @@
     border-bottom: $border $border-color;
   }
 }
+
+#sidebar2 .site-title {
+  border-bottom: none;
+} 
+
+
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -161,3 +167,21 @@
     }
   }
 }
+
+.sidebar-collapse {
+  float:right;
+}
+
+@media only screen and (max-width: 739px) {
+
+  .sidebar-collapse {
+    display: none;
+  }
+}
+
+.sidebar-collapse.new {
+  background-color: $link-color;
+  color: $white;
+
+}
+

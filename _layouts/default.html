@@ -7,9 +7,26 @@
   <script src="\assets\js\vendor\jquery-3.4.1.min.js"></script>
 
   <div class="page-wrap">
+    <div class="active colored side-bar" id="sidebar2">
+      <span class="site-title pr-3">
+        <span class="fs-6 d-inline-block lh-tight v-align-top"></span>
+          <button type="button" id="sidebarCollapse2" class="sidebar-collapse v-align-top btn btn-info new mr-0 px-2 py-0 mt-1">
+            <i class="fas fa-angle-right"></i>
+          </button>
+        </span>
+      </span>
+      <div class="navigation main-nav js-main-nav">
+      </div>
+    </div class>
     <div class="side-bar" id="sidebar">
-      <a href="{{ site.url }}{{ site.baseurl }}" class="site-title fs-6 lh-tight">{{ site.title }}</a>
-      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <span class="site-title">
+        <a href="{{ site.url }}{{ site.baseurl }}" class="d-inline-block fs-6 lh-tight">{{ site.title }}</a>
+        <span class="fs-6 d-inline-block lh-tight v-align-top"></span>
+          <button type="button" id="sidebarCollapse" class="sidebar-collapse v-align-top btn btn-info new px-2 py-0 mt-1">
+            <i class="fas fa-angle-left"></i>
+          </button>
+        </span>
+      </span>
       <div class="navigation main-nav js-main-nav">
         {% include nav.html %}
       </div>
@@ -52,17 +69,7 @@
         </div>
       </div>
       <div id="mainhome" class="main-content">
-        <div id="content">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
 
-              <button type="button" id="sidebarCollapse" class="btn btn-info new">
-                <i class="fas fa-align-left"></i>
-                <span>Sidebar</span>
-              </button>
-            </div>
-          </nav>
-        </div>
         {% unless page.url == "/" %}
           {% if page.parent %}
             <nav class="breadcrumb-nav">
@@ -102,11 +109,17 @@
   </div>
 <script>$(document).ready(function () {
   $('#sidebarCollapse').on('click', function () {
-    $('#sidebar').toggleClass('active');
+    $('.side-bar').toggleClass('active');
     $('#main-content').toggleClass('moved');
     $('#headerid').toggleClass('moved');
     $('#sidebarCollapse').toggleClass('moved');
-    $('#sidebarCollapse').toggleClass('colored');
+  });
+
+  $('#sidebarCollapse2').on('click', function () {
+    $('.side-bar').toggleClass('active');
+    $('#main-content').toggleClass('moved');
+    $('#headerid').toggleClass('moved');
+    $('#sidebarCollapse2').toggleClass('moved');
   });
 });</script>
 </body>
