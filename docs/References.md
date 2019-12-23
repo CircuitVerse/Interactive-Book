@@ -2,7 +2,8 @@
 layout: default
 title:  References
 comments: true
-nav_order: 20
+nav_order: 200
+permalink: /references
 ---
 
 # References

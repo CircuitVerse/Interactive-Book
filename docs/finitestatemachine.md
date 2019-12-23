@@ -2,7 +2,7 @@
 layout: default
 title:  Finite State Machines
 comments: true
-nav_order: 17
+nav_order: 117
 ---
 
 ## Table of contents

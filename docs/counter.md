@@ -2,7 +2,7 @@
 layout: default
 title: Digital Counters
 comments: true
-nav_order: 16
+nav_order: 116
 ---
 
 # Digital Sequential Circuits

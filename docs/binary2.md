@@ -2,7 +2,7 @@
 layout: default
 title:  Operators in Binary
 comments: true
-nav_order: 2
+nav_order: 102
 ---
 
 # Mathematical Operators in Binary

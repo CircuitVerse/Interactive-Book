@@ -2,7 +2,7 @@
 layout: default
 title: Latches
 comments: true
-nav_order: 12
+nav_order: 112
 ---
 
 # Latches

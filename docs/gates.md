@@ -2,7 +2,7 @@
 layout: default
 title: Gates
 comments: true
-nav_order: 3
+nav_order: 103
 ---
 # Logic Gates
 {: .no_toc }

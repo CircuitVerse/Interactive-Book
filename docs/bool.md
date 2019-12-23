@@ -2,7 +2,7 @@
 layout: default
 title: Boolean Algebra
 comments: true
-nav_order: 4
+nav_order: 104
 ---
 
 # Boolean Algebra

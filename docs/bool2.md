@@ -2,7 +2,7 @@
 layout: default
 title: Boolean Function
 comments: true
-nav_order: 5
+nav_order: 105
 ---
 
 # Boolean Function

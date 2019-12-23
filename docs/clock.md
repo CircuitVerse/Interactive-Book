@@ -2,7 +2,7 @@
 layout: default
 title: Clock Signal and Triggering
 comments: true
-nav_order: 10
+nav_order: 110
 ---
 
 # Clock Signal and Triggering
