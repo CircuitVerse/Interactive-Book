@@ -2,7 +2,7 @@
 layout: default
 title: ALU
 comments: true
-nav_order: 109
+nav_order: 9
 ---
 
 # ALU

@@ -2,7 +2,7 @@
 layout: default
 title: Binary Numbers
 comments: true
-nav_order: 102
+nav_order: 2
 ---
 
 # Binary Numbers

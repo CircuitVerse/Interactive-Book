@@ -2,7 +2,7 @@
 layout: default
 title: Basic Applications
 comments: true
-nav_order: 104
+nav_order: 4
 ---
 # Basic Apllications
 {: .no_toc }

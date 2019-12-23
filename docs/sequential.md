@@ -2,7 +2,7 @@
 layout: default
 title: Digital Sequential Circuits
 comments: true
-nav_order: 111
+nav_order: 11
 ---
 
 # Digital Sequential Circuits

@@ -2,7 +2,7 @@
 layout: default
 title: Interactive Gates
 comments: true
-nav_order: 103
+nav_order: 3
 ---
 # Interactive Logic Gates
 {: .no_toc }

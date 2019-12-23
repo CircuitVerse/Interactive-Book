@@ -2,7 +2,7 @@
 layout: kmap
 title: Interactive Karnaugh Map
 comments: true
-nav_order: 107
+nav_order: 7
 ---
 
 # Interactive Karnaugh Map

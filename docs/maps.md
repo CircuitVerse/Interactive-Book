@@ -2,7 +2,7 @@
 layout: default
 title: K-Maps
 comments: true
-nav_order: 106
+nav_order: 6
 ---
 
 # K-Maps
