@@ -15,25 +15,35 @@ The full adder is a three input and two output combinational circuit.
 
 
 ## Block Diagram
+{: .d-inline}
+{% include button.html %}
 {: .no_toc }
 
 <div style="text-align:center"><img src="../../assets/images/fulladder_blockdiagram.jpg" /></div>
 
 
 ## Truth Table
+{: .d-inline}
+{% include button.html %}
 {: .no_toc }
 
 <div style="text-align:center"><img src="../../assets/images/fulladder_truthtable.jpg" /></div>
 
 ## Circuit Diagram
+{: .d-inline}
+{% include button.html %}
 {: .no_toc }
 
 <div style="text-align:center"><img src="../../assets/images/fulladder_circuitdiagram.jpg" /></div>
 
 ## Full adder from 2 Half Adder
+{: .d-inline}
+{% include button.html %}
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/247" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ## Ripple Carry Adder
+{: .d-inline}
+{% include button.html %}
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/248" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>

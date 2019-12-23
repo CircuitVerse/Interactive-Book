@@ -23,6 +23,8 @@ Counters are of two types.
 ---
 
 ## Asynchronous or ripple counters
+{: .d-inline}
+{% include button.html %}
 
 The logic diagram of a 2-bit ripple up counter is shown in figure. 
 The toggle (T) flip-flop are being used. 
@@ -30,10 +32,14 @@ But we can use the JK flip-flop also with J and K connected permanently to logic
 External clock is applied to the clock input of flip-flop A and QA output is applied to the clock input of the next flip-flop i.e. FF-B.
 
 ### Logical Diagram
+{: .d-inline}
+{% include button.html %}
 
 <div style="text-align:center"><img src="../assets/images/ripple_counter_diagram.jpg" /></div>
 
 ### Types 
+{: .d-inline}
+{% include button.html %}
 It is known as ripple counter because of the way the clock pulse ripples its way through the flip-flops. The flip-flop applied with external clock pulse act as LSB (Least Significant Bit) in the counting sequence.The flip-flop toggles the output either for every positive edge of clock signal or for negative edge of clock signal.
 * **2 bit ripple up counter:** It contains two flip flops. A 2-bit ripple counter can count up to 4 states. It counts from 0 to 3.
 
@@ -51,6 +57,8 @@ It is known as ripple counter because of the way the clock pulse ripples its way
 <div style="text-align:center"><img src="../assets/images/3bit_counter.png" height="300"/></div>
 
 ### Operation
+{: .d-inline}
+{% include button.html %}
 
 |Condition|Operation|
 |:--------|:--------|
@@ -62,18 +70,26 @@ It is known as ripple counter because of the way the clock pulse ripples its way
                                                                                                                                                                                                                             
 
 ### Truth Table 
+{: .d-inline}
+{% include button.html %}
 
 <div style="text-align:center"><img src="../assets/images/ripple_counter_truthtable.jpg" /></div>
 
 ## Synchronous counters
+{: .d-inline}
+{% include button.html %}
 
 If the "clock" pulses are applied to all the flip-flops in a counter simultaneously, then such a counter is called as synchronous counter.
 
 ### 2-bit Synchronous up counter
+{: .d-inline}
+{% include button.html %}
 
 The JA and KA inputs of FF-A are tied to logic 1. So FF-A will work as a toggle flip-flop. The JB and KB inputs are connected to QA.
 
 ### Types 
+{: .d-inline}
+{% include button.html %}
 * **4 bit synchronous up counter:** In the up counter the 4 bit binary sequence starts from 0000 and increments up to 1111, i.e from 0 to 15.
 
 <div style="text-align:center"><img src="../assets/images/4bit_up_counter.png" height="300"/></div>
@@ -96,10 +112,14 @@ The JA and KA inputs of FF-A are tied to logic 1. So FF-A will work as a toggle 
 <br>
 
 ### Logical Diagram
+{: .d-inline}
+{% include button.html %}
 
 <div style="text-align:center"><img src="../../assets/images/synchronous_counter_diagram.jpg" /></div>
 
 ### Operation
+{: .d-inline}
+{% include button.html %}
 
 |Condition|Operation|
 |:--------|:-------:|

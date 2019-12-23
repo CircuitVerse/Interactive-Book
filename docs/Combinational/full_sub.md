@@ -13,11 +13,15 @@ The full subtractor is a combinational circuit with three inputs A,B,C and two o
 A is the 'minuend', B is 'subtrahend', C is the 'borrow' produced by the previous stage, D is the difference output and C' is the borrow output.
 
 ## Truth Table
+{: .d-inline}
+{% include button.html %}
 {: .no_toc }
 
 <div style="text-align:center"><img src="../../assets/images/fullsubstrator_truthtable.jpg" /></div>
 
 ## Circuit Diagram
+{: .d-inline}
+{% include button.html %}
 {: .no_toc }
 
 <div style="text-align:center"><img src="../../assets/images/fullsubstrator_circuitdiagram.jpg" /></div>

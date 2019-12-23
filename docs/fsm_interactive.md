@@ -6,10 +6,14 @@ nav_order: 18
 ---
 
 # Interactive FSM
+{: .d-inline}
+{% include button.html %}
 
 In this module, we will learn how to implement a final state machine(FSM) that describes the functionality of a Soda vending machine:
 
 ## Problem
+{: .d-inline}
+{% include button.html %}
 Suppose we have a vending machine that sells soda cans that costs a 15¢ each.
 Moreover we have only 2 types of coins: 10¢ and 5¢.
 
@@ -19,10 +23,14 @@ Note: in this design we will ignore the capacity of the stock, which means, we�
 Also, we can assume that only one action could be made in every “clock cycle” or state
 ```
 ## RULES
+{: .d-inline}
+{% include button.html %}
 
 First give back the change then dispense the can.
 
 ## Understanding the possibilities 
+{: .d-inline}
+{% include button.html %}
 There are quite few options:
 1. entering no money
 2. putting 5¢ followed by another 10¢ => getting the can
@@ -32,6 +40,8 @@ There are quite few options:
 6. putting 5$ followed by 5¢ followed by 5¢ => getting a can.
 
 ## FSM diagram
+{: .d-inline}
+{% include button.html %}
 Basically, what we’ll do now is translating the options we stated above into a flow chart/FSM diagram:
 
 {% include fsm.html %}

@@ -18,6 +18,8 @@ nav_order: 4
 
 
 ## Binary Flags
+{: .d-inline}
+{% include button.html %}
 The new Interactive Book  for Digital logic design requires you to study [binary ](https://learn.circuitverse.org/docs/binary.html) binary and its uses.
 In computing, a <em>flag</em> is a type of signal usually used to indicate whether something is true or false. To save time and make your program less complicated, you might want to combine these flags and send several pieces of information in one go.
 
@@ -49,6 +51,8 @@ To use this technique in your programming, you need to be familiar with [bitwise
 
 
 ## Representing a Character
+{: .d-inline}
+{% include button.html %}
 
 The computer that we had when we were in the 80s - in common with a lot of personal computers at the time - allowed you to design your own text character.  You could use this in a game - e.g. to make a "space invader" - or you could use the same technique to make your own font.  
 I made my own font that looked like my handwriting!

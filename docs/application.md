@@ -23,6 +23,8 @@ In this module, let us discuss about these two counters one by one.
 ---
 
 ## Ring Counter
+{: .d-inline}
+{% include button.html %}
 In previous module, we discussed the operation of Serial In - Parallel Out (SIPO) shift register. It accepts the data from outside in serial form and it requires ‘N’ clock pulses in order to shift ‘N’ bit data.
 
 Similarly, ‘N’ bit Ring counter performs the similar operation. But, the only difference is that the output of rightmost D flip-flop is given as input of leftmost D flip-flop instead of applying data from outside. Therefore, Ring counter produces a sequence of states (pattern of zeros and ones) and it repeats for every ‘N’ clock cycles.
@@ -52,6 +54,8 @@ Serial input of first D flip-flop gets the previous output of third flip-flop. S
 The previous outputs of first and second D flip-flops are right shifted by one bit. That means, the present outputs of second and third D flip-flops are equal to the previous outputs of first and second D flip-flops.
 
 ## Johnson Ring Counter
+{: .d-inline}
+{% include button.html %}
 The operation of Johnson Ring counter is similar to that of Ring counter. But, the only difference is that the complemented output of rightmost D flip-flop is given as input of leftmost D flip-flop instead of normal output. Therefore, ‘N’ bit Johnson Ring counter produces a sequence of states (pattern of zeros and ones) and it repeats for every ‘2N’ clock cycles.
 
 Johnson Ring counter is also called as Twisted Ring counter and switch tail Ring counter. The block diagram of 3-bit Johnson Ring counter is shown in the following figure.

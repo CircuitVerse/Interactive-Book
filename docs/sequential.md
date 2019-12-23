@@ -6,6 +6,8 @@ nav_order: 11
 ---
 
 # Digital Sequential Circuits
+{: .d-inline}
+{% include button.html %}
 {: .no_toc }
 
 The combinational circuit does not use any memory. 
@@ -32,6 +34,8 @@ Following table shows the **differences** between combinational circuits and seq
 
 
 ## Types of Sequential Circuits
+{: .d-inline}
+{% include button.html %}
 
 Following are the two types of sequential circuits −
 
@@ -39,10 +43,14 @@ Following are the two types of sequential circuits −
 * Synchronous sequential circuits
 
 ### Asynchronous sequential circuits
+{: .d-inline}
+{% include button.html %}
 
 If some or all the outputs of a sequential circuit do not change (affect) with respect to active transition of clock signal, then that sequential circuit is called as Asynchronous sequential circuit. That means, all the outputs of asynchronous sequential circuits do not change (affect) at the same time. Therefore, most of the outputs of asynchronous sequential circuits are not in synchronous with either only positive edges or only negative edges of clock signal.
 
 ### Synchronous sequential circuits
+{: .d-inline}
+{% include button.html %}
 
 If all the outputs of a sequential circuit change (affect) with respect to active transition of clock signal, then that sequential circuit is called as Synchronous sequential circuit. That means, all the outputs of synchronous sequential circuits change (affect) at the same time. Therefore, the outputs of synchronous sequential circuits are in synchronous with either only positive edges or only negative edges of clock signal.
 

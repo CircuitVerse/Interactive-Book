@@ -14,6 +14,8 @@ This circuit has single input D and two outputs Q(t) & Q(t)’. The operation of
 
 
 ### State table of **D** flip-flop.
+{: .d-inline}
+{% include button.html %}
 
 | D    |    Q(t+1) | 
 |:-------|:--------|

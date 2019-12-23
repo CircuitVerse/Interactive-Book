@@ -17,6 +17,8 @@ This combinational circuit has ‘n’ input variables and ‘m’ outputs. Each
 
 
 ## Design procedure of Combinational circuits
+{: .d-inline}
+{% include button.html %}
 
 1.  Find the required number of input variables and outputs from given specifications.   
 1.  Formulate the Truth table. If there are ‘n’ input variables, then there will be 2n possible combinations. For each combination of input, find the output values.   

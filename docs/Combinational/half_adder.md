@@ -16,17 +16,23 @@ This circuit has two outputs **carry** and **sum**.
 
 
 ## Block Diagram
+{: .d-inline}
+{% include button.html %}
 {: .no_toc }
 
 <div style="text-align:center"><img src="../../assets/images/halfadder_blockdiagram.jpg" /></div>
 
 
 ## Truth Table
+{: .d-inline}
+{% include button.html %}
 {: .no_toc }
 
 <div style="text-align:center"><img src="../../assets/images/halfadder_truthtable.jpg" /></div>
 
 ## Circuit Diagram
+{: .d-inline}
+{% include button.html %}
 {: .no_toc }
 
 <div style="text-align:center"><img src="../../assets/images/halfadder_circuitdiagram.jpg" /></div>

@@ -18,6 +18,8 @@ nav_order: 6
 ---
 
 ## Introduction
+{: .d-inline}
+{% include button.html %}
 Karnaugh Maps are a way to visually display a boolean expression onto a 2D grid. We take the variables and bind them to an axis, and then enumerate through the possible combinations of input values that could occur for all those variables bounded to an axis (either horizontally or vertically).
 
 For example, we can display the following 2 variable Karnaugh Map:
@@ -33,6 +35,8 @@ Let's instead look at a more involved example with 4 variables:
 We have now bounded the `A` and `B` variables to the vertical axis, while we bounded the `C` and `D` variables to the horizontal axis. We now enumarate through different combinations of the bounded variables for each axis in *reflected binary code order* (more on this in the following section). Lastly, we indicate on the matrix each true value by augmenting a `1` value.
 
 ## Enumeration and Gray Codes
+{: .d-inline}
+{% include button.html %}
 When enumerating through the variable input combinations for the binded axis, we take advantage of _reflected binary code order_, otherwise known as gray codes. If we observe carefully, we can notice that from one combination to another, we only vary by one bit. That is:
 
 ``` markdown
@@ -43,6 +47,8 @@ When enumerating through the variable input combinations for the binded axis, we
 Thus, we get this wrapping that allows us to switch by only one bit. This provides us the core for how Karnaugh Maps work.
 
 ## Simple Groupings
+{: .d-inline}
+{% include button.html %}
 The main idea for how Karnaugh Maps can be used to simplify expressions is to group pairs of `1` values that are adjacent, and exploit the fact that each one has only a bit difference from another. 
 
 ![](../assets/images/map2.png)
@@ -67,6 +73,8 @@ Therefore, the simplification is true.
 We can then extend this rule to work for rectangles and more!
 
 ## Two Dimension Groupings
+{: .d-inline}
+{% include button.html %}
 Extending the idea of isolating changing bits that retain a consistent value, we can then generalize this to work in a higher dimension. Consider the following example:
 
 ![](../assets/images/map3.png)
@@ -100,6 +108,8 @@ This is bounded horizontally:
 Since the differences in bits needs to generalize throughout a binding of an axis, you can only have a binding of size `2^n` for a given axis. For example, `1x1, 1x2, 1x4, 2x2, 2x4, 4x4`. 
 
 ## Disjoint Groupings
+{: .d-inline}
+{% include button.html %}
 Consider the following example:
 ![](../assets/images/map4.png)
 
@@ -122,6 +132,8 @@ Breaking down the expression:
 Clearly this is the exact same process as before, but iterated throughout all the disjoint sets.
 
 ## Overlapping Groupings
+{: .d-inline}
+{% include button.html %}
 Overlapping groupings become more complex, because there exist ambigious cases and sometimes what may appear to be a locally optimal solutuion is not a globally optimal solution.
 
 The general technique for evaluating for overlapping groups follows a greedy algorithm. Define an unvisited cell as a cell that has a value of `1` however it is currently not matched with a grouping yet. 
@@ -160,6 +172,8 @@ F(ABCD) = A'B'C' + A'B'D
 ```
 
 ## Minimizing Group Count
+{: .d-inline}
+{% include button.html %}
 The following example will ilustrate how the greedy approach may occasionally produce too many groups. Consider the following example:
 
 ![](../assets/images/map6.png)

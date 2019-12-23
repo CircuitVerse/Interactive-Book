@@ -13,11 +13,15 @@ It produces the difference between the two binary bits at the input and also pro
 In the subtraction (A-B), A is called as Minuend bit and B is called as Subtrahend bit.
 
 ## Truth Table
+{: .d-inline}
+{% include button.html %}
 {: .no_toc }
 
 <div style="text-align:center"><img src="../../assets/images/halfsubstrator_truthtable.jpg" /></div>
 
 ## Circuit Diagram
+{: .d-inline}
+{% include button.html %}
 {: .no_toc }
 
 <div style="text-align:center"><img src="../../assets/images/halfsubstrator_circuitdiagram.jpg" /></div>

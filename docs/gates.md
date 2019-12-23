@@ -18,12 +18,16 @@ nav_order: 3
 
 
 ## Introduction
+{: .d-inline}
+{% include button.html %}
 
 
 Logic gates are the basic building blocks of any digital system. 
 It is an electronic circuit having one or more than one input and only one output. The relationship between the input and the output is based on a certain logic. Based on this, logic gates are named as AND gate, OR gate, NOT gate etc.
 
 ## NOT gate
+{: .d-inline}
+{% include button.html %}
 
 The NOT gate is also known as an inverter because the output is the exact opposite of the input. It has one input and one output. The two possibilities are written out in the table below. Tables listing all logical possibilities like this are known as truth tables.
 
@@ -36,6 +40,8 @@ The NOT gate is also known as an inverter because the output is the exact opposi
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/738" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ## AND gate
+{: .d-inline}
+{% include button.html %}
 
 The AND gate has two inputs and one output. The output is 1 if both inputs are 1, and for all other cases the output is 0.
 
@@ -51,6 +57,8 @@ The AND gate has two inputs and one output. The output is 1 if both inputs are 1
 
 
 ## OR gate
+{: .d-inline}
+{% include button.html %}
 
 The OR gate has two inputs and one output. If at least one of the inputs is 1, then the output will be 1. If neither input is 1, the output will be 0.
 
@@ -64,6 +72,8 @@ The OR gate has two inputs and one output. If at least one of the inputs is 1, t
 <iframe width="100%" height="220px"  src="https://circuitverse.org/simulator/embed/737" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ## NAND gate
+{: .d-inline}
+{% include button.html %}
 
 The NAND gate behaves in the opposite fashion to and AND gate. You can think of it as an AND gate followed immediately by a NOT gate. Its output is 0 when the two inputs are 1, and for all other cases, its output is 0. The name NAND comes from joining NOT and AND. The symbol for NAND is the same as that for AND except for the addition of a small circle on the right side.
 
@@ -76,6 +86,8 @@ The NAND gate behaves in the opposite fashion to and AND gate. You can think of 
 
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/741" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 ## NOR gate
+{: .d-inline}
+{% include button.html %}
 
 The NAND gate behaves in the opposite fashion to and AND gate. You can think of it as an AND gate followed immediately by a NOT gate. Its output is 0 when the two inputs are 1, and for all other cases, its output is 0. The name NAND comes from joining NOT and AND. The symbol for NAND is the same as that for AND except for the addition of a small circle on the right side.
 
@@ -90,6 +102,8 @@ The NAND gate behaves in the opposite fashion to and AND gate. You can think of 
 
 
 ## XOR gate
+{: .d-inline}
+{% include button.html %}
 
 The NAND gate behaves in the opposite fashion to and AND gate. You can think of it as an AND gate followed immediately by a NOT gate. Its output is 0 when the two inputs are 1, and for all other cases, its output is 0. The name NAND comes from joining NOT and AND. The symbol for NAND is the same as that for AND except for the addition of a small circle on the right side.
 

@@ -1,0 +1,28 @@
+<button class="link-button" onclick='copyAnchorLinkToClipboard(event)'>
+    <img src="/assets/images/link.svg"/>
+</button>
+<style>
+.link-button {
+    margin-left:3px;
+    margin-top: 10px;
+    border: none;
+    background: none;
+    padding: 0;
+    box-shadow: none !important; 
+}
+
+.link-button img {
+    border: none;
+    background: none;
+    box-shadow: none !important;
+    width:10px !important; 
+}
+.link-button:hover {
+    filter: invert(31%) sepia(62%) saturate(678%) hue-rotate(119deg) brightness(93%) contrast(98%);
+}
+</style>
+<script>
+    $('.link-button').each(function() {
+        $(this).parent().css('display', 'inline-block');
+    })
+</script>

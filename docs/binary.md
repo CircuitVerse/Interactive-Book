@@ -11,6 +11,8 @@ nav_order: 2
 
 
 ## Introduction
+{: .d-inline}
+{% include button.html %}
 
 ```yaml
 A Binary Number is made up of only 0s and 1s.
@@ -20,6 +22,8 @@ There is no 2, 3, 4, 5, 6, 7, 8 or 9 in Binary!
 ```
 
 ### How do we Count using Binary?
+{: .d-inline}
+{% include button.html %}
 It is just like counting in decimal except we reach 10 much sooner.
 
 

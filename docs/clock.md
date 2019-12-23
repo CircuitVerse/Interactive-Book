@@ -21,6 +21,8 @@ In this section, let us discuss about the clock signal and types of triggering o
 
 
 ## Clock signal
+{: .d-inline}
+{% include button.html %}
 
 Clock signal is a periodic signal and its ON time and OFF time need not be the same. 
 We can represent the clock signal as a square wave, when both its ON time and OFF time are same. 
@@ -39,6 +41,8 @@ In the above figure, train of pulses is considered as clock signal. This signal 
 The reciprocal of the time period of clock signal is known as the frequency of the clock signal. All sequential circuits are operated with clock signal. So, the frequency at which the sequential circuits can be operated accordingly the clock signal frequency has to be chosen.
 
 ## Types of Triggering
+{: .d-inline}
+{% include button.html %}
 
 Following are the two possible types of triggering that are used in sequential circuits.
 
@@ -46,6 +50,8 @@ Following are the two possible types of triggering that are used in sequential c
 * Edge triggering
 
 ### Level triggering
+{: .d-inline}
+{% include button.html %}
 
 There are two levels, namely logic High and logic Low in clock signal. Following are the two types of **level triggering**.
 
@@ -60,6 +66,8 @@ If the sequential circuit is operated with the clock signal when it is in **Logi
 <div style="text-align:center"><img src="../assets/images/negative_level_triggering.jpg" /></div>
 
 ### Edge triggering
+{: .d-inline}
+{% include button.html %}
 
 There are two types of transitions that occur in clock signal. That means, the clock signal transitions either from Logic Low to Logic High or Logic High to Logic Low.
 
