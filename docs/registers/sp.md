@@ -11,7 +11,11 @@ nav_order: 2
 
 
 
+<div class="main_sub_heading" markdown="1">
 ## Introduction
+{: .d-inline-block}
+{% include button.html %}
+</div>
  
 * In such types of operations, the data is entered serially and taken out in parallel fashion.
 
@@ -22,7 +26,11 @@ nav_order: 2
 * 4 clock cycles are required to load a four bit word. Hence the speed of operation of SIPO mode is same as that of SISO mode.
 
 
+<div class="main_sub_heading" markdown="1">
 ## Block Diagram
+{: .d-inline-block}
+{% include button.html %}
+</div>
 
 
 <div style="text-align:center"><img src="../../assets/images/sipo_blockdiagram.jpg" /></div>

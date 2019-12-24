@@ -10,9 +10,11 @@ nav_order: 2
 
 
 
+<div class="main_sub_heading" markdown="1">
 ## Introduction
-{: .d-inline}
+{: .d-inline-block}
 {% include button.html %}
+</div>
 
 ```yaml
 A Binary Number is made up of only 0s and 1s.
@@ -21,9 +23,11 @@ Example: 110111
 There is no 2, 3, 4, 5, 6, 7, 8 or 9 in Binary!
 ```
 
+<div class="main_sub_heading" markdown="1">
 ### How do we Count using Binary?
-{: .d-inline}
+{: .d-inline-block}
 {% include button.html %}
+</div>
 It is just like counting in decimal except we reach 10 much sooner.
 
 

@@ -6,8 +6,6 @@ nav_order: 20
 ---
 
 # References
-{: .d-inline}
-{% include button.html %}
 
 1. http://american.cs.ucdavis.edu/academic/ecs154a.sum14/postscript/cosc205.pdf
 2. https://en.wikipedia.org/wiki/Digital_electronics

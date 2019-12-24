@@ -16,9 +16,11 @@ nav_order: 2
 
 ---
 
+<div class="main_sub_heading" markdown="1">
 ## Addition
-{: .d-inline}
+{: .d-inline-block}
 {% include button.html %}
+</div>
 
 ```yaml 
 1. 0 + 0 = 0
@@ -27,9 +29,11 @@ nav_order: 2
 4. 1 + 1 = 1
 ```
 
+<div class="main_sub_heading" markdown="1">
 ## Subtraction
-{: .d-inline}
+{: .d-inline-block}
 {% include button.html %}
+</div>
 
 ```yaml
 1. 0 - 0 = 0
@@ -37,9 +41,11 @@ nav_order: 2
 3. 1 - 1 = 0
 ```
 
+<div class="main_sub_heading" markdown="1">
 ## Multiplication
-{: .d-inline}
+{: .d-inline-block}
 {% include button.html %}
+</div>
 
 ```yaml
           1  1  0       (6)
@@ -53,9 +59,11 @@ nav_order: 2
     --------------   
 ```
 
+<div class="main_sub_heading" markdown="1">
 ## Division
-{: .d-inline}
+{: .d-inline-block}
 {% include button.html %}
+</div>
 
 ```yaml
           1 1 1 1 0 / 1 0 1
@@ -80,16 +88,20 @@ nav_order: 2
         -------------                 -------
 ```
 
+<div class="main_sub_heading" markdown="1">
 ## Binary system complements
-{: .d-inline}
+{: .d-inline-block}
 {% include button.html %}
+</div>
 
 As the binary system has base r = 2. So the two types of complements for the binary system are 2's complement and 1's complement.
 
 
+<div class="main_sub_heading" markdown="1">
 ### 1's complement
-{: .d-inline}
+{: .d-inline-block}
 {% include button.html %}
+</div>
 
 The 1's complement of a number is found by changing all 1's to 0's and all 0's to 1's. This is called as taking complement or 1's complement. Example of 1's Complement is as follows.
 
@@ -97,9 +109,11 @@ The 1's complement of a number is found by changing all 1's to 0's and all 0's t
 Given number        1  0  1  0  1
 1's complement      0  1  0  1  0 
 ```
+<div class="main_sub_heading" markdown="1">
 ### 2's complement
-{: .d-inline}
+{: .d-inline-block}
 {% include button.html %}
+</div>
 
 The 2's complement of binary number is obtained by adding 1 to the Least Significant Bit (LSB) of 1's complement of the number.
 2's complement = 1's complement + 1
@@ -117,9 +131,11 @@ add 1               +           1
 ```
 
 
-## Bitwise Operators
-{: .d-inline}
+<div class="main_sub_heading" markdown="1">
+### Bitwise Operators
+{: .d-inline-block}
 {% include button.html %}
+</div>
 
 |Operator   |    Explanation   |
 |:---------:|:----------------:|

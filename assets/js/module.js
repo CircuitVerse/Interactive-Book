@@ -2344,31 +2344,3 @@ function KarnaughMap(parentDivId, qmcRef) {
         return {x: mx, y: my};
     }
 }
-
-function copyAnchorLinkToClipboard(e) {
-    var text_id = e.target.parentNode.parentNode.previousElementSibling.id;
-    var current_url = document.location.href.match(/(^[^#]*)/)[0]; // remove any current anchors
-    // Have to create text area in order to copy to clipboard
-    var textArea = document.createElement("textarea");
-
-    // If rendered for any reason (happens in IE)
-    textArea.style.position = 'fixed';
-    textArea.style.top = 0;
-    textArea.style.left = 0;
-    textArea.style.width = '2em';
-    textArea.style.height = '2em';
-    textArea.style.padding = 0;
-    textArea.style.border = 'none';
-    textArea.style.outline = 'none';
-    textArea.style.boxShadow = 'none';
-    textArea.style.background = 'transparent';
-    textArea.value = current_url + "#" + text_id;
-
-    document.body.appendChild(textArea);
-    textArea.focus();
-    textArea.select();
-    
-    document.execCommand('copy');
-
-    document.body.removeChild(textArea);
-}

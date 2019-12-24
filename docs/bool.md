@@ -19,9 +19,11 @@ nav_order: 4
 
 
 
-## Introduction 
-{: .d-inline}
+<div class="main_sub_heading" markdown="1">
+## Introduction
+{: .d-inline-block}
 {% include button.html %}
+</div>
 
 Boolean Algebra is used to analyze and simplify the digital (logic) circuits. 
 It uses only the binary numbers i.e. 0 and 1. 
@@ -30,9 +32,11 @@ Boolean algebra was invented by George Boole in 1854.
 
 
 
-## Rule in Boolean Algebra
-{: .d-inline}
+<div class="main_sub_heading" markdown="1">
+## Rules in Boolean Algebra
+{: .d-inline-block}
 {% include button.html %}
+</div>
 
 Following are the important rules used in Boolean algebra.
 
@@ -43,15 +47,19 @@ Following are the important rules used in Boolean algebra.
    
 ---
 
+<div class="main_sub_heading" markdown="1">
 ## Boolean Laws
-{: .d-inline}
+{: .d-inline-block}
 {% include button.html %}
+</div>
 
 There are six types of Boolean Laws.
 
+<div class="main_sub_heading" markdown="1">
 ### AND law
-{: .d-inline}
+{: .d-inline-block}
 {% include button.html %}
+</div>
 
 These laws use the AND operation. Therefore they are called as **AND** laws.
 ```yaml
@@ -62,9 +70,11 @@ Example:
 1. A.!A = 0
 ```
 
+<div class="main_sub_heading" markdown="1">
 ### OR law
-{: .d-inline}
+{: .d-inline-block}
 {% include button.html %}
+</div>
 
 These laws use the OR operation. Therefore they are called as **OR** laws.
 ```yaml
@@ -75,9 +85,11 @@ Example:
 4. A+!A = 1
 ```
 
+<div class="main_sub_heading" markdown="1">
 ### INVERSION law
-{: .d-inline}
+{: .d-inline-block}
 {% include button.html %}
+</div>
 
 This law uses the NOT operation. The inversion law states that double inversion of a variable results in the original variable itself.
 
@@ -88,9 +100,11 @@ Example:  !!A = A
 
 
 
+<div class="main_sub_heading" markdown="1">
 ### Commutative law
-{: .d-inline}
+{: .d-inline-block}
 {% include button.html %}
+</div>
 
 Any binary operation which satisfies the following expression is referred to as commutative operation.
 ```yaml
@@ -98,9 +112,11 @@ Example:  A.B = B.A                         A+B = B+A
 ```
 
 
+<div class="main_sub_heading" markdown="1">
 ### Associative law
-{: .d-inline}
+{: .d-inline-block}
 {% include button.html %}
+</div>
 
 This law states that the order in which the logic operations are performed is irrelevant as their effect is the same.
 
@@ -108,9 +124,11 @@ This law states that the order in which the logic operations are performed is ir
 Example: (A.B).C = A.(B.C)                (A+B)+C = A+(B+C)
 ```
 
+<div class="main_sub_heading" markdown="1">
 ### Distributive law
-{: .d-inline}
+{: .d-inline-block}
 {% include button.html %}
+</div>
 
 Distributive law states the following condition.
 ```yaml
@@ -119,9 +137,11 @@ Example:  A.(B+C) = A.B + A.C
 ```
 
 
+<div class="main_sub_heading" markdown="1">
 ## DeMorgan’s Theorem
-{: .d-inline}
+{: .d-inline-block}
 {% include button.html %}
+</div>
 This theorem is useful in finding the **complement of Boolean function**. It states that the complement of logical OR of at least two Boolean variables is equal to the logical AND of each complemented variable.
 
 DeMorgan’s theorem with 2 Boolean variables x and y can be represented as

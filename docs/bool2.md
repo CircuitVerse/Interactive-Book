@@ -19,9 +19,11 @@ nav_order: 5
 
 
 
-## Introduction
-{: .d-inline}
+<div class="main_sub_heading" markdown="1">
+### Commutative law
+{: .d-inline-block}
 {% include button.html %}
+</div>
 
 
 Boolean algebra deals with binary variables and logic operation.
@@ -39,9 +41,11 @@ Here the left side of the equation represents the output **Y**. So we can state
           Y         =     A + BC + !(ADC)
    Boolean Function      Boolean expression
 ```
+<div class="main_sub_heading" markdown="1">
 ## Truth Table Formation
-{: .d-inline}
+{: .d-inline-block}
 {% include button.html %}
+</div>
 A truth table represents a table having all combinations of inputs and their corresponding result.
 
 It is possible to convert the switching equation into a truth table. For example, consider the following switching equation.
@@ -58,9 +62,11 @@ It is possible to convert the switching equation into a truth table. For example
 | 1       | 1       | 1      |1       |
 
 
+<div class="main_sub_heading" markdown="1">
 ## Sum of Product Expressions (SOP)
-{: .d-inline}
+{: .d-inline-block}
 {% include button.html %}
+</div>
 Let's consider a more complicated expression `F(ABCD)= AB'C+BD+CD+D` and generate its truth table:
 
 | F(AB'C+BD+CD+D)| A | B | C | D |
@@ -86,9 +92,11 @@ This example was definately more involved than the previous expressions. An inte
 
 Moreover, the `OR` operator returns `true` so long as any one of its arguements returns `true`. Therefore, if _any_ of the terms in the sum of product (SOP) expressions is `true`, then we know that the final expression is `true` for certain. 
 
+<div class="main_sub_heading" markdown="1">
 ## Example Algebraic Simplification
-{: .d-inline}
+{: .d-inline-block}
 {% include button.html %}
+</div>
 
 Let's simplify our expression from the previous truth table example. We can apply ordinary algebra tricks such as factoring. Remember that the `+` operator invokes the `OR` gate, and that `true or x` always returns `true` regardless of `x` (as shown in our first truth table).
 ```
@@ -102,9 +110,11 @@ AB'C+D // Since (B+1) is always true, as B OR true is always true
 
 As an exercise to the reader, complete the truth table to show that they are logically equivalent. 
 
+<div class="main_sub_heading" markdown="1">
 ## Undefined Input & Don't Cares
-{: .d-inline}
+{: .d-inline-block}
 {% include button.html %}
+</div>
 The definition of a "Don't care" is a combination of input values that is not known, and could be either `0` or `1`. For the purposes of variable simplification, we would choose the greedy approach of picking between {`0`, `1`} such that the simplified expression has less terms.
 
 Let's consider the following truth-table:
@@ -138,9 +148,11 @@ F(AB) = A'B' + A'B + AB' + AB
 We can clearly see, if we set `F(1, 0) = 1`, we get a true value for any input. Therefore, for the purposes of variable simplification, we can simply let `F(1, 0) = 1` thus implying `F(AB) = 1`.
 
 
+<div class="main_sub_heading" markdown="1">
 ## Let us try this interactive truth table generator for better understanding
-{: .d-inline}
+{: .d-inline-block}
 {% include button.html %}
+</div>
 
 ---
 
@@ -149,9 +161,11 @@ We can clearly see, if we set `F(1, 0) = 1`, we get a true value for any input. 
 
 ---
 
+<div class="main_sub_heading" markdown="1">
 ## Methods to simplify the boolean function
-{: .d-inline}
+{: .d-inline-block}
 {% include button.html %}
+</div>
 
 The methods used for simplifying the Boolean function are as follows −
 

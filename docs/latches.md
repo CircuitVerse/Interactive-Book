@@ -28,9 +28,11 @@ Now, let us discuss about SR Latch & D Latch one by one.
 
 
 
+<div class="main_sub_heading" markdown="1">
 ## SR Latch
-{: .d-inline}
+{: .d-inline-block}
 {% include button.html %}
+</div>
 
 SR Latch is also called as Set Reset Latch. This latch affects the outputs as long as the enable, E is maintained at ‘1’. The circuit diagram of SR Latch is shown in the following figure.
 
@@ -63,9 +65,11 @@ Therefore, SR Latch performs three types of functions such as Hold, Set & Reset 
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/13774" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
+<div class="main_sub_heading" markdown="1">
 ## D Latch
-{: .d-inline}
+{: .d-inline-block}
 {% include button.html %}
+</div>
 
 There is one drawback of SR Latch. That is the next state value can’t be predicted when both the inputs S & R are one. So, we can overcome this difficulty by D Latch. It is also called as Data Latch. The circuit diagram of D Latch is shown in the following figure.
 

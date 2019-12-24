@@ -18,17 +18,20 @@ nav_order: 9
 ---
 
 
-
-## Introduction
-{: .d-inline}
+<div class="main_sub_heading" markdown="1">
+## Design procedure of Combinational circuits
+{: .d-inline-block}
 {% include button.html %}
+</div>
 An arithmetic logic unit (ALU) is a digital circuit used to perform arithmetic and logic operations. It represents the fundamental building block of the central processing unit (CPU) of a computer. Modern CPUs contain very powerful and complex ALUs. In addition to ALUs, modern CPUs contain a control unit (CU).
 
 The purpose of the ALU is to perform mathematical operations such as addition, subtraction, multiplication and division. Additionally, the ALU processes basic logical operations like AND/OR calculations. Also known as the arithmetic logic unit, it serves as the computational hub of the Central Processing Unit (CPU) for a computer system
 
+<div class="main_sub_heading" markdown="1">
 ## In Detail
-{: .d-inline}
+{: .d-inline-block}
 {% include button.html %}
+</div>
 So with the above building blocks i.e. half adder and full adder discussed in Combinational Analysis, lets construct a simple ALU that performs a arithmetic operation (1 bit addition)and does 3 logical operations namely AND, NOR and XOR as shown below. The multiplexer selects only one operation at a time. The operation selected depends on the selection lines of the multiplexer as shown in the truth table.
 
 <div style="text-align:center" ><img src="../assets/images/1bitALU.jpg" /></div>
