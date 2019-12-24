@@ -20,7 +20,7 @@
 }
 
 #sidebar2 .site-title {
-  border-bottom: none;
+  border-bottom: 0;
 } 
 
 
@@ -168,10 +168,6 @@
   }
 }
 
-.sidebar-collapse {
-  float:right;
-}
-
 @media only screen and (max-width: 739px) {
   .sidebar-collapse {
     display: none !important;
@@ -194,6 +190,6 @@
 .sidebar-collapse.new {
   background-color: $link-color;
   color: $white;
-
+  float: right;
 }
 

@@ -70,15 +70,15 @@
 
   @include mq(md) {
     max-width: $content-width;
+    margin-left: $nav-width;
     padding-top: $gutter-spacing;
     padding-bottom: $gutter-spacing;
     padding-left: $gutter-spacing * 1.5;
-    margin-left: $nav-width;
   }
 
   @include mq(lg) {
-    padding-left: $gutter-spacing * 1.5;
     margin-left: calc((100% - #{$nav-width + $content-width}) / 4 + #{$nav-width});
+    padding-left: $gutter-spacing * 1.5;
   }
 }
 
@@ -108,8 +108,8 @@
     }
 
     @include mq(lg) {
-      padding-left: 0;
       margin-left: calc((100% - #{$nav-width + $content-width}) / 4 + #{$nav-width});
+      padding-left: 0;
     }
 
     .js-search {
