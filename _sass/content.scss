@@ -122,7 +122,7 @@
 }
 
 
-@media only screen and (max-width: 1055px) {
+@media only screen and (max-width: 1035px) {
 
   #main-content.moved {
     margin-left: 50px;
@@ -130,5 +130,12 @@
   
   #headerid.moved {
     margin-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 739px) {
+  #main-content.moved {
+    margin-left: 0;
+    padding-top: 0;
   }
 }
