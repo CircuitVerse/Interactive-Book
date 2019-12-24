@@ -60,7 +60,7 @@ h6 {
 }
 
 #soda_machine_fsm_canvas circle:nth-child(n+4) {
-  fill: #ffffff;
+  fill: $white;
 }
 
 #soda_machine_fsm_canvas text:nth-child(n+67) {
@@ -72,7 +72,7 @@ h6 {
 }
 
 select {
-  color: #5c5962;
+  color: $grey-dk-100;
 }
 
 input {
