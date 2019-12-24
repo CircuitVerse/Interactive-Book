@@ -59,15 +59,15 @@ h6 {
   color: $body-heading-color;
 }
 
-#soda_machine_fsm_canvas circle:nth-child(n+4){
+#soda_machine_fsm_canvas circle:nth-child(n+4) {
   fill: #ffffff;
 }
 
-#soda_machine_fsm_canvas text:nth-child(n+67){
+#soda_machine_fsm_canvas text:nth-child(n+67) {
   fill: $body-heading-color;
 }
 
-#soda_machine_graphics_canvas rect:nth-child(n+7){
+#soda_machine_graphics_canvas rect:nth-child(n+7) {
   fill: $body-background-color;
 }
 
@@ -75,11 +75,11 @@ select {
   color: #5c5962;
 }
 
-input{
-  color: black;
+input {
+  color: #000000;
 }
 
-path{
+path {
   stroke: $body-text-color;
 }
 
