@@ -173,9 +173,21 @@
 }
 
 @media only screen and (max-width: 739px) {
-
   .sidebar-collapse {
-    display: none;
+    display: none !important;
+  }
+
+  #sidebar2 {
+    display: none !important;
+  }
+
+  #sidebar {
+    display: flex !important;
+  }
+
+  #headerid {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 

@@ -69,7 +69,6 @@
   @include container;
 
   @include mq(md) {
-    position: relative;
     max-width: $content-width;
     padding-top: $gutter-spacing;
     padding-bottom: $gutter-spacing;
@@ -104,12 +103,19 @@
       padding-top: $sp-4;
       padding-bottom: $sp-4;
       border-bottom: $border $border-color;
-      max-width: $content-width;
+      max-width: $content-width + $nav-width;
+      margin-left: $nav-width;
     }
 
     @include mq(lg) {
-      padding-left: $gutter-spacing;
+      padding-left: 0;
       margin-left: calc((100% - #{$nav-width + $content-width}) / 4 + #{$nav-width});
+    }
+
+    .js-search {
+      @include mq(md) {
+        padding-left: 3rem;
+      }
     }
   }
 }

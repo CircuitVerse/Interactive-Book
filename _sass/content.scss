@@ -112,7 +112,7 @@
   }
 }
 
-@media only screen and (min-width: 739px) {
+@media only screen and (min-width: 739px){
 
   #main-content.moved {
     margin-left: calc((100% - 739px) / 2 + -80px);
@@ -123,3 +123,14 @@
   } 
 }
 
+
+@media only screen and (max-width: 1000px) {
+
+  #main-content.moved {
+    margin-left: 50px;
+  }
+  
+  #headerid.moved {
+    margin-left: 50px;
+  } 
+}
