@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "section-link";
+    src: url("../fonts/link-icon.woff") format('woff');
+}
+
+.section-link-icon {
+    position: absolute;
+    font-family: section-link;
+    padding-left: 10px;
+}
+
+.section-link-icon:hover {
+    color: #1a73e8;
+}
