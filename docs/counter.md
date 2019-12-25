@@ -22,18 +22,29 @@ Counters are of two types.
 
 ---
 
+<div class="main_sub_heading" markdown="1">
 ## Asynchronous or ripple counters
-
+{: .d-inline-block}
+{% include button.html %}
+</div>
 The logic diagram of a 2-bit ripple up counter is shown in figure. 
 The toggle (T) flip-flop are being used. 
 But we can use the JK flip-flop also with J and K connected permanently to logic 1. 
 External clock is applied to the clock input of flip-flop A and QA output is applied to the clock input of the next flip-flop i.e. FF-B.
 
+<div class="main_sub_heading" markdown="1">
 ### Logical Diagram
+{: .d-inline-block}
+{% include button.html %}
+</div>
 
 <div style="text-align:center"><img src="../assets/images/ripple_counter_diagram.jpg" /></div>
 
+<div class="main_sub_heading" markdown="1">
 ### Types 
+{: .d-inline-block}
+{% include button.html %}
+</div>
 It is known as ripple counter because of the way the clock pulse ripples its way through the flip-flops. The flip-flop applied with external clock pulse act as LSB (Least Significant Bit) in the counting sequence.The flip-flop toggles the output either for every positive edge of clock signal or for negative edge of clock signal.
 * **2 bit ripple up counter:** It contains two flip flops. A 2-bit ripple counter can count up to 4 states. It counts from 0 to 3.
 
@@ -50,7 +61,11 @@ It is known as ripple counter because of the way the clock pulse ripples its way
 * **3 bit ripple down counter:** It contains three flip flops. A 3-bit ripple counter can count up to 8 states.It counts down from 7 to 0.
 <div style="text-align:center"><img src="../assets/images/3bit_counter.png" height="300"/></div>
 
-### Operation
+<div class="main_sub_heading" markdown="1">
+### Operation 
+{: .d-inline-block}
+{% include button.html %}
+</div>
 
 |Condition|Operation|
 |:--------|:--------|
@@ -61,19 +76,34 @@ It is known as ripple counter because of the way the clock pulse ripples its way
 |**After 4th negative clock edge**|On the arrival of 4th negative clock edge, FF-A toggles again and QA becomes 1 from 0.This negative change in QA acts as clock pulse for FF-B. Hence it toggles to change QB from 1 to 0.QBQA = 00 after the fourth clock pulse.
                                                                                                                                                                                                                             
 
+<div class="main_sub_heading" markdown="1">
 ### Truth Table 
+{: .d-inline-block}
+{% include button.html %}
+</div>
 
 <div style="text-align:center"><img src="../assets/images/ripple_counter_truthtable.jpg" /></div>
 
+<div class="main_sub_heading" markdown="1">
 ## Synchronous counters
-
+{: .d-inline-block}
+{% include button.html %}
+</div>
 If the "clock" pulses are applied to all the flip-flops in a counter simultaneously, then such a counter is called as synchronous counter.
 
+<div class="main_sub_heading" markdown="1">
 ### 2-bit Synchronous up counter
+{: .d-inline-block}
+{% include button.html %}
+</div>
 
 The JA and KA inputs of FF-A are tied to logic 1. So FF-A will work as a toggle flip-flop. The JB and KB inputs are connected to QA.
 
+<div class="main_sub_heading" markdown="1">
 ### Types 
+{: .d-inline-block}
+{% include button.html %}
+</div>
 * **4 bit synchronous up counter:** In the up counter the 4 bit binary sequence starts from 0000 and increments up to 1111, i.e from 0 to 15.
 
 <div style="text-align:center"><img src="../assets/images/4bit_up_counter.png" height="300"/></div>
@@ -95,11 +125,19 @@ The JA and KA inputs of FF-A are tied to logic 1. So FF-A will work as a toggle 
 <div style="text-align:center"><img src="../assets/images/4bit_decade_counter.png" height="300"/></div>
 <br>
 
-### Logical Diagram
+<div class="main_sub_heading" markdown="1">
+### Logical Diagram 
+{: .d-inline-block}
+{% include button.html %}
+</div>
 
 <div style="text-align:center"><img src="../../assets/images/synchronous_counter_diagram.jpg" /></div>
 
+<div class="main_sub_heading" markdown="1">
 ### Operation
+{: .d-inline-block}
+{% include button.html %}
+</div>
 
 |Condition|Operation|
 |:--------|:-------:|

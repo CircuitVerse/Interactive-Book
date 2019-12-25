@@ -15,21 +15,32 @@ The selection of one of the n inputs is done by the selected inputs. Depending o
 E is called the strobe or enable input which is useful for the cascading. It is generally an active low terminal that means it will perform the required operation when it is low.
 
 
+<div class="main_sub_heading" markdown="1">
 ## Block Diagram
+{: .d-inline-block}
+{% include button.html %}
+</div>
 {: .no_toc }
 
 <div style="text-align:center"><img src="../../assets/images/n_onemultiplexer_blockdiagram.jpg" /></div>
 
 
 
+<div class="main_sub_heading" markdown="1">
 ## Multiplexers come in multiple variations
-   
+{: .d-inline-block}
+{% include button.html %}
+</div>   
 * 2 : 1 multiplexer
 * 4 : 1 multiplexer
 * 16 : 1 multiplexer
 * 32 : 1 multiplexer
 
+<div class="main_sub_heading" markdown="1">
 ## Truth Table
+{: .d-inline-block}
+{% include button.html %}
+</div>
 {: .no_toc }
 
 <div style="text-align:center"><img src="../../assets/images/two_onemultiplexer_truthtable.jpg" /></div>

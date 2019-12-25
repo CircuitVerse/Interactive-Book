@@ -13,21 +13,32 @@ It has only one input, n outputs, m select input.
 At a time only one output line is selected by the select lines and the input is transmitted to the selected output line. 
 A de-multiplexer is equivalent to a single pole multiple way switch as shown in fig.
 
+<div class="main_sub_heading" markdown="1">
 ## Demultiplexers in multiple variations.
-
+{: .d-inline-block}
+{% include button.html %}
+</div>
 * 1 : 2  demultiplexer
 * 1 : 4  demultiplexer
 * 1 : 16 demultiplexer
 * 1 : 32 demultiplexer
 
 
+<div class="main_sub_heading" markdown="1">
 ## Block Diagram
+{: .d-inline-block}
+{% include button.html %}
+</div>
 {: .no_toc }
 
 <div style="text-align:center"><img src="../../assets/images/one_twodemultiplexer_blockdiagram.jpg" /></div>
 
 
+<div class="main_sub_heading" markdown="1">
 ## Truth Table
+{: .d-inline-block}
+{% include button.html %}
+</div>
 {: .no_toc }
 
 <div style="text-align:center"><img src="../../assets/images/one_twodemultiplexer_truthtable.jpg" /></div>

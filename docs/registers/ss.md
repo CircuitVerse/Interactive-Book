@@ -17,16 +17,27 @@ nav_order: 1
 
 ---
 
+<div class="main_sub_heading" markdown="1">
 ## Introduction
+{: .d-inline-block}
+{% include button.html %}
+</div>
  
 Let all the flip-flop be initially in the reset condition i.e. Q3 = Q2 = Q1 = Q0 = 0. If an entry of a four bit binary number 1 1 1 1 is made into the register, this number should be applied to Din bit with the LSB bit applied first. The D input of FF-3 i.e. D3 is connected to serial data input Din. Output of FF-3 i.e. Q3 is connected to the input of the next flip-flop i.e. D2 and so on.
 
+<div class="main_sub_heading" markdown="1">
 ## Block Diagram
-
+{: .d-inline-block}
+{% include button.html %}
+</div>
 
 <div style="text-align:center"><img src="../../assets/images/siso_blockdiagram.jpg" /></div>
 
+<div class="main_sub_heading" markdown="1">
 ## Operation
+{: .d-inline-block}
+{% include button.html %}
+</div>
 
 Before application of clock signal, let Q3 Q2 Q1 Q0 = 0000 and apply LSB bit of the number to be entered to Din. So Din = D3 = 1. Apply the clock. On the first falling edge of clock, the FF-3 is set, and stored word in the register is Q3 Q2 Q1 Q0 = 1000.
 
@@ -44,9 +55,17 @@ Similarly with Din = 1 and with the fourth negative clock edge arriving, the sto
 
 <div style="text-align:center"><img src="../../assets/images/siso_operation4.jpg" /></div>
 
+<div class="main_sub_heading" markdown="1">
 ## Truth Table
+{: .d-inline-block}
+{% include button.html %}
+</div>
 <div style="text-align:center"><img src="../../assets/images/siso_truthtable.jpg" /></div>
 
+<div class="main_sub_heading" markdown="1">
 ## Waveforms
+{: .d-inline-block}
+{% include button.html %}
+</div>
 <div style="text-align:center"><img src="../../assets/images/siso_waveform.jpg" /></div>
 

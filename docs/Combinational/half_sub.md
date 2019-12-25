@@ -12,12 +12,20 @@ Half subtractor is a combination circuit with two inputs and two outputs (differ
 It produces the difference between the two binary bits at the input and also produces an output (Borrow) to indicate if a 1 has been borrowed. 
 In the subtraction (A-B), A is called as Minuend bit and B is called as Subtrahend bit.
 
+<div class="main_sub_heading" markdown="1">
 ## Truth Table
+{: .d-inline-block}
+{% include button.html %}
+</div>
 {: .no_toc }
 
 <div style="text-align:center"><img src="../../assets/images/halfsubstrator_truthtable.jpg" /></div>
 
+<div class="main_sub_heading" markdown="1">
 ## Circuit Diagram
+{: .d-inline-block}
+{% include button.html %}
+</div>
 {: .no_toc }
 
 <div style="text-align:center"><img src="../../assets/images/halfsubstrator_circuitdiagram.jpg" /></div>
