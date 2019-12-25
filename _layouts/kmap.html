@@ -41,13 +41,27 @@
                     const cssFile = document.querySelector('[rel="stylesheet"]')
                     const originalCssRef = cssFile.getAttribute('href')
                     const darkModeCssRef = originalCssRef.replace('just-the-docs.css', 'dark-mode-preview.css')
+                    var isDarkMode = localStorage.getItem("userTheme")
+                    if (isDarkMode == 0 || isDarkMode == null){
+                     isDarkMode = 0
+                     localStorage.setItem("userTheme", "0")
+                     cssFile.setAttribute('href', originalCssRef)
+                    }
+                    else if(isDarkMode == 1){
+                     cssFile.setAttribute('href', darkModeCssRef)
+                    }
 
                     addEvent(toggleDarkMode, 'click', function(){
-                        if (cssFile.getAttribute('href') === originalCssRef) {
-                            cssFile.setAttribute('href', darkModeCssRef)
-                        } else {
-                            cssFile.setAttribute('href', originalCssRef)
+                        isDarkMode = localStorage.getItem("userTheme")
+                        if (isDarkMode == 0) {
+                         cssFile.setAttribute('href', darkModeCssRef)
+                         localStorage.setItem("userTheme", "1")
+                        } else if (isDarkMode == 1){
+                         cssFile.setAttribute('href', originalCssRef)
+                         localStorage.setItem("userTheme", "0")
                         }
+              
+
                     })
                 </script>
                 {% endif %}
