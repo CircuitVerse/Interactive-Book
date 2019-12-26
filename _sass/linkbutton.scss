@@ -1,0 +1,30 @@
+p .link-button {
+    display:none;
+}
+
+.main_sub_heading:hover > p > .link-button {
+    display: inline;
+    margin-left:3px;
+    border: none;
+    background: none;
+    padding: 0;
+    box-shadow: none !important; 
+}
+
+.main_sub_heading:hover > p > .link-button img {
+    border: none;
+    background: none;
+    box-shadow: none !important;
+    width:10px !important; 
+}
+
+.main_sub_heading:hover > p > .link-button:hover {
+    filter: invert(31%) sepia(62%) saturate(678%) hue-rotate(119deg) brightness(93%) contrast(98%);
+}
+
+.link-button img {
+    max-width: 100%;
+    height: auto;
+    filter: brightness(0) invert($link-img-invert)
+}
+
