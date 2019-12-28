@@ -2,31 +2,6 @@
     <img src="/assets/images/link.svg"/>
 </button>
 <script>;
-    function copyAnchorLinkToClipboardNav(e) {
-        var link = e.target.parentNode.previousElementSibling.children[0].children[0].href;
-        // Have to create text area in order to copy to clipboard
-        var textArea = document.createElement("textarea");
-        // If rendered for any reason (happens in IE)
-        textArea.style.position = 'fixed';
-        textArea.style.top = 0;
-        textArea.style.left = 0;
-        textArea.style.width = '2em';
-        textArea.style.height = '2em';
-        textArea.style.padding = 0;
-        textArea.style.border = 'none';
-        textArea.style.outline = 'none';
-        textArea.style.boxShadow = 'none';
-        textArea.style.background = 'transparent';
-        textArea.value = link;
-        // Add to body
-        document.body.appendChild(textArea);
-        textArea.focus();
-        textArea.select();
-        // Copy text
-        document.execCommand('copy');
-        // Remove from body
-        document.body.removeChild(textArea);
-    }
     function copyTextToClipboard(text) {
         // Have to create text area in order to copy to clipboard
         var textArea = document.createElement("textarea");
@@ -52,6 +27,6 @@
         document.body.removeChild(textArea);
     }
     function getAnchorLinkNav(e) {
-        return e.target.parentNode.previousElementSibling.children[0].children[0].href;
+        return e.target.parentNode.previousElementSibling.href;
     }
 </script>

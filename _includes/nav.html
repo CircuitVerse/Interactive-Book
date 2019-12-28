@@ -37,7 +37,10 @@
             {% if page.parent == node.title or page.grand_parent == node.title %}
               {% assign first_level_url = node.url | absolute_url %}
             {% endif %}
-            <a href="{{ node.url | absolute_url }}" class="navigation-list-link{% if page.url == node.url %} active{% endif %}">{{ node.title }}</a>
+            <div class="navigation-list-link{% if page.url == node.url %} active{% endif %}">
+              <a href="{{ node.url | absolute_url }}">{{ node.title }}</a>
+              {% include buttonnav.html %}
+            </div>
             {% if node.has_children %}
               {% assign children_list = site.html_pages | sort:"nav_order" %}
               <ul class="navigation-list-child-list ">
@@ -48,7 +51,7 @@
                         {% assign second_level_url = child.url | absolute_url %}
                       {% endif %}
                       <div class="navigation-list-link{% if page.url == child.url %} active{% endif %}">
-                        <a href="{{ child.url | absolute_url }}" >{{ child.title }}</a>{% include buttonnavchild.html %}
+                        <a href="{{ child.url | absolute_url }}" >{{ child.title }}</a>{% include buttonnav.html %}
                       </div>
                       {% if child.has_children %}
                         {% assign grand_children_list = site.html_pages | sort:"nav_order" %}
@@ -57,7 +60,7 @@
                             {% if grand_child.parent == child.title %}
                               <li class="navigation-list-item {% if page.url == grand_child.url %} active{% endif %}">
                                 <div>
-                                  <a href="{{ grand_child.url | absolute_url }}">{{ grand_child.title }}</a>{% include buttonnavchild.html %}
+                                  <a href="{{ grand_child.url | absolute_url }}">{{ grand_child.title }}</a>{% include buttonnav.html %}
                                 </div>
                                 </li>
                             {% endif %}
@@ -71,7 +74,6 @@
             {% endif %}
           </li>
         </div>
-        {% include buttonnav.html %}
         </div>
 
 
