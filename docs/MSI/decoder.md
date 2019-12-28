@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Decoder
+comments: true
 parent: MSI Components
 nav_order: 3
 ---

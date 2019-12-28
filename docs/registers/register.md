@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Digital Registers
+comments: true
 nav_order: 14
 has_children: true
 permalink: /docs/register

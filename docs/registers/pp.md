@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Parallel Input Parallel Output
+comments: true
 parent: Digital Registers
 nav_order: 4
 ---

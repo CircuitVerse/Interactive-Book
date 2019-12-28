@@ -4,9 +4,10 @@
 {% include head.html %}
 
 <body>
+    <script src="\assets\js\vendor\jquery-3.4.1.min.js"></script>
 
 <div class="page-wrap">
-    <div class="side-bar">
+    <div class="side-bar" id="sidebar">
         <a href="{{ site.url }}{{ site.baseurl }}" class="site-title fs-6 lh-tight">{{ site.title }}</a>
         <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
         <div class="navigation main-nav js-main-nav">
@@ -67,7 +68,18 @@
                 {% endif %}
             </div>
         </div>
-        <div class="main-content">
+        <div class="main-content" id="mainhome">
+            <div id="content">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <div class="container-fluid">
+      
+                    <button type="button" id="sidebarCollapse" class="btn btn-info new">
+                      <i class="fas fa-align-left"></i>
+                      <span>Sidebar</span>
+                    </button>
+                  </div>
+                </nav>
+              </div>
             {% unless page.url == "/" %}
             {% if page.parent %}
             <nav class="breadcrumb-nav">
@@ -106,6 +118,14 @@
         </div>
     </div>
 </div>
-
+<script>$(document).ready(function () {
+    $('#sidebarCollapse').on('click', function () {
+      $('#sidebar').toggleClass('active');
+      $('#main-content').toggleClass('moved');
+      $('#headerid').toggleClass('moved');
+      $('#sidebarCollapse').toggleClass('moved');
+      $('#sidebarCollapse').toggleClass('colored');
+    });
+  });</script>
 </body>
 </html>

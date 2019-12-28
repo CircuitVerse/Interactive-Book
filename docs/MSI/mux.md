@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Multiplexers
+comments: true
 parent: MSI Components
 nav_order: 1
 ---

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Combinational Logic
+comments: true
 nav_order: 8
 has_children: true
 permalink: /docs/combinational

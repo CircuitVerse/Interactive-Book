@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Full Adder
+comments: true
 parent: Combinational Logic
 nav_order: 2
 ---

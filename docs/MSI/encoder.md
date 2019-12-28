@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Encoder
+comments: true
 parent: MSI Components
 nav_order: 4
 ---

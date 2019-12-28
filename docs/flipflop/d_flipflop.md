@@ -1,6 +1,7 @@
 ---
 layout: default
 title: D Flip-Flop
+comments: true
 parent: Flip-Flops
 nav_order: 2
 ---

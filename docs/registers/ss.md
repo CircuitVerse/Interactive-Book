@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Serial Input Serial Output
+comments: true
 parent: Digital Registers
 nav_order: 1
 ---

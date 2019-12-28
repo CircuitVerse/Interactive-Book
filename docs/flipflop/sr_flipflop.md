@@ -1,6 +1,7 @@
 ---
 layout: default
 title: SR Flip-Flop
+comments: true
 parent: Flip-Flops
 nav_order: 1
 ---

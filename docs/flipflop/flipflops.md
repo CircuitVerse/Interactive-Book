@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Flip-Flops
+comments: true
 nav_order: 13
 has_children: true
 permalink: /docs/flipflop

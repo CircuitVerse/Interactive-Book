@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Full Subtractors
+comments: true
 parent: Combinational Logic
 nav_order: 4
 ---
