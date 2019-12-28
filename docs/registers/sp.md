@@ -28,3 +28,4 @@ nav_order: 2
 
 <div style="text-align:center"><img src="../../assets/images/sipo_blockdiagram.jpg" /></div>
 
+{% include disqus.html %}

@@ -27,3 +27,4 @@ This combinational circuit has ‘n’ input variables and ‘m’ outputs. Each
    
 We're going to elaborate few important combinational circuits as follows.
 
+{% include disqus.html %}
