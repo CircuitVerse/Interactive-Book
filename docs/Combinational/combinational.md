@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Combinational Logic
-comments: true
 nav_order: 8
 has_children: true
 permalink: /docs/combinational
@@ -27,4 +26,3 @@ This combinational circuit has ‘n’ input variables and ‘m’ outputs. Each
    
 We're going to elaborate few important combinational circuits as follows.
 
-{% include disqus.html %}

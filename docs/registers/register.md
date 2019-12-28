@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Digital Registers
-comments: true
 nav_order: 14
 has_children: true
 permalink: /docs/register
@@ -19,4 +18,4 @@ The registers that allow such data transfers are called as shift registers.
 There are four mode of operations of a shift register.
 
 
-{% include disqus.html %}
+

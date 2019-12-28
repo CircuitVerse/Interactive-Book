@@ -23,4 +23,3 @@ In this module, we will study many of the common types of MSI devices.
 For each type, we will start with a brief discussion of its basic operating principle and then introduce specific ICs. 
 We then show how they can be used alone or in combination with other ICs in various applications.
 
-{% include disqus.html %}

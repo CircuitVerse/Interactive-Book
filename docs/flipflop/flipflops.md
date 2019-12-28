@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Flip-Flops
-comments: true
 nav_order: 13
 has_children: true
 permalink: /docs/flipflop
@@ -23,4 +22,4 @@ In second module, we can directly implement the flip-flop, which is edge sensiti
 In this module, we will implemented various flip-flops by providing the cross coupling between NOR gates. Similarly, you can implement these flip-flops by using NAND gates.
 
 
-{% include disqus.html %}
+
