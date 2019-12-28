@@ -104,11 +104,12 @@
 .site-footer {
 
   @include container;
-
   width: 100%;
 
   @include mq(lg) {
     width: $nav-width + 32px;
+    padding-right: calc(#{$gutter-spacing - $sp-2}) !important;
+    padding-left: calc(#{$gutter-spacing - $sp-4}) !important;
   }
 }
 
