@@ -91,7 +91,7 @@ The NOR gate behaves in an opposite fashion to the OR gate. You can think of it 
 
 ## XOR gate
 
-The NAND gate behaves in the opposite fashion to and AND gate. You can think of it as an AND gate followed immediately by a NOT gate. Its output is 0 when the two inputs are 1, and for all other cases, its output is 0. The name NAND comes from joining NOT and AND. The symbol for NAND is the same as that for AND except for the addition of a small circle on the right side.
+The XOR gate behaves in a similar fashion to the OR gate. Its output is 1 when the two inputs are not the same, but one of them is 1. For all other cases, its output is 0. The name XOR comes from joining NOT and XOR. The symbol for XOR is the same as that for OR except for the addition of an arc right before the gate.
 
 | Input1       | Input 2      | output |
 |:------------:|:------------:|:------:|
