@@ -103,4 +103,18 @@ The NAND gate behaves in the opposite fashion to and AND gate. You can think of 
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/740" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 
+## XNOR gate
+
+The XNOR gate behaves in the opposite fashion to the XOR gate. You can think of it as an XOR gate followed immediately by a NOT gate. Its output is 1 when the two inputs are the same, and for all other cases, its output is 0. The name XNOR comes from joining NOT and XOR. The symbol for XNOR is the same as that for XOR except for the addition of a small circle at the end, right before the output.
+
+| Input1       | Input 2      | output |
+|:------------:|:------------:|:------:|
+| 0            | 0            | 1      |
+| 0            | 1            | 0      |
+| 1            | 0            | 0      |
+| 1            | 1            | 1      |
+
+<iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/44684" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+
+
 {% include disqus.html %}
