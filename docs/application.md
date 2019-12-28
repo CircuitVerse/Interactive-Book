@@ -4,6 +4,7 @@ title:  Application of Shift Registers
 comments: true
 nav_order: 15
 ---
+# Application of Shift Registers
 
 In previous module, we discussed four types of shift registers. Based on the requirement, we can use one of those shift registers. Following are the applications of shift registers.
 
