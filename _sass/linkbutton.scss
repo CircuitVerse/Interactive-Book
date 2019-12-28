@@ -1,5 +1,9 @@
 p .link-button, .link-button-nav {
     display:none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 1.4 !important;
+    max-height: 100%;
 }
 
 .main_sub_heading:hover > p > .link-button, .navigation-list-link:hover > .link-button-nav{
@@ -23,8 +27,6 @@ p .link-button, .link-button-nav {
 }
 
 .link-button img, .link-button-nav img{
-    width:10px !important;
-    height: auto;
     filter: brightness(0) invert($link-img-invert)
 }
 
@@ -32,3 +34,4 @@ p .link-button, .link-button-nav {
     padding-left: 0px;
     width:8px !important;
 }
+

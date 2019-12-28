@@ -96,6 +96,10 @@
   padding-top: $sp-1;
   padding-bottom: $sp-1;
 
+  a {
+    background-image: none !important;
+  }
+
   &.active {
     font-weight: 600;
     color: $body-heading-color;
