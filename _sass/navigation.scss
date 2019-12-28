@@ -49,7 +49,7 @@
   padding-left: $sp-3;
   list-style: none;
 
-  .navigation-list-link {
+  .navigation-list-link a{
     color: $nav-child-link-color;
   }
 
@@ -91,7 +91,7 @@
   }
 }
 
-.navigation-list-link {
+.navigation-list-link{
   display: block;
   padding-top: $sp-1;
   padding-bottom: $sp-1;

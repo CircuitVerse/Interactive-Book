@@ -1,12 +1,9 @@
-<button class="link-button" onclick='copyTextToClipboard(getAnchorLink(event))'>
+<button class="link-button-nav-child" onclick='copyTextToClipboard(getAnchorLinkNavChild(event))'>
     <img src="/assets/images/link.svg"/>
 </button>
-<script>
-    $('.link-button').each(function() {
-        $(this).parent().css('display', 'inline-block');
-        $(this).parent().css('margin-bottom', '0');
-    });
-    function copyTextToClipboard(text) {
+<script>;
+
+function copyTextToClipboard(text) {
         // Have to create text area in order to copy to clipboard
         var textArea = document.createElement("textarea");
         // If rendered for any reason (happens in IE)
@@ -30,9 +27,7 @@
         // Remove from body
         document.body.removeChild(textArea);
     }
-    function getAnchorLink(e) {
-        var text_id = e.target.parentNode.parentNode.previousElementSibling.id;
-        var current_url = document.location.href.match(/(^[^#]*)/)[0]; // remove any current anchors
-        return current_url + "#" + text_id;
+    function getAnchorLinkNavChild(e) {
+        return e.target.parentNode.previousElementSibling.href;
     }
 </script>

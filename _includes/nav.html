@@ -47,15 +47,19 @@
                       {% if page.url == child.url or page.parent == child.title %}
                         {% assign second_level_url = child.url | absolute_url %}
                       {% endif %}
-                      <a href="{{ child.url | absolute_url }}" class="navigation-list-link{% if page.url == child.url %} active{% endif %}">{{ child.title }}</a>
+                      <div class="navigation-list-link{% if page.url == child.url %} active{% endif %}">
+                        <a href="{{ child.url | absolute_url }}" >{{ child.title }}</a>{% include buttonnavchild.html %}
+                      </div>
                       {% if child.has_children %}
                         {% assign grand_children_list = site.html_pages | sort:"nav_order" %}
                         <ul class="navigation-list-child-list">
                           {% for grand_child in grand_children_list %}
                             {% if grand_child.parent == child.title %}
                               <li class="navigation-list-item {% if page.url == grand_child.url %} active{% endif %}">
-                                <a href="{{ grand_child.url | absolute_url }}" class="navigation-list-link{% if page.url == grand_child.url %} active{% endif %}">{{ grand_child.title }}</a>
-                              </li>
+                                <div>
+                                  <a href="{{ grand_child.url | absolute_url }}">{{ grand_child.title }}</a>{% include buttonnavchild.html %}
+                                </div>
+                                </li>
                             {% endif %}
                           {% endfor %}
                         </ul>
@@ -67,7 +71,7 @@
             {% endif %}
           </li>
         </div>
-
+        {% include buttonnav.html %}
         </div>
 
 
