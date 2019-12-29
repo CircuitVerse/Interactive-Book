@@ -53,7 +53,8 @@
       margin-left: -0.8em;
       margin-top: 0.3em;
       position: absolute;
-    } 
+    }
+
     &.active {
       &::before {
         color: $body-text-color;
