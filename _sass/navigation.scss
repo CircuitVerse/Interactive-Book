@@ -30,10 +30,6 @@
 
 }
 
-.sub_heading{
-
-}
-
 .navigation-list {
   padding: 0;
   margin-top: $sp-4;
@@ -51,15 +47,13 @@
 
   .navigation-list-item {
     position: relative;
-  
     &::before {
       color: rgba($body-text-color, 0.3);
       content: "- ";
       margin-left: -0.8em;
       margin-top: 0.3em;
       position: absolute;
-    }
-  
+    } 
     &.active {
       &::before {
         color: $body-text-color;
