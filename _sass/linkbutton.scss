@@ -23,10 +23,10 @@ p .link-button,
 
 .link-button img,
 .link-button-nav img {
-  filter: brightness(0) invert($link-img-invert);
   background: none;
   border: 0;
   box-shadow: none;
+  filter: brightness(0) invert($link-img-invert);
   max-width: 100%;
 }
 
