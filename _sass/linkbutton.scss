@@ -1,10 +1,10 @@
 p .link-button,
 .link-button-nav {
   display: none;
-  padding-top: 0;
-  padding-bottom: 0;
   line-height: 1.4 !important;
   max-height: 100%;
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 .main_sub_heading:hover > p > .link-button,
@@ -19,8 +19,8 @@ p .link-button,
 
 .main_sub_heading:hover > p > .link-button img,
 .navigation-list-link:hover > .link-button-nav img {
-  border: 0;
   background: none;
+  border: 0;
   box-shadow: none !important;
   width: 10px;
 }

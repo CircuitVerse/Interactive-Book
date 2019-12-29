@@ -49,26 +49,25 @@
   padding-left: $sp-3;
   list-style: none;
 
+  .navigation-list-item {
+    position: relative;
+  
+    &::before {
+      color: rgba($body-text-color, 0.3);
+      content: "- ";
+      margin-left: -0.8em;
+      margin-top: 0.3em;
+      position: absolute;
+    }
+  
+    &.active {
+      &::before {
+        color: $body-text-color;
+      }
+    }
+  }
   .navigation-list-link a {
     color: $nav-child-link-color;
-  }
-}
-
-.navigation-list-child-list .navigation-list-item {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    margin-top: 0.3em;
-    margin-left: -0.8em;
-    color: rgba($body-text-color, 0.3);
-    content: "- ";
-  }
-
-  &.active {
-    &::before {
-      color: $body-text-color;
-    }
   }
 }
 
