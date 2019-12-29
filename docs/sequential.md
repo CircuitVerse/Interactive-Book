@@ -5,7 +5,7 @@ comments: true
 nav_order: 11
 ---
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 # Digital Sequential Circuits
 {: .d-inline-block}
 {% include button.html %}
@@ -35,7 +35,7 @@ Following table shows the **differences** between combinational circuits and seq
 |Easy to design.|Difficult to design.|
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Types of Sequential Circuits
 {: .d-inline-block}
 {% include button.html %}
@@ -46,14 +46,14 @@ Following are the two types of sequential circuits −
 * Asynchronous sequential circuits
 * Synchronous sequential circuits
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ### Asynchronous sequential circuits
 {: .d-inline-block}
 {% include button.html %}
 </div>
 If some or all the outputs of a sequential circuit do not change (affect) with respect to active transition of clock signal, then that sequential circuit is called as Asynchronous sequential circuit. That means, all the outputs of asynchronous sequential circuits do not change (affect) at the same time. Therefore, most of the outputs of asynchronous sequential circuits are not in synchronous with either only positive edges or only negative edges of clock signal.
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ### Synchronous sequential circuits
 {: .d-inline-block}
 {% include button.html %}

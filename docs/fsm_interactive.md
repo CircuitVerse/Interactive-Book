@@ -5,7 +5,7 @@ comments: true
 nav_order: 18
 ---
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 # Interactive FSM
 {: .d-inline-block}
 {% include button.html %}
@@ -13,7 +13,7 @@ nav_order: 18
 
 In this module, we will learn how to implement a final state machine(FSM) that describes the functionality of a Soda vending machine:
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Problem
 {: .d-inline-block}
 {% include button.html %}
@@ -26,7 +26,7 @@ Our objective is to design a state machine that determines when to dispense a ca
 Note: in this design we will ignore the capacity of the stock, which means, we’ll assume that there will always be can in the vending machine.
 Also, we can assume that only one action could be made in every “clock cycle” or state
 ```
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## RULES
 {: .d-inline-block}
 {% include button.html %}
@@ -34,7 +34,7 @@ Also, we can assume that only one action could be made in every “clock cycle�
 
 First give back the change then dispense the can.
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Understanding the possibilities 
 {: .d-inline-block}
 {% include button.html %}
@@ -47,7 +47,7 @@ There are quite few options:
 5. putting 10¢ followed by 5¢ and getting the can
 6. putting 5$ followed by 5¢ followed by 5¢ => getting a can.
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## FSM diagram
 {: .d-inline-block}
 {% include button.html %}

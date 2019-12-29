@@ -12,7 +12,7 @@ Encoder is a combinational circuit which is designed to perform the inverse oper
 An encoder has n number of input lines and m number of output lines. An encoder produces an m bit binary code corresponding to the digital input number. 
 The encoder accepts an n input digital word and converts it into an m bit another digital word.
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Block Diagram
 {: .d-inline-block}
 {% include button.html %}
@@ -21,7 +21,7 @@ The encoder accepts an n input digital word and converts it into an m bit anothe
 
 <div style="text-align:center"><img src="../../assets/images/encoder_blockdiagram.jpg" /></div>
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ### Examples of Decoders are following.
 {: .d-inline-block}
 {% include button.html %}
@@ -31,7 +31,7 @@ The encoder accepts an n input digital word and converts it into an m bit anothe
 * Octal to binary encoder
 * Hexadecimal to binary encoder
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Priority Encoder
 {: .d-inline-block}
 {% include button.html %}
@@ -45,7 +45,7 @@ There are four input D0, D1, D2, D3 and two output Y0, Y1.
 Out of the four input D3 has the highest priority and D0 has the lowest priority. 
 That means if D3 = 1 then Y1 Y1 = 11 irrespective of the other inputs. Similarly if D3 = 0 and D2 = 1 then Y1 Y0 = 10 irrespective of the other inputs.
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Block Diagram
 {: .d-inline-block}
 {% include button.html %}
@@ -54,7 +54,7 @@ That means if D3 = 1 then Y1 Y1 = 11 irrespective of the other inputs. Similarly
 
 <div style="text-align:center"><img src="../../assets/images/priorityencoder_blockdiagram.jpg" /></div>
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Truth Table
 {: .d-inline-block}
 {% include button.html %}
@@ -62,7 +62,7 @@ That means if D3 = 1 then Y1 Y1 = 11 irrespective of the other inputs. Similarly
 
 <div style="text-align:center"><img src="../../assets/images/priorityencoder_truthtable.jpg" /></div>
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Logic Circuit
 {: .d-inline-block}
 {% include button.html %}

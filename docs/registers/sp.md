@@ -11,7 +11,7 @@ nav_order: 2
 
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Introduction
 {: .d-inline-block}
 {% include button.html %}
@@ -26,7 +26,7 @@ nav_order: 2
 * 4 clock cycles are required to load a four bit word. Hence the speed of operation of SIPO mode is same as that of SISO mode.
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Block Diagram
 {: .d-inline-block}
 {% include button.html %}

@@ -10,7 +10,7 @@ nav_order: 2
 
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Introduction
 {: .d-inline-block}
 {% include button.html %}
@@ -23,7 +23,7 @@ Example: 110111
 There is no 2, 3, 4, 5, 6, 7, 8 or 9 in Binary!
 ```
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ### How do we Count using Binary?
 {: .d-inline-block}
 {% include button.html %}

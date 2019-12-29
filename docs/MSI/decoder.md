@@ -14,7 +14,7 @@ Decoder is identical to a demultiplexer without any data input.
 It performs operations which are exactly opposite to those of an encoder.
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Block Diagram
 {: .d-inline-block}
 {% include button.html %}
@@ -23,7 +23,7 @@ It performs operations which are exactly opposite to those of an encoder.
 
 <div style="text-align:center"><img src="../../assets/images/decoder_blockdiagram.jpg" /></div>
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ### Examples of Decoders are following.
 {: .d-inline-block}
 {% include button.html %}
@@ -33,7 +33,7 @@ It performs operations which are exactly opposite to those of an encoder.
 * Nixie tube decoders
 * Relay actuator
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## 2 to 4 Line Decoder
 {: .d-inline-block}
 {% include button.html %}
@@ -45,7 +45,7 @@ A and B are the two inputs where D through D are the four outputs.
 Truth table explains the operations of a decoder. 
 It shows that each output is 1 for only a specific combination of inputs.
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Block Diagram
 {: .d-inline-block}
 {% include button.html %}
@@ -54,7 +54,7 @@ It shows that each output is 1 for only a specific combination of inputs.
 
 <div style="text-align:center"><img src="../../assets/images/two_fourdecoder_blockdiagram.jpg" /></div>
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Truth Table
 {: .d-inline-block}
 {% include button.html %}
@@ -62,7 +62,7 @@ It shows that each output is 1 for only a specific combination of inputs.
 
 <div style="text-align:center"><img src="../../assets/images/two_fourdecoder_truthtable.jpg" /></div>
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Logic Circuit
 {: .d-inline-block}
 {% include button.html %}

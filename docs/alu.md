@@ -18,7 +18,7 @@ nav_order: 9
 ---
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Design procedure of Combinational circuits
 {: .d-inline-block}
 {% include button.html %}
@@ -27,7 +27,7 @@ An arithmetic logic unit (ALU) is a digital circuit used to perform arithmetic a
 
 The purpose of the ALU is to perform mathematical operations such as addition, subtraction, multiplication and division. Additionally, the ALU processes basic logical operations like AND/OR calculations. Also known as the arithmetic logic unit, it serves as the computational hub of the Central Processing Unit (CPU) for a computer system
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## In Detail
 {: .d-inline-block}
 {% include button.html %}

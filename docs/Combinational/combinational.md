@@ -15,7 +15,7 @@ Combinational circuits consist of Logic gates. These circuits operate with binar
 
 This combinational circuit has ‘n’ input variables and ‘m’ outputs. Each combination of input variables will affect the output(s).
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Design procedure of Combinational circuits
 {: .d-inline-block}
 {% include button.html %}

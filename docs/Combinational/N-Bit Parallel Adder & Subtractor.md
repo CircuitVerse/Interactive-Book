@@ -14,7 +14,7 @@ But in practical we need to add binary numbers which are much longer than just o
 It uses a number of full adders in cascade. 
 The carry output of the previous full adder is connected to carry input of the next full adder.
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## 4 Bit Parallel Adder
 {: .d-inline-block}
 {% include button.html %}
@@ -24,7 +24,7 @@ Hence Full Adder-0 is the lowest stage.
 Hence its Cin has been permanently made 0. 
 The rest of the connections are exactly same as those of n-bit parallel adder is shown in fig. The four bit parallel adder is a very common logic circuit.
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Block Diagram
 {: .d-inline-block}
 {% include button.html %}
@@ -33,7 +33,7 @@ The rest of the connections are exactly same as those of n-bit parallel adder is
 <div style="text-align:center"><img src="../../assets/images/fourbitadder_blockdiagram.jpg" /></div>
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 # N-Bit Parallel Subtractor
 {: .d-inline-block}
 {% include button.html %}
@@ -45,7 +45,7 @@ For example we can perform the subtraction (A-B) by adding either 1's or 2's com
 That means we can use a binary adder to perform the binary subtraction.
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## 4 Bit Parallel Subtractor
 {: .d-inline-block}
 {% include button.html %}
@@ -56,7 +56,7 @@ S3 S2 S1 S0 represents the result of binary subtraction (A-B) and carry output C
 If A > B then Cout = 0 and the result of binary form (A-B) then Cout = 1 and the result is in the 2's complement form.
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Block Diagram
 {: .d-inline-block}
 {% include button.html %}
@@ -65,7 +65,7 @@ If A > B then Cout = 0 and the result of binary form (A-B) then Cout = 1 and the
 <div style="text-align:center"><img src="../../assets/images/fourbitsubstractor_blockdiagram.jpg" /></div>
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## 8 Bit Full Adder And Subtractor   
 {: .d-inline-block}
 {% include button.html %}

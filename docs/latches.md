@@ -28,7 +28,7 @@ Now, let us discuss about SR Latch & D Latch one by one.
 
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## SR Latch
 {: .d-inline-block}
 {% include button.html %}
@@ -65,7 +65,7 @@ Therefore, SR Latch performs three types of functions such as Hold, Set & Reset 
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/13774" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## D Latch
 {: .d-inline-block}
 {% include button.html %}

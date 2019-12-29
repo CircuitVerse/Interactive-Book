@@ -17,7 +17,7 @@ nav_order: 3
 ---
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Introduction
 {: .d-inline-block}
 {% include button.html %}
@@ -27,7 +27,7 @@ nav_order: 3
 Logic gates are the basic building blocks of any digital system. 
 It is an electronic circuit having one or more than one input and only one output. The relationship between the input and the output is based on a certain logic. Based on this, logic gates are named as AND gate, OR gate, NOT gate etc.
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## NOT gate
 {: .d-inline-block}
 {% include button.html %}
@@ -43,7 +43,7 @@ The NOT gate is also known as an inverter because the output is the exact opposi
 
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/738" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## AND gate
 {: .d-inline-block}
 {% include button.html %}
@@ -62,7 +62,7 @@ The AND gate has two inputs and one output. The output is 1 if both inputs are 1
 
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## OR gate
 {: .d-inline-block}
 {% include button.html %}
@@ -79,7 +79,7 @@ The OR gate has two inputs and one output. If at least one of the inputs is 1, t
 
 <iframe width="100%" height="220px"  src="https://circuitverse.org/simulator/embed/737" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## NAND gate
 {: .d-inline-block}
 {% include button.html %}
@@ -95,7 +95,7 @@ The NAND gate behaves in the opposite fashion to and AND gate. You can think of 
 | 1            | 1            | 0      |
 
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/741" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## NOR gate
 {: .d-inline-block}
 {% include button.html %}
@@ -113,7 +113,7 @@ The NAND gate behaves in the opposite fashion to and AND gate. You can think of 
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/742" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## XOR gate
 {: .d-inline-block}
 {% include button.html %}

@@ -7,7 +7,7 @@ p .link-button,
   padding-top: 0;
 }
 
-.main_sub_heading:hover > p > .link-button,
+.main-sub-heading:hover > p > .link-button,
 .navigation-list-link:hover > .link-button-nav {
   background: none;
   border: 0;
@@ -17,7 +17,7 @@ p .link-button,
   padding: 0;
 }
 
-.main_sub_heading:hover > p > .link-button img,
+.main-sub-heading:hover > p > .link-button img,
 .navigation-list-link:hover > .link-button-nav img {
   background: none;
   border: 0;
@@ -25,7 +25,7 @@ p .link-button,
   width: 10px;
 }
 
-.main_sub_heading:hover > p > .link-button:hover,
+.main-sub-heading:hover > p > .link-button:hover,
 .navigation-list-link:hover > .link-button-nav:hover {
   filter: invert(31%) sepia(62%) saturate(678%) hue-rotate(119deg) brightness(93%) contrast(98%);
 }

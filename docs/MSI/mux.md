@@ -15,7 +15,7 @@ The selection of one of the n inputs is done by the selected inputs. Depending o
 E is called the strobe or enable input which is useful for the cascading. It is generally an active low terminal that means it will perform the required operation when it is low.
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Block Diagram
 {: .d-inline-block}
 {% include button.html %}
@@ -26,7 +26,7 @@ E is called the strobe or enable input which is useful for the cascading. It is 
 
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Multiplexers come in multiple variations
 {: .d-inline-block}
 {% include button.html %}
@@ -36,7 +36,7 @@ E is called the strobe or enable input which is useful for the cascading. It is 
 * 16 : 1 multiplexer
 * 32 : 1 multiplexer
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Truth Table
 {: .d-inline-block}
 {% include button.html %}

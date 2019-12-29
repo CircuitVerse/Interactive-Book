@@ -22,7 +22,7 @@ In this module, let us discuss about these two counters one by one.
 
 ---
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Ring COunter
 {: .d-inline-block}
 {% include button.html %}
@@ -55,7 +55,7 @@ Serial input of first D flip-flop gets the previous output of third flip-flop. S
 
 The previous outputs of first and second D flip-flops are right shifted by one bit. That means, the present outputs of second and third D flip-flops are equal to the previous outputs of first and second D flip-flops.
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Johnson Ring Counter
 {: .d-inline-block}
 {% include button.html %}

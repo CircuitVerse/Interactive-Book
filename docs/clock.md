@@ -20,7 +20,7 @@ In this section, let us discuss about the clock signal and types of triggering o
 
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Clock signal
 {: .d-inline-block}
 {% include button.html %}
@@ -42,7 +42,7 @@ In the above figure, train of pulses is considered as clock signal. This signal 
 
 The reciprocal of the time period of clock signal is known as the frequency of the clock signal. All sequential circuits are operated with clock signal. So, the frequency at which the sequential circuits can be operated accordingly the clock signal frequency has to be chosen.
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Types of Triggering
 {: .d-inline-block}
 {% include button.html %}
@@ -53,7 +53,7 @@ Following are the two possible types of triggering that are used in sequential c
 * Level triggering
 * Edge triggering
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ### Level triggering
 {: .d-inline-block}
 {% include button.html %}
@@ -71,7 +71,7 @@ If the sequential circuit is operated with the clock signal when it is in **Logi
 
 <div style="text-align:center"><img src="../assets/images/negative_level_triggering.jpg" /></div>
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ### Edge triggering
 {: .d-inline-block}
 {% include button.html %}

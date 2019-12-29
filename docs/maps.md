@@ -17,7 +17,7 @@ nav_order: 6
 
 ---
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Introduction
 {: .d-inline-block}
 {% include button.html %}
@@ -36,7 +36,7 @@ Let's instead look at a more involved example with 4 variables:
 
 We have now bounded the `A` and `B` variables to the vertical axis, while we bounded the `C` and `D` variables to the horizontal axis. We now enumarate through different combinations of the bounded variables for each axis in *reflected binary code order* (more on this in the following section). Lastly, we indicate on the matrix each true value by augmenting a `1` value.
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Enumeration and Gray Codes
 {: .d-inline-block}
 {% include button.html %}
@@ -50,7 +50,7 @@ When enumerating through the variable input combinations for the binded axis, we
 
 Thus, we get this wrapping that allows us to switch by only one bit. This provides us the core for how Karnaugh Maps work.
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Simple Groupings
 {: .d-inline-block}
 {% include button.html %}
@@ -78,7 +78,7 @@ Therefore, the simplification is true.
 
 We can then extend this rule to work for rectangles and more!
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Two Dimension Groupings
 {: .d-inline-block}
 {% include button.html %}
@@ -115,7 +115,7 @@ This is bounded horizontally:
 
 Since the differences in bits needs to generalize throughout a binding of an axis, you can only have a binding of size `2^n` for a given axis. For example, `1x1, 1x2, 1x4, 2x2, 2x4, 4x4`. 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Disjoint Groupings
 {: .d-inline-block}
 {% include button.html %}
@@ -141,7 +141,7 @@ Breaking down the expression:
 ```
 Clearly this is the exact same process as before, but iterated throughout all the disjoint sets.
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Overlapping Groupings
 {: .d-inline-block}
 {% include button.html %}
@@ -183,7 +183,7 @@ F(ABCD) = A'B'C' + A'B'D
 => F(ABCD) = A'B'D + A'B'C' (by commutative property)
 ```
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Minimizing Group Count
 {: .d-inline-block}
 {% include button.html %}

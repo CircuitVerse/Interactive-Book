@@ -19,7 +19,7 @@ nav_order: 5
 
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ### Commutative law
 {: .d-inline-block}
 {% include button.html %}
@@ -41,7 +41,7 @@ Here the left side of the equation represents the output **Y**. So we can state
           Y         =     A + BC + !(ADC)
    Boolean Function      Boolean expression
 ```
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Truth Table Formation
 {: .d-inline-block}
 {% include button.html %}
@@ -62,7 +62,7 @@ It is possible to convert the switching equation into a truth table. For example
 | 1       | 1       | 1      |1       |
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Sum of Product Expressions (SOP)
 {: .d-inline-block}
 {% include button.html %}
@@ -92,7 +92,7 @@ This example was definately more involved than the previous expressions. An inte
 
 Moreover, the `OR` operator returns `true` so long as any one of its arguements returns `true`. Therefore, if _any_ of the terms in the sum of product (SOP) expressions is `true`, then we know that the final expression is `true` for certain. 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Example Algebraic Simplification
 {: .d-inline-block}
 {% include button.html %}
@@ -110,7 +110,7 @@ AB'C+D // Since (B+1) is always true, as B OR true is always true
 
 As an exercise to the reader, complete the truth table to show that they are logically equivalent. 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Undefined Input & Don't Cares
 {: .d-inline-block}
 {% include button.html %}
@@ -148,7 +148,7 @@ F(AB) = A'B' + A'B + AB' + AB
 We can clearly see, if we set `F(1, 0) = 1`, we get a true value for any input. Therefore, for the purposes of variable simplification, we can simply let `F(1, 0) = 1` thus implying `F(AB) = 1`.
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Let us try this interactive truth table generator for better understanding
 {: .d-inline-block}
 {% include button.html %}
@@ -161,7 +161,7 @@ We can clearly see, if we set `F(1, 0) = 1`, we get a true value for any input. 
 
 ---
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Methods to simplify the boolean function
 {: .d-inline-block}
 {% include button.html %}

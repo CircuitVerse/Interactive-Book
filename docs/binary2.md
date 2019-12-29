@@ -16,7 +16,7 @@ nav_order: 2
 
 ---
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Addition
 {: .d-inline-block}
 {% include button.html %}
@@ -29,7 +29,7 @@ nav_order: 2
 4. 1 + 1 = 1
 ```
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Subtraction
 {: .d-inline-block}
 {% include button.html %}
@@ -41,7 +41,7 @@ nav_order: 2
 3. 1 - 1 = 0
 ```
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Multiplication
 {: .d-inline-block}
 {% include button.html %}
@@ -59,7 +59,7 @@ nav_order: 2
     --------------   
 ```
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Division
 {: .d-inline-block}
 {% include button.html %}
@@ -88,7 +88,7 @@ nav_order: 2
         -------------                 -------
 ```
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Binary system complements
 {: .d-inline-block}
 {% include button.html %}
@@ -97,7 +97,7 @@ nav_order: 2
 As the binary system has base r = 2. So the two types of complements for the binary system are 2's complement and 1's complement.
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ### 1's complement
 {: .d-inline-block}
 {% include button.html %}
@@ -109,7 +109,7 @@ The 1's complement of a number is found by changing all 1's to 0's and all 0's t
 Given number        1  0  1  0  1
 1's complement      0  1  0  1  0 
 ```
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ### 2's complement
 {: .d-inline-block}
 {% include button.html %}
@@ -131,7 +131,7 @@ add 1               +           1
 ```
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ### Bitwise Operators
 {: .d-inline-block}
 {% include button.html %}

@@ -19,7 +19,7 @@ nav_order: 4
 
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Introduction
 {: .d-inline-block}
 {% include button.html %}
@@ -32,7 +32,7 @@ Boolean algebra was invented by George Boole in 1854.
 
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Rules in Boolean Algebra
 {: .d-inline-block}
 {% include button.html %}
@@ -47,7 +47,7 @@ Following are the important rules used in Boolean algebra.
    
 ---
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Boolean Laws
 {: .d-inline-block}
 {% include button.html %}
@@ -55,7 +55,7 @@ Following are the important rules used in Boolean algebra.
 
 There are six types of Boolean Laws.
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ### AND law
 {: .d-inline-block}
 {% include button.html %}
@@ -70,7 +70,7 @@ Example:
 1. A.!A = 0
 ```
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ### OR law
 {: .d-inline-block}
 {% include button.html %}
@@ -85,7 +85,7 @@ Example:
 4. A+!A = 1
 ```
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ### INVERSION law
 {: .d-inline-block}
 {% include button.html %}
@@ -100,7 +100,7 @@ Example:  !!A = A
 
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ### Commutative law
 {: .d-inline-block}
 {% include button.html %}
@@ -112,7 +112,7 @@ Example:  A.B = B.A                         A+B = B+A
 ```
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ### Associative law
 {: .d-inline-block}
 {% include button.html %}
@@ -124,7 +124,7 @@ This law states that the order in which the logic operations are performed is ir
 Example: (A.B).C = A.(B.C)                (A+B)+C = A+(B+C)
 ```
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ### Distributive law
 {: .d-inline-block}
 {% include button.html %}
@@ -137,7 +137,7 @@ Example:  A.(B+C) = A.B + A.C
 ```
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## DeMorgan’s Theorem
 {: .d-inline-block}
 {% include button.html %}

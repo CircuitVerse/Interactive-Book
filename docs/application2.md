@@ -17,7 +17,7 @@ nav_order: 4
 ---
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Binary Flags
 {: .d-inline-block}
 {% include button.html %}
@@ -52,7 +52,7 @@ If they'd been numbered as 1 = **English**, 2 = **Maths**, 3 = **Science**, 4 = 
 To use this technique in your programming, you need to be familiar with [bitwise logic ](https://learn.circuitverse.org/docs/binary2.html)
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Representing a Character
 {: .d-inline-block}
 {% include button.html %}

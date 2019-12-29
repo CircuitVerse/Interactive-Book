@@ -11,7 +11,7 @@ nav_order: 3
 
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Introduction
 {: .d-inline-block}
 {% include button.html %}
@@ -28,7 +28,7 @@ nav_order: 3
 
 * There are two modes in which this circuit can work namely - shift mode or load mode.
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Load mode
 {: .d-inline-block}
 {% include button.html %}
@@ -37,7 +37,7 @@ When the shift/load bar line is low (0), the AND gate 2, 4 and 6 become active t
 On the low going edge of clock, the binary input B0, B1, B2, B3 will get loaded into the corresponding flip-flops. 
 Thus parallel loading takes place.
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Shift mode
 {: .d-inline-block}
 {% include button.html %}
@@ -48,7 +48,7 @@ But the AND gate 1,3 and 5 become active.
 Therefore the shifting of data from left to right bit by bit on application of clock pulses. 
 Thus the parallel in serial out operation takes place.
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Block Diagram
 {: .d-inline-block}
 {% include button.html %}

@@ -17,7 +17,7 @@ In second module, we can directly implement the flip-flop, which is edge sensiti
 
 
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Conclusion
 {: .d-inline-block}
 {% include button.html %}

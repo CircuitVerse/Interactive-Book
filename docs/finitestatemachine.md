@@ -13,7 +13,7 @@ nav_order: 17
 
 ---
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Introduction
 {: .d-inline-block}
 {% include button.html %}
@@ -28,7 +28,7 @@ There are two types of FSMs.
 
 Now, let us discuss about these two state machines one by one.
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Mealy State Machine
 {: .d-inline-block}
 {% include button.html %}
@@ -56,7 +56,7 @@ In the above figure, there are two transitions from each state based on the valu
 In general, the number of states required in Mealy state machine is less than or equal to the number of states required in Moore state machine. 
 There is an equivalent Moore state machine for each Mealy state machine.
 
-<div class="main_sub_heading" markdown="1">
+<div class="main-sub-heading" markdown="1">
 ## Moore State Machine
 {: .d-inline-block}
 {% include button.html %}
