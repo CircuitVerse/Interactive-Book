@@ -1,37 +1,42 @@
-p .link-button, .link-button-nav {
-    display:none;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    line-height: 1.4 !important;
-    max-height: 100%;
+p .link-button,
+.link-button-nav {
+  display: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 1.4 !important;
+  max-height: 100%;
 }
 
-.main_sub_heading:hover > p > .link-button, .navigation-list-link:hover > .link-button-nav{
-    display: inline;
-    margin-left:3px;
-    border: none;
-    background: none;
-    padding: 0;
-    box-shadow: none !important; 
+.main_sub_heading:hover > p > .link-button,
+.navigation-list-link:hover > .link-button-nav {
+  background: none;
+  border: 0;
+  box-shadow: none !important;
+  display: inline;
+  margin-left: 3px;
+  padding: 0;
 }
 
-.main_sub_heading:hover > p > .link-button img, .navigation-list-link:hover > .link-button-nav img{
-    border: none;
-    background: none;
-    box-shadow: none !important;
-    width:10px; 
+.main_sub_heading:hover > p > .link-button img,
+.navigation-list-link:hover > .link-button-nav img {
+  border: 0;
+  background: none;
+  box-shadow: none !important;
+  width: 10px;
 }
 
-.main_sub_heading:hover > p > .link-button:hover, .navigation-list-link:hover > .link-button-nav:hover{
-    filter: invert(31%) sepia(62%) saturate(678%) hue-rotate(119deg) brightness(93%) contrast(98%);
+.main_sub_heading:hover > p > .link-button:hover,
+.navigation-list-link:hover > .link-button-nav:hover {
+  filter: invert(31%) sepia(62%) saturate(678%) hue-rotate(119deg) brightness(93%) contrast(98%);
 }
 
-.link-button img, .link-button-nav img{
-    filter: brightness(0) invert($link-img-invert)
+.link-button img,
+.link-button-nav img {
+  filter: brightness(0) invert($link-img-invert);
 }
 
-.link-button-nav img{ 
-    padding-left: 0px;
-    width:8px !important;
+.link-button-nav img {
+  padding-left: 0;
+  width: 8px !important;
 }
 
