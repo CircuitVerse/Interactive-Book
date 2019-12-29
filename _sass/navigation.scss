@@ -91,7 +91,11 @@
   padding-bottom: $sp-1;
 
   a {
-    background-image: none !important;
+    background-image: none;
+  }
+
+  a:hover {
+    background-image: none;
   }
 
   &.active {

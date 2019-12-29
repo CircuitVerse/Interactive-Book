@@ -108,8 +108,8 @@
 
   @include mq(lg) {
     width: $nav-width + 32px;
-    padding-right: calc(#{$gutter-spacing - $sp-2}) !important;
-    padding-left: calc(#{$gutter-spacing - $sp-4}) !important;
+    padding-right: calc(#{$gutter-spacing - $sp-2});
+    padding-left: calc(#{$gutter-spacing - $sp-4});
   }
 }
 
