@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Full Adder
-comments: true
 parent: Combinational Logic
 nav_order: 2
 ---
@@ -39,4 +38,4 @@ The full adder is a three input and two output combinational circuit.
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/248" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
-{% include disqus.html %}
+

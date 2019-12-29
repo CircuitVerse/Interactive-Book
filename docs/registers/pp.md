@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Parallel Input Parallel Output
-comments: true
 parent: Digital Registers
 nav_order: 4
 ---
@@ -25,5 +24,3 @@ Only clock pulse is essential to load all the bits.
 
 
 <div style="text-align:center"><img src="../../assets/images/pipo_blockdiagram.jpg" /></div>
-
-{% include disqus.html %}

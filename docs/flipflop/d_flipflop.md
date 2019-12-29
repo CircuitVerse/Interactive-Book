@@ -1,7 +1,6 @@
 ---
 layout: default
 title: D Flip-Flop
-comments: true
 parent: Flip-Flops
 nav_order: 2
 ---
@@ -30,4 +29,3 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/12254" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
-{% include disqus.html %}

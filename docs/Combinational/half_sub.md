@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Half Subtractors
-comments: true
 parent: Combinational Logic
 nav_order: 3
 ---
@@ -25,4 +24,4 @@ In the subtraction (A-B), A is called as Minuend bit and B is called as Subtrahe
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/12120" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
-{% include disqus.html %}
+

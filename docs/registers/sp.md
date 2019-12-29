@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Serial Input Parallel Output
-comments: true
 parent: Digital Registers
 nav_order: 2
 ---
@@ -27,5 +26,3 @@ nav_order: 2
 
 
 <div style="text-align:center"><img src="../../assets/images/sipo_blockdiagram.jpg" /></div>
-
-{% include disqus.html %}

@@ -1,7 +1,6 @@
 ---
 layout: default
 title: T Flip-Flop
-comments: true
 parent: Flip-Flops
 nav_order: 4
 ---
@@ -53,4 +52,4 @@ The output of T flip-flop always toggles for every positive transition of the cl
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/12258" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
-{% include disqus.html %}
+

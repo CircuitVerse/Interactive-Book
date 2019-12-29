@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Full Subtractors
-comments: true
 parent: Combinational Logic
 nav_order: 4
 ---
@@ -25,4 +24,3 @@ A is the 'minuend', B is 'subtrahend', C is the 'borrow' produced by the previou
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/12119" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
-{% include disqus.html %}
