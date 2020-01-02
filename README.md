@@ -131,6 +131,24 @@ Jekyll is, at its core, a text transformation engine. The concept behind the sys
 └── index.md 
 </pre>
 
+## Pop Quizzes
+CircuitVerse has a custom pop quiz system to reinforce learning at the end of a page. This is in the form of a few multi-choice or true/false questions.
+
+### Configuration
+The quiz should be at the end of a page and is initialised with `{:.quiz}`. Questions are then added in a list, with correct answers being numbered subelements and incorrect answers being unordered subelements. Please see below for an example:
+```markdown
+{:.quiz}
+1. Example question
+	1. Correct answer
+	* Incorrect answer
+2. What is 1 + 1?
+	* 1
+	1. 2	
+   	* 3
+```
+Note that answers must be text only and not contain any other formatting.
+
+
 ## Plugins used
 
 * [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag):

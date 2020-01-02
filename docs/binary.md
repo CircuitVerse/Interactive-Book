@@ -82,4 +82,14 @@ It is just like counting in decimal except we reach 10 much sooner.
 
 {% include binary.html %}
 
+{:.quiz}
+1. Is `0110103` a binary number?
+   1. No
+   * Yes
+2. What is `10101` as a decimal number?
+   1. 21
+   * 10101
+   * 25
+   * 1000 
+
 {% include disqus.html %}
