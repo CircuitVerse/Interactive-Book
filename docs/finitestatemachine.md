@@ -1,7 +1,6 @@
 ---
 layout: default
 title:  Finite State Machines
-comments: true
 nav_order: 17
 ---
 
@@ -62,7 +61,3 @@ The state diagram of Moore state machine is shown in the following figure.
 In the above figure, there are four states, namely A, B, C & D. These states and the respective outputs are labelled inside the circles. Here, only the input value is labeled on each transition. In the above figure, there are two transitions from each state based on the value of input, x.
 
 In general, the number of states required in Moore state machine is more than or equal to the number of states required in Mealy state machine. There is an equivalent Mealy state machine for each Moore state machine. So, based on the requirement we can use one of them.
-
-
-
-{% include disqus.html %}

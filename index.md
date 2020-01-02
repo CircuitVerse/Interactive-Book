@@ -2,7 +2,6 @@
 layout: default
 title: Home
 nav_order: 1
-comments: true
 description: ""
 permalink: /
 ---
@@ -29,5 +28,3 @@ This reference has been prepared for the students pursing either Bachelors or Ma
 ### Prerequisites
 Before you start proceeding with this Book, I'm making an assumption that you are already aware of basic computer concepts like what is keyboard, mouse, monitor, input, output, primary memory, secondary memory, etc.
 A basic idea regarding the initial concepts of Digital Electronics is enough to understand the topics covered in this tutorial.
-
-{% include disqus.html %}

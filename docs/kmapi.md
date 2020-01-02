@@ -9,5 +9,3 @@ nav_order: 7
 {: .no_toc }
 
 {% include kmap.html %}
-
-{% include disqus.html %}

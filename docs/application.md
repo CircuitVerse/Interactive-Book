@@ -1,7 +1,6 @@
 ---
 layout: default
 title:  Application of Shift Registers
-comments: true
 nav_order: 15
 ---
 
@@ -80,6 +79,3 @@ Therefore, the following operations take place for every positive edge of clock 
 Serial input of first D flip-flop gets the previous complemented output of third flip-flop. So, the present output of first D flip-flop is equal to the previous complemented output of third flip-flop.
 
 The previous outputs of first and second D flip-flops are right shifted by one bit. That means, the present outputs of second and third D flip-flops are equal to the previous outputs of first and second D flip-flops.
-
-
-{% include disqus.html %}

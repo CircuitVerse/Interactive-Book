@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Binary Numbers
-comments: true
 nav_order: 2
 ---
 
@@ -81,5 +80,3 @@ It is just like counting in decimal except we reach 10 much sooner.
 <h3>See how it is done in this little demonstration</h3>
 
 {% include binary.html %}
-
-{% include disqus.html %}

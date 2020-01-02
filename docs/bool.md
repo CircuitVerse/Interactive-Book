@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Boolean Algebra
-comments: true
 nav_order: 4
 ---
 
@@ -115,7 +114,3 @@ The dual of the above Boolean function is
 Therefore, the complement of logical AND of two Boolean variables is equal to the logical OR of each complemented variable. Similarly, we can apply DeMorgan’s theorem for more than 2 Boolean variables also.
 
 {% include bool.html %}
-
-
-
-{% include disqus.html %}

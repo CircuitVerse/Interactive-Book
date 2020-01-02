@@ -1,7 +1,6 @@
 ---
 layout: default
 title:  Interactive FSM
-comments: true
 nav_order: 18
 ---
 
@@ -37,5 +36,3 @@ Basically, what we’ll do now is translating the options we stated above into a
 {% include fsm.html %}
 
 Lets try the soda can vending machine and look for the corresponding state changes FSM diagram in each of the above mentioned possibilities.
-
-{% include disqus.html %}
