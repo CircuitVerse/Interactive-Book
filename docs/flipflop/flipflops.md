@@ -15,6 +15,18 @@ In first method, cascade two latches in such a way that the first latch is enabl
 
 In second module, we can directly implement the flip-flop, which is edge sensitive. In this module, let us discuss the following flip-flops using second method.
 
+## Differences between Latches and Flip-Flops
+
+
+| Latches       | Flip-Flops     |
+|:------------|:--------------|
+| Level triggered | Edge triggered |
+| Asynchronous device | Synchronous device |
+| Doesn't contain clock signal | Contains a clock signal |
+| It will change its state as long it is enabled | It will change its state only during a given clock cycle |
+| Consumes less power | Consumes more power |
+| Faster | Slower |
+| Examples: D-Latch, T-Latch | Examples: D-Flip flop, T-Flop flop |
 
 
 ## Conclusion
