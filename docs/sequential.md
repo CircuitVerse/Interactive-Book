@@ -8,9 +8,7 @@ nav_order: 11
 # Digital Sequential Circuits
 {: .no_toc }
 
-The combinational circuit does not use any memory. 
-Hence the previous state of input does not have any effect on the present state of the circuit. 
-But sequential circuit has memory so output can vary based on input. This type of circuits uses previous input, output, clock and a memory element.
+Unlike Combinational Circuits, most systems that one will encounter in practice will include Memory element thus being described in terms of sequential logic. The memory elements are devices capable of storing binary information within them. The binary information stored in the memory elements at a given time defines the **state** of the circuit. Thus a sequential circuit is specified by time sequence of *inputs, outputs and internal states*.
 
 <div style="text-align:center"><img src="../assets/images/sequential_circuit_blockdiagram.jpg" /></div>
 
