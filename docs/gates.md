@@ -91,7 +91,7 @@ The NOR gate behaves in an opposite fashion to the OR gate. You can think of it 
 
 ## XOR gate
 
-The XOR gate behaves in a similar fashion to the OR gate. Its output is 1 when the two inputs are not the same, but one of them is 1. For all other cases, its output is 0. The symbol for XOR is the same as that for OR except for the addition of an arc right before the gate.
+The XOR gate behaves in a similar fashion to the OR gate. Its output is 1 when the two inputs are different. Output is 0 when inputs are same. The symbol for XOR is the same as that for OR except for the addition of an arc right before the gate.
 
 | Input1       | Input 2      | output |
 |:------------:|:------------:|:------:|
