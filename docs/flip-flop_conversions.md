@@ -35,8 +35,8 @@ We can convert JK Flip-Flop to D Flip-Flop by following the above mentioned step
 
 <h3>Step 1</h3>
  
-<br>Available Flip-Flop = JK Flip-Flop</br>
-<br>Required Flip-Flop = D Flip-Flop</br>
+<li>Available Flip-Flop = JK Flip-Flop</li>
+<li>Required Flip-Flop = D Flip-Flop</li>
 
 <h3>Step 2</h3>
 
@@ -74,8 +74,8 @@ We can convert SR Flip-Flop to JK Flip-Flop by following the above mentioned ste
 
 <h3>Step 1</h3>
  
-<br>Available Flip-Flop = SR Flip-Flop</br>
-<br>Required Flip-Flop = JK Flip-Flop</br>
+<li>Available Flip-Flop = SR Flip-Flop</li>
+<li>Required Flip-Flop = JK Flip-Flop</li>
 
 <h3>Step 2</h3>
 
@@ -121,8 +121,8 @@ We can convert SR Flip-Flop to T Flip-Flop by following the above mentioned step
 
 <h3>Step 1</h3>
  
-<br>Available Flip-Flop = SR Flip-Flop</br>
-<br>Required Flip-Flop = T Flip-Flop</br>
+<li>Available Flip-Flop = SR Flip-Flop</li>
+<li>Required Flip-Flop = T Flip-Flop</li>
 
 <h3>Step 2</h3>
 
@@ -160,8 +160,8 @@ We can convert SR Flip-Flop to T Flip-Flop by following the above mentioned step
 
 <h3>Step 1</h3>
  
-<br>Available Flip-Flop = T Flip-Flop</br>
-<br>Required Flip-Flop = D Flip-Flop</br>
+<li>Available Flip-Flop = T Flip-Flop</li>
+<li>Required Flip-Flop = D Flip-Flop</li>
 
 <h3>Step 2</h3>
 
