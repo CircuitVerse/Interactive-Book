@@ -5,12 +5,12 @@ comments: true
 nav_order: 14
 ---
 
-# Flip-Flop Conversions
+# flip-flop Conversions
 {: .no_toc }
 
 This page will teach you how to convert one type of Flip flop to another type.
 
-<h2>Steps to be followed :</h2>
+## Steps to be followed :
  <ul>
    <li> Identify available and required Flip flop. </li>
    <li> Make characteristic table for required Flip flop. </li>
