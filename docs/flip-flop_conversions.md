@@ -10,7 +10,7 @@ nav_order: 14
 
 This page will teach you how to convert one type of Flip flop to another type.
 
-## Steps to be followed :
+<h2>Steps to be followed :</h2>
  <ul>
    <li> Identify available and required Flip flop. </li>
    <li> Make characteristic table for required Flip flop. </li>
@@ -29,7 +29,7 @@ This page will teach you how to convert one type of Flip flop to another type.
 
 
 
-## JK Flip-Flop to D Flip-Flop
+## JK flip-flop to D flip-flop
 
 We can convert JK Flip-Flop to D Flip-Flop by following the above mentioned steps.
 
@@ -68,7 +68,7 @@ Here we are finding the boolean expression by using K-Map.
 
 
 
-## SR Flip-Flop to JK Flip-Flop
+## SR flip-flop to JK Flip-flop
 
 We can convert SR Flip-Flop to JK Flip-Flop by following the above mentioned steps.
 
@@ -115,7 +115,7 @@ Here we are finding the boolean expression by using K-Map.
 
 
 
-## SR Flip-Flop to T Flip-Flop
+## SR flip-flop to T flip-flop
 
 We can convert SR Flip-Flop to T Flip-Flop by following the above mentioned steps.
 
@@ -154,7 +154,7 @@ Here we are finding the boolean expression by using K-Map.
 
 
 
-## T Flip-Flop to D Flip-Flop
+## T flip-flop to D flip-flop
 
 We can convert SR Flip-Flop to T Flip-Flop by following the above mentioned steps.
 
