@@ -68,7 +68,7 @@ Here we are finding the boolean expression by using K-Map.
 
 
 
-## SR flip-flop to JK Flip-flop
+## SR flip-flop to JK flip-flop
 
 We can convert SR Flip-Flop to JK Flip-Flop by following the above mentioned steps.
 
