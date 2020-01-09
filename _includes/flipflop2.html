@@ -189,6 +189,13 @@
 								flipflops['K' + alph] = "";
 								ioFunctions += "<input type='text' style='width:150px' class='form-control' id='J" + alph + "' placeholder='J" + alph + "' required>&nbsp;";
 								ioFunctions += "<input type='text' style='width:150px' class='form-control' id='K" + alph + "' placeholder='K" + alph + "' required>&nbsp;";
+						        if(flipflopCount === 2)
+							  if (i === 0)
+								$("#step2").append("<strong>Hints</strong>: <br>Next state input for J (JA) = B .<br>Next state input for K (KA) = y'*B");
+							  else if (i === 1)
+								$("#step2").append("<br>Next state input for J (JB) = y' .<br>Next state input for K (KB) = y'*A + A'*y");
+							if (flipflopCount === 1)
+								$("#step2").append("<strong>Hints</strong>: <br>Next state input for J (JA) = y <br>Next state input for K (KA) = y'*A");
 							}
 						} else if (input['flipflop'] == "RS") {
 							for (var i = 0; i < functionCount; i++) {
@@ -209,12 +216,24 @@
 								var alph = String.fromCharCode(65 + i);
 								flipflops['T' + alph] = "";
 								ioFunctions += "<input type='text' style='width:150px' class='form-control' id='T" + alph + "' placeholder='T" + alph + "' required>&nbsp;";
+							  if (flipflopCount === 2) 
+							    if (i === 0) 	      
+								$("#step2").append("<strong>Hints</strong>: <br>Next state input for T (TA) = y");
+							    else if (i === 1)
+							        $("#step2").append("<br>Next state input for T (TB) = y*A");
+							  if (flipflopCount === 1)
+								$("#step2").append("<strong>Hints</strong>: <br>Next state input for T (TA) = y");
 							}
 						}
 
 						if (input['output'] == "o1") {
 							outputCount = 1;
 							ioFunctions += "<input type='text' style='width:150px' class='form-control' id='Z' placeholder='Z ( Output )' required>&nbsp;";
+						 if(flipflopCount === 2)  
+						   if(input['flipflop'] == "JK")
+				                         $("#step2").append("<br>Output (Z) = y'*A + A'*y");
+						   else if(input['flipflop'] == "T")
+          	                                         $("#step2").append("<br>Output (Z) = A*B");
 						}
 
 						$('#step2 p.form-inline').append(ioFunctions);
