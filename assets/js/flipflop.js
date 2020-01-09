@@ -68,7 +68,7 @@ function generateStateTable(flipflopCount, inputCount, booleanFunctions, flipflo
 
 	for(var i = 0; i < nextStates.length; i++) {
 		stateTable.push({
-			col : nextStates[i].col,
+			col : nextStates[i].col + "*",
 			row : nextStates[i].row
 		});
 	}
@@ -197,18 +197,18 @@ function evaluateFunction(rowCount, inputs, booleanFunction) {
 				}
 			} else if (token == '\'') {
 				temp1 = stack.pop();
-				stack.push(!temp1 | 0);
+				stack.push(1-temp1);
 
 			} else if (token == '*') {
 				temp1 = stack.pop();
 				temp2 = stack.pop();
-				console.log(temp1 + '||' + temp2 + "=" + temp1 || temp2);
-				stack.push(temp1 || temp2);
+				console.log(temp1 + '&&' + temp2 + "=" + temp1 && temp2);
+				stack.push(temp1 && temp2);
 			} else if (token == '+') {
 				temp1 = stack.pop();
 				temp2 = stack.pop();
-				console.log(temp1 + "&&" + temp2 + "=" + temp1 && temp2);
-				stack.push(temp1 && temp2);
+				console.log(temp1 + "||" + temp2 + "=" + temp1 || temp2);
+				stack.push(temp1 || temp2);
 			}
 			console.log(stack);
 		}

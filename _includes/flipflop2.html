@@ -197,13 +197,23 @@
 								flipflops['R' + alph] = "";
 								ioFunctions += "<input type='text' style='width:150px' class='form-control' id='S" + alph + "' placeholder='R" + alph + "' required>&nbsp;";
 								ioFunctions += "<input type='text' style='width:150px' class='form-control' id='R" + alph + "' placeholder='S" + alph + "' required>&nbsp;";
+							if (flipflopCount === 1)
+							     if(inputCount === 2)
+								$("#step2").append("<strong>Hints</strong>: <br>Next state input for S (SA) = x <br>Next state input for R (RA) = y");
 							}
 						} else if (input['flipflop'] == "D") {
 							for (var i = 0; i < functionCount; i++) {
 								var alph = String.fromCharCode(65 + i);
 								flipflops['D' + alph] = "";
 								ioFunctions += "<input type='text' style='width:150px' class='form-control' id='D" + alph + "' placeholder='D" + alph + "' required>&nbsp;";
-							}
+							if(flipflopCount === 2)
+							  if (i === 0)
+								$("#step2").append("<strong>Hints</strong>: <br>Next state input for D (DA) = y*A + y*B");
+							  else if (i === 1)
+								$("#step2").append("<br>Next state input for D (DB) = y*A'");
+							if(flipflopCount === 1)
+								$("#step2").append("<strong>Hints</strong>: <br>Next state input for D (DA) = y");
+							}			   
 						} else {
 							for (var i = 0; i < functionCount; i++) {
 								var alph = String.fromCharCode(65 + i);
@@ -214,7 +224,10 @@
 
 						if (input['output'] == "o1") {
 							outputCount = 1;
-							ioFunctions += "<input type='text' style='width:150px' class='form-control' id='Z' placeholder='Z ( Output )' required>&nbsp;";
+							ioFunctions += "<input type='text' style='width:150px' class='form-control' id='Z' placeholder='Z ( Output )' required>&nbsp;";						
+						 if(flipflopCount === 2)  
+						   if(input['flipflop'] == "D")
+				                         $("#step2").append("<br>Output (Z) = y'*A + y'*B");
 						}
 
 						$('#step2 p.form-inline').append(ioFunctions);
