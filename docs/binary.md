@@ -27,7 +27,7 @@ It is just like counting in decimal except we reach 10 much sooner.
 | Binary       | Explanation       |
 |:------------:|:-----------------:|
 | 0            | We start at 0     |
-| 1            | Then 1            |
+| 1            | next at 1         |
 | ???          | But then there is no symbol for 2 ... what do we do?  |
 
 
@@ -36,18 +36,18 @@ It is just like counting in decimal except we reach 10 much sooner.
 | Decimal       | Explanation            |
 |:-------------:|:----------------------:|
 | 0            | We start at 0          |
-| 1            | Then 1                 |
-| 2-8          | Count 1,2,3,4,5,6,7,8  |
+| 1            | next at 1              |
+| 2-8          | Count 2, 3, 4, 5 , 6, 7 and 8 |
 | 9            | This is the **last digit** in Decimal|
-|**1**0        | So we start back at **0** again, but add **1** on the left|
+|**1**0        | So we start again from **0**,and then **1** is added to the left. |
 
 <h4>The same thing is done in binary ...</h4>
 
 | Binary       | Explanation            |
 |:------------:|:----------------------:|
 | 0            | We start at 0          |
-| 1            | Then 1        |
-| **1**0     | Now start back at 0 again, **but add 1 on the left**|
+| 1            | next at 1              |
+| **1**0     | Now again we start at 0, **and then 1 is added to the left**|
 | 11         | 1 more           |
 |???         | But NOW what ... ?|
 
@@ -58,27 +58,28 @@ It is just like counting in decimal except we reach 10 much sooner.
 | Decimal       | Explanation            |
 |:-------------:|:----------------------:|
 |	99	 |	When we run out of digits, we ...|
-|	100	 |	... start back at 0 again, but add 1 on the left|
+|	100	 |	... now start back at 0 again, but add 1 on the left|
 
 <h4>And that is what we do in binary ...</h4>
 
 
 | Binary     | Explanation   |
 |:----------:|:-------------:|
-| 0          | We start a    |
-| 1          | Then 1        |
-| **1**0     | Now start back at 0 again, **but add 1 on the left**|
+| 0          | We start at 0 |
+| 1          | next at 1     |
+| **1**0     | Now again we start at 0, **and then 1 is added to the left**|
 | 11         | 1 more        |
-| **1**00    | start back at 0 again, and add one to the number on the left but that number is already at 1 so it also goes back to 0 and 1 is added to the next position on the left|
+| **1**00    | Start again from 0, and then add 1 to the left, but the number is already 1. So it also will go back to 0 and then 1 is being added to the next place on the left |
 | 101        | |
 | 110        | |
 | 111        | |
-| **1**000   |Start back at 0 again (for all 3 digits), add 1 on the left|
+| **1**000   | Now again start back at 0(to all the 3 digits), then 1 is added to the left |
+| 1001       | |
+| 1010       | This process is repeated for all the next numbers. |
 
 
 
-
-<h3>See how it is done in this little demonstration</h3>
+<h3>Now you can see this little demonstration on how it's done!</h3>
 
 {% include binary.html %}
 
