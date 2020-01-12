@@ -20,12 +20,14 @@ nav_order: 3
 ## Introduction
 
 
-Logic gates are the basic building blocks of any digital system. 
-It is an electronic circuit having one or more than one input and only one output. The relationship between the input and the output is based on a certain logic. Based on this, logic gates are named as AND gate, OR gate, NOT gate etc.
+The logic gate is the basic building block for any digital system. 
+They are electronic circuits and it can perform logical decisions, it has one or inputs but only one output. Based on the logic they perform, they are named as: AND gate, OR gate, etc.
 
 ## NOT gate
 
-The NOT gate is also known as an inverter because the output is the exact opposite of the input. It has one input and one output. The two possibilities are written out in the table below. Tables listing all logical possibilities like this are known as truth tables.
+The NOT gate is a logical gate which is also called as an inverter, as the output is completely opposite of the Input. It consists of an input and an output. The two possibile outcomes are listed out below.
+
+The tables cosisting of all the logical possibilities like the one below are called as **Truth tables**, where **1** refers to **TRUE** and **0** refers to **FALSE**.
 
 | Input1       | Input 2      |
 |:------------:|:------------:|
@@ -37,7 +39,7 @@ The NOT gate is also known as an inverter because the output is the exact opposi
 
 ## AND gate
 
-The AND gate has two inputs and one output. The output is 1 if both inputs are 1, and for all other cases the output is 0.
+The AND gate is a logical gate which contains of two inputs and an output. If both the inputs are 1 then the output will be 1, and the output will be 0 for all other cases.
 
 | Input1       | Input 2      | output |
 |:------------:|:------------:|:------:|
@@ -52,7 +54,7 @@ The AND gate has two inputs and one output. The output is 1 if both inputs are 1
 
 ## OR gate
 
-The OR gate has two inputs and one output. If at least one of the inputs is 1, then the output will be 1. If neither input is 1, the output will be 0.
+The OR gate is a logical gate which consists of two inputs and an output. the output will be 1 if either of the inputs is 1. If both the inputs are 0, then the output will be 0.
 
 | Input1       | Input 2      | output |
 |:------------:|:------------:|:------:|
@@ -65,7 +67,8 @@ The OR gate has two inputs and one output. If at least one of the inputs is 1, t
 
 ## NAND gate
 
-The NAND gate behaves in the opposite fashion to and AND gate. You can think of it as an AND gate followed immediately by a NOT gate. Its output is 0 when the two inputs are 1, and for all other cases, its output is 0. The name NAND comes from joining NOT and AND. The symbol for NAND is the same as that for AND except for the addition of a small circle on the right side.
+The NAND gate is a logical gate, Which acts in the opposite way to AND gate. The NAND gate can be imagined as an AND gate which is connected to a NOT gate. If the two inputs are 1 the output is 0, and its output is 0 for the all other cases. The name NAND can be imagined as the connection of NOT and AND.
+The symbolic representation of NAND is similar to AND except there is a small circle added to the right side.
 
 | Input1       | Input 2      | output |
 |:------------:|:------------:|:------:|
@@ -77,7 +80,8 @@ The NAND gate behaves in the opposite fashion to and AND gate. You can think of 
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/741" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 ## NOR gate
 
-The NAND gate behaves in the opposite fashion to and AND gate. You can think of it as an AND gate followed immediately by a NOT gate. Its output is 0 when the two inputs are 1, and for all other cases, its output is 0. The name NAND comes from joining NOT and AND. The symbol for NAND is the same as that for AND except for the addition of a small circle on the right side.
+The NOR gate is a logical gate, Which acts in the opposite way to OR gate. The NOR gate can be imagined as an OR gate which is connected to a NOT gate. If the two inputs are 0 the output is 1, and its output is 0 for the all other cases. The name NOR can be imagined as the connection of NOT and OR.
+The symbolic representation of NOR is similar to OR except there is a small circle added to the right side.
 
 | Input1       | Input 2      | output |
 |:------------:|:------------:|:------:|
@@ -91,7 +95,9 @@ The NAND gate behaves in the opposite fashion to and AND gate. You can think of 
 
 ## XOR gate
 
-The NAND gate behaves in the opposite fashion to and AND gate. You can think of it as an AND gate followed immediately by a NOT gate. Its output is 0 when the two inputs are 1, and for all other cases, its output is 0. The name NAND comes from joining NOT and AND. The symbol for NAND is the same as that for AND except for the addition of a small circle on the right side.
+The XOR(Exclusive-OR) gate is a logical gate, Which acts in the similar way to OR gate. The output is 1, if any one of the input is 1 and the other is 0, and its output is 0 for the all other cases.
+The symbolic representation of XOR is similar to OR except there is an arc right added to the left side before the gate.
+
 
 | Input1       | Input 2      | output |
 |:------------:|:------------:|:------:|
