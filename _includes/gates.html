@@ -10,7 +10,7 @@
 .label			{margin-top: 100px; text-align: center; font-style:italic}
 .drop 			{height: 110px; width: 110px; padding: 5px; border: 1px dashed black; float: left; margin: 75px -9px 0 -22px}
 .tile			{margin-left: 5px; float:left; max-width: 70px; max-height: 70px; height: 15%; width: 15%}
-#clipboard		{position: relative; float:right; width: 75px; height: 75px; border: 1px dotted green; margin: -2px 5px 5px 5px; overflow: hidden; text-align:center}
+#clipboard		{position: relative; float:right; width: 75px; height: 75px; border: 1px dotted black; margin: -2px 5px 5px 5px; overflow: hidden; text-align:center}
 #clipboard img	{padding: 2px; float:none}
 
 @media screen and (max-width: 849px) {
@@ -115,11 +115,11 @@ function disableSelection(target)
 <img src="../assets/images/EOR_gate.png" alt="EOR" class="tile">
 <img src="../assets/images/XNOR_gate.png" alt="NXOR" class="tile">
 <div id="clipboard"></div>
-<p style="clear:left">You can also click/tap a symbol to copy it and then click/tap to paste it into the box. </p>
+<p style="clear:left">To select an gate click the gate/drag the gate to the box and paste the selected gate into the box. </p>
 <div style="display: inline-block">
     <div class="circuit">
         <h2 align="center" >Two-Way Light Switch</h2>
-        <p>In your house you probabably have a light with more than one switch - e.g. landing lights often have switches upstairs and downstairs.  Add the correct logic gate to the circuit and see if you can get this light work to work in the same way.  You can click on <em>Upstairs</em> and <em>Downstairs</em> switches to change them.</p>
+        <p>In your house there might be a light/device which has more than one switch to turn it on/off. Example: The landing lights many times have switches both upstairs and downstairs to turn them on/off from anywhere. To get the below light work select the suitable logic gate to make the circuit and check whether this light works in the desired way. Click on the <em>Upstairs</em> and the <em>Downstairs</em> switches to test the working of the bulb.</p>
         <div class="container">
             <div style="width: 100px; height: 210px; float:left">
                 <div id="2" class="switch" onClick="toggle_switch(2);">
@@ -134,7 +134,7 @@ function disableSelection(target)
         </div></div>
     <div class="circuit">
         <h2 align="center">Security Light</h2>
-        <p>You can buy security lights that come on only when it's dark and they sense some movement. Add the correct logic gate to the circuit and see if you can get it to work (you can click on <em>Darkness</em> and <em>Movement</em> to change them).</p>
+        <p>There are security lights which turn on only when the place is dark and when there is some movement. To get the below light work choose the correct logic gate and complete the circuit and check whether you can get it properly to work .Click on the <em>Darkness</em> and the <em>Movement</em> to change them.</p>
         <div class="container">
             <div style="width: 100px; height: 210px; float:left">
                 <div id="0" class="dark" onClick="toggle_switch(0);"><div class="label">Darkness</div></div>
