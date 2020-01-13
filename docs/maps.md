@@ -18,7 +18,7 @@ nav_order: 6
 ---
 
 ## Introduction
-Karnaugh Maps are a way to visually display a boolean expression onto a 2D grid. We take the variables and bind them to an axis, and then enumerate through the possible combinations of input values that could occur for all those variables bounded to an axis (either horizontally or vertically).
+K-Map or Karnaugh Map is a rectangle which is made up of certain number of squares where each square denotes a min-term or a max-term and it is a place where boolean expressions can be visualised. We take the variables and bind them to an axis, and then enumerate through the possible combinations of input values that could occur for all those variables bounded to an axis (either horizontally or vertically).
 
 For example, we can display the following 2 variable Karnaugh Map:
 

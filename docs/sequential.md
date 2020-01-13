@@ -8,27 +8,31 @@ nav_order: 11
 # Digital Sequential Circuits
 {: .no_toc }
 
-The combinational circuit does not use any memory. 
-Hence the previous state of input does not have any effect on the present state of the circuit. 
-But sequential circuit has memory so output can vary based on input. This type of circuits uses previous input, output, clock and a memory element.
+The digital circuits that have been discussed in the previous modules were called Combinational circuits.
+In this module, we will learn about Sequential circuits.
 
-<div style="text-align:center"><img src="../assets/images/sequential_circuit_blockdiagram.jpg" /></div>
+A block diagram of a sequential circuit is shown below. 
+
+<div style="text-align:center"><img src="../assets/images/sequential_circuit_blockdiagram.png" /></div>
+
 
 This sequential circuit contains a set of inputs and output(s). 
-The output(s) of sequential circuit depends not only on the combination of present inputs but also on the previous output(s). 
-Previous output is nothing but the present state. 
-Therefore, sequential circuits contain combinational circuits along with memory (storage) elements. 
-Some sequential circuits may not contain combinational circuits, but only memory elements.
+The information stored in a sequential circuit represents the present state.
+The output(s) of sequential circuit depends on the present input as well as present state(past output).
+Sequential circuits is a combinational circuits with memory (storage) elements. 
+<br> Examples: Flip-flops,registers,counters. <br>
+There are some sequential circuits which do not contain combinational circuits, but only memory elements.
 
 Following table shows the **differences** between combinational circuits and sequential circuits.
 
 |   Combinational Circuits    |    Sequential Circuits     |
 |:----------------------------|:---------------------------|
-|Outputs depend only on present inputs.|Outputs depend on both present inputs and present state.|
+|Outputs depends only on present inputs.|Outputs depend on both present inputs and present state (past output).|
 |Feedback path is not present.|Feedback path is present.|
 |Memory elements are not required.|Memory elements are required.|
 |Clock signal is not required.	|Clock signal is required.|
 |Easy to design.|Difficult to design.|
+
 
 
 ## Types of Sequential Circuits
@@ -38,14 +42,15 @@ Following are the two types of sequential circuits −
 * Asynchronous sequential circuits
 * Synchronous sequential circuits
 
-### Asynchronous sequential circuits
+<h3> Difference between Asynchronous and Synchronous sequential circuits </h3>
 
-If some or all the outputs of a sequential circuit do not change (affect) with respect to active transition of clock signal, then that sequential circuit is called as Asynchronous sequential circuit. That means, all the outputs of asynchronous sequential circuits do not change (affect) at the same time. Therefore, most of the outputs of asynchronous sequential circuits are not in synchronous with either only positive edges or only negative edges of clock signal.
-
-### Synchronous sequential circuits
-
-If all the outputs of a sequential circuit change (affect) with respect to active transition of clock signal, then that sequential circuit is called as Synchronous sequential circuit. That means, all the outputs of synchronous sequential circuits change (affect) at the same time. Therefore, the outputs of synchronous sequential circuits are in synchronous with either only positive edges or only negative edges of clock signal.
+|   Asynchronous sequential circuits    |   Synchronous sequential circuits   |
+|:--------------------------------------|:------------------------------------|
+| Operates without a clock.| Operates with a clock. |
+| Changes are initiated only by the change of inputs.| Changes are initiated by the clock. |
+| An unclocked flip-flop or time delay is used as a memory element.| A clocked flip-flop is used as a memory element. |
+| Faster.	| Slower. |
+| Difficult to design.| Easy to design. |
 
 
 {% include disqus.html %}
-
