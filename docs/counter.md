@@ -5,13 +5,10 @@ comments: true
 nav_order: 16
 ---
 
-# Digital Sequential Circuits
+# Digital Counters
 {: .no_toc }
 
-Counter is a sequential circuit. 
-A digital circuit which is used for a counting pulses is known counter. 
-Counter is the widest application of flip-flops. 
-It is a group of flip-flops with a clock signal applied. 
+The Counter is a sequential circuit which is used to count.  
 Counters are of two types.
 
 ## Table of contents
@@ -24,14 +21,15 @@ Counters are of two types.
 
 ## Asynchronous or ripple counters
 
+In Asynchronous counters flip-flops doesn't have a common clock pulse.So their states doesn't change at the same time.
+Here toggle (T) flip-flops are being used. 
+But we can also use the JK flip-flop also with J and K connected permanently to logic 1. 
+External clock is applied to the clock input of first flip-flop, i.e FF-A and output of FF-A, i.e QA is applied to the clock input of the next flip-flop i.e. FF-B.
 The logic diagram of a 2-bit ripple up counter is shown in figure. 
-The toggle (T) flip-flop are being used. 
-But we can use the JK flip-flop also with J and K connected permanently to logic 1. 
-External clock is applied to the clock input of flip-flop A and QA output is applied to the clock input of the next flip-flop i.e. FF-B.
 
 ### Logical Diagram
 
-<div style="text-align:center"><img src="../assets/images/ripple_counter_diagram.jpg" /></div>
+<div style="text-align:center"><img src="../assets/images/ripple_counter_diagram.png" /></div>
 
 ### Types 
 It is known as ripple counter because of the way the clock pulse ripples its way through the flip-flops. The flip-flop applied with external clock pulse act as LSB (Least Significant Bit) in the counting sequence.The flip-flop toggles the output either for every positive edge of clock signal or for negative edge of clock signal.
@@ -62,15 +60,19 @@ It is known as ripple counter because of the way the clock pulse ripples its way
 |**After 2nd negative clock edge**|On the arrival of second negative clock edge, FF-A toggles again and QA = 0.The change in QA acts as a negative clock edge for FF-B. So it will also toggle, and QB will be 1.QBQA = 10 after the second clock pulse.|
 |**After 3rd negative clock edge**|On the arrival of 3rd negative clock edge, FF-A toggles again and QA become 1 from 0.Since this is a positive going change, FF-B does not respond to it and remains inactive. So QB does not change and continues to be equal to 1.QBQA = 11 after the third clock pulse.|
 |**After 4th negative clock edge**|On the arrival of 4th negative clock edge, FF-A toggles again and QA becomes 1 from 0.This negative change in QA acts as clock pulse for FF-B. Hence it toggles to change QB from 1 to 0.QBQA = 00 after the fourth clock pulse.
-                                                                                                                                                                                                                            
-
+                                                                                                                                                                                                       
 ### Truth Table 
 
-<div style="text-align:center"><img src="../assets/images/ripple_counter_truthtable.jpg" /></div>
+<div style="text-align:center"><img src="../assets/images/ripple_counter_truthtable.png" /></div>
 
 ## Synchronous counters
 
 If the "clock" pulses are applied to all the flip-flops in a counter simultaneously, then such a counter is called as synchronous counter.
+The logic diagram of a Synchronous counter is shown in figure. 
+
+### Logical Diagram
+
+<div style="text-align:center"><img src="../assets/images/synchronous_counter_diagram.png" /></div>
 
 ### 2-bit Synchronous up counter
 
@@ -103,14 +105,10 @@ The JA and KA inputs of FF-A are tied to logic 1. So FF-A will work as a toggle 
 <div style="text-align:center"><img src="../assets/images/ring_counter.png" height="300"/></div>
 <br>
 
-* **Johnson's Counter or Twisted Ring Counter:** The Johnson counter is a modification of ring counter. In this the inverted output of the last stage flip flop is connected to the input of first flip flop. If we use n flip flops to design the Johnson counter, it is known as 2n bit Johnson counter or Mod 2n Johnson counter.
+* **Johnson's Counter or Twisted Ring Counter:** The Johnson counter is ring counter in which clear input is used for the first flip flop instead of preset input. In this the complemented output of the last flip flop is given as the input to first flip flop. If we use n flip flops to design the Johnson counter, then the no.of states is equal to 2n.
 
 <div style="text-align:center"><img src="../assets/images/johnson's_counter.png" height="300"/></div>
 <br>
-
-### Logical Diagram
-
-<div style="text-align:center"><img src="../assets/images/synchronous_counter_diagram.jpg" /></div>
 
 ### Operation
 

@@ -23,39 +23,44 @@ nav_order: 5
 
 
 Boolean algebra deals with binary variables and logic operation.
-A **Boolean Function** is described by an algebraic expression called **Boolean expression** which consists of binary variables, the constants 0 and 1, and the logic operation symbols. 
+A **Boolean Function** is described by an algebraic expression called **Boolean expression** formed with binary variables which can take the value 0 or 1 and the logic operation symbols. 
 Consider the following example.
 ```yaml
 Example:  
 
-      F(A,B,C,D)     =     A + BC + !(ADC)
+      F(A,B,C,D)     =     A + ABC + !(ADC)
    Boolean Function      Boolean expression
 ```
 Here the left side of the equation represents the output **Y**. So we can state 
 
 ```yaml 
-          Y         =     A + BC + !(ADC)
+          Y         =     A + ABC + !(ADC)
    Boolean Function      Boolean expression
 ```
 ## Truth Table Formation
-A truth table represents a table having all combinations of inputs and their corresponding result.
+A truth table represents a table which contains all possible combinations of inputs and their corresponding result.
 
-It is possible to convert the switching equation into a truth table. For example, consider the following switching equation.
+It is possible to convert a boolean equation into a truth table. For example, consider the following boolean equation.
+```yaml 
+      F(A,B,C)       =        A + BC
+   Boolean Function      Boolean expression
+```
+It's truth table is given below.
 
 | A       | B       | C      | F      |
 |:-------:|:-------:|:------:|:------:|
+| 0       | 0       | 0      |0       |
 | 0       | 0       | 1      |0       |
 | 0       | 1       | 0      |0       |
-| 0       | 1       | 1      |0       |
-| 0       | 1       | 1      |1       |
+| 0       | 1       | 0      |1       |
+| 1       | 0       | 0      |1       |
 | 1       | 0       | 1      |1       |
 | 1       | 1       | 0      |1       |
-| 1       | 1       | 1      |1       |
 | 1       | 1       | 1      |1       |
 
 
 ## Sum of Product Expressions (SOP)
-Let's consider a more complicated expression `F(ABCD)= AB'C+BD+CD+D` and generate its truth table:
+Let's consider a more complicated expression `F(ABCD)= AB'C+BD+CD+D` and let us make its truth table:
 
 | F(AB'C+BD+CD+D)| A | B | C | D |
 | :-----: |:-:|:-:|:-:|:-:|
@@ -76,13 +81,13 @@ Let's consider a more complicated expression `F(ABCD)= AB'C+BD+CD+D` and generat
 | 0     | 1 | 1 | 1 | 0 |
 | 1     | 1 | 1 | 1 | 1 |
 
-This example was definately more involved than the previous expressions. An interesting observation is that we are doing a sum of product evaluation, that is, `AB'C+BD+CD+D` is a sum of products. The significance of a sum of product is that when we are doing `+` we are in fact invoking the `OR` operator. 
+This example was more complicated than the previous expressions. An interesting observation is that we are doing a sum of product evaluation, i.e, `AB'C+BD+CD+D` is a sum of products. When we are using `+`, we are invoking the OR operator.
 
-Moreover, the `OR` operator returns `true` so long as any one of its arguements returns `true`. Therefore, if _any_ of the terms in the sum of product (SOP) expressions is `true`, then we know that the final expression is `true` for certain. 
+Moreover, the `OR` operator returns `true` so when the any one of the terms in sum of product (SOP) returns `true`, then the final expression is `true` for certain. 
 
 ## Example Algebraic Simplification
 
-Let's simplify our expression from the previous truth table example. We can apply ordinary algebra tricks such as factoring. Remember that the `+` operator invokes the `OR` gate, and that `true or x` always returns `true` regardless of `x` (as shown in our first truth table).
+Let us take the previous example for this purpose. In Algebraic simplification method, ordinary algebra tricks such as factoring is used. Remember that the `+` operator invokes the `OR` gate, and that `true OR x` always returns `true` regardless of `x` (as shown in our first truth table).
 ```
 AB'C+BD+CD+D // Initial expression
 AB'C+BD+D(C+1) // Factor out a D
@@ -92,7 +97,7 @@ AB'C+D // Since (B+1) is always true, as B OR true is always true
 =AB'C+D // Final expression
 ```
 
-As an exercise to the reader, complete the truth table to show that they are logically equivalent. 
+As an exercise to the reader, make the truth tables of Initial expression and Final expression and prove that they are logically equivalent. 
 
 ## Undefined Input & Don't Cares
 The definition of a "Don't care" is a combination of input values that is not known, and could be either `0` or `1`. For the purposes of variable simplification, we would choose the greedy approach of picking between {`0`, `1`} such that the simplified expression has less terms.
@@ -142,8 +147,8 @@ We can clearly see, if we set `F(1, 0) = 1`, we get a true value for any input. 
 The methods used for simplifying the Boolean function are as follows −
 
 1. Karnaugh-map or K-map
-1. NAND gate method.
-
+2. NAND gate method.
+3. Algebraic Simplification
 
 
 
