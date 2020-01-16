@@ -7,11 +7,11 @@ nav_order: 1
 
 ## SR Flip-Flop
 
-SR flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, SR latch operates with enable signal. The circuit diagram of SR flip-flop is shown in the following figure.
+SR flip-flop operates only when the clock has a positive or negative clock transitions. Though, SR latch operates with enable signal. The circuit diagram of SR flip-flop is shown below.
 
-<div style="text-align:center"><img src="../../assets/images/sr_flipflop.jpg" /></div>
+<div style="text-align:center"><img src="../../assets/images/sr_flipflop.png" /></div>
 
-his circuit has two inputs S & R and two outputs Q(t) & Q(t)’. The operation of SR flipflop is similar to SR Latch. But, this flip-flop affects the outputs only when positive transition of the clock signal is applied instead of active enable.
+This circuit has two inputs S & R and two outputs Q(t) & Q(t)’. The operation of SR flipflop is similar to that of SR Latch. But, this flip-flop has influence on the outputs only when positive transition of the clock signal is applied instead of active enable.
 
 ### State table of **SR** flip-flop.
 
@@ -22,7 +22,7 @@ his circuit has two inputs S & R and two outputs Q(t) & Q(t)’. The operation o
 |  1     |    0    |    1     |
 |  1     |    1    |    -     |
 
-Here, Q(t) & Q(t + 1) are present state & next state respectively. So, SR flip-flop can be used for one of these three functions such as Hold, Reset & Set based on the input conditions, when positive transition of clock signal is applied. 
+Here, Q(t) & Q(t + 1) are the present state & next state respectively. So, JK flip-flop can be utilised for one of these four functions such as Hold, Reset, Set & Complement of the present state based on the input conditions, when positive transition of clock signal is applied.
 
 ### Characteristic table of SR flip-flop.
 
@@ -39,11 +39,11 @@ Therefore, SR Latch performs three types of functions such as Hold, Set & Reset 
 |1	|1	|0	|x|
 |1	|1	|1	|x|
 
-By using three **variable K-Map**, we can get the simplified expression for next state, Q(t + 1). The three variable K-Map for next state, Q(t + 1) is shown in the following figure.
+By using 3 variable K-Map, we can get the simplified expression for next state, Q(t + 1). The three variable K-Map for next state, Q(t + 1) is shown below.
 
 <div style="text-align:center"><img src="../../assets/images/3_variable_k_map_next_state.jpg" /></div>
 
-The maximum possible groupings of adjacent ones are already shown in the figure. Therefore, the simplified expression for next state Q(t + 1) is
+The maximum possible groupings of near by ones are already shown in the figure. Therefore, the simplified expression for next state Q(t+1) is
 ```yaml
           Q(t+1)=S+R′Q(t)
 ```

@@ -7,11 +7,11 @@ nav_order: 3
 
 ## JK Flip-Flop
 
-JK flip-flop is the modified version of SR flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of JK flip-flop is shown in the following figure.
+JK flip-flop is the modified version of SR flip-flop. JK flip-flop has a advantage over SR flip-flop. It operates only when the clock has a positive or negative transition. The circuit diagram of JK flip-flop is shown below.
 
-<div style="text-align:center"><img src="../../assets/images/jk_flipflop.jpg" /></div>
+<div style="text-align:center"><img src="../../assets/images/jk_flipflop.png" /></div>
 
-This circuit has two inputs J & K and two outputs Q(t) & Q(t)’. The operation of JK flip-flop is similar to SR flip-flop. Here, we considered the inputs of SR flip-flop as **S = J Q(t)’** and **R = KQ(t)** in order to utilize the modified SR flip-flop for 4 combinations of inputs.
+This circuit has two inputs J & K and two outputs Q(t) & Q(t)’. The operation of JK flip-flop is similar to that of SR flip-flop. Here, we consider the inputs of SR flip-flop as **S = J Q(t)’** and **R = KQ(t)** in order to use the modified SR flip-flop for 4 combinations of inputs.
 ### State table of **SR** flip-flop.
 
 | J      |    K    |   Q(t+1) |
@@ -21,7 +21,7 @@ This circuit has two inputs J & K and two outputs Q(t) & Q(t)’. The operation 
 |  1     |    0    |    1     |
 |  1     |    1    |  Q(t)’   |
 
-Here, Q(t) & Q(t + 1) are present state & next state respectively. So, JK flip-flop can be used for one of these four functions such as Hold, Reset, Set & Complement of present state based on the input conditions, when positive transition of clock signal is applied.
+Here, Q(t) & Q(t + 1) are the present state & next state respectively. So, JK flip-flop can be utilised for one of these four functions such as Hold, Reset, Set & Complement of the present state based on the input conditions, when positive transition of clock signal is applied.
 
 ### Characteristic table of SR flip-flop.
 
@@ -37,11 +37,11 @@ Here, Q(t) & Q(t + 1) are present state & next state respectively. So, JK flip-f
 |1	|1	|0	|1|
 |1	|1	|1	|0|
 
-By using three variable K-Map, we can get the simplified expression for next state, Q(t + 1). The **three variable K-Map** for next state, Q(t + 1) is shown in the following figure.
+By using 3 variable K-Map, we can get the simplified expression for next state, Q(t + 1). The **three variable K-Map** for next state, Q(t + 1) is shown below.
 
 <div style="text-align:center"><img src="../../assets/images/jk_3_variable_kmap.jpg" /></div>
 
-The maximum possible groupings of adjacent ones are already shown in the figure. Therefore, the simplified expression for next state Q(t+1) is
+The maximum possible groupings of near by ones are already shown in the figure. Therefore, the simplified expression for next state Q(t+1) is
 ```yaml
           Q(t+1)=JQ(t)′+K′Q(t)
 ```
