@@ -20,12 +20,12 @@ nav_order: 9
 
 
 ## Introduction
-An arithmetic logic unit (ALU) is a digital circuit used to perform arithmetic and logic operations. It represents the fundamental building block of the central processing unit (CPU) of a computer. Modern CPUs contain very powerful and complex ALUs. In addition to ALUs, modern CPUs contain a control unit (CU).
+The ALU(Arithmetic Logic Unit) is a Digital-Circuit which can be used to perform arithmetic, and logical operations. The ALU is a major component of the CPU(Central Processing Unit) of a computer. A modern CPU contains a very powerful ALU which are quite complex. In addition to a ALU, a modern CPU contains a Control-Unit(CU).
 
-The purpose of the ALU is to perform mathematical operations such as addition, subtraction, multiplication and division. Additionally, the ALU processes basic logical operations like AND/OR calculations. Also known as the arithmetic logic unit, it serves as the computational hub of the Central Processing Unit (CPU) for a computer system
+The use of ALU is to do mathematical operations (addition, subtraction, multiplication and division) , and basic logical operations (AND/OR calculations). The ALU is the computational hub for CPU of a computer.
 
 ## In Detail
-So with the above building blocks i.e. half adder and full adder discussed in Combinational Analysis, lets construct a simple ALU that performs a arithmetic operation (1 bit addition)and does 3 logical operations namely AND, NOR and XOR as shown below. The multiplexer selects only one operation at a time. The operation selected depends on the selection lines of the multiplexer as shown in the truth table.
+Now that we know about half adder and full adder discussed in Combinational Analysis, lets try to construct a simple ALU which performs a arithmetic operation(1 bit addition), and also does three logical operations- AND, XOR, and NOR as shown below. There is only one operation selected at a time by the multiplexer. The operation which is selected depends on the multiplexer's selection lines, as displayed in the below truth table.
 
 <div style="text-align:center" ><img src="../assets/images/1bitALU.jpg" /></div>
 
@@ -40,20 +40,20 @@ Output = Operation**
 |1	|1	|XOR|
 
 
-Now we can take up the 1 bit ALU as block and construct a 4 bit ALU, which performs all the functions of the 1 bit ALU on the 4 bit inputs. Thus a single building block can be constructed and used recursively. The inputs A and B are four bits and the output is 4 bit as well. Figure below illustrates it:
+We can now construct a 4-bit ALU by taking the 1-bit ALU as a block, this will perform the tasks of a 1-bit ALU on 4-bit inputs. Hence, a single block can be constructed, and also used recursively. The inputs 'A' and 'B' are of 4-bits and the output as well is of 4-bit. The below Figure illustrates it:
 
 <div style="text-align:center" ><img src="../assets/images/360px-4BITALU.jpg" /></div>
 
-There are a few important takeaways here:
+There are some important points to be noted here:
 * The selection lines MO and M1 select the function ALU performs. These selection lines combined with the input arguments and desired functions a Instruction Set can be formed.
 * These Instructions can used to create meaningful programs. Since these are required to be easily available they can be stored on ROM unit.
-* The input arguments A and B are often stored in Internal Registers. These along with other special purpose register form the registers of the microcontroller.
+* The input arguments 'A' and 'B' are often stored in Internal Registers. These along with other special purpose register form the registers of the microcontroller.
 * ROM memories are slower in speed, hence an intermediate high speed RAM is often used.
 * All the critical timings, decoding of the instructions are often grouped together in seperate control and timings unit'
 * If a Micro controller would be constructed only from ALU, RAM, ROM there would not be any external interface. Hence we have Input/Output IO ports.
 * Additional features such as 'Interrupts, communication protocols, EEPROM, Timers/Counters, Debug interfaces etc are incorporated to make a controller complete.
 
-In above discussion we might have left out intricate details involved in a ALU, CPU design. But the aim was to understand ALU/CPU at a deeper level.
+In the above discussion, we may have left some intricate(complex) details involved in ALU, and CPU design. But the goal was to understand ALU or CPU at a deeper level.
 
 
 {% include disqus.html %}
