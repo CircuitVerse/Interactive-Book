@@ -8,43 +8,38 @@ nav_order: 11
 # Digital Sequential Circuits
 {: .no_toc }
 
-The combinational circuit does not use any memory. 
-Hence the previous state of input does not have any effect on the present state of the circuit. 
-But sequential circuit has memory so output can vary based on input. This type of circuits uses previous input, output, clock and a memory element.
+In Combinational circuits there is no use of any memory. Therfore, The circuit's present state is not affected by the previous state's input.
+But, in Sequential circuits there is a memory, so the output can change(affect) based on the input. These types of circuits use a memory element, clock,output, and their previous input.
 
 <div style="text-align:center"><img src="../assets/images/sequential_circuit_blockdiagram.jpg" /></div>
 
-This sequential circuit contains a set of inputs and output(s). 
-The output(s) of sequential circuit depends not only on the combination of present inputs but also on the previous output(s). 
-Previous output is nothing but the present state. 
-Therefore, sequential circuits contain combinational circuits along with memory (storage) elements. 
-Some sequential circuits may not contain combinational circuits, but only memory elements.
+The above figure's Sequential circuit has some inputs, and some output(s). The output(s) of a sequential circuit does not only depend on combination of the present inputs, but also on the previous output(s). So, we can say that the present state has the previous output also. Hence, Sequential circuits also have Combinational circuits with memory/storage elements, but there are some Sequential circuits which may not contain Combinational circuits, but only memory/storage elements.
 
-Following table shows the **differences** between combinational circuits and sequential circuits.
+The below table shows some **differences** between the Sequential and Combinational circuits.
 
 |   Combinational Circuits    |    Sequential Circuits     |
 |:----------------------------|:---------------------------|
-|Outputs depend only on present inputs.|Outputs depend on both present inputs and present state.|
-|Feedback path is not present.|Feedback path is present.|
-|Memory elements are not required.|Memory elements are required.|
-|Clock signal is not required.	|Clock signal is required.|
-|Easy to design.|Difficult to design.|
+|The outputs are dependent only on present inputs.|The outputs are dependent on the present inputs and and also on present state.|
+|There is feedback path ..|There is a feedback path.|
+|Memory elements aren't necessary.|Memory elements are necessary.|
+|The clock signal isn't required.	|The clock signal is required.|
+|It easy to design.|It difficult to design.|
 
 
 ## Types of Sequential Circuits
 
-Following are the two types of sequential circuits −
+There are 2 types of Sequential circuits−
 
-* Asynchronous sequential circuits
-* Synchronous sequential circuits
+* Asynchronous Sequential circuits
+* Synchronous Sequential circuits
 
-### Asynchronous sequential circuits
+### Asynchronous Sequential Circuits
 
-If some or all the outputs of a sequential circuit do not change (affect) with respect to active transition of clock signal, then that sequential circuit is called as Asynchronous sequential circuit. That means, all the outputs of asynchronous sequential circuits do not change (affect) at the same time. Therefore, most of the outputs of asynchronous sequential circuits are not in synchronous with either only positive edges or only negative edges of clock signal.
+Asynchronous Sequential circuits are Sequential circuits, in which the some/all outputs don't change(affect) with the the active transition of the clock signal, which means the outputs of these circuits do not change(affect) at same time. Hence, most outputs of these circuits are not in Synchronous with- only positive(+) edges or negative(-) edges of the Clock signal.
 
 ### Synchronous sequential circuits
 
-If all the outputs of a sequential circuit change (affect) with respect to active transition of clock signal, then that sequential circuit is called as Synchronous sequential circuit. That means, all the outputs of synchronous sequential circuits change (affect) at the same time. Therefore, the outputs of synchronous sequential circuits are in synchronous with either only positive edges or only negative edges of clock signal.
+Synchronous Sequential circuits are Sequential circuits, in which all the outputs change(affect) with the the active transition of the Clock signal, which means the outputs of these circuits change(affect) at same time. Hence, the outputs of these circuits are in synchronous with- only positive(+) edges or negative(-) edges of the Clock signal.
 
 
 {% include disqus.html %}
