@@ -18,36 +18,35 @@ nav_order: 6
 ---
 
 ## Introduction
-Karnaugh Maps are a way to visually display a boolean expression onto a 2D grid. We take the variables and bind them to an axis, and then enumerate through the possible combinations of input values that could occur for all those variables bounded to an axis (either horizontally or vertically).
-
-For example, we can display the following 2 variable Karnaugh Map:
+A Karnaugh-Map(K-map) is helpful to display a boolean expression visually on a 2D grid. We bind the variables to an axis, then the variables which are bounded to an axis are enumerated through all the possible combinations of the input values.
+Let's assume an example to display the 2 variable Karnaugh-Map:
 
 ![](../assets/images/map11.png)
 
-We have bounded to the vertical axis, the variable `A`, and we enumerate through the possible values for `A` (being `{0, 1}`). Similarily, we perform a similar operation for the `B` variable. Since we are using a 2 variable expression, we can bound one variable to each axis and the visualization works fine in a `2x2` matrix.
+Here, the vertical axis is bounded to the variable `A`, then `A` is enumerated through all its possible values, i.e., `{0, 1}`. In a similar way, the `B` variable is bounded to another axis(horizontal axis), and is enumerated through all its possible values. The visualization works properly in an `2x2` matrix.
 
-Let's instead look at a more involved example with 4 variables:
+Now, let's assume an more complex example of 4 variables:
 
 ![](../assets/images/map1.png)
 
-We have now bounded the `A` and `B` variables to the vertical axis, while we bounded the `C` and `D` variables to the horizontal axis. We now enumarate through different combinations of the bounded variables for each axis in *reflected binary code order* (more on this in the following section). Lastly, we indicate on the matrix each true value by augmenting a `1` value.
+ The vertical axis is bounded to `A` and `B` variables, while the horizontal axis is bounded to `C` and `D` variables. We can now enumarate through the different combinations of bounded variables for each of the axis in *Reflected Binary Code Order* (more on this in further sections). Finally, each true value is indicated on the matrix by augmenting a value of`1`.
 
 ## Enumeration and Gray Codes
-When enumerating through the variable input combinations for the binded axis, we take advantage of _reflected binary code order_, otherwise known as gray codes. If we observe carefully, we can notice that from one combination to another, we only vary by one bit. That is:
+When Enumerating through, the different variable input combinations, for the Binded axis, we take advantage of "_reflected binary code order_", otherwise known as Gray codes. When observed carefully, It is noticeable that, We only vary by one bit,from one combination to another, That is:
 
 ``` markdown
 ... 00 01 11 10 00 01 11 10 00 ...
     ^   ^ ^   ^ ^   ^ ^   ^ ^
 ```
 
-Thus, we get this wrapping that allows us to switch by only one bit. This provides us the core for how Karnaugh Maps work.
+Thus, We get this wrapping which allows us to, switch by only 1 bit. This provides the core for how Karnaugh-Maps work.
 
 ## Simple Groupings
-The main idea for how Karnaugh Maps can be used to simplify expressions is to group pairs of `1` values that are adjacent, and exploit the fact that each one has only a bit difference from another. 
+The main idea behind,how the Karnaugh-Maps can be used to simplify the expressions, is to group pairs of `1`'s that are adjacent, & exploit the fact that, each 1 has only one bit difference from another. 
 
 ![](../assets/images/map2.png)
 
-For the purpose of this example, let `F(ABCD) = CELL`. We start with the expression `F(0000) = 1` and `F(0001) = 1`. However, notice that _regardless_ of the value of the last bit, we still get `1`. Hence, let's take a look at the SOP expressions:
+For this example, let us consider, `F(ABCD) = CELL`. We start with an expression of `F(0000) = 1` & `F(0001) = 1`. However, we can observe that irrespective of the value of last bit, We still get a `1`. Hence, let us take a look at the 'SOP' expressions:
 
 ```markdown
 F(ABCD) = A'B'C'D' + A'B'C'D
@@ -64,14 +63,14 @@ F(ABCD) = A'B'C'D' + A'B'C'D
 Therefore, the simplification is true.
 ```
 
-We can then extend this rule to work for rectangles and more!
+This rule can be further extended to work for Rectangles & more!
 
 ## Two Dimension Groupings
-Extending the idea of isolating changing bits that retain a consistent value, we can then generalize this to work in a higher dimension. Consider the following example:
+The idea of isolating the changing bits which retain a consistent value, can be further eloborated, to generalize this to work for a higher dimension.The following example can be considered:
 
 ![](../assets/images/map3.png)
 
-Letting `F(ABCD) = CELL`:
+Letting `F(ABCD)= CELL`:
 ```markdown
 F(0000) = 1
 F(0001) = 1
@@ -79,17 +78,17 @@ F(0100) = 1
 F(0101) = 1
 ```
 
-Observe that the bits do not change by one for all pairs of numbers, for example `{0000, 0101}` differ by two bits. However, we can take advantage of the fact that for any bit change horizontally or vertically, it's irrelvant what that bit is. More concretely, take a look at the following example.
+Observe that, the bits dont change by 1 for all pairs of Numbers, for example `{ 0000 & 0101 }` differ by two bits. Although , We can take advantage, of the bit changed Horizontally or Vertically. It's irrelvant what that bit is. Take a look at the following example more concretely.
 
 ```markdown
 0000 0001
 0100 0101
 
 => A'B'C'D' + A'B'C'D + A'BC'D' + A'BC'D
-Regardless of the B variable, we still get true for all products in the SOP expression.
+Irrespective of the B variable, we still get true for all products in the SOP expression.
 This is bounded vertically:
 => A'C'D' + A'C'D + A'C'D' + A'C'D
-Regardless of the D variable, we still get true for all products in the SOP expression.
+Irrespective of the D variable, we still get true for all products in the SOP expression.
 This is bounded horizontally:
 => A'C' + A'C' + A'C' + A'C'
 => A'C' (1 + 1 + 1 + 1)
@@ -97,20 +96,20 @@ This is bounded horizontally:
 => A'C'
 ```
 
-Since the differences in bits needs to generalize throughout a binding of an axis, you can only have a binding of size `2^n` for a given axis. For example, `1x1, 1x2, 1x4, 2x2, 2x4, 4x4`. 
+Since, The difference in the bits needs to be generalized throughout a binding of the axis, We can have a binding of size (`2^n`) for a given axis. For Ex: `1x1, 1x2, 1x4, 2x2, 2x4, 4x4`. 
 
 ## Disjoint Groupings
 Consider the following example:
 ![](../assets/images/map4.png)
 
-The algorithm follows precisely as it did before, except that now the two groups are joined in the SOP expression. Letting `F(ABCD) = CELL`:
+The algorithm follows the same procedure as it did before, But, now the 2 groups are joined through 'SOP' expression. Giving `F(ABCD)=CELL`:
 ```markdown
 F(0000) = 1
 F(0001) = 1
 F(1111) = 1
 F(1011) = 1
 ```
-This yields the following:
+This produces the following:
 ```markdown
 A'B'C'D' + A'B'C'D + ABCD + AB'CD
 Breaking down the expression:
@@ -119,22 +118,22 @@ Breaking down the expression:
 => (A'B'C') + (ACD)
 => A'B'C' + ACD
 ```
-Clearly this is the exact same process as before, but iterated throughout all the disjoint sets.
+Clearly, this is the same process we followed before, but iterated throughout all of the disjoint sets.
 
 ## Overlapping Groupings
-Overlapping groupings become more complex, because there exist ambigious cases and sometimes what may appear to be a locally optimal solutuion is not a globally optimal solution.
+Overlapping groupings becomes more complex, Because there exists ambigious cases, and sometimes what appears to be locally optimal solutuion may not be a globally optimal solution.
 
-The general technique for evaluating for overlapping groups follows a greedy algorithm. Define an unvisited cell as a cell that has a value of `1` however it is currently not matched with a grouping yet. 
+General technique for evaluating the overlapping of groups follows a Greedy-algorithm. Now define a unvisited cell which has a value of `1`. However it is presently not matched with a group yet. 
 
-Iterate through all the cells, and once you find a cell with `1`, if it is unvisited then find the largest possible square or rectangle such that each side length is a power of 2, where all the cells are `1` in its enclosed area. If there is a tie for size (ie, `1x4` vs `2x2`), assign the one that is a square (this is by convention). 
+Loop through the cells, after you find the cell with `1`, and if it's unvisited, now find the largest possible rectangle or a square such that each side's length is a power of 2(2^n) , where all the cells are `1` in the enclosed area. If there is a tie of sizes (i.e. , `1x4` vs `2x2`), Assign the one that is, to a square(this is by convention). 
 
-Repeat this process for all remaining unvisited cells. Note: You can overlap the groupings with already visited nodes, but you never instantiate a new grouping unless the current node is unvisited.
+Repeat the above process for all the remaining unvisited cells. Note:- You can overlap the groups with the nodes previously visited, but you can never start a new grouping until the current node is not visited.
 
 ![](../assets/images/map5.png)
 
-In this example, at `F(0000)`, we can create a grouping of size 2 (because 2 is the largest possible grouping, 3 is not a power of 2). We then iterate through to `F(0001)`, however `F(0001)` was already resolved to a grouping. For the latest active cell, `F(0011)` is not resolved to a grouping thus it's unvisited. The largest possible grouping is also of size 2, thus we create another group.
+In this Example, at `F(0000)`, We can create a grouping of size two(As 3 is not a power of 2 and 2 is the largest possible grouping). We then loop through to `F(0001)`, however `F(0001)` was already resolved to be a grouping. For the latest Active cell, `F(0011)` is not resolved to a grouping thus it is unvisited. The largest possible grouping is also of the size two, Thus creates another group.
 
-To resolve the groupings into an SOP expression, we iterate through the groups and identify changing bits:
+To resolve the groupings into an 'SOP' expression, we iterate through the groups and identify changing bits:
 
 ```markdown
 Group #1 => F(ABCD) = [0000, 0001]
@@ -160,15 +159,15 @@ F(ABCD) = A'B'C' + A'B'D
 ```
 
 ## Minimizing Group Count
-The following example will ilustrate how the greedy approach may occasionally produce too many groups. Consider the following example:
+The following Example will ilustrate how the Greedy approach may occasionally produce too many groups, Consider the following Example:
 
 ![](../assets/images/map6.png)
 
-This grouping state is optimal. However, consider adding a `1` to `F(1111)`.
+This grouping state is optimal. However,we can consider adding a `1` to `F(1111)`.
 
 ![](../assets/images/map7.png)
 
-Following the previous algorithm, iterating top-bottom and left-right, when getting to `F(0110)`, the algorithm can choose to make the largest grouping. However, there are two possible groupings:
+Following the previous algorithm, iterating through top to bottom and left to right, when getting to `F(0110)`, the Algorithm can choose to make the largest possible grouping. However,there are two possible groupings they are:
 
 ```markdown
 Candidate #1:
@@ -178,9 +177,9 @@ Candidate #2:
 F(ABCD) = [0111, 0110, 1111, 1110]
 ```
 
-Both groupings have the same size, and are the same dimension. However, upon reaching `F(1110)`, another grouping needs to be instantiated, in which case if the first candidate grouping was created then we made a group that was not neccessary increasing the size of our SOP expression. 
+Both groupings have- same size and dimensions. But, upon reaching `F(1110)`, another grouping should be instantiated, in that case if the first candidate grouping is created, and later we make a group that isn't neccessarily will increase the size of the SOP-expression. 
 
-This illustrates the idea that this is a greedy algorithm, and does not always return the most simplified SOP expression. In later sections, algorithms illustrating a globally optimal algorithm will be discussed.
+This will illustrate a idea that it is a greedy-algorithm, and doesn't always return the simplest SOP-expression. In the later sections, algorithms which will illustrate a globally optimal algorithm, will be discussed.
 
 
 {% include disqus.html %}
