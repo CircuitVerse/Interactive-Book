@@ -8,10 +8,9 @@ nav_order: 2
 # Full Adder
 {: .no_toc }
 
-Full adder is developed to overcome the drawback of Half Adder circuit. 
-It can add two one-bit numbers A and B, and carry c. 
-The full adder is a three input and two output combinational circuit.
+A full adder is a Combinational logic circuit made to overcome the disadvantage of half adder, with input of 3 single bit binary numbers, it is used for the addition of 3 single bit binary numbers, it gives 2 outputs called **sum** and **carry-out**.
 
+Lets assume 3 single bit binary numbers as 'A', 'B', and 'C-in'(carry-in) whose sum and carry-out are 'S' and 'C-out' respectively. 
 
 
 ## Block Diagram
@@ -23,7 +22,19 @@ The full adder is a three input and two output combinational circuit.
 ## Truth Table
 {: .no_toc }
 
-<div style="text-align:center"><img src="../../assets/images/fulladder_truthtable.jpg" /></div>
+* Inputs: A, B, C-in
+* Outputs: S, C-out
+
+|    A    |    B    |   C-in  |    S    |  C-out  |
+|:-------:|:-------:|:-------:|:-------:|:-------:|
+|    0    |    0    |    0    |    0    |    0    |
+|    0    |    0    |    1    |    1    |    0    |
+|    0    |    1    |    0    |    1    |    0    |
+|    0    |    1    |    1    |    0    |    1    |
+|    1    |    0    |    0    |    1    |    0    |
+|    1    |    0    |    1    |    0    |    1    |
+|    1    |    1    |    0    |    0    |    1    |
+|    1    |    1    |    1    |    1    |    1    |
 
 ## Circuit Diagram
 {: .no_toc }

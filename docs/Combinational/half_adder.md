@@ -8,10 +8,9 @@ nav_order: 1
 # Half Adder
 {: .no_toc }
 
-Half adder is a combinational logic circuit with two inputs and two outputs. 
-The half adder circuit is designed to add two single bit binary number A and B. 
-It is the basic building block for addition of two single bit numbers. 
-This circuit has two outputs **carry** and **sum**.
+A half adder is a Combinational logic circuit with input of 2 single bit binary digits, it is used for the addition of 2 single bit binary digits. The 2 single bit binary digits are called **augend** and **addend** and it gives 2 outputs namely **sum** and **carry**.
+
+Lets assume 2 single bit binary digits as 'A' and 'B', whose sum and carry are 'S' and 'C' respectively. 
 
 
 
@@ -24,7 +23,15 @@ This circuit has two outputs **carry** and **sum**.
 ## Truth Table
 {: .no_toc }
 
-<div style="text-align:center"><img src="../../assets/images/halfadder_truthtable.jpg" /></div>
+* Inputs: A, B
+* Outputs: S, C
+
+|    A    |    B    |    s    |    C    |
+|:-------:|:-------:|:-------:|:-------:|
+|    0    |    0    |    0    |    0    |
+|    0    |    1    |    1    |    0    |
+|    1    |    0    |    1    |    0    |
+|    1    |    1    |    0    |    1    |
 
 ## Circuit Diagram
 {: .no_toc }

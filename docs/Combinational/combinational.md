@@ -9,20 +9,19 @@ permalink: /docs/combinational
 {: .no_toc }
 
 
-Combinational circuits consist of Logic gates. These circuits operate with binary values. The output(s) of combinational circuit depends on the combination of present inputs. The following figure shows the **block diagram** of combinational circuit.
+Combinational circuits are made up of different Logic gates. These circuits are operated with the help of binary values. The output(s) of these circuits depend on the values of the given input at that time. Given below is the **block diagram** of Combinational circuit. 
 
 <div style="text-align:center"><img src="../../assets/images/combinational1.jpg" /></div>
 
-This combinational circuit has ‘n’ input variables and ‘m’ outputs. Each combination of input variables will affect the output(s).
+The above Combinational circuit has 'n' number of input variables, and ‘m’ number outputs. The output(s) is affected by input variables of each combination. 
 
+## Procedure of Designing Combinational Circuits
 
-## Design procedure of Combinational circuits
-
-1.  Find the required number of input variables and outputs from given specifications.   
-1.  Formulate the Truth table. If there are ‘n’ input variables, then there will be 2n possible combinations. For each combination of input, find the output values.   
-1.  Find the Boolean expressions for each output. If necessary, simplify those expressions.   
-1.  Implement the above Boolean expressions corresponding to each output by using Logic gates.
+1.  Determine the required number of input variables and output variables as per the desired output.
+1.  Derive the Truth table. The total possible combinations for 'n' number of input variables is equal '2n'. Find the output value, for every combination of input.   
+1.  The boolean expression for each output is found. Simplify the expressionss if needed.   
+1.  The above simplified boolean expressions are used, corresponding to its output by the use of Logic gates.
    
    
-We're going to elaborate few important combinational circuits as follows.
+Now, we're elaborating a few more important Combinational circuits as follows-  
 

@@ -9,16 +9,10 @@ nav_order: 5
 # N-Bit Parallel Adder
 {: .no_toc }
 
-The Full Adder is capable of adding only two single digit binary number along with a carry input. 
-But in practical we need to add binary numbers which are much longer than just one bit. To add two n-bit binary numbers we need to use the n-bit parallel adder. 
-It uses a number of full adders in cascade. 
-The carry output of the previous full adder is connected to carry input of the next full adder.
+The Full Adder can only add 2 single bit binary numbers with a carry input,but for practical uses, we must be able to add more than just a single binary number. To add only 2 n-bit binary numbers, the n-bit parallel adder can be implemented, for calculation it cascades a number of Full Adders. The carry-output one Full Adder is connected to the next Full Adder's carry-input.
 
 ## 4 Bit Parallel Adder
-In the block diagram, A0 and B0 represent the LSB of the four bit words A and B. 
-Hence Full Adder-0 is the lowest stage. 
-Hence its Cin has been permanently made 0. 
-The rest of the connections are exactly same as those of n-bit parallel adder is shown in fig. The four bit parallel adder is a very common logic circuit.
+In the below block diagram, B0 and A0 represent the LSB(Least Significant Bit) of the 4 bit variables A and B, hence Full Adder(0) is the lowest stage, and its C-in is permanently made 0. Other than these, the remaining connections are same as that of N-bit parallel adder, as shown in figure. This is a very commonly used logic circuit.
 
 ## Block Diagram
 
@@ -28,16 +22,13 @@ The rest of the connections are exactly same as those of n-bit parallel adder is
 # N-Bit Parallel Subtractor
 {: .no_toc }
 
-The subtraction can be carried out by taking the 1's or 2's complement of the number to be subtracted. 
-For example we can perform the subtraction (A-B) by adding either 1's or 2's complement of B to A. 
-That means we can use a binary adder to perform the binary subtraction.
+The subtraction of binary numbers can be done by using 1's/2's complement on the numbers which should be subtracted. For an example: We can subtract ( B - A ) by adding the 1's/2's complement of A to B. 
+Therfore, we can use the Binary Adder to perform Binary Subration
 
 
 ## 4 Bit Parallel Subtractor
-The number to be subtracted (B) is first passed through inverters to obtain its 1's complement. 
-The 4-bit adder then adds A and 2's complement of B to produce the subtraction. 
-S3 S2 S1 S0 represents the result of binary subtraction (A-B) and carry output Cout represents the polarity of the result. 
-If A > B then Cout = 0 and the result of binary form (A-B) then Cout = 1 and the result is in the 2's complement form.
+Firstly the number to be subtracted, i.e., (A) is passed into inverters(finding the complement) to find its 1's complement. Then the 4-bit adder adds B and 2's complement of A to complete the subtraction. S0, S1, S2, S3 represent the OUTPUT of binary subtraction( B - A ), and the the polarity of the result is  represented by carry-output(C-out).
+If B > A then, C-out = 0, if the OUTPUT of binary forms ( B - A ) then C-out = 1, and the OUTPUT is in the form of 2's complement.
 
 
 ## Block Diagram
