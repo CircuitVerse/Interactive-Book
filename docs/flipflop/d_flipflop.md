@@ -6,11 +6,11 @@ nav_order: 2
 ---
 ## D Flip-Flop
 
-D flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, D latch operates with enable signal. That means, the output of D flip-flop is insensitive to the changes in the input, D except for active transition of the clock signal. The circuit diagram of D flip-flop is shown in the following figure.
+D Flip-flop operates only with positive or negative clock signals. Whereas,the D-latch operates with the enable signal. Which means, the output of D Flip-flop is not sensitive to the changes of the input , D except for the active transition of clock signal. Circuit diagram for D Flip-flop is given below:
 
 <div style="text-align:center"><img src="../../assets/images/d_flipflop.jpg" /></div>
 
-This circuit has single input D and two outputs Q(t) & Q(t)’. The operation of D flip-flop is similar to D Latch. But, this flip-flop affects the outputs only when positive transition of the clock signal is applied instead of active enable.
+The above circuit has a single input D and has two outputs Q(t) & Q(t)’. The operation of D Flip-flop is similar to that of D-Latch. But, this Flip-flop affects the output only when positive clock signal is used instead of active enable.
 
 
 ### State table of **D** flip-flop.
@@ -21,10 +21,10 @@ This circuit has single input D and two outputs Q(t) & Q(t)’. The operation of
 |  1     |    1    |
 
 
-Therefore, D flip-flop always Hold the information, which is available on data input, D of earlier positive transition of clock signal. From the above state table, we can directly write the next state equation as
+Hence, D Flip-flop holds the information of the data input of earlier positive clock signal. From the given state table, The next state equation can be written as:
 ```yaml
         Q(t + 1) = D
 ```
-Next state of D flip-flop is always equal to data input, D for every positive transition of the clock signal. Hence, D flip-flops can be used in registers, shift registers and some of the counters.
+Next state of D Flip-flop will be always equal to the data input for every positive clock signal. Therefore, D Flip-flops can be used in Registers, Shift registers, and some Counters.
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/12254" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
