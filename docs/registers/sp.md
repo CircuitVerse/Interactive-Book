@@ -13,13 +13,13 @@ nav_order: 2
 
 ## Introduction
  
-* In such types of operations, the data is entered serially and taken out in parallel fashion.
+* In Serial Input parrallel output as the name says- the data has a serial input, and the ouput is taken in a parallel fashion.
 
-* Data is loaded bit by bit. The outputs are disabled as long as the data is loading.
+* The binary-data is loaded in a bit by bit mannner. The output is disabled till the data is being loaded.
 
-* As soon as the data loading gets completed, all the flip-flops contain their required data, the outputs are enabled so that all the loaded data is made available over all the output lines at the same time.
+* Till the data gets loaded completly, all the Flip-flops will be contained with the required binary-data, the outputs are enabled, so all of the loaded data is accessible all over the lines of output, at the same time.
 
-* 4 clock cycles are required to load a four bit word. Hence the speed of operation of SIPO mode is same as that of SISO mode.
+* The 4 clock cycles are needed to load 4-bits of binary-data. Therfore, speed of the operation- Serial Input Parallel Output mode is same as Serial Input Serial Output mode.
 
 
 ## Block Diagram

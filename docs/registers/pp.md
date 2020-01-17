@@ -13,10 +13,10 @@ nav_order: 4
 
 ## Introduction
  
-In this mode, the 4 bit binary input B0, B1, B2, B3 is applied to the data inputs D0, D1, D2, D3 respectively of the four flip-flops. 
-As soon as a negative clock edge is applied, the input binary bits will be loaded into the flip-flops simultaneously. 
-The loaded bits will appear simultaneously to the output side. 
-Only clock pulse is essential to load all the bits.
+In this mode, the 4-bit binary input B0, B1, B2, B3 is applied to the binary-data inputs D0, D1, D2, D3 respectively of the 4 Flip-flops. 
+When a negative edge of the clock is applied, then the Flip-flops will get loaded with the input binary bits simultaneously. 
+The output side will get appeared with the loaded bits simultaneously.  
+Only the clock pulse is important to load all the biary bits.
 
 
 

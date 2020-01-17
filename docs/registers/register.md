@@ -9,13 +9,14 @@ permalink: /docs/register
 # Digital Registers
 {: .no_toc }
 
-Flip-flop is a 1 bit memory cell which can be used for storing the digital data. 
-To increase the storage capacity in terms of number of bits, we have to use a group of flip-flop. Such a group of flip-flop is known as a Register. 
-The n-bit register will consist of n number of flip-flop and it is capable of storing an n-bit word.
+A register consists of a group of binary-cells which can be used to hold binary data, and Flip-flops can be used as the binary-cells.
+One Flip-flop has a capacity to store 1 bit of biary data.
+We can increase the the memory capacity of registers by using a group of Flip-flops.
+An n-bit register can be formed by cascading 'n' number of Flip-flops, which can store 'n' bits of data.
 
-The binary data in a register can be moved within the register from one flip-flop to another. 
-The registers that allow such data transfers are called as shift registers. 
-There are four mode of operations of a shift register.
+The binary-data which is in the register can be transfered within itself from one Flip-flop to another. 
+A shift register is a type of register that allows such data transfers.
+Shift register has 4 modes of operations:
 
 
 

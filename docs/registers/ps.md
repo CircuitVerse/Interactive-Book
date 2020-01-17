@@ -13,18 +13,18 @@ nav_order: 3
 
 ## Introduction
  
-* Data bits are entered in parallel fashion.
+* The binary data is entered in a parallel fashion.
 
-* The circuit shown below is a four bit parallel input serial output register.
+* The below circuit is an 4-bit Parallel Input Serial Output register.
 
-* Output of previous Flip Flop is connected to the input of the next one via a combinational circuit.
+* Through a Combinational circuit the previous Flip-flop's output is being connected to the next Flip-flop's input. 
 
-* The binary input word B0, B1, B2, B3 is applied though the same combinational circuit.
+* The binary input data B0, B1, B2, B3 is applied through the same Combinational circuit.
 
-* There are two modes in which this circuit can work namely - shift mode or load mode.
+* The 2 modes from which the circuit can work are- Shift mode/Load mode.
 
 ## Load mode
-When the shift/load bar line is low (0), the AND gate 2, 4 and 6 become active they will pass B1, B2, B3 bits to the corresponding flip-flops. 
+When the Shift/Load bar line is 0, the AND gate 2, 4 and 6 become active they will pass B1, B2, B3 bits to the corresponding flip-flops. 
 On the low going edge of clock, the binary input B0, B1, B2, B3 will get loaded into the corresponding flip-flops. 
 Thus parallel loading takes place.
 
