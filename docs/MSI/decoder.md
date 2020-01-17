@@ -8,10 +8,10 @@ nav_order: 3
 # Multiplexers
 {: .no_toc }
 
-A decoder is a combinational circuit. 
-It has n input and to a maximum m = 2n outputs. 
-Decoder is identical to a demultiplexer without any data input. 
-It performs operations which are exactly opposite to those of an encoder.
+A Decoder is a Combinational-circuit. 
+It has n number of inputs and to a maximum of m = 2n number of outputs. 
+Decoder is identical to demultiplexer without any input data. 
+Decoder's operation is exactly opposite to that of an encoder.
 
 
 ## Block Diagram
@@ -29,10 +29,10 @@ It performs operations which are exactly opposite to those of an encoder.
 ## 2 to 4 Line Decoder
 {: .no_toc }
 
-The block diagram of 2 to 4 line decoder is shown in the fig. 
-A and B are the two inputs where D through D are the four outputs. 
-Truth table explains the operations of a decoder. 
-It shows that each output is 1 for only a specific combination of inputs.
+Block diagram of an 2-4 line decoder is shown in the figure below. 
+A and B are the two input lines where D0-D3 are the four output lines. 
+The Truth-table shows the operations of a Decoder. 
+The output is 1 for a combination of inputs according to the truth -table.
 
 ## Block Diagram
 {: .no_toc }

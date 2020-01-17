@@ -8,11 +8,11 @@ nav_order: 1
 # Multiplexers
 {: .no_toc }
 
-Multiplexer is a special type of combinational circuit. 
-There are n-data inputs, one output and m select inputs with 2m = n. 
-It is a digital circuit which selects one of the n data inputs and routes it to the output. 
-The selection of one of the n inputs is done by the selected inputs. Depending on the digital code applied at the selected inputs, one out of n data sources is selected and transmitted to the single output Y. 
-E is called the strobe or enable input which is useful for the cascading. It is generally an active low terminal that means it will perform the required operation when it is low.
+The multiplexer(or mux) is a unique type of Combinational-circuit. 
+It consists of n number of data inputs, 1 output and m number of selected inputs with, 2m = n. 
+This is a digital circuit, which selects 1 input, and it is routed to the output from n data inputs. 
+The selected inputs selects of one from n data inputs. 1 out of n data sources, is first selected and then transmitted to Y which is the single output. 
+E is called strobe/the enable input, which is helpful for cascading. This will perform the desired operation, when it is low/an active low terminal.
 
 
 ## Block Diagram
@@ -24,10 +24,10 @@ E is called the strobe or enable input which is useful for the cascading. It is 
 
 ## Multiplexers come in multiple variations
    
-* 2 : 1 multiplexer
-* 4 : 1 multiplexer
-* 16 : 1 multiplexer
-* 32 : 1 multiplexer
+* 2 : 1 multiplexer.
+* 4 : 1 multiplexer.
+* 16 : 1 multiplexer.
+* 32 : 1 multiplexer.
 
 ## Truth Table
 {: .no_toc }

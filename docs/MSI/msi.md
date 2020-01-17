@@ -9,17 +9,16 @@ permalink: /docs/msi
 {: .no_toc }
 
 
-Digital systems obtain binary-coded data and information that are continuously being operated on in some manner. 
-Some of the operations include:
+The binary coded data, and the information in digital systems are operated continuously by some operation. 
+Some operations include:
 
-1. Multiplexing
-2. Demultiplexing
-3. Decoding and Encoding
+1. Multiplexing.
+2. Demultiplexing.
+3. Decoding and Encoding.
 
-All of these operations and others have been facilitated by the availability of numerous ICs in the MSI
-(medium-scale-integration) category.
-In this module, we will study many of the common types of MSI devices. 
-For each type, we will start with a brief discussion of its basic operating principle and then introduce specific ICs. 
-We then show how they can be used alone or in combination with other ICs in various applications.
+These operations and also many other operations are faciliated(helped) by the availability of many ICs in the MSI(Medium-Scale-Integration) category.
+Now in this module, Let's study some commonly used types of MSI devices. 
+In each type, firstly a brief discussion of the basic operating principles will be given, then followed by the introductin of some specific ICs.
+Then we will learn how these are used alone/By combining them with other ICs for different applications.
 
 

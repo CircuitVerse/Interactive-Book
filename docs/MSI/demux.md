@@ -8,17 +8,17 @@ nav_order: 2
 # Demultiplexers
 {: .no_toc }
 
-A demultiplexer performs the reverse operation of a multiplexer i.e. it receives one input and distributes it over several outputs. 
-It has only one input, n outputs, m select input. 
-At a time only one output line is selected by the select lines and the input is transmitted to the selected output line. 
-A de-multiplexer is equivalent to a single pole multiple way switch as shown in fig.
+A Demultiplexer(demux) performs the reverse task of a multiplexer, i.e., it receives 1 input, and distributes it to many outputs.  
+It has 1 input, n number of outputs, and m select inputs. 
+At a particular time the select lines, selects only 1 output line, then the input is sent to the output line which is selected. 
+The demultiplexer is equivalent to the single-pole-multiple-way-switch, as shown in the below figure.
 
 ## Demultiplexers in multiple variations.
 
-* 1 : 2  demultiplexer
-* 1 : 4  demultiplexer
-* 1 : 16 demultiplexer
-* 1 : 32 demultiplexer
+* 1 : 2  demultiplexer.
+* 1 : 4  demultiplexer.
+* 1 : 16 demultiplexer.
+* 1 : 32 demultiplexer.
 
 
 ## Block Diagram
