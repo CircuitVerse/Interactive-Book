@@ -255,7 +255,6 @@ function decode()
             subject_text = subject_text + "</ul>";
         }
         document.getElementById("subjects").innerHTML = subject_text;
-        document.getElementById("subjects").style.height = "auto";
     }
 }
 
