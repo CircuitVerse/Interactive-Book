@@ -108,15 +108,16 @@ hr {
   background-color: $border-color;
   border: 0;
 }
+
 select, option {
-  color: black;
+  color: #000000;
 }
 
 input {
-   color: black;
+  color: #000000;
  }
 
- .breadcrumb-nav-list {
-   margin-left:100px;
+.breadcrumb-nav-list {
+   margin-left: 100px;
    margin-top: -20px;
- } 
+ }
