@@ -8,16 +8,16 @@ nav_order: 2
 # Full Adder
 {: .no_toc }
 
-Full adder is developed to overcome the drawback of Half Adder circuit. 
+Full adder is a combinational ciruit which is developed to overcome the drawbacks of Half Adder circuit. 
 It can add two one-bit numbers A and B, and carry c. 
-The full adder is a three input and two output combinational circuit.
+The full adder is a three input ( A, B and Cin ) and two output ( Sum and Carry ) combinational circuit.
 
 
 
 ## Block Diagram
 {: .no_toc }
 
-<div style="text-align:center"><img src="../../assets/images/fulladder_blockdiagram.jpg" /></div>
+<div style="text-align:center"><img src="../../assets/images/fulladder_blockdiagram.png" /></div>
 
 
 ## Truth Table

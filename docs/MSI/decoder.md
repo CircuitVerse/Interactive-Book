@@ -5,19 +5,18 @@ parent: MSI Components
 nav_order: 3
 ---
 
-# Multiplexers
+# Decoder
 {: .no_toc }
 
-A decoder is a combinational circuit. 
-It has n input and to a maximum m = 2n outputs. 
+A decoder is a multi-input, multi-output logic circuit which decodes n inputs 2n possible outputs.
 Decoder is identical to a demultiplexer without any data input. 
-It performs operations which are exactly opposite to those of an encoder.
+The operation of a decoder is exactly opposite to that of encoder.
 
 
 ## Block Diagram
 {: .no_toc }
 
-<div style="text-align:center"><img src="../../assets/images/decoder_blockdiagram.jpg" /></div>
+<div style="text-align:center"><img src="../../assets/images/decoder_blockdiagram.png" /></div>
 
 ### Examples of Decoders are following.
    
@@ -29,15 +28,15 @@ It performs operations which are exactly opposite to those of an encoder.
 ## 2 to 4 Line Decoder
 {: .no_toc }
 
-The block diagram of 2 to 4 line decoder is shown in the fig. 
+The block diagram of 2 to 4 line decoder is shown in the fig below. 
 A and B are the two inputs where D through D are the four outputs. 
-Truth table explains the operations of a decoder. 
-It shows that each output is 1 for only a specific combination of inputs.
+Truth table which is given below will explain the operations of a decoder. 
+It shows that each output is 1 only for a specific combination of inputs.
 
 ## Block Diagram
 {: .no_toc }
 
-<div style="text-align:center"><img src="../../assets/images/two_fourdecoder_blockdiagram.jpg" /></div>
+<div style="text-align:center"><img src="../../assets/images/two_fourdecoder_blockdiagram.png" /></div>
 
 ## Truth Table
 
