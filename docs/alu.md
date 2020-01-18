@@ -20,12 +20,12 @@ nav_order: 9
 
 
 ## Introduction
-An arithmetic logic unit (ALU) is a digital circuit used to perform arithmetic and logic operations. It represents the fundamental building block of the central processing unit (CPU) of a computer. Modern CPUs contain very powerful and complex ALUs. In addition to ALUs, modern CPUs contain a control unit (CU).
+An arithmetic logic unit (ALU) is a digital circuit which is utilised to perform arithmetic and logic operations. It represents the principle building block of the central processing unit (CPU) of a computer. Present-day CPUs contain very powerful and complex ALUs. In addition to ALUs, present-day CPUs contain a control unit (CU).
 
-The purpose of the ALU is to perform mathematical operations such as addition, subtraction, multiplication and division. Additionally, the ALU processes basic logical operations like AND/OR calculations. Also known as the arithmetic logic unit, it serves as the computational hub of the Central Processing Unit (CPU) for a computer system
+ALU is used to perform mathematical operations such as addition ( + ), subtraction ( - ), multiplication ( * ) and division ( / ) and basic logical operations like AND/OR calculations. It serves as the computational hub of the Central Processing Unit (CPU) for a computer system.
 
 ## In Detail
-So with the above building blocks i.e. half adder and full adder discussed in Combinational Analysis, lets construct a simple ALU that performs a arithmetic operation (1 bit addition)and does 3 logical operations namely AND, NOR and XOR as shown below. The multiplexer selects only one operation at a time. The operation selected depends on the selection lines of the multiplexer as shown in the truth table.
+With the half adder and full adder discussed in Combinational Analysis, lets construct a simple ALU that performs  arithmetic operation (1 bit addition)and does 3 logical operations namely AND, NOR and XOR as shown below. The multiplexer chooses just a single activity at once. The activity chose relies upon the selection lines of the multiplexer as shown in the below truth table.
 
 <div style="text-align:center" ><img src="../assets/images/1bitALU.jpg" /></div>
 
@@ -40,11 +40,11 @@ Output = Operation**
 |1	|1	|XOR|
 
 
-Now we can take up the 1 bit ALU as block and construct a 4 bit ALU, which performs all the functions of the 1 bit ALU on the 4 bit inputs. Thus a single building block can be constructed and used recursively. The inputs A and B are four bits and the output is 4 bit as well. Figure below illustrates it:
+Presently we can take up the 1 piece ALU as a block and develop a 4 piece ALU, which performs all the functions of the 1 bit ALU on the 4 bit inputs. In this way, a single building block can be constructed and utilised recursively. The inputs A and B are four bits and the output is four bit as well. Figure below illustrates it:
 
 <div style="text-align:center" ><img src="../assets/images/360px-4BITALU.jpg" /></div>
 
-There are a few important takeaways here:
+There are a couple of significant takeaways here:
 * The selection lines MO and M1 select the function ALU performs. These selection lines combined with the input arguments and desired functions a Instruction Set can be formed.
 * These Instructions can used to create meaningful programs. Since these are required to be easily available they can be stored on ROM unit.
 * The input arguments A and B are often stored in Internal Registers. These along with other special purpose register form the registers of the microcontroller.
@@ -53,7 +53,7 @@ There are a few important takeaways here:
 * If a Micro controller would be constructed only from ALU, RAM, ROM there would not be any external interface. Hence we have Input/Output IO ports.
 * Additional features such as 'Interrupts, communication protocols, EEPROM, Timers/Counters, Debug interfaces etc are incorporated to make a controller complete.
 
-In above discussion we might have left out intricate details involved in a ALU, CPU design. But the aim was to understand ALU/CPU at a deeper level.
+In above discussion we may have forgotten about the intricate details involved in a ALU, CPU design. Yet, the point was to comprehend ALU/CPU at a deeper level. 
 
 
 {% include disqus.html %}
