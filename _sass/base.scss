@@ -108,3 +108,11 @@ hr {
   background-color: $border-color;
   border: 0;
 }
+
+select, option {
+  color: $black;
+}
+
+input {
+  color: $black;
+}
