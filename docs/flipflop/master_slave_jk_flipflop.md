@@ -11,8 +11,8 @@ JK master slave flip flop are two SR flip flops joined together in a series conf
 
 <div style="text-align:center"><img src="../../assets/images/Master_Slave_JK_flipflop.png" /></div>
 
-This circuit has two inputs J & K and two outputs Q(t) & Q(t)’. The operation of JK flip-flop is similar to SR flip-flop. 
-### State table of **SR** flip-flop.
+This circuit has two inputs J & K and two outputs Q(t) & Q(t)’. The operation of JK master slave flip-flop is similar to SR flip-flop. 
+### State table of **JK master slave** flip-flop.
 
 | J      |    K    |        CLK        |   Q(t+1) |    Inference   |
 |:-------|:--------|:------------------|:---------|:---------------|
@@ -21,9 +21,9 @@ This circuit has two inputs J & K and two outputs Q(t) & Q(t)’. The operation 
 |  1     |    0    |  Positive Pulse   |    1     |     Set        |
 |  1     |    1    |  Positive Pulse   |  Q(t)’   |     Toggle     |
 
-Here, Q(t) & Q(t + 1) are present state & next state respectively. So, JK flip-flop can be used for one of these four functions such as Hold, Reset, Set & Complement of present state based on the input conditions, when positive transition of clock signal is applied.
+Here, Q(t) & Q(t + 1) are present state & next state respectively. So, JK master slave flip-flop can be used for one of these four functions such as Hold, Reset, Set & Complement of present state based on the input conditions, when positive transition of clock signal is applied.
 
-### Characteristic table of SR flip-flop.
+### Characteristic table of JK master slave flip-flop.
 
 
 | J      |    K    |   Q(t) |   Q(t+1) |
@@ -37,6 +37,7 @@ Here, Q(t) & Q(t + 1) are present state & next state respectively. So, JK flip-f
 |1	|1	|0	|1|
 |1	|1	|1	|0|
 
+From the above characteristic table, we can directly write the next state equation as
 ```yaml
           Q(t+1)=J*Q’(t)+K’*Q(t) 
 ```
