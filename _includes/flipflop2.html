@@ -336,9 +336,9 @@
 					}
 			 		if (input['flipflop'] == "JK")
 			                  $("#stateTable").append("<br>The next state of the JK flip-flop is decided by the following points: <br>1. When <strong>J</strong> and <strong>K</strong> are equal to 0, it means the memory state that is the next state will be equal to the present state. <br>2. When <strong>J</strong> and <strong>K</strong> are equal to 1, it means toggling that is the next state will be equal to the complement of the present state.");
-				        else if (input['flipflop'] == "RS")
+				        else if (input['flipflop'] == "D")
 					  $("#stateTable").append("<br>The next state of the D flip-flop is equal to the input <strong>D</strong>.");
-					else if (input['flipflop'] == "D") {
+					else if (input['flipflop'] == "RS") {
 					  $("#stateTable").append("<br>In the state table above, you can see something like this <strong>?</strong>. It means that the next state cannot be determined ( INDETERMINATE ).");
 					  $("#stateTable").append("<br>The next state of the RS flip-flop is decided by the following points: <br>1. When both <strong>R</strong> and <strong>S</strong> are equal to 0, the next state will be equal to the present state ( NO CHANGE ).");
 		                          $("#stateTable").append("<br>2. When  <strong>R</strong> is equal to 1 and <strong>S</strong> is equal to 0, the next state will be equal to the 0 ( RESET ).<br>3. When  <strong>R</strong> is equal to 0 and <strong>S</strong> is equal to 1, the next state will be equal to the 1 ( SET ).");
