@@ -65,7 +65,7 @@ It is just like counting in decimal except we reach 10 much sooner.
 
 | Binary     | Explanation   |
 |:----------:|:-------------:|
-| 0          | We start a    |
+| 0          | We start at 0    |
 | 1          | Then 1        |
 | **1**0     | Now start back at 0 again, **but add 1 on the left**|
 | 11         | 1 more        |
