@@ -335,7 +335,7 @@
 				          $("#stateTable").append("<br><strong>B</strong>: Present State of flip-flop B.<br><strong>B*</strong>: Next State of flip-flop B.");
 					}
 			 		if (input['flipflop'] == "JK")
-			                  $("#stateTable").append("<br>The next state of the JK flip-flop is decided by the following points: <br>1. When <strong>J</strong> and <strong>K</strong> are equal to 0, it means the memory state that is the next state will be equal to the present state. <br>2. When <strong>J</strong> and <strong>K</strong> are equal to 1, it means toggling that is the next state will be equal to the complement of the present state.");
+			                  $("#stateTable").append("<br>The next state of the JK flip-flop is decided by the following points: <br>1. When <strong>J</strong> and <strong>K</strong> are equal to 0, it means the memory state that is the next state will be equal to the present state. <br>2. When <strong>J</strong> and <strong>K</strong> are equal to 1, the next state will be equal to the complement of the present state.");
 				        else if (input['flipflop'] == "D")
 					  $("#stateTable").append("<br>The next state of the D flip-flop is equal to the input <strong>D</strong>.");
 					else if (input['flipflop'] == "RS") {
@@ -346,7 +346,7 @@
 				        }
 					else if (input['flipflop'] == "T") {
 					  $("#stateTable").append("<br>T flip-flop is the simplified version of JK flip-flop where <strong>J</strong> and <strong>K</strong> are equal to the input <strong>T</strong>. So the state table generation of the T flip-flop is similar to that of JK flip-flop.");
-                                          $("#stateTable").append("<br>The next state of the T flip-flop is decided by the following points: <br>1. When <strong>T</strong> is equal to 0, it means the memory state ( since both <strong>J</strong> and <strong>K</strong> are equal to 0 ) that is the next state will be equal to the present state. <br>2. When <strong>T</strong> is equal to 1, it means toggling ( since both <strong>J</strong> and <strong>K</strong> are equal to 1 ) that is the next state will be equal to the complement of the present state.");
+                                          $("#stateTable").append("<br>The next state of the T flip-flop is decided by the following points: <br>1. When <strong>T</strong> is equal to 0, it means the memory state ( since both <strong>J</strong> and <strong>K</strong> are equal to 0 ) that is the next state will be equal to the present state. <br>2. When <strong>T</strong> is equal to 1, the next state will be equal to the complement of the present state.");
 					}
 				});
 
