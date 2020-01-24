@@ -20,3 +20,4 @@ permalink: /references
 10. https://www.geeksforgeeks.org/digital-logic-latches/
 11. https://www.geeksforgeeks.org/flip-flop-types-and-their-conversion/
 
+{% include disqus.html %}
