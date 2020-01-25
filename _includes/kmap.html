@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=240" />
     <script src="../assets/js/module.js"></script>
     <script language="JavaScript" type="text/javascript">
+        $(".main-content-wrap").attr('id', 'scrollcount');
         var karnaugh = -1;
         var qmc = -1;
         function run() {
@@ -35,6 +36,8 @@
     </script>
     <style type="text/css">
         .qmcMathFont{font-family:"Times New Roman",Georgia,Serif;font-size:30px}
+        #myKarnaughMap_KarnaughMap{background: #fff;}
+        #myKarnaughMap{color: grey;}
     </style>
 </head>
 <body onload="run();">
