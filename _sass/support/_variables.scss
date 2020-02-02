@@ -81,6 +81,7 @@ $media-queries: (
 $spacing-unit: 1rem; // 1rem == 16px
 
 $spacers: (
+  sp: $spacing-unit * -1,
   sp-0: 0,
   sp-1: $spacing-unit * 0.25,
   sp-2: $spacing-unit * 0.5,
@@ -94,6 +95,7 @@ $spacers: (
   sp-10: $spacing-unit * 4
 ) !default;
 
+$sp: map-get($spacers, sp) !default;
 $sp-1: map-get($spacers, sp-1) !default; // 0.25 rem == 4px
 $sp-2: map-get($spacers, sp-2) !default; // 0.5  rem == 8px
 $sp-3: map-get($spacers, sp-3) !default; // 0.75 rem == 12px
