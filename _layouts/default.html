@@ -79,7 +79,7 @@
         </div>
         {% unless page.url == "/" %}
           {% if page.parent %}
-            <nav class="breadcrumb-nav">
+            <nav id="breadcrumb-nav" class="breadcrumb-nav">
               <ol class="breadcrumb-nav-list">
                 {% if page.grand_parent %}
                   <li class="breadcrumb-nav-list-item"><a href="{{ first_level_url }}">{{ page.grand_parent }}</a></li>
@@ -119,6 +119,7 @@
     $('#sidebar').toggleClass('active');
     $('#main-content').toggleClass('moved');
     $('#headerid').toggleClass('moved');
+    $('#breadcrumb-nav').toggleClass('moved');
     $('#sidebarCollapse').toggleClass('moved');
     $('#sidebarCollapse').toggleClass('colored');
   });
