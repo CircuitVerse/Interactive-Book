@@ -6,14 +6,26 @@
 <body>
 
 <div class="page-wrap">
-    <div class="side-bar">
-        <a href="{{ site.url }}{{ site.baseurl }}" class="site-title fs-6 lh-tight">{{ site.title }}</a>
+    <div class="active colored side-bar" id="sidebar2">
+        <span class="site-title pr-3">
+            <button type="button" id="sidebarCollapse2" class="sidebar-collapse v-align-top btn btn-info new mr-0 px-2 py-0 mt-1">
+            <i class="fas fa-angle-right"></i>
+            </button>
+        </span>
+    </div class>
+    <div class="side-bar" id="sidebar">
+        <span class="site-title">
+            <a href="{{ site.url }}{{ site.baseurl }}" class="d-inline-block fs-6 lh-tight">{{ site.title }}</a>
+            <button type="button" id="sidebarCollapse" class="sidebar-collapse v-align-top btn btn-info new px-2 py-0 mt-1">
+                <i class="fas fa-angle-left"></i>
+            </button>
+            </span>
+        </span>
         <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
         <div class="navigation main-nav js-main-nav">
             {% include nav.html %}
         </div>
-        <footer role="contentinfo" class="site-footer">
-        </footer>
+        <footer role="contentinfo" class="site-footer"></footer>
     </div>
     <div class="main-content-wrap js-main-content" tabindex="0" id="scrollcount">
         <div class="page-header">

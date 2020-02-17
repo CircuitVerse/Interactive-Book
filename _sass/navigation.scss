@@ -18,6 +18,12 @@
     border-bottom: $border $border-color;
   }
 }
+
+#sidebar2 .site-title {
+  border-bottom: 0;
+} 
+
+
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -163,3 +169,29 @@
     }
   }
 }
+
+@media only screen and (max-width: 739px) {
+  .sidebar-collapse {
+    display: none !important;
+  }
+
+  #sidebar2 {
+    display: none !important;
+  }
+
+  #sidebar {
+    display: flex !important;
+  }
+
+  #headerid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.sidebar-collapse.new {
+  background-color: $link-color;
+  color: $white;
+  float: right;
+}
+
