@@ -27,6 +27,8 @@
 
 .connector{
   margin-right: 5%;
+  height: 12px;
+  width: 12px;
 
 }
 
@@ -129,7 +131,7 @@
 // Breadcrumb nav
 .breadcrumb-nav {
   @include mq(md) {
-    margin-top: -$sp-4;
+    margin-top: -$sp;
   }
 }
 
