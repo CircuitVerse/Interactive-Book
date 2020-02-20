@@ -14,7 +14,7 @@
 #clipboard img	{padding: 2px; float:none}
 
 @media screen and (max-width: 849px) {
-    #clipboard	{display: none}
+.clipboard_div {padding-top: 10%;margin: 5%;}
 }
 @media screen and (max-width: 499px) {
     p			{display: none}
@@ -114,7 +114,7 @@ function disableSelection(target)
 <img src="../assets/images/NOR_gate.png" alt="NOR" class="tile">
 <img src="../assets/images/EOR_gate.png" alt="EOR" class="tile">
 <img src="../assets/images/XNOR_gate.png" alt="NXOR" class="tile">
-<div id="clipboard"></div>
+<div class="clipboard_div"><div id="clipboard"></div></div>
 <p style="clear:left">You can also click/tap a symbol to copy it and then click/tap to paste it into the box. </p>
 <div style="display: inline-block">
     <div class="circuit">
