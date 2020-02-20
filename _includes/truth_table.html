@@ -8,7 +8,7 @@
             NOT = <span class="example">A'</span><br>
             NAND = <span class="example">(AB)'</span>
             NOR = <span class="example">(A+B)'</span></p>
-        <input autofocus id="expression" oninput="build()" placeholder="Example: (AB)'C+D" type="text">
+        <input autofocus class="input-text" id="expression" oninput="build()" placeholder="Example: (AB)'C+D" type="text">
         <noscript>
             <p>This app requires JavaScript to run. Please enable JavaScript and refresh this page.</p>
         </noscript>
@@ -23,7 +23,6 @@
 <style>
 
     * {
-        font-family: Roboto, sans-serif;
         font-style: normal;
         text-transform: none;
         font-weight: normal;
@@ -39,7 +38,7 @@
         margin: 0;
     }
 
-    input {
+    .input-text {
         width: 500px;
         box-sizing: border-box;
         -moz-box-sizing: border-box;
