@@ -205,6 +205,7 @@
 								ioFunctions += "<input type='text' style='width:150px' class='form-control' id='S" + alph + "' placeholder='R" + alph + "' required>&nbsp;";
 								ioFunctions += "<input type='text' style='width:150px' class='form-control' id='R" + alph + "' placeholder='S" + alph + "' required>&nbsp;";
 							  if (flipflopCount === 1)
+							     if(inputCount === 2)
 						                $("#step2").append("<strong>Hints</strong>: <br>Next state input for S (SA) = x <br>Next state input for R (RA) = y");
 							}
 						} else if (input['flipflop'] == "D") {
