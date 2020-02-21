@@ -6,7 +6,7 @@
 <body>
 
 <div class="page-wrap">
-    <div class="side-bar">
+    <div class="side-bar" id="sidebar">
         <a href="{{ site.url }}{{ site.baseurl }}" class="site-title fs-6 lh-tight">{{ site.title }}</a>
         <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
         <div class="navigation main-nav js-main-nav">
@@ -68,6 +68,16 @@
             </div>
         </div>
         <div class="main-content">
+             <div id="content">
+             <nav class="navbar navbar-expand-lg navbar-light bg-light">
+             <div class="container-fluid">
+              <button type="button" id="sidebarCollapse" class="btn btn-info new">
+               <svg class="svg-inline--fa fa-align-left fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="align-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M288 44v40c0 8.837-7.163 16-16 16H16c-8.837 0-16-7.163-16-16V44c0-8.837 7.163-16 16-16h256c8.837 0 16 7.163 16 16zM0 172v40c0 8.837 7.163 16 16 16h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16zm16 312h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm256-200H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16h256c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fas fa-align-left"></i> -->
+               <span>Sidebar</span>
+              </button>
+            </div>
+            </nav>
+            </div>
             {% unless page.url == "/" %}
             {% if page.parent %}
             <nav class="breadcrumb-nav">
@@ -106,6 +116,16 @@
         </div>
     </div>
 </div>
+    <script>$(document).ready(function () {
+  $('#sidebarCollapse').on('click', function () {
+    $('#sidebar').toggleClass('active');
+    $('#main-content').toggleClass('moved');
+    $('#headerid').toggleClass('moved');
+    $('#sidebarCollapse').toggleClass('moved');
+    $('#sidebarCollapse').toggleClass('colored');
+      });});
+    </script>
+
 
 </body>
 </html>
