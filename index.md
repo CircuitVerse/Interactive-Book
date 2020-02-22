@@ -30,8 +30,4 @@ This reference has been prepared for the students pursing either Bachelors or Ma
 Before you start proceeding with this Book, I'm making an assumption that you are already aware of basic computer concepts like what is keyboard, mouse, monitor, input, output, primary memory, secondary memory, etc.
 A basic idea regarding the initial concepts of Digital Electronics is enough to understand the topics covered in this tutorial.
 
-## About the project
-Interactive-Book is &copy; 2019 by [Aman Singla](http://github.com/amansingla97).
-
-
 {% include disqus.html %}

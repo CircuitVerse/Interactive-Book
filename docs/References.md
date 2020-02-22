@@ -3,6 +3,7 @@ layout: default
 title:  References
 comments: true
 nav_order: 20
+permalink: /references
 ---
 
 # References
