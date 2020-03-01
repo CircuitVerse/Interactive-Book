@@ -54,9 +54,11 @@
                 if (isDarkMode == 0) {
                     cssFile.setAttribute('href', darkModeCssRef)
                     localStorage.setItem("userTheme", "1")
+                    toggleDarkMode.textContent="Light Mode"
                 } else if (isDarkMode == 1){
                     cssFile.setAttribute('href', originalCssRef)
                     localStorage.setItem("userTheme", "0")
+                    toggleDarkMode.textContent="Dark Mode"
                 }
               
 
