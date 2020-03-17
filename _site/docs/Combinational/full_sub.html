@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+    <title>Full Subtractors - CircuitVerse</title>
+
+
+    
+  
+
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-112678513-3', 'http://localhost:4000');
+      ga('send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+  
+
+  
+    <script type="text/javascript" src="http://localhost:4000/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script defer src="../assets/js/fontawesome-solid.js"></script>
+  <script defer src="../assets/js/fontawesome-main.js"></script>
+
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Full Subtractors | CircuitVerse</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Full Subtractors" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A Book to learn Digital Logic Design." />
+<meta property="og:description" content="A Book to learn Digital Logic Design." />
+<link rel="canonical" href="http://localhost:4000/docs/Combinational/full_sub.html" />
+<meta property="og:url" content="http://localhost:4000/docs/Combinational/full_sub.html" />
+<meta property="og:site_name" content="CircuitVerse" />
+<script type="application/ld+json">
+{"description":"A Book to learn Digital Logic Design.","headline":"Full Subtractors","@type":"WebPage","url":"http://localhost:4000/docs/Combinational/full_sub.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<script src="../assets/js/module.js"></script>
+<body>
+  <script src="\assets\js\vendor\jquery-3.4.1.min.js"></script>
+
+  <div class="page-wrap">
+    <div class="side-bar" id="sidebar">
+      <a href="https://circuitverse.org/" class="site-title fs-6 lh-tight">CircuitVerse</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+  <ul class="navigation-list">
+
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/" class="navigation-list-link">Home</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/binary.html" class="navigation-list-link">Binary Numbers</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/binary2.html" class="navigation-list-link">Operators in Binary</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/gates.html" class="navigation-list-link">Gates</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/gatesi.html" class="navigation-list-link">Interactive Gates</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/universal_gates.html" class="navigation-list-link">Universal Gates</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/application2.html" class="navigation-list-link">Basic Applications</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/bool.html" class="navigation-list-link">Boolean Algebra</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/bool2.html" class="navigation-list-link">Boolean Function</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/maps.html" class="navigation-list-link">K-Maps</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/kmapi.html" class="navigation-list-link">Interactive Karnaugh Map</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="#026e57" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="none">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item active">
+            
+            <a href="http://localhost:4000/docs/combinational" class="navigation-list-link">Combinational Logic</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/Combinational/half_adder.html" class="navigation-list-link">Half Adder</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/Combinational/full_adder.html" class="navigation-list-link">Full Adder</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/Combinational/half_sub.html" class="navigation-list-link">Half Subtractors</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item  active">
+                      
+                      <a href="http://localhost:4000/docs/Combinational/full_sub.html" class="navigation-list-link active">Full Subtractors</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/Combinational/N-Bit%20Parallel%20Adder%20&%20Subtractor.html" class="navigation-list-link">N-Bit Parallel Adder & Subtractor</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/alu.html" class="navigation-list-link">ALU</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/msi" class="navigation-list-link">MSI Components</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/MSI/mux.html" class="navigation-list-link">Multiplexers</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/MSI/demux.html" class="navigation-list-link">Demultiplexers</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/MSI/decoder.html" class="navigation-list-link">Decoder</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/MSI/encoder.html" class="navigation-list-link">Encoder</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/clock.html" class="navigation-list-link">Clock Signal and Triggering</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/sequential.html" class="navigation-list-link">Digital Sequential Circuits</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/latches.html" class="navigation-list-link">Latches</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/flipflop2.html" class="navigation-list-link">FLIPFLOP Interaction</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/flipflop" class="navigation-list-link">Flip-Flops</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/flipflop/sr_flipflop.html" class="navigation-list-link">SR Flip-Flop</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/flipflop/d_flipflop.html" class="navigation-list-link">D Flip-Flop</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/flipflop/jk_flipflop.html" class="navigation-list-link">JK Flip-Flop</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/flipflop/t_flipflop.html" class="navigation-list-link">T Flip-Flop</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/flipflop/masterslave_jk_flipflop.html" class="navigation-list-link">Master Slave JK Flip-Flop</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/jk_race_around_condition.html" class="navigation-list-link">Race around condition</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/register" class="navigation-list-link">Digital Registers</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/registers/ss.html" class="navigation-list-link">Serial Input Serial Output</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/registers/sp.html" class="navigation-list-link">Serial Input Parallel Output</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/registers/ps.html" class="navigation-list-link">Parallel Input Serial Output</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/registers/pp.html" class="navigation-list-link">Parallel Input Parallel Output</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/application.html" class="navigation-list-link">Application of Shift Registers</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/counter.html" class="navigation-list-link">Digital Counters</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/finitestatemachine.html" class="navigation-list-link">Finite State Machines</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/fsm_interactive.html" class="navigation-list-link">Interactive FSM</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/references" class="navigation-list-link">References</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/about" class="navigation-list-link">About</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+
+  </ul>
+</nav>
+
+      </div>
+      <footer role="contentinfo" class="site-footer">
+      </footer>
+    </div>
+    <div class="main-content-wrap js-main-content" tabindex="0">
+      <div class="page-header">
+        <div id="headerid" class="main-content">
+          
+          <div class="search js-search">
+            <div class="search-input-wrap">
+              <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search CircuitVerse" aria-label="Search CircuitVerse" autocomplete="off">
+              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+            </div>
+            <div class="js-search-results search-results-wrap"></div>
+          </div>
+          
+          
+          <ul class="list-style-none text-small mt-md-1 mb-md-1 pb-4 pb-md-0 js-aux-nav aux-nav">
+            <li class="d-inline-block my-0 mr-2 btn js-toggle-dark-mode"><a>Dark Mode</a></li>
+            <li class="d-inline-block my-0 mr-2 btn "><a href="https://github.com/CircuitVerse/Interactive-Book/tree/master/docs/Combinational/full_sub.md">Edit on Github</a></li>
+
+          </ul>
+          <script>
+            const toggleDarkMode = document.querySelector('.js-toggle-dark-mode')
+            const cssFile = document.querySelector('[rel="stylesheet"]')
+            const originalCssRef = cssFile.getAttribute('href')
+            const darkModeCssRef = originalCssRef.replace('just-the-docs.css', 'dark-mode-preview.css')
+            var isDarkMode = localStorage.getItem("userTheme")
+            if (isDarkMode == 0 || isDarkMode == null){
+              isDarkMode = 0
+              localStorage.setItem("userTheme", "0")
+              cssFile.setAttribute('href', originalCssRef)
+            }
+            else if(isDarkMode == 1){
+              cssFile.setAttribute('href', darkModeCssRef)
+            }
+
+            addEvent(toggleDarkMode, 'click', function(){
+              isDarkMode = localStorage.getItem("userTheme")
+                if (isDarkMode == 0) {
+                    cssFile.setAttribute('href', darkModeCssRef)
+                    localStorage.setItem("userTheme", "1")
+                } else if (isDarkMode == 1){
+                    cssFile.setAttribute('href', originalCssRef)
+                    localStorage.setItem("userTheme", "0")
+                }
+              
+
+            })
+          </script>
+          
+        </div>
+      </div>
+      <div id="mainhome" class="main-content">
+        <div id="content">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+              <button type="button" id="sidebarCollapse" class="btn btn-info new">
+                <i class="fas fa-align-left"></i>
+                <span>Sidebar</span>
+              </button>
+            </div>
+          </nav>
+        </div>
+        
+          
+            <nav id="breadcrumb-nav" class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><a href="http://localhost:4000/docs/combinational">Combinational Logic</a></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>Full Subtractors</span></li>
+              </ol>
+            </nav>
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <h1 class="no_toc" id="full-subtractors">Full Subtractors</h1>
+
+<p>The disadvantage of a half subtractor is overcome by full subtractor. 
+The full subtractor is a combinational circuit with three inputs A,B,C and two output D and C’. 
+A is the ‘minuend’, B is ‘subtrahend’, C is the ‘borrow’ produced by the previous stage, D is the difference output and C’ is the borrow output.</p>
+
+<h2 class="no_toc" id="truth-table">Truth Table</h2>
+
+<div style="text-align:center"><img src="../../assets/images/fullsubstrator_truthtable.jpg" /></div>
+
+<h2 class="no_toc" id="circuit-diagram">Circuit Diagram</h2>
+
+<div style="text-align:center"><img src="../../assets/images/fullsubstrator_circuitdiagram.jpg" /></div>
+
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/12119" id="projectPreview" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+
+<h2 id="full-subtractor-from-universal-gates">Full Subtractor From Universal Gates</h2>
+
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/45278" id="projectPreview" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+
+
+          
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+<script>$(document).ready(function () {
+  $('#sidebarCollapse').on('click', function () {
+    $('#sidebar').toggleClass('active');
+    $('#main-content').toggleClass('moved');
+    $('#headerid').toggleClass('moved');
+    $('#breadcrumb-nav').toggleClass('moved');
+    $('#sidebarCollapse').toggleClass('moved');
+    $('#sidebarCollapse').toggleClass('colored');
+  });
+});</script>
+</body>
+</html>

@@ -1,0 +1,1840 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+    <title>Digital Counters - CircuitVerse</title>
+
+
+    
+  
+
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-112678513-3', 'http://localhost:4000');
+      ga('send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+  
+
+  
+    <script type="text/javascript" src="http://localhost:4000/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script defer src="../assets/js/fontawesome-solid.js"></script>
+  <script defer src="../assets/js/fontawesome-main.js"></script>
+
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Digital Counters | CircuitVerse</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Digital Counters" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A Book to learn Digital Logic Design." />
+<meta property="og:description" content="A Book to learn Digital Logic Design." />
+<link rel="canonical" href="http://localhost:4000/docs/counter.html" />
+<meta property="og:url" content="http://localhost:4000/docs/counter.html" />
+<meta property="og:site_name" content="CircuitVerse" />
+<script type="application/ld+json">
+{"description":"A Book to learn Digital Logic Design.","headline":"Digital Counters","@type":"WebPage","url":"http://localhost:4000/docs/counter.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<script src="../assets/js/module.js"></script>
+<body>
+  <script src="\assets\js\vendor\jquery-3.4.1.min.js"></script>
+
+  <div class="page-wrap">
+    <div class="side-bar" id="sidebar">
+      <a href="https://circuitverse.org/" class="site-title fs-6 lh-tight">CircuitVerse</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+  <ul class="navigation-list">
+
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/" class="navigation-list-link">Home</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/binary.html" class="navigation-list-link">Binary Numbers</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/binary2.html" class="navigation-list-link">Operators in Binary</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/gates.html" class="navigation-list-link">Gates</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/gatesi.html" class="navigation-list-link">Interactive Gates</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/universal_gates.html" class="navigation-list-link">Universal Gates</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/application2.html" class="navigation-list-link">Basic Applications</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/bool.html" class="navigation-list-link">Boolean Algebra</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/bool2.html" class="navigation-list-link">Boolean Function</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/maps.html" class="navigation-list-link">K-Maps</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/kmapi.html" class="navigation-list-link">Interactive Karnaugh Map</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/combinational" class="navigation-list-link">Combinational Logic</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/Combinational/half_adder.html" class="navigation-list-link">Half Adder</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/Combinational/full_adder.html" class="navigation-list-link">Full Adder</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/Combinational/half_sub.html" class="navigation-list-link">Half Subtractors</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/Combinational/full_sub.html" class="navigation-list-link">Full Subtractors</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/Combinational/N-Bit%20Parallel%20Adder%20&%20Subtractor.html" class="navigation-list-link">N-Bit Parallel Adder & Subtractor</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/alu.html" class="navigation-list-link">ALU</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/msi" class="navigation-list-link">MSI Components</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/MSI/mux.html" class="navigation-list-link">Multiplexers</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/MSI/demux.html" class="navigation-list-link">Demultiplexers</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/MSI/decoder.html" class="navigation-list-link">Decoder</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/MSI/encoder.html" class="navigation-list-link">Encoder</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/clock.html" class="navigation-list-link">Clock Signal and Triggering</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/sequential.html" class="navigation-list-link">Digital Sequential Circuits</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/latches.html" class="navigation-list-link">Latches</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/flipflop2.html" class="navigation-list-link">FLIPFLOP Interaction</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/flipflop" class="navigation-list-link">Flip-Flops</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/flipflop/sr_flipflop.html" class="navigation-list-link">SR Flip-Flop</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/flipflop/d_flipflop.html" class="navigation-list-link">D Flip-Flop</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/flipflop/jk_flipflop.html" class="navigation-list-link">JK Flip-Flop</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/flipflop/t_flipflop.html" class="navigation-list-link">T Flip-Flop</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/flipflop/masterslave_jk_flipflop.html" class="navigation-list-link">Master Slave JK Flip-Flop</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/jk_race_around_condition.html" class="navigation-list-link">Race around condition</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/register" class="navigation-list-link">Digital Registers</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/registers/ss.html" class="navigation-list-link">Serial Input Serial Output</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/registers/sp.html" class="navigation-list-link">Serial Input Parallel Output</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/registers/ps.html" class="navigation-list-link">Parallel Input Serial Output</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/registers/pp.html" class="navigation-list-link">Parallel Input Parallel Output</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/application.html" class="navigation-list-link">Application of Shift Registers</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="#026e57" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="none">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item active">
+            
+            <a href="http://localhost:4000/docs/counter.html" class="navigation-list-link active">Digital Counters</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/finitestatemachine.html" class="navigation-list-link">Finite State Machines</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/fsm_interactive.html" class="navigation-list-link">Interactive FSM</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/references" class="navigation-list-link">References</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+      
+        
+        <div class="flex-container">
+        <div class="connector">
+
+          
+          <svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1">
+            <g id="CourseProfile" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+              <g id="CourseProfileLogedIN" transform="translate(-135.000000, -351.000000)" stroke="#979797">
+                <circle id="Oval-10" cx="140.5" cy="357" r="5">
+                </circle>
+              </g>
+            </g>
+          </svg>
+
+
+          
+
+        </div>
+        <div class="sub_heading">
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/about" class="navigation-list-link">About</a>
+            
+          </li>
+        </div>
+
+        </div>
+
+
+        
+      
+    
+
+  </ul>
+</nav>
+
+      </div>
+      <footer role="contentinfo" class="site-footer">
+      </footer>
+    </div>
+    <div class="main-content-wrap js-main-content" tabindex="0">
+      <div class="page-header">
+        <div id="headerid" class="main-content">
+          
+          <div class="search js-search">
+            <div class="search-input-wrap">
+              <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search CircuitVerse" aria-label="Search CircuitVerse" autocomplete="off">
+              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+            </div>
+            <div class="js-search-results search-results-wrap"></div>
+          </div>
+          
+          
+          <ul class="list-style-none text-small mt-md-1 mb-md-1 pb-4 pb-md-0 js-aux-nav aux-nav">
+            <li class="d-inline-block my-0 mr-2 btn js-toggle-dark-mode"><a>Dark Mode</a></li>
+            <li class="d-inline-block my-0 mr-2 btn "><a href="https://github.com/CircuitVerse/Interactive-Book/tree/master/docs/counter.md">Edit on Github</a></li>
+
+          </ul>
+          <script>
+            const toggleDarkMode = document.querySelector('.js-toggle-dark-mode')
+            const cssFile = document.querySelector('[rel="stylesheet"]')
+            const originalCssRef = cssFile.getAttribute('href')
+            const darkModeCssRef = originalCssRef.replace('just-the-docs.css', 'dark-mode-preview.css')
+            var isDarkMode = localStorage.getItem("userTheme")
+            if (isDarkMode == 0 || isDarkMode == null){
+              isDarkMode = 0
+              localStorage.setItem("userTheme", "0")
+              cssFile.setAttribute('href', originalCssRef)
+            }
+            else if(isDarkMode == 1){
+              cssFile.setAttribute('href', darkModeCssRef)
+            }
+
+            addEvent(toggleDarkMode, 'click', function(){
+              isDarkMode = localStorage.getItem("userTheme")
+                if (isDarkMode == 0) {
+                    cssFile.setAttribute('href', darkModeCssRef)
+                    localStorage.setItem("userTheme", "1")
+                } else if (isDarkMode == 1){
+                    cssFile.setAttribute('href', originalCssRef)
+                    localStorage.setItem("userTheme", "0")
+                }
+              
+
+            })
+          </script>
+          
+        </div>
+      </div>
+      <div id="mainhome" class="main-content">
+        <div id="content">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+              <button type="button" id="sidebarCollapse" class="btn btn-info new">
+                <i class="fas fa-align-left"></i>
+                <span>Sidebar</span>
+              </button>
+            </div>
+          </nav>
+        </div>
+        
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <h1 class="no_toc" id="digital-sequential-circuits">Digital Sequential Circuits</h1>
+
+<p>Counter is a sequential circuit. 
+A digital circuit which is used for a counting pulses is known counter. 
+Counter is the widest application of flip-flops. 
+It is a group of flip-flops with a clock signal applied. 
+Counters are of two types.</p>
+
+<h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
+
+<ol id="markdown-toc">
+  <li><a href="#asynchronous-or-ripple-counters" id="markdown-toc-asynchronous-or-ripple-counters">Asynchronous or ripple counters</a>    <ol>
+      <li><a href="#logical-diagram" id="markdown-toc-logical-diagram">Logical Diagram</a></li>
+      <li><a href="#types" id="markdown-toc-types">Types</a></li>
+      <li><a href="#operation" id="markdown-toc-operation">Operation</a></li>
+      <li><a href="#truth-table" id="markdown-toc-truth-table">Truth Table</a></li>
+    </ol>
+  </li>
+  <li><a href="#synchronous-counters" id="markdown-toc-synchronous-counters">Synchronous counters</a>    <ol>
+      <li><a href="#2-bit-synchronous-up-counter" id="markdown-toc-2-bit-synchronous-up-counter">2-bit Synchronous up counter</a></li>
+      <li><a href="#types-1" id="markdown-toc-types-1">Types</a></li>
+      <li><a href="#logical-diagram-1" id="markdown-toc-logical-diagram-1">Logical Diagram</a></li>
+      <li><a href="#operation-1" id="markdown-toc-operation-1">Operation</a></li>
+    </ol>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="asynchronous-or-ripple-counters">Asynchronous or ripple counters</h2>
+
+<p>The logic diagram of a 2-bit ripple up counter is shown in figure. 
+The toggle (T) flip-flop are being used. 
+But we can use the JK flip-flop also with J and K connected permanently to logic 1. 
+External clock is applied to the clock input of flip-flop A and QA output is applied to the clock input of the next flip-flop i.e. FF-B.</p>
+
+<h3 id="logical-diagram">Logical Diagram</h3>
+
+<div style="text-align:center"><img src="../assets/images/ripple_counter_diagram.jpg" /></div>
+
+<h3 id="types">Types</h3>
+<p>It is known as ripple counter because of the way the clock pulse ripples its way through the flip-flops. The flip-flop applied with external clock pulse act as LSB (Least Significant Bit) in the counting sequence.The flip-flop toggles the output either for every positive edge of clock signal or for negative edge of clock signal.</p>
+<ul>
+  <li><strong>2 bit ripple up counter:</strong> It contains two flip flops. A 2-bit ripple counter can count up to 4 states. It counts from 0 to 3.</li>
+</ul>
+
+<div style="text-align:center"><img src="../assets/images/2bit_up_counter.png" height="300" /></div>
+
+<p><br /></p>
+
+<ul>
+  <li><strong>2 bit ripple down counter:</strong> It contains two flip flops. A 2-bit ripple counter can count up to 4 states. It is known as down counter as it counts down from 3 to 0.</li>
+</ul>
+
+<div style="text-align:center"><img src="../assets/images/2bit_down_counter.png" height="300" /></div>
+
+<ul>
+  <li>
+    <p><strong>3 bit ripple up counter:</strong> It contains three flip flops. A 3-bit ripple counter can count up to 8 states. It counts from 0 to 7.</p>
+  </li>
+  <li>
+    <p><strong>3 bit ripple down counter:</strong> It contains three flip flops. A 3-bit ripple counter can count up to 8 states.It counts down from 7 to 0.</p>
+  </li>
+</ul>
+<div style="text-align:center"><img src="../assets/images/3bit_counter.png" height="300" /></div>
+
+<ul>
+  <li><strong>Decade or BCD counter :</strong>  A binary coded decimal (BCD) is a serial digital counter that counts ten digits. It counts from 0 to 9.When the clock pulse advances to 10 the ports QB and QD become high and thus NAND gate’s output will become low which will reset all the flip flops.</li>
+</ul>
+<div style="text-align:center"><img src="../assets/images/decade_counter.png" height="300" /></div>
+
+<h3 id="operation">Operation</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Condition</th>
+      <th style="text-align: left">Operation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><strong>Initially let both the FFs be in the reset state</strong></td>
+      <td style="text-align: left">QBQA = 00 initially.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>After 1st negative clock edge</strong></td>
+      <td style="text-align: left">As soon as the first negative clock edge is applied, FF-A will toggle and QA will be equal to 1.QA is connected to clock input of FF-B. Since QA has changed from 0 to 1, it is treated as the positive clock edge by FF-B. There is no change in QB because FF-B is a negative edge triggered FF.QBQA = 01 after the first clock pulse.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>After 2nd negative clock edge</strong></td>
+      <td style="text-align: left">On the arrival of second negative clock edge, FF-A toggles again and QA = 0.The change in QA acts as a negative clock edge for FF-B. So it will also toggle, and QB will be 1.QBQA = 10 after the second clock pulse.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>After 3rd negative clock edge</strong></td>
+      <td style="text-align: left">On the arrival of 3rd negative clock edge, FF-A toggles again and QA become 1 from 0.Since this is a positive going change, FF-B does not respond to it and remains inactive. So QB does not change and continues to be equal to 1.QBQA = 11 after the third clock pulse.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>After 4th negative clock edge</strong></td>
+      <td style="text-align: left">On the arrival of 4th negative clock edge, FF-A toggles again and QA becomes 1 from 0.This negative change in QA acts as clock pulse for FF-B. Hence it toggles to change QB from 1 to 0.QBQA = 00 after the fourth clock pulse.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="truth-table">Truth Table</h3>
+
+<div style="text-align:center"><img src="../assets/images/ripple_counter_truthtable.jpg" /></div>
+
+<h2 id="synchronous-counters">Synchronous counters</h2>
+
+<p>If the “clock” pulses are applied to all the flip-flops in a counter simultaneously, then such a counter is called as synchronous counter.</p>
+
+<h3 id="2-bit-synchronous-up-counter">2-bit Synchronous up counter</h3>
+
+<p>The JA and KA inputs of FF-A are tied to logic 1. So FF-A will work as a toggle flip-flop. The JB and KB inputs are connected to QA.</p>
+
+<h3 id="types-1">Types</h3>
+<ul>
+  <li><strong>4 bit synchronous up counter:</strong> In the up counter the 4 bit binary sequence starts from 0000 and increments up to 1111, i.e from 0 to 15.</li>
+</ul>
+
+<div style="text-align:center"><img src="../assets/images/4bit_up_counter.png" height="300" /></div>
+<p><br /></p>
+
+<ul>
+  <li><strong>4 bit synchronous down counter:</strong> Down counter counts the numbers in decreasing order i.e from 15 to 0.</li>
+</ul>
+
+<div style="text-align:center"><img src="../assets/images/4bit_down_counter.png" height="300" /></div>
+<p><br /></p>
+
+<ul>
+  <li><strong>4 bit synchronous up/down counter:</strong> This counter has two modes of counting i.e. up counting and down counting. There is a mode switch which switches between the two modes of the counter. When the mode M = 0 it counts up &amp; when mode M = 1 then it counts down.</li>
+</ul>
+
+<div style="text-align:center"><img src="../assets/images/4bit_up_down_counter.png" height="300" /></div>
+<p><br /></p>
+
+<ul>
+  <li><strong>4-Bit Synchronous Decade Counter:</strong> A BCD decade counter exhibits a truncated binary sequence and goes from 0000 through the
+1001 state. Rather than going from the 1001 state to the 1010 state, it recycles to the 0000 state.</li>
+</ul>
+
+<div style="text-align:center"><img src="../assets/images/4bit_decade_counter.png" height="300" /></div>
+<p><br /></p>
+
+<ul>
+  <li><strong>Ring Counter:</strong> The ring counter is a application of shift register, in which the output of last flip flop is connected to input of first flip flop. In ring counter if the output of any flip flop is 1, then the output of remaining flip flops is 0. The Ring counters transfers the same output throughout the circuit.</li>
+</ul>
+
+<div style="text-align:center"><img src="../assets/images/ring_counter.png" height="300" /></div>
+<p><br /></p>
+
+<ul>
+  <li><strong>Johnson’s Counter or Twisted Ring Counter:</strong> The Johnson counter is a modification of ring counter. In this the inverted output of the last stage flip flop is connected to the input of first flip flop. If we use n flip flops to design the Johnson counter, it is known as 2n bit Johnson counter or Mod 2n Johnson counter.</li>
+</ul>
+
+<div style="text-align:center"><img src="../assets/images/johnson's_counter.png" height="300" /></div>
+<p><br /></p>
+
+<h3 id="logical-diagram-1">Logical Diagram</h3>
+
+<div style="text-align:center"><img src="../assets/images/synchronous_counter_diagram.jpg" /></div>
+
+<h3 id="operation-1">Operation</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Condition</th>
+      <th style="text-align: center">Operation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><strong>Initially let both the FFs be in the reset state</strong></td>
+      <td style="text-align: center">QBQA = 00 initially.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>After 1st negative clock edge</strong></td>
+      <td style="text-align: center">As soon as the first negative clock edge is applied, FF-A will toggle and QA will change from 0 to 1.But at the instant of application of negative clock edge, QA , JB = KB = 0. Hence FF-B will not change its state. So QB will remain 0.QBQA = 01 after the first clock pulse.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>After 2nd negative clock edge</strong></td>
+      <td style="text-align: center">On the arrival of second negative clock edge, FF-A toggles again and QA changes from 1 to 0.But at this instant QA was 1. So JB = KB= 1 and FF-B will toggle. Hence QB changes from 0 to 1.QBQA = 10 after the second clock pulse.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>After 3rd negative clock edge</strong></td>
+      <td style="text-align: center">On application of the third falling clock edge, FF-A will toggle from 0 to 1 but there is no change of state for FF-B.QBQA = 11 after the third clock pulse.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>After 4th negative clock edge</strong></td>
+      <td style="text-align: center">On application of the next clock pulse, QA will change from 1 to 0 as QB will also change from 1 to 0.QBQA = 00 after the fourth clock pulse.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div id="disqus_thread" style="margin-top:100px"></div>
+<script>
+
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://interactive-book.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+          
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+<script>$(document).ready(function () {
+  $('#sidebarCollapse').on('click', function () {
+    $('#sidebar').toggleClass('active');
+    $('#main-content').toggleClass('moved');
+    $('#headerid').toggleClass('moved');
+    $('#breadcrumb-nav').toggleClass('moved');
+    $('#sidebarCollapse').toggleClass('moved');
+    $('#sidebarCollapse').toggleClass('colored');
+  });
+});</script>
+</body>
+</html>
