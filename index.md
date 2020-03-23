@@ -24,7 +24,7 @@ After completing this book, you will be able to implement the type of digital ci
 
 ## Audience
 
-This book is mainly prepared for the students who are intrested in the concepts of digital circuits and Computer Logical Organization. Digital circuits contain a set of Logic gates and these can be operated with binary values, 0 and 1.
+This book is mainly prepared for the students who are interested in the concepts of digital circuits and Computer Logical Organization. Digital circuits contain a set of Logic gates and these can be operated with binary values, 0 and 1.
 
 ### Prerequisites
 Before you start learning from this Book, I hope that you are have some basic knowledge about computer and how it works.
