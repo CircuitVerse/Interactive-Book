@@ -26,7 +26,7 @@ Logic gates can be categorized into 3 groups:
 2. Universal Gates: NAND, NOR
 3. Arithmetic Gates: X-OR, X-NOR
 
-## Truth Table
+<h2>Truth Table</h2>
 
 The Table which contains all logical possibilities is known as truth table.
 
