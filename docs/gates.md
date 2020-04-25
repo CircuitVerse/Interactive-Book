@@ -20,7 +20,7 @@ nav_order: 3
 ## Introduction
 
 
-It is a device which performs logic operations on one or more logical inputs, and produces a single logical output.
+Logic Gates are devices which perform logical operations on one or more inputs and produces a single output.
 Logic gates can be categorized into 3 groups:
 1. Basic Gates: NOT, AND, OR
 2. Universal Gates: NAND, NOR
@@ -32,7 +32,7 @@ The Table which contains all logical possibilities is known as truth table.
 
 ## NOT gate
 
-The NOT gate is also known as an inverter because it inverts the logic sense of a binary variable. It has one input and one output. The Truth table for NOT gate is given below
+The NOT gate is also known as an inverter because it produces the exact opposite of the input as output. It has one input and one output. The Truth table for NOT gate is given below
 
 | Input        | Output     |
 |:------------:|:------------:|
@@ -43,7 +43,7 @@ The NOT gate is also known as an inverter because it inverts the logic sense of 
 
 ## AND gate
 
-Basically, the AND gate's operation is similar to that of multiplication. It has two inputs and one output. The output is high (1) if both inputs are 1, and for all other cases, the output is low (0).
+The AND gate's operation is similar to that of multiplication. It has two inputs and one output. The output is high (1) if both inputs are 1, and for all other cases, the output is low (0).
 The Truth table for AND gate which consists of two inputs is given below
 
 | Input 1       | Input 2      | Output |
@@ -57,7 +57,7 @@ The Truth table for AND gate which consists of two inputs is given below
 
 ## OR gate
 
-Basically, the OR gate's operation is similar to that of addition. It has two inputs and one output. If at least one of the inputs is 1, then the output will be high (1). If neither of the inputs is 1, the output will be low (0).
+The OR gate's operation is similar to that of addition. It has two inputs and one output. If at least one of the inputs is 1, then the output will be high (1). If neither of the inputs is 1, the output will be low (0).
 The Truth table of OR gate which consists of two inputs is given below
 
 | Input 1       | Input 2      | Output |
