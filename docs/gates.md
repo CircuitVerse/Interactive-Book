@@ -57,7 +57,7 @@ The Truth table for AND gate which consists of two inputs is given below
 
 ## OR gate
 
-The OR gate's operation is similar to that of addition. It has two inputs and one output. If at least one of the inputs is 1, then the output will be high (1). If neither of the inputs is 1, the output will be low (0).
+The OR gate has two inputs and one output. If at least one of the inputs is 1, then the output will be high (1). If neither of the inputs is 1, then the output will be low (0).
 The Truth table of OR gate which consists of two inputs is given below
 
 | Input 1       | Input 2      | Output |
