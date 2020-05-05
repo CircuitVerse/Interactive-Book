@@ -106,8 +106,9 @@
 						</button>
 					</p>
 				</div>
-				<div class="row init" id="stateTable"></div>
-
+				<div class="row init" id="stateTable">
+					<div id="table_container" style="overflow-x: scroll; white-space: nowrap; margin-bottom: 30px;"></div>
+				</div>
 
 			</div>
 			<script>
@@ -321,7 +322,8 @@
 
 					table += "</tbody></p>";
 
-					$('#stateTable').append(table);
+					$('#table_container').append(table);
+					// $('#stateTable').append(table);
 					$('#summary').hide();
 					$('#stateTable').fadeIn();
 
