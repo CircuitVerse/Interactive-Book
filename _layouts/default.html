@@ -114,7 +114,20 @@
       </div>
     </div>
   </div>
-<script>$(document).ready(function () {
+<script>
+$(document).ready(function () {
+  function myFunction(x) {
+    if (x.matches) { 
+      $('#sidebar').removeClass('active');
+    }else{
+      if($('#sidebarCollapse').hasClass('colored')){
+        $('#sidebar').addClass('active');
+      }
+    }
+  }
+  var x = window.matchMedia("(max-width: 739px)")
+  x.addListener(myFunction)
+
   $('#sidebarCollapse').on('click', function () {
     $('#sidebar').toggleClass('active');
     $('#main-content').toggleClass('moved');
@@ -123,6 +136,7 @@
     $('#sidebarCollapse').toggleClass('moved');
     $('#sidebarCollapse').toggleClass('colored');
   });
-});</script>
+});
+</script>
 </body>
 </html>
