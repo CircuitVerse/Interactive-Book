@@ -27,7 +27,7 @@ It is an electronic circuit having one or more than one input and only one outpu
 
 The NOT gate is also known as an inverter because the output is the exact opposite of the input. It has one input and one output. The two possibilities are written out in the table below. Tables listing all logical possibilities like this are known as truth tables.
 
-| Input1       | Output       |
+| Input        | Output       |
 |:------------:|:------------:|
 | 0            | 1            | 
 | 1            | 0            | 
