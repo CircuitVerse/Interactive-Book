@@ -22,25 +22,25 @@ nav_order: 5
 ## Introduction
 
 
-Boolean algebra deals with binary variables and logic operation.
-A **Boolean Function** is described by an algebraic expression called **Boolean expression** which consists of binary variables, the constants 0 and 1, and the logic operation symbols. 
-Consider the following example.
+Boolean algebra deals with Binary-Variables and Logical operations.
+A **Boolean Function** is written as an **Algebric Expression** called a **Boolean Expression** which consists of Binary-Variables, the logic operation symbols, and also the constants: 0 and 1.
+Consider the following example:
 ```yaml
 Example:  
 
       F(A,B,C,D)     =     A + BC + !(ADC)
    Boolean Function      Boolean expression
 ```
-Here the left side of the equation represents the output **Y**. So we can state 
+Here **Y** represents the output in the left of the equation. So we can state:
 
 ```yaml 
           Y         =     A + BC + !(ADC)
    Boolean Function      Boolean expression
 ```
 ## Truth Table Formation
-A truth table represents a table having all combinations of inputs and their corresponding result.
+A truth table shows a table having all the combinations of the inputs and their corresponding results.
 
-It is possible to convert the switching equation into a truth table. For example, consider the following switching equation.
+The switching equation can also be converted into a Truth Table. For example- Consider the switching equation: F(A,B,C) = A + BC.
 
 | A       | B       | C      | F      |
 |:-------:|:-------:|:------:|:------:|
@@ -55,7 +55,7 @@ It is possible to convert the switching equation into a truth table. For example
 
 
 ## Sum of Product Expressions (SOP)
-Let's consider a more complicated expression `F(ABCD)= AB'C+BD+CD+D` and generate its truth table:
+Let's take a look at an more complex expression `F(ABCD) = AB'C + BD + CD + D`. Let's generate the truth table:
 
 | F(AB'C+BD+CD+D)| A | B | C | D |
 | :-----: |:-:|:-:|:-:|:-:|
@@ -76,7 +76,7 @@ Let's consider a more complicated expression `F(ABCD)= AB'C+BD+CD+D` and generat
 | 0     | 1 | 1 | 1 | 0 |
 | 1     | 1 | 1 | 1 | 1 |
 
-This example was definately more involved than the previous expressions. An interesting observation is that we are doing a sum of product evaluation, that is, `AB'C+BD+CD+D` is a sum of products. The significance of a sum of product is that when we are doing `+` we are in fact invoking the `OR` operator. 
+In this example an interesting observation is that, We are doing a sum of product evaluation, that is, `AB'C+BD+CD+D` is a sum of products. The significance of sum of product is that when we are doing `+` we are in fact invoking the `OR` operator. 
 
 Moreover, the `OR` operator returns `true` so long as any one of its arguements returns `true`. Therefore, if _any_ of the terms in the sum of product (SOP) expressions is `true`, then we know that the final expression is `true` for certain. 
 
@@ -139,10 +139,10 @@ We can clearly see, if we set `F(1, 0) = 1`, we get a true value for any input. 
 
 ## Methods to simplify the boolean function
 
-The methods used for simplifying the Boolean function are as follows −
+The following methods can be used to simplify the the Boolean function:
 
-1. Karnaugh-map or K-map
-1. NAND gate method.
+1. The Karnaugh-map or K-map method.
+1. The NAND gate method.
 
 
 
