@@ -1,4 +1,3 @@
-
 <html class="no-js">
 
 	<head>
@@ -73,6 +72,8 @@
 							<option value="o1">YES</option>
 							<option value="o2">NO</option>
 						</select>
+						<br />
+						<h4>Press <strong>enter</strong> to  proceed</h4>
 					</p>
 				</div>
 
@@ -92,6 +93,7 @@
 						<br/>
 					</p>
 					<p class="form-inline"></p>
+					<h4>Press <strong>enter</strong> to  proceed or <strong>l</strong> to  go back.</h4>
 				</div>
 				<div class="row init" id="summary">
 					<div id="summa"></div>
@@ -104,10 +106,13 @@
 						<button type="button" id="confirmSummary">
 							Confirm
 						</button>
+						<br />
+						<h4>Press <strong>enter</strong> to <strong>confirm</strong> or <strong>l</strong> to  go back.</h4>
 					</p>
 				</div>
-				<div class="row init" id="stateTable"></div>
-
+				<div class="row init" id="stateTable">
+					<div id="table_container" style="overflow-x: scroll; white-space: nowrap; margin-bottom: 30px;"></div>
+				</div>
 
 			</div>
 			<script>
@@ -135,13 +140,40 @@
 				$('#stateTable').css('position', 'relative');
 				$('#stateTable').css('left', '0px');
 
-				$(document).keypress(function(event) {
+				var next = 0;
+				$(document).keydown(function(event) {
 					if (String.fromCharCode(event.which) == 'f' || String.fromCharCode(event.which) == 'F') {
 						if ($('#about').is(':visible')) {
 							$('#step1').fadeIn();
 							$('#about').hide();
+							next++;
 						}
 					}
+					if (event.which == 13) {
+						if(next === 1) {
+								$('#confirmStep1').click();
+							}
+						if (next === 2) {
+								$('#confirmStep2').click();
+							}
+							if (next === 3) {
+						 		$('#confirmSummary').click();
+						 	}
+						}
+						if (String.fromCharCode(event.which) == 'L' || String.fromCharCode(event.which) == 'l') {
+						if(next === 2) {
+								$('#backToStep1').click();
+							}
+						if (next === 3) {
+								$('#backToStep2').click();
+							}
+						}
+						if (next === 0) {
+							if (String.fromCharCode(event.which) == 'R' || String.fromCharCode(event.which) == 'r') {
+						location. reload();
+						next = 0;
+							}
+						}
 				});
 
 				var input = {};
@@ -220,6 +252,7 @@
 						$('#step2 p.form-inline').append(ioFunctions);
 						$('#step1').hide();
 						$('#step2').fadeIn();
+						next++;
 					}
 				});
 
@@ -227,9 +260,11 @@
 					$('#step2 p.form-inline').empty();
 					$('#step2').hide();
 					$('#step1').fadeIn();
+					next=1;
 				});
 				var flag = null;
 				$('#confirmStep2').click(function() {
+					setTimeout(function() {
 					var inp = $("#step2 p.form-inline").find('input');
 					for (var i = 0; i < inp.length; i++) {
 						if (inp[i].value == "") {
@@ -272,7 +307,12 @@
 						var keys = Object.keys(flipflops);
 
 						for (var i = 0; i < keys.length; i++) {
+							if (keys[i] !== "Z"){
 							summary += '<h3>' + keys[i] + ' = ' + flipflops[keys[i]] + '</h3> ';
+							}
+							else {	
+									summary += '<h3>' + keys[i] + ' = ' +  flipflops[keys[i]] + '</h3> ';
+							}
 						}
 
 						summary += '</p>';
@@ -280,12 +320,16 @@
 						$('#summary #summa').append(summary);
 						$('#step2').hide();
 						$('#summary').fadeIn();
+						next++;
 					}
+					clearInterval();
+					}, 0 );
 				});
 				$('#backToStep2').click(function() {
 					$('#summary #summa').empty();
 					$('#summary').hide();
 					$('#step2').fadeIn();
+					next=2;
 				});
 
 				$('#confirmSummary').click(function() {
@@ -321,10 +365,11 @@
 
 					table += "</tbody></p>";
 
-					$('#stateTable').append(table);
+					$('#table_container').append(table);
+					$('#stateTable').append("<h4>Press <strong>r</strong> to reload the page.</h4>");
 					$('#summary').hide();
 					$('#stateTable').fadeIn();
-
+					next=0;
 					//Description about the state table
 
 					$("#stateTable").append("<strong>Description</strong>:");
