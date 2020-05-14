@@ -34,7 +34,7 @@ The Table which contains all logical possibilities is known as truth table.
 
 The NOT gate is also known as an inverter because it produces the exact opposite of the input as output. It has one input and one output. The Truth table for NOT gate is given below
 
-| Input        | Output     |
+| Input        | Output       |
 |:------------:|:------------:|
 | 0            | 1            | 
 | 1            | 0            | 
@@ -46,7 +46,7 @@ The NOT gate is also known as an inverter because it produces the exact opposite
 The AND gate's operation is similar to that of multiplication. It has two inputs and one output. The output is high (1) if both inputs are 1, and for all other cases, the output is low (0).
 The Truth table for AND gate which consists of two inputs is given below
 
-| Input 1       | Input 2      | Output |
+| Input 1      | Input 2      | Output |
 |:------------:|:------------:|:------:|
 | 0            | 0            | 0      |
 | 0            | 1            | 0      |
