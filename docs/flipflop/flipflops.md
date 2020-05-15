@@ -23,7 +23,7 @@ In second module, we can directly implement the flip-flop, which is edge sensiti
 | Level triggered | Edge triggered |
 | Asynchronous device | Synchronous device |
 | Doesn't contain clock signal | Contains a clock signal |
-| It will change its state as long it is enabled | It will change its state only during a given clock cycle |
+| It will change its state as long as it is enabled | It will change its state only during a given clock cycle |
 | Consumes less power | Consumes more power |
 | Faster | Slower |
 | Examples: D-Latch, T-Latch | Examples: D-Flip flop, T-Flop flop |
