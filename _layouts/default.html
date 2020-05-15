@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 
 <html lang="{{ site.lang | default: 'en-US' }}">
-  {% include head.html %}
-  <script src="../assets/js/module.js"></script>
-  <body>
-    <script src="\assets\js\vendor\jquery-3.4.1.min.js"></script>
+{% include head.html %}
+<script src="../assets/js/module.js"></script>
+<script src="\assets\js\vendor\jquery-3.4.1.min.js"></script>
+<script src="/assets/js/shareable-links.js"></script>
+
+<style>
+  h1, h2, h3, h4, h5 {
+    display: flex;
+    align-items: center;
+  }
+  .shareable-link {
+    cursor: pointer;
+    margin-left: 0.3rem;
+    padding: 0;
+    border: none;
+    background-color: default;
+    box-shadow: none;
+    font-size: 0.6em;
+  }
+  .shareable-link:hover {
+    border: none;
+    background-color: default;
+    box-shadow: none;
+  }
+</style>
+<body>
 
     <div class="page-wrap">
       <div class="side-bar" id="sidebar">
