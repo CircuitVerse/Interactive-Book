@@ -3,6 +3,7 @@ layout: default
 title: JK Flip-Flop
 parent: Flip-Flops
 nav_order: 3
+comments: true
 ---
 
 ## JK Flip-Flop
@@ -47,3 +48,5 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 ```
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/12263" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+
+{% include disqus.html %}
