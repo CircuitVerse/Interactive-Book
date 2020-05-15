@@ -8,7 +8,7 @@
 
   <div class="page-wrap">
     <div class="side-bar" id="sidebar">
-      <a href="{{ site.url }}{{ site.baseurl }}" class="site-title fs-6 lh-tight">{{ site.title }}</a>
+      <a href="https://circuitverse.org/" class="site-title fs-6 lh-tight">{{ site.title }}</a>
       <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
       <div class="navigation main-nav js-main-nav">
         {% include nav.html %}
@@ -30,7 +30,7 @@
           {% endif %}
           {% if site.aux_links != nil %}
           <ul class="list-style-none text-small mt-md-1 mb-md-1 pb-4 pb-md-0 js-aux-nav aux-nav">
-            <li class="d-inline-block my-0{% unless forloop.last %} mr-2{% endunless %} btn js-toggle-dark-mode"><a>Dark Mode</a></li>
+            <li class="d-inline-block my-0{% unless forloop.last %} mr-2{% endunless %} btn js-toggle-dark-mode"><a id='text-change'>Dark Mode</a></li>
             <li class="d-inline-block my-0{% unless forloop.last %} mr-2{% endunless %} btn "><a href="{{ site.github.repository_url }}/tree/master/{{ page.path }}">Edit on Github</a></li>
 
           </ul>
@@ -40,6 +40,9 @@
             const originalCssRef = cssFile.getAttribute('href')
             const darkModeCssRef = originalCssRef.replace('just-the-docs.css', 'dark-mode-preview.css')
             var isDarkMode = localStorage.getItem("userTheme")
+            var buttonText = 'Dark mode' // Default
+            var buttonTextReturn = 'Light mode' // on click
+            // var buttonA = document.q;
             if (isDarkMode == 0 || isDarkMode == null){
               isDarkMode = 0
               localStorage.setItem("userTheme", "0")
@@ -52,9 +55,13 @@
             addEvent(toggleDarkMode, 'click', function(){
               isDarkMode = localStorage.getItem("userTheme")
                 if (isDarkMode == 0) {
+                    // buttonA.setAttribute('a', buttonTextReturn);
+                    $('#text-change').text(buttonTextReturn);
                     cssFile.setAttribute('href', darkModeCssRef)
                     localStorage.setItem("userTheme", "1")
                 } else if (isDarkMode == 1){
+                    $('#text-change').text(buttonText);
+                    // buttonA.setAttribute('a', buttonText);
                     cssFile.setAttribute('href', originalCssRef)
                     localStorage.setItem("userTheme", "0")
                 }
