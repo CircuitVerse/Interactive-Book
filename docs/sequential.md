@@ -42,9 +42,13 @@ Following are the two types of sequential circuits −
 
 If some or all the outputs of a sequential circuit do not change (affect) with respect to active transition of clock signal, then that sequential circuit is called as Asynchronous sequential circuit. That means, all the outputs of asynchronous sequential circuits do not change (affect) at the same time. Therefore, most of the outputs of asynchronous sequential circuits are not in synchronous with either only positive edges or only negative edges of clock signal.
 
+<div style="text-align:center"><img src="../assets/images/asynchronous_sequential_circuit.jpg" /></div>
+
 ### Synchronous sequential circuits
 
 If all the outputs of a sequential circuit change (affect) with respect to active transition of clock signal, then that sequential circuit is called as Synchronous sequential circuit. That means, all the outputs of synchronous sequential circuits change (affect) at the same time. Therefore, the outputs of synchronous sequential circuits are in synchronous with either only positive edges or only negative edges of clock signal.
+
+<div style="text-align:center"><img src="../assets/images/synchronous_sequential_circuit.jpg" /></div>
 
 
 {% include disqus.html %}
