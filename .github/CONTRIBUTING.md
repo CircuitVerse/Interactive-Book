@@ -4,9 +4,8 @@
 
 1.  🍴 [Fork this repo](https://github.com/CircuitVerse/Interactive-Book)
 2.  🔨 Hack away
-3.  👥 Add yourself as a contributor under the credits section
-4.  🔧 [Open a new pull request](https://github.com/CircuitVerse/Interactive-Book/compare)
-5.  🎉 Get your pull request approved - success!
+3.  🔧 [Open a new pull request](https://github.com/CircuitVerse/Interactive-Book/compare)
+4.  🎉 Get your pull request approved - success!
 
 > Or just [create an issue](https://github.com/CircuitVerse/Interactive-Book/issues) - any little bit of help counts! 😊
 ***
