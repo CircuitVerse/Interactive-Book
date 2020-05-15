@@ -3,6 +3,7 @@ layout: default
 title: Multiplexers
 parent: MSI Components
 nav_order: 1
+comments: true
 ---
 
 # Multiplexers
@@ -37,3 +38,5 @@ E is called the strobe or enable input which is useful for the cascading. It is 
 
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/746" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+
+{% include disqus.html %}

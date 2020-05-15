@@ -3,6 +3,7 @@ layout: default
 title: Demultiplexers
 parent: MSI Components
 nav_order: 2
+comments: true
 ---
 
 # Demultiplexers
@@ -33,3 +34,5 @@ A de-multiplexer is equivalent to a single pole multiple way switch as shown in 
 <div style="text-align:center"><img src="../../assets/images/one_twodemultiplexer_truthtable.jpg" /></div>
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/756" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+
+{% include disqus.html %}
