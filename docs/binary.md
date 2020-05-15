@@ -8,8 +8,6 @@ nav_order: 2
 # Binary Numbers
 {: .no_toc }
 
-
-
 ## Introduction
 
 ```yaml
@@ -83,10 +81,32 @@ It is just like counting in decimal except we reach 10 much sooner.
 | 111        | |
 | **1**000   |Start back at 0 again (for all 3 digits), add 1 on the left|
 
-
-
-
 <h3>See how it is done in this little demonstration</h3>
+
+```yaml
+Let's tell you something more about conversion. Conversion from Decimal to Binary is quite a simple task.
+All you need to do is begin from the right.
+STEP 1::
+Write the decimal value of each digit on top of them respectively. The value which you seek to write is
+2^(place value from right) beginning from 0 i.e., 2^0, 2^1, 2^2 .... continuing upto 2^7.
+STEP 2 ::
+Now, multiply each digit of binary number with it's value.
+STEP 3 ::
+Add 'em all.
+STEP 4 ::
+Result is ready :)
+NOTE ::
+If the number is large, increase bits of binary number on the left. Keep in mind that it's value will
+increase subsiquently.
+Example ::
+Decimal Number :: 25
+You can convert the 1st, 4th and the 5th digit from the right by tapping on it to convert from 0 to 1.
+Further, respective binary digit is multiplied with the value present on top of each digit.
+Now add.
+In this Case ::
+1x16 + 1x8 + 0x4 + 0x2 + 1x1 = 25 which is the decimal equivalent of the binary number 11001
+```
+
 <p>Click on the '0' to change it to '1' and vice-versa</p>
 
 {% include binary.html %}
