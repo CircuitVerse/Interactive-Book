@@ -55,7 +55,7 @@ The Truth table for AND gate which consists of two inputs is given below
 | 1            | 0            | 0      |
 | 1            | 1            | 1      |
 
-<b><img src="../assets/images/and_gate.jpg" height="150" width="400" /></b>
+<img src="../assets/images/and_gate.png" height="100" width="200" />
 
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46601" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
@@ -71,7 +71,7 @@ The Truth table of OR gate which consists of two inputs is given below
 | 1             | 0            | 1      |
 | 1             | 1            | 1      |
 
-<b><img src="../assets/images/or_gate.jpg" height="150" width="400" /></b>
+<img src="../assets/images/or_gate.jpg" height="100" width="200" />
 
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46603" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
