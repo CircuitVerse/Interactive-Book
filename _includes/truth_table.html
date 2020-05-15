@@ -15,7 +15,7 @@
     </div>
     <br>
     <!-- Output -->
-    <div class="align-center container">
+    <div class="align-center container" id="table-area">
         <div id="table-placeholder"></div>
     </div>
 </main>
@@ -88,5 +88,30 @@
         body {
             padding: 10px;
         }
+    }
+
+    #truth_generator thead th{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    #truth_generator tr td:first-child{
+        position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+        z-index: 2;
+    }
+
+    #truth_generator thead th:first-child {
+        left: 0;
+        z-index: 3;
+    }
+    
+    #table-placeholder {
+        overflow: auto;
+        height: auto;
+        max-height: 80vh;
     }
 </style>
