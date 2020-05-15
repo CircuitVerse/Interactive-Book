@@ -25,7 +25,6 @@ Binary Number :: 11001
 
 Note ::
 There is no 2, 3, 4, 5, 6, 7, 8 or 9 in Binary!
-Also, each digit in binary representation is either 0 or 1.
 ```
 
 ### How do we Count using Binary?
@@ -56,7 +55,7 @@ It is just like counting in decimal except we reach 10 much sooner.
 |:------------:|:----------------------:|
 | 0            | We start at 0          |
 | 1            | Then 1        |
-| **1**0     | Now start back at 0 again, **but carry 1 on the left**|
+| **1**0     | Now start back at **0** again, but carry **1** on the left|
 | 11         | 1 more           |
 |???         | But NOW what ... ?|
 
@@ -67,7 +66,7 @@ It is just like counting in decimal except we reach 10 much sooner.
 | Decimal       | Explanation            |
 |:-------------:|:----------------------:|
 |	99	 |	When we run out of digits, we ...|
-|	100	 |	... start back at 0 again, but carry 1 on the left|
+|	100	 |	... start back at **0** again, but carry **1** on the left|
 
 <h4>And that is what we do in binary ...</h4>
 
@@ -76,7 +75,7 @@ It is just like counting in decimal except we reach 10 much sooner.
 |:----------:|:-------------:|
 | 0          | We start at 0    |
 | 1          | Then 1        |
-| **1**0     | Now start back at 0 again, **but carry 1 on the left**|
+| **1**0     | Now start back at **0** again, but carry **1** on the left|
 | 11         | 1 more        |
 | **1**00    | start back at 0 again, and carry one to the number on the left but that number is already at 1 so it also goes back to 0 and 1 is carried to the next position on the left|
 | 101        | |
