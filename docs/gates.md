@@ -34,10 +34,12 @@ The Table which contains all logical possibilities is known as truth table.
 
 The NOT gate is also known as an inverter because it produces the exact opposite of the input as output. It has one input and one output. The Truth table for NOT gate is given below
 
-| Input        | Output       |
+| Input        | Output       | 
 |:------------:|:------------:|
 | 0            | 1            | 
 | 1            | 0            | 
+
+<img src="../assets/images/not_gate.jpeg" />
 
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46600" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
@@ -53,6 +55,8 @@ The Truth table for AND gate which consists of two inputs is given below
 | 1            | 0            | 0      |
 | 1            | 1            | 1      |
 
+<img src="../assets/images/and_gate.jpg" />
+
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46601" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ## OR gate
@@ -66,6 +70,8 @@ The Truth table of OR gate which consists of two inputs is given below
 | 0             | 1            | 1      |
 | 1             | 0            | 1      |
 | 1             | 1            | 1      |
+
+<img src="../assets/images/or_gate.jpg" />
 
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46603" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
@@ -81,6 +87,8 @@ The Truth table of NAND gate which consists of two inputs is given below
 | 1             | 0            | 1      |
 | 1             | 1            | 0      |
 
+<img src="../assets/images/nand_gate.png" />
+
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46604" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ## NOR gate
@@ -94,6 +102,8 @@ The Truth table of NOR gate which consists of two inputs is given below
 | 0             | 1            | 0      |
 | 1             | 0            | 0      |
 | 1             | 1            | 0      |
+
+<img src="../assets/images/nor_gate.png" />
 
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46606" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
@@ -109,6 +119,8 @@ The Truth table of XOR gate which consists of two inputs is given below
 | 1             | 0            | 1      |
 | 1             | 1            | 0      |
 
+<img src="../assets/images/xor_gate.png" />
+
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46609" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ## XNOR gate
@@ -122,6 +134,8 @@ The Truth table of XNOR gate which consists of two inputs is given below
 | 0             | 1            | 0      |
 | 1             | 0            | 0      |
 | 1             | 1            | 1      |
+
+<img src="../assets/images/xnor_gate.png" />
 
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46613" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
