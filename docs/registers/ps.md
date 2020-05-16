@@ -3,6 +3,7 @@ layout: default
 title: Parallel Input Serial Output 
 parent: Digital Registers
 nav_order: 3
+comments: true
 ---
 
 # Parallel Input Serial Output 
@@ -40,3 +41,4 @@ Thus the parallel in serial out operation takes place.
 
 <div style="text-align:center"><img src="../../assets/images/piso_blockdiagram.jpg" /></div>
 
+{% include disqus.html %}
