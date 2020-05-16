@@ -33,6 +33,8 @@ External clock is applied to the clock input of flip-flop A and QA output is app
 
 <div style="text-align:center"><img src="../assets/images/ripple_counter_diagram.jpg" /></div>
 
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/43064" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
+
 ### Types 
 It is known as ripple counter because of the way the clock pulse ripples its way through the flip-flops. The flip-flop applied with external clock pulse act as LSB (Least Significant Bit) in the counting sequence.The flip-flop toggles the output either for every positive edge of clock signal or for negative edge of clock signal.
 * **2 bit ripple up counter:** It contains two flip flops. A 2-bit ripple counter can count up to 4 states. It counts from 0 to 3.
@@ -49,6 +51,9 @@ It is known as ripple counter because of the way the clock pulse ripples its way
 
 * **3 bit ripple down counter:** It contains three flip flops. A 3-bit ripple counter can count up to 8 states.It counts down from 7 to 0.
 <div style="text-align:center"><img src="../assets/images/3bit_counter.png" height="300"/></div>
+
+* **Decade or BCD counter :**  A binary coded decimal (BCD) is a serial digital counter that counts ten digits. It counts from 0 to 9.When the clock pulse advances to 10 the ports QB and QD become high and thus NAND gate's output will become low which will reset all the flip flops.
+<div style="text-align:center"><img src="../assets/images/decade_counter.png" height="300"/></div>
 
 ### Operation
 
@@ -95,9 +100,19 @@ The JA and KA inputs of FF-A are tied to logic 1. So FF-A will work as a toggle 
 <div style="text-align:center"><img src="../assets/images/4bit_decade_counter.png" height="300"/></div>
 <br>
 
+* **Ring Counter:** The ring counter is a application of shift register, in which the output of last flip flop is connected to input of first flip flop. In ring counter if the output of any flip flop is 1, then the output of remaining flip flops is 0. The Ring counters transfers the same output throughout the circuit.
+
+<div style="text-align:center"><img src="../assets/images/ring_counter.png" height="300"/></div>
+<br>
+
+* **Johnson's Counter or Twisted Ring Counter:** The Johnson counter is a modification of ring counter. In this the inverted output of the last stage flip flop is connected to the input of first flip flop. If we use n flip flops to design the Johnson counter, it is known as 2n bit Johnson counter or Mod 2n Johnson counter.
+
+<div style="text-align:center"><img src="../assets/images/johnson's_counter.png" height="300"/></div>
+<br>
+
 ### Logical Diagram
 
-<div style="text-align:center"><img src="../../assets/images/synchronous_counter_diagram.jpg" /></div>
+<div style="text-align:center"><img src="../assets/images/synchronous_counter_diagram.jpg" /></div>
 
 ### Operation
 
@@ -112,4 +127,3 @@ The JA and KA inputs of FF-A are tied to logic 1. So FF-A will work as a toggle 
 
 
 {% include disqus.html %}
-

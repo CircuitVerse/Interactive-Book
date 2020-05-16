@@ -13,9 +13,17 @@ nav_order: 2
 ## Introduction
 
 ```yaml
-A Binary Number is made up of only 0s and 1s.
-Example: 110111
+Binary number system was invented by Gottfried Leibniz. As the word is prefixed with 'Bi' which is a
+Latin word and means 'two' in English. This brings us to the first two digits i.e., 0 and 1 which
+means that while counting in binary we cannot exceed 1. Infact all the numbers which we tend to
+represent are made up of only two digits i.e., 0 and 1 which is quite interesting.
+Let us show you the binary representation of a decimal number(The numbers which we use for counting
+i.e., from 0-9) in binary.
+Example:
+Decimal number :: 25
+Binary Number :: 11001
 
+Note ::
 There is no 2, 3, 4, 5, 6, 7, 8 or 9 in Binary!
 ```
 
@@ -39,7 +47,7 @@ It is just like counting in decimal except we reach 10 much sooner.
 | 1            | Then 1                 |
 | 2-8          | Count 1,2,3,4,5,6,7,8  |
 | 9            | This is the **last digit** in Decimal|
-|**1**0        | So we start back at **0** again, but add **1** on the left|
+|**1**0        | So we start back at **0** again, but carry **1** on the left|
 
 <h4>The same thing is done in binary ...</h4>
 
@@ -47,7 +55,7 @@ It is just like counting in decimal except we reach 10 much sooner.
 |:------------:|:----------------------:|
 | 0            | We start at 0          |
 | 1            | Then 1        |
-| **1**0     | Now start back at 0 again, **but add 1 on the left**|
+| **1**0     | Now start back at **0** again, but carry **1** on the left|
 | 11         | 1 more           |
 |???         | But NOW what ... ?|
 
@@ -58,18 +66,18 @@ It is just like counting in decimal except we reach 10 much sooner.
 | Decimal       | Explanation            |
 |:-------------:|:----------------------:|
 |	99	 |	When we run out of digits, we ...|
-|	100	 |	... start back at 0 again, but add 1 on the left|
+|	100	 |	... start back at **0** again, but carry **1** on the left|
 
 <h4>And that is what we do in binary ...</h4>
 
 
 | Binary     | Explanation   |
 |:----------:|:-------------:|
-| 0          | We start a    |
+| 0          | We start at 0    |
 | 1          | Then 1        |
-| **1**0     | Now start back at 0 again, **but add 1 on the left**|
+| **1**0     | Now start back at **0** again, but carry **1** on the left|
 | 11         | 1 more        |
-| **1**00    | start back at 0 again, and add one to the number on the left but that number is already at 1 so it also goes back to 0 and 1 is added to the next position on the left|
+| **1**00    | start back at 0 again, and carry one to the number on the left but that number is already at 1 so it also goes back to 0 and 1 is carried to the next position on the left|
 | 101        | |
 | 110        | |
 | 111        | |
@@ -79,6 +87,7 @@ It is just like counting in decimal except we reach 10 much sooner.
 
 
 <h3>See how it is done in this little demonstration</h3>
+<p>Click on the '0' to change it to '1' and vice-versa</p>
 
 {% include binary.html %}
 
