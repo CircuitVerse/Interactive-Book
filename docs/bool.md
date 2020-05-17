@@ -105,7 +105,8 @@ Example:  A + 0 = A
 
 Any binary operation which satisfies the following expression is referred to as commutative operation.
 ```yaml
-Example:  A.B = B.A                         A+B = B+A
+Example:  1) A.B = B.A
+          2) A+B = B+A
 ```
 
 
@@ -114,7 +115,8 @@ Example:  A.B = B.A                         A+B = B+A
 This law states that the order in which the logic operations are performed is irrelevant as their effect is the same.
 
 ```yaml
-Example: (A.B).C = A.(B.C)                (A+B)+C = A+(B+C)
+Example: 1) (A.B).C = A.(B.C)
+         2) (A+B)+C = A+(B+C)
 ```
 
 ### Distributive law
