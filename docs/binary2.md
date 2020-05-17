@@ -20,7 +20,12 @@ nav_order: 2
 Binary addition is similar to Decimal addition. As this addition is binary implies we cannot have a number 
 greater than 1 i.e., when you do '1+1' it gives 0 with carry 1 i.e, 10.
 ```yaml 
-Example :
+Examples :
+0 + 0 = 0
+0 + 1 = 1
+1 + 0 = 1
+1 + 1 = 1
+
     1 1   (3)
   + 1 0   (2)
   -----
@@ -50,6 +55,10 @@ NOTE :
 10 becomes 1 after giving borrow.
 ```yaml
 Examples :
+0 - 0 = 0
+1 - 0 = 1
+1 - 1 = 0
+
     1 0   (2)This is something which will always happen in binary subtraction. Keep in mind i.e., 10-1=1
   - 0 1   (1)Reason being 10 is 2 in decimal which on subtraction with 1 gives 1.
   -----      Implies that 10 - 1 = 1
