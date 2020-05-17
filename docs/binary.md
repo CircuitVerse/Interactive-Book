@@ -12,19 +12,18 @@ nav_order: 2
 
 ## Introduction
 
-Binary number system was invented by Gottfried Leibniz. As the word is prefixed with 'Bi' which is a
+Binary number system was invented by **Gottfried Leibniz**. As the word is prefixed with 'Bi' which is a
 Latin word and means 'two' in English. This brings us to the first two digits i.e., 0 and 1 which
 means that while counting in binary we cannot exceed 1. Infact all the numbers which we tend to
 represent are made up of only two digits i.e., 0 and 1 which is quite interesting.
 Let us show you the binary representation of a decimal number(The numbers which we use for counting
 i.e., from 0-9) in binary.
-
-Example: <br>
-
-Decimal number :: 25 <br>
-Binary Number :: 11001 <br>
-
-Note :: <br>
+```yaml
+Example:
+Decimal number :: 25 
+Binary Number :: 11001 
+```
+Note ::
 There is no 2, 3, 4, 5, 6, 7, 8 or 9 in Binary!
 
 ---
@@ -88,27 +87,27 @@ It is just like counting in decimal except we reach 10 much sooner.
 ## See how it is done in this little demonstration
 ---
 Let's tell you something more about conversion. Conversion from Decimal to Binary is quite a simple task.
-All you need to do is begin from the right. Follow the steps below:<br>
-- STEP 1 :: <br>
+All you need to do is begin from the right. Follow the steps below:
+- STEP 1 :: 
 Write the decimal value of each digit on top of them respectively. The value which you seek to write is
-2^(place value from right) beginning from 0 i.e., 2^0, 2^1, 2^2 .... continuing upto 2^7. <br>
-- STEP 2 :: <br>
-Now, multiply each digit of binary number with it's value. <br>
-- STEP 3 :: <br>
-Add 'em all. <br>
-- STEP 4 :: <br>
-Result is ready :) <br>
-- NOTE :: <br>
+2^(place value from right) beginning from 0 i.e., 2^0, 2^1, 2^2 .... continuing upto 2^7.
+- STEP 2 ::
+Now, multiply each digit of binary number with it's value.
+- STEP 3 ::
+Add 'em all.
+- STEP 4 ::
+Result is ready :)
+- NOTE ::
 If the number is large, increase bits of binary number on the left. Keep in mind that it's value will
-increase subsiquently. <br>
-
-Example :: <br>
-Decimal Number :: 25 <br>
+increase subsiquently.
+```yaml
+Example ::
+Decimal Number :: 25
 You can convert the 1st, 4th and the 5th digit from the right by tapping on it to convert from 0 to 1.
-Further, respective binary digit is multiplied with the value present on top of each digit. Now add. <br>
-In this Case :: <br>
-1x16 + 1x8 + 0x4 + 0x2 + 1x1 = 25 which is the decimal equivalent of the binary number 11001 <br>
-
+Further, respective binary digit is multiplied with the value present on top of each digit. Now add.
+In this Case ::
+1x16 + 1x8 + 0x4 + 0x2 + 1x1 = 25 which is the decimal equivalent of the binary number 11001
+```
 <p>Click on the '0' to change it to '1' and vice-versa</p>
 
 {% include binary.html %}

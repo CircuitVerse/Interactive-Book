@@ -74,6 +74,31 @@ Example:  !!A = A
 ```
 
 
+### Idempotent law
+
+The idempotent law states that `x OR x is x` and `x AND x is x`.
+
+```yaml
+Example:  A + A = A
+```
+
+
+### Annulment law
+
+The annulment law states that `x OR 1 is 1` and `x AND 0 is 0`.
+
+```yaml
+Example:  A.0 = 0
+```
+
+
+### Identity law
+
+This law states that anything (x) added to zero or multiplied by 1 equals the original “anything,” no matter what value that “anything” (x) may be.
+
+```yaml
+Example:  A + 0 = A
+```
 
 
 ### Commutative law
