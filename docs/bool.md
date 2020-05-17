@@ -127,7 +127,6 @@ Distributive law states the following condition.
 ```yaml
 Example:
 A.(B+C) = A.B + A.C
-
 ```
 
 ## DeMorgan’s Theorem
