@@ -13,10 +13,7 @@ There are two types of memory elements based on the type of triggering that is s
 * Latches
 * Flip-flops
 
-Latches operate with enable signal, which is level sensitive. 
-Whereas, flip-flops are edge sensitive. 
-We will discuss about flip-flops in next module. 
-Now, let us discuss about SR Latch & D Latch one by one.
+Latches operate with enable signal, which is level sensitive. Whereas, flip-flops are edge sensitive. We will discuss the flip-flops in the next module. Now, let us discuss SR Latch & D Latch one by one.
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -30,11 +27,11 @@ Now, let us discuss about SR Latch & D Latch one by one.
 
 ## SR Latch
 
-SR Latch is also called as Set Reset Latch. This latch affects the outputs as long as the enable, E is maintained at ‘1’. The circuit diagram of SR Latch is shown in the following figure.
+SR Latch is also called a Set Reset Latch. This latch affects the outputs as long as they enable, E is maintained at ‘1’. The circuit diagram of the SR Latch is shown in the following figure.
 
 <div style="text-align:center"><img src="../assets/images/sr_latch.jpg" /></div>
 
-This circuit has two inputs S & R and two outputs Q(t) & Q(t)’. The **upper NOR gate** has two inputs R & complement of present state, Q(t)’ and produces next state, Q(t+1) when enable, E is ‘1’.
+This circuit has two inputs S & R and two outputs Q(t) & Q(t)’. The **upper NOR gate** has two inputs R & complement of the present state, Q(t)’ and produces next state, Q(t+1) when enable, E is ‘1’.
 Similarly, the **lower NOR gate** has two inputs S & present state, Q(t) and produces complement of next state, Q(t+1)’ when enable, E is ‘1’.
 
 We know that a 2-input NOR gate produces an output, which is the complement of another input when one of the input is ‘0’. Similarly, it produces ‘0’ output, when one of the input is ‘1’.
@@ -63,11 +60,11 @@ Therefore, SR Latch performs three types of functions such as Hold, Set & Reset 
 
 ## D Latch
 
-There is one drawback of SR Latch. That is the next state value can’t be predicted when both the inputs S & R are one. So, we can overcome this difficulty by D Latch. It is also called as Data Latch. The circuit diagram of D Latch is shown in the following figure.
+There is one drawback of the SR latch. That is the next state value can’t be predicted when both the inputs S & R are one. So, we can overcome this difficulty by D Latch. It is also called a Data Latch. The circuit diagram of the D Latch is shown in the following figure.
 
 <div style="text-align:center"><img src="../assets/images/d_latch.jpg" /></div>
 
-This circuit has single input D and two outputs Q(t) & Q(t)’. D Latch is obtained from SR Latch by placing an inverter between S amp;& R inputs and connect D input to S. That means we eliminated the combinations of S & R are of same value.
+This circuit has single input D and two outputs Q(t) & Q(t)’. D Latch is obtained from SR Latch by placing an inverter between S amp;& R inputs and connect D input to S. That means we eliminated the combinations of S & R are of the same value.
 
 * If D = 0 → S = 0 & R = 1, then next state Q(t + 1) will be equal to ‘0’ irrespective of present state, Q(t) values. This is corresponding to the second row of SR Latch state table.
 
@@ -84,7 +81,7 @@ The following table shows the state table of D latch.
 
 Therefore, D Latch Hold the information that is available on data input, D. That means the output of D Latch is sensitive to the changes in the input, D as long as the enable is High.
 
-In this module, we implemented various Latches by providing the cross coupling between NOR gates. Similarly, you can implement these Latches using NAND gates.
+In this module, we implemented various Latches by providing the cross-coupling between NOR gates. Similarly, you can implement these Latches using NAND gates.
 
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/4276" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
