@@ -2,3 +2,7 @@ select {
   background-color: $base-button-color;
   border: 0;
 }
+
+select option {
+  color: $body-heading-color;
+}

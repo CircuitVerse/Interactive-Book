@@ -125,15 +125,19 @@ function show_result()
     switch(document.getElementById("operator").value)
     {
         case "AND":
+            document.getElementById("operator").style.backgroundImage = "url('../assets/images/AND_gate.png')";
             document.getElementById("result").style.backgroundImage = bit_display_bool[bit_bool[0] && bit_bool[1]];
             break;
         case "OR":
+            document.getElementById("operator").style.backgroundImage = "url('../assets/images/OR_gate.png')";
             document.getElementById("result").style.backgroundImage = bit_display_bool[bit_bool[0] || bit_bool[1]];
             break;
         case "XOR":
+            document.getElementById("operator").style.backgroundImage = "url('../assets/images/EOR_gate.png')";
             document.getElementById("result").style.backgroundImage = bit_display_bool[bit_bool[0] != bit_bool[1]];
             break;
         default:
+            document.getElementById("operator").style.backgroundImage = "url('../assets/images/NotGate.svg')";
             document.getElementById("result").style.backgroundImage = bit_display_bool[!bit_bool[1]];
     }
 }
