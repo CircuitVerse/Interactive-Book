@@ -41,19 +41,18 @@ The 4 : 1 multiplexer has 4 inputs and 2 control signals.
 The 8 : 1 multiplexer has 8 inputs and 3 control signals.
 <iframe width="100%"  height="400px" src="https://circuitverse.org/simulator/embed/44766" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
-You can implement a 8 : 1 multiplexer by chaining 2 4 : 1 multiplexers, like this:
+You can implement a 8 : 1 multiplexer by chaining **two** 4 : 1 multiplexers, like this:
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/44784" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ### 16 : 1 multiplexer
 The 16 : 1 multiplexer has 16 inputs and 4 control signals.
 
-It can be implemented with 2 8 : 1 multiplexers:
+It can be implemented with **two** 8 : 1 multiplexers:
+
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/44795" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
-It can also be implemented with 5 4 : 1 multiplexers:
+It can also be implemented with **five** 4 : 1 multiplexers:
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/44804" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
-
-<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/746" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 {% include disqus.html %}
 
