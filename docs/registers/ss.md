@@ -8,7 +8,7 @@ comments: true
 
 # Serial Input Serial Output
 {: .no_toc }
-
+ 
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -20,7 +20,7 @@ comments: true
 
 ## Introduction
  
-Let all the flip-flop be initially in the reset condition i.e. Q3 = Q2 = Q1 = Q0 = 0. If an entry of a four bit binary number 1 1 1 1 is made into the register, this number should be applied to Din bit with the LSB bit applied first. The D input of FF-3 i.e. D3 is connected to serial data input Din. Output of FF-3 i.e. Q3 is connected to the input of the next flip-flop i.e. D2 and so on.
+Let all the flip-flop be initially in the reset condition i.e. Q3 = Q2 = Q1 = Q0 = 0. If an entry of a four-bit binary number 1 1 1 1 is made into the register, this number should be applied to Din bit with the LSB bit applied first. The D input of FF-3 i.e. D3 is connected to serial data input Din. The output of FF-3 i.e. Q3 is connected to the input of the next flip-flop i.e. D2 and so on.
 
 ## Block Diagram
 
@@ -29,7 +29,7 @@ Let all the flip-flop be initially in the reset condition i.e. Q3 = Q2 = Q1 = Q0
 
 ## Operation
 
-Before application of clock signal, let Q3 Q2 Q1 Q0 = 0000 and apply LSB bit of the number to be entered to Din. So Din = D3 = 1. Apply the clock. On the first falling edge of clock, the FF-3 is set, and stored word in the register is Q3 Q2 Q1 Q0 = 1000.
+Before application of the clock signal, let Q3 Q2 Q1 Q0 = 0000 and apply LSB bit of the number to be entered to Din. So Din = D3 = 1. Apply the clock. On the first falling edge of the clock, the FF-3 is set, and stored word in the register is Q3 Q2 Q1 Q0 = 1000.
 
 <div style="text-align:center"><img src="../../assets/images/siso_operation1.jpg" /></div>
 
