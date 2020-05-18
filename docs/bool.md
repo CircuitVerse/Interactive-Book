@@ -6,10 +6,11 @@ nav_order: 4
 ---
 
 # Boolean Algebra
+
 {: .no_toc }
 
-
 ## Table of contents
+
 {: .no_toc .text-delta }
 
 1. TOC
@@ -17,130 +18,124 @@ nav_order: 4
 
 ---
 
-
-
 ## Introduction
 
+Boolean Algebra was invented by **George Boole** and described in his first book known as **The Mathematical Analysis of Logic** in the 
+year **1847**. Further he made several laws which were described by him in his second book known as **An investigation of the Laws of Thought** 
+in the year **1854**. As the word boolean is prefixed with the word 'bool' which implies a boolean value which could either be true or false. 
+In this case it is referred as 0 and 1.
 
-Boolean Algebra is used to analyze and simplify the digital (logic) circuits. 
-It uses only the binary numbers i.e. 0 and 1. 
-It is also called as Binary Algebra or logical Algebra. 
-Boolean algebra was invented by George Boole in 1854.
-
-
-
-## Rule in Boolean Algebra
-Following are the important rules used in Boolean algebra.
-
-1. Variable used can have only two values. Binary 1 for HIGH and Binary 0 for LOW.
-1. Complement of a variable is represented by an overbar (-) or (!). Thus, complement of variable B is represented as B Bar. Thus if B = 0 then !B  = 1 and B = 1 then !B  = 0.
-1. ORing of the variables is represented by a plus (+) sign between them. For example ORing of A, B, C is represented as A + B + C.
-1. Logical ANDing of the two or more variable is represented by writing a dot between them such as A.B.C. Sometime the dot may be omitted like ABC.
-   
 ---
 
-## Boolean Laws
+## Rules of Boolean Algebra
 
-There are six types of Boolean Laws.
+These are the building blocks of boolean Algebra. Try not to forget these as these are the most important one's and you can solve any digital equation with the help of the described rules and Laws below.
 
-### AND law
+### Null Rule
 
-These laws use the AND operation. Therefore they are called as **AND** laws.
-```yaml
-Example:  
-1. A.0 = 0
-1. A.1 = A
-1. A.A = A
-1. A.!A = 0
-```
-
-### OR law
-
-These laws use the OR operation. Therefore they are called as **OR** laws.
-```yaml
-Example:  
-1. A+0 = A
-2. A+1 = 1
-3. A+A = A
-4. A+!A = 1
-```
-
-### INVERSION law
-
-This law uses the NOT operation. The inversion law states that double inversion of a variable results in the original variable itself.
+As the rule states 'null' which means that when 1 is added i.e., 'OR' and when 0 is 'AND' with a variable it gives 1 and 0 respectively.
 
 ```yaml
-Example:  !!A = A
+A + 1 = 1
+A . 0 = 0
 ```
 
+### Identity Rule
 
-### Idempotent law
-
-The idempotent law states that `x OR x is x` and `x AND x is x`.
+As the rule states 'identity' which means that when 0 is added i.e., 'OR' and when 0 is 'OR' with a variable it gives the variable back.
 
 ```yaml
-Example:  A + A = A
+A + 0 = A
+A . 1 = A
 ```
 
+### Complement Rule
 
-### Annulment law
-
-The annulment law states that `x OR 1 is 1` and `x AND 0 is 0`.
+Whenever 'AND' or 'OR' is used with the negation of the variable and the variable itself it gives 0 and 1 respectively.
 
 ```yaml
-Example:  A.0 = 0
+A + A' = 1
+A . A' = 0
 ```
 
+### Involution Rule
 
-### Identity law
-
-This law states that anything (x) added to zero or multiplied by 1 equals the original “anything,” no matter what value that “anything” (x) may be.
+Any variable when double negated gives the variable back.
 
 ```yaml
-Example:  A + 0 = A
+(A')' = A
 ```
 
+## Laws of Boolean Algebra
 
-### Commutative law
+There are six Laws in Boolean Algebra. All six laws are described below in increasing order of importance.
 
-Any binary operation which satisfies the following expression is referred to as commutative operation.
+NOTE:
+We can construct any digital circuit with the help of only two gates namely AND and OR along with NOT to use respective variable in it's high or low state as required. Keep in mind that all laws are stated for us to design any digital circuit with the help of only AND and OR gate. Similarly, these laws are stated for the same.
+
+### Commutative Law
+
+The word commutative is prefixd with the word 'commute' which means movement i.e., the movement of variables meaning 
+if we switch or change the position of variables it won't affect the result.
+
 ```yaml
-Example:  A.B = B.A                         A+B = B+A
+Examples:
+A + B = B + A
+A . B = B . A
 ```
 
+### Associative Law
 
-### Associative law
-
-This law states that the order in which the logic operations are performed is irrelevant as their effect is the same.
+The position of parenthesis does not matter. The basic idea of this law is that which set of variables you resolve first is not a matter of fact.
 
 ```yaml
-Example: (A.B).C = A.(B.C)                (A+B)+C = A+(B+C)
+Examples:
+(A + B) + C = A + (B + C)
+(A . B) . C = A . (B . C)
 ```
 
-### Distributive law
+### Idempotence Law
 
-Distributive law states the following condition.
+As the word states 'Identity' try to understand the importance of the term. When we apply AND gate to a single variable it will output the variable itself(*Conditions that we do not know the value of that variable). Similar will be the case when we will apply OR gate. If you understand this then you got it ;)
+
 ```yaml
-Example:  A.(B+C) = A.B + A.C
-
+Examples:
+A + A = A
+A . A = A
 ```
 
+### Distributive Law
 
-## DeMorgan’s Theorem
-This theorem is useful in finding the **complement of Boolean function**. It states that the complement of logical OR of at least two Boolean variables is equal to the logical AND of each complemented variable.
+Suppose it's your birthday and you want to distribute sweets to everyone in the class. What would the birthday reader do? Go to each person and distribute the sweets?. Awesome. That's what happens in the case of Distributive law. Think of the number outside the parenthesis as the birthday variable who needs to attend each and every variable inside the parenthesis. Follow up the examples to understand better.
 
-DeMorgan’s theorem with 2 Boolean variables x and y can be represented as
 ```yaml
-  (x + y)’ = x’.y’
+Examples:
+A (B + C) = A.B + A.C
+A + (B.C) = (A + B)(A + C)
 ```
-The dual of the above Boolean function is
+
+### Redundance Law
+
+What do you do when you find two identical items while going to a treack inside your bag? Obviously you remove one of the two redundant items. That's what you need to do here, extract the common variable and solve the expression inside parenthesis.
+
 ```yaml
-  (x.y)’ = x’ + y’
+Examples:
+A + A.B = A
+A(A + B) = A   //Here initial expression is reduced to A.A + A.B(Distributive Law) 
+               which can further be A + A.B(using Identity Law)
 ```
-Therefore, the complement of logical AND of two Boolean variables is equal to the logical OR of each complemented variable. Similarly, we can apply DeMorgan’s theorem for more than 2 Boolean variables also.
+
+### De Morgan's Law
+
+This is the most important law of Boolean Algebra. Remember the phrase **'Break the Line, change the Sign'** and **'Join the Line, change the sign'** both are applicable. Meaning break the negate and change AND to OR and OR to AND within that negate sign. Do not remove the line. As the phrase speaks of breaking the line and changing the sign not removing the line. Be careful while applying this law.
+
+```yaml
+(A + B)' = (A'B')
+(AB)' = (A' + B')
+```
+
+Try to implement any gate you wish to with the help of the simulator present below, where 'switch on' means a high state i.e., 1 and 'switch off' means a low state i.e., 0. Select the gate in between with the help of list present.
 
 {% include bool.html %}
-
-
 
 {% include disqus.html %}

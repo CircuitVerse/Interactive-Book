@@ -113,14 +113,14 @@ soda_machine_fsm.initialize = function() {
 
 	//Circles
 	fsm_circles[0] = paper.circle(75,110,50).attr({'stroke-width':'2'});
-	fsm_circles[1] = paper.circle(275,110,50).attr({'stroke-width':'2'});
-	fsm_circles[2] = paper.circle(475,110,50).attr({'stroke-width':'2'});
-	fsm_circles[3] = paper.circle(675,110,50).attr({'stroke-width':'2'});
-	fsm_circles[4] = paper.circle(875,110,50).attr({'stroke-width':'2'});
-	fsm_circles[5] = paper.circle(875,260,50).attr({'stroke-width':'2'});
-	fsm_circles[6] = paper.circle(575,260,50).attr({'stroke-width':'2'});
-	fsm_circles[7] = paper.circle(375,260,50).attr({'stroke-width':'2'});
-	fsm_circles[8] = paper.circle(175,260,50).attr({'stroke-width':'2'});
+	fsm_circles[1] = paper.circle(275,110,50).attr({'stroke-width':'2', 'fill':'white'});
+	fsm_circles[2] = paper.circle(475,110,50).attr({'stroke-width':'2', 'fill':'white'});
+	fsm_circles[3] = paper.circle(675,110,50).attr({'stroke-width':'2', 'fill':'white'});
+	fsm_circles[4] = paper.circle(875,110,50).attr({'stroke-width':'2', 'fill':'white'});
+	fsm_circles[5] = paper.circle(875,260,50).attr({'stroke-width':'2', 'fill':'white'});
+	fsm_circles[6] = paper.circle(575,260,50).attr({'stroke-width':'2', 'fill':'white'});
+	fsm_circles[7] = paper.circle(375,260,50).attr({'stroke-width':'2', 'fill':'white'});
+	fsm_circles[8] = paper.circle(175,260,50).attr({'stroke-width':'2', 'fill':'white'});
 
 	//arrows
 	fsm_arrows[0][3] = paper.path("M110.35,74.65 q264.65,-150,529.3,0").attr({'stroke-width':'2', 'arrow-end': 'classic-wide-long'});
