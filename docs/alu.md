@@ -50,8 +50,8 @@ There are a few important takeaways here:
 * The input arguments A and B are often stored in Internal Registers. These along with other special purpose register form the registers of the microcontroller.
 * ROM memories are slower in speed, hence an intermediate high speed RAM is often used.
 * All the critical timings, decoding of the instructions are often grouped together in seperate control and timings unit.
-* If a Micro controller would be constructed only from ALU, RAM and ROM, there would not be any external interface. Hence we have Input/Output IO ports.
-* Additional features such as Interrupts, communication protocols, EEPROM, Timers/Counters, Debug interfaces etc are incorporated to make a controller complete.
+* If a Micro controller would be constructed only from ALU, RAM and ROM, there would not be any external interface. Hence we have Input/Output (I/O) ports.
+* Additional features such as Interrupts, communication protocols, EEPROM, Timers/Counters, Debug interfaces etc. are incorporated to make a controller complete.
 
 In above discussion we might have left out intricate details involved in a ALU, CPU design. But the aim was to understand ALU/CPU at a deeper level.
 
