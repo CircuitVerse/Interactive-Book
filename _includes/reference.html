@@ -1,0 +1,9 @@
+<div>
+  <ol>
+    {% for url in site.data.references.url %}
+    <li>
+      <a href="{{ url }}" target="_blank" rel="noopener noreferrer">{{ url }}</a>
+    </li>
+    {% endfor %}
+  </ol>
+</div>
