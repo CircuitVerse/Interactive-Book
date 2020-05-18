@@ -50,4 +50,21 @@ That means if D3 = 1 then Y1 Y1 = 11 irrespective of the other inputs. Similarly
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/762" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
+## Decimal to BCD Encoder
+{: .no_toc }
+
+The decimal to binary encoder usually consists of 10 input lines and 4 output lines. Each input line corresponds to the each decimal digit and 4 outputs correspond to the BCD code. This encoder accepts the decoded decimal data as an input and encodes it to the BCD output which is available on the output lines. 
+
+## Octal to Binary Encoder
+{: .no_toc }
+
+The 8 to 3 Encoder or octal to Binary encoder consists of 8 inputs : Y7 to Y0 and 3 outputs : A2, A1 & A0. Each input line corresponds to each octal digit and three outputs generate corresponding binary code.
+
+## Hexadecimal to Binary Encoder
+{: .no_toc }
+
+The 16 to 3 Encoder or Hexadecimal to Binary encoder consists of 16 inputs : Y15 to Y0 and 3 outputs : A2, A1 & A0. Each input line corresponds to each hexadecimal digit and three outputs generate corresponding binary code.
+
+
+
 {% include disqus.html %}
