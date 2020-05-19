@@ -29,7 +29,7 @@ So with the above building blocks i.e. half adder and full adder discussed in Co
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/42961" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
-**Input = M1,M0 & 
+**Input = M0,M1 & 
 Output = Operation**
 
 |M0|M1|Operation|
