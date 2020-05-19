@@ -137,7 +137,7 @@ function show_result()
             document.getElementById("result").style.backgroundImage = bit_display_bool[bit_bool[0] != bit_bool[1]];
             break;
         default:
-            document.getElementById("operator").style.backgroundImage = "url('../assets/images/NotGate.svg')";
+            document.getElementById("operator").style.backgroundImage = "url('../assets/images/NOT_gate.png')";
             document.getElementById("result").style.backgroundImage = bit_display_bool[!bit_bool[1]];
     }
 }
