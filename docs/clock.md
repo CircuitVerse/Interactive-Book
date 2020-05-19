@@ -28,7 +28,7 @@ This clock signal is shown in the following figure.
 
 <div style="text-align:center"><img src="../assets/images/clock_signal.jpg" /></div>
 
-n the above figure, square wave is considered as clock signal. This signal stays at logic High (5V) for some time and stays at logic Low (0V) for equal amount of time. This pattern repeats with some time period. In this case, the time period will be equal to either twice of ON time or twice of OFF time.
+In the above figure, square wave is considered as clock signal. This signal stays at logic High (5V) for some time and stays at logic Low (0V) for equal amount of time. This pattern repeats with some time period. In this case, the time period will be equal to either twice of ON time or twice of OFF time.
 
 We can represent the clock signal as train of pulses, when ON time and OFF time are not same. This clock signal is shown in the following figure.
 
