@@ -3,6 +3,7 @@ layout: default
 title: D Flip-Flop
 parent: Flip-Flops
 nav_order: 2
+comments: true
 ---
 ## D Flip-Flop
 
@@ -28,3 +29,5 @@ Therefore, D flip-flop always Hold the information, which is available on data i
 Next state of D flip-flop is always equal to data input, D for every positive transition of the clock signal. Hence, D flip-flops can be used in registers, shift registers and some of the counters.
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/12254" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+
+{% include disqus.html %}

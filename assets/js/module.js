@@ -26,7 +26,10 @@ function set_bits()
 {
     if(isNaN(document.getElementById("value_A").value) || document.getElementById("value_A").value > 255 || document.getElementById("value_A").value < 0 || isNaN(document.getElementById("value_B").value) || document.getElementById("value_B").value < 0 || document.getElementById("value_B").value > 255)
     {
+        document.getElementById("value_A").value = 0;
+        document.getElementById("value_B").value = 0;
         alert("Only numbers between 0 and 255 can be entered.");
+        set_bits();
     }
     else
     {
@@ -125,15 +128,19 @@ function show_result()
     switch(document.getElementById("operator").value)
     {
         case "AND":
+            document.getElementById("operator").style.backgroundImage = "url('../assets/images/AND_gate.png')";
             document.getElementById("result").style.backgroundImage = bit_display_bool[bit_bool[0] && bit_bool[1]];
             break;
         case "OR":
+            document.getElementById("operator").style.backgroundImage = "url('../assets/images/OR_gate.png')";
             document.getElementById("result").style.backgroundImage = bit_display_bool[bit_bool[0] || bit_bool[1]];
             break;
         case "XOR":
+            document.getElementById("operator").style.backgroundImage = "url('../assets/images/EOR_gate.png')";
             document.getElementById("result").style.backgroundImage = bit_display_bool[bit_bool[0] != bit_bool[1]];
             break;
         default:
+            document.getElementById("operator").style.backgroundImage = "url('../assets/images/NOT_gate.png')";
             document.getElementById("result").style.backgroundImage = bit_display_bool[!bit_bool[1]];
     }
 }
@@ -168,11 +175,11 @@ function build() {
         placeholder.innerHTML = "<p>You can only have 8 variables at a time.</p>";
         return;
     }
-    let string = "<tr><th style=\"letter-spacing: 0; padding: initial;\">minterm</th>";
+    let string = "<thead><tr><th style=\"letter-spacing: 0; padding: initial;\">minterm</th>";
     for (i = 0; i < variables.length; i++) {
         string += "<th>" + variables[i] + "</th>";
     }
-    string += "<th>" + text + "</th></tr>";
+    string += "<th>" + text + "</th></tr></thead><tbody>";
     for (i = 0; i < Math.pow(2, variables.length); i++) {
         string += "<tr><td style=\"letter-spacing: 0; padding: initial;\">"+i.toString()+"</td>";
         let data = [];
@@ -186,7 +193,7 @@ function build() {
         }
         string += "<td>" + solve(equation) + "</td></tr>";
     }
-    string = "<table align='center' id>" + string + "</table>";
+    string = "<table align='center' id='truth_generator'>" + string + "</tbody></table>";
     if (string.indexOf("<td></td>") == -1)
         placeholder.innerHTML = string;
     else
