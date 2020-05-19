@@ -2,9 +2,9 @@
 # Interactive-Book
 
 
-![download](https://user-images.githubusercontent.com/35162705/69917985-7f323900-1492-11ea-994e-6c2bdc999cc0.png)
+![download](https://github.com/CircuitVerse/CircuitVerse/raw/master/public/img/cvlogo.svg?sanitize=true)
 
-[![Slack](https://img.shields.io/badge/chat-on_slack-pink.svg)](https://join.slack.com/t/circuitverse-team/shared_invite/enQtNjc4MzcyNDE5OTA3LTdjYTM5NjFiZWZlZGI2MmU1MmYzYzczNmZlZDg5MjYxYmQ4ODRjMjQxM2UyMWI5ODUzODQzMDU2ZDEzNjI4NmE)
+[![Slack](https://img.shields.io/badge/chat-on_slack-purple.svg?style=for-the-badge&logo=slack)](https://join.slack.com/t/circuitverse-team/shared_invite/enQtNjc4MzcyNDE5OTA3LTdjYTM5NjFiZWZlZGI2MmU1MmYzYzczNmZlZDg5MjYxYmQ4ODRjMjQxM2UyMWI5ODUzODQzMDU2ZDEzNjI4NmE)
 
 [Join Mailing List](https://circuitverse.us20.list-manage.com/subscribe?u=89207abda49deef3ba56f1411&id=29473194d6)
 
@@ -21,6 +21,11 @@ As contributors and maintainers of this project, and in the interest of fosterin
 ## Clone this repo!
 
 First things first. Make a local clone of this repo so you can work on it from your own computer.
+
+```
+git clone https://github.com/CircuitVerse/Interactive-Book.git
+cd Interactive-Book
+```
 
 ## Install, and Serve!
 
@@ -55,10 +60,8 @@ This should start serving the website on http://0.0.0.0:4000/ - simply make chan
 We are open to all contributions by anyone, and we encourage all new members to create join our slack and discord channel.
 Here are links to our:
 
-[![Slack](https://img.shields.io/badge/chat-on_slack-pink.svg)](https://join.slack.com/t/circuitverse-team/shared_invite/enQtNjc4MzcyNDE5OTA3LTdjYTM5NjFiZWZlZGI2MmU1MmYzYzczNmZlZDg5MjYxYmQ4ODRjMjQxM2UyMWI5ODUzODQzMDU2ZDEzNjI4NmE)
+[![Slack](https://img.shields.io/badge/chat-on_slack-purple.svg?style=for-the-badge&logo=slack)](https://join.slack.com/t/circuitverse-team/shared_invite/enQtNjc4MzcyNDE5OTA3LTdjYTM5NjFiZWZlZGI2MmU1MmYzYzczNmZlZDg5MjYxYmQ4ODRjMjQxM2UyMWI5ODUzODQzMDU2ZDEzNjI4NmE)
 
-[![Discord](https://img.shields.io/discord/552660710232948749.svg)](https://discord.gg/95x8H7b) 
-- This is an official fan communication channel. Thanks to [@jbox1](https://github.com/jbox144) for this initiative.
 
 ## Contributors
 Thanks to everyone who has contributed to the Interactive Book so far!
@@ -165,6 +168,7 @@ Note that answers must be text only and not contain any other formatting.
 If you're looking for support for Jekyll, there are a lot of options:
 
 * Read [Jekyll Documentation](https://jekyllrb.com/docs/)
+* Read [DigitalOcean Jekyll Guide](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-16-04)
 * If you have a question about using Jekyll, start a discussion on [the Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll)
 * Chat with slackers &mdash; Join [slack channel](https://join.slack.com/t/circuitverse-team/shared_invite/enQtNjc4MzcyNDE5OTA3LTdjYTM5NjFiZWZlZGI2MmU1MmYzYzczNmZlZDg5MjYxYmQ4ODRjMjQxM2UyMWI5ODUzODQzMDU2ZDEzNjI4NmE)
 
@@ -179,7 +183,7 @@ In addition to these plugins Interactive book also inherit's all the plugins use
 
 
 ---
-
+### Create, Contribute, Learn and succeed with CircuitVerse!!!
 
 Interactive-Book is &copy; 2019 by [Aman Singla](http://github.com/amansingla97) (Gsoc19 project)
 

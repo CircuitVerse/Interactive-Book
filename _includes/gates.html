@@ -10,17 +10,20 @@
 .label			{margin-top: 100px; text-align: center; font-style:italic}
 .drop 			{height: 110px; width: 110px; padding: 5px; border: 1px dashed black; float: left; margin: 75px -9px 0 -22px}
 .tile			{margin-left: 5px; float:left; max-width: 70px; max-height: 70px; height: 15%; width: 15%}
-#clipboard		{position: relative; float:right; width: 75px; height: 75px; border: 1px dotted black; margin: -2px 5px 5px 5px; overflow: hidden; text-align:center}
+#clipboard		{position: relative; float:right; width: 75px; height: 75px; border: 1px dotted green; margin: -2px 5px 5px 5px; overflow: hidden; text-align:center}
 #clipboard img	{padding: 2px; float:none}
+#clipboard img:hover {cursor: pointer;}
+img:hover {cursor: pointer;}
+
 
 @media screen and (max-width: 849px) {
-    #clipboard	{display: none}
+.clipboard_div {padding-top: 10%;margin: 5%;}
 }
 @media screen and (max-width: 499px) {
     p			{display: none}
 .circuit	{display: none}
 .tile		{display: none}
-    #too_small	{diplay: block; margin-top: -14px}
+    #too_small	{display: block; margin-top: -14px}
 }
 @media screen and (min-width: 500px) {
     #too_small		{display: none}
@@ -114,7 +117,7 @@ function disableSelection(target)
 <img src="../assets/images/NOR_gate.png" alt="NOR" class="tile">
 <img src="../assets/images/EOR_gate.png" alt="EOR" class="tile">
 <img src="../assets/images/XNOR_gate.png" alt="NXOR" class="tile">
-<div id="clipboard"></div>
+<div class="clipboard_div"><div id="clipboard"></div></div>
 <p style="clear:left">You can also click/tap a symbol to copy it and then click/tap to paste it into the box. </p>
 <div style="display: inline-block">
     <div class="circuit">
@@ -213,4 +216,3 @@ function disableSelection(target)
     }
 
 </script>
-
