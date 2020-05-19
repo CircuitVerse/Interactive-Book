@@ -3,6 +3,7 @@ layout: default
 title: Encoder
 parent: MSI Components
 nav_order: 4
+comments: true
 ---
 
 # Encoder
@@ -48,3 +49,5 @@ That means if D3 = 1 then Y1 Y1 = 11 irrespective of the other inputs. Similarly
 <div style="text-align:center"><img src="../../assets/images/priorityencoder_logiccircuit.jpg" /></div>
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/762" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+
+{% include disqus.html %}
