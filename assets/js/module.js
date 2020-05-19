@@ -26,7 +26,10 @@ function set_bits()
 {
     if(isNaN(document.getElementById("value_A").value) || document.getElementById("value_A").value > 255 || document.getElementById("value_A").value < 0 || isNaN(document.getElementById("value_B").value) || document.getElementById("value_B").value < 0 || document.getElementById("value_B").value > 255)
     {
+        document.getElementById("value_A").value = 0;
+        document.getElementById("value_B").value = 0;
         alert("Only numbers between 0 and 255 can be entered.");
+        set_bits();
     }
     else
     {
