@@ -45,7 +45,7 @@ F(A,B) = A + B
 ```
 Truth Table::
 
-|A|B|F|
+|A|B|F(A,B)|
 |0|0|0|
 |0|1|1|
 |1|0|1|
@@ -59,7 +59,7 @@ Example:
 F(A,B,C) = A + B.C
 ```
 
-|A|B|C|F|
+|A|B|C|F(A,B,C)|
 |0|0|1|0|
 |0|1|0|0|
 |0|1|1|0|
@@ -127,10 +127,10 @@ The definition of a "Don't care" is a combination of input values that is not kn
 
 Let's consider the following truth-table:
 
-|F(A,B)|A|B|
-|1|0|0|
-|1|0|1|
-|?|1|0|
+|A|B|F(A,B)|
+|0|0|1|
+|0|1|1|
+|1|0|?|
 |1|1|1|
 
 We observe that we have a _Don't care_. Let's observe the differences in cases for `F(1,0)`:
@@ -160,7 +160,6 @@ We can clearly see, if we set `F(1, 0) = 1`, we get a true value for any input. 
 
 {% include truth_table.html %}
 
-
 ---
 
 ## Methods to simplify the boolean function
@@ -169,8 +168,6 @@ The following methods can be used to simplify the the Boolean function:
 
 1. The [Karnaugh-map](https://learn.circuitverse.org/docs/maps.html) or K-map method.
 1. The NAND gate method.
-
-
 
 
 {% include disqus.html %}
