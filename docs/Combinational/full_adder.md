@@ -15,13 +15,12 @@ comments: true
 1. TOC
 {:toc}
 
+
 ## Introduction
 
 Full adder is developed to overcome the drawback of Half Adder circuit. 
 It can add two one-bit numbers A and B, and carry c. 
-The full adder is a three input and two output combinational circuit.
-
-
+The full adder is a three-input and two output combinational circuit.
 
 ## Block Diagram
 
