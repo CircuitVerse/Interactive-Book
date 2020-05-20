@@ -11,11 +11,11 @@ permalink: /docs/flipflop
 
 ## Table of Contents
 
-- [S-R Flip Flop](https://learn.circuitverse.org/docs/flipflop/sr_flipflop.html)
-- [D Flip-Flop](https://learn.circuitverse.org/docs/flipflop/d_flipflop.html)
-- [J-K Flip Flop](https://learn.circuitverse.org/docs/flipflop/jk_flipflop.html)
-- [T Flip Flop](https://learn.circuitverse.org/docs/flipflop/t_flipflop.html)
-- [Master Slave J-K Flip Flop](https://learn.circuitverse.org/docs/flipflop/masterslave_jk_flipflop.html)
+1. [S-R Flip Flop](https://learn.circuitverse.org/docs/flipflop/sr_flipflop.html)
+1. [D Flip-Flop](https://learn.circuitverse.org/docs/flipflop/d_flipflop.html)
+1. [J-K Flip Flop](https://learn.circuitverse.org/docs/flipflop/jk_flipflop.html)
+1. [T Flip Flop](https://learn.circuitverse.org/docs/flipflop/t_flipflop.html)
+1. [Master Slave J-K Flip Flop](https://learn.circuitverse.org/docs/flipflop/masterslave_jk_flipflop.html)
 
 ## Introduction
 

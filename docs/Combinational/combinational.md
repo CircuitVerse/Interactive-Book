@@ -10,11 +10,11 @@ permalink: /docs/combinational
 
 ## Table of Contents
 
-- [Half Adder](https://learn.circuitverse.org/docs/Combinational/half_adder.html)
-- [Full Adder](https://learn.circuitverse.org/docs/Combinational/full_adder.html)
-- [Half Subtractor](https://learn.circuitverse.org/docs/Combinational/half_sub.html)
-- [Full Subtractor](https://learn.circuitverse.org/docs/Combinational/full_sub.html)
-- [N-bit Parallel Adder and Subtractor](https://learn.circuitverse.org/docs/Combinational/N-Bit%20Parallel%20Adder%20&%20Subtractor.html)
+1. [Half Adder](https://learn.circuitverse.org/docs/Combinational/half_adder.html)
+1. [Full Adder](https://learn.circuitverse.org/docs/Combinational/full_adder.html)
+1. [Half Subtractor](https://learn.circuitverse.org/docs/Combinational/half_sub.html)
+1. [Full Subtractor](https://learn.circuitverse.org/docs/Combinational/full_sub.html)
+1. [N-bit Parallel Adder and Subtractor](https://learn.circuitverse.org/docs/Combinational/N-Bit%20Parallel%20Adder%20&%20Subtractor.html)
 
 ## Introduction
 

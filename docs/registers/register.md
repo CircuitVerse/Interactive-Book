@@ -11,10 +11,10 @@ permalink: /docs/register
 
 ## Table of Contents
 
-- [Serial Input Serial Output](https://learn.circuitverse.org/docs/registers/ss.html)
-- [Serial Input Parallel Output](https://learn.circuitverse.org/docs/registers/sp.html)
-- [Parallel Input Serial Output](https://learn.circuitverse.org/docs/registers/ps.html)
-- [Parallel Input Parallel Output](https://learn.circuitverse.org/docs/registers/pp.html)
+1. [Serial Input Serial Output](https://learn.circuitverse.org/docs/registers/ss.html)
+1. [Serial Input Parallel Output](https://learn.circuitverse.org/docs/registers/sp.html)
+1. [Parallel Input Serial Output](https://learn.circuitverse.org/docs/registers/ps.html)
+1. [Parallel Input Parallel Output](https://learn.circuitverse.org/docs/registers/pp.html)
 
 ## Introduction
 

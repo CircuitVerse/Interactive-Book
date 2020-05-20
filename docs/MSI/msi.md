@@ -10,10 +10,10 @@ permalink: /docs/msi
 
 ## Table of Contents
 
-- [Multiplexers](https://learn.circuitverse.org/docs/MSI/mux.html)
-- [DeMultiplexers](https://learn.circuitverse.org/docs/MSI/demux.html)
-- [Decoder](https://learn.circuitverse.org/docs/MSI/decoder.html)
-- [Encoder](https://learn.circuitverse.org/docs/MSI/encoder.html)
+1. [Multiplexers](https://learn.circuitverse.org/docs/MSI/mux.html)
+1. [DeMultiplexers](https://learn.circuitverse.org/docs/MSI/demux.html)
+1. [Decoder](https://learn.circuitverse.org/docs/MSI/decoder.html)
+1. [Encoder](https://learn.circuitverse.org/docs/MSI/encoder.html)
 
 ## Introduction
 

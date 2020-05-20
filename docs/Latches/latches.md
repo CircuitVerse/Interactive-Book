@@ -12,8 +12,8 @@ permalink: /docs/Latches
 
 There are two types of memory elements based on the type of triggering that is suitable to operate it.
 
-* Latches
-* Flip-flops
+1. Latches
+1. Flip-flops
 
 Latches operate with enable signal, which is level sensitive. 
 Whereas, flip-flops are edge sensitive. 
