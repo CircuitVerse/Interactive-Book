@@ -18,7 +18,7 @@ There are two types of memory elements based on the type of triggering that is s
 Latches operate with enable signal, which is level sensitive. 
 Whereas, flip-flops are edge sensitive. 
 We will discuss about flip-flops in next module. 
-Latches are basic storage elements that operate with signal levels (rather than signal transitions). Latches controlled by a clock transition are flip-flops. Latches are level-sensitive devices. Latches are useful for the design of the asynchronous sequential circuit.
+Latches are basic storage elements that operate with signal levels (rather than signal transitions). They are level-sensitive devices, that are useful for the design of the asynchronous sequential circuits. They, generally, have 2 inputs and 1 output pins. And the process where the output of the circuit depends on the previous state and the present input value(s) supplied, with the output value being constant (changing only for a particular condition in the input(s)), is referred to as latching.
 
 ## Differences between Latches and Flip-Flops
 
