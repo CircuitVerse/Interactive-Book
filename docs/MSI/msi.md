@@ -8,6 +8,14 @@ permalink: /docs/msi
 # MSI
 {: .no_toc }
 
+## Table of Contents
+
+- [Multiplexers](https://learn.circuitverse.org/docs/MSI/mux.html)
+- [DeMultiplexers](https://learn.circuitverse.org/docs/MSI/demux.html)
+- [Decoder](https://learn.circuitverse.org/docs/MSI/decoder.html)
+- [Encoder](https://learn.circuitverse.org/docs/MSI/encoder.html)
+
+## Introduction
 
 Digital systems obtain binary-coded data and information that are continuously being operated on in some manner. 
 Some of the operations include:

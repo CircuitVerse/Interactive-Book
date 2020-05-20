@@ -9,6 +9,11 @@ comments: true
 # Multiplexers
 {: .no_toc }
 
+1. TOC
+{:toc}
+
+## Introduction
+
 Multiplexer is a special type of combinational circuit. 
 There are n-data inputs, one output and m select inputs with 2<sup>m</sup> = n. 
 It is a digital circuit which selects one of the n data inputs and routes it to the output. 
@@ -17,7 +22,6 @@ E is called the strobe or enable input which is useful for the cascading. It is 
 
 
 ## Block Diagram
-{: .no_toc }
 
 <div style="text-align:center"><img src="../../assets/images/n_onemultiplexer_blockdiagram.jpg" /></div>
 
@@ -27,7 +31,6 @@ E is called the strobe or enable input which is useful for the cascading. It is 
    
 ### 2 : 1 multiplexer
 #### Truth Table
-{: .no_toc }
 
 <div style="text-align:center"><img src="../../assets/images/two_onemultiplexer_truthtable.jpg" /></div>
 

@@ -9,17 +9,23 @@ comments: true
 # Full Subtractors
 {: .no_toc }
 
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+## Introduction
+
 The disadvantage of a half subtractor is overcome by full subtractor. 
 The full subtractor is a combinational circuit with three inputs A,B,C and two output D and C'. 
 A is the 'minuend', B is 'subtrahend', C is the 'borrow' produced by the previous stage, D is the difference output and C' is the borrow output.
 
 ## Truth Table
-{: .no_toc }
 
 <div style="text-align:center"><img src="../../assets/images/fullsubstrator_truthtable.jpg" /></div>
 
 ## Circuit Diagram
-{: .no_toc }
 
 <div style="text-align:center"><img src="../../assets/images/fullsubstrator_circuitdiagram.jpg" /></div>
 

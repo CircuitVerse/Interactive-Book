@@ -9,8 +9,8 @@ comments: true
 # Parallel Input Parallel Output
 {: .no_toc }
 
-
-
+1. TOC
+{:toc}
 
 ## Introduction
  

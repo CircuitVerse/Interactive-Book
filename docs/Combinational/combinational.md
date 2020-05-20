@@ -8,6 +8,15 @@ permalink: /docs/combinational
 # Digital Combinational Circuits
 {: .no_toc }
 
+## Table of Contents
+
+- [Half Adder](https://learn.circuitverse.org/docs/Combinational/half_adder.html)
+- [Full Adder](https://learn.circuitverse.org/docs/Combinational/full_adder.html)
+- [Half Subtractor](https://learn.circuitverse.org/docs/Combinational/half_sub.html)
+- [Full Subtractor](https://learn.circuitverse.org/docs/Combinational/full_sub.html)
+- [N-bit Parallel Adder and Subtractor](https://learn.circuitverse.org/docs/Combinational/N-Bit%20Parallel%20Adder%20&%20Subtractor.html)
+
+## Introduction
 
 Combinational circuits consist of Logic gates. These circuits operate with binary values. The output(s) of combinational circuit depends on the combination of present inputs. The following figure shows the **block diagram** of combinational circuit.
 

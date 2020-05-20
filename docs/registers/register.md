@@ -9,6 +9,15 @@ permalink: /docs/register
 # Digital Registers
 {: .no_toc }
 
+## Table of Contents
+
+- [Serial Input Serial Output](https://learn.circuitverse.org/docs/registers/ss.html)
+- [Serial Input Parallel Output](https://learn.circuitverse.org/docs/registers/sp.html)
+- [Parallel Input Serial Output](https://learn.circuitverse.org/docs/registers/ps.html)
+- [Parallel Input Parallel Output](https://learn.circuitverse.org/docs/registers/pp.html)
+
+## Introduction
+
 Flip-flop is a 1 bit memory cell which can be used for storing the digital data. 
 To increase the storage capacity in terms of number of bits, we have to use a group of flip-flop. Such a group of flip-flop is known as a Register. 
 The n-bit register will consist of n number of flip-flop and it is capable of storing an n-bit word.
