@@ -42,14 +42,28 @@ That means if D3 = 1 then Y1 Y1 = 11 irrespective of the other inputs. Similarly
 
 <div style="text-align:center"><img src="../../assets/images/priorityencoder_blockdiagram.jpg" /></div>
 
-## Truth Table
+### Truth Table
 
 <div style="text-align:center"><img src="../../assets/images/priorityencoder_truthtable.jpg" /></div>
 
-## Logic Circuit
+### Logic Circuit
 
 <div style="text-align:center"><img src="../../assets/images/priorityencoder_logiccircuit.jpg" /></div>
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/762" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+
+## Decimal to BCD Encoder
+
+The Decimal to Binary Encoder usually consists of 10 input lines and 4 output lines. The input is a number written in base 10 and the output is its corresponding equivalent binary coded decimal number (of 4 bits). 
+
+## Octal to Binary Encoder
+
+The Octal to Binary Encoder encoder usually consists of 8 inputs lines and 3 outputs lines. The input is a number written in base 8 and the output is its corresponding equivalent number in base 2.
+
+## Hexadecimal to Binary Encoder
+
+The Hexadecimal to Binary Encoder encoder usually consists of 16 inputs lines and 3 outputs lines. The input is a number written in base 16 and the output is its corresponding equivalent number in base 2.
+
+
 
 {% include disqus.html %}
