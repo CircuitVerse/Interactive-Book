@@ -2,7 +2,7 @@
 <!-- Thank you for contributing to this repository, it is much appreciated! Make sure that you follow this template strictly, Pull requests won't be merged if the template is not properly filled.
 Also keep in mind that the maintainers get notifications of all events on the repository, therefore avoid unnecessary mentions when opening pull requests. Else, feel free to ask queries or for support.
 -->
-A meaningfull title for PR, not like : made changes to xyz.md
+A meaningful title for PR, not like: made changes to xyz.md
 
 <!--
 It's always a good practice to accompany a pull request with an issue. Use either of the two mentioned below. Remove the one you are not using.

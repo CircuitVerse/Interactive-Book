@@ -26,7 +26,10 @@ function set_bits()
 {
     if(isNaN(document.getElementById("value_A").value) || document.getElementById("value_A").value > 255 || document.getElementById("value_A").value < 0 || isNaN(document.getElementById("value_B").value) || document.getElementById("value_B").value < 0 || document.getElementById("value_B").value > 255)
     {
+        document.getElementById("value_A").value = 0;
+        document.getElementById("value_B").value = 0;
         alert("Only numbers between 0 and 255 can be entered.");
+        set_bits();
     }
     else
     {
@@ -125,15 +128,19 @@ function show_result()
     switch(document.getElementById("operator").value)
     {
         case "AND":
+            document.getElementById("operator").style.backgroundImage = "url('../assets/images/AND_gate.png')";
             document.getElementById("result").style.backgroundImage = bit_display_bool[bit_bool[0] && bit_bool[1]];
             break;
         case "OR":
+            document.getElementById("operator").style.backgroundImage = "url('../assets/images/OR_gate.png')";
             document.getElementById("result").style.backgroundImage = bit_display_bool[bit_bool[0] || bit_bool[1]];
             break;
         case "XOR":
+            document.getElementById("operator").style.backgroundImage = "url('../assets/images/EOR_gate.png')";
             document.getElementById("result").style.backgroundImage = bit_display_bool[bit_bool[0] != bit_bool[1]];
             break;
         default:
+            document.getElementById("operator").style.backgroundImage = "url('../assets/images/NOT_gate.png')";
             document.getElementById("result").style.backgroundImage = bit_display_bool[!bit_bool[1]];
     }
 }
