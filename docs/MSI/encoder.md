@@ -53,17 +53,17 @@ That means if D3 = 1 then Y1 Y1 = 11 irrespective of the other inputs. Similarly
 ## Decimal to BCD Encoder
 {: .no_toc }
 
-The decimal to binary encoder usually consists of 10 input lines and 4 output lines. Each input line corresponds to the each decimal digit and 4 outputs correspond to the BCD code. This encoder accepts the decoded decimal data as an input and encodes it to the BCD output which is available on the output lines. 
+The Decimal to Binary Encoder usually consists of 10 input lines and 4 output lines. Each input line corresponds to the each decimal digit and the output lines generate its corresponding binary code.
 
 ## Octal to Binary Encoder
 {: .no_toc }
 
-The 8 to 3 Encoder or octal to Binary encoder consists of 8 inputs : Y7 to Y0 and 3 outputs : A2, A1 & A0. Each input line corresponds to each octal digit and three outputs generate corresponding binary code.
+The Octal to Binary Encoder encoder usually consists of 8 inputs lines and 3 outputs lines. Each input line corresponds to the each octal digit and the three output lines generate its corresponding binary code.
 
 ## Hexadecimal to Binary Encoder
 {: .no_toc }
 
-The 16 to 3 Encoder or Hexadecimal to Binary encoder consists of 16 inputs : Y15 to Y0 and 3 outputs : A2, A1 & A0. Each input line corresponds to each hexadecimal digit and three outputs generate corresponding binary code.
+The Hexadecimal to Binary Encoder encoder usually consists of 16 inputs lines and 3 outputs lines. Each input line corresponds to the each hexadecimal digit and the three output lines generate its corresponding binary code.
 
 
 
