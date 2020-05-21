@@ -60,13 +60,13 @@ F(A,B,C) = A + B.C
 ```
 
 |A|B|C|F(A,B,C)|
+|0|0|0|0|
 |0|0|1|0|
 |0|1|0|0|
 |0|1|1|0|
-|0|1|1|1|
+|1|0|0|1|
 |1|0|1|1|
 |1|1|0|1|
-|1|1|1|1|
 |1|1|1|1|
 
 ## Sum of Product(SOP)
@@ -104,8 +104,18 @@ This is also known as 'Product of maxterms'. The maxterm here are variables with
 
 ```yaml
 Example:
-F(A,B,C) = (A + B + C)' . (A + B' + C) . (A' + B + C)
+F(A,B,C) = (A + B + C') . (A + B' + C) . (A' + B + C)
 ```
+
+|A|B|C|F(A,B,C)|
+|0|0|0|1|
+|0|0|1|0|
+|0|1|0|0|
+|0|1|1|1|
+|1|0|0|0|
+|1|0|1|1|
+|1|1|0|1|
+|1|1|1|1|
 
 ## Algebraic Simplification
 
