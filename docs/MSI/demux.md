@@ -3,11 +3,15 @@ layout: default
 title: Demultiplexers
 parent: MSI Components
 nav_order: 2
-comments: true
 ---
 
 # Demultiplexers
 {: .no_toc }
+
+1. TOC
+{:toc}
+
+## Introduction
 
 A demultiplexer performs the reverse operation of a multiplexer i.e. it receives one input and distributes it over several outputs. 
 It has only one input, n outputs, m select input. 
@@ -18,13 +22,11 @@ A de-multiplexer is equivalent to a single pole multiple way switch as shown in 
 
 ### 1 : 2  demultiplexer
 #### Block Diagram
-{: .no_toc }
 
 <div style="text-align:center"><img src="../../assets/images/one_twodemultiplexer_blockdiagram.jpg" /></div>
 
 
 #### Truth Table
-{: .no_toc }
 
 <div style="text-align:center"><img src="../../assets/images/one_twodemultiplexer_truthtable.jpg" /></div>
 

@@ -4,6 +4,7 @@ title: About
 nav_order: 21
 description: ""
 permalink: /about
+disable_comments: true
 ---
 
 # About

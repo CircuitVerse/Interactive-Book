@@ -3,6 +3,15 @@ layout: default
 title:  Application of Shift Registers
 nav_order: 15
 ---
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
 # Applications of Shift Registers
 
 In the previous module, we discussed four types of shift registers. Based on the requirement, we can use one of those shift registers. Following are the applications of shift registers.
@@ -14,16 +23,8 @@ In the previous module, we discussed four types of shift registers. Based on the
 
 In this module, let us discuss these two counters one by one.
 
-## Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
----
-
 ## Ring Counter
-In the previous module, we discussed the operation of the Serial In - Parallel Out (SIPO) shift register. It accepts the data from outside in serial form and it requires ‘N’ clock pulses in order to shift ‘N’ bit data.
+In the previous module, we discussed the operation of the Serial In - Parallel Out (SIPO) shift register. It accepts the data from outside in serial form and it requires ‘N’ clock pulses to shift ‘N’ bit data.
 
 Similarly, ‘N’ bit Ring counter performs a similar operation. But, the only difference is that the output of rightmost D flip-flop is given as input of leftmost D flip-flop instead of applying data from outside. Therefore, Ring counter produces a sequence of states (pattern of zeros and ones) and it repeats for every ‘N’ clock cycles.
 

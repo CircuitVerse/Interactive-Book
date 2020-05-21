@@ -3,9 +3,16 @@ layout: default
 title: D Flip-Flop
 parent: Flip-Flops
 nav_order: 2
-comments: true
 ---
-## D Flip-Flop
+# D Flip-Flop
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+## Introduction
 
 D flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, D latch operates with enable signal. That means, the output of D flip-flop is insensitive to the changes in the input, D except for active transition of the clock signal. The circuit diagram of D flip-flop is shown in the following figure.
 
@@ -14,7 +21,7 @@ D flip-flop operates with only positive clock transitions or negative clock tran
 This circuit has single input D and two outputs Q(t) & Q(t)’. The operation of D flip-flop is similar to D Latch. But, this flip-flop affects the outputs only when positive transition of the clock signal is applied instead of active enable.
 
 
-### State table of **D** flip-flop.
+## State table of **D** flip-flop.
 
 | D    |    Q(t+1) | 
 |:-------|:--------|
