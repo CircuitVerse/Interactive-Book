@@ -15,8 +15,6 @@ comments: true
 1. TOC
 {:toc}
 
----
-
 ## Introduction
 
 Half adder is a combinational logic circuit with two inputs and two outputs. 

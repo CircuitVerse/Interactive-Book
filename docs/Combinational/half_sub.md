@@ -15,8 +15,6 @@ comments: true
 1. TOC
 {:toc}
 
----
-
 ## Introduction
 
 Half subtractor is a combination circuit with two inputs and two outputs (difference and borrow). 

@@ -15,8 +15,6 @@ comments: true
 1. TOC
 {:toc}
 
----
-
 ## Introduction
 
 The disadvantage of a half subtractor is overcome by full subtractor. 
