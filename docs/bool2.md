@@ -123,9 +123,9 @@ Let's simplify our expression from the previous truth table example. We can appl
 ```
 AB'C + BD + CD + D // Initial expression
 AB'C + BD + D(C + 1) // Factor out a D
-AB'C + BD + D // Since (C+1) is always true, as C OR true is always true
+AB'C + BD + D // Since (C+1) is always true, as C OR true is always true (Redundance Law)
 AB'C + D(B + 1) // Factor out a D again
-AB'C + D // Since (B+1) is always true, as B OR true is always true
+AB'C + D // Since (B+1) is always true, as B OR true is always true (Redundance Law)
 AB'C + D // Final expression
 ```
 
