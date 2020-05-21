@@ -8,7 +8,8 @@ permalink: /docs/msi
 # MSI
 {: .no_toc }
 
-## Table of Contents
+## Table of contents
+{: .no_toc .text-delta }
 
 1. [Multiplexers](https://learn.circuitverse.org/docs/MSI/mux.html)
 1. [DeMultiplexers](https://learn.circuitverse.org/docs/MSI/demux.html)

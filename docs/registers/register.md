@@ -9,7 +9,8 @@ permalink: /docs/register
 # Digital Registers
 {: .no_toc }
 
-## Table of Contents
+## Table of contents
+{: .no_toc .text-delta }
 
 1. [Serial Input Serial Output](https://learn.circuitverse.org/docs/registers/ss.html)
 1. [Serial Input Parallel Output](https://learn.circuitverse.org/docs/registers/sp.html)

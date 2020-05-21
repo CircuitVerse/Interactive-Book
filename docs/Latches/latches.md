@@ -10,6 +10,16 @@ permalink: /docs/Latches
 # Latches
 {: .no_toc }
 
+## Table of contents
+{: .no_toc .text-delta }
+
+1. [S-R Latch](https://learn.circuitverse.org/docs/Latches/sr_latch.html)
+1. [D Latch](https://learn.circuitverse.org/docs/Latches/d_latch.html)
+1. [J-K Latch](https://learn.circuitverse.org/docs/Latches/jk_latch.html)
+1. [T Latch](https://learn.circuitverse.org/docs/Latches/t_latch.html)
+
+## Introduction
+
 There are two types of memory elements based on the type of triggering that is suitable to operate it.
 
 1. Latches

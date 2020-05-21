@@ -8,7 +8,8 @@ permalink: /docs/combinational
 # Digital Combinational Circuits
 {: .no_toc }
 
-## Table of Contents
+## Table of contents
+{: .no_toc .text-delta }
 
 1. [Half Adder](https://learn.circuitverse.org/docs/Combinational/half_adder.html)
 1. [Full Adder](https://learn.circuitverse.org/docs/Combinational/full_adder.html)

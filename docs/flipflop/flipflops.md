@@ -9,7 +9,8 @@ permalink: /docs/flipflop
 # Flip-Flops
 {: .no_toc }
 
-## Table of Contents
+## Table of contents
+{: .no_toc .text-delta }
 
 1. [S-R Flip Flop](https://learn.circuitverse.org/docs/flipflop/sr_flipflop.html)
 1. [D Flip-Flop](https://learn.circuitverse.org/docs/flipflop/d_flipflop.html)
