@@ -27,6 +27,7 @@ The carry output of the previous full adder is connected to carry input of the n
 
 ## 4 Bit Parallel Adder
 In the block diagram, A0 and B0 represent the LSB of the four-bit words A and B. 
+
 Hence Full Adder-0 is the lowest stage. 
 Hence its Cin has been permanently made 0. 
 The rest of the connections are the same as those of n-bit parallel adder is shown in fig. The four-bit parallel adder is a very common logic circuit.
@@ -34,7 +35,6 @@ The rest of the connections are the same as those of n-bit parallel adder is sho
 ## Block Diagram
 
 <div style="text-align:center"><img src="../../assets/images/fourbitadder_blockdiagram.jpg" /></div>
-
 
 # N-Bit Parallel Subtractor
 
@@ -44,6 +44,7 @@ That means we can use a binary adder to perform the binary subtraction.
 
 
 ## 4 Bit Parallel Subtractor
+
 The number to be subtracted (B) is first passed through inverters to obtain its 1's complement. 
 The 4-bit adder then adds A and 2's complement of B to produce the subtraction. 
 S3 S2 S1 S0 represents the result of binary subtraction (A-B) and carry output Cout represents the polarity of the result. 
@@ -56,6 +57,7 @@ If A > B Cout = 0 and the result of binary form (A-B) then Cout = 1 and the resu
 
 
 ## 8 Bit Full Adder And Subtractor   
+
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/2018" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 {% include disqus.html %}
