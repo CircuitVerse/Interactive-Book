@@ -138,72 +138,6 @@
           </script>
           {% endif %}
         </div>
-      </div>
-      <div id="mainhome" class="main-content">
-        <div id="content">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
-            <button type="button" id="sidebarCollapse" class="btn btn-info new">
-              <i class="fas fa-align-left"></i>
-              <span>Sidebar</span>
-            </button>
-            <div id="prev-next-controls">
-              {% assign parent = page.parent %}
-              {% assign pages_list = site.html_pages | sort:"nav_order" %}
-              {% assign previous_page = null %}
-              {% assign next_page = null %}
-              {% assign current_page = false %}
-
-              {% for single_page in pages_list %}
-                {% if single_page.parent == parent %}
-                  {% if single_page.title == page.title %}
-                    {% assign current_page = true %}
-                  {% elsif current_page %}
-                    {% if page.has_children == null %}
-                      {% assign next_page = single_page.url %}
-                    {% endif %}
-                    {% break %}
-                  {% else %}
-                    {% assign previous_page = single_page.url %}
-                  {% endif %}
-                {% elsif single_page.parent == page.title %}
-                  {% if single_page.nav_order == 1 %}
-                    {% assign next_page = single_page.url %}
-                  {% endif %}
-                {% endif %}
-              {% endfor %}
-
-              {% assign current_page = false %}
-              {% if next_page == null or previous_page == null %}
-                {% if page.parent != null %}
-                  {% for single_page in pages_list %}
-                    {% if single_page.title == page.parent %}
-                      {% assign current_page = true %}
-                      {% if previous_page == null %}
-                        {% assign previous_page = single_page.url %}
-                      {% endif %}
-                    {% elsif current_page %}
-                      {% if next_page == null %}
-                        {% assign next_page = single_page.url %}
-                      {% endif %}
-                      {% break %}
-                    {% endif %}
-                  {% endfor %}
-                {% endif %}
-              {% endif %}
-
-              {% if page.nav_order == 1 and page.parent == null %}
-                {% assign previous_page = null %}
-              {% endif %}
-
-              {% if previous_page != null %}
-              <a href="{{ previous_page }}" class="btn btn-info">Previous</a>
-              {% endif %}
-              {% if next_page != null %}
-              <a href="{{ next_page }}" class="btn btn-info">Next</a>
-              {% endif %}
-            </div>
-          </nav>
-        </div>
         <div id="mainhome" class="main-content">
           <div id="content">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -216,6 +150,61 @@
                   <i class="fas fa-align-left"></i>
                   <span>Sidebar</span>
                 </button>
+                <div id="prev-next-controls">
+                  {% assign parent = page.parent %}
+                  {% assign pages_list = site.html_pages | sort:"nav_order" %}
+                  {% assign previous_page = null %}
+                  {% assign next_page = null %}
+                  {% assign current_page = false %}
+    
+                  {% for single_page in pages_list %}
+                    {% if single_page.parent == parent %}
+                      {% if single_page.title == page.title %}
+                        {% assign current_page = true %}
+                      {% elsif current_page %}
+                        {% if page.has_children == null %}
+                          {% assign next_page = single_page.url %}
+                        {% endif %}
+                        {% break %}
+                      {% else %}
+                        {% assign previous_page = single_page.url %}
+                      {% endif %}
+                    {% elsif single_page.parent == page.title %}
+                      {% if single_page.nav_order == 1 %}
+                        {% assign next_page = single_page.url %}
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+    
+                  {% assign current_page = false %}
+                  {% if next_page == null or previous_page == null %}
+                    {% if page.parent != null %}
+                      {% for single_page in pages_list %}
+                        {% if single_page.title == page.parent %}
+                          {% assign current_page = true %}
+                          {% if previous_page == null %}
+                            {% assign previous_page = single_page.url %}
+                          {% endif %}
+                        {% elsif current_page %}
+                          {% if next_page == null %}
+                            {% assign next_page = single_page.url %}
+                          {% endif %}
+                          {% break %}
+                        {% endif %}
+                      {% endfor %}
+                    {% endif %}
+                  {% endif %}
+    
+                  {% if page.nav_order == 1 and page.parent == null %}
+                    {% assign previous_page = null %}
+                  {% endif %}
+    
+                  {% if previous_page != null %}
+                  <a href="{{ previous_page }}" class="btn btn-info">Previous</a>
+                  {% endif %}
+                  {% if next_page != null %}
+                  <a href="{{ next_page }}" class="btn btn-info">Next</a>
+                  {% endif %}
               </div>
             </nav>
           </div>
