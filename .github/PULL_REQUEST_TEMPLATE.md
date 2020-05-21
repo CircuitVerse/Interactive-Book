@@ -17,8 +17,8 @@ Ref #
 #### Changes done:
 - [x] Task 1
 
-<!-- Any changes which change how the site looks, or adds styling, or fixex any UI issue need to be accompanied 
-with a screenshot showing comparison between old and new -->
+<!-- Any changes which change how the site looks, or adds styling, or fixes any UI issue need to be accompanied 
+with a screenshot showing the comparison between old and new -->
 #### Screenshots
 
 
