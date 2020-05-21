@@ -29,7 +29,7 @@ To simplify any given boolean expression, we must find the __minimum__ number of
 
 Let's find the minimum number of NAND gates required to simplify the logical expression:
 ```yaml
-F(A, B, C, D) = AB' + C'D + E
+F(A, B, C, D) = AB' + C'D
 ```
 
 ### Step 1: Double Negation
@@ -38,7 +38,7 @@ Since the NAND gate is a combination of a NOT gate and an AND gate, we first app
 Adding a double negation does not alter the inherent value of the expression as a double negation always nullifies itself.
 
 ```yaml
-F = (F')' = ((AB' + C'D + E)')'
+F = (F')' = ((AB' + C'D)')'
 ```
 
 ### Step 2: Applying De Morgan's Law
