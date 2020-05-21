@@ -18,24 +18,45 @@ nav_order: 5
 ---
 
 
-
 ## Introduction
 
-
-Boolean algebra deals with Binary-Variables and Logical operations.
-A **Boolean Function** is written as an **Algebric Expression** called a **Boolean Expression** which consists of Binary-Variables, the logic operation symbols, and also the constants: 0 and 1.
+Boolean Functions are comprised of two components i.e., Variables and Logic operations(AND, OR, NOT...etc). Any equation with the mixture of these two components forms a Boolean function. The value of variables may or may not be pre-defined. The shorthand notation for a boolean function is that it is represented with a capital F followed by parenthesis comprising of all variables of that equation separated by comma(','). You can represent any boolean expression in form of a Truth Table. Follow up to know How?
 Consider the following example:
 ```yaml
-Example:  
+Example:
+	 Shorthand notation representing the boolean expression
+	/
+	F(A,B) = A + B	//This is a boolean function comprising of variables A and B
 
-      F(A,B,C,D)     =     A + BC + !(ADC)
-   Boolean Function      Boolean expression
+	F(A, B, C) = A(B + C(A + B))
+					   \
+					   	Boolean Expression
 ```
-Here **Y** represents the output in the left of the equation. So we can state:
 
-```yaml 
-          Y         =     A + BC + !(ADC)
-   Boolean Function      Boolean expression
+## Truth Table Formation
+
+Truth Table is formed by evaluating the Boolean expression for each and every truth value of a variable. Now truth values of a variable are either 'true' or 'false'. The main point is to evaluate the value of Boolean expression for each and every combination of the Truth values of 
+variables present. Suppose there is only one variable implies it can hold either 'true' or 'false' but, when we have two variables then we can have a combination of {TT, TF, FT, FF}(T -> True, F -> False). Implies we need to evaluate the value of expression for each and every Truth value of a variable.
+The above implications bring us to a conclusion that there can be 2^(number of variables) number of combination for a single boolean expression. Follow up the examples below to learn how to map those values.
+
+```yaml
+Example:
+F(A,B) = A + B
+```
+Truth Table::
+
+|A|B|F(A,B)|
+|0|0|0|
+|0|1|1|
+|1|0|1|
+|1|1|1|
+
+```yaml
+Here we have 4 combinations for 2 variables, try to grasp the next example where variables are 3 which 
+implies 8 combinations. Make a note of how Truth values of a variable are written under each column for 
+every variable.
+Example:
+F(A,B,C) = A + B.C
 ```
 ## Truth Table Formation
 A truth table shows a table having all the combinations of the inputs and their corresponding results.
@@ -300,16 +321,16 @@ AB'C+D // Since (B+1) is always true, as B OR true is always true
 As an exercise to the reader, complete the truth table to show that they are logically equivalent. 
 
 ## Undefined Input & Don't Cares
+
 The definition of a "Don't care" is a combination of input values that is not known, and could be either `0` or `1`. For the purposes of variable simplification, we would choose the greedy approach of picking between {`0`, `1`} such that the simplified expression has less terms.
 
 Let's consider the following truth-table:
 
-| F(AB)| A | B |
-| :----: |:-:| :-:|
-| 1    | 0 | 0 |
-| 1    | 0 | 1 |
-| ?    | 1 | 0 |
-| 1    | 1 | 1 |
+|A|B|F(A,B)|
+|0|0|1|
+|0|1|1|
+|1|0|?|
+|1|1|1|
 
 We observe that we have a _Don't care_. Let's observe the differences in cases for `F(1,0)`:
 
@@ -332,13 +353,11 @@ F(AB) = A'B' + A'B + AB' + AB
 
 We can clearly see, if we set `F(1, 0) = 1`, we get a true value for any input. Therefore, for the purposes of variable simplification, we can simply let `F(1, 0) = 1` thus implying `F(AB) = 1`.
 
-
-## Let us try this interactive truth table generator for better understanding
+## Try the interactive Truth Table generator
 
 ---
 
 {% include truth_table.html %}
-
 
 ---
 
@@ -346,10 +365,8 @@ We can clearly see, if we set `F(1, 0) = 1`, we get a true value for any input. 
 
 The following methods can be used to simplify the the Boolean function:
 
-1. The Karnaugh-map or K-map method.
+1. The [Karnaugh-map](https://learn.circuitverse.org/docs/maps.html) or K-map method.
 1. The NAND gate method.
-
-
 
 
 {% include disqus.html %}
