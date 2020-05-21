@@ -177,7 +177,7 @@ We can clearly see, if we set `F(1, 0) = 1`, we get a true value for any input. 
 The following methods can be used to simplify the the Boolean function:
 
 1. The [Karnaugh-map](https://learn.circuitverse.org/docs/maps.html) or K-map method.
-1. The [NAND gate method](https://learn.circuitverse.org/docs/NANDGateMethod.html).
+1. The [NAND gate method](https://learn.circuitverse.org/docs/nand_gate_method.html).
 
 
 {% include disqus.html %}
