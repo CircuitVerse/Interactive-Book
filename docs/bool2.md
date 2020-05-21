@@ -121,12 +121,12 @@ F(A,B,C) = (A + B + C') . (A + B' + C) . (A' + B + C)
 
 Let's simplify our expression from the previous truth table example. We can apply ordinary algebra tricks such as factoring. Remember that the `+` operator invokes the `OR` gate, and that `true or x` always returns `true` regardless of `x` (as shown in our first truth table).
 ```
-AB'C+BD+CD+D // Initial expression
-AB'C+BD+D(C+1) // Factor out a D
-AB'C+BD+D // Since (C+1) is always true, as C OR true is always true
-AB'C+D(B+1) // Factor out a D again
-AB'C+D // Since (B+1) is always true, as B OR true is always true
-=AB'C+D // Final expression
+AB'C + BD + CD + D // Initial expression
+AB'C + BD + D(C + 1) // Factor out a D
+AB'C + BD + D // Since (C+1) is always true, as C OR true is always true
+AB'C + D(B + 1) // Factor out a D again
+AB'C + D // Since (B+1) is always true, as B OR true is always true
+AB'C + D // Final expression
 ```
 
 As an exercise to the reader, complete the truth table to show that they are logically equivalent. 
