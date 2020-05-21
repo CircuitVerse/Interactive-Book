@@ -6,7 +6,7 @@ nav_order: 3
 comments: true
 ---
 
-# Multiplexers
+# Decoders
 {: .no_toc }
 
 1. TOC
