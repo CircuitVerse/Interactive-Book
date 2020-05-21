@@ -1,6 +1,6 @@
 ---
 layout: default
-title: NAND Gate Simplification
+title: NAND Gate Method
 comments: true
 nav_order: 5
 ---
