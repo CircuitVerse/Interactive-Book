@@ -3,7 +3,6 @@ layout: default
 title: N-Bit Parallel Adder & Subtractor
 parent: Combinational Logic
 nav_order: 5
-comments: true
 ---
 
 

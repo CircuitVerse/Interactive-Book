@@ -3,7 +3,6 @@ layout: default
 title: JK Latch
 parent: Latches
 nav_order: 3
-comments: true
 ---
 
 ## JK Latch

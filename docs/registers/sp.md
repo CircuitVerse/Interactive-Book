@@ -3,7 +3,6 @@ layout: default
 title: Serial Input Parallel Output
 parent: Digital Registers
 nav_order: 2
-comments: true
 ---
 
 # Serial Input Parallel Output

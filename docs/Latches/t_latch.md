@@ -3,7 +3,6 @@ layout: default
 title: T Latch
 parent: Latches
 nav_order: 4
-comments: true
 ---
 
 ## T Latch

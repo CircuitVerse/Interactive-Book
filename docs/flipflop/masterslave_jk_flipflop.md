@@ -3,7 +3,6 @@ layout: default
 title: Master Slave JK Flip-Flop
 parent: Flip-Flops
 nav_order: 5
-comments: true
 ---
 
 # Master Slave JK Flip-Flop

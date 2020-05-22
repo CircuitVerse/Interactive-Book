@@ -3,7 +3,6 @@ layout: default
 title: Decoder
 parent: MSI Components
 nav_order: 3
-comments: true
 ---
 
 # Decoders

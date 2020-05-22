@@ -3,7 +3,6 @@ layout: default
 title: SR Latch
 parent: Latches
 nav_order: 1
-comments: true
 ---
 
 ## SR Latch

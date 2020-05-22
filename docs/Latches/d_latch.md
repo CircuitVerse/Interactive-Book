@@ -3,7 +3,6 @@ layout: default
 title: D Latch
 parent: Latches
 nav_order: 2
-comments: true
 ---
 
 ## D Latch
