@@ -33,5 +33,3 @@ A is the 'minuend', B is 'subtrahend', C is the 'borrow' produced by the previou
 ## Full Subtractor From Universal Gates
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/45278" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
-
-{% include disqus.html %}

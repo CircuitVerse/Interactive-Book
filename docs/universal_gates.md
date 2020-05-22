@@ -53,6 +53,3 @@ The only time the NAND gate output is 0 is when both inputs are 1. Therefore, by
 ### Implementing AND gate
 The AND gate is simply the output of a NAND gate inverted.
 <iframe width="600px" height="400px" src="https://circuitverse.org/simulator/embed/45180" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
-
-
-{% include disqus.html %}
