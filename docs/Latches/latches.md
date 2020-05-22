@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Latches
-comments: true
 nav_order: 12
 has_children: true
 permalink: /docs/Latches

@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Race around condition
-comments: true
 nav_order: 14
 ---
 

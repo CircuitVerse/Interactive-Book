@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Gates
-comments: true
 nav_order: 3
 ---
 # Logic Gates
@@ -138,5 +137,3 @@ The Truth table of XNOR gate which consists of two inputs is given below
 <img src="../assets/images/XnorGate.svg" />
 
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46613" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
-
-{% include disqus.html %}
