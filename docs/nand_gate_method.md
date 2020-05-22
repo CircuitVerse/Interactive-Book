@@ -63,7 +63,4 @@ Notice that there are input elements that are present in the negative form, name
 <iframe width="600px" height="300px" src="https://circuitverse.org/simulator/embed/93441" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
 
 
-{% include disqus.html %}
-
-
 

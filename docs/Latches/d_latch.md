@@ -32,5 +32,3 @@ In this module, we implemented various Latches by providing the cross coupling b
 
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/4276" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
-
-{% include disqus.html %}

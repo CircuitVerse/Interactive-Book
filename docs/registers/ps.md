@@ -47,5 +47,3 @@ Thus, the parallel-in serial-out operation takes place.
 
 
 <div style="text-align:center"><img src="../../assets/images/piso_blockdiagram.jpg" /></div>
-
-{% include disqus.html %}
