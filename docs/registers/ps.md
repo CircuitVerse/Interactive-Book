@@ -47,3 +47,6 @@ Thus, the parallel-in serial-out operation takes place.
 
 
 <div style="text-align:center"><img src="../../assets/images/piso_blockdiagram.jpg" /></div>
+
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/93910" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+

@@ -49,3 +49,6 @@ Similarly with Din = 1 and with the fourth negative clock edge arriving, the sto
 
 ## Waveforms
 <div style="text-align:center"><img src="../../assets/images/siso_waveform.jpg" /></div>
+
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/93866" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+

@@ -30,3 +30,6 @@ Only the clock pulse is essential to load all the binary bits.
 
 
 <div style="text-align:center"><img src="../../assets/images/pipo_blockdiagram.jpg" /></div>
+
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/93890" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+
