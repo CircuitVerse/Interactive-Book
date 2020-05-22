@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Universal Gates
-comments: true
 nav_order: 3
 ---
 # Universal Gates

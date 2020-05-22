@@ -3,7 +3,6 @@ layout: default
 title: Half Subtractors
 parent: Combinational Logic
 nav_order: 3
-comments: true
 ---
 
 # Half Subtractors

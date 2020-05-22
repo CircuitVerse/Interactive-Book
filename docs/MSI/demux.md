@@ -3,7 +3,6 @@ layout: default
 title: Demultiplexers
 parent: MSI Components
 nav_order: 2
-comments: true
 ---
 
 # Demultiplexers

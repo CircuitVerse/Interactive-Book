@@ -3,7 +3,6 @@ layout: default
 title: Half Adder
 parent: Combinational Logic
 nav_order: 1
-comments: true
 ---
 
 # Half Adder

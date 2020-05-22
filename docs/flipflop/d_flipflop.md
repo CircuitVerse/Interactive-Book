@@ -3,7 +3,6 @@ layout: default
 title: D Flip-Flop
 parent: Flip-Flops
 nav_order: 2
-comments: true
 ---
 # D Flip-Flop
 

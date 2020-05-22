@@ -3,7 +3,6 @@ layout: default
 title: JK Flip-Flop
 parent: Flip-Flops
 nav_order: 3
-comments: true
 ---
 
 # JK Flip-Flop

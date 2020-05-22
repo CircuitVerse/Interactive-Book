@@ -3,7 +3,6 @@ layout: default
 title: SR Flip-Flop
 parent: Flip-Flops
 nav_order: 1
-comments: true
 ---
 
 # SR Flip-Flop
