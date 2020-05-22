@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Latches
-comments: true
 nav_order: 12
 has_children: true
 permalink: /docs/Latches
@@ -10,10 +9,20 @@ permalink: /docs/Latches
 # Latches
 {: .no_toc }
 
+## Table of contents
+{: .no_toc .text-delta }
+
+1. [S-R Latch](https://learn.circuitverse.org/docs/Latches/sr_latch.html)
+1. [D Latch](https://learn.circuitverse.org/docs/Latches/d_latch.html)
+1. [J-K Latch](https://learn.circuitverse.org/docs/Latches/jk_latch.html)
+1. [T Latch](https://learn.circuitverse.org/docs/Latches/t_latch.html)
+
+## Introduction
+
 There are two types of memory elements based on the type of triggering that is suitable to operate it.
 
-* Latches
-* Flip-flops
+1. Latches
+1. Flip-flops
 
 Latches operate with enable signal, which is level sensitive. 
 Whereas, flip-flops are edge sensitive. 

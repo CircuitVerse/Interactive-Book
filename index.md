@@ -2,7 +2,6 @@
 layout: default
 title: Home
 nav_order: 1
-comments: true
 description: ""
 permalink: /
 ---
@@ -29,5 +28,3 @@ This book is mainly prepared for the students who are interested in the concepts
 ### Prerequisites
 Before you start learning from this Book, I hope that you have some basic knowledge about computers and how they work.
 A basic idea regarding the initial concepts of Digital Electronics is enough to understand the topics covered in this tutorial.
-
-{% include disqus.html %}

@@ -3,11 +3,11 @@ layout: default
 title: Serial Input Parallel Output
 parent: Digital Registers
 nav_order: 2
-comments: true
 ---
 
 # Serial Input Parallel Output
 {: .no_toc }
+
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -16,8 +16,9 @@ comments: true
 {:toc}
 
 
+
 ## Introduction
- 
+
 * In such types of operations, the data is entered serially and taken out in parallel fashion.
 
 * Data is loaded bit-by-bit. The output(s) are disabled as long as the data is loading.
@@ -26,7 +27,6 @@ comments: true
 
 * 4 clock cycles are required to load a four-bit word. Hence the speed of operation of SIPO mode is the same as that of the SISO mode.
 
-
 ## Block Diagram
 
 
@@ -34,4 +34,3 @@ comments: true
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/93880" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
-{% include disqus.html %}

@@ -3,7 +3,6 @@ layout: default
 title: T Latch
 parent: Latches
 nav_order: 4
-comments: true
 ---
 
 ## T Latch
@@ -17,6 +16,3 @@ T latch is formed when the inputs of the JK latch are shorted. When the input is
 |  0     |    1    |    1     |
 |  1     |    0    |    1     |
 |  1     |    1    |    0     |
-
-
-{% include disqus.html %}

@@ -163,3 +163,14 @@
     }
   }
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev-next-controls {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}

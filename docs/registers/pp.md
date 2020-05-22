@@ -3,17 +3,18 @@ layout: default
 title: Parallel Input Parallel Output
 parent: Digital Registers
 nav_order: 4
-comments: true
 ---
 
 # Parallel Input Parallel Output
 {: .no_toc }
+
 
 ## Table of contents
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
+
 
 
 ## Introduction
@@ -32,4 +33,3 @@ Only the clock pulse is essential to load all the binary bits.
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/93890" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
-{% include disqus.html %}

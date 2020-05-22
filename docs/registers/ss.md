@@ -3,7 +3,6 @@ layout: default
 title: Serial Input Serial Output
 parent: Digital Registers
 nav_order: 1
-comments: true
 ---
 
 # Serial Input Serial Output
@@ -53,4 +52,3 @@ Similarly with Din = 1 and with the fourth negative clock edge arriving, the sto
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/93866" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
-{% include disqus.html %}

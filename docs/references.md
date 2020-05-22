@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  References
-comments: true
+disable_comments: true
 nav_order: 20
 permalink: /references
 ---
