@@ -3,17 +3,18 @@ layout: default
 title: Parallel Input Parallel Output
 parent: Digital Registers
 nav_order: 4
-comments: true
 ---
 
 # Parallel Input Parallel Output
 {: .no_toc }
+
 
 ## Table of contents
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
+
 
 
 ## Introduction
@@ -29,5 +30,3 @@ Only the clock pulse is essential to load all the binary bits.
 
 
 <div style="text-align:center"><img src="../../assets/images/pipo_blockdiagram.jpg" /></div>
-
-{% include disqus.html %}

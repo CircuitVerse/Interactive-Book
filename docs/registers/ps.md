@@ -3,11 +3,11 @@ layout: default
 title: Parallel Input Serial Output 
 parent: Digital Registers
 nav_order: 3
-comments: true
 ---
 
 # Parallel Input Serial Output 
 {: .no_toc }
+
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -16,7 +16,9 @@ comments: true
 {:toc}
 
 
+
 ## Introduction
+
  
 * Data bits enter in a parallel fashion.
 
@@ -29,6 +31,7 @@ comments: true
 * There are two modes in which this circuit can work, namely - shift mode and load mode.
 
 ## Load mode
+
 When the shift/load bar line is low (0), the AND gates 2, 4 and 6 become active, and they will pass B1, B2, B3 bits to the corresponding flip-flops. 
 On the low going edge of the clock, the binary inputs B0, B1, B2, B3 will get loaded into the corresponding flip-flops. 
 Thus, the parallel loading takes place.
@@ -44,5 +47,3 @@ Thus, the parallel-in serial-out operation takes place.
 
 
 <div style="text-align:center"><img src="../../assets/images/piso_blockdiagram.jpg" /></div>
-
-{% include disqus.html %}
