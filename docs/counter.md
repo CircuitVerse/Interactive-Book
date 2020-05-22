@@ -95,7 +95,7 @@ The JA and KA inputs of FF-A are tied to logic 1. So FF-A will work as a toggle 
 * **4 bit synchronous up/down counter:** This counter has two modes of counting i.e. up counting and down counting. There is a mode switch which switches between the two modes of the counter. When the mode M = 0 it counts up & when mode M = 1 then it counts down.
 
 <div style="text-align:center"><img src="../assets/images/4bit_up_down_counter.png" height="300"/></div>
-
+<iframe width="600px" height="400px" src="https://circuitverse.org/simulator/embed/94144" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
 <br>
 
 * **4-Bit Synchronous Decade Counter:** A BCD decade counter exhibits a truncated binary sequence and goes from 0000 through the
