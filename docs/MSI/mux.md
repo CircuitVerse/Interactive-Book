@@ -56,5 +56,3 @@ It can be implemented with **two** 8 : 1 multiplexers:
 It can also be implemented with **five** 4 : 1 multiplexers:
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/44804" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
-{% include disqus.html %}
-

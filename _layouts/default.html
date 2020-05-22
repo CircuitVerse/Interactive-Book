@@ -190,17 +190,21 @@
         <div id="mainhome" class="main-content">
           <div id="content">
             <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
-                <button type="button" id="sidebarCollapse" class="btn btn-info new">
+                <button type="button" id="sidebarCollapse" class="btn btn-info new mr-3">
                   <i class="fas fa-align-left"></i>
                   <span>Sidebar</span>
                 </button>
                 <div class="prev-next-controls">
-                  {% if previous_page != null %}
-                    <a href="{{ previous_page }}" class="btn btn-info">Previous</a>
-                  {% endif %}
-                  {% if next_page != null %}
-                    <a href="{{ next_page }}" class="btn btn-info">Next</a>
-                  {% endif %}
+                  <div>
+                    {% if previous_page != null %}
+                      <a href="{{ previous_page }}" class="btn btn-info">Previous</a>
+                    {% endif %}
+                  </div>
+                  <div>
+                    {% if next_page != null %}
+                      <a href="{{ next_page }}" class="btn btn-info">Next</a>
+                    {% endif %}
+                  </div>
               </div>
             </nav>
           </div>
@@ -228,13 +232,17 @@
             <div id="main-content" class="page-content" role="main">
               {{ content }} 
               
-              <div class="prev-next-controls">
-                {% if previous_page != null %}
-                  <a href="{{ previous_page }}" class="btn btn-info">Previous</a>
-                {% endif %}
-                {% if next_page != null %}
-                  <a href="{{ next_page }}" class="btn btn-info">Next</a>
-                {% endif %}
+              <div class="prev-next-controls mt-3">
+                <div>
+                  {% if previous_page != null %}
+                    <a href="{{ previous_page }}" class="btn btn-info">Previous</a>
+                  {% endif %}
+                </div>
+                <div>
+                  {% if next_page != null %}
+                    <a href="{{ next_page }}" class="btn btn-info">Next</a>
+                  {% endif %}
+                </div>
               </div>
               
               {% if page.has_children == true and page.has_toc == true %}

@@ -18,6 +18,3 @@ JK latch is similar to RS latch. This latch consists of 2 inputs J and K as show
 |  0     |    1    |    0     |
 |  1     |    0    |    1     |
 |  1     |    1    |  Q(t)'   |
-
-
-{% include disqus.html %}

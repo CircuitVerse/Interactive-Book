@@ -62,7 +62,3 @@ The Octal to Binary Encoder encoder usually consists of 8 inputs lines and 3 out
 ## Hexadecimal to Binary Encoder
 
 The Hexadecimal to Binary Encoder encoder usually consists of 16 inputs lines and 3 outputs lines. The input is a number written in base 16 and the output is its corresponding equivalent number in base 2.
-
-
-
-{% include disqus.html %}

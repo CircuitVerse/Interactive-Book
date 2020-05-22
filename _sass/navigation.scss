@@ -168,3 +168,8 @@
   display: flex;
   justify-content: space-between;
 }
+.prev-next-controls {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}

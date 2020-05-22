@@ -30,5 +30,3 @@ Only the clock pulse is essential to load all the binary bits.
 
 
 <div style="text-align:center"><img src="../../assets/images/pipo_blockdiagram.jpg" /></div>
-
-{% include disqus.html %}

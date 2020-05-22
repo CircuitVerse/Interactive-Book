@@ -49,5 +49,3 @@ Similarly with Din = 1 and with the fourth negative clock edge arriving, the sto
 
 ## Waveforms
 <div style="text-align:center"><img src="../../assets/images/siso_waveform.jpg" /></div>
-
-{% include disqus.html %}

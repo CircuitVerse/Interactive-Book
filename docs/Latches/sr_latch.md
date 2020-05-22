@@ -37,5 +37,3 @@ Therefore, SR Latch performs three types of functions such as Hold, Set & Reset 
 
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/13774" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
-
-{% include disqus.html %}
