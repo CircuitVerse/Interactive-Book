@@ -82,6 +82,8 @@ The JA and KA inputs of FF-A are tied to logic 1. So FF-A will work as a toggle 
 * **4 bit synchronous up counter:** In the up counter the 4 bit binary sequence starts from 0000 and increments up to 1111, i.e from 0 to 15.
 
 <div style="text-align:center"><img src="../assets/images/4bit_up_counter.png" height="300"/></div>
+
+<iframe width="600px" height="400px" src="https://circuitverse.org/simulator/embed/93827" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
 <br>
 
 * **4 bit synchronous down counter:** Down counter counts the numbers in decreasing order i.e from 15 to 0.
