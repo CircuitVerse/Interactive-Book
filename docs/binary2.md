@@ -49,9 +49,8 @@ Binary subtraction is also a simple task. You just need to keep a in mind i.e., 
 In case number to the left is zero then look for the number more left to that until you find 1.
 In case nothing is present to borrow then that number becomes negative. Also, the number which gives borrow is reduced by 1.
 
-NOTE :
-
-10 becomes 1 after giving borrow.
+**_NOTE :
+10 becomes 1 after giving borrow._**
 ```yaml
 Examples :
 0 - 0 = 0
