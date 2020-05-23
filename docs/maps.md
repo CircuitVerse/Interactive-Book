@@ -128,6 +128,7 @@ The general technique for evaluating for overlapping groups follows a greedy alg
 Iterate through all the cells, and once you find a cell with `1`, if it is unvisited then find the largest possible square or rectangle such that each side length is a power of 2, where all the cells are `1` in its enclosed area. If there is a tie for size (ie, `1x4` vs `2x2`), assign the one that is a square (this is by convention). 
 
 Repeat this process for all remaining unvisited cells. 
+
 **_Note: You can overlap the groupings with already visited nodes, but you never instantiate a new grouping unless the current node is unvisited._**
 
 ![](../assets/images/map5.png)
