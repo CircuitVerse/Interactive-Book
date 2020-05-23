@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Binary Numbers
-comments: true
 nav_order: 2
 ---
 
@@ -111,5 +110,3 @@ In this Case ::
 <p>Click on the '0' to change it to '1' and vice-versa</p>
 
 {% include binary.html %}
-
-{% include disqus.html %}

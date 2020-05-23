@@ -1,7 +1,6 @@
 ---
 layout: default
 title: K-Maps
-comments: true
 nav_order: 6
 ---
 
@@ -181,6 +180,3 @@ F(ABCD) = [0111, 0110, 1111, 1110]
 Both groupings have the same size and are the same dimension. However, upon reaching `F(1110)`, another grouping needs to be instantiated, in which case if the first candidate grouping was created then we made a group that did not necessarily increase the size of our SOP expression. 
 
 This illustrates the idea that this is a greedy algorithm, and does not always return the most simplified SOP expression. In later sections, algorithms illustrating a globally optimal algorithm will be discussed.
-
-
-{% include disqus.html %}

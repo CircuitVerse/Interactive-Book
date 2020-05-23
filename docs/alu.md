@@ -1,7 +1,6 @@
 ---
 layout: default
 title: ALU
-comments: true
 nav_order: 9
 ---
 
@@ -54,11 +53,6 @@ There are a few important takeaways here:
 * Additional features such as Interrupts, communication protocols, EEPROM, Timers/Counters, Debug interfaces etc. are incorporated to make a controller complete.
 
 In above discussion we might have left out intricate details involved in a ALU, CPU design. But the aim was to understand ALU/CPU at a deeper level.
-
-
-{% include disqus.html %}
-
-
 
 <style>
 img{

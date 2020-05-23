@@ -3,7 +3,6 @@ layout: default
 title: JK Latch
 parent: Latches
 nav_order: 3
-comments: true
 ---
 
 ## JK Latch
@@ -22,4 +21,3 @@ JK latch is similar to RS latch. This latch consists of 2 inputs J and K as show
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/93260" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
-{% include disqus.html %}
