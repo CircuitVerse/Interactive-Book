@@ -11,10 +11,8 @@ permalink: /docs/msi
 ## Table of contents
 {: .no_toc .text-delta }
 
-1. [Multiplexers](https://learn.circuitverse.org/docs/MSI/mux.html)
-1. [DeMultiplexers](https://learn.circuitverse.org/docs/MSI/demux.html)
-1. [Decoder](https://learn.circuitverse.org/docs/MSI/decoder.html)
-1. [Encoder](https://learn.circuitverse.org/docs/MSI/encoder.html)
+1. TOC
+{:toc}
 
 ## Introduction
 
@@ -32,3 +30,11 @@ For each type, we will start with a brief discussion of its basic operating prin
 We then show how they can be used alone or in combination with other ICs in various applications.
 
 
+## Sub-Modules
+
+Next, let us have a look at some MSI Components one by one.
+
+1. [Multiplexers](https://learn.circuitverse.org/docs/MSI/mux.html)
+2. [DeMultiplexers](https://learn.circuitverse.org/docs/MSI/demux.html)
+3. [Decoder](https://learn.circuitverse.org/docs/MSI/decoder.html)
+4. [Encoder](https://learn.circuitverse.org/docs/MSI/encoder.html)

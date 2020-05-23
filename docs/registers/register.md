@@ -13,10 +13,8 @@ permalink: /docs/register
 ## Table of contents
 {: .no_toc .text-delta }
 
-1. [Serial Input Serial Output](https://learn.circuitverse.org/docs/registers/ss.html)
-1. [Serial Input Parallel Output](https://learn.circuitverse.org/docs/registers/sp.html)
-1. [Parallel Input Serial Output](https://learn.circuitverse.org/docs/registers/ps.html)
-1. [Parallel Input Parallel Output](https://learn.circuitverse.org/docs/registers/pp.html)
+1. TOC
+{:toc}
 
 ## Introduction
 
@@ -28,7 +26,13 @@ The n-bit register will consist of n number of flip-flop(s) and it is capable of
 
 The binary-data, in a register, can be transfered within itself from one flip-flop to another. 
 A shift register is a type of register that allows such data transfers.
-Shift register has 4 modes of operations:z
+Shift register has 4 modes of operations.
 
+## Sub-Modules
 
+Next, let us have a look at each register operation one by one.
 
+1. [Serial Input Serial Output](https://learn.circuitverse.org/docs/registers/ss.html)
+2. [Serial Input Parallel Output](https://learn.circuitverse.org/docs/registers/sp.html)
+3. [Parallel Input Serial Output](https://learn.circuitverse.org/docs/registers/ps.html)
+4. [Parallel Input Parallel Output](https://learn.circuitverse.org/docs/registers/pp.html)

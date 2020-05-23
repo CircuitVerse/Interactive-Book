@@ -11,11 +11,8 @@ permalink: /docs/combinational
 ## Table of contents
 {: .no_toc .text-delta }
 
-1. [Half Adder](https://learn.circuitverse.org/docs/Combinational/half_adder.html)
-1. [Full Adder](https://learn.circuitverse.org/docs/Combinational/full_adder.html)
-1. [Half Subtractor](https://learn.circuitverse.org/docs/Combinational/half_sub.html)
-1. [Full Subtractor](https://learn.circuitverse.org/docs/Combinational/full_sub.html)
-1. [N-bit Parallel Adder and Subtractor](https://learn.circuitverse.org/docs/Combinational/N-Bit%20Parallel%20Adder%20&%20Subtractor.html)
+1. TOC
+{:toc}
 
 ## Introduction
 
@@ -32,7 +29,14 @@ This combinational circuit has ‘n’ input variables and ‘m’ outputs. Each
 1.  Formulate the Truth table. If there are ‘n’ input variables, then there will be 2n possible combinations. For each combination of input, find the output values.   
 1.  Find the Boolean expressions for each output. If necessary, simplify those expressions.   
 1.  Implement the above Boolean expressions corresponding to each output by using Logic gates.
-   
-   
-We're going to elaborate few important combinational circuits as follows.
 
+
+## Sub-Modules
+
+In this module, we'll have a look at some combinational circuits. Feel free to check them out. 
+
+1. [Half Adder](https://learn.circuitverse.org/docs/Combinational/half_adder.html)
+2. [Full Adder](https://learn.circuitverse.org/docs/Combinational/full_adder.html)
+3. [Half Subtractor](https://learn.circuitverse.org/docs/Combinational/half_sub.html)
+4. [Full Subtractor](https://learn.circuitverse.org/docs/Combinational/full_sub.html)
+5. [N-bit Parallel Adder and Subtractor](https://learn.circuitverse.org/docs/Combinational/N-Bit%20Parallel%20Adder%20&%20Subtractor.html)
