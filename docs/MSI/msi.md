@@ -10,25 +10,14 @@ permalink: /docs/msi
 
 ## Table of contents
 {: .no_toc .text-delta }
-
 1. [Multiplexers](https://learn.circuitverse.org/docs/MSI/mux.html)
-1. [DeMultiplexers](https://learn.circuitverse.org/docs/MSI/demux.html)
-1. [Decoder](https://learn.circuitverse.org/docs/MSI/decoder.html)
+1. [Demultiplexers](https://learn.circuitverse.org/docs/MSI/demux.html)
 1. [Encoder](https://learn.circuitverse.org/docs/MSI/encoder.html)
+1. [Decoder](https://learn.circuitverse.org/docs/MSI/decoder.html)
 
 ## Introduction
+__MSI__ or __Medium Scale Integrated__ circuits are a set of basic, elementary logic circuits. They are available as ICs (integrated chips) and implement specific,commonly used digital functions such as:
+1. Multiplexing and Demultiplexing
+2. Encoding and Decoding
 
-Digital systems obtain binary-coded data and information that are continuously being operated on in some manner. 
-Some of the operations include:
-
-1. Multiplexing
-2. Demultiplexing
-3. Decoding and Encoding
-
-All of these operations and others have been facilitated by the availability of numerous ICs in the MSI
-(medium-scale-integration) category.
-In this module, we will study many of the common types of MSI devices. 
-For each type, we will start with a brief discussion of its basic operating principle and then introduce specific ICs. 
-We then show how they can be used alone or in combination with other ICs in various applications.
-
-
+MSIs can be used as a stand-alone IC or in combination with other ICs in order to implement combinational circuits in various applications.
