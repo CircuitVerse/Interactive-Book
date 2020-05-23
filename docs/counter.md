@@ -101,7 +101,8 @@ The JA and KA inputs of FF-A are tied to logic 1. So FF-A will work as a toggle 
 * **4-Bit Synchronous Decade Counter:** A BCD decade counter exhibits a truncated binary sequence and goes from 0000 through the
 1001 state. Rather than going from the 1001 state to the 1010 state, it recycles to the 0000 state. 
 
-<div style="text-align:center"><img src="../assets/images/4bit_decade_counter.png" height="300"/></div>
+<div style="text-align:center"><img src="../assets/images/4Bit_Synchronous_Decade_Counter.jpg" height="300"/></div>
+<iframe width="600px" height="400px" src="https://circuitverse.org/simulator/embed/94302" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
 <br>
 
 * **Ring Counter:** The ring counter is a application of shift register, in which the output of last flip flop is connected to input of first flip flop. In ring counter if the output of any flip flop is 1, then the output of remaining flip flops is 0. The Ring counters transfers the same output throughout the circuit.
