@@ -11,7 +11,7 @@
     {% endif %}
   {% endif %}
 
-  <link rel="shortcut icon" href="{{ "favicon.ico" }}" type="image/x-icon">
+  <link rel="shortcut icon" href="{{ "/favicon.ico" }}" type="image/x-icon">
 
   <link rel="stylesheet" href="{{ "/assets/css/just-the-docs.css" }}">
 
@@ -31,8 +31,17 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <script defer src="../assets/js/fontawesome-solid.js"></script>
-  <script defer src="../assets/js/fontawesome-main.js"></script>
+    
+  {% if page.parent %}
+    <script defer src="../../assets/js/fontawesome-solid.js"></script>
+    <script defer src="../../assets/js/fontawesome-main.js"></script>
+  {% else if parent %} 
+    <script defer src="../../assets/js/fontawesome-solid.js"></script>
+    <script defer src="../../assets/js/fontawesome-main.js"></script>
+  {% else %}  
+    <script defer src="../assets/js/fontawesome-solid.js"></script>
+    <script defer src="../assets/js/fontawesome-main.js"></script>
+  {% endif %}
 
 
 {% seo %}

@@ -3,7 +3,6 @@ layout: default
 title: Master Slave JK Flip-Flop
 parent: Flip-Flops
 nav_order: 5
-comments: true
 ---
 
 # Master Slave JK Flip-Flop
@@ -71,5 +70,3 @@ Here, Q(n) is the present state and Q(n+1) is the next state.
 Q(n+1) = Q(n)'J + Q(n)K'
 ````
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/47630" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
-
-{% include disqus.html %}

@@ -1,7 +1,6 @@
 ---
 layout: default
 title: K-Maps
-comments: true
 nav_order: 6
 ---
 
@@ -128,7 +127,9 @@ The general technique for evaluating for overlapping groups follows a greedy alg
 
 Iterate through all the cells, and once you find a cell with `1`, if it is unvisited then find the largest possible square or rectangle such that each side length is a power of 2, where all the cells are `1` in its enclosed area. If there is a tie for size (ie, `1x4` vs `2x2`), assign the one that is a square (this is by convention). 
 
-Repeat this process for all remaining unvisited cells. Note: You can overlap the groupings with already visited nodes, but you never instantiate a new grouping unless the current node is unvisited.
+Repeat this process for all remaining unvisited cells. 
+
+**_Note: You can overlap the groupings with already visited nodes, but you never instantiate a new grouping unless the current node is unvisited._**
 
 ![](../assets/images/map5.png)
 
@@ -181,6 +182,3 @@ F(ABCD) = [0111, 0110, 1111, 1110]
 Both groupings have the same size and are the same dimension. However, upon reaching `F(1110)`, another grouping needs to be instantiated, in which case if the first candidate grouping was created then we made a group that did not necessarily increase the size of our SOP expression. 
 
 This illustrates the idea that this is a greedy algorithm, and does not always return the most simplified SOP expression. In later sections, algorithms illustrating a globally optimal algorithm will be discussed.
-
-
-{% include disqus.html %}

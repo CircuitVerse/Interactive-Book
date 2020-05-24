@@ -3,7 +3,6 @@ layout: default
 title: Parallel Input Parallel Output
 parent: Digital Registers
 nav_order: 4
-comments: true
 ---
 
 # Parallel Input Parallel Output
@@ -32,4 +31,5 @@ Only the clock pulse is essential to load all the binary bits.
 
 <div style="text-align:center"><img src="../../assets/images/pipo_blockdiagram.jpg" /></div>
 
-{% include disqus.html %}
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/93890" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+

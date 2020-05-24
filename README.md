@@ -185,6 +185,6 @@ In addition to these plugins Interactive book also inherit's all the plugins use
 ---
 ### Create, Contribute, Learn and succeed with CircuitVerse!!!
 
-Interactive-Book is &copy; 2019 by [Aman Singla](http://github.com/amansingla97) (Gsoc19 project)
+Interactive-Book is &copy; 2020 by [CircuitVerse](https://circuitverse.org/)
 
 

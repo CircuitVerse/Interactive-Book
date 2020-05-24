@@ -85,7 +85,7 @@
     background-color: $body-background-color;
   }
 
-  .main-content {
+  .main-content-header {
     padding-top: 0;
 
     @include mq(md) {

@@ -2,8 +2,7 @@
 layout: default
 title: Decoder
 parent: MSI Components
-nav_order: 3
-comments: true
+nav_order: 4
 ---
 
 # Decoders
@@ -52,5 +51,3 @@ It shows that each output is 1 for only a specific combination of inputs.
 
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/763" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
-
-{% include disqus.html %}

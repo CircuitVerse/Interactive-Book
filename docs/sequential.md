@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Digital Sequential Circuits
-comments: true
 nav_order: 11
 ---
 
@@ -47,7 +46,3 @@ If some or all the outputs of a sequential circuit do not change (affect) with r
 If all the outputs of a sequential circuit change (affect) with respect to active transition of clock signal, then that sequential circuit is called as Synchronous sequential circuit. That means, all the outputs of synchronous sequential circuits change (affect) at the same time. Therefore, the outputs of synchronous sequential circuits are in synchronous with either only positive edges or only negative edges of clock signal.
 
 <div style="text-align:center"><img src="../assets/images/sequential_synchronous_circuit.jpg" /></div>
-
-
-{% include disqus.html %}
-

@@ -1,7 +1,6 @@
 ---
 layout: default
 title:  Interactive FSM
-comments: true
 nav_order: 18
 ---
 
@@ -14,8 +13,8 @@ Assume, We have a soda vending machine which sells soda cans of cost 15¢ each, 
 
 In this problem, our goal is to make a state machine which can determine, how much change should be returned, and when a can is dispenced.
 ```
-Note: in this design, we will ignore the capacity of the stock, which means, we’ll assume that there will always be can in the vending machine.
-Also, we can assume that only one action could be made in every “clock cycle” or state
+Note: In this design, we will ignore the capacity of the stock, which means, we’ll assume that there will always be can in the vending machine.
+Also, we can assume that only one action could be made in every “clock cycle” or state.
 ```
 ## RULES
 
@@ -36,6 +35,4 @@ Now we translate the options which are listed above into an FSM diagram/flow-cha
 
 {% include fsm.html %}
 
-Let's try the soda can vending machine and look for the corresponding state changes FSM diagram in each of the above-mentioned possibilities.
-
-{% include disqus.html %}
+Lets try the soda can vending machine and look for the corresponding state changes FSM diagram in each of the above mentioned possibilities.

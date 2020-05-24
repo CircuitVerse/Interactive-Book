@@ -40,9 +40,7 @@ In second module, we can directly implement the flip-flop, which is edge sensiti
 | Examples: D-Latch, T-Latch | Examples: D-Flip flop, T-Flop flop |
 
 
-## Conclusion
-
-In this module, we will implemented various flip-flops by providing the cross coupling between NOR gates. Similarly, you can implement these flip-flops by using NAND gates.
+Now let us implement various flip-flops by providing the cross coupling between NOR gates. You can also implement these flip-flops by using NAND gates, as well.
 
 
 

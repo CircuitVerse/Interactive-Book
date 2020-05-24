@@ -3,7 +3,6 @@ layout: default
 title: Serial Input Parallel Output
 parent: Digital Registers
 nav_order: 2
-comments: true
 ---
 
 # Serial Input Parallel Output
@@ -30,6 +29,8 @@ comments: true
 
 ## Block Diagram
 
+
 <div style="text-align:center"><img src="../../assets/images/sipo_blockdiagram.jpg" /></div>
 
-{% include disqus.html %}
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/93880" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+

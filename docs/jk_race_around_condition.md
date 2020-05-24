@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Race around condition
-comments: true
 nav_order: 14
 ---
 
@@ -105,5 +104,3 @@ If the clock is High for a time interval less than the propagation delay of the 
 
 If the flip flop is made to toggle over one clock period then racing around condition can be eliminated.
 This is done by using Master-Slave JK flip-flop.
-
-{% include disqus.html %}

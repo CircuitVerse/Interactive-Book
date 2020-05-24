@@ -17,15 +17,17 @@ Ref #
 #### Changes done:
 - [x] Task 1
 
-<!-- Any changes which change how the site looks, or adds styling, or fixex any UI issue need to be accompanied 
-with a screenshot showing comparison between old and new -->
+<!-- Any changes which change how the site looks, or adds styling, or fixes any UI issue need to be accompanied 
+with a screenshot showing the comparison between old and new -->
 #### Screenshots
 
+<!-- Preview links of all the files that have been changed/updated -->
+#### Preview Link(s): 
 
 <!-- Before creating a PR, make sure to verify the following. -->
 #### ✅️ By submitting this PR, I have verified the following
 <!-- put an x inside the square brackets to mark it as done -->
 - [ ] Checked to see if a similar PR has already been opened 🤔️
 - [ ] Reviewed the contributing guidelines 🔍️
-- [ ] Sample preview link added (add a link from the checks tab after checks complete)
+- [ ] Sample preview link added (add the link(s) for all the pages changed/updated from the checks tab after checks complete)
 - [ ] Tried Squashing the commits into one
