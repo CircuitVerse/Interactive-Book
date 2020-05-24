@@ -9,6 +9,17 @@ permalink: /docs/flipflop
 # Flip-Flops
 {: .no_toc }
 
+## Table of contents
+{: .no_toc .text-delta }
+
+1. [S-R Flip Flop](https://learn.circuitverse.org/docs/flipflop/sr_flipflop.html)
+1. [D Flip-Flop](https://learn.circuitverse.org/docs/flipflop/d_flipflop.html)
+1. [J-K Flip Flop](https://learn.circuitverse.org/docs/flipflop/jk_flipflop.html)
+1. [T Flip Flop](https://learn.circuitverse.org/docs/flipflop/t_flipflop.html)
+1. [Master Slave J-K Flip Flop](https://learn.circuitverse.org/docs/flipflop/masterslave_jk_flipflop.html)
+
+## Introduction
+
 In previous module, we discussed about Latches. Those are the basic building blocks of flip-flops. We can implement flip-flops in two methods.
 
 In first method, cascade two latches in such a way that the first latch is enabled for every positive clock pulse and second latch is enabled for every negative clock pulse. So that the combination of these two latches become a flip-flop.
@@ -29,9 +40,7 @@ In second module, we can directly implement the flip-flop, which is edge sensiti
 | Examples: D-Latch, T-Latch | Examples: D-Flip flop, T-Flop flop |
 
 
-## Conclusion
-
-In this module, we will implemented various flip-flops by providing the cross coupling between NOR gates. Similarly, you can implement these flip-flops by using NAND gates.
+Now let us implement various flip-flops by providing the cross coupling between NOR gates. You can also implement these flip-flops by using NAND gates, as well.
 
 
 

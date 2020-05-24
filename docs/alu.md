@@ -1,7 +1,6 @@
 ---
 layout: default
 title: ALU
-comments: true
 nav_order: 9
 ---
 
@@ -27,16 +26,16 @@ The purpose of the ALU is to perform mathematical operations such as addition, s
 ## In Detail
 So with the above building blocks i.e. half adder and full adder discussed in Combinational Analysis, lets construct a simple ALU that performs a arithmetic operation (1 bit addition) and does 3 logical operations namely AND, NOR and XOR as shown below. The multiplexer selects only one operation at a time. The operation selected depends on the selection lines of the multiplexer as shown in the truth table.
 
-<div style="text-align:center" ><img src="../assets/images/1bitALU.jpg" /></div>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/42961" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
-**Input = M1,M0 & 
+**Input = M0,M1 & 
 Output = Operation**
 
-|M1	|M0	|Operation|
+|M0|M1|Operation|
 |:-:|:-:|:-------:|
 |0	|0	|SUM|
-|1	|0	|AND|
-|0	|1	|OR|
+|0	|1	|AND|
+|1	|0	|OR|
 |1	|1	|XOR|
 
 
@@ -54,11 +53,6 @@ There are a few important takeaways here:
 * Additional features such as Interrupts, communication protocols, EEPROM, Timers/Counters, Debug interfaces etc. are incorporated to make a controller complete.
 
 In above discussion we might have left out intricate details involved in a ALU, CPU design. But the aim was to understand ALU/CPU at a deeper level.
-
-
-{% include disqus.html %}
-
-
 
 <style>
 img{

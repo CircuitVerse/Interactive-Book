@@ -11,9 +11,9 @@
     {% endif %}
   {% endif %}
 
-  <link rel="shortcut icon" href="{{ "favicon.ico" | absolute_url }}" type="image/x-icon">
+  <link rel="shortcut icon" href="{{ "/favicon.ico" }}" type="image/x-icon">
 
-  <link rel="stylesheet" href="{{ "/assets/css/just-the-docs.css" | absolute_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/just-the-docs.css" }}">
 
   {% if site.ga_tracking != nil %}
     <script>
@@ -25,14 +25,23 @@
   {% endif %}
 
   {% if site.search_enabled != nil %}
-    <script type="text/javascript" src="{{ "/assets/js/vendor/lunr.min.js" | absolute_url }}"></script>
+    <script type="text/javascript" src="{{ "/assets/js/vendor/lunr.min.js" }}"></script>
   {% endif %}
-  <script type="text/javascript" src="{{ "/assets/js/just-the-docs.js" | absolute_url }}"></script>
+  <script type="text/javascript" src="{{ "/assets/js/just-the-docs.js" }}"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <script defer src="../assets/js/fontawesome-solid.js"></script>
-  <script defer src="../assets/js/fontawesome-main.js"></script>
+    
+  {% if page.parent %}
+    <script defer src="../../assets/js/fontawesome-solid.js"></script>
+    <script defer src="../../assets/js/fontawesome-main.js"></script>
+  {% else if parent %} 
+    <script defer src="../../assets/js/fontawesome-solid.js"></script>
+    <script defer src="../../assets/js/fontawesome-main.js"></script>
+  {% else %}  
+    <script defer src="../assets/js/fontawesome-solid.js"></script>
+    <script defer src="../assets/js/fontawesome-main.js"></script>
+  {% endif %}
 
 
 {% seo %}

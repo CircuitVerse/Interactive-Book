@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Binary Numbers
-comments: true
 nav_order: 2
 ---
 
@@ -23,8 +22,7 @@ Example:
 Decimal number :: 25 
 Binary Number :: 11001 
 ```
-Note ::
-There is no 2, 3, 4, 5, 6, 7, 8 or 9 in Binary!
+**_Note: There is no 2, 3, 4, 5, 6, 7, 8 or 9 in Binary!_**
 
 ---
 
@@ -97,9 +95,9 @@ Now, multiply each digit of binary number with it's value.
 Add 'em all.
 - STEP 4 ::
 Result is ready :)
-- NOTE ::
-If the number is large, increase bits of binary number on the left. Keep in mind that it's value will
-increase subsiquently.
+
+**_Note: If the number is large, increase bits of binary number on the left. Keep in mind that it's value will
+increase subsiquently._**
 ```yaml
 Example ::
 Decimal Number :: 25
@@ -124,5 +122,3 @@ For example, the number `10000011` would be `131` if the number is **unsigned**,
 The downside to using a signed number is that it removes one bit from the actual number representation, halving the maximum value.
 - The minimum and maximum values for an `unsigned 8-bit` number would be `0` to `2^8-1` (`0` to `255`)
 - The minimum and maximum values for a `signed 8-bit` number would be `-2^7-1` to `2^7-1` (`-127` to `127`)
-
-{% include disqus.html %}
