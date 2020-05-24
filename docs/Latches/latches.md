@@ -12,10 +12,8 @@ permalink: /docs/Latches
 ## Table of contents
 {: .no_toc .text-delta }
 
-1. [S-R Latch](https://learn.circuitverse.org/docs/Latches/sr_latch.html)
-1. [D Latch](https://learn.circuitverse.org/docs/Latches/d_latch.html)
-1. [J-K Latch](https://learn.circuitverse.org/docs/Latches/jk_latch.html)
-1. [T Latch](https://learn.circuitverse.org/docs/Latches/t_latch.html)
+1. TOC
+{:toc}
 
 ## Introduction
 
@@ -42,4 +40,11 @@ Latches are basic storage elements that operate with signal levels (rather than 
 | Faster | Slower |
 | Examples: D-Latch, T-Latch | Examples: D-Flip flop, T-Flop flop |
 
+## Sub-Modules
+
 Now, let us discuss about SR Latch, D Latch, JK Latch & T Latch one by one.
+
+1. [S-R Latch](https://learn.circuitverse.org/docs/Latches/sr_latch.html)
+2. [D Latch](https://learn.circuitverse.org/docs/Latches/d_latch.html)
+3. [J-K Latch](https://learn.circuitverse.org/docs/Latches/jk_latch.html)
+4. [T Latch](https://learn.circuitverse.org/docs/Latches/t_latch.html) 
