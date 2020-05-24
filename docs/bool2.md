@@ -122,8 +122,8 @@ F(A,B,C) = (A + B + C') . (A + B' + C) . (A' + B + C)
 Let's simplify our expression from the previous truth table example. We can apply ordinary algebra tricks such as factoring. Remember that the `+` operator invokes the `OR` gate, and that `true or x` always returns `true` regardless of `x` (as shown in our first truth table).
 ```
 AB'C + BD + CD + D // Initial expression
-AB'C + BD + D // Applying Absorption Law on CD + D
-AB'C + D //Applying Absorption Law on BD + D
+AB'C + BD + D // Applying Absorption Law on CD + D, which reduces it to D
+AB'C + D //Applying Absorption Law on BD + D, which reduces it to D
 => AB'C + D // Final expression
 ```
 
