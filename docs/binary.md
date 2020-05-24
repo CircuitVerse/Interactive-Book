@@ -110,7 +110,6 @@ In this Case ::
 
 {% include binary.html %}
 
-
 ### Signed and Unsigned Numbers
 Currently, we have just looked at **unsigned** numbers - they can only be positive, as there is no sign.
 However, sometimes we need to work with **negative numbers** too. To do this, we add a **sign bit** on the far left of the binary number, which indicates whether the number is positive (`0`) or negative(`1`).
@@ -122,3 +121,14 @@ For example, the number `10000011` would be `131` if the number is **unsigned**,
 The downside to using a signed number is that it removes one bit from the actual number representation, halving the maximum value.
 - The minimum and maximum values for an `unsigned 8-bit` number would be `0` to `2^8-1` (`0` to `255`)
 - The minimum and maximum values for a `signed 8-bit` number would be `-2^7-1` to `2^7-1` (`-127` to `127`)
+
+
+{:.quiz}
+1. Is `0110103` a binary number?
+   1. No
+   * Yes
+2. What is `10101` as a decimal number?
+   1. 21
+   * 10101
+   * 25
+   * 1000 
