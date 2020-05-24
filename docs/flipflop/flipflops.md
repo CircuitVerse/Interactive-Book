@@ -38,8 +38,7 @@ In second module, we can directly implement the flip-flop, which is edge sensiti
 
 
 ## Sub-Modules
-
-In this module, we will implement various flip-flops by providing the cross coupling between NOR gates. Similarly, you can implement these flip-flops by using NAND gates.
+Now let us implement various flip-flops by providing the cross coupling between NOR gates. You can also implement these flip-flops by using NAND gates, as well.
 
 1. [S-R Flip Flop](https://learn.circuitverse.org/docs/flipflop/sr_flipflop.html)
 2. [D Flip-Flop](https://learn.circuitverse.org/docs/flipflop/d_flipflop.html)

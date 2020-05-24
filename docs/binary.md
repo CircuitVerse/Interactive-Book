@@ -22,8 +22,7 @@ Example:
 Decimal number :: 25 
 Binary Number :: 11001 
 ```
-Note ::
-There is no 2, 3, 4, 5, 6, 7, 8 or 9 in Binary!
+**_Note: There is no 2, 3, 4, 5, 6, 7, 8 or 9 in Binary!_**
 
 ---
 
@@ -39,7 +38,7 @@ It is just like counting in decimal except we reach 10 much sooner.
 | ???          | But then there is no symbol for 2 ... what do we do?  |
 
 
-<h4>Well how do we count in Decimal?</h4>
+#### Well how do we count in Decimal?
 
 | Decimal       | Explanation            |
 |:-------------:|:----------------------:|
@@ -49,7 +48,7 @@ It is just like counting in decimal except we reach 10 much sooner.
 | 9            | This is the **last digit** in Decimal|
 |**1**0        | So we start back at **0** again, but carry **1** on the left|
 
-<h4>The same thing is done in binary ...</h4>
+#### The same thing is done in binary ...
 
 | Binary       | Explanation            |
 |:------------:|:----------------------:|
@@ -60,7 +59,7 @@ It is just like counting in decimal except we reach 10 much sooner.
 |???         | But NOW what ... ?|
 
 
-<h4>What happens in Decimal?</h4>
+#### What happens in Decimal?
 
 
 | Decimal       | Explanation            |
@@ -68,7 +67,7 @@ It is just like counting in decimal except we reach 10 much sooner.
 |	99	 |	When we run out of digits, we ...|
 |	100	 |	... start back at **0** again, but carry **1** on the left|
 
-<h4>And that is what we do in binary ...</h4>
+#### And that is what we do in binary ...
 
 
 | Binary     | Explanation   |
@@ -96,9 +95,9 @@ Now, multiply each digit of binary number with it's value.
 Add 'em all.
 - STEP 4 ::
 Result is ready :)
-- NOTE ::
-If the number is large, increase bits of binary number on the left. Keep in mind that it's value will
-increase subsiquently.
+
+**_Note: If the number is large, increase bits of binary number on the left. Keep in mind that it's value will
+increase subsiquently._**
 ```yaml
 Example ::
 Decimal Number :: 25
@@ -110,3 +109,26 @@ In this Case ::
 <p>Click on the '0' to change it to '1' and vice-versa</p>
 
 {% include binary.html %}
+
+### Signed and Unsigned Numbers
+Currently, we have just looked at **unsigned** numbers - they can only be positive, as there is no sign.
+However, sometimes we need to work with **negative numbers** too. To do this, we add a **sign bit** on the far left of the binary number, which indicates whether the number is positive (`0`) or negative(`1`).
+
+For example, the number `10000011` would be `131` if the number is **unsigned**, but if the number is **signed**, the actual representation would be `-3`
+ - The first bit `1` represents that the number is negative
+ - The remaining bits `0000011` represent the actual number, `3`
+
+The downside to using a signed number is that it removes one bit from the actual number representation, halving the maximum value.
+- The minimum and maximum values for an `unsigned 8-bit` number would be `0` to `2^8-1` (`0` to `255`)
+- The minimum and maximum values for a `signed 8-bit` number would be `-2^7-1` to `2^7-1` (`-127` to `127`)
+
+
+{:.quiz}
+1. Is `0110103` a binary number?
+   1. No
+   * Yes
+2. What is `10101` as a decimal number?
+   1. 21
+   * 10101
+   * 25
+   * 1000 
