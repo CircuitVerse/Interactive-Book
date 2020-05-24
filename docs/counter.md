@@ -81,22 +81,27 @@ The JA and KA inputs of FF-A are tied to logic 1. So FF-A will work as a toggle 
 * **4 bit synchronous up counter:** In the up counter the 4 bit binary sequence starts from 0000 and increments up to 1111, i.e from 0 to 15.
 
 <div style="text-align:center"><img src="../assets/images/4bit_up_counter.png" height="300"/></div>
+
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/93827" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
 <br>
 
 * **4 bit synchronous down counter:** Down counter counts the numbers in decreasing order i.e from 15 to 0.
 
 <div style="text-align:center"><img src="../assets/images/4bit_down_counter.png" height="300"/></div>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/94149" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
 <br>
 
 * **4 bit synchronous up/down counter:** This counter has two modes of counting i.e. up counting and down counting. There is a mode switch which switches between the two modes of the counter. When the mode M = 0 it counts up & when mode M = 1 then it counts down.
 
 <div style="text-align:center"><img src="../assets/images/4bit_up_down_counter.png" height="300"/></div>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/94144" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
 <br>
 
 * **4-Bit Synchronous Decade Counter:** A BCD decade counter exhibits a truncated binary sequence and goes from 0000 through the
 1001 state. Rather than going from the 1001 state to the 1010 state, it recycles to the 0000 state. 
 
-<div style="text-align:center"><img src="../assets/images/4bit_decade_counter.png" height="300"/></div>
+<div style="text-align:center"><img src="../assets/images/4Bit_Synchronous_Decade_Counter.jpg" height="300"/></div>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/94302" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
 <br>
 
 * **Ring Counter:** The ring counter is a application of shift register, in which the output of last flip flop is connected to input of first flip flop. In ring counter if the output of any flip flop is 1, then the output of remaining flip flops is 0. The Ring counters transfers the same output throughout the circuit.
