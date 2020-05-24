@@ -42,6 +42,15 @@ The NOT gate is also known as an inverter because it produces the exact opposite
 
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46600" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
+
+```Verilog
+ module not_gate(
+    input a,
+    output c );
+assign c=~a;
+endmodule
+```
+
 ## AND gate
 
 The AND gate's operation is similar to that of multiplication. It has two inputs and one output. The output is high (1) if both inputs are 1, and for all other cases, the output is low (0).
@@ -57,6 +66,15 @@ The Truth table for AND gate which consists of two inputs is given below
 <img src="../assets/images/AndGate.svg" />
 
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46601" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+
+```Verilog
+ module and_gate(
+    input a,
+    input b,
+    output c );
+assign c=a&b;
+endmodule
+```
 
 ## OR gate
 
@@ -74,6 +92,16 @@ The Truth table of OR gate which consists of two inputs is given below
 
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46603" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
+
+```Verilog
+ module or_gate(
+    input a,
+    input b,
+    output c );
+assign c=a | b;
+endmodule
+```
+
 ## NAND gate
 
 The NAND gate is the complement of the AND gate. You can think of it as an AND gate followed immediately by a NOT gate. Its output is low (0) when both the inputs are 1, and for all other cases, its output is high (1). The symbol of NAND gate consists of AND gate followed by a small circle.
@@ -89,6 +117,17 @@ The Truth table of NAND gate which consists of two inputs is given below
 <img src="../assets/images/NandGate.svg" />
 
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46604" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+
+```Verilog
+ module nand_gate(
+    input a,
+    input b,
+    output c );
+assign c=~(a&b);
+endmodule
+```
+
+
 
 ## NOR gate
 
@@ -106,6 +145,15 @@ The Truth table of NOR gate which consists of two inputs is given below
 
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46606" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
+```Verilog
+ module nor_gate(
+    input a,
+    input b,
+    output c );
+assign c=~(a | b);
+endmodule
+```
+
 ## XOR gate
 
 The XOR (or) Exclusive-OR is a digital Logic gate that gives the output as high (1) if and only if one of the input is 1.
@@ -122,6 +170,15 @@ The Truth table of XOR gate which consists of two inputs is given below
 
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46609" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
+```Verilog
+ module xor_gate(
+    input a,
+    input b,
+    output c );
+assign c=a ^ b;
+endmodule
+```
+
 ## XNOR gate
 
 The XNOR (or) Exclusive-NOR is a digital Logic gate that gives the output as high (1) when both the inputs are same.
@@ -137,3 +194,12 @@ The Truth table of XNOR gate which consists of two inputs is given below
 <img src="../assets/images/XnorGate.svg" />
 
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46613" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+
+```Verilog
+ module xnor_gate(
+    input a,
+    input b,
+    output c );
+assign c=~(a ^ b);
+endmodule
+```
