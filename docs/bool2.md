@@ -123,7 +123,7 @@ Let's simplify our expression from the previous truth table example. We can appl
 ```
 AB'C + BD + CD + D // Initial expression
 AB'C + BD + D // Applying Absorption Law on CD + D, which reduces it to D
-AB'C + D //Applying Absorption Law on BD + D, which reduces it to D
+AB'C + D // Applying Absorption Law on BD + D, which reduces it to D
 => AB'C + D // Final expression
 ```
 
