@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  FLIPFLOP Interaction
+title:  Flip-Flops Interaction
 nav_order: 13
 ---
 
