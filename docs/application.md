@@ -4,6 +4,9 @@ title:  Application of Shift Registers
 nav_order: 15
 ---
 
+# Applications of Shift Registers
+{: .no_toc}
+
 ## Table of contents
 {: .no_toc .text-delta }
 
@@ -11,28 +14,37 @@ nav_order: 15
 {:toc}
 
 ---
+# Overview
+Shift registers are sequential circuits used primarily used for:
+1. Storage of Data
+2. Data transfer through movement of binary data
+3. Data manipulation
+4. Counter implementation
 
-# Applications of Shift Registers
+They are called *shift registers* as it moves or *shifts* binary input data to its output per clock cycle. Shift registers are commonly used to store data inside calculators. Even in computer systems, operations like addition, subtraction, division and multiplication are performed by registers.
 
-In the previous module, we discussed four types of shift registers. Based on the requirement, we can use one of those shift registers. Following are the applications of shift registers.
+Shift registers can be applied in the following ways:
+- **Parallel to Serial conversion:** Used in transmitters after analog to digital conversion in order to convert parallel input data into serial data
 
-* Shift register is used as **Parallel to serial converter**, which converts the parallel data into serial data. It is utilized at the transmitter section after Analog to Digital Converter (ADC) block.
-* Shift register is used as **Serial to parallel converter**, which converts the serial data into parallel data. It is utilized at the receiver section before Digital to Analog Converter (DAC) block.
-* Shift register along with some additional gate(s) generate the sequence of zeros and ones. Hence, it is used as **sequence generator**.
-* Shift registers are also used as **counters**. There are two types of counters based on the type of output from the rightmost D flip-flop which is connected to the serial input. Those are Ring counter and Johnson Ring counter.
+- **Serial to Parallel conversion:** Used in receivers before digital to anlogous conversion takes place in order to convert serial input data into parallel data
 
-In this module, let us discuss these two counters one by one.
+- **Sequence Generator:** Generate a sequence of 0s and 1s when combined with some additional gates
 
-## Ring Counter
-In the previous module, we discussed the operation of the Serial In - Parallel Out (SIPO) shift register. It accepts the data from outside in serial form and it requires ‘N’ clock pulses to shift ‘N’ bit data.
+- **Counters:** Shift registers can be implemented as counters based on the output of the rightmost D flip-flop that is connected to the serial input, namely the *Ring Counter* and the *Johnson Ring Counter*
 
-Similarly, ‘N’ bit Ring counter performs a similar operation. But, the only difference is that the output of rightmost D flip-flop is given as input of leftmost D flip-flop instead of applying data from outside. Therefore, Ring counter produces a sequence of states (pattern of zeros and ones) and it repeats for every ‘N’ clock cycles.
+- [Serial-in Serial-out](https://learn.circuitverse.org/docs/registers/ss.html) registers are used for time delays
+
+
+# Ring Counter
+Similar to how the [Serial-in Serial-out](https://learn.circuitverse.org/docs/registers/sp.html) register requires *'N'* clock pulses to shift *N* bit data, the *'N'* Ring Counter produces a sequence of 0s and 1s, by having the rightmost D flip-flop as input to the leftmost D flip-flop as opposed to applying data externally. That is, the output of the last flip-flop is connected to the output of the first flip-flop in the ring. These patterns of states (0s and 1s) are repeated every *'N'* clock cycles.
+
+The number of states in a Ring Counter are directly proportional to the number of flip-flops used.
 
 The block diagram of the 3-bit Ring counter is shown in the following figure.
 
 <div style="text-align:center"><img src="../assets/images/ring_counter.jpg" /></div>
 
-The 3-bit Ring counter contains only a 3-bit SIPO shift register. The output of rightmost D flip-flop is connected to the serial input of left most D flip-flop.
+A 3-bit Ring Counter will contain only a 3-bit SIPO shift register.
 
 Assume, the initial status of the D flip-flops from leftmost to rightmost is Q2Q1Q0=001. Here, Q2 & Q0 are MSB & LSB respectively. We can understand the working of Ring counter from the following table.
 
@@ -44,24 +56,23 @@ Assume, the initial status of the D flip-flops from leftmost to rightmost is Q2Q
 |3  |0  |0  |0  |1  |
 
 
-The initial status of the D flip-flops in the absence of the clock signal is Q2Q1Q0=001. This status repeats for every three positive edge transitions of the clock signal.
+Due to the absence of the clock signal, the initial status of the D flip-flops is Q2Q1Q0=001. This state will repeat every third positive edge transition of the clock signal.
 
-Therefore, the following operations take place for every positive edge of the clock signal.
+Similarly, the following operations take place every positive edge of the clock cycle:
+- Serial input of the first D flip-flop gets the previous output of the third flip-flop. Thus, the present output of the first D flip-flop is equal to the previous output of the third flip-flop.
 
-Serial input of the first D flip-flop gets the previous output of the third flip-flop. So, the present output of the first D flip-flop is equal to the previous output of the third flip-flop.
+- The previous outputs of first and second D flip-flops are right-shifted by one bit. That implies that the present outputs of second and third D flip-flops are equal to the previous outputs of first and second D flip-flops.
 
-The previous outputs of first and second D flip-flops are right-shifted by one bit. That means the present outputs of second and third D flip-flops are equal to the previous outputs of first and second D flip-flops.
+# Johnson Ring Counter
+The Johnson Ring counter functions similarly to the Ring counter. The difference being that the complemented output of rightmost D flip-flop is given as input of leftmost D flip-flop instead of normal output. Thus, ‘N’ bit Johnson Ring counter produces a sequence of states (pattern of zeros and ones) and it repeats for every ‘2N’ clock cycles.
 
-## Johnson Ring Counter
-The operation of Johnson Ring counter is similar to that of the Ring counter. But, the only difference is that the complemented output of rightmost D flip-flop is given as input of leftmost D flip-flop instead of normal output. Therefore, ‘N’ bit Johnson Ring counter produces a sequence of states (pattern of zeros and ones) and it repeats for every ‘2N’ clock cycles.
-
-Johnson Ring counter is also called a Twisted Ring counter and switch tail Ring counter. The block diagram of 3-bit Johnson Ring counter is shown in the following figure.
+Johnson Ring counter is also called the *Twisted Ring Counter* and *Switch Tail Ring Counter*. The block diagram of 3-bit Johnson Ring counter is shown in the following figure.
 
 <div style="text-align:center"><img src="../assets/images/twisted_ring_counter.jpg" /></div>
 
-The 3-bit Johnson Ring counter also contains only a 3-bit SIPO shift register. The complemented output of rightmost D flip-flop is connected to the serial input of left most D flip-flop.
+The 3-bit Johnson Ring counter also contains only a 3-bit SIPO shift register.
 
-Assume, initially, all the D flip-flops are cleared. So, Q2Q1Q0=000. Here, Q2 & Q0 are MSB & LSB respectively. We can understand the working of Johnson Ring counter from the following table.
+Assume, initially, all the D flip-flops are cleared. So, Q2Q1Q0=000. Here, Q2 is the MSB & Q0 is the LSB.
 
 |No of positive edge of Clock|  Serial Input = Q0 | Q2(MSB) |   Q1   |cQ0(LSB)|
 |:--------------------------:|:------------------:|:-------:|:------:|:------:|
@@ -76,8 +87,6 @@ Assume, initially, all the D flip-flops are cleared. So, Q2Q1Q0=000. Here, Q2 & 
 
 The initial status of the D flip-flops in the absence of the clock signal is Q2Q1Q0=000. This status repeats for every six positive edge transitions of the clock signal.
 
-Therefore, the following operations take place for every positive edge of the clock signal.
-
-Serial input of first D flip-flop gets the previous complemented output of the third flip-flop. So, the present output of the first D flip-flop is equal to the previous complemented output of the third flip-flop.
-
-The previous outputs of first and second D flip-flops are right shifted by one bit. That means, the present outputs of second and third D flip-flops are equal to the previous outputs of first and second D flip-flops.
+Similarly, the following operations take place for every positive edge of the clock signal.
+- Serial input of first D flip-flop gets the previous complemented output of the third flip-flop. So, the present output of the first D flip-flop is equal to the previous complemented output of the third flip-flop.
+- The previous outputs of first and second D flip-flops are right shifted by one bit. That means, the present outputs of second and third D flip-flops are equal to the previous outputs of first and second D flip-flops.
