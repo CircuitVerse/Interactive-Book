@@ -57,3 +57,24 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 ```
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/12264" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+
+### Verilog Code for SR Flip Flop
+
+```Verilog
+module Main(input S,
+    input R,
+    input clk,
+    output Q,
+    output Qbar
+    );
+    reg M,N;
+
+always @(posedge clk) begin
+  M <= !(S & clk);
+  N <= !(R & clk);
+end
+assign Q = !(M & Qbar);
+assign Qbar = !(N & Q);
+
+endmodule
+```
