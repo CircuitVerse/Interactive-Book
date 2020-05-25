@@ -10,7 +10,7 @@
 
 
 ## About the project
-The aim of this project is to create an online interactive guide for digital logic design. The primary goal is to develop an open source book with quality content which teaches digital logic design. It will enable students to learn digital design by interacting with circuits,truth table and other interactive elements as they proceed through the book.The professors and students all over the world can read and contribute to the same.
+The aim of this project is to create an online interactive guide for digital logic design. The primary goal is to develop an open sourcebook with quality content that teaches digital logic design. It will enable students to learn digital design by interacting with circuits, truth table, and other interactive elements as they proceed through the book. The professors and students all over the world can read and contribute to the same.
 
 As contributors and maintainers of this project, and in the interest of fostering an open and welcoming community, we pledge to respect all people who contribute through reporting issues, posting feature requests, updating documentation, submitting pull requests or patches, and other activities.
 
@@ -69,27 +69,27 @@ Thanks to everyone who has contributed to the Interactive Book so far!
 
 
 ## Overview
-The Interactive book have two components in it. 
+The Interactive book has two components in it. 
 1. Content
 2. Interactions
 
 <div style="text-align:center"><img src="/assets/images/ib.png" /></div>
 
 ### Content
-It include's quality content which would be gathered from various books (primarily from ‘​Digital Design​’ by ​Morris Mano as its copyright has expired and is in public domain) and online material. Basic notes have already been prepared to reference the aforementioned book and are attached in the table below.
+It includes quality content that would be gathered from various books (primarily from ‘​Digital Design​’ by ​Morris Mano as its copyright has expired and is in the public domain) and online material. Basic notes have already been prepared to reference the aforementioned book and are attached to the table below.
 
 ### Interactions
 There would be two types of Interactions.
 
-1. **Circuit Interactions-** This include designing optimal circuits which would help to clearly understand the logic. The student would be able to clearly detect the variation of output with the change in input via these circuits. With each Interaction module, there would be a set of instructions that would guide the user to see the desired changes.
-2. **Module Specific Interactions-** This include interaction which are designed for individual module like kmap simulator , truth table generatoretc.
+1. **Circuit Interactions-** This includes designing optimal circuits which would help to clearly understand the logic. The student would be able to clearly detect the variation of output with the change in input via these circuits. With each Interaction module, there would be a set of instructions that would guide the user to see the desired changes.
+2. **Module Specific Interactions-** This includes interaction that is designed for an individual module like kmap simulator, truth table generator, etc.
 
 **However, we do have some rules and general guidelines we would like you to follow:**
 
 1. Everything must start with an issue...
 	* Issues should have useful, concise titles and enough of a description to understand the scope of the issue.
 
-2. Branches should link to individual issues, and be named using consistent syntax consisting of "issue type", "issue number", and an descriptive title (using hyphens for spaces, and all lower case). Examples:
+2. Branches should link to individual issues, and be named using consistent syntax consisting of "issue type", "issue number", and a descriptive title (using hyphens for spaces, and all lower case). Examples:
 	* bug/#123-abbreviated-issue-title
 	* feature/#123-abbreviated-issue-title
 	* enhancement/#123-abbreviated-issue-title
@@ -99,14 +99,14 @@ There would be two types of Interactions.
 4. Once a pull request is merged, the branch should be removed.
 
 5. Always follow good Github etiquette. Several helpful reads on the topic:
-	* [Use Github keywords to auto link close issues](https://help.github.com/articles/closing-issues-via-commit-messages/)	
+	* [Use Github keywords to auto-link close issues](https://help.github.com/articles/closing-issues-via-commit-messages/)	
 	* [Git - Contributing to a Project](http://git-scm.com/book/ch5-2.html)
 	* [Who-T - On Commit Messages](http://who-t.blogspot.com/2009/12/on-commit-messages.html)
 	
 	
 ## Code Structure
 
-Jekyll is, at its core, a text transformation engine. The concept behind the system is this: you give it text written in your favorite markup language, be that Markdown, Textile, or just plain HTML, and it churns that through a layout or a series of layout files. Throughout that process you can tweak how you want the site URLs to look, what data gets displayed in the layout, and more. This is all done through editing text files; the static web site is the final product.The structure of Interactive Book looks something like this:
+Jekyll is, at its core, a text transformation engine. The concept behind the system is this: you give it text written in your favorite markup language, be that Markdown, Textile, or just plain HTML, and it churns that through a layout or a series of layout files. Throughout that process you can tweak how you want the site URLs to look, what data gets displayed in the layout, and more. This is all done through editing text files; the static web site is the final product. The structure of Interactive Book looks something like this:
 <pre>
 ├── _config.yml
 ├── _data
@@ -114,17 +114,17 @@ Jekyll is, at its core, a text transformation engine. The concept behind the sys
 ├── _drafts
 |   ├── begin-with-the-crazy-ideas.md
 |   └── on-simplicity-in-technology.md
-├── _includes(contains module specific interactions along with their respective css)
+├── _includes(contains module-specific interactions along with their respective CSS)
 |   ├── binary.html
 |   └── gates.html
 ├── _layouts(includes layout types)
 |   ├── default.html
 |   └── home.html
 ├── assets
-|   ├── css(contains css of book's layout)
-|   └── js(contains all the javascript required for module specific intteractions as well as book layout)
+|   ├── CSS(contains CSS of book's layout)
+|   └── js(contains all the javascript required for module-specific interactions as well as book layout)
 |   └── images(contains all the images required in the project)
-├── docs(contains all the the modules)
+├── docs(contains all the modules)
 |   ├── Combinational
 |   |   ├── full_adder.md
 |   |   └── half_adder.md
@@ -158,15 +158,16 @@ There are a bunch of helpful community members on these services that should be 
 
 **Reminder: Jekyll's issue tracker is not a support forum.**
 
-In addition to these plugins Interactive book also inherit's all the plugins used in [Just-the-Docs](https://github.com/pmarsceill/just-the-docs)
+In addition to these plugins, Interactive book also inherit's all the plugins used in [Just-the-Docs](https://github.com/pmarsceill/just-the-docs)
 ## Jekyllconf
 
-[Watch videos](/jekyllconf/) from members of the Jekyll community speak about interesting use cases, tricks they’ve learned or meta Jekyll topics.
+[Watch videos](/jekyllconf/) from members of the Jekyll community speak about interesting use cases, tricks they’ve learned, or meta Jekyll topics.
 
 
 ---
-### Create, Contribute, Learn and succeed with CircuitVerse!!!
+### Create, Contribute, Learn, and succeed with CircuitVerse!!!
 
 Interactive-Book is &copy; 2020 by [CircuitVerse](https://circuitverse.org/)
+
 
 
