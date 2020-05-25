@@ -36,3 +36,22 @@ Therefore, D flip-flop always Hold the information, which is available on data i
 Next state of D flip-flop is always equal to data input, D for every positive transition of the clock signal. Hence, D flip-flops can be used in registers, shift registers and some of the counters.
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/12254" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+
+### Verilog Code for D Flip Flop
+
+```Verilog
+module dff(
+    output Q,
+    input D,
+    input CLK
+    );
+    
+    reg Q;
+    
+    always @ (posedge CLK)
+    begin
+        Q <= D;
+    end    
+    
+endmodule
+```
