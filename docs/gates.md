@@ -44,7 +44,7 @@ The NOT gate is also known as an inverter because it produces the exact opposite
 
 ### Verilog Code for NOT Gate
 
-```Verilog
+```verilog
 module not_gate(
     input a,
     output c );
@@ -70,7 +70,7 @@ The Truth table for AND gate which consists of two inputs is given below
 
 ### Verilog Code for AND Gate
 
-```Verilog
+```verilog
 module and_gate(
     input a,
     input b,
@@ -98,7 +98,7 @@ The Truth table of OR gate which consists of two inputs is given below
 ### Verilog Code for OR Gate
 
 
-```Verilog
+```verilog
 module or_gate(
     input a,
     input b,
@@ -125,7 +125,7 @@ The Truth table of NAND gate which consists of two inputs is given below
 
 ### Verilog Code for NAND Gate
 
-```Verilog
+```verilog
 module nand_gate(
     input a,
     input b,
@@ -154,7 +154,7 @@ The Truth table of NOR gate which consists of two inputs is given below
 
 ### Verilog Code for NOR Gate
 
-```Verilog
+```verilog
 module nor_gate(
     input a,
     input b,
@@ -181,7 +181,7 @@ The Truth table of XOR gate which consists of two inputs is given below
 
 ### Verilog Code for XOR Gate
 
-```Verilog
+```verilog
 module xor_gate(
     input a,
     input b,
@@ -208,7 +208,7 @@ The Truth table of XNOR gate which consists of two inputs is given below
 
 ### Verilog Code for XNOR Gate
 
-```Verilog
+```verilog
 module xnor_gate(
     input a,
     input b,
