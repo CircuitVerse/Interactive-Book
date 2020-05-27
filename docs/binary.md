@@ -17,7 +17,7 @@ means that while counting in binary you cannot exceed 1. Infact all the numbers 
 Check out the binary representation of a decimal number (the numbers used for counting i.e., from 0-9) in binary.
 ```yaml
 Example:
-Decimal number :: 25 
+Decimal Number :: 25 
 Binary Number :: 11001 
 ```
 **_Note: There is no 2, 3, 4, 5, 6, 7, 8 or 9 in Binary!_**
@@ -86,21 +86,21 @@ Let's tell you something more about conversion. Conversion from Decimal to Binar
 All you need to do is begin from the right. Follow the steps below:
 - STEP 1 :: 
 Write the decimal value of each digit on top of them respectively. The value which you seek to write is
-2^(place value from right) beginning from 0 i.e., 2^0, 2^1, 2^2 .... continuing upto 2^7.
+2^(place value from right) beginning from 0 i.e., 2^0, 2^1, 2^2 .... continuing up to 2^7.
 - STEP 2 ::
-Now, multiply each digit of binary number with it's value.
+Now, multiply each digit of binary number with its value.
 - STEP 3 ::
 Add 'em all.
 - STEP 4 ::
 Result is ready :)
 
-**_Note: If the number is large, increase bits of binary number on the left. Keep in mind that it's value will
-increase subsiquently._**
+**_Note: If the number is large, increase bits of the binary number on the left. Keep in mind that it's value will
+increase subsequently._**
 ```yaml
 Example ::
 Decimal Number :: 25
-You can convert the 1st, 4th and the 5th digit from the right by tapping on it to convert from 0 to 1.
-Further, respective binary digit is multiplied with the value present on top of each digit. Now add.
+You can convert the 1st, 4th, and the 5th digit from the right by tapping on it to convert from 0 to 1.
+Further, the respective binary digit is multiplied with the value present on top of each digit. Now add.
 In this Case ::
 1x16 + 1x8 + 0x4 + 0x2 + 1x1 = 25 which is the decimal equivalent of the binary number 11001
 ```
@@ -130,3 +130,4 @@ The downside to using a signed number is that it removes one bit from the actual
    * 10101
    * 25
    * 1000 
+
