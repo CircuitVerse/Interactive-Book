@@ -13,10 +13,8 @@ nav_order: 2
 
 Binary number system was invented by **Gottfried Leibniz**. As the word is prefixed with 'Bi' which is a
 Latin word and means 'two' in English. This brings us to the first two digits i.e., 0 and 1 which
-means that while counting in binary we cannot exceed 1. Infact all the numbers which we tend to
-represent are made up of only two digits i.e., 0 and 1 which is quite interesting.
-Let us show you the binary representation of a decimal number(The numbers which we use for counting
-i.e., from 0-9) in binary.
+means that while counting in binary you cannot exceed 1. Infact all the numbers which you represent are made up of only two digits i.e., 0 and 1 which is quite interesting.
+Check out the binary representation of a decimal number (the numbers used for counting i.e., from 0-9) in binary.
 ```yaml
 Example:
 Decimal number :: 25 
@@ -26,33 +24,33 @@ Binary Number :: 11001
 
 ---
 
-### How do we Count using Binary?
-It is just like counting in decimal except we reach 10 much sooner.
+### How to Count using Binary?
+It is just like counting in decimal except you reach 10 much sooner.
 
 
 
 | Binary       | Explanation       |
 |:------------:|:-----------------:|
-| 0            | We start at 0     |
+| 0            | Start at 0     |
 | 1            | Then 1            |
-| ???          | But then there is no symbol for 2 ... what do we do?  |
+| ???          | But then there is no symbol for 2 ... what to do?  |
 
 
-#### Well how do we count in Decimal?
+#### How to count in Decimal?
 
 | Decimal       | Explanation            |
 |:-------------:|:----------------------:|
-| 0            | We start at 0          |
+| 0            | Start at 0          |
 | 1            | Then 1                 |
 | 2-8          | Count 1,2,3,4,5,6,7,8  |
 | 9            | This is the **last digit** in Decimal|
-|**1**0        | So we start back at **0** again, but carry **1** on the left|
+|**1**0        | Start from back at **0** again, but carry **1** on the left|
 
 #### The same thing is done in binary ...
 
 | Binary       | Explanation            |
 |:------------:|:----------------------:|
-| 0            | We start at 0          |
+| 0            | Start at 0          |
 | 1            | Then 1        |
 | **1**0     | Now start back at **0** again, but carry **1** on the left|
 | 11         | 1 more           |
@@ -64,15 +62,15 @@ It is just like counting in decimal except we reach 10 much sooner.
 
 | Decimal       | Explanation            |
 |:-------------:|:----------------------:|
-|	99	 |	When we run out of digits, we ...|
-|	100	 |	... start back at **0** again, but carry **1** on the left|
+|	99	 |	When you run out of digits, ...|
+|	100	 |	... start from back at **0** again, but carry **1** on the left|
 
-#### And that is what we do in binary ...
+#### And that is what is done in binary ...
 
 
 | Binary     | Explanation   |
 |:----------:|:-------------:|
-| 0          | We start at 0    |
+| 0          | Start at 0    |
 | 1          | Then 1        |
 | **1**0     | Now start back at **0** again, but carry **1** on the left|
 | 11         | 1 more        |
@@ -111,8 +109,8 @@ In this Case ::
 {% include binary.html %}
 
 ### Signed and Unsigned Numbers
-Currently, we have just looked at **unsigned** numbers - they can only be positive, as there is no sign.
-However, sometimes we need to work with **negative numbers** too. To do this, we add a **sign bit** on the far left of the binary number, which indicates whether the number is positive (`0`) or negative(`1`).
+Currently, you have just looked at **unsigned** numbers - they can only be positive, as there is no sign.
+However, sometimes you need to work with **negative numbers** too. To do this, you add a **sign bit** on the far left of the binary number, which indicates whether the number is positive (`0`) or negative(`1`).
 
 For example, the number `10000011` would be `131` if the number is **unsigned**, but if the number is **signed**, the actual representation would be `-3`
  - The first bit `1` represents that the number is negative

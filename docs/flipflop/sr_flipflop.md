@@ -47,7 +47,7 @@ Therefore, SR Latch performs three types of functions such as Hold, Set & Reset 
 |1	|1	|0	|x|
 |1	|1	|1	|x|
 
-By using three **variable K-Map**, we can get the simplified expression for next state, Q(t + 1). The three variable K-Map for next state, Q(t + 1) is shown in the following figure.
+By using three **variable K-Map**, you can get the simplified expression for next state, Q(t + 1). The three variable K-Map for next state, Q(t + 1) is shown in the following figure.
 
 <div style="text-align:center"><img src="../../assets/images/3_variable_k_map_next_state.jpg" /></div>
 

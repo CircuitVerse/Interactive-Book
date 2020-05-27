@@ -17,56 +17,56 @@ nav_order: 6
 ---
 
 ## Introduction
-Karnaugh Maps are a way to visually display a boolean expression onto a 2D grid. We take the variables and bind them to an axis, and then enumerate through the possible combinations of input values that could occur for all those variables bounded to an axis (either horizontally or vertically).
+Karnaugh Maps are a way to visually display a boolean expression onto a 2D grid. Take the variables and bind them to an axis, and then enumerate through the possible combinations of input values that could occur for all those variables bounded to an axis (either horizontally or vertically).
 
-For example, we can display the following 2 variable Karnaugh Map:
+For example, display the following 2 variable Karnaugh Map:
 
 ![](../assets/images/map11.png)
 
-We have bounded to the vertical axis, the variable `A`, and we enumerate through the possible values for `A` (being `{0, 1}`). Similarly, we perform a similar operation for the `B` variable. Since we are using a 2 variable expression, we can bound one variable to each axis and the visualization works fine in a `2x2` matrix.
+You have bounded to the vertical axis, the variable `A`, and enumerate through the possible values for `A` (being `{0, 1}`). Similarly, perform a similar operation for the `B` variable. Since you are using a 2 variable expression, you can bound one variable to each axis and the visualization works fine in a `2x2` matrix.
 
 Let's instead look at a more involved example with 4 variables:
 
 ![](../assets/images/map1.png)
 
-We have now bounded the `A` and `B` variables to the vertical axis, while we bounded the `C` and `D` variables to the horizontal axis. We now enumerate through different combinations of the bounded variables for each axis in *reflected binary code order* (more on this in the following section). Lastly, we indicate on the matrix each true value by augmenting a `1` value.
+You have now bounded the `A` and `B` variables to the vertical axis, and `C` and `D` variables to the horizontal axis. Now enumerate through different combinations of the bounded variables for each axis in *reflected binary code order* (more on this in the following section). Lastly, indicate on the matrix each true value by augmenting a `1` value.
 
 ## Enumeration and Gray Codes
-When enumerating through the variable input combinations for the bound axis, we take advantage of _reflected binary code order_, otherwise known as grey codes. If we observe, we can notice that from one combination to another, we only vary by one bit. That is:
+When enumerating through the variable input combinations for the bound axis, you can take advantage of _reflected binary code order_, otherwise known as grey codes. If you observe, you can notice that from one combination to another, you only vary by one bit. That is:
 
 ``` markdown
 ... 00 01 11 10 00 01 11 10 00 ...
     ^   ^ ^   ^ ^   ^ ^   ^ ^
 ```
 
-Thus, we get this wrapping that allows us to switch by only one bit. This provides us with the core of how Karnaugh Maps work.
+Thus, you get this wrapping that allows us to switch by only one bit. This provides us with the core of how Karnaugh Maps work.
 
 ## Simple Groupings
 The main idea for how Karnaugh Maps can be used to simplify expressions is to group pairs of `1` values that are adjacent and exploit the fact that each one has only a bit different from another. 
 
 ![](../assets/images/map2.png)
 
-For this example, let `F(ABCD) = CELL`. We start with the expression `F(0000) = 1` and `F(0001) = 1`. However, notice that _regardless_ of the value of the last bit, we still get `1`. Hence, let's take a look at the SOP expressions:
+For this example, let `F(ABCD) = CELL`. start with the expression `F(0000) = 1` and `F(0001) = 1`. However, notice that _regardless_ of the value of the last bit, you still get `1`. Hence, let's take a look at the SOP expressions:
 
 ```markdown
 F(ABCD) = A'B'C'D' + A'B'C'D
 F(0000) = 1
 F(0001) = 1
 
-Since the last bit is the same, we can ignore the D value, thus:
+Since the last bit is the same, you can ignore the D value, thus:
 F(ABCD) = A'B'C'
 
-We can confirm by simplifying algebraically:
+You can confirm by simplifying algebraically:
 F(ABCD) = A'B'C'D' + A'B'C'D
       = A'B'C'(D' + D)
       = A'B'C'
 Therefore, the simplification is true.
 ```
 
-We can then extend this rule to work for rectangles and more!
+You can then extend this rule to work for rectangles and more!
 
 ## Two Dimension Groupings
-Extending the idea of isolating changing bits that retain a consistent value, we can then generalize this to work in a higher dimension. Consider the following example:
+Extending the idea of isolating changing bits that retain a consistent value, you can then generalize this to work in a higher dimension. Consider the following example:
 
 ![](../assets/images/map3.png)
 
@@ -78,17 +78,17 @@ F(0100) = 1
 F(0101) = 1
 ```
 
-Observe that the bits do not change by one for all pairs of numbers, for example, `{0000, 0101}` differ by two bits. However, we can take advantage of the fact that for any bit change horizontally or vertically, it's irrelevant what that bit is. More concretely, take a look at the following example.
+Observe that the bits do not change by one for all pairs of numbers, for example, `{0000, 0101}` differ by two bits. However, you can take advantage of the fact that for any bit change horizontally or vertically, it's irrelevant what that bit is. More concretely, take a look at the following example.
 
 ```markdown
 0000 0001
 0100 0101
 
 => A'B'C'D' + A'B'C'D + A'BC'D' + A'BC'D
-Regardless of the B variable, we still get true for all products in the SOP expression.
+Regardless of the B variable, you still get true for all products in the SOP expression.
 This is bounded vertically:
 => A'C'D' + A'C'D + A'C'D' + A'C'D
-Regardless of the D variable, we still get true for all products in the SOP expression.
+Regardless of the D variable, you still get true for all products in the SOP expression.
 This is bounded horizontally:
 => A'C' + A'C' + A'C' + A'C'
 => A'C' (1 + 1 + 1 + 1)
@@ -133,9 +133,9 @@ Repeat this process for all remaining unvisited cells.
 
 ![](../assets/images/map5.png)
 
-In this example, at `F(0000)`, we can create a grouping of size 2 (because 2 is the largest possible grouping, 3 is not a power of 2). We then iterate through to `F(0001)`, however `F(0001)` was already resolved to a grouping. For the latest active cell, `F(0011)` is not resolved to a grouping thus it's unvisited. The largest possible grouping is also of size 2, thus we create another group.
+In this example, at `F(0000)`, you can create a grouping of size 2 (because 2 is the largest possible grouping, 3 is not a power of 2). Then iterate through to `F(0001)`, however `F(0001)` was already resolved to a grouping. For the latest active cell, `F(0011)` is not resolved to a grouping thus it's unvisited. The largest possible grouping is also of size 2, thus you create another group.
 
-To resolve the groupings into an SOP expression, we iterate through the groups and identify changing bits:
+To resolve the groupings into an SOP expression, iterate through the groups and identify changing bits:
 
 ```markdown
 Group #1 => F(ABCD) = [0000, 0001]
@@ -155,7 +155,7 @@ F(ABCD) = A'B'C'D + A'B'CD
 => A'B'D(C' + C)
 => A'B'D
 
-Now we add the two results:
+Now add the two results:
 F(ABCD) = A'B'C' + A'B'D
 => F(ABCD) = A'B'D + A'B'C' (by commutative property)
 ```
@@ -179,6 +179,6 @@ Candidate #2:
 F(ABCD) = [0111, 0110, 1111, 1110]
 ```
 
-Both groupings have the same size and are the same dimension. However, upon reaching `F(1110)`, another grouping needs to be instantiated, in which case if the first candidate grouping was created then we made a group that did not necessarily increase the size of our SOP expression. 
+Both groupings have the same size and are the same dimension. However, upon reaching `F(1110)`, another grouping needs to be instantiated, in which case if the first candidate grouping was created then you made a group that did not necessarily increase the size of our SOP expression. 
 
 This illustrates the idea that this is a greedy algorithm, and does not always return the most simplified SOP expression. In later sections, algorithms illustrating a globally optimal algorithm will be discussed.
