@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Master Slave JK Flip-Flop
-parent: Flip-Flops
+title: Master-slave JK flip-flop
+parent: Flip-flops
 nav_order: 5
 ---
 
-# Master Slave JK Flip-Flop
+# Master-slave JK flip-Flop
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -15,7 +15,7 @@ nav_order: 5
 
 ## Introduction
 
-Master Slave JK Flip-flop is designed to eliminate the race around condition in JK flip-flop and it is constructed by using two JK flip-flops as shown in the circuit diagram below.
+Master-slave JK flip-flop is designed to eliminate the race around condition in JK flip-flop and it is constructed by using two JK flip-flops as shown in the circuit diagram below.
 
 <div style="text-align:center"><img src="../../assets/images/masterslave_jk_flipflop.png" /></div>
 
@@ -24,7 +24,7 @@ The second flip-flop is called the _slave_, and it is driven by the negative clo
 During the positive clock cycle, master flip-flop gives the intermediate output but slave flip-flop will not give the final output.
 During the negative clock cycle, slave flip-flop gets activated and copies the previous output of the master flip-flop and produces the final output.
 
-## Master Slave JK Flip-flop constructed by using NAND gates
+## Master-slave JK flip-flop constructed by using NAND gates
 
 <div style="text-align:center"><img src="../../assets/images/masterslave_jk_flipflop_nand.png" /></div>
 
@@ -64,7 +64,7 @@ Here, Q(n) is the present state and Q(n+1) is the next state.
 | 1 | 1 | X | 0 |
 
 
-## Characteristic Equation
+## Characteristic equation
 
 ````
 Q(n+1) = Q(n)'J + Q(n)K'

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: MSI Components
+title: MSI components
 nav_order: 9
 has_children: true
 permalink: /docs/msi
@@ -15,7 +15,7 @@ permalink: /docs/msi
 {:toc}
 
 ## Introduction
-__MSI__ or __Medium Scale Integrated__ circuits are a set of basic, elementary logic circuits. They are available as ICs (integrated chips) and implement specific,commonly used digital functions such as:
+__MSI__ or __Medium scale integrated__ circuits are a set of basic, elementary logic circuits. They are available as ICs (integrated chips) and implement specific,commonly used digital functions such as:
 1. Multiplexing and Demultiplexing
 2. Encoding and Decoding
 
@@ -26,7 +26,7 @@ For each type, we will start with a brief discussion of its basic operating prin
 We then show how they can be used alone or in combination with other ICs in various applications.
 
 
-## Sub-Modules
+## Sub-modules
 
 Next, let us have a look at some MSI Components one by one.
 

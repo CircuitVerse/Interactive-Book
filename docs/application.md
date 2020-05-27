@@ -1,10 +1,10 @@
 ---
 layout: default
-title:  Application of Shift Registers
+title:  Application of shift registers
 nav_order: 15
 ---
 
-# Applications of Shift Registers
+# Applications of shift registers
 {: .no_toc}
 
 ## Table of contents
@@ -35,7 +35,7 @@ Shift registers can be applied in the following ways:
 - [Serial-in Serial-out](https://learn.circuitverse.org/docs/registers/ss.html) registers are used for time delays
 
 
-# Ring Counter
+# Ring counter
 Similar to how the [Serial-in Serial-out](https://learn.circuitverse.org/docs/registers/sp.html) register requires *'N'* clock pulses to shift *N* bit data, the *'N'* Ring Counter produces a sequence of 0s and 1s, by having the rightmost D flip-flop as input to the leftmost D flip-flop as opposed to applying data externally. That is, the output of the last flip-flop is connected to the output of the first flip-flop in the ring. These patterns of states (0s and 1s) are repeated every *'N'* clock cycles.
 
 The number of states in a Ring Counter are directly proportional to the number of flip-flops used.
@@ -63,10 +63,10 @@ Similarly, the following operations take place every positive edge of the clock 
 
 - The previous outputs of first and second D flip-flops are right-shifted by one bit. That implies that the present outputs of second and third D flip-flops are equal to the previous outputs of first and second D flip-flops.
 
-# Johnson Ring Counter
-The Johnson Ring counter functions similarly to the Ring counter. The difference being that the complemented output of rightmost D flip-flop is given as input of leftmost D flip-flop instead of normal output. Thus, ‘N’ bit Johnson Ring counter produces a sequence of states (pattern of zeros and ones) and it repeats for every ‘2N’ clock cycles.
+# Johnson ring counter
+The Johnson ring counter functions similarly to the Ring counter. The difference being that the complemented output of rightmost D flip-flop is given as input of leftmost D flip-flop instead of normal output. Thus, ‘N’ bit Johnson Ring counter produces a sequence of states (pattern of zeros and ones) and it repeats for every ‘2N’ clock cycles.
 
-Johnson Ring counter is also called the *Twisted Ring Counter* and *Switch Tail Ring Counter*. The block diagram of 3-bit Johnson Ring counter is shown in the following figure.
+Johnson ring counter is also called the *Twisted ring counter* and *Switch tail ring counter*. The block diagram of 3-bit Johnson Ring counter is shown in the following figure.
 
 <div style="text-align:center"><img src="../assets/images/twisted_ring_counter.jpg" /></div>
 

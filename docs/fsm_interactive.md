@@ -16,7 +16,7 @@ In this problem, our goal is to make a state machine which can determine, how mu
 Note: In this design, we will ignore the capacity of the stock, which means, we’ll assume that there will always be can in the vending machine.
 Also, we can assume that only one action could be made in every “clock cycle” or state.
 ```
-## RULES
+## Rules
 
 1. First, give the change.
 2. Then dispense the can.

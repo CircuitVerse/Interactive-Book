@@ -27,10 +27,10 @@ Whereas, flip-flops are edge sensitive.
 We will discuss about flip-flops in next module. 
 Latches are basic storage elements that operate with signal levels (rather than signal transitions). They are level-sensitive devices, that are useful for the design of the asynchronous sequential circuits. They, generally, have 2 inputs and 1 output pins. And the process where the output of the circuit depends on the previous state and the present input value(s) supplied, with the output value being constant (changing only for a particular condition in the input(s)), is referred to as latching.
 
-## Differences between Latches and Flip-Flops
+## Differences between latches and flip-flops
 
 
-| Latches       | Flip-Flops     |
+| Latches       | Flip-flops     |
 |:------------|:--------------|
 | Level triggered | Edge triggered |
 | Asynchronous device | Synchronous device |
@@ -40,11 +40,11 @@ Latches are basic storage elements that operate with signal levels (rather than 
 | Faster | Slower |
 | Examples: D-Latch, T-Latch | Examples: D-Flip flop, T-Flop flop |
 
-## Sub-Modules
+## Sub-modules
 
 Now, let us discuss about SR Latch, D Latch, JK Latch & T Latch one by one.
 
-1. [S-R Latch](https://learn.circuitverse.org/docs/Latches/sr_latch.html)
-2. [D Latch](https://learn.circuitverse.org/docs/Latches/d_latch.html)
-3. [J-K Latch](https://learn.circuitverse.org/docs/Latches/jk_latch.html)
-4. [T Latch](https://learn.circuitverse.org/docs/Latches/t_latch.html) 
+1. [SR latch](https://learn.circuitverse.org/docs/Latches/sr_latch.html)
+2. [D latch](https://learn.circuitverse.org/docs/Latches/d_latch.html)
+3. [JK latch](https://learn.circuitverse.org/docs/Latches/jk_latch.html)
+4. [T latch](https://learn.circuitverse.org/docs/Latches/t_latch.html) 

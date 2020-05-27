@@ -4,7 +4,7 @@ title: K-Maps
 nav_order: 6
 ---
 
-# K-Maps
+# K-maps
 {: .no_toc }
 
 
@@ -31,7 +31,7 @@ Let's instead look at a more involved example with 4 variables:
 
 We have now bounded the `A` and `B` variables to the vertical axis, while we bounded the `C` and `D` variables to the horizontal axis. We now enumerate through different combinations of the bounded variables for each axis in *reflected binary code order* (more on this in the following section). Lastly, we indicate on the matrix each true value by augmenting a `1` value.
 
-## Enumeration and Gray Codes
+## Enumeration and gray codes
 When enumerating through the variable input combinations for the bound axis, we take advantage of _reflected binary code order_, otherwise known as grey codes. If we observe, we can notice that from one combination to another, we only vary by one bit. That is:
 
 ``` markdown
@@ -41,7 +41,7 @@ When enumerating through the variable input combinations for the bound axis, we 
 
 Thus, we get this wrapping that allows us to switch by only one bit. This provides us with the core of how Karnaugh Maps work.
 
-## Simple Groupings
+## Simple groupings
 The main idea for how Karnaugh Maps can be used to simplify expressions is to group pairs of `1` values that are adjacent and exploit the fact that each one has only a bit different from another. 
 
 ![](../assets/images/map2.png)
@@ -65,7 +65,7 @@ Therefore, the simplification is true.
 
 We can then extend this rule to work for rectangles and more!
 
-## Two Dimension Groupings
+## Two dimension groupings
 Extending the idea of isolating changing bits that retain a consistent value, we can then generalize this to work in a higher dimension. Consider the following example:
 
 ![](../assets/images/map3.png)
@@ -98,7 +98,7 @@ This is bounded horizontally:
 
 Since the differences in bits need to generalize throughout a binding of an axis, you can only have a binding of size `2^n` for a given axis. For example, `1x1, 1x2, 1x4, 2x2, 2x4, 4x4`. 
 
-## Disjoint Groupings
+## Disjoint groupings
 Consider the following example:
 ![](../assets/images/map4.png)
 
@@ -120,7 +120,7 @@ Breaking down the expression:
 ```
 Clearly this is the exact same process as before, but iterated throughout all the disjoint sets.
 
-## Overlapping Groupings
+## Overlapping groupings
 Overlapping groupings become more complex because there exist ambiguous cases and sometimes what may appear to be a locally optimal solution is not a globally optimal solution.
 
 The general technique for evaluating for overlapping groups follows a greedy algorithm. Define an unvisited cell as a cell that has a value of `1` however it is currently not matched with a grouping yet. 
@@ -160,7 +160,7 @@ F(ABCD) = A'B'C' + A'B'D
 => F(ABCD) = A'B'D + A'B'C' (by commutative property)
 ```
 
-## Minimizing Group Count
+## Minimizing group count
 The following example will illustrate how the greedy approach may occasionally produce too many groups. Consider the following example:
 
 ![](../assets/images/map6.png)

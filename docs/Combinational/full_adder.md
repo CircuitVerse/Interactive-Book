@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Full Adder
-parent: Combinational Logic
+title: Full adder
+parent: Combinational logic
 nav_order: 2
 ---
 
-# Full Adder
+# Full adder
 {: .no_toc }
 
 ## Table of contents
@@ -21,27 +21,27 @@ Full adder is developed to overcome the drawback of Half Adder circuit.
 It can add two one-bit numbers A and B, and carry c. 
 The full adder is a three-input and two output combinational circuit.
 
-## Block Diagram
+## Block diagram
 
 <div style="text-align:center"><img src="../../assets/images/fulladder_blockdiagram.jpg" /></div>
 
 
-## Truth Table
+## Truth table
 
 <div style="text-align:center"><img src="../../assets/images/fulladder_truthtable.jpg" /></div>
 
-## Circuit Diagram
+## Circuit diagram
 
 <div style="text-align:center"><img src="../../assets/images/fulladder_circuitdiagram.jpg" /></div>
 
-## Full adder From 2 Half Adder
+## Full adder from 2 half adder
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/247" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
-## Full adder From Universal Gates 
+## Full adder from universal gates 
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/45277" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
-## Ripple Carry Adder
+## Ripple carry adder
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/248" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>

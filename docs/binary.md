@@ -4,7 +4,7 @@ title: Binary Numbers
 nav_order: 2
 ---
 
-# Binary Numbers
+# Binary numbers
 {: .no_toc }
 
 ---
@@ -26,7 +26,7 @@ Binary Number :: 11001
 
 ---
 
-### How do we Count using Binary?
+### How do we count using binary?
 It is just like counting in decimal except we reach 10 much sooner.
 
 
@@ -38,7 +38,7 @@ It is just like counting in decimal except we reach 10 much sooner.
 | ???          | But then there is no symbol for 2 ... what do we do?  |
 
 
-#### Well how do we count in Decimal?
+#### Well how do we count in decimal?
 
 | Decimal       | Explanation            |
 |:-------------:|:----------------------:|
@@ -59,7 +59,7 @@ It is just like counting in decimal except we reach 10 much sooner.
 |???         | But NOW what ... ?|
 
 
-#### What happens in Decimal?
+#### What happens in decimal?
 
 
 | Decimal       | Explanation            |
@@ -100,7 +100,7 @@ Result is ready :)
 increase subsequently._**
 ```yaml
 Example ::
-Decimal Number :: 25
+Decimal number :: 25
 You can convert the 1st, 4th, and the 5th digit from the right by tapping on it to convert from 0 to 1.
 Further, the respective binary digit is multiplied with the value present on top of each digit. Now add.
 In this Case ::
@@ -110,7 +110,7 @@ In this Case ::
 
 {% include binary.html %}
 
-### Signed and Unsigned Numbers
+### Signed and unsigned numbers
 Currently, we have just looked at **unsigned** numbers - they can only be positive, as there is no sign.
 However, sometimes we need to work with **negative numbers** too. To do this, we add a **sign bit** on the far left of the binary number, which indicates whether the number is positive (`0`) or negative(`1`).
 

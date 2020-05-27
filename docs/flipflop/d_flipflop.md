@@ -1,10 +1,10 @@
 ---
 layout: default
-title: D Flip-Flop
-parent: Flip-Flops
+title: D flip-Flop
+parent: Flip-flops
 nav_order: 2
 ---
-# D Flip-Flop
+# D flip-flop
 
 ## Table of contents
 {: .no_toc .text-delta }

@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Clock Signal and Triggering
+title: Clock signal and triggering
 nav_order: 10
 ---
 
-# Clock Signal and Triggering
+# Clock signal and triggering
 {: .no_toc }
 
 In this section, let us discuss about the clock signal and types of triggering one by one.
@@ -37,7 +37,7 @@ In the above figure, train of pulses is considered as clock signal. This signal 
 
 The reciprocal of the time period of clock signal is known as the frequency of the clock signal. All sequential circuits are operated with clock signal. So, the frequency at which the sequential circuits can be operated accordingly the clock signal frequency has to be chosen.
 
-## Types of Triggering
+## Types of triggering
 
 Following are the two possible types of triggering that are used in sequential circuits.
 

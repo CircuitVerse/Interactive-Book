@@ -89,18 +89,18 @@ This condition is called as **Race around condition**.
 To put it in words, " For JK flip-flop if J, K and Clock are equal to 1 the state of flip-flop keeps on toggling which leads to uncertainty in determining the output of the flip-flop. This problem is called  Race around the condition. "'
 This condition also exists in T flip-flop since T flip-flop also has toggling options.
 
-## Methods to eliminate Race around condition
+## Methods to eliminate race around condition
 
 ### 1. Increasing the delay of flip-flop 
 
 The propagation delay (delta t) should be made greater than the duration of the clock pulse (T).
 But it is not a good solution as increasing the delay will decrease the speed of the system.
 
-### 2. Use of Edge Triggered flip-flop
+### 2. Use of edge-triggered flip-flop
  
 If the clock is High for a time interval less than the propagation delay of the flip flop then racing around condition can be eliminated. This is done by using the edge-triggered flip flop rather than using the level-triggered flip-flop.
 
-### 3. Use of Master-Slave JK flip-flop
+### 3. Use of master-slave JK flip-flop
 
 If the flip flop is made to toggle over one clock period then racing around condition can be eliminated.
 This is done by using Master-Slave JK flip-flop.

@@ -1,11 +1,11 @@
 ---
 layout: default
-title: JK Latch
+title: JK latch
 parent: Latches
 nav_order: 3
 ---
 
-## JK Latch
+## JK latch
 
 JK latch is similar to RS latch. This latch consists of 2 inputs J and K as shown in the below figure. The ambiguous state has been eliminated here: when the inputs of Jk latch are high, then output toggles. The output feedback to inputs is the only difference we see here, which is not there in the RS latch.
 

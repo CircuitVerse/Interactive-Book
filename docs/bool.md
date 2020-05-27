@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Boolean Algebra
+title: Boolean algebra
 nav_order: 4
 ---
  
-# Boolean Algebra
+# Boolean algebra
 {: .no_toc }
  
  
@@ -25,11 +25,11 @@ In this case it is referred to as 0 and 1.
  
 ---
  
-## Rules of Boolean Algebra
+## Rules of boolean algebra
  
 These are the building blocks of Boolean Algebra. Try not to forget these as these are the most important one's and you can solve any digital equation with the help of the described rules and Laws below.
  
-### Null Rule
+### Null rule
  
 As the rule states 'null' which means that when 1 is added i.e., 'OR' and when 0 is 'AND' with a variable it gives 1 and 0 respectively.
  
@@ -38,7 +38,7 @@ A + 1 = 1
 A . 0 = 0
 ```
  
-### Identity Rule
+### Identity rule
  
 As the rule states 'identity' which means that when 0 is added i.e., 'OR' and when 0 is 'OR' with a variable it gives the variable back.
  
@@ -47,7 +47,7 @@ A + 0 = A
 A . 1 = A
 ```
  
-### Complement Rule
+### Complement rule
  
 Whenever 'AND' or 'OR' is used with the negation of the variable and the variable itself it gives 0 and 1 respectively.
  
@@ -56,7 +56,7 @@ A + A' = 1
 A . A' = 0
 ```
  
-### Involution Rule
+### Involution rule
  
 Any variable when double negated gives the variable back.
  
@@ -64,13 +64,13 @@ Any variable when double negated gives the variable back.
 (A')' = A
 ```
  
-## Laws of Boolean Algebra
+## Laws of boolean algebra
  
 There are six Laws in Boolean Algebra. All six laws are described below in increasing order of importance.
  
 **_Note: We can construct any digital circuit with the help of only two gates namely AND and OR along with NOT to use a respective variables in it's high or low state as required. Keep in mind that all laws are stated for us to design any digital circuit with the help of only AND and OR gate. Similarly, these laws are stated for the same._**
  
-### Commutative Law
+### Commutative law
  
 The word commutative is prefixed with the word 'commute' which means movement i.e., the movement of variables meaning 
 if we switch or change the position of variables it won't affect the result.
@@ -81,7 +81,7 @@ A + B = B + A
 A . B = B . A
 ```
  
-### Associative Law
+### Associative law
  
 The position of parenthesis does not matter. The basic idea of this law is that which set of variables you resolve first is not a matter of fact.
  
@@ -91,7 +91,7 @@ Examples:
 (A . B) . C = A . (B . C)
 ```
  
-### Idempotence Law
+### Idempotence law
  
 As the word states 'Identity' tries to understand the importance of the term. When we apply AND gate to a single variable it will output the variable itself(*Conditions that we do not know the value of that variable). Similar will be the case when we will apply the OR gate. If you understand this then you got it ;)
  
@@ -101,7 +101,7 @@ A + A = A
 A . A = A
 ```
  
-### Distributive Law
+### Distributive law
  
 Suppose it's your birthday and you want to distribute sweets to everyone in the class. What would the birthday reader do? Go to each person and distribute the sweets?. Awesome. That's what happens in the case of Distributive law. Think of the number outside the parenthesis as the birthday variable who needs to attend each and every variable inside the parenthesis. Follow up the examples to understand better.
  
@@ -111,7 +111,7 @@ A (B + C) = A.B + A.C
 A + (B.C) = (A + B)(A + C)
 ```
  
-### Redundance Law
+### Redundance law
  
 What do you do when you find two identical items while going to a track inside your bag? Obviously you remove one of the two redundant items. That's what you need to do here, extract the common variable, and solve the expression inside the parenthesis.
  
@@ -122,7 +122,7 @@ A(A + B) = A   //Here initial expression is reduced to A.A + A.B(Distributive La
                which can further be A + A.B(using Identity Law)
 ```
  
-### De Morgan's Law
+### De Morgan's law
  
 This is the most important law of Boolean Algebra. Remember the phrase **'Break the Line, change the Sign'** and **'Join the Line, change the sign'** both are applicable. Meaning break the negate and change AND to OR and OR to AND within that negate sign. Do not remove the line. As the phrase speaks of breaking the line and changing the sign not removing the line. Be careful while applying this law.
  

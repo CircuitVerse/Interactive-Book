@@ -1,11 +1,11 @@
 ---
 layout: default
-title: JK Flip-Flop
-parent: Flip-Flops
+title: JK flip-flop
+parent: Flip-flops
 nav_order: 3
 ---
 
-# JK Flip-Flop
+# JK flip-flop
 
 ## Table of contents
 {: .no_toc .text-delta }

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Multiplexers
-parent: MSI Components
+parent: MSI components
 nav_order: 1
 ---
 
@@ -20,7 +20,7 @@ The selection of one of the n inputs is done by the selected inputs. Depending o
 E is called the strobe or enable input which is useful for the cascading. It is generally an active low terminal that means it will perform the required operation when it is low.
 
 
-## Block Diagram
+## Block diagram
 
 <div style="text-align:center"><img src="../../assets/images/n_onemultiplexer_blockdiagram.jpg" /></div>
 

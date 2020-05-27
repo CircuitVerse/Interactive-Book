@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Demultiplexers
-parent: MSI Components
+parent: MSI components
 nav_order: 2
 ---
 
@@ -21,12 +21,12 @@ A de-multiplexer is equivalent to a single pole multiple way switch as shown in 
 ## Demultiplexers in multiple variations.
 
 ### 1 : 2  demultiplexer
-#### Block Diagram
+#### Block diagram
 
 <div style="text-align:center"><img src="../../assets/images/one_twodemultiplexer_blockdiagram.jpg" /></div>
 
 
-#### Truth Table
+#### Truth table
 
 <div style="text-align:center"><img src="../../assets/images/one_twodemultiplexer_truthtable.jpg" /></div>
 

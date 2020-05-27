@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Serial Input Serial Output
-parent: Digital Registers
+title: Serial-in serial-out
+parent: Digital registers
 nav_order: 1
 ---
 
-# Serial Input Serial Output
+# Serial-in serial-out
 {: .no_toc }
  
 
@@ -21,7 +21,7 @@ nav_order: 1
  
 Let all the flip-flops be initially in the reset condition i.e. Q3 = Q2 = Q1 = Q0 = 0. If an entry of a four-bit binary number 1 1 1 1 is made into the register, this number should be applied to Din bit with the LSB bit applied first. The D input of FF-3 i.e. D3 is connected to serial data input Din. The output of FF-3 i.e. Q3 is connected to the input of the next flip-flop i.e. D2, and so on.
 
-## Block Diagram
+## Block diagram
 
 
 <div style="text-align:center"><img src="../../assets/images/siso_blockdiagram.jpg" /></div>
@@ -44,7 +44,7 @@ Similarly with Din = 1 and with the fourth negative clock edge arriving, the sto
 
 <div style="text-align:center"><img src="../../assets/images/siso_operation4.jpg" /></div>
 
-## Truth Table
+## Truth table
 <div style="text-align:center"><img src="../../assets/images/siso_truthtable.jpg" /></div>
 
 ## Waveforms

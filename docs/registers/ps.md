@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Parallel Input Serial Output 
-parent: Digital Registers
+title: Parallel-in serial-out 
+parent: Digital registers
 nav_order: 3
 ---
 
-# Parallel Input Serial Output 
+# Parallel-in serial-out 
 {: .no_toc }
 
 
@@ -22,7 +22,7 @@ nav_order: 3
  
 * Data bits enter in a parallel fashion.
 
-* The circuit, shown below, is a four-bit parallel input serial output register.
+* The circuit, shown below, is a four-bit parallel-in serial-out register.
 
 * Output of the previous flip Flop is connected to the input of the next one via a combinational circuit.
 
@@ -43,7 +43,7 @@ But the AND gates 1,3 and 5 become active.
 Therefore the shifting of data takes place from left-to-right bit-by-bit on the application of clock pulses. 
 Thus, the parallel-in serial-out operation takes place.
 
-## Block Diagram
+## Block diagram
 
 
 <div style="text-align:center"><img src="../../assets/images/piso_blockdiagram.jpg" /></div>

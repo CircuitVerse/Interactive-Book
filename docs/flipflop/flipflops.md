@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Flip-Flops
+title: Flip-flops
 nav_order: 13
 has_children: true
 permalink: /docs/flipflop
 ---
 
-# Flip-Flops
+# Flip-flops
 {: .no_toc }
 
 ## Table of contents
@@ -23,10 +23,10 @@ In first method, cascade two latches in such a way that the first latch is enabl
 
 In second module, we can directly implement the flip-flop, which is edge sensitive. In this module, let us discuss the following flip-flops using second method.
 
-## Differences between Latches and Flip-Flops
+## Differences between aatches and flip-flops
 
 
-| Latches       | Flip-Flops     |
+| Latches       | Flip-flops     |
 |:------------|:--------------|
 | Level triggered | Edge triggered |
 | Asynchronous device | Synchronous device |
@@ -37,11 +37,11 @@ In second module, we can directly implement the flip-flop, which is edge sensiti
 | Examples: D-Latch, T-Latch | Examples: D-Flip flop, T-Flop flop |
 
 
-## Sub-Modules
+## Sub-modules
 Now let us implement various flip-flops by providing the cross coupling between NOR gates. You can also implement these flip-flops by using NAND gates, as well.
 
-1. [S-R Flip Flop](https://learn.circuitverse.org/docs/flipflop/sr_flipflop.html)
-2. [D Flip-Flop](https://learn.circuitverse.org/docs/flipflop/d_flipflop.html)
-3. [J-K Flip Flop](https://learn.circuitverse.org/docs/flipflop/jk_flipflop.html)
-4. [T Flip Flop](https://learn.circuitverse.org/docs/flipflop/t_flipflop.html)
-5. [Master Slave J-K Flip Flop](https://learn.circuitverse.org/docs/flipflop/masterslave_jk_flipflop.html)
+1. [S-R flip-flop](https://learn.circuitverse.org/docs/flipflop/sr_flipflop.html)
+2. [D flip-flop](https://learn.circuitverse.org/docs/flipflop/d_flipflop.html)
+3. [J-K flip-flop](https://learn.circuitverse.org/docs/flipflop/jk_flipflop.html)
+4. [T flip-flop](https://learn.circuitverse.org/docs/flipflop/t_flipflop.html)
+5. [Master-slave J-K flip-flop](https://learn.circuitverse.org/docs/flipflop/masterslave_jk_flipflop.html)
