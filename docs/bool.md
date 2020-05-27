@@ -68,11 +68,12 @@ Any variable when double negated gives the variable back.
 
 There are six Laws in Boolean Algebra. All six laws are described below in increasing order of importance.
 
+
 **_Note: You can construct any digital circuit with the help of only two gates namely AND and OR along with NOT to use respective variable in it's high or low state as required. Keep in mind that all laws are stated for us to design any digital circuit with the help of only AND and OR gate. Similarly, these laws are stated for the same._**
 
 ### Commutative Law
 
-The word commutative is prefixd with the word 'commute' which means movement i.e., the movement of variables meaning 
+The word commutative is prefixed with the word 'commute' which means movement i.e., the movement of variables meaning 
 if you switch or change the position of variables it won't affect the result.
 
 ```yaml
