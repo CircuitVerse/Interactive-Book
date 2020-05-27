@@ -16,6 +16,7 @@
 title: CircuitVerse
 description: A Book to learn Digital Logic Design.
 baseurl: "/" # the subpath of your site, e.g. /blog
+# NOTICE(gitpod): use `JEKYLL_ENV="production" bundle exec jekyll build` to avoid switching on localhost for assets and comment out url
 url: "https://learn.circuitverse.org" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink:
