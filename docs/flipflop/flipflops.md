@@ -23,7 +23,7 @@ In first method, cascade two latches in such a way that the first latch is enabl
 
 In second module, we can directly implement the flip-flop, which is edge sensitive. In this module, let us discuss the following flip-flops using second method.
 
-## Differences between aatches and flip-flops
+## Differences between latches and flip-flops
 
 
 | Latches       | Flip-flops     |

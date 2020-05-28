@@ -1,6 +1,6 @@
 ---
 layout: default
-title: N-Bit parallel adder & subtractor
+title: N-bit parallel adder & subtractor
 parent: Combinational logic
 nav_order: 5
 ---
