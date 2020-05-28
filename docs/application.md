@@ -46,7 +46,7 @@ The block diagram of the 3-bit Ring counter is shown in the following figure.
 
 A 3-bit Ring Counter will contain only a 3-bit SIPO shift register.
 
-Assume, the initial status of the D flip-flops from leftmost to rightmost is Q2Q1Q0=001. Here, Q2 & Q0 are MSB & LSB respectively. We can understand the working of Ring counter from the following table.
+Assume, the initial status of the D flip-flops from leftmost to rightmost is Q2Q1Q0=001. Here, Q2 & Q0 are MSB & LSB respectively. You can understand the working of Ring counter from the following table.
 
 |No of positive edge of Clock|  Serial Input = Q0 | Q2(MSB) |   Q1   |Q0(LSB)|
 |:--------------------------:|:------------------:|:-------:|:------:|:-----:|

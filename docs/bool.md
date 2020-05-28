@@ -73,8 +73,8 @@ There are six Laws in Boolean Algebra. All six laws are described below in incre
 ### Commutative law
  
 The word commutative is prefixed with the word 'commute' which means movement i.e., the movement of variables meaning 
-if we switch or change the position of variables it won't affect the result.
- 
+if you switch or change the position of variables it won't affect the result.
+
 ```yaml
 Examples:
 A + B = B + A

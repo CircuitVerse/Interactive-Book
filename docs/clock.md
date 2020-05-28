@@ -22,14 +22,14 @@ In this section, let us discuss about the clock signal and types of triggering o
 ## Clock signal
 
 Clock signal is a periodic signal and its ON time and OFF time need not be the same. 
-We can represent the clock signal as a square wave, when both its ON time and OFF time are same. 
+You can represent the clock signal as a square wave, when both its ON time and OFF time are same. 
 This clock signal is shown in the following figure.
 
 <div style="text-align:center"><img src="../assets/images/clock_signal.jpg" /></div>
 
 In the above figure, square wave is considered as clock signal. This signal stays at logic High (5V) for some time and stays at logic Low (0V) for equal amount of time. This pattern repeats with some time period. In this case, the time period will be equal to either twice of ON time or twice of OFF time.
 
-We can represent the clock signal as train of pulses, when ON time and OFF time are not same. This clock signal is shown in the following figure.
+You can represent the clock signal as train of pulses, when ON time and OFF time are not same. This clock signal is shown in the following figure.
 
 <div style="text-align:center"><img src="../assets/images/train_of_pulses.jpg" /></div>
 

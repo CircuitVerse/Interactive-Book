@@ -16,8 +16,8 @@ nav_order: 2
 ---
  
 ## Addition
-Binary addition is similar to Decimal addition. As this addition is binary implies we cannot have a number 
-greater than 1 i.e., when you do '1+1' it gives 0 with carrying 1 i.e, 10.
+Binary addition is similar to Decimal addition. As this addition is binary, it implies that you cannot have a number 
+greater than 1 i.e., when you do '1+1' it gives 0 with carry 1 i.e, 10.
 ```yaml 
 Examples :
 0 + 0 = 0
@@ -35,7 +35,7 @@ In the above example, for units place gives 1 as the submission of 1 and 0, wher
 at the ten's place where 1 and 1 are added, it gives 10 not 2 because this is binary addition which results in 
 carry of 1 and 0 as a result of the submission.
 The example below gives 110 because it results in 1+1+1 at the tens place which is 11 in binary. As two 1's gives 
-10, further if we add 1 it will give 11.
+10, further if you add 1 it will give 11.
 ```yaml
     1 1   (3)
   + 1 1   (3)
@@ -128,10 +128,10 @@ The base has r = 2 so the Binary system two types of complements. They are:
 2. 2's complement.
  
 ### 1's complement
- 
-To find the 1's complement of a given number, we should change all the 0's to 1's and then all the 1's to 0's. This process is called as 1's complement. Simply negate each digit present in the binary number.
-An Example of 1's complement is as follows:
- 
+
+To find the 1's complement of a given number, you should change all the 0's to 1's and then all the 1's to 0's. This process is called as 1's complement. Simply negate each digit present in the binary number.
+An Example for 1's complement is as follows:
+
 ```yaml
 Given number        1  0  1  0  1
 1's complement      0  1  0  1  0

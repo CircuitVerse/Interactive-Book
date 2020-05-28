@@ -19,7 +19,7 @@ JK flip-flop is the modified version of SR flip-flop. It operates with only posi
 
 <div style="text-align:center"><img src="../../assets/images/jk_flipflop.jpg" /></div>
 
-This circuit has two inputs J & K and two outputs Q(t) & Q(t)’. The operation of JK flip-flop is similar to SR flip-flop. Here, we considered the inputs of SR flip-flop as **S = J Q(t)’** and **R = KQ(t)** in order to utilize the modified SR flip-flop for 4 combinations of inputs.
+This circuit has two inputs J & K and two outputs Q(t) & Q(t)’. The operation of JK flip-flop is similar to SR flip-flop. Here, the inputs of SR flip-flop are considered as **S = J Q(t)’** and **R = KQ(t)** in order to utilize the modified SR flip-flop for 4 combinations of inputs.
 
 ## State table of **SR** flip-flop
 
@@ -46,7 +46,7 @@ Here, Q(t) & Q(t + 1) are present state & next state respectively. So, JK flip-f
 |1	|1	|0	|1|
 |1	|1	|1	|0|
 
-By using three variable K-Map, we can get the simplified expression for next state, Q(t + 1). The **three variable K-Map** for next state, Q(t + 1) is shown in the following figure.
+By using three variable K-Map, you can get the simplified expression for next state, Q(t + 1). The **three variable K-Map** for next state, Q(t + 1) is shown in the following figure.
 
 <div style="text-align:center"><img src="../../assets/images/jk_3_variable_kmap.jpg" /></div>
 

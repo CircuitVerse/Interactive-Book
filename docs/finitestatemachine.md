@@ -13,7 +13,7 @@ nav_order: 17
 ---
 
 ## Introduction
-We know that synchronous sequential circuits change (affect) their states for every positive (or negative) transition of the clock signal based on the input. 
+You know that synchronous sequential circuits change (affect) their states for every positive (or negative) transition of the clock signal based on the input. 
 So, this behavior of synchronous sequential circuits can be represented in the graphical form and it is known as **state diagram**.
 A synchronous sequential circuit is also called as **Finite state machine** (FSM) if it has a finite number of states. 
 There are two types of FSMs.
@@ -60,4 +60,4 @@ The state diagram of the Moore state machine is shown in the following figure.
 
 In the above figure, there are four states, namely A, B, C & D. These states and the respective outputs are labelled inside the circles. Here, only the input value is labelled on each transition. In the above figure, there are two transitions from each state based on the value of the input, x.
 
-In general, the number of states required in Moore state machine is more than or equal to the number of states required in Mealy state machine. There is an equivalent Mealy state machine for each Moore state machine. So, based on the requirement we can use one of them.
+In general, the number of states required in Moore state machine is more than or equal to the number of states required in Mealy state machine. There is an equivalent Mealy state machine for each Moore state machine. So, based on the requirement you can use only one of them.

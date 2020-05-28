@@ -29,7 +29,7 @@ This circuit has single input D and two outputs Q(t) & Q(t)’. The operation of
 |  1     |    1    |
 
 
-Therefore, D flip-flop always Hold the information, which is available on data input, D of earlier positive transition of clock signal. From the above state table, we can directly write the next state equation as
+Therefore, D flip-flop always Hold the information, which is available on data input, D of earlier positive transition of clock signal. From the above state table, the next state equation can be directly written as
 ```yaml
         Q(t + 1) = D
 ```

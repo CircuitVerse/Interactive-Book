@@ -77,7 +77,7 @@ Now, let us look at the timing diagram of JK flip-flop.
 
 Here, T is the time period of the clock whereas delta t is the propagation delay. The delay between input and output is called a propagation delay.
 
-This is what we are expecting, but the output may not be like this all the time. This is where **Race around condition** comes into the play.
+This is what was expected, but the output may not be like this all the time. This is where **Race around condition** comes into the play.
 
 Let us look at the timing diagram of JK flip-flop when the race around condition is considered.
 

@@ -25,7 +25,7 @@ Functional completeness is a property pertaining to boolean logic, which states 
 For example, NAND gates can be used to implement the [NOT gate](https://learn.circuitverse.org/docs/universal_gates.html#implementing-not-gate-1), the [OR gate](https://learn.circuitverse.org/docs/universal_gates.html#implementing-or-gate-1) and the [AND gate](https://learn.circuitverse.org/docs/universal_gates.html#implementing-and-gate-1). 
 
 ## Simplification
-To simplify any given boolean expression, we must find the __minimum__ number of NAND gates required. To do this, we must carry out the following steps. 
+To simplify any given boolean expression, first find the __minimum__ number of NAND gates required. To do this, carry out the following steps. 
 
 Let's find the minimum number of NAND gates required to simplify the logical expression:
 ```yaml
@@ -49,16 +49,16 @@ Thus, by applying De Morgan's Law:
 F = ((AB' + C'D)')'
   = ((AB')' . (C'D)')' 
 ```
-We stop here as we have now standardized the boolean expression such that it can completely be represented by a NAND gate are every input level.
+The boolean expression is now standardized such that it can completely be represented by a NAND gate are every input level.
 
 ### Step 3: Construct the NAND circuit
-Now that we have gotten the boolean expression to the required standard, we can implement it as a NAND circuit.
+Now that you have gotten the boolean expression to the required standard, you can implement it as a NAND circuit.
 
 ```yaml
 F = (A NAND B') NAND (C' NAND D)
 F = (A NAND (B NAND B)) NAND ((C NAND C) NAND D)
 ```
-Notice that there are input elements that are present in the negative form, namely `B'` and `C'`. We can represent them by using the NAND gate in order to realise the [NOT gate](https://learn.circuitverse.org/docs/universal_gates.html#implementing-not-gate-1).
+Notice that there are input elements that are present in the negative form, namely `B'` and `C'`. You can represent them by using the NAND gate in order to realise the [NOT gate](https://learn.circuitverse.org/docs/universal_gates.html#implementing-not-gate-1).
 
 <iframe width="600px" height="300px" src="https://circuitverse.org/simulator/embed/93441" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
 

@@ -20,7 +20,7 @@ permalink: /docs/register
 
 
 A Flip-flop is a 1 bit memory cell which can be used for storing the digital data. 
-To increase the storage capacity in terms of number of bits, we have to use a group of flip-flops. Such a group of flip-flops is known as a Register. 
+To increase the storage capacity in terms of number of bits, you can use a group of flip-flops. Such a group of flip-flops is known as a Register. 
 The n-bit register will consist of n number of flip-flop(s) and it is capable of storing an n-bit word.
 
 

@@ -25,7 +25,7 @@ Counters are of two types.
 
 The logic diagram of a 2-bit ripple up counter is shown in figure. 
 The toggle (T) flip-flop are being used. 
-But we can use the JK flip-flop also with J and K connected permanently to logic 1. 
+But you can use the JK flip-flop also with J and K connected permanently to logic 1. 
 External clock is applied to the clock input of flip-flop A and QA output is applied to the clock input of the next flip-flop i.e. FF-B.
 
 ### Logical diagram
