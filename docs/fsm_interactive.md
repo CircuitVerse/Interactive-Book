@@ -6,15 +6,15 @@ nav_order: 18
 
 # Interactive FSM
 
-In this module, we will learn how to use a Final-State-Machine(FSM) which describes the working of a Soda vending machine:
+In this module, you will learn how to use a Final-State-Machine(FSM) which describes the working of a Soda vending machine:
 
 ## Problem
-Assume, We have a soda vending machine which sells soda cans of cost 15¢ each, and we have only 2 types of coins: 10¢ and 5¢.
+Assume, you have a soda vending machine which sells soda cans of cost 15¢ each, and you have only 2 types of coins: 10¢ and 5¢.
 
 In this problem, our goal is to make a state machine which can determine, how much change should be returned, and when a can is dispenced.
 ```
-Note: In this design, we will ignore the capacity of the stock, which means, we’ll assume that there will always be can in the vending machine.
-Also, we can assume that only one action could be made in every “clock cycle” or state.
+Note: In this design, ignore the capacity of the stock, which means, we’ll assume that there will always be can in the vending machine.
+Also, you can assume that only one action could be made in every “clock cycle” or state.
 ```
 ## RULES
 
@@ -31,7 +31,7 @@ There are quite some options like:
 6. putting 5$ followed by 5¢ followed by 5¢ => getting a can.
 
 ## FSM diagram
-Now we translate the options which are listed above into an FSM diagram/flow-chart:
+Now translate the options which are listed above into an FSM diagram/flow-chart:
 
 {% include fsm.html %}
 

@@ -20,7 +20,7 @@ nav_order: 5
 ## Introduction
 
 The Full Adder is capable of adding only two single-digit binary number along with a carry input. 
-But in practice, we need to add binary numbers which are much longer than just one bit. To add two n-bit binary numbers we need to use the n-bit parallel adder. 
+But in practice, you need to add binary numbers which are much longer than just one bit. To add two n-bit binary numbers you need to use the n-bit parallel adder. 
 It uses several full adders in cascade. 
 The carry output of the previous full adder is connected to carry input of the next full adder.
 
@@ -38,8 +38,8 @@ The rest of the connections are the same as those of n-bit parallel adder is sho
 # N-Bit Parallel Subtractor
 
 The subtraction can be carried out by taking the 1's or 2's complement of the number to be subtracted. 
-For example, we can perform the subtraction (A-B) by adding either 1's or 2's complement of B to A. 
-That means we can use a binary adder to perform the binary subtraction.
+For example, you can perform the subtraction (A-B) by adding either 1's or 2's complement of B to A. 
+That means you can use a binary adder to perform the binary subtraction.
 
 
 ## 4 Bit Parallel Subtractor

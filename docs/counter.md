@@ -25,7 +25,7 @@ Counters are of two types.
 
 The logic diagram of a 2-bit ripple up counter is shown in figure. 
 The toggle (T) flip-flop are being used. 
-But we can use the JK flip-flop also with J and K connected permanently to logic 1. 
+But you can use the JK flip-flop also with J and K connected permanently to logic 1. 
 External clock is applied to the clock input of flip-flop A and QA output is applied to the clock input of the next flip-flop i.e. FF-B.
 
 ### Logical Diagram
@@ -109,7 +109,7 @@ The JA and KA inputs of FF-A are tied to logic 1. So FF-A will work as a toggle 
 <div style="text-align:center"><img src="../assets/images/ring_counter.png" height="300"/></div>
 <br>
 
-* **Johnson's Counter or Twisted Ring Counter:** The Johnson counter is a modification of ring counter. In this the inverted output of the last stage flip flop is connected to the input of first flip flop. If we use n flip flops to design the Johnson counter, it is known as 2n bit Johnson counter or Mod 2n Johnson counter.
+* **Johnson's Counter or Twisted Ring Counter:** The Johnson counter is a modification of ring counter. In this the inverted output of the last stage flip flop is connected to the input of first flip flop. If you use n flip flops to design the Johnson counter, it is known as 2n bit Johnson counter or Mod 2n Johnson counter.
 
 <div style="text-align:center"><img src="../assets/images/johnson's_counter.png" height="300"/></div>
 <br>

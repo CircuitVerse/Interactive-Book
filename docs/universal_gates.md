@@ -32,7 +32,7 @@ A NOT gate can be implemented by passing the same input into both inputs of the 
 <iframe width="600px" height="400px" src="https://circuitverse.org/simulator/embed/45175" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ### Implementing OR gate
-An OR gate can be implemented by passing the output of NOR to the NOT gate we implemented earlier.
+An OR gate can be implemented by passing the output of NOR to the NOT gate implemented earlier.
 <iframe width="600px" height="400px" src="https://circuitverse.org/simulator/embed/45176" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ### Implementing AND gate
