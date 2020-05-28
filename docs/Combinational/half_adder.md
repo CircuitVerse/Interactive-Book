@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Half Adder
-parent: Combinational Logic
+title: Half adder
+parent: Combinational logic
 nav_order: 1
 ---
 
-# Half Adder
+# Half adder
 {: .no_toc }
 
 ## Table of contents
@@ -21,16 +21,16 @@ The half adder circuit is designed to add two single bit binary number A and B.
 It is the basic building block for the addition of two single-bit numbers. 
 This circuit has two outputs **carry** and **sum**.
 
-## Block Diagram
+## Block diagram
 
 <div style="text-align:center"><img src="../../assets/images/halfadder_blockdiagram.jpg" /></div>
 
 
-## Truth Table
+## Truth table
 
 <div style="text-align:center"><img src="../../assets/images/halfadder_truthtable.jpg" /></div>
 
-## Circuit Diagram
+## Circuit diagram
 
 <div style="text-align:center"><img src="../../assets/images/halfadder_circuitdiagram.jpg" /></div>
 

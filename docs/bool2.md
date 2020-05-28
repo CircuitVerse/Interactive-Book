@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Boolean Function
+title: Boolean function
 nav_order: 5
 ---
 
-# Boolean Function
+# Boolean function
 {: .no_toc }
 
 
@@ -32,7 +32,7 @@ Example:
 					   	Boolean Expression
 ```
 
-## Truth Table Formation
+## Truth table formation
 
 Truth Table is formed by evaluating the Boolean expression for each and every truth value of a variable. Now truth values of a variable are either 'true' or 'false'. The main point is to evaluate the value of Boolean expression for each and every combination of the Truth values of 
 variables present. Suppose there is only one variable, it implies that it can hold either 'true' or 'false' but, when there are two variables then you can have a combination of {TT, TF, FT, FF}(T -> True, F -> False). Implies you need to evaluate the value of expression for each and every Truth value of a variable.
@@ -57,7 +57,7 @@ every variable.
 Example:
 F(A,B,C) = A + B.C
 ```
-## Truth Table Formation
+## Truth table formation
 A truth table shows a table having all the combinations of the inputs and their corresponding results.
 
 The switching equation can also be converted into a Truth Table. For example- Consider the switching equation: F(A,B,C) = A + BC.
@@ -74,7 +74,7 @@ The switching equation can also be converted into a Truth Table. For example- Co
 | 1       | 1       | 1      |1       |
 
 
-## Sum of Product Expressions (SOP)
+## Sum of product expressions (SOP)
 Let's take a look at an more complex expression `F(ABCD) = AB'C + BD + CD + D`. Let's generate the truth table:
 
 | F(AB'C+BD+CD+D)| A | B | C | D |
@@ -100,7 +100,7 @@ In this example an interesting observation is that, you are doing a sum of produ
 
 Moreover, the `OR` operator returns `true` so long as any one of its arguements returns `true`. Therefore, if _any_ of the terms in the sum of product (SOP) expressions is `true`, then you know that the final expression is `true` for certain. 
 
-## Product of Sum Expressions (POS)
+## Product of sum expressions (POS)
 Let's take a look at another expression `F(ABCD) = (A + B + C + D')(A + B' + C' + D)(A' + B' + C + D')`. Let's generate the truth table:
 
 | F(ABCD)| A | B | C | D |
@@ -128,7 +128,7 @@ Here the sum terms are defined by using the __OR__ operation and the product ter
 
 The product-of-sums form is also called as <u>Conjunctive Normal Form</u> as the sum terms are *AND*ed together and Conjunction operation is logical AND. Product-of-sums form is also called as Standard POS.
 
-## Canonical Expressions
+## Canonical expressions
 
 Before understanding Canonical Expressions, let us understand __Minterms__ and __Maxterms__ first.
 
@@ -213,7 +213,7 @@ When the SOP form of a Boolean expression is in canonical form, then each of its
 
 Similarly, when the POS form of a Boolean expression is in canonical form, then each of its sum term is called __maxterm__. So, the canonical form of product of sums function is also known as __maxterm canonical form__ or Product-of sum or standard canonical POS form.
 
-## Conversion of Canonical Forms
+## Conversion of canonical forms
 
 You can represent the one canonical formed equation in other canonical form i.e. you can represent the SOP form of equation in POS form and POS form equation in SOP form. To convert the canonical equations, you interchange the Σ and Π symbols after listing out the index numbers of the equations, which are excluded from the original form of equation.
 
@@ -249,9 +249,9 @@ Writing down the new equation in the form of SOP form,
 
 `F = Σ A, B, C (0, 1, 4, 6, 7) = (A’B'C’) + (A’B’C) + (AB’C’) + (ABC’) + (ABC)`
 
-## Conversion from Minimal to Canonical Forms
+## Conversion from minimal to canonical forms
 
-### Minimal POS to Canonical POS
+### Minimal POS to canonical POS
 
 You can include all the variables in each product term of the POS form equation, which doesn’t have all the variables by converting into standard POS form. The normal POS form function can be converted to standard POS form by using the Boolean algebraic law, **(A * A’ = 0)** and by following the below steps.
 
@@ -278,7 +278,7 @@ The third term is already in the standard form, as it has all the variables. Now
 
 `F = (A’ + B + C + D) * (A’ + B + C + D’) * (A + B’ + C + D’) * (A’ + B’ + C + D’) * (A + B’ + C’ + D)`
 
-### Minimal SOP to Canonical SOP
+### Minimal SOP to canonical SOP
 
 You can include all the variables in each product term of the SOP form equation, which doesn’t have all the variables by converting into standard SOP form. The normal SOP form function can be converted to standard SOP form by using the Boolean algebraic law, **(A + A’ = 1)** and by following the below steps.
 
@@ -305,7 +305,7 @@ F = x y + x z + y z
 ```
 The standard SOP form is `F = x y z + x y z’ + x y’ z + x’ y z`
 
-## Example Algebraic Simplification
+## Example algebraic simplification
 
 Let's simplify our expression from the previous truth table example. you can apply ordinary algebra tricks such as factoring. Remember that the `+` operator invokes the `OR` gate, and that `true or x` always returns `true` regardless of `x` (as shown in our first truth table).
 ```
@@ -317,9 +317,9 @@ AB'C + D // Applying Absorption Law on BD + D, which reduces it to D
 
 As an exercise to the reader, complete the truth table to show that they are logically equivalent. 
 
-## Undefined Input & Don't Cares
+## Undefined input & don't-cares
 
-The definition of a "Don't care" is a combination of input values that is not known, and could be either `0` or `1`. For the purposes of variable simplification, choose the greedy approach of picking between {`0`, `1`} such that the simplified expression has less terms.
+The definition of a "don't-care" is a combination of input values that is not known, and could be either `0` or `1`. For the purposes of variable simplification, we would choose the greedy approach of picking between {`0`, `1`} such that the simplified expression has less terms.
 
 Let's consider the following truth-table:
 
@@ -329,7 +329,7 @@ Let's consider the following truth-table:
 |1|0|?|
 |1|1|1|
 
-Observe that there is a _Don't care_. Let's observe the differences in cases for `F(1,0)`:
+We observe that we have a _don't-care_. Let's observe the differences in cases for `F(1,0)`:
 
 ```markdown
 Case #1: F(1, 0) = 0
@@ -350,7 +350,7 @@ F(AB) = A'B' + A'B + AB' + AB
 
 You can clearly see, if you set `F(1, 0) = 1`, you get a true value for any input. Therefore, for the purposes of variable simplification, you can simply let `F(1, 0) = 1` thus implying `F(AB) = 1`.
 
-## Try the interactive Truth Table generator
+## Try the interactive truth table generator
 
 ---
 

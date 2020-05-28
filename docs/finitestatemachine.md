@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  Finite State Machines
+title:  Finite state machines
 nav_order: 17
 ---
 
@@ -15,7 +15,7 @@ nav_order: 17
 ## Introduction
 You know that synchronous sequential circuits change (affect) their states for every positive (or negative) transition of the clock signal based on the input. 
 So, this behavior of synchronous sequential circuits can be represented in the graphical form and it is known as **state diagram**.
-A synchronous sequential circuit is also called as **Finite State Machine** (FSM) if it has a finite number of states. 
+A synchronous sequential circuit is also called as **Finite state machine** (FSM) if it has a finite number of states. 
 There are two types of FSMs.
 
 * Mealy State Machine
@@ -23,7 +23,7 @@ There are two types of FSMs.
 
 Now, let us discuss these two state machines one by one.
 
-## Mealy State Machine
+## Mealy state machine
 A Finite State Machine is said to be Mealy state machine, if outputs depend on both present inputs & present states. 
 The **block diagram** of Mealy state machine is shown in the following figure.
 
@@ -47,7 +47,7 @@ In the above figure, there are two transitions from each state based on the valu
 In general, the number of states required in Mealy state machine is less than or equal to the number of states required in the Moore state machine. 
 There is an equivalent Moore state machine for each Mealy state machine.
 
-## Moore State Machine
+## Moore state machine
 A Finite State Machine is said to be Moore state machine, if outputs depend only on present states. The block diagram of the Moore state machine is shown in the following figure.
 
 <div style="text-align:center"><img src="../assets/images/moore_state_machine.jpg" /></div>

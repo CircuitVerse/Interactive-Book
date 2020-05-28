@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Interactive Gates
+title: Interactive gates
 nav_order: 3
 ---
-# Interactive Logic Gates
+# Interactive logic gates
 {: .no_toc }
 
 {% include gates.html %}

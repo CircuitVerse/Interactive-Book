@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Digital Registers
+title: Digital registers
 nav_order: 14
 has_children: true
 permalink: /docs/register
 ---
 
-# Digital Registers
+# Digital registers
 {: .no_toc }
 
 
@@ -28,11 +28,11 @@ The binary-data, in a register, can be transfered within itself from one flip-fl
 A shift register is a type of register that allows such data transfers.
 Shift register has 4 modes of operations.
 
-## Sub-Modules
+## Sub-modules
 
 Next, let us have a look at each register operation one by one.
 
-1. [Serial Input Serial Output](https://learn.circuitverse.org/docs/registers/ss.html)
-2. [Serial Input Parallel Output](https://learn.circuitverse.org/docs/registers/sp.html)
-3. [Parallel Input Serial Output](https://learn.circuitverse.org/docs/registers/ps.html)
-4. [Parallel Input Parallel Output](https://learn.circuitverse.org/docs/registers/pp.html)
+1. [Serial-in serial-out](https://learn.circuitverse.org/docs/registers/ss.html)
+2. [Serial-in parallel-out](https://learn.circuitverse.org/docs/registers/sp.html)
+3. [Parallel-in serial-out](https://learn.circuitverse.org/docs/registers/ps.html)
+4. [Parallel-in parallel-out](https://learn.circuitverse.org/docs/registers/pp.html)

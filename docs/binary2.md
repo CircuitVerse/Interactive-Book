@@ -1,10 +1,10 @@
 ---
 layout: default
-title:  Operators in Binary
+title:  Operators in binary
 nav_order: 2
 ---
  
-# Mathematical Operators in Binary
+# Mathematical operators in binary
  
  
 ## Table of contents
@@ -120,7 +120,7 @@ to Decimal Division. Multiply the divisor by 1 or 0 wherever needed and reduce t
         -------------                 -------
 ```
  
-## Complements in Binary system
+## Complements in binary system
  
 The Binary system has a base of r = 2.
 The base has r = 2 so the Binary system two types of complements. They are:
@@ -152,7 +152,7 @@ add 1               +           1
                    ---------------
 ```
  
-## Bitwise Operators
+## Bitwise operators
  
 |Operator   |    Explanation   |
 |:---------:|:----------------:|

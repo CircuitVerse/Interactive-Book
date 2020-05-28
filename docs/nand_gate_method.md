@@ -1,11 +1,11 @@
 ---
 layout: default
-title: NAND Gate Method
+title: NAND gate method
 comments: true
 nav_order: 5
 ---
 
-# NAND Gate Method to Simplify Boolean Expressions
+# NAND gate method to simplify boolean expressions
 {: .no_toc}
 
 ## Table of contents
@@ -19,7 +19,7 @@ nav_order: 5
 ## Introduction
 [NAND Gates](https://learn.circuitverse.org/docs/universal_gates.html#nand-gate) are universal gates. By the virtue of functional completeness, NAND Gates can be used to fully represent a given boolean expression. This simplifies the expression such that only one standard gate is used throughout.  
 
-## Functional Completeness
+## Functional completeness
 Functional completeness is a property pertaining to boolean logic, which states that a functionally complete boolean operator can express all possible truth tables by representing itself in a boolean expression. That is, any given boolean expression can be completely represented by using the a functionally complete boolean operator. 
 
 For example, NAND gates can be used to implement the [NOT gate](https://learn.circuitverse.org/docs/universal_gates.html#implementing-not-gate-1), the [OR gate](https://learn.circuitverse.org/docs/universal_gates.html#implementing-or-gate-1) and the [AND gate](https://learn.circuitverse.org/docs/universal_gates.html#implementing-and-gate-1). 
@@ -32,8 +32,8 @@ Let's find the minimum number of NAND gates required to simplify the logical exp
 F(A, B, C, D) = AB' + C'D
 ```
 
-### Step 1: Double Negation
-Since the NAND gate is a combination of a NOT gate and an AND gate, first apply a double negation to the entire expression so that you are able to standardize it later on.
+### Step 1: Double negation
+Since the NAND gate is a combination of a NOT gate and an AND gate, we first apply a double negation to the entire expression so that we are able to standardize it later on.
 
 Adding a double negation does not alter the inherent value of the expression as a double negation always nullifies itself.
 
@@ -41,8 +41,8 @@ Adding a double negation does not alter the inherent value of the expression as 
 F = (F')' = ((AB' + C'D)')'
 ```
 
-### Step 2: Applying De Morgan's Law
-First apply [De Morgan's Law](https://learn.circuitverse.org/docs/bool.html#de-morgans-law) to the innermost bracket, such that the outermost negation is preserved at the time of expressing the `F` as a NAND expression.
+### Step 2: Applying De Morgan's law
+We first apply [De Morgan's Law](https://learn.circuitverse.org/docs/bool.html#de-morgans-law) to the innermost bracket, such that we preserve the outermost negation at the time of expressing the `F` as a NAND expression.
 
 Thus, by applying De Morgan's Law:
 ```yaml

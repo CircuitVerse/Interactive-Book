@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Combinational Logic
+title: Combinational logic
 nav_order: 8
 has_children: true
 permalink: /docs/combinational
 ---
-# Digital Combinational Circuits
+# Digital combinational circuits
 {: .no_toc }
 
 ## Table of contents
@@ -23,7 +23,7 @@ Combinational circuits consist of Logic gates. These circuits operate with binar
 This combinational circuit has ‘n’ input variables and ‘m’ outputs. Each combination of input variables will affect the output(s).
 
 
-## Design procedure of Combinational circuits
+## Design procedure of combinational circuits
 
 1.  Find the required number of input variables and outputs from given specifications.   
 1.  Formulate the Truth table. If there are ‘n’ input variables, then there will be 2n possible combinations. For each combination of input, find the output values.   
@@ -31,12 +31,12 @@ This combinational circuit has ‘n’ input variables and ‘m’ outputs. Each
 1.  Implement the above Boolean expressions corresponding to each output by using Logic gates.
 
 
-## Sub-Modules
+## Sub-modules
 
 In this module, we'll have a look at some combinational circuits. Feel free to check them out. 
 
-1. [Half Adder](https://learn.circuitverse.org/docs/Combinational/half_adder.html)
-2. [Full Adder](https://learn.circuitverse.org/docs/Combinational/full_adder.html)
-3. [Half Subtractor](https://learn.circuitverse.org/docs/Combinational/half_sub.html)
-4. [Full Subtractor](https://learn.circuitverse.org/docs/Combinational/full_sub.html)
-5. [N-bit Parallel Adder and Subtractor](https://learn.circuitverse.org/docs/Combinational/N-Bit%20Parallel%20Adder%20&%20Subtractor.html)
+1. [Half adder](https://learn.circuitverse.org/docs/Combinational/half_adder.html)
+2. [Full adder](https://learn.circuitverse.org/docs/Combinational/full_adder.html)
+3. [Half subtractor](https://learn.circuitverse.org/docs/Combinational/half_sub.html)
+4. [Full subtractor](https://learn.circuitverse.org/docs/Combinational/full_sub.html)
+5. [N-bit parallel adder and subtractor](https://learn.circuitverse.org/docs/Combinational/N-Bit%20Parallel%20Adder%20&%20Subtractor.html)

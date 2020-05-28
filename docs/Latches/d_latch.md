@@ -1,11 +1,11 @@
 ---
 layout: default
-title: D Latch
+title: D latch
 parent: Latches
 nav_order: 2
 ---
 
-## D Latch
+## D latch
 
 There is one drawback of SR Latch. That is the next state value can’t be predicted when both the inputs S & R are one. So, you can overcome this difficulty by D Latch. It is also called as Data Latch. The circuit diagram of D Latch is shown in the following figure.
 

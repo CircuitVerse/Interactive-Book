@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Basic Applications
+title: Basic applications
 nav_order: 4
 ---
-# Basic Applications
+# Basic applications
 {: .no_toc }
 
 
@@ -16,8 +16,8 @@ nav_order: 4
 ---
 
 
-## Binary Flags
-The new Interactive Book  for Digital logic design requires you to study [binary ](https://learn.circuitverse.org/docs/binary.html) and its uses.
+## Binary flags
+The new Interactive Book  for digital logic design requires you to study [binary ](https://learn.circuitverse.org/docs/binary.html) and its uses.
 In computing, a <em>flag</em> is a type of signal usually used to indicate whether something is true or false. To save time and make your program less complicated, you might want to combine these flags and send several pieces of information in one go.
 
 Imagine you wanted to send a message to your friend to indicate which subjects had set homework on a particular day. If it was only one subject, you can just send the name of the subect - e.g. English - but if there is more than one, it gets more complicated. One way to do it is to give each subject a number:
@@ -47,7 +47,7 @@ If they'd been numbered as 1 = **English**, 2 = **Maths**, 3 = **Science**, 4 = 
 To use this technique in your programming, you need to be familiar with [bitwise logic ](https://learn.circuitverse.org/docs/binary2.html)
 
 
-## Representing a Character
+## Representing a character
 
 The computer that you had when you were in the 80s - in common with a lot of personal computers at the time - allowed you to design your own text character.  You could use this in a game - e.g. to make a "space invader" - or you could use the same technique to make your own font.  
 I made my own font that looked like my handwriting!

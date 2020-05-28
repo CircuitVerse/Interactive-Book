@@ -1,11 +1,11 @@
 ---
 layout: default
-title: SR Latch
+title: SR latch
 parent: Latches
 nav_order: 1
 ---
 
-## SR Latch
+## SR latch
 
 SR Latch is also called as Set Reset Latch. This latch affects the outputs as long as the enable, E is maintained at ‘1’. The circuit diagram of SR Latch is shown in the following figure.
 
@@ -32,7 +32,7 @@ The following table shows the state table of **SR latch**.
 |  1     |    1    |    -     |
 
 
-Therefore, SR Latch performs three types of functions such as Hold, Set & Reset based on the input conditions.
+Therefore, SR latch performs three types of functions such as Hold, Set & Reset based on the input conditions.
 
 
 

@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Half Subtractors
-parent: Combinational Logic
+title: Half subtractors
+parent: Combinational logic
 nav_order: 3
 ---
 
-# Half Subtractors
+# Half subtractors
 {: .no_toc }
 
 ## Table of contents
@@ -20,11 +20,11 @@ Half subtractor is a combination circuit with two inputs and two outputs (differ
 It produces the difference between the two binary bits at the input and also produces an output (Borrow) to indicate if a 1 has been borrowed. 
 In the subtraction (A-B), A is called a Minuend bit and B is called a Subtrahend bit.
 
-## Truth Table
+## Truth table
 
 <div style="text-align:center"><img src="../../assets/images/halfsubstrator_truthtable.jpg" /></div>
 
-## Circuit Diagram
+## Circuit diagram
 
 <div style="text-align:center"><img src="../../assets/images/halfsubstrator_circuitdiagram.jpg" /></div>
 

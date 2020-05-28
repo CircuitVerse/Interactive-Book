@@ -1,11 +1,11 @@
 ---
 layout: default
-title: SR Flip-Flop
-parent: Flip-Flops
+title: SR flip-flop
+parent: Flip-flops
 nav_order: 1
 ---
 
-# SR Flip-Flop
+# SR flip-flop
 
 ## Table of contents
 {: .no_toc .text-delta }

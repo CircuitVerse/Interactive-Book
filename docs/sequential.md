@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Digital Sequential Circuits
+title: Digital sequential circuits
 nav_order: 11
 ---
 
-# Digital Sequential Circuits
+# Digital sequential circuits
 {: .no_toc }
 
 Unlike Combinational Circuits, most systems that one will encounter in practice will include Memory element thus being described in terms of sequential logic. The memory elements are devices capable of storing binary information within them. The binary information stored in the memory elements at a given time defines the **state** of the circuit. Thus a sequential circuit is specified by time sequence of *inputs, outputs and internal states*.
@@ -28,7 +28,7 @@ Following table shows the **differences** between combinational circuits and seq
 |Easy to design.|Difficult to design.|
 
 
-## Types of Sequential Circuits
+## Types of sequential circuits
 
 Following are the two types of sequential circuits −
 

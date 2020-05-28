@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Serial Input Parallel Output
-parent: Digital Registers
+title: Serial-in parallel-out
+parent: Digital registers
 nav_order: 2
 ---
 
-# Serial Input Parallel Output
+# Serial-in parallel-out
 {: .no_toc }
 
 
@@ -27,7 +27,7 @@ nav_order: 2
 
 * 4 clock cycles are required to load a four-bit word. Hence the speed of operation of SIPO mode is the same as that of the SISO mode.
 
-## Block Diagram
+## Block diagram
 
 
 <div style="text-align:center"><img src="../../assets/images/sipo_blockdiagram.jpg" /></div>

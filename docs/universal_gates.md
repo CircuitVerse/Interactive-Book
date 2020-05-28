@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Universal Gates
+title: Universal gates
 nav_order: 3
 ---
-# Universal Gates
+# Universal gates
 {: .no_toc }
 
 

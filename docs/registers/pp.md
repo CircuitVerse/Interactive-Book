@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Parallel Input Parallel Output
+title: Parallel-in parallel-out
 parent: Digital Registers
 nav_order: 4
 ---
 
-# Parallel Input Parallel Output
+# Parallel-in parallel-out
 {: .no_toc }
 
 
@@ -26,7 +26,7 @@ Only the clock pulse is essential to load all the binary bits.
 
 
 
-## Block Diagram
+## Block diagram
 
 
 <div style="text-align:center"><img src="../../assets/images/pipo_blockdiagram.jpg" /></div>
