@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About
-nav_order: 21
+nav_order: 23
 description: ""
 permalink: /about
 disable_comments: true

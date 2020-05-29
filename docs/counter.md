@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Digital counters
-nav_order: 16
+nav_order: 20
 ---
 
 # Digital sequential circuits
