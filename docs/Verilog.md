@@ -1,15 +1,15 @@
 ---
 layout: default
 title:  Introduction to Verilog Programming
-nav_order: 
+nav_order: 4
 ---
 
 # An Introduction to Verilog Programming
-{: .no_toc}
+{: .no_toc }
 
 ---
 
-# Overview
+## Overview
 Verilog, which was standardized as IEEE 1364, is a hardware description language (HDL) used to model electronic systems. 
 It is used in the simulation and verification of digital circuits at the register-transfer level of abstraction. It is used in the verification of analog circuits,  mixed-signal circuits, and in the design of genetic circuits. In 2009, the Verilog standard was merged into the SystemVerilog standard, creating IEEE Standard 1800-2009. Since then, Verilog is officially a subset of the SystemVerilog language. The current version is IEEE standard 1800-2017
 
@@ -32,8 +32,8 @@ module andgate (a, b, y);
 endmodule
 ```
 
-# Operators
+## Operators
 Note: These operators are not shown in order of precedence.
 
 
-<div style="text-align:center"><img src="../assets/images/operators.png" /></div>
+<div style="text-align:center"><img src="../assets/images/Operators.PNG" /></div>
