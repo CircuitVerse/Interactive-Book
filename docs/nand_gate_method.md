@@ -2,7 +2,7 @@
 layout: default
 title: NAND Gate Method
 comments: true
-nav_order: 5
+nav_order: 6
 ---
 
 # NAND Gate Method to Simplify Boolean Expressions
