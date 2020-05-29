@@ -17,12 +17,12 @@ nav_order: 6
 ---
 
 ## Introduction
-[NOR Gates](https://learn.circuitverse.org/docs/universal_gates.html#NOR-gate) are universal gates. By the virtue of functional completeness, NOR Gates can be used to fully represent a given boolean expression. This simplifies the expression such that only one standard gate is used throughout.  
+[NOR Gates](https://learn.circuitverse.org/docs/universal_gates.html#nor-gate) are universal gates. By the virtue of functional completeness, NOR Gates can be used to fully represent a given boolean expression. This simplifies the expression such that only one standard gate is used throughout.  
 
 ## Functional completeness
 Functional completeness is a property pertaining to boolean logic, which states that a functionally complete boolean operator can express all possible truth tables by representing itself in a boolean expression. That is, any given boolean expression can be completely represented by using the a functionally complete boolean operator. 
 
-For example, NOR gates can be used to implement the [NOT gate](https://learn.circuitverse.org/docs/universal_gates.html#implementing-not-gate-1), the [OR gate](https://learn.circuitverse.org/docs/universal_gates.html#implementing-or-gate-1) and the [AND gate](https://learn.circuitverse.org/docs/universal_gates.html#implementing-and-gate-1). 
+For example, NOR gates can be used to implement the [NOT gate](https://learn.circuitverse.org/docs/universal_gates.html#implementing-not-gate), the [OR gate](https://learn.circuitverse.org/docs/universal_gates.html#implementing-or-gate) and the [AND gate](https://learn.circuitverse.org/docs/universal_gates.html#implementing-and-gate). 
 
 ## Simplification
 To simplify any given boolean expression, first find the __minimum__ number of NOR gates required. To do this, carry out the following steps. 
@@ -58,7 +58,7 @@ Now that you have gotten the boolean expression to the required standard, you ca
 F = (A NOR B') NOR (C' NOR D)
 F = (A NOR (B NOR B)) NOR ((C NOR C) NOR D)
 ```
-Notice that there are input elements that are present in the negative form, namely `B'` and `C'`. You can represent them by using the NOR gate in order to realise the [NOT gate](https://learn.circuitverse.org/docs/universal_gates.html#implementing-not-gate-1).
+Notice that there are input elements that are present in the negative form, namely `B'` and `C'`. You can represent them by using the NOR gate in order to realise the [NOT gate](https://learn.circuitverse.org/docs/universal_gates.html#implementing-not-gate).
 
 <iframe width="600px" height="300px" src="https://circuitverse.org/simulator/embed/97663" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
 
