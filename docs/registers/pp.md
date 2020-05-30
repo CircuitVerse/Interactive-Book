@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Parallel-in parallel-out
-parent: Digital Registers
+parent: Digital registers
 nav_order: 4
 ---
 
