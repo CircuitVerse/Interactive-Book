@@ -30,10 +30,10 @@ Example of an AND gate using Verilog is:
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46601" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ``` Verilog
-module andgate (a, b, y);
-	input a, b;
-	output y;
-	assign y = a & b;
+module andgate (x, y, z);
+	input x, y;
+	output z;
+	assign z = x & y;
 endmodule
 ```
 
