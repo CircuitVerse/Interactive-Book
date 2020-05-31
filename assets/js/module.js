@@ -11,7 +11,7 @@ function toggle_bitc(column)
     {
         if(bit1[i]) { decimal1 = decimal1 + Math.pow(2, i); }
     }
-    document.getElementById("decimal1").innerHTML = " = " + decimal1;
+    document.getElementById("decimal1").innerHTML = decimal1;
 }
 
 
