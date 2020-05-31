@@ -44,12 +44,12 @@ Note: These operators are not shown in order of precedence.
 |---|---|
 | ~ | Bitwise NOT  |
 | & | Bitwise AND  |
-| | | Bitwise OR  |
+| &#124; | Bitwise OR  |
 | ^ | Bitwise XOR  |
 | ~^ or ^~  | Bitwise XNOR  |
 | ! | Logical NOT  |
 | && | Logical AND   |
-| || | Logical OR   |
+| &#124; &#124; | Logical OR   |
 | +  | Addition  |
 | -  | Subtraction  |
 | -  | 2's Complement  |
