@@ -108,11 +108,13 @@ The JA and KA inputs of FF-A are tied to logic 1. So FF-A will work as a toggle 
 
 <div style="text-align:center"><img src="../assets/images/ring_counter.png" height="300"/></div>
 <br>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/97207" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 * **Johnson's counter or twisted ring counter:** The Johnson counter is a modification of ring counter. In this the inverted output of the last stage flip flop is connected to the input of first flip flop. If we use n flip flops to design the Johnson counter, it is known as 2n bit Johnson counter or Mod 2n Johnson counter.
 
 <div style="text-align:center"><img src="../assets/images/johnson's_counter.png" height="300"/></div>
 <br>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/97199" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ### Logical diagram
 
