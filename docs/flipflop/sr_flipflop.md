@@ -53,7 +53,7 @@ By using three **variable K-Map**, you can get the simplified expression for nex
 
 The maximum possible groupings of adjacent ones are already shown in the figure. Therefore, the simplified expression for next state Q(t + 1) is
 ```yaml
-          Q(t+1)=S+R′Q(t)
+          Q(t + 1) = S + R'.Q(t)
 ```
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/12264" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
