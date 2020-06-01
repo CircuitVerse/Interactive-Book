@@ -40,7 +40,7 @@ It is known as ripple counter because of the way the clock pulse ripples its way
 
 <div style="text-align:center"><img src="../assets/images/2bit_up_counter.png" height="300"/></div>
 
-<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/98893" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/98893" id="2bitUpCounter" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
 
 <br>
 
@@ -48,14 +48,14 @@ It is known as ripple counter because of the way the clock pulse ripples its way
 
 <div style="text-align:center"><img src="../assets/images/2bit_down_counter.png" height="300"/></div>
 
-<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/98894" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/98894" id="2bitDownCounter" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
 
 * **3 bit ripple up counter:** It contains three flip flops. A 3-bit ripple counter can count up to 8 states. It counts from 0 to 7.
 
 * **3 bit ripple down counter:** It contains three flip flops. A 3-bit ripple counter can count up to 8 states.It counts down from 7 to 0.
 <div style="text-align:center"><img src="../assets/images/3bit_counter.png" height="300"/></div>
 
-<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/98895" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/98895" id="3bitCounter" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
 
 * **Decade or BCD counter :**  A binary coded decimal (BCD) is a serial digital counter that counts ten digits. It counts from 0 to 9.When the clock pulse advances to 10 the ports QB and QD become high and thus NAND gate's output will become low which will reset all the flip flops.
 <div style="text-align:center"><img src="../assets/images/decade_counter.png" height="300"/></div>
