@@ -5,6 +5,17 @@ nav_order: 14
 ---
 
 # Race around condition
+{: .no_toc}
+
+## Table of contents
+{: .no_toc .text-delta }
+ 
+1. TOC
+{:toc}
+
+---
+
+## Introduction
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -97,8 +108,11 @@ This condition also exists in T flip-flop since T flip-flop also has toggling op
 
 ## Methods to eliminate race around condition
 
+<<<<<<< Updated upstream
 There are three methods to eliminate race around condition as described below:
 
+=======
+>>>>>>> Stashed changes
 ### Increasing the delay of flip-flop 
 
 The propagation delay (delta t) should be made greater than the duration of the clock pulse (T).
