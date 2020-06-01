@@ -17,12 +17,6 @@ nav_order: 14
 
 ## Introduction
 
-## Table of contents
-{: .no_toc .text-delta }
- 
-1. TOC
-{:toc}
-
 Before getting into the _race around condition_, let us have a look at the JK flip-flop's truth table.
 
 <table>
@@ -108,12 +102,9 @@ This condition also exists in T flip-flop since T flip-flop also has toggling op
 
 ## Methods to eliminate race around condition
 
-<<<<<<< Updated upstream
 There are three methods to eliminate race around condition as described below:
 
-=======
->>>>>>> Stashed changes
-### Increasing the delay of flip-flop 
+### Increasing the delay of flip-flop
 
 The propagation delay (delta t) should be made greater than the duration of the clock pulse (T).
 But it is not a good solution as increasing the delay will decrease the speed of the system.
