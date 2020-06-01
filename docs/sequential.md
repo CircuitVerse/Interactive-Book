@@ -5,6 +5,7 @@ nav_order: 11
 ---
 
 # Digital sequential circuits
+{: .no_toc}
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -12,13 +13,7 @@ nav_order: 11
 1. TOC
 {:toc}
 
-## Introduction
-
-## Table of contents
-{: .no_toc .text-delta }
- 
-1. TOC
-{:toc}
+---
 
 ## Introduction
 
