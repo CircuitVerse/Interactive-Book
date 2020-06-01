@@ -22,7 +22,7 @@ T flip-flop is the simplified version of JK flip-flop. It is obtained by connect
 
 This circuit has single input T and two outputs Q(t) & Q(t)’. The operation of T flip-flop is same as that of JK flip-flop. Here, the inputs of JK flip-flop are considered as J = T and K = T in order to utilize the modified JK flip-flop for 2 combinations of inputs. So, the other two combinations of J & K are eliminated, for which those two values are complement to each other in T flip-flop.
 
-## State table of **T** flip-flop
+## State table of T flip-flop
 
 
 | D    |    Q(t+1) | 
@@ -47,9 +47,8 @@ From the above characteristic table, the next state equation can be directly wri
 
 
 ```yaml
-          Q(t+1)=T′Q(t)+TQ(t)′
-           
-          ⇒  Q(t+1)=T⊕Q(t)
+          Q(t +1 ) = T'.Q(t) + T.Q(t)'
+          => Q(t + 1) = T ⊕ Q(t)
 ```
 
 The output of T flip-flop always toggles for every positive transition of the clock signal, when input T remains at logic High (1). Hence, T flip-flop can be used in counters.
