@@ -5,6 +5,7 @@ nav_order: 2
 ---
 
 # Binary numbers
+{: .no_toc}
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -12,11 +13,6 @@ nav_order: 2
 1. TOC
 {:toc}
 
-## Table of contents
-{: .no_toc .text-delta }
- 
-1. TOC
-{:toc}
 
 ---
 
@@ -36,11 +32,10 @@ Binary Number :: 11001
 ---
 
 ## Binary Counting
-<<<<<<< Updated upstream
 
-<h2>How do we count using binary?</h2>
-=======
->>>>>>> Stashed changes
+## How do we count using binary?
+{: .no_toc}
+
 It is just like counting in decimal except we reach 10 much sooner.
 
 
@@ -52,12 +47,8 @@ It is just like counting in decimal except we reach 10 much sooner.
 | ???          | But then there is no symbol for 2 ... what to do?  |
 
 
-<<<<<<< Updated upstream
-<h2>Well how do we count in decimal?</h2>
-=======
 ## Well how do we count in Decimal?
 {: .no_toc}
->>>>>>> Stashed changes
 
 | Decimal       | Explanation            |
 |:-------------:|:----------------------:|
@@ -67,12 +58,8 @@ It is just like counting in decimal except we reach 10 much sooner.
 | 9            | This is the **last digit** in Decimal|
 |**1**0        | Start from back at **0** again, but carry **1** on the left|
 
-<<<<<<< Updated upstream
-<h2>The same thing is done in binary ...</h2>
-=======
 ## The same thing is done in Binary ...
 {: .no_toc}
->>>>>>> Stashed changes
 
 | Binary       | Explanation            |
 |:------------:|:----------------------:|
@@ -83,12 +70,8 @@ It is just like counting in decimal except we reach 10 much sooner.
 |???         | But NOW what ... ?|
 
 
-<<<<<<< Updated upstream
-<h2>What happens in decimal?</h2>
-=======
 ## What happens in Decimal?
 {: .no_toc}
->>>>>>> Stashed changes
 
 
 | Decimal       | Explanation            |
@@ -96,12 +79,8 @@ It is just like counting in decimal except we reach 10 much sooner.
 |	99	 |	When you run out of digits, ...|
 |	100	 |	... start from back at **0** again, but carry **1** on the left|
 
-<<<<<<< Updated upstream
-<h2>And that is what is done in binary ...</h2>
-=======
 ## And that is what is done in Binary ...
 {: .no_toc}
->>>>>>> Stashed changes
 
 
 | Binary     | Explanation   |
@@ -141,14 +120,8 @@ In this Case ::
 1x16 + 1x8 + 0x4 + 0x2 + 1x1 = 25 which is the decimal equivalent of the binary number 11001
 ```
 
-<<<<<<< Updated upstream
-## Signed and unsigned numbers
-=======
-{% include binary.html %}
+## Signed and Unsigned numbers
 
-## Signed and unsigned numbers
-
->>>>>>> Stashed changes
 Currently, we have just looked at **unsigned** numbers - they can only be positive, as there is no sign.
 However, sometimes we need to work with **negative numbers** too. To do this, we add a **sign bit** on the far left of the binary number, which indicates whether the number is positive (`0`) or negative(`1`).
 
