@@ -47,7 +47,7 @@ From the above characteristic table, the next state equation can be directly wri
 
 
 ```yaml
-          Q(t +1 ) = T'.Q(t) + T.Q(t)'
+          Q(t + 1) = T'.Q(t) + T.Q(t)'
           => Q(t + 1) = T ⊕ Q(t)
 ```
 
