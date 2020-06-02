@@ -75,7 +75,7 @@ The switching equation can also be converted into a Truth Table. For example- Co
 
 
 ## Sum of product expressions (SOP)
-Let's take a look at an more complex expression `F(ABCD) = AB'C + BD + CD + D`. Let's generate the truth table:
+Let's take a look at an more complex expression `F(A, B, C, D) = AB'C + BD + CD + D`. Let's generate the truth table:
 
 | F(AB'C+BD+CD+D)| A | B | C | D |
 | :-----: |:-:|:-:|:-:|:-:|
@@ -96,14 +96,14 @@ Let's take a look at an more complex expression `F(ABCD) = AB'C + BD + CD + D`. 
 | 0     | 1 | 1 | 1 | 0 |
 | 1     | 1 | 1 | 1 | 1 |
 
-In this example an interesting observation is that, you are doing a sum of product evaluation, that is, `AB'C+BD+CD+D` is a sum of products. The significance of sum of product is that when you are doing `+`, you are in fact invoking the `OR` operator. 
+In this example an interesting observation is that, you are doing a sum of product evaluation, that is, `AB'C + BD + CD + D` is a sum of products. The significance of sum of product is that when you are doing `+`, you are in fact invoking the `OR` operator. 
 
 Moreover, the `OR` operator returns `true` so long as any one of its arguements returns `true`. Therefore, if _any_ of the terms in the sum of product (SOP) expressions is `true`, then you know that the final expression is `true` for certain. 
 
 ## Product of sum expressions (POS)
-Let's take a look at another expression `F(ABCD) = (A + B + C + D')(A + B' + C' + D)(A' + B' + C + D')`. Let's generate the truth table:
+Let's take a look at another expression `F(A, B, C, D) = (A + B + C + D')(A + B' + C' + D)(A' + B' + C + D')`. Let's generate the truth table:
 
-| F(ABCD)| A | B | C | D |
+| F(A,B,C,D)| A | B | C | D |
 | :-----: |:-:|:-:|:-:|:-:|
 | 1     | 0 | 0 | 0 | 0 |
 | 0     | 0 | 0 | 0 | 1 |
@@ -152,12 +152,12 @@ Any Boolean function can be expressed as the sum (OR) of its 1- min terms. The r
 
 `F(list of variables) = Σ(list of 1-min term indices)`
 
-Ex: `F (x, y, z) = Σ (3, 5, 6, 7)`
+Ex: `F(x, y, z) = Σ(3, 5, 6, 7)`
 
 The inverse of the function can be expressed as a sum (OR) of its 0- min terms. The representation of the equation will be
 
 `F(list of variables) = Σ(list of 0-min term indices)`
-Ex: `F’ (x, y, z) = Σ (0, 1, 2, 4)`
+Ex: `F’(x, y, z) = Σ(0, 1, 2, 4)`
 
 Examples of canonical form of sum of products expressions (min term canonical form):
 
@@ -172,13 +172,13 @@ In standard SOP form, the maximum possible product terms for n number of variabl
 A max term is defined as the product of n variables, within the range of 0 ≤ i < 2<sup>n</sup>. The max term is denoted as Mi. In max term, each variable is **complemented**, if its value is assigned to 1, and each variable is **un-complemented** if its value is assigned to 0.
 
 For a 2-variable (x and y) Boolean function, the possible max terms are:
-
-`x + y, x + y’, x’ + y and x’ + y’`
-
+```yml
+x + y, x + y’, x’ + y and x’ + y’
+```
 For a 3-variable (x, y and z) Boolean function, the possible maxterms are:
-
-`x + y + z, x + y + z’, x + y’ + z, x + y’ + z’, x’ + y + z, x’ + y + z’, x’ + y’ + z and x’ + y’ + z’`
-
+```yml
+x + y + z, x + y + z’, x + y’ + z, x + y’ + z’, x’ + y + z, x’ + y + z’, x’ + y’ + z and x’ + y’ + z’
+```
 1 – Max terms = max terms for which the function F = 1.
 
 0 – max terms = max terms for which the function F = 0.
@@ -187,20 +187,20 @@ Any Boolean function can be expressed the product (AND) of its 0 – max terms. 
 
 `F(list of variables) = Π (list of 0-max term indices)`
 
-Ex: `F (x, y, z) = Π (0, 1, 2, 4)`
+Ex: `F(x, y, z) = Π(0, 1, 2, 4)`
 
 The inverse of the function can be expressed as a product (AND) of its 1 – max terms. The representation of the equation will be
 
-`F(list of variables) = Π (list of 1-max term indices)`
+`F(list of variables) = Π(list of 1-max term indices)`
 
-Ex: `F’ (x, y, z) = Π (3, 5, 6, 7)`
+Ex: `F’(x, y, z) = Π(3, 5, 6, 7)`
 
 Examples of canonical form of product of sums expressions (max term canonical form):
+```yml
+1. Z = (X + Y).(X + Y′)
 
-1. `Z = (X + Y) (X + Y′)`
-
-2. `F = (X′ + Y + Z′) (X′ + Y + Z) (X′ + Y′ + Z′)`
-
+2. F = (X′ + Y + Z′).(X′ + Y + Z).(X′ + Y′ + Z′)
+```
 In standard **POS** form, the maximum possible sum terms for n number of variables are given by 2<sup>n</sup>. So, for 2 variable equations, the sum terms are 2<sup>2</sup> = 4. Similarly, for 3 variable equations, the sum terms are 2<sup>3</sup> = 8.
 
 ___
@@ -225,7 +225,7 @@ The important thing to remember about Boolean functions is that, **the SOP and P
 
 For Example:-
 
-The SOP function `F = ∑ A, B, C (0, 2, 3, 5, 7) = A’ B’ C’ + A B’ C’ + A B’ C + ABC’ + ABC`  is written in POS form by
+The SOP function `F(A, B, C) = ∑(0, 2, 3, 5, 7) = A’B’C’ + AB’C’ + AB’C + ABC’ + ABC`  is written in POS form by
 
 1. changing the operational sign to Π
 
@@ -235,9 +235,9 @@ The SOP function `F = ∑ A, B, C (0, 2, 3, 5, 7) = A’ B’ C’ + A B’ C’
 
 Writing down the new equation in the form of POS form,
 
-`F = Π A, B, C (1, 4, 6) = (A + B + C') * (A' + B + C) * (A' + B’ + C’)`
+`F(A, B, C) = Π(1, 4, 6) = (A + B + C') * (A' + B + C) * (A' + B’ + C’)`
 
-The POS function `F = Π A, B, C (2, 3, 5) = (A + B' + C)(A + B' + C')(A' + B + C')` is written in SOP form by
+The POS function `F(A, B, C) = Π(2, 3, 5) = (A + B' + C)(A + B' + C')(A' + B + C')` is written in SOP form by
 
 1. changing the operational sign to Σ
 
@@ -247,7 +247,7 @@ The POS function `F = Π A, B, C (2, 3, 5) = (A + B' + C)(A + B' + C')(A' + B + 
 
 Writing down the new equation in the form of SOP form,
 
-`F = Σ A, B, C (0, 1, 4, 6, 7) = (A’B'C’) + (A’B’C) + (AB’C’) + (ABC’) + (ABC)`
+`F(A, B, C) = Σ(0, 1, 4, 6, 7) = (A’B'C’) + (A’B’C) + (AB’C’) + (ABC’) + (ABC)`
 
 ## Conversion from minimal to canonical forms
 
@@ -264,7 +264,7 @@ You can include all the variables in each product term of the POS form equation,
 By these three steps you can convert the POS function into standard POS function.
 
 Example:
-`F = (A’ + B + C) * (B’ + C + D’) * (A + B’ + C’ + D)`
+`F = (A’ + B + C)*(B’ + C + D’) * (A + B’ + C’ + D)`
 
 In the first term, the variable D or D’ is missing, so add D*D’ = 1 to it. Then
 
@@ -294,7 +294,7 @@ Convert the non standard SOP function `F = x y + x z + y z`
 
 Sol:
 
-```
+```yml
 F = x y + x z + y z
 
 = x y (z + z’) + x (y + y’) z + (x + x’) y z
@@ -308,7 +308,7 @@ The standard SOP form is `F = x y z + x y z’ + x y’ z + x’ y z`
 ## Example algebraic simplification
 
 Let's simplify our expression from the previous truth table example. you can apply ordinary algebra tricks such as factoring. Remember that the `+` operator invokes the `OR` gate, and that `true or x` always returns `true` regardless of `x` (as shown in our first truth table).
-```
+```yml
 AB'C + BD + CD + D // Initial expression
 AB'C + BD + D // Applying Absorption Law on CD + D, which reduces it to D
 AB'C + D // Applying Absorption Law on BD + D, which reduces it to D
@@ -331,11 +331,11 @@ Let's consider the following truth-table:
 
 We observe that we have a _don't-care_. Let's observe the differences in cases for `F(1,0)`:
 
-```markdown
-Case #1: F(1, 0) = 0
+```yml
+Case 1: F(1, 0) = 0
 => F(AB) = A'B' + A'B + AB
 
-Case #2: F(1, 0) = 1
+Case 2: F(1, 0) = 1
 => F(AB) = A'B' + A'B + AB' + AB
 
 Simplifying the cases...
@@ -348,7 +348,7 @@ F(AB) = A'B' + A'B + AB' + AB
 	  = 1
 ```
 
-You can clearly see, if you set `F(1, 0) = 1`, you get a true value for any input. Therefore, for the purposes of variable simplification, you can simply let `F(1, 0) = 1` thus implying `F(AB) = 1`.
+You can clearly see, if you set `F(1, 0) = 1`, you get a true value for any input. Therefore, for the purposes of variable simplification, you can simply let `F(1, 0) = 1` thus implying `F(A, B) = 1`.
 
 ## Try the interactive truth table generator
 
