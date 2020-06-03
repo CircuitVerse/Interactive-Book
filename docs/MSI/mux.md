@@ -24,14 +24,16 @@ E is called the strobe or enable input which is useful for the cascading. It is 
 
 <div style="text-align:center"><img src="../../assets/images/n_onemultiplexer_blockdiagram.jpg" /></div>
 
-
-
 ## Multiplexers come in multiple variations
    
 ### 2 : 1 multiplexer
 #### Truth Table
 
-<div style="text-align:center"><img src="../../assets/images/two_onemultiplexer_truthtable.jpg" /></div>
+`Enable(E) = 1`
+
+|S1|Y(Output)|
+|0|T1|
+|1|T2|
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/746" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
@@ -40,7 +42,9 @@ The 4 : 1 multiplexer has 4 inputs and 2 control signals.
 
 #### Truth Table
 
-|S1|S2|Output(Y)|
+`Enable(E) = 1`
+
+|S1|S2|Y(Output)|
 |0|0|T1|
 |0|1|T2|
 |1|0|T3|
@@ -52,6 +56,8 @@ The 4 : 1 multiplexer has 4 inputs and 2 control signals.
 The 8 : 1 multiplexer has 8 inputs and 3 control signals.
 
 #### Truth Table
+
+`Enable(E) = 1`
 
 | S1      | S2      | S3     | Y(Output)|
 |:-------:|:-------:|:------:|:------:|
@@ -75,6 +81,8 @@ The 16 : 1 multiplexer has 16 inputs and 4 control signals.
 It can be implemented with **two** 8 : 1 multiplexers:
 
 #### Truth Table
+
+`Enable(E) = 1`
 
 | A | B | C | D | Y(Output) |
 |:-:|:-:|:-:|:-:|:-: |
