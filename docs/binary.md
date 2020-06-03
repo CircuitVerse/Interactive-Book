@@ -95,7 +95,7 @@ It is just like counting in decimal except we reach 10 much sooner.
 | 111        | |
 | **1**000   |Start back at 0 again (for all 3 digits), add 1 on the left|
 
-## Binary to Decimal Demonstration
+## Binary to decimal demonstration
 ---
 Let's tell you something more about conversion. Conversion from Binary to Decimal is quite a simple task.
 All you need to do is begin from the right. Follow the steps below:
@@ -120,7 +120,7 @@ In this Case ::
 1x16 + 1x8 + 0x4 + 0x2 + 1x1 = 25 which is the decimal equivalent of the binary number 11001
 ```
 
-## Signed and Unsigned numbers
+## Signed and unsigned numbers
 
 Currently, we have just looked at **unsigned** numbers - they can only be positive, as there is no sign.
 However, sometimes we need to work with **negative numbers** too. To do this, we add a **sign bit** on the far left of the binary number, which indicates whether the number is positive (`0`) or negative(`1`).
