@@ -20,7 +20,7 @@ JK latch is similar to RS latch. This latch consists of 2 inputs J and K as show
 
 <div style="text-align:center"><img src="../../assets/images/jk_latch.png" /></div>
 
-## State table of JK latch
+## State table
 
 | J      |    K    |   Q(t+1) |
 |:------:|:-------:|:--------:|

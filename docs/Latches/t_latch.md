@@ -18,7 +18,7 @@ nav_order: 4
 
 T latch is formed when the inputs of the JK latch are shorted. When the input is high, then the  output toggles.
 
-## State table of T latch
+## State table 
 
 | T      |   Q(t)  |   Q(t+1) |
 |:------:|:-------:|:--------:|

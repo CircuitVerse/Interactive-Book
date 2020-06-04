@@ -31,7 +31,7 @@ A 2-input NOR gate produces an output, which is the complement of another input 
 
 At any time, only of those two inputs should be ‘1’. If both inputs are ‘1’, then the next state Q(t + 1) value is undefined.
 
-## State table of SR latch
+## State table 
 
 | S      |    R    |   Q(t+1) |
 |:------:|:-------:|:--------:|

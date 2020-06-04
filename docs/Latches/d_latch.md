@@ -26,7 +26,7 @@ This circuit has single input D and two outputs Q(t) & Q(t)’. D Latch is obtai
 
 * If D = 1 → S = 1 & R = 0, then next state Q(t + 1) will be equal to ‘1’ irrespective of present state, Q(t) values. This is corresponding to the third row of SR Latch state table.
 
-## State table of D latch
+## State table
 
 | D      | Q(t + 1)    |
 |:------:|:-----:|
