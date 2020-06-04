@@ -6,6 +6,7 @@ nav_order: 3
 ---
 
 # JK flip-flop
+{: .no_toc}
 
 ## Table of contents
 {: .no_toc .text-delta }

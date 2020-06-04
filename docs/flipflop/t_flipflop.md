@@ -6,7 +6,8 @@ nav_order: 4
 ---
 
 
-# T Flip-flop
+# T flip-flop
+{: .no_toc}
 
 ## Table of contents
 {: .no_toc .text-delta }

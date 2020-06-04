@@ -5,7 +5,16 @@ parent: Latches
 nav_order: 1
 ---
 
-## SR latch
+# SR latch
+{: .no_toc}
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+ 
+## Introduction
 
 SR Latch is also called as Set Reset Latch. This latch affects the outputs as long as the enable, E is maintained at ‘1’. The circuit diagram of SR Latch is shown in the following figure.
 
@@ -22,7 +31,7 @@ A 2-input NOR gate produces an output, which is the complement of another input 
 
 At any time, only of those two inputs should be ‘1’. If both inputs are ‘1’, then the next state Q(t + 1) value is undefined.
 
-The following table shows the state table of **SR latch**.
+## State table of SR latch
 
 | S      |    R    |   Q(t+1) |
 |:------:|:-------:|:--------:|
