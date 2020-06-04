@@ -32,6 +32,7 @@ E is called the strobe or enable input which is useful for the cascading. It is 
 `Enable(E) = 1`
 
 |S1|Y(Output)|
+|:-:|:-:|:-:|
 |0|T1|
 |1|T2|
 
@@ -45,6 +46,7 @@ The 4 : 1 multiplexer has 4 inputs and 2 control signals.
 `Enable(E) = 1`
 
 |S1|S2|Y(Output)|
+|:-:|:-:|:-:|
 |0|0|T1|
 |0|1|T2|
 |1|0|T3|
