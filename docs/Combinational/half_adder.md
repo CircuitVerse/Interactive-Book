@@ -32,8 +32,6 @@ This circuit has two outputs **carry** and **sum**.
 
 ## Circuit diagram
 
-<div style="text-align:center"><img src="../../assets/images/halfadder_circuitdiagram.jpg" /></div>
-
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/43463" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ## Half adder from universal gates 
