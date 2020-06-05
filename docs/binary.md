@@ -31,9 +31,9 @@ Binary Number :: 11001
 
 ---
 
-## Binary Counting
+## Binary counting
 
-## How do we count using binary?
+### How do we count using binary?
 {: .no_toc}
 
 It is just like counting in decimal except we reach 10 much sooner.
@@ -47,7 +47,7 @@ It is just like counting in decimal except we reach 10 much sooner.
 | ???          | But then there is no symbol for 2 ... what to do?  |
 
 
-## Well how do we count in Decimal?
+### Well how do we count in Decimal?
 {: .no_toc}
 
 | Decimal       | Explanation            |
@@ -58,7 +58,7 @@ It is just like counting in decimal except we reach 10 much sooner.
 | 9            | This is the **last digit** in Decimal|
 |**1**0        | Start from back at **0** again, but carry **1** on the left|
 
-## The same thing is done in Binary ...
+### The same thing is done in Binary ...
 {: .no_toc}
 
 | Binary       | Explanation            |
@@ -70,7 +70,7 @@ It is just like counting in decimal except we reach 10 much sooner.
 |???         | But NOW what ... ?|
 
 
-## What happens in Decimal?
+### What happens in Decimal?
 {: .no_toc}
 
 
@@ -79,7 +79,7 @@ It is just like counting in decimal except we reach 10 much sooner.
 |	99	 |	When you run out of digits, ...|
 |	100	 |	... start from back at **0** again, but carry **1** on the left|
 
-## And that is what is done in Binary ...
+### And that is what is done in Binary ...
 {: .no_toc}
 
 
