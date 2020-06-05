@@ -179,7 +179,7 @@ There are a bunch of helpful community members on these services that should be 
 In addition to these plugins, Interactive book also inherit's all the plugins used in [Just-the-Docs](https://github.com/pmarsceill/just-the-docs)
 ## Jekyllconf
 
-[Watch videos](/jekyllconf/) from members of the Jekyll community speak about interesting use cases, tricks they’ve learned, or meta Jekyll topics.
+[Watch videos](https://jekyllrb.com/jekyllconf/) from members of the Jekyll community speak about interesting use cases, tricks they’ve learned, or meta Jekyll topics.
 
 
 ---
