@@ -182,25 +182,25 @@ soda_machine_fsm.initialize = function() {
 	paper.text(175,290,'soda').attr({'font-size':'20'});
 
 	//Arrow Labels
-	paper.text(175,60,'01').attr({'font-size':'20'});
-	paper.text(375,60,'00').attr({'font-size':'20'});
-	paper.text(575,60,'01').attr({'font-size':'20'});
-	paper.text(775,60,'00').attr({'font-size':'20'});
-	paper.text(375,-15,'10').attr({'font-size':'20'});
-	paper.text(95,30,'00').attr({'font-size':'20','text-anchor': 'start'});
-	paper.text(295,30,'01,10').attr({'font-size':'20','text-anchor': 'start'});
-	paper.text(495,30,'00').attr({'font-size':'20','text-anchor': 'start'});
-	paper.text(695,30,'01,10').attr({'font-size':'20','text-anchor': 'start'});
-	paper.text(895,30,'00').attr({'font-size':'20','text-anchor': 'start'});
-	paper.text(575,150,'10').attr({'font-size':'20'});
-	paper.text(775,155,'10').attr({'font-size':'20'});
-	paper.text(900,185,'01').attr({'font-size':'20'});
-	paper.text(950,220,'01,10').attr({'font-size':'20'});
-	paper.text(525,330,'00').attr({'font-size':'20'});
-	paper.text(525,185,'01,10').attr({'font-size':'20'});
-	paper.text(475,210,'00').attr({'font-size':'20'});
-	paper.text(275,210,'00,01,10').attr({'font-size':'20'});
-	paper.text(130,180,'00,01,10').attr({'font-size':'20'});
+	paper.text(175,60,'01').attr({'font-size':'20', 'fill': '#777'});
+	paper.text(375,60,'00').attr({'font-size':'20', 'fill': '#777'});
+	paper.text(575,60,'01').attr({'font-size':'20', 'fill': '#777'});
+	paper.text(775,60,'00').attr({'font-size':'20', 'fill': '#777'});
+	paper.text(375,-15,'10').attr({'font-size':'20', 'fill': '#777'});
+	paper.text(95,30,'00').attr({'font-size':'20','text-anchor': 'start', 'fill': '#777'});
+	paper.text(295,30,'01,10').attr({'font-size':'20','text-anchor': 'start', 'fill': '#777'});
+	paper.text(495,30,'00').attr({'font-size':'20','text-anchor': 'start', 'fill': '#777'});
+	paper.text(695,30,'01,10').attr({'font-size':'20','text-anchor': 'start', 'fill': '#777'});
+	paper.text(895,30,'00').attr({'font-size':'20','text-anchor': 'start', 'fill': '#777'});
+	paper.text(575,150,'10').attr({'font-size':'20', 'fill': '#777'});
+	paper.text(775,155,'10').attr({'font-size':'20', 'fill': '#777'});
+	paper.text(900,185,'01').attr({'font-size':'20', 'fill': '#777'});
+	paper.text(950,220,'01,10').attr({'font-size':'20', 'fill': '#777'});
+	paper.text(525,330,'00').attr({'font-size':'20', 'fill': '#777'});
+	paper.text(525,185,'01,10').attr({'font-size':'20', 'fill': '#777'});
+	paper.text(475,210,'00').attr({'font-size':'20', 'fill': '#777'});
+	paper.text(275,210,'00,01,10').attr({'font-size':'20', 'fill': '#777'});
+	paper.text(130,180,'00,01,10').attr({'font-size':'20', 'fill': '#777'});
 
 	update();
   }
