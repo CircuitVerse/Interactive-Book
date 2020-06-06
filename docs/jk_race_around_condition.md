@@ -5,6 +5,17 @@ nav_order: 14
 ---
 
 # Race around condition
+{: .no_toc}
+
+## Table of contents
+{: .no_toc .text-delta }
+ 
+1. TOC
+{:toc}
+
+---
+
+## Introduction
 
 Before getting into the _race around condition_, let us have a look at the JK flip-flop's truth table.
 
@@ -91,16 +102,18 @@ This condition also exists in T flip-flop since T flip-flop also has toggling op
 
 ## Methods to eliminate race around condition
 
-### 1. Increasing the delay of flip-flop 
+There are three methods to eliminate race around condition as described below:
+
+### Increasing the delay of flip-flop
 
 The propagation delay (delta t) should be made greater than the duration of the clock pulse (T).
 But it is not a good solution as increasing the delay will decrease the speed of the system.
 
-### 2. Use of edge-triggered flip-flop
+### Use of edge-triggered flip-flop
  
 If the clock is High for a time interval less than the propagation delay of the flip flop then racing around condition can be eliminated. This is done by using the edge-triggered flip flop rather than using the level-triggered flip-flop.
 
-### 3. Use of master-slave JK flip-flop
+### Use of master-slave JK flip-flop
 
 If the flip flop is made to toggle over one clock period then racing around condition can be eliminated.
 This is done by using Master-Slave JK flip-flop.
