@@ -18,10 +18,10 @@ nav_order: 2
 
 ## Introduction
 
-Binary number system was invented by **Gottfried Leibniz**. As the word is prefixed with 'Bi' which is a
-Latin word and means 'two' in English. This brings us to the first two digits i.e., 0 and 1 which
-means that while counting in binary you cannot exceed 1. Infact all the numbers which you represent are made up of only two digits i.e., 0 and 1 which is quite interesting.
-Check out the binary representation of a decimal number (the numbers used for counting i.e., from 0-9) in binary.
+The binary number system was invented by **Gottfried Leibniz**. As the word is prefixed with 'Bi' which is a
+Latin word and means 'two' in English. This brings us to the first two digits, i.e., 0 and 1, which
+means that while counting in Binary, you cannot exceed 1. In fact, all the numbers you represent are made up of only two digits, i.e., 0 and 1, which is quite interesting.
+Check out the binary representation of a decimal number (the numbers used for counting i.e., from 0-9) in Binary.
 ```yaml
 Example:
 Decimal Number :: 25 
@@ -76,8 +76,8 @@ It is just like counting in decimal except we reach 10 much sooner.
 
 | Decimal       | Explanation            |
 |:-------------:|:----------------------:|
-|	99	 |	When you run out of digits, ...|
-|	100	 |	... start from back at **0** again, but carry **1** on the left|
+|    99     |    When you run out of digits, ...|
+|    100     |    ... start from the back at **0** again, but carry **1** on the left|
 
 ### And that is what is done in Binary ...
 {: .no_toc}
@@ -89,7 +89,7 @@ It is just like counting in decimal except we reach 10 much sooner.
 | 1          | Then 1        |
 | **1**0     | Now start back at **0** again, but carry **1** on the left|
 | 11         | 1 more        |
-| **1**00    | start back at 0 again, and carry one to the number on the left but that number is already at 1 so it also goes back to 0 and 1 is carried to the next position on the left|
+| **1**00    | start back at 0 again, and carry one to the number on the left but that number is already at 1 so it also goes back to 0, and 1 is carried to the next position on the left|
 | 101        | |
 | 110        | |
 | 111        | |
@@ -97,17 +97,17 @@ It is just like counting in decimal except we reach 10 much sooner.
 
 ## Binary to decimal demonstration
 ---
-Let's tell you something more about conversion. Conversion from Binary to Decimal is quite a simple task.
+Let's say you something more about conversion. Conversion from Binary to Decimal is quite a simple task.
 All you need to do is begin from the right. Follow the steps below:
 - STEP 1 :: 
-Write the decimal value of each digit on top of them respectively. The value which you seek to write is
+Write the decimal value of each digit on top of them, respectively. The value which you seek to write is
 2^(place value from right) beginning from 0 i.e., 2^0, 2^1, 2^2 .... continuing up to 2^7.
 - STEP 2 ::
 Now, multiply each digit of binary number with its value.
 - STEP 3 ::
 Add 'em all.
 - STEP 4 ::
-Result is ready :)
+The result is ready :)
 
 **_Note: If the number is large, increase bits of the binary number on the left. Keep in mind that it's value will
 increase subsequently._**
