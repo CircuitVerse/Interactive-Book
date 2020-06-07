@@ -267,11 +267,11 @@ soda_machine_graphics.initialize = function () {
 	  sodas[i].transform(['t','0',-35*i]);
 	}
 
-	cover = paper.rect(10,0,320,79).attr({'stroke': 'none', 'fill':'white'});
+	cover = paper.rect(10,0,320,79).attr({'stroke': 'none', 'fill':'#DDD'});
 
 	//soda machine box
 	paper.path("M10,80 l400,0 l0,250 l55,0 l0,-250 l145,0 l0,300 l-600,0 Z").attr({'stroke-width': '2'});
-	paper.rect(466,115,100,50).attr({'stroke-width': '2'});
+	paper.rect(466,115,100,50).attr({'stroke-width': '2', 'fill':'#DDD'});
 	paper.path("M100,320 l0,10 l 100,0 l0,-10").attr({'stroke-width': '2'});
 	paper.path("M250,320 l0,10 l 100,0 l0,-10").attr({'stroke-width': '2'});
 	paper.path("M125,80 l0,170 ").attr({'stroke-width': '2'});
