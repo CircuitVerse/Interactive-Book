@@ -1522,8 +1522,8 @@ function KarnaughMapDataCtrl(qmcRef) {
     this.fieldLines = -1;
     this.fieldPerLine = -1;
     this.fieldBorder = -1;
-    this.fieldHeight = 40;
-    this.fieldWidth = 40;
+    this.fieldHeight = 80;
+    this.fieldWidth = 80;
     this.qmc = qmcRef;
     this.fields = new Array();
     this.blocks = new Array();
@@ -1909,7 +1909,7 @@ function KarnaughMap(parentDivId, qmcRef) {
 
         if (true) {
             var text2 = document.createElementNS(svgns, 'text');
-            text2.setAttribute("fill", "#909090");
+            text2.setAttribute("fill", "#000");
             text2.setAttribute("text-anchor", "start");
             text2.setAttribute("font-family", "sans-serif");
             text2.setAttribute("font-size", "10");
