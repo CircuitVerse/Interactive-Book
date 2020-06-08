@@ -16,7 +16,7 @@ permalink: /docs/combinational
 
 ## Introduction
 
-Combinational circuits consist of Logic gates. These circuits operate with binary values. The output(s) of combinational circuit depends on the combination of present inputs. The following figure shows the **block diagram** of combinational circuit.
+Combinational circuits consist of Logic gates. These circuits operate with binary values. The output(s) of the combinational circuit depends on the combination of present inputs. The following figure shows the **block diagram** of the combinational circuit.
 
 <div style="text-align:center"><img src="../../assets/images/combinational1.jpg" /></div>
 
@@ -25,7 +25,7 @@ This combinational circuit has ‘n’ input variables and ‘m’ outputs. Each
 
 ## Design procedure of combinational circuits
 
-1.  Find the required number of input variables and outputs from given specifications.   
+1.  Find the required number of input variables and outputs from the given specifications.   
 1.  Formulate the Truth table. If there are ‘n’ input variables, then there will be 2n possible combinations. For each combination of input, find the output values.   
 1.  Find the Boolean expressions for each output. If necessary, simplify those expressions.   
 1.  Implement the above Boolean expressions corresponding to each output by using Logic gates.

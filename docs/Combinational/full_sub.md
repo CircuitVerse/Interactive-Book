@@ -16,9 +16,9 @@ nav_order: 4
 
 ## Introduction
 
-The disadvantage of a half subtractor is overcome by full subtractor. 
-The full subtractor is a combinational circuit with three inputs A, B, C and two output D and C'. 
-A is the 'minuend', B is 'subtrahend', C is the 'borrow' produced by the previous stage, D is the difference output and C' is the borrow output.
+The disadvantage of a half subtractor is overcome by a full subtractor. 
+The full subtractor is a combinational circuit with three inputs A, B, C, and two output D and C'. 
+A is the 'minuend', B is 'subtrahend', C is the 'borrow' produced by the previous stage, D is the difference output, and C' is the borrow output.
 
 ## Truth table
 
