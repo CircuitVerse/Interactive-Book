@@ -23,7 +23,7 @@ For example, display the following 2 variable Karnaugh Map:
 
 ![](../assets/images/map11.png)
 
-You have bounded to the vertical axis, the variable `A`, and enumerate through the possible values for `A` (being `{0, 1}`). Similarly, perform a similar operation for the `B` variable. Since you are using a 2 variable expression, you can bound one variable to each axis and the visualization works fine in a `2x2` matrix.
+You have bounded to the vertical axis, the variable `A`, and enumerate through the possible values for `A` (being `{0, 1}`). Similarly, perform a similar operation for the `B` variable. Since you are using a 2 variable expression, you can bound one variable to each axis, and the visualization works fine in a `2x2` matrix.
 
 Let's instead look at a more involved example with 4 variables:
 
@@ -65,7 +65,7 @@ Therefore, the simplification is true.
 
 You can then extend this rule to work for rectangles and more!
 
-## Two dimension groupings
+## Two-dimension groupings
 Extending the idea of isolating changing bits that retain a consistent value, we can then generalize this to work in a higher dimension. Consider the following example:
 
 ![](../assets/images/map3.png)
@@ -118,14 +118,14 @@ Breaking down the expression:
 => (A'B'C') + (ACD)
 => A'B'C' + ACD
 ```
-Clearly this is the exact same process as before, but iterated throughout all the disjoint sets.
+Clearly, this is the exact same process as before but iterated throughout all the disjoint sets.
 
 ## Overlapping groupings
-Overlapping groupings become more complex because there exist ambiguous cases and sometimes what may appear to be a locally optimal solution is not a globally optimal solution.
+Overlapping groupings become more complex because there exist ambiguous cases, and sometimes, what may appear to be a locally optimal solution is not a globally optimal solution.
 
-The general technique for evaluating for overlapping groups follows a greedy algorithm. Define an unvisited cell as a cell that has a value of `1` however it is currently not matched with a grouping yet. 
+The general technique for evaluating overlapping groups follows a greedy algorithm. Define an unvisited cell as a cell that has a value of `1` however, it is currently not matched with a grouping yet. 
 
-Iterate through all the cells, and once you find a cell with `1`, if it is unvisited then find the largest possible square or rectangle such that each side length is a power of 2, where all the cells are `1` in its enclosed area. If there is a tie for size (ie, `1x4` vs `2x2`), assign the one that is a square (this is by convention). 
+Iterate through all the cells, and once you find a cell with `1`, if it is unvisited, then find the largest possible square or rectangle such that each side length is a power of 2, where all the cells are `1` in its enclosed area. If there is a tie for size (i.e., `1x4` vs. `2x2`), assign the one that is a square (this is by convention). 
 
 Repeat this process for all remaining unvisited cells. 
 
@@ -179,6 +179,6 @@ Candidate #2:
 F(ABCD) = [0111, 0110, 1111, 1110]
 ```
 
-Both groupings have the same size and are the same dimension. However, upon reaching `F(1110)`, another grouping needs to be instantiated, in which case if the first candidate grouping was created then you made a group that did not necessarily increase the size of our SOP expression. 
+Both groupings have the same size and are the same dimension. However, upon reaching `F(1110)`, another grouping needs to be instantiated, in which case if the first candidate grouping was created, then you made a group that did not necessarily increase the size of our SOP expression. 
 
-This illustrates the idea that this is a greedy algorithm, and does not always return the most simplified SOP expression. In later sections, algorithms illustrating a globally optimal algorithm will be discussed.
+This illustrates the idea that this is a greedy algorithm and does not always return the most simplified SOP expression. In later sections, algorithms illustrating a globally optimal algorithm will be discussed.
