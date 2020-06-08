@@ -17,12 +17,12 @@ nav_order: 3
 
 ## Introduction
 
-Universal gates are gates which can be used to implement all other gates.
+Universal gates are gates that can be used to implement all other gates.
 This is useful as manufacturers only need to produce 1 type of universal gate to be able to use all other gates.
 
 The universal gates are NOR and NAND.
-This page will show you how to implement AND, OR and NOT gates using universal gates.
-The AND, OR and NOT gates are basic gates that are commonly used and are very important.
+This page will show you how to implement AND, OR, and NOT gates using universal gates.
+The AND, OR, and NOT gates are basic gates that are commonly used and are very important.
 
 ## NOR gate
 The NOR gate is the opposite of the OR gate. It is like an OR gate followed by a NOT gate.
