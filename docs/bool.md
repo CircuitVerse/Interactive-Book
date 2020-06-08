@@ -133,6 +133,9 @@ This is the most important law of Boolean Algebra. Remember the phrase **'Break 
  
 Try to implement any gate you wish to with the help of the simulator present below, where 'switch on' means a high state i.e., 1 and 'switch off' means a low state i.e., 0. Select the gate in between with the help of the list present.
  
+### Click on gate to toggle between other gates
+{: .no_toc}
+ 
 {% include bool.html %}
 
 
