@@ -19,24 +19,24 @@ nav_order: 5
 
 ## Introduction
 
-Boolean Functions are comprised of two components i.e., Variables and Logic operations(AND, OR, NOT...etc). Any equation with the mixture of these two components forms a Boolean function. The value of variables may or may not be pre-defined. The shorthand notation for a boolean function is that it is represented with a capital F followed by parenthesis comprising of all variables of that equation separated by comma(','). You can represent any boolean expression in form of a Truth Table. Follow up to know How?
+Boolean Functions are comprised of two components, i.e., Variables and Logic operations(AND, OR, NOT...etc). Any equation with the mixture of these two components forms a Boolean function. The value of variables may or may not be pre-defined. The shorthand notation for a boolean function is that it is represented with a capital F followed by parenthesis comprising of all variables of that equation separated by comma(','). You can represent any boolean expression in the form of a Truth Table. Follow up-to know How?
 Consider the following example:
 ```yaml
 Example:
-	 Shorthand notation representing the boolean expression
-	/
-	F(A,B) = A + B	//This is a boolean function comprising of variables A and B
+     Shorthand notation representing the boolean expression
+    /
+    F(A,B) = A + B    //This is a boolean function comprising of variables A and B.
 
-	F(A, B, C) = A(B + C(A + B))
-					   \
-					   	Boolean Expression
+    F(A, B, C) = A(B + C(A + B))
+                       \
+                           Boolean Expression
 ```
 
 ## Truth table formation
 
-Truth Table is formed by evaluating the Boolean expression for each and every truth value of a variable. Now truth values of a variable are either 'true' or 'false'. The main point is to evaluate the value of Boolean expression for each and every combination of the Truth values of 
-variables present. Suppose there is only one variable, it implies that it can hold either 'true' or 'false' but, when there are two variables then you can have a combination of {TT, TF, FT, FF}(T -> True, F -> False). Implies you need to evaluate the value of expression for each and every Truth value of a variable.
-The above implications bring us to a conclusion that there can be 2^(number of variables) number of combination for a single boolean expression. Follow up the examples below to learn how to map those values.
+Truth Table is formed by evaluating the Boolean expression for each and every truth value of a variable. Now truth values of a variable are either 'true' or 'false'. The main point is to evaluate the value of the Boolean expression for each and every combination of the Truth values of 
+variables present. Suppose there is only one variable. It implies that it can hold either 'true' or 'false' but when there are two variables, then you can have a combination of {TT, TF, FT, FF}(T -> True, F -> False). Implies you need to evaluate the value of the expression for each and every Truth value of a variable.
+The above implications bring us to the conclusion that there can be 2^(number of variables) number of combinations for a single boolean expression. Follow up on the examples below to learn how to map those values.
 
 ```yaml
 Example:
@@ -51,8 +51,8 @@ Truth Table::
 |1|1|1|
 
 ```yaml
-Here you have 4 combinations for 2 variables, try to grasp the next example where variables are 3 which 
-implies 8 combinations. Make a note of how Truth values of a variable are written under each column for 
+Here you have 4 combinations for 2 variables, try to grasp the next example where variables are 3, which 
+implies 8 combinations. Make a note of how the Truth values of a variable are written under each column for 
 every variable.
 Example:
 F(A,B,C) = A + B.C
@@ -96,9 +96,9 @@ Let's take a look at an more complex expression `F(ABCD) = AB'C + BD + CD + D`. 
 | 0     | 1 | 1 | 1 | 0 |
 | 1     | 1 | 1 | 1 | 1 |
 
-In this example an interesting observation is that, you are doing a sum of product evaluation, that is, `AB'C+BD+CD+D` is a sum of products. The significance of sum of product is that when you are doing `+`, you are in fact invoking the `OR` operator. 
+In this example, an interesting observation is that you are doing a sum of product evaluation, that is, `AB'C+BD+CD+D` is a sum of products. The significance of the sum of product is that when you are doing `+`, you are in fact, invoking the `OR` operator. 
 
-Moreover, the `OR` operator returns `true` so long as any one of its arguements returns `true`. Therefore, if _any_ of the terms in the sum of product (SOP) expressions is `true`, then you know that the final expression is `true` for certain. 
+Moreover, the `OR` operator returns `true` so long as anyone of its arguments returns `true`. Therefore, if _any_ of the terms in the sum of product (SOP) expressions is `true`, then you know that the final expression is `true` for certain. 
 
 ## Product of sum expressions (POS)
 Let's take a look at another expression `F(ABCD) = (A + B + C + D')(A + B' + C' + D)(A' + B' + C + D')`. Let's generate the truth table:
@@ -124,7 +124,7 @@ Let's take a look at another expression `F(ABCD) = (A + B + C + D')(A + B' + C' 
 
 Judging by the algebraic expression, it is evident that the expression is a _product_ of _sums_. Such an expression is called a __Product of Sum__ expression or __POS__ in short. 
 
-Here the sum terms are defined by using the __OR__ operation and the product term is defined by using __AND__ operation. When two or more sum terms are multiplied by a Boolean __OR__ operation, the resultant output expression will be in the form of product-of-sums form or __POS__ form.
+Here the sum terms are defined by using the __OR__ operation, and the product term is defined by using __AND__ operation. When two or more sum terms are multiplied by a Boolean __OR__ operation, the resultant output expression will be in the form of product-of-sums form or __POS__ form.
 
 The product-of-sums form is also called as <u>Conjunctive Normal Form</u> as the sum terms are *AND*ed together and Conjunction operation is logical AND. Product-of-sums form is also called as Standard POS.
 
@@ -136,25 +136,25 @@ ___
 
 ### Minterms
 
-A minterm is defined as the product term of n variables, in which each of the n variables will appear once either in its complemented or un-complemented form. The min term is denoted as mi where i is in the range of 0 ≤ i < 2<sup>n</sup>.
+A minterm is defined as the product term of n variables, in which each of the n variables will appear once either in its complemented or un-complemented form. The minterm is denoted as mi where i is in the range of 0 ≤ i < 2<sup>n</sup>.
 
 For a 2-variable (x and y) Boolean function, the possible minterms are:
 
 `x’y’, x’y, xy’ and xy`.
 
-For a 3-variable (x, y and z) Boolean function, the possible minterms are:
+For a 3-variable (x, y, and z) Boolean function, the possible minterms are:
 
 `x’y’z’, x’y’z, x’yz’, x’yz, xy’z’, xy’z, xyz’ and xyz.`
 
 1 – Minterms = minterms for which the function F = 1.
 0 – Minterms = minterms for which the function F = 0.
-Any Boolean function can be expressed as the sum (OR) of its 1- min terms. The representation of the equation will be
+Any Boolean function can be expressed as the sum (OR) of its 1- minterms. The representation of the equation will be
 
 `F(list of variables) = Σ(list of 1-min term indices)`
 
 Ex: `F (x, y, z) = Σ (3, 5, 6, 7)`
 
-The inverse of the function can be expressed as a sum (OR) of its 0- min terms. The representation of the equation will be
+The inverse of the function can be expressed as a sum (OR) of its 0- minterms. The representation of the equation will be
 
 `F(list of variables) = Σ(list of 0-min term indices)`
 Ex: `F’ (x, y, z) = Σ (0, 1, 2, 4)`
@@ -183,7 +183,7 @@ For a 3-variable (x, y and z) Boolean function, the possible maxterms are:
 
 0 – max terms = max terms for which the function F = 0.
 
-Any Boolean function can be expressed the product (AND) of its 0 – max terms. The representation of the equation will be
+Any Boolean function can be expressed as the product (AND) of its 0 – max terms. The representation of the equation will be
 
 `F(list of variables) = Π (list of 0-max term indices)`
 
@@ -209,19 +209,19 @@ Having understood minterms and maxterms, you are now in a position to understand
 
 Any Boolean function that is expressed as a sum of minterms or as a product of maxterms is said to be in its __canonical form__.
 
-When the SOP form of a Boolean expression is in canonical form, then each of its product term is called __minterm__. So, the canonical form of sum of products function is also known as __minterm canonical form__ or Sum-of-minterms or standard canonical SOP form.
+When the SOP form of a Boolean expression is in canonical form, then each of its product term is called __minterm__. So, the canonical form of the sum of products function is also known as __minterm canonical form__ or Sum-of-minterms or standard canonical SOP form.
 
 Similarly, when the POS form of a Boolean expression is in canonical form, then each of its sum term is called __maxterm__. So, the canonical form of product of sums function is also known as __maxterm canonical form__ or Product-of sum or standard canonical POS form.
 
 ## Conversion of canonical forms
 
-You can represent the one canonical formed equation in other canonical form i.e. you can represent the SOP form of equation in POS form and POS form equation in SOP form. To convert the canonical equations, you interchange the Σ and Π symbols after listing out the index numbers of the equations, which are excluded from the original form of equation.
+You can represent the one canonical formed equation in other canonical form i.e., you can represent the SOP form of equation in POS form and POS form equation in SOP form. To convert the canonical equations, you interchange the Σ and Π symbols after listing out the index numbers of the equations, which are excluded from the original form of equation.
 
 The important thing to remember about Boolean functions is that, **the SOP and POS forms are Duals to each other**. There are 2 steps to follow to convert the canonical form of the equations. They are:- 
 
-1. Interchanging the operational symbols, Σ and Π in the equation.
+1. Interchanging the operational symbols, Σ, and Π in the equation.
 
-2. Use the **De Morgan’s principle of Duality** to the index numbers of the Boolean function or writing the indexes of the terms that are not presented in the given form of equation.
+2. Use the **De Morgan’s principle of Duality** to the index numbers of the Boolean function or writing the indexes of the terms that are not presented in the given form of the equation.
 
 For Example:-
 
@@ -229,7 +229,7 @@ The SOP function `F = ∑ A, B, C (0, 2, 3, 5, 7) = A’ B’ C’ + A B’ C’
 
 1. changing the operational sign to Π
 
-2. writing the missing indexes of the terms, 001, 100 and 110. Now write the sum form for these noted terms.
+2. writing the missing indexes of the terms, 001, 100, and 110. Now write the sum form for these noted terms.
 
 `001 = (A + B + C'), 100 = (A' + B + C), 110 = (A' + B’ + C)`
 
@@ -253,15 +253,15 @@ Writing down the new equation in the form of SOP form,
 
 ### Minimal POS to canonical POS
 
-You can include all the variables in each product term of the POS form equation, which doesn’t have all the variables by converting into standard POS form. The normal POS form function can be converted to standard POS form by using the Boolean algebraic law, **(A * A’ = 0)** and by following the below steps.
+You can include all the variables in each product term of the POS form equation, which doesn’t have all the variables by converting it into a standard POS form. The normal POS form function can be converted to standard POS form by using the Boolean algebraic law, **(A * A’ = 0)** and by following the below steps.
 
 1. By adding each non-standard sum term to the product of its missing variable and its complement, which results in 2 sum terms
 
 2. Applying Boolean algebraic law, A + BC = (A + B) * (A + C)
 
-3. By repeating the step 1, until all resulting sum terms contain all variables
+3. By repeating step 1, until all resulting sum terms contain all variables
 
-By these three steps you can convert the POS function into standard POS function.
+By these three steps, you can convert the POS function into a standard POS function.
 
 Example:
 `F = (A’ + B + C) * (B’ + C + D’) * (A + B’ + C’ + D)`
@@ -280,14 +280,14 @@ The third term is already in the standard form, as it has all the variables. Now
 
 ### Minimal SOP to canonical SOP
 
-You can include all the variables in each product term of the SOP form equation, which doesn’t have all the variables by converting into standard SOP form. The normal SOP form function can be converted to standard SOP form by using the Boolean algebraic law, **(A + A’ = 1)** and by following the below steps.
+You can include all the variables in each product term of the SOP form equation, which doesn’t have all the variables by converting it into a standard SOP form. The normal SOP form function can be converted to standard SOP form by using the Boolean algebraic law, **(A + A’ = 1)** and by following the below steps.
 
 
 1. By multiplying each non-standard product term with the sum of its missing variable and its complement, which results in 2 product terms
 
-2. By repeating the step 1, until all resulting product terms contain all variables
+2. By repeating step 1, until all resulting product terms contain all variables
 
-By these two steps you can convert the SOP function into standard SOP function. In this process, for each missing variable in the function, the number of product terms will double.
+By these two steps, you can convert the SOP function into a standard SOP function. In this process, for each missing variable in the function, the number of product terms will double.
 
 Example:
 Convert the non standard SOP function `F = x y + x z + y z`
@@ -307,7 +307,7 @@ The standard SOP form is `F = x y z + x y z’ + x y’ z + x’ y z`
 
 ## Example algebraic simplification
 
-Let's simplify our expression from the previous truth table example. you can apply ordinary algebra tricks such as factoring. Remember that the `+` operator invokes the `OR` gate, and that `true or x` always returns `true` regardless of `x` (as shown in our first truth table).
+Let's simplify our expression from the previous truth table example. You can apply ordinary algebra tricks such as factoring. Remember that the `+` operator invokes the `OR` gate, and that `true or x` always returns `true` regardless of `x` (as shown in our first truth table).
 ```
 AB'C + BD + CD + D // Initial expression
 AB'C + BD + D // Applying Absorption Law on CD + D, which reduces it to D
@@ -319,9 +319,9 @@ As an exercise to the reader, complete the truth table to show that they are log
 
 ## Undefined input & don't-cares
 
-The definition of a "don't-care" is a combination of input values that is not known, and could be either `0` or `1`. For the purposes of variable simplification, we would choose the greedy approach of picking between {`0`, `1`} such that the simplified expression has less terms.
+The definition of a "don't-care" is a combination of input values that are not known, and could be either `0` or `1`. For the purposes of variable simplification, we would choose the greedy approach of picking between {`0`, `1`} such that the simplified expression has less terms.
 
-Let's consider the following truth-table:
+Let's consider the following truth table:
 
 |A|B|F(A,B)|
 |0|0|1|
@@ -340,12 +340,12 @@ Case #2: F(1, 0) = 1
 
 Simplifying the cases...
 F(AB) = A'B' + A'B + AB
-	  = A'(B' + B) + AB
-	  = A' + AB
+      = A'(B' + B) + AB
+      = A' + AB
 F(AB) = A'B' + A'B + AB' + AB
-	  = A'(B' + B) + A (B' + B)
-	  = A' + A
-	  = 1
+      = A'(B' + B) + A (B' + B)
+      = A' + A
+      = 1
 ```
 
 You can clearly see, if you set `F(1, 0) = 1`, you get a true value for any input. Therefore, for the purposes of variable simplification, you can simply let `F(1, 0) = 1` thus implying `F(AB) = 1`.
@@ -360,7 +360,7 @@ You can clearly see, if you set `F(1, 0) = 1`, you get a true value for any inpu
 
 ## Methods to simplify the boolean function
 
-The following methods can be used to simplify the the Boolean function:
+The following methods can be used to simplify the Boolean function:
 
 1. The [Karnaugh-map](https://learn.circuitverse.org/docs/maps.html) or K-map method.
 1. The [NAND gate method](https://learn.circuitverse.org/docs/nand_gate_method.html).
