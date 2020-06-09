@@ -28,6 +28,7 @@ E is called the strobe or enable input which is useful for the cascading. It is 
    
 ### 2 : 1 multiplexer
 #### Truth Table
+{: .no_toc }
 
 `Enable(E) = 1`
 
@@ -42,6 +43,7 @@ E is called the strobe or enable input which is useful for the cascading. It is 
 The 4 : 1 multiplexer has 4 inputs and 2 control signals.
 
 #### Truth Table
+{: .no_toc }
 
 `Enable(E) = 1`
 
@@ -58,6 +60,7 @@ The 4 : 1 multiplexer has 4 inputs and 2 control signals.
 The 8 : 1 multiplexer has 8 inputs and 3 control signals.
 
 #### Truth Table
+{: .no_toc }
 
 `Enable(E) = 1`
 
@@ -83,6 +86,7 @@ The 16 : 1 multiplexer has 16 inputs and 4 control signals.
 It can be implemented with **two** 8 : 1 multiplexers:
 
 #### Truth Table
+{: .no_toc }
 
 `Enable(E) = 1`
 
