@@ -2,6 +2,7 @@ var bit1 = new Array(8);
 var bit1_display = new Array(2);
 bit1_display[false] = "0";
 bit1_display[true] = "1";
+var operator = "OR";
 
 function toggle_bitc(column)
 {
@@ -54,27 +55,31 @@ function toggle_bit(column)
     }
     document.getElementById("value_A").value = decimal&255;
     document.getElementById("value_B").value = Math.floor(decimal/256);
-    do_bitwise();
+    do_bitwise(operator);
 }
 
-function change_operator()
+function change_operator(oper, ind)
 {
-    var ops = document.getElementsByClassName("opcol");
-    for (var i=0; i < ops.length; i++)
-    {
-        ops[i].innerHTML = document.getElementById("operator").value;
+    var tab =  document.querySelectorAll( '.oper' );
+    for(var i=0; i<tab.length; i++){
+        if(tab[i].classList.contains('active_oper')){
+            tab[i].classList.remove('active_oper');
+        }
     }
-    do_bitwise();
+    tab[ind].classList.add('active_oper');
+    document.getElementsByClassName('active_operation')[0].innerHTML = oper;
+    operator = oper;
+    do_bitwise(operator);
 }
 
-function do_bitwise()
+function do_bitwise(operator)
 {
     var decimal = 0;
     var bit_value;
 
     for(var i=0; i < 8; i++)
     {
-        switch(document.getElementById("operator").value)
+        switch(operator)
         {
             case "AND":
                 bit_value = bit[i]&bit[i+8];
@@ -89,7 +94,7 @@ function do_bitwise()
         document.getElementById(i+16).innerHTML = bit_display[bit_value==true];
         if(bit_value) { decimal = decimal + Math.pow(2, i); }
     }
-    document.getElementById("result").innerHTML = " = " + decimal;
+    document.getElementById("result").innerHTML = decimal;
 }
 
 
