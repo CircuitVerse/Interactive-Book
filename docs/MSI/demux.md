@@ -22,6 +22,7 @@ A de-multiplexer is equivalent to a single pole multiple way switch as shown in 
 
 ### 1 : 2  demultiplexer
 #### Block diagram
+{: .no_toc }
 
 <div style="text-align:center"><img src="../../assets/images/one_twodemultiplexer_blockdiagram.jpg" /></div>
 
