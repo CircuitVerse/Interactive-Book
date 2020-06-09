@@ -24,23 +24,57 @@ E is called the strobe or enable input which is useful for the cascading. It is 
 
 <div style="text-align:center"><img src="../../assets/images/n_onemultiplexer_blockdiagram.jpg" /></div>
 
-
-
 ## Multiplexers come in multiple variations
    
 ### 2 : 1 multiplexer
 #### Truth Table
+{: .no_toc }
 
-<div style="text-align:center"><img src="../../assets/images/two_onemultiplexer_truthtable.jpg" /></div>
+`Enable(E) = 1`
+
+|S1|Y(Output)|
+|:-:|:-:|:-:|
+|0|T1|
+|1|T2|
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/746" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ### 4 : 1 multiplexer
 The 4 : 1 multiplexer has 4 inputs and 2 control signals.
+
+#### Truth Table
+{: .no_toc }
+
+`Enable(E) = 1`
+
+|S1|S2|Y(Output)|
+|:-:|:-:|:-:|
+|0|0|T1|
+|0|1|T2|
+|1|0|T3|
+|1|1|T4|
+
 <iframe width="100%"  height="400px" src="https://circuitverse.org/simulator/embed/44747" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ### 8 : 1 multiplexer
 The 8 : 1 multiplexer has 8 inputs and 3 control signals.
+
+#### Truth Table
+{: .no_toc }
+
+`Enable(E) = 1`
+
+| S1      | S2      | S3     | Y(Output)|
+|:-------:|:-------:|:------:|:------:|
+| 0       | 0       | 1      |T1       |
+| 0       | 1       | 0      |T2       |
+| 0       | 1       | 1      |T3      |
+| 0       | 1       | 1      |T4      |
+| 1       | 0       | 1      |T5      |
+| 1       | 1       | 0      |T6      |
+| 1       | 1       | 1      |T7      |
+| 1       | 1       | 1      |T8      |
+
 <iframe width="100%"  height="400px" src="https://circuitverse.org/simulator/embed/44766" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 You can implement a 8 : 1 multiplexer by chaining **two** 4 : 1 multiplexers, like this:
@@ -50,6 +84,30 @@ You can implement a 8 : 1 multiplexer by chaining **two** 4 : 1 multiplexers, li
 The 16 : 1 multiplexer has 16 inputs and 4 control signals.
 
 It can be implemented with **two** 8 : 1 multiplexers:
+
+#### Truth Table
+{: .no_toc }
+
+`Enable(E) = 1`
+
+| A | B | C | D | Y(Output) |
+|:-:|:-:|:-:|:-:|:-: |
+| 0 | 0 | 0 | 0 | T1  |
+| 0 | 0 | 0 | 1 | T2  |
+| 0 | 0 | 1 | 0 | T3  |
+| 0 | 0 | 1 | 1 | T4  |
+| 0 | 1 | 0 | 0 | T5  |
+| 0 | 1 | 0 | 1 | T6  |
+| 0 | 1 | 1 | 0 | T7  |
+| 0 | 1 | 1 | 1 | T8  |
+| 1 | 0 | 0 | 0 | T9  |
+| 1 | 0 | 0 | 1 | T10 |
+| 1 | 0 | 1 | 0 | T11 |
+| 1 | 0 | 1 | 1 | T12 |
+| 1 | 1 | 0 | 0 | T13 |
+| 1 | 1 | 0 | 1 | T14 |
+| 1 | 1 | 1 | 0 | T15 |
+| 1 | 1 | 1 | 1 | T16 |
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/44795" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
