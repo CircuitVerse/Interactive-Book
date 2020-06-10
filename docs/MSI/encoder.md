@@ -21,7 +21,7 @@ The encoder accepts an n input digital word and converts it into an m bit anothe
 
 <div style="text-align:center"><img src="../../assets/images/encoder_blockdiagram.jpg" /></div>
 
-### Examples of encoders ::
+### Examples of encoders
    
 * Priority encoders
 * Decimal to BCD encoder
