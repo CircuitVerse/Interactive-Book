@@ -69,4 +69,4 @@ Here, Q(n) is the present state and Q(n+1) is the next state.
 ````
 Q(n+1) = Q(n)'J + Q(n)K'
 ````
-<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/47630" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/47630" id="masterslave_jk_flipflop_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>

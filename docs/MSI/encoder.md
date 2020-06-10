@@ -21,7 +21,7 @@ The encoder accepts an n input digital word and converts it into an m bit anothe
 
 <div style="text-align:center"><img src="../../assets/images/encoder_blockdiagram.jpg" /></div>
 
-### Examples of encoders
+### Examples of encoders ::
    
 * Priority encoders
 * Decimal to BCD encoder
@@ -49,7 +49,7 @@ That means if D3 = 1 then Y1 Y1 = 11 irrespective of the other inputs. Similarly
 
 <div style="text-align:center"><img src="../../assets/images/priorityencoder_logiccircuit.jpg" /></div>
 
-<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/762" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/762" id="encoder_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ## Decimal to BCD encoder
 
