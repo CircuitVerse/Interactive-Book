@@ -23,7 +23,7 @@ It performs operations which are exactly opposite to those of an encoder.
 
 <div style="text-align:center"><img src="../../assets/images/decoder_blockdiagram.jpg" /></div>
 
-### Examples of decoders
+### Examples of decoders ::
    
 * Code converters
 * BCD to seven segment decoders
@@ -37,17 +37,17 @@ A and B are the two inputs where D through D are the four outputs.
 Truth table explains the operations of a decoder. 
 It shows that each output is 1 for only a specific combination of inputs.
 
-### Block diagram
+## Block diagram
 
 <div style="text-align:center"><img src="../../assets/images/two_fourdecoder_blockdiagram.jpg" /></div>
 
-### Truth table
+## Truth table
 
 <div style="text-align:center"><img src="../../assets/images/two_fourdecoder_truthtable.jpg" /></div>
 
-### Logic circuit
+## Logic circuit
 
 <div style="text-align:center"><img src="../../assets/images/two_fourdecoder_logiccircuit.jpg" /></div>
 
 
-<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/763" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/763" id="decoder_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>

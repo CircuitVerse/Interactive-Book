@@ -60,7 +60,7 @@ F = (A NAND (B NAND B)) NAND ((C NAND C) NAND D)
 ```
 Notice that there are input elements that are present in the negative form, namely `B'` and `C'`. You can represent them by using the NAND gate in order to realise the [NOT gate](https://learn.circuitverse.org/docs/universal_gates.html#implementing-not-gate-1).
 
-<iframe width="600px" height="300px" src="https://circuitverse.org/simulator/embed/93441" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
+<iframe width="600px" height="300px" src="https://circuitverse.org/simulator/embed/93441" id="nand_gate_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
 
 
 

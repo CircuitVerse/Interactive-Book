@@ -37,7 +37,7 @@ E is called the strobe or enable input which is useful for the cascading. It is 
 |0|T1|
 |1|T2|
 
-<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/746" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/746" id="mux_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ### 4 : 1 multiplexer
 The 4 : 1 multiplexer has 4 inputs and 2 control signals.
@@ -54,7 +54,7 @@ The 4 : 1 multiplexer has 4 inputs and 2 control signals.
 |1|0|T3|
 |1|1|T4|
 
-<iframe width="100%"  height="400px" src="https://circuitverse.org/simulator/embed/44747" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+<iframe width="100%"  height="400px" src="https://circuitverse.org/simulator/embed/44747" id="mux_02" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ### 8 : 1 multiplexer
 The 8 : 1 multiplexer has 8 inputs and 3 control signals.
@@ -75,10 +75,10 @@ The 8 : 1 multiplexer has 8 inputs and 3 control signals.
 | 1       | 1       | 1      |T7      |
 | 1       | 1       | 1      |T8      |
 
-<iframe width="100%"  height="400px" src="https://circuitverse.org/simulator/embed/44766" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+<iframe width="100%"  height="400px" src="https://circuitverse.org/simulator/embed/44766" id="mux_03" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 You can implement a 8 : 1 multiplexer by chaining **two** 4 : 1 multiplexers, like this:
-<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/44784" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/44784" id="mux_04" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ### 16 : 1 multiplexer
 The 16 : 1 multiplexer has 16 inputs and 4 control signals.
@@ -109,8 +109,8 @@ It can be implemented with **two** 8 : 1 multiplexers:
 | 1 | 1 | 1 | 0 | T15 |
 | 1 | 1 | 1 | 1 | T16 |
 
-<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/44795" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/44795" id="mux_05" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 It can also be implemented with **five** 4 : 1 multiplexers:
-<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/44804" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/44804" id="mux_06" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 

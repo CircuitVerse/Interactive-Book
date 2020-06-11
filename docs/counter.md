@@ -32,7 +32,7 @@ External clock is applied to the clock input of flip-flop A and QA output is app
 
 <div style="text-align:center"><img src="../assets/images/ripple_counter_diagram.jpg" /></div>
 
-<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/43064" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/43064" id="counter_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
 
 ### Types 
 It is known as ripple counter because of the way the clock pulse ripples its way through the flip-flops. The flip-flop applied with external clock pulse act as LSB (Least Significant Bit) in the counting sequence.The flip-flop toggles the output either for every positive edge of clock signal or for negative edge of clock signal.
@@ -40,7 +40,7 @@ It is known as ripple counter because of the way the clock pulse ripples its way
 
 <div style="text-align:center"><img src="../assets/images/2bit_up_counter.png" height="300"/></div>
 
-<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/98893" id="2bitUpCounter" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/98893" id="counter_02" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
 
 <br>
 
@@ -48,14 +48,14 @@ It is known as ripple counter because of the way the clock pulse ripples its way
 
 <div style="text-align:center"><img src="../assets/images/2bit_down_counter.png" height="300"/></div>
 
-<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/98894" id="2bitDownCounter" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/98894" id="counter_03" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
 
 * **3 bit ripple up counter:** It contains three flip flops. A 3-bit ripple counter can count up to 8 states. It counts from 0 to 7.
 
 * **3 bit ripple down counter:** It contains three flip flops. A 3-bit ripple counter can count up to 8 states.It counts down from 7 to 0.
 <div style="text-align:center"><img src="../assets/images/3bit_counter.png" height="300"/></div>
 
-<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/98895" id="3bitCounter" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/98895" id="counter_04" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
 
 * **Decade or BCD counter :**  A binary coded decimal (BCD) is a serial digital counter that counts ten digits. It counts from 0 to 9.When the clock pulse advances to 10 the ports QB and QD become high and thus NAND gate's output will become low which will reset all the flip flops.
 <div style="text-align:center"><img src="../assets/images/decade_counter.png" height="300"/></div>
@@ -88,39 +88,39 @@ The JA and KA inputs of FF-A are tied to logic 1. So FF-A will work as a toggle 
 
 <div style="text-align:center"><img src="../assets/images/4bit_up_counter.png" height="300"/></div>
 
-<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/93827" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/93827" id="counter_05" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
 <br>
 
 * **4 bit synchronous down counter:** Down counter counts the numbers in decreasing order i.e from 15 to 0.
 
 <div style="text-align:center"><img src="../assets/images/4bit_down_counter.png" height="300"/></div>
-<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/94149" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/94149" id="counter_06" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
 <br>
 
 * **4 bit synchronous up/down counter:** This counter has two modes of counting i.e. up counting and down counting. There is a mode switch which switches between the two modes of the counter. When the mode M = 0 it counts up & when mode M = 1 then it counts down.
 
 <div style="text-align:center"><img src="../assets/images/4bit_up_down_counter.png" height="300"/></div>
-<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/94144" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/94144" id="counter_07" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
 <br>
 
 * **4-Bit synchronous decade counter:** A BCD decade counter exhibits a truncated binary sequence and goes from 0000 through the
 1001 state. Rather than going from the 1001 state to the 1010 state, it recycles to the 0000 state. 
 
 <div style="text-align:center"><img src="../assets/images/4Bit_Synchronous_Decade_Counter.jpg" height="300"/></div>
-<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/94302" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/94302" id="counter_08" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
 <br>
 
 * **Ring counter:** The ring counter is a application of shift register, in which the output of last flip flop is connected to input of first flip flop. In ring counter if the output of any flip flop is 1, then the output of remaining flip flops is 0. The Ring counters transfers the same output throughout the circuit.
 
 <div style="text-align:center"><img src="../assets/images/ring_counter.png" height="300"/></div>
 <br>
-<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/97207" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/97207" id="counter_09" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 * **Johnson's counter or twisted ring counter:** The Johnson counter is a modification of ring counter. In this the inverted output of the last stage flip flop is connected to the input of first flip flop. If we use n flip flops to design the Johnson counter, it is known as 2n bit Johnson counter or Mod 2n Johnson counter.
 
 <div style="text-align:center"><img src="../assets/images/johnson's_counter.png" height="300"/></div>
 <br>
-<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/97199" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/97199" id="counter_10" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ### Logical diagram
 

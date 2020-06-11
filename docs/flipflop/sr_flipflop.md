@@ -56,4 +56,4 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
           Q(t + 1) = S + R'.Q(t)
 ```
 
-<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/12264" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/12264" id="sr_flipflop_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
