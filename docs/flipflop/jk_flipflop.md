@@ -55,4 +55,4 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
           Q(t + 1) = J.Q(t)' + K'.Q(t)
 ```
 
-<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/12263" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/12263" id="jk_flipflop_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
