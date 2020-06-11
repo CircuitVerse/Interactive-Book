@@ -34,7 +34,7 @@ You have now bounded the `A` and `B` variables to the vertical axis, and `C` and
 ## Enumeration and gray codes
 When enumerating through the variable input combinations for the bound axis, we take advantage of _reflected binary code order_, otherwise known as grey codes. If we observe, we can notice that from one combination to another, we only vary by one bit. That is:
 
-``` markdown
+``` yml
 ... 00 01 11 10 00 01 11 10 00 ...
     ^   ^ ^   ^ ^   ^ ^   ^ ^
 ```
@@ -48,7 +48,7 @@ The main idea for how Karnaugh Maps can be used to simplify expressions is to gr
 
 For this example, let `F(ABCD) = CELL`. start with the expression `F(0000) = 1` and `F(0001) = 1`. However, notice that _regardless_ of the value of the last bit, you still get `1`. Hence, let's take a look at the SOP expressions:
 
-```markdown
+```yml
 F(ABCD) = A'B'C'D' + A'B'C'D
 F(0000) = 1
 F(0001) = 1
@@ -71,7 +71,7 @@ Extending the idea of isolating changing bits that retain a consistent value, we
 ![](../assets/images/map3.png)
 
 Letting `F(ABCD) = CELL`:
-```markdown
+```yml
 F(0000) = 1
 F(0001) = 1
 F(0100) = 1
@@ -80,7 +80,7 @@ F(0101) = 1
 
 Observe that the bits do not change by one for all pairs of numbers, for example, `{0000, 0101}` differ by two bits. However, you can take advantage of the fact that for any bit change horizontally or vertically, it's irrelevant what that bit is. More concretely, take a look at the following example.
 
-```markdown
+```yml
 0000 0001
 0100 0101
 
@@ -103,14 +103,14 @@ Consider the following example:
 ![](../assets/images/map4.png)
 
 The algorithm follows precisely as it did before, except that now the two groups are joined in the SOP expression. Letting `F(ABCD) = CELL`:
-```markdown
+```yml
 F(0000) = 1
 F(0001) = 1
 F(1111) = 1
 F(1011) = 1
 ```
 This yields the following:
-```markdown
+```yml
 A'B'C'D' + A'B'C'D + ABCD + AB'CD
 Breaking down the expression:
 (A'B'C'D' + A'B'C'D) + (ABCD + AB'CD)
@@ -137,18 +137,18 @@ In this example, at `F(0000)`, you can create a grouping of size 2 (because 2 is
 
 To resolve the groupings into an SOP expression, iterate through the groups and identify changing bits:
 
-```markdown
-Group #1 => F(ABCD) = [0000, 0001]
-Group #2 => F(ABCD) = [0001, 0011]
+```yml
+Group 1: F(ABCD) = [0000, 0001]
+Group 2: F(ABCD) = [0001, 0011]
 
-For Group #1:
+For Group 1:
 0000 0001
    ^    ^
 F(ABCD) = A'B'C'D' + A'B'C'D
 => A'B'C'(D + D')
 => A'B'C'
 
-For Group #2:
+For Group 2:
 0001 0011
   ^    ^
 F(ABCD) = A'B'C'D + A'B'CD
@@ -171,11 +171,11 @@ This grouping state is optimal. However, consider adding a `1` to `F(1111)`.
 
 Following the previous algorithm, iterating top-bottom and left-right, when getting to `F(0110)`, the algorithm can choose to make the largest grouping. However, there are two possible groupings:
 
-```markdown
-Candidate #1:
+```yml
+Candidate 1:
 F(ABCD) = [0011, 0010, 0111, 0110]
 
-Candidate #2:
+Candidate 2:
 F(ABCD) = [0111, 0110, 1111, 1110]
 ```
 

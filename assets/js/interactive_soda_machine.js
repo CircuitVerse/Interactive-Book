@@ -182,25 +182,25 @@ soda_machine_fsm.initialize = function() {
 	paper.text(175,290,'soda').attr({'font-size':'20'});
 
 	//Arrow Labels
-	paper.text(175,60,'01').attr({'font-size':'20'});
-	paper.text(375,60,'00').attr({'font-size':'20'});
-	paper.text(575,60,'01').attr({'font-size':'20'});
-	paper.text(775,60,'00').attr({'font-size':'20'});
-	paper.text(375,-15,'10').attr({'font-size':'20'});
-	paper.text(95,30,'00').attr({'font-size':'20','text-anchor': 'start'});
-	paper.text(295,30,'01,10').attr({'font-size':'20','text-anchor': 'start'});
-	paper.text(495,30,'00').attr({'font-size':'20','text-anchor': 'start'});
-	paper.text(695,30,'01,10').attr({'font-size':'20','text-anchor': 'start'});
-	paper.text(895,30,'00').attr({'font-size':'20','text-anchor': 'start'});
-	paper.text(575,150,'10').attr({'font-size':'20'});
-	paper.text(775,155,'10').attr({'font-size':'20'});
-	paper.text(900,185,'01').attr({'font-size':'20'});
-	paper.text(950,220,'01,10').attr({'font-size':'20'});
-	paper.text(525,330,'00').attr({'font-size':'20'});
-	paper.text(525,185,'01,10').attr({'font-size':'20'});
-	paper.text(475,210,'00').attr({'font-size':'20'});
-	paper.text(275,210,'00,01,10').attr({'font-size':'20'});
-	paper.text(130,180,'00,01,10').attr({'font-size':'20'});
+	paper.text(175,60,'01').attr({'font-size':'20', 'fill': '#777'});
+	paper.text(375,60,'00').attr({'font-size':'20', 'fill': '#777'});
+	paper.text(575,60,'01').attr({'font-size':'20', 'fill': '#777'});
+	paper.text(775,60,'00').attr({'font-size':'20', 'fill': '#777'});
+	paper.text(375,-15,'10').attr({'font-size':'20', 'fill': '#777'});
+	paper.text(95,30,'00').attr({'font-size':'20','text-anchor': 'start', 'fill': '#777'});
+	paper.text(295,30,'01,10').attr({'font-size':'20','text-anchor': 'start', 'fill': '#777'});
+	paper.text(495,30,'00').attr({'font-size':'20','text-anchor': 'start', 'fill': '#777'});
+	paper.text(695,30,'01,10').attr({'font-size':'20','text-anchor': 'start', 'fill': '#777'});
+	paper.text(895,30,'00').attr({'font-size':'20','text-anchor': 'start', 'fill': '#777'});
+	paper.text(575,150,'10').attr({'font-size':'20', 'fill': '#777'});
+	paper.text(775,155,'10').attr({'font-size':'20', 'fill': '#777'});
+	paper.text(900,185,'01').attr({'font-size':'20', 'fill': '#777'});
+	paper.text(950,220,'01,10').attr({'font-size':'20', 'fill': '#777'});
+	paper.text(525,330,'00').attr({'font-size':'20', 'fill': '#777'});
+	paper.text(525,185,'01,10').attr({'font-size':'20', 'fill': '#777'});
+	paper.text(475,210,'00').attr({'font-size':'20', 'fill': '#777'});
+	paper.text(275,210,'00,01,10').attr({'font-size':'20', 'fill': '#777'});
+	paper.text(130,180,'00,01,10').attr({'font-size':'20', 'fill': '#777'});
 
 	update();
   }
@@ -267,11 +267,11 @@ soda_machine_graphics.initialize = function () {
 	  sodas[i].transform(['t','0',-35*i]);
 	}
 
-	cover = paper.rect(10,0,320,79).attr({'stroke': 'none', 'fill':'white'});
+	cover = paper.rect(10,0,320,79).attr({'stroke': 'none', 'fill':'#DDD'});
 
 	//soda machine box
 	paper.path("M10,80 l400,0 l0,250 l55,0 l0,-250 l145,0 l0,300 l-600,0 Z").attr({'stroke-width': '2'});
-	paper.rect(466,115,100,50).attr({'stroke-width': '2'});
+	paper.rect(466,115,100,50).attr({'stroke-width': '2', 'fill':'#DDD'});
 	paper.path("M100,320 l0,10 l 100,0 l0,-10").attr({'stroke-width': '2'});
 	paper.path("M250,320 l0,10 l 100,0 l0,-10").attr({'stroke-width': '2'});
 	paper.path("M125,80 l0,170 ").attr({'stroke-width': '2'});

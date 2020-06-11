@@ -5,7 +5,14 @@ nav_order: 2
 ---
 
 # Binary numbers
-{: .no_toc }
+{: .no_toc}
+
+## Table of contents
+{: .no_toc .text-delta }
+ 
+1. TOC
+{:toc}
+
 
 ---
 
@@ -24,7 +31,11 @@ Binary Number :: 11001
 
 ---
 
+## Binary counting
+
 ### How do we count using binary?
+{: .no_toc}
+
 It is just like counting in decimal except we reach 10 much sooner.
 
 
@@ -36,7 +47,8 @@ It is just like counting in decimal except we reach 10 much sooner.
 | ???          | But then there is no symbol for 2 ... what to do?  |
 
 
-#### Well how do we count in decimal?
+### Well how do we count in Decimal?
+{: .no_toc}
 
 | Decimal       | Explanation            |
 |:-------------:|:----------------------:|
@@ -46,7 +58,8 @@ It is just like counting in decimal except we reach 10 much sooner.
 | 9            | This is the **last digit** in Decimal|
 |**1**0        | Start from back at **0** again, but carry **1** on the left|
 
-#### The same thing is done in binary ...
+### The same thing is done in Binary ...
+{: .no_toc}
 
 | Binary       | Explanation            |
 |:------------:|:----------------------:|
@@ -57,7 +70,8 @@ It is just like counting in decimal except we reach 10 much sooner.
 |???         | But NOW what ... ?|
 
 
-#### What happens in decimal?
+### What happens in Decimal?
+{: .no_toc}
 
 
 | Decimal       | Explanation            |
@@ -65,7 +79,8 @@ It is just like counting in decimal except we reach 10 much sooner.
 |	99	 |	When you run out of digits, ...|
 |	100	 |	... start from back at **0** again, but carry **1** on the left|
 
-#### And that is what is done in binary ...
+### And that is what is done in Binary ...
+{: .no_toc}
 
 
 | Binary     | Explanation   |
@@ -80,9 +95,9 @@ It is just like counting in decimal except we reach 10 much sooner.
 | 111        | |
 | **1**000   |Start back at 0 again (for all 3 digits), add 1 on the left|
 
-## See how it is done in this little demonstration
+## Binary to decimal demonstration
 ---
-Let's tell you something more about conversion. Conversion from Decimal to Binary is quite a simple task.
+Let's tell you something more about conversion. Conversion from Binary to Decimal is quite a simple task.
 All you need to do is begin from the right. Follow the steps below:
 - STEP 1 :: 
 Write the decimal value of each digit on top of them respectively. The value which you seek to write is
@@ -104,11 +119,9 @@ Further, the respective binary digit is multiplied with the value present on top
 In this Case ::
 1x16 + 1x8 + 0x4 + 0x2 + 1x1 = 25 which is the decimal equivalent of the binary number 11001
 ```
-<p>Click on the '0' to change it to '1' and vice-versa</p>
 
-{% include binary.html %}
+## Signed and unsigned numbers
 
-### Signed and unsigned numbers
 Currently, we have just looked at **unsigned** numbers - they can only be positive, as there is no sign.
 However, sometimes we need to work with **negative numbers** too. To do this, we add a **sign bit** on the far left of the binary number, which indicates whether the number is positive (`0`) or negative(`1`).
 
@@ -119,6 +132,14 @@ For example, the number `10000011` would be `131` if the number is **unsigned**,
 The downside to using a signed number is that it removes one bit from the actual number representation, halving the maximum value.
 - The minimum and maximum values for an `unsigned 8-bit` number would be `0` to `2^8-1` (`0` to `255`)
 - The minimum and maximum values for a `signed 8-bit` number would be `-2^7-1` to `2^7-1` (`-127` to `127`)
+
+
+
+
+<h2>Use the Simulator below to get the decimal equivalent of a binary number</h2>
+<p>Click on the '0' to change it to '1' and vice-versa</p>
+
+{% include binary.html %}
 
 
 {:.quiz}
