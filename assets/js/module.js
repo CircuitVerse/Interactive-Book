@@ -15,13 +15,11 @@ function toggle_bitc(column)
     document.getElementById("decimal1").innerHTML = decimal1;
 }
 
-
-
-
 var bit = new Array(16);
 var bit_display = new Array(2);
 bit_display[false] = "0";
 bit_display[true] = "1";
+bit.fill(false);
 
 function set_bits()
 {
@@ -76,7 +74,7 @@ function do_bitwise(operator)
 {
     var decimal = 0;
     var bit_value;
-
+    
     for(var i=0; i < 8; i++)
     {
         switch(operator)
