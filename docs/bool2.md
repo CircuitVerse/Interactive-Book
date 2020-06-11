@@ -331,11 +331,11 @@ Let's consider the following truth-table:
 
 We observe that we have a _don't-care_. Let's observe the differences in cases for `F(1,0)`:
 
-```markdown
-Case #1: F(1, 0) = 0
+```yml
+Case 1: F(1, 0) = 0
 => F(AB) = A'B' + A'B + AB
 
-Case #2: F(1, 0) = 1
+Case 2: F(1, 0) = 1
 => F(AB) = A'B' + A'B + AB' + AB
 
 Simplifying the cases...
