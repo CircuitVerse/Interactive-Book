@@ -50,4 +50,4 @@ It shows that each output is 1 for only a specific combination of inputs.
 <div style="text-align:center"><img src="../../assets/images/two_fourdecoder_logiccircuit.jpg" /></div>
 
 
-<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/763" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/763" id="decoder_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>

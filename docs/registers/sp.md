@@ -32,5 +32,5 @@ nav_order: 2
 
 <div style="text-align:center"><img src="../../assets/images/sipo_blockdiagram.jpg" /></div>
 
-<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/93880" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/93880" id="sp_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 

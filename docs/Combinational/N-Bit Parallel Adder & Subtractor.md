@@ -57,4 +57,4 @@ If A > B Cout = 0 and the result of binary form (A-B) then Cout = 1 and the resu
 
 ## 8-bit full adder and subtractor   
 
-<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/2018" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/2018" id="nbit_parallel_adder_subtractor_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>

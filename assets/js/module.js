@@ -2,6 +2,7 @@ var bit1 = new Array(8);
 var bit1_display = new Array(2);
 bit1_display[false] = "0";
 bit1_display[true] = "1";
+var operator = "OR";
 
 function toggle_bitc(column)
 {
@@ -11,16 +12,14 @@ function toggle_bitc(column)
     {
         if(bit1[i]) { decimal1 = decimal1 + Math.pow(2, i); }
     }
-    document.getElementById("decimal1").innerHTML = " = " + decimal1;
+    document.getElementById("decimal1").innerHTML = decimal1;
 }
-
-
-
 
 var bit = new Array(16);
 var bit_display = new Array(2);
 bit_display[false] = "0";
 bit_display[true] = "1";
+bit.fill(false);
 
 function set_bits()
 {
@@ -54,27 +53,31 @@ function toggle_bit(column)
     }
     document.getElementById("value_A").value = decimal&255;
     document.getElementById("value_B").value = Math.floor(decimal/256);
-    do_bitwise();
+    do_bitwise(operator);
 }
 
-function change_operator()
+function change_operator(oper, ind)
 {
-    var ops = document.getElementsByClassName("opcol");
-    for (var i=0; i < ops.length; i++)
-    {
-        ops[i].innerHTML = document.getElementById("operator").value;
+    var tab =  document.querySelectorAll( '.oper' );
+    for(var i=0; i<tab.length; i++){
+        if(tab[i].classList.contains('active_oper')){
+            tab[i].classList.remove('active_oper');
+        }
     }
-    do_bitwise();
+    tab[ind].classList.add('active_oper');
+    document.getElementsByClassName('active_operation')[0].innerHTML = oper;
+    operator = oper;
+    do_bitwise(operator);
 }
 
-function do_bitwise()
+function do_bitwise(operator)
 {
     var decimal = 0;
     var bit_value;
-
+    
     for(var i=0; i < 8; i++)
     {
-        switch(document.getElementById("operator").value)
+        switch(operator)
         {
             case "AND":
                 bit_value = bit[i]&bit[i+8];
@@ -89,7 +92,7 @@ function do_bitwise()
         document.getElementById(i+16).innerHTML = bit_display[bit_value==true];
         if(bit_value) { decimal = decimal + Math.pow(2, i); }
     }
-    document.getElementById("result").innerHTML = " = " + decimal;
+    document.getElementById("result").innerHTML = decimal;
 }
 
 
@@ -1522,8 +1525,8 @@ function KarnaughMapDataCtrl(qmcRef) {
     this.fieldLines = -1;
     this.fieldPerLine = -1;
     this.fieldBorder = -1;
-    this.fieldHeight = 40;
-    this.fieldWidth = 40;
+    this.fieldHeight = 80;
+    this.fieldWidth = 80;
     this.qmc = qmcRef;
     this.fields = new Array();
     this.blocks = new Array();
@@ -1909,7 +1912,7 @@ function KarnaughMap(parentDivId, qmcRef) {
 
         if (true) {
             var text2 = document.createElementNS(svgns, 'text');
-            text2.setAttribute("fill", "#909090");
+            text2.setAttribute("fill", "#000");
             text2.setAttribute("text-anchor", "start");
             text2.setAttribute("font-family", "sans-serif");
             text2.setAttribute("font-size", "10");
