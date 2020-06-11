@@ -19,64 +19,66 @@ nav_order: 14
 
 Before getting into the _race around condition_, let us have a look at the JK flip-flop's truth table.
 
-<table>
-    <thead>
-        <tr>
-            <th rowspan="6"> Clock Input </th>
-            <th colspan="2"> Inputs </th>
-            <th colspan="2"> Outputs </th>
-            <th rowspan="6"> Comments </th>
+<div style="overflow: auto">
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="6"> Clock Input </th>
+                <th colspan="2"> Inputs </th>
+                <th colspan="2"> Outputs </th>
+                <th rowspan="6"> Comments </th>
+            </tr>
+            <tr>
+                <th style="border-left: 1px solid #eeebee"> J </th>
+                <th> K </th>
+                <th> Q </th>
+                <th> Q' </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> 0 </td>
+                <td> X </td>
+                <td> X </td>
+                <td> Same as previous </td>
+                <td> Same as previous </td>
+                <td> No change </td>
+            </tr>
+            <tr>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> Same as previous </td>
+                <td> Same as previous </td>
+                <td> No change </td>
         </tr>
-        <tr>
-            <th style="border-left: 1px solid #eeebee"> J </th>
-            <th> K </th>
-            <th> Q </th>
-            <th> Q' </th>
+            <tr>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> Reset </td>
         </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td> 0 </td>
-            <td> X </td>
-            <td> X </td>
-            <td> Same as previous </td>
-            <td> Same as previous </td>
-            <td> No change </td>
+            <tr>
+                <td> 1 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> Set </td>
         </tr>
-        <tr>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> Same as previous </td>
-            <td> Same as previous </td>
-            <td> No change </td>
-       </tr>
-        <tr>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> Reset </td>
-       </tr>
-        <tr>
-            <td> 1 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> Set </td>
-       </tr>
-        <tr>
-            <td> 1 </td>
-            <td> 1 </td>
-            <td> 1 </td>
-            <td> Opposite of previous </td>
-            <td> Opposite of previous </td>
-            <td> Toggle </td>
-       </tr>
-    </tbody>
-</table>
+            <tr>
+                <td> 1 </td>
+                <td> 1 </td>
+                <td> 1 </td>
+                <td> Opposite of previous </td>
+                <td> Opposite of previous </td>
+                <td> Toggle </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
 
 
 Here, Q is the present state and Q' is the next state. 
