@@ -30,31 +30,33 @@ A de-multiplexer is equivalent to a single pole multiple way switch as shown in 
 {: .no_toc }
  
 `Enable(E) = 1`
-<table style="overflow: auto">
-    <thead>
-        <tr>
-            <th colspan="1"> Input </th>
-            <th colspan="2"> Output </th>
-        </tr>
-        <tr>
-            <th> S0 </th>
-            <th> Y1 </th>
-            <th> Y0 </th>
-        </tr>
-    </thead>
-    <tbody style="text-align: center">
-        <tr>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-        </tr>
-        <tr>
-            <td> 1 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-        </tr>
-    </tbody>
-</table>
+<div id="table">
+    <table>
+        <thead>
+            <tr>
+                <th colspan="1"> Input </th>
+                <th colspan="2"> Output </th>
+            </tr>
+            <tr>
+                <th> S0 </th>
+                <th> Y1 </th>
+                <th> Y0 </th>
+            </tr>
+        </thead>
+        <tbody style="text-align: center">
+            <tr>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+            </tr>
+            <tr>
+                <td> 1 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/756" id="demux_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
@@ -65,56 +67,58 @@ A de-multiplexer is equivalent to a single pole multiple way switch as shown in 
 {: .no_toc }
 
 `Enable(E) = 1`
-<table style="overflow: auto">
-    <thead>
-        <tr>
-            <th colspan="2"> Input </th>
-            <th colspan="4"> Output </th>
-        </tr>
-        <tr>
-            <th> S1 </th>
-            <th> S0 </th>
-            <th> Y3 </th>
-            <th> Y2 </th>
-            <th> Y1 </th>
-            <th> Y0 </th>
-        </tr>
-    </thead>
-    <tbody style="text-align: center">
-        <tr>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-        </tr>
-        <tr>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-        </tr>
-        <tr>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-        </tr>
-        <tr>
-            <td> 1 </td>
-            <td> 1 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-        </tr>
-    </tbody>
-</table>
+<div id="table">
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2"> Input </th>
+                <th colspan="4"> Output </th>
+            </tr>
+            <tr>
+                <th> S1 </th>
+                <th> S0 </th>
+                <th> Y3 </th>
+                <th> Y2 </th>
+                <th> Y1 </th>
+                <th> Y0 </th>
+            </tr>
+        </thead>
+        <tbody style="text-align: center">
+            <tr>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+            </tr>
+            <tr>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+            </tr>
+            <tr>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+            </tr>
+            <tr>
+                <td> 1 </td>
+                <td> 1 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/44768" id="demux_02" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
@@ -124,133 +128,135 @@ A de-multiplexer is equivalent to a single pole multiple way switch as shown in 
 {: .no_toc }
 
 `Enable(E) = 1`
-<table style="overflow: auto">
-    <thead>
-        <tr>
-            <th colspan="3"> Input </th>
-            <th colspan="8"> Output </th>
-        </tr>
-        <tr>
-            <th> S2 </th>
-            <th> S1 </th>
-            <th> S0 </th>
-            <th> Y7 </th>
-            <th> Y6 </th>
-            <th> Y5 </th>
-            <th> Y4 </th>
-            <th> Y3 </th>
-            <th> Y2 </th>
-            <th> Y1 </th>
-            <th> Y0 </th>
-        </tr>
-    </thead>
-    <tbody style="text-align: center">
-        <tr>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-        </tr>
-        <tr>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-        </tr>
-        <tr>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-        </tr>
-        <tr>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-        </tr>
-        <tr>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-        </tr>
-        <tr>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-        </tr>
-        <tr>
-            <td> 1 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-        </tr>
-        <tr>
-            <td> 1 </td>
-            <td> 1 </td>
-            <td> 1 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-        </tr>
-    </tbody>
-</table>
+<div id="table">
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3"> Input </th>
+                <th colspan="8"> Output </th>
+            </tr>
+            <tr>
+                <th> S2 </th>
+                <th> S1 </th>
+                <th> S0 </th>
+                <th> Y7 </th>
+                <th> Y6 </th>
+                <th> Y5 </th>
+                <th> Y4 </th>
+                <th> Y3 </th>
+                <th> Y2 </th>
+                <th> Y1 </th>
+                <th> Y0 </th>
+            </tr>
+        </thead>
+        <tbody style="text-align: center">
+            <tr>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+            </tr>
+            <tr>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+            </tr>
+            <tr>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+            </tr>
+            <tr>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+            </tr>
+            <tr>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+            </tr>
+            <tr>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+            </tr>
+            <tr>
+                <td> 1 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+            </tr>
+            <tr>
+                <td> 1 </td>
+                <td> 1 </td>
+                <td> 1 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/44769" id="demux_03" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
@@ -261,389 +267,391 @@ A 1 : 16 demultiplexer can be implemented using **two** 1 : 8 demultiplexers.
 {: .no_toc }
 
 `Enable(E) = 1`
-<table style="overflow: auto">
-    <thead>
-        <tr>
-            <th colspan="4"> Input </th>
-            <th colspan="16"> Output </th>
-        </tr>
-        <tr>
-            <th> S3 </th>
-            <th> S2 </th>
-            <th> S1 </th>
-            <th> S0 </th>
-            <th> Y15 </th>
-            <th> Y14 </th>
-            <th> Y13 </th>
-            <th> Y12 </th>
-            <th> Y11 </th>
-            <th> Y10 </th>
-            <th> Y9 </th>
-            <th> Y8 </th>
-            <th> Y7 </th>
-            <th> Y6 </th>
-            <th> Y5 </th>
-            <th> Y4 </th>
-            <th> Y3 </th>
-            <th> Y2 </th>
-            <th> Y1 </th>
-            <th> Y0 </th>
-        </tr>
-    </thead>
-    <tbody style="text-align: center">
-        <tr>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-        </tr>
-        <tr>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-        </tr>
-        <tr>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-        </tr>
-        <tr>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-        </tr>
-        <tr>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-        </tr>
-        <tr>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-        </tr>
-        <tr>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-        </tr>
-        <tr>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 1 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-        </tr>
-        <tr>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-        </tr>
-        <tr>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-        </tr>
-        <tr>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-        </tr>
-        <tr>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-        </tr>
-        <tr>
-            <td> 1 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-        </tr>
-        <tr>
-            <td> 1 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-        </tr>
-        <tr>
-            <td> 1 </td>
-            <td> 1 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-        </tr>
-        <tr>
-            <td> 1 </td>
-            <td> 1 </td>
-            <td> 1 </td>
-            <td> 1 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-        </tr>
-    </tbody>
-</table>
+<div id="table">
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4"> Input </th>
+                <th colspan="16"> Output </th>
+            </tr>
+            <tr>
+                <th> S3 </th>
+                <th> S2 </th>
+                <th> S1 </th>
+                <th> S0 </th>
+                <th> Y15 </th>
+                <th> Y14 </th>
+                <th> Y13 </th>
+                <th> Y12 </th>
+                <th> Y11 </th>
+                <th> Y10 </th>
+                <th> Y9 </th>
+                <th> Y8 </th>
+                <th> Y7 </th>
+                <th> Y6 </th>
+                <th> Y5 </th>
+                <th> Y4 </th>
+                <th> Y3 </th>
+                <th> Y2 </th>
+                <th> Y1 </th>
+                <th> Y0 </th>
+            </tr>
+        </thead>
+        <tbody style="text-align: center">
+            <tr>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+            </tr>
+            <tr>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+            </tr>
+            <tr>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+            </tr>
+            <tr>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+            </tr>
+            <tr>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+            </tr>
+            <tr>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+            </tr>
+            <tr>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+            </tr>
+            <tr>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 1 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+            </tr>
+            <tr>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+            </tr>
+            <tr>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+            </tr>
+            <tr>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+            </tr>
+            <tr>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+            </tr>
+            <tr>
+                <td> 1 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+            </tr>
+            <tr>
+                <td> 1 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+            </tr>
+            <tr>
+                <td> 1 </td>
+                <td> 1 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+            </tr>
+            <tr>
+                <td> 1 </td>
+                <td> 1 </td>
+                <td> 1 </td>
+                <td> 1 </td>
+                <td> 1 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+                <td> 0 </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/44796" id="demux_04" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
