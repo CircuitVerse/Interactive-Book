@@ -78,7 +78,10 @@ thead {
 }
 
 #table {
-  margin-bottom: $sp-5;
   overflow-x: auto;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.07), 0 4px 14px rgba(0, 0, 0, 0.05);
+
+  table {
+    margin-bottom: 0;
+  }
 }
