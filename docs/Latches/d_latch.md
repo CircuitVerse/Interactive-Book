@@ -5,7 +5,16 @@ parent: Latches
 nav_order: 2
 ---
 
-## D latch
+# D latch
+{: .no_toc}
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+ 
+## Introduction
 
 There is one drawback of SR Latch. That is the next state value can’t be predicted when both the inputs S & R are one. So, you can overcome this difficulty by D Latch. It is also called as Data Latch. The circuit diagram of D Latch is shown in the following figure.
 
@@ -17,8 +26,7 @@ This circuit has single input D and two outputs Q(t) & Q(t)’. D Latch is obtai
 
 * If D = 1 → S = 1 & R = 0, then next state Q(t + 1) will be equal to ‘1’ irrespective of present state, Q(t) values. This is corresponding to the third row of SR Latch state table.
 
-The following table shows the state table of D latch.
-
+## State table
 
 | D      | Q(t + 1)    |
 |:------:|:-----:|

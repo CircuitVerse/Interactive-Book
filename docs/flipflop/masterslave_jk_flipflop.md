@@ -6,6 +6,7 @@ nav_order: 5
 ---
 
 # Master-slave JK flip-Flop
+{: .no_toc}
 
 ## Table of contents
 {: .no_toc .text-delta }
