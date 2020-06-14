@@ -34,7 +34,7 @@
         align-items: center;
         justify-content: space-around;
       }
-      
+
       #stateTable > .button-set {
         margin: 1em 0;
       }
@@ -66,12 +66,11 @@
         width: 100%;
       }
 
-      #table_container{
+      #table_container {
         overflow-x: auto;
-              white-space: nowrap;
-              margin-bottom: 30px;
+        white-space: nowrap;
+        margin-bottom: 30px;
       }
-      
     </style>
 
     <script src="../assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -168,9 +167,7 @@
         </div>
 
         <div class="init" id="stateTable">
-          <div
-            id="table_container"
-          ></div>
+          <div id="table_container"></div>
           <div id="stateDesc"></div>
           <div class="button-set">
             <button type="button" id="restart">Generate Another</button>
@@ -341,7 +338,6 @@
               flag = i;
               break;
             } else {
-              //alert(inp[i].id + ":" + inp[i].value);
               flipflops[inp[i].id] = inp[i].value;
             }
           }
@@ -420,14 +416,6 @@
           );
 
           var table = "<p><table class='table'><thead>";
-
-          // //table += "<th colspan=" + flipflopCount + ">Present State</th><th colspan=" + inputCount + ">Input</th><th colspan=" + flipflopCount + ">Next State</th><th colspan=" + flipflops.length + ">FlipFlop Inputs</th>";
-          // table += "<th>Present State</th><th>Input</th><th>Next State</th><th>FlipFlop Inputs</th>";
-          // if (outputCount == 1) {
-          // table += "<th>Output</th></thead>";
-          // }
-
-          //table += "<tbody><tr>";
 
           for (var j = 0; j < output.length; j++) {
             table += "<th>" + output[j].col + "</th>";
