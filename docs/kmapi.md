@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Interactive Karnaugh map
-nav_order: 7
+nav_order: 8
 ---
 
 # Interactive Karnaugh map

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Digital registers
-nav_order: 14
+nav_order: 18
 has_children: true
 permalink: /docs/register
 ---

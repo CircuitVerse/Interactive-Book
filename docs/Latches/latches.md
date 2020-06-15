@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Latches
-nav_order: 12
+nav_order: 15
 has_children: true
 permalink: /docs/Latches
 ---

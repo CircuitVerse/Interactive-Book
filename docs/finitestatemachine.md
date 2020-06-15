@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  Finite state machines
-nav_order: 17
+nav_order: 21
 ---
 
 ## Table of contents

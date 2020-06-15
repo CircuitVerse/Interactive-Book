@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  Application of shift registers
-nav_order: 15
+nav_order: 19
 ---
 
 # Applications of shift registers
