@@ -31,7 +31,7 @@ Now let's see how they can be used alone or in combination with other ICs in var
 Next, let us have a look at some MSI Components one by one.
 
 1. [Multiplexers](https://learn.circuitverse.org/docs/MSI/mux.html)
-2. [DeMultiplexers](https://learn.circuitverse.org/docs/MSI/demux.html)
+2. [Demultiplexers](https://learn.circuitverse.org/docs/MSI/demux.html)
 3. [Encoder](https://learn.circuitverse.org/docs/MSI/encoder.html)
 4. [Decoder](https://learn.circuitverse.org/docs/MSI/decoder.html)
 
