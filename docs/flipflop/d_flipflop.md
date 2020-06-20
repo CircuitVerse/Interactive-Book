@@ -5,6 +5,7 @@ parent: Flip-flops
 nav_order: 2
 ---
 # D flip-flop
+{: .no_toc}
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -21,7 +22,7 @@ D flip-flop operates with only positive clock transitions or negative clock tran
 This circuit has single input D and two outputs Q(t) & Q(t)’. The operation of D flip-flop is similar to D Latch. But, this flip-flop affects the outputs only when positive transition of the clock signal is applied instead of active enable.
 
 
-## State table of D flip-flop.
+## State table
 
 | D    |    Q(t+1) | 
 |:-------|:--------|

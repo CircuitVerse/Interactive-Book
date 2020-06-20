@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Clock signal and triggering
-nav_order: 10
+nav_order: 12
 ---
 
 # Clock signal and triggering

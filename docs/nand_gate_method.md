@@ -49,7 +49,7 @@ Thus, by applying De Morgan's Law:
 F = ((AB' + C'D)')'
   = ((AB')' . (C'D)')' 
 ```
-The boolean expression is now standardized such that it can completely be represented by a NAND gate are every input level.
+The boolean expression is now standardized such that it can completely be represented by a NAND gate at every input level.
 
 ### Step 3: Construct the NAND circuit
 Now that you have gotten the boolean expression to the required standard, you can implement it as a NAND circuit.

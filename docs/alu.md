@@ -1,7 +1,7 @@
 ---
 layout: default
 title: ALU
-nav_order: 9
+nav_order: 11
 ---
 
 # ALU

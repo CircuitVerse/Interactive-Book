@@ -1,359 +1,489 @@
-
 <html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<head>
-		<meta charset="utf-8">
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .init {
+        position: absolute;
+        left: -9999px;
+      }
 
-		<style>
-			body {
-				padding-top:50px;
-				padding-bottom:20px;
-			}
-			
-			.init {
-				position:absolute;
-				left:-9999px;
-			}
-		</style>
+      .gen-container {
+        display: flex;
+        flex-direction: column;
+      }
 
+      .gen-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+      }
 
-		<script src="../assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-	</head>
-	<body>
-		<div class="container-fluid">
-			<div class="container">
+      .button-set > button {
+        min-width: 8em;
+        padding: 0.6em 1em;
+        margin: 0 0.6em;
+      }
 
-				<div class="row">
-					<p>
-						<h1 class="title">State Table Generator</h1>
-					</p>
+      .button-set {
+        margin: 0 0 1em;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
 
-				</div>
-				<div class="row" id="about">
-					<p>
-						"A <i>State Table</i> is a tabular representation of the time sequence of inputs, outputs, and flip-flop states. The table consists of four sections marked as <i>present table</i>, <i>next state</i>, and the <i>output</i>. The present-state section shows the states of flip-flops at any given time t. The input section gives a value for each possible present state. The next-state section lists the state of flip-flops one clock period later at time t + 1. Lastly, the output section gives the value for each present state."
-					</p>
-					<p>
-						<h4>Press <strong>&nbsp;f&nbsp;</strong> to begin.</h4>
-					</p>
-				</div>
-				<div class="row init" id="step1">
-					<br />
-					<p>
-						<strong>STEP 1. </strong>Provide the following.&nbsp;&nbsp;
-						<button type="button" id="confirmStep1">
-							Next
-						</button>
-						<br />
-						<br />
-						<select id="flipflop" class="required">
-							<option value="f0">FLIP-FLOP TYPE</option>
-							<option value="JK">JK</option>
-							<option value="RS">RS</option>
-							<option value="D">D</option>
-							<option value="T">T</option>
-						</select>
-						&nbsp;&nbsp;
-						<select id="flipflopCount" class="required">
-							<option value="c0">FLIP-FLOP COUNT</option>
-							<option value="c1">1</option>
-							<option value="c2">2</option>
-						</select>
-						&nbsp;&nbsp;
-						<select id="input" class="required">
-							<option value="i0">INPUT COUNT</option>
-							<option value="i1">1</option>
-							<option value="i2">2</option>
-						</select>
-						&nbsp;&nbsp;
-						<select id="output" class="required">
-							<option value="o0">OUTPUT</option>
-							<option value="o1">YES</option>
-							<option value="o2">NO</option>
-						</select>
-					</p>
-				</div>
+      #stateTable > .button-set {
+        margin: 1em 0;
+      }
 
-				<div class="row init" id="step2">
-					<p>
-						<br />
-						<strong>STEP 2. </strong>
-						Input the required flip-flop input/output functions.&nbsp;&nbsp;
-						<button type="button" id="backToStep1">
-							Back
-						</button>
-						&nbsp;
-						<button type="button" id="confirmStep2">
-							Next
-						</button>
-						<br/>
-						<br/>
-					</p>
-					<p class="form-inline"></p>
-				</div>
-				<div class="row init" id="summary">
-					<div id="summa"></div>
-					<p>
-						Feel free to review your input before generating your state table.&nbsp;&nbsp;
-						<button type="button" id="backToStep2">
-							Back
-						</button>
-						&nbsp;
-						<button type="button" id="confirmSummary">
-							Confirm
-						</button>
-					</p>
-				</div>
-				<div class="row init" id="stateTable">
-					<div id="table_container" style="overflow-x: scroll; white-space: nowrap; margin-bottom: 30px;"></div>
-				</div>
+      .form-input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+        margin: 1em 0;
+      }
 
-			</div>
-			<script>
-				window.jQuery || document.write('<script src="../assets/js/vendor/jquery-3.4.1.min.js"><\/script>')
-			</script>
+      .form-input > select,
+      .form-input > input[type="text"] {
+        padding: 0.6em;
+        margin: 0.4em 0;
+        width: 100% !important;
+        background: #f7f7f7;
+        color: #000;
+        border: thin solid #00e8b3;
+      }
 
-			<script src="../assets/js/vendor/bootstrap.min.js"></script>
+      .form-input > select > * {
+        color: #000;
+      }
 
-			<script src="../assets/js/flipflop.js"></script>
+      #summa > .form-input {
+        width: 100%;
+      }
 
-			<script>
-				$('#step1').hide();
-				$('#step1').css('position', 'relative');
-				$('#step1').css('left', '0px');
+      #table_container {
+        overflow-x: auto;
+        white-space: nowrap;
+        margin-bottom: 30px;
+      }
+    </style>
 
-				$('#step2').hide();
-				$('#step2').css('position', 'relative');
-				$('#step2').css('left', '0px');
+    <script src="../assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="gen-container">
+        <div class="row">
+          <h1 class="title">State Table Generator</h1>
+        </div>
+        <div class="gen-row" id="about">
+          <p>
+            "A <i>State Table</i> is a tabular representation of the time
+            sequence of inputs, outputs, and flip-flop states. The table
+            consists of four sections marked as <i>present table</i>,
+            <i>next state</i>, and the <i>output</i>. The present-state section
+            shows the states of flip-flops at any given time t. The input
+            section gives a value for each possible present state. The
+            next-state section lists the state of flip-flops one clock period
+            later at time t + 1. Lastly, the output section gives the value for
+            each present state."
+          </p>
+          <div class="button-set">
+            <button onClick="begin()">Let's Begin</button>
+          </div>
+        </div>
+        <div class="gen-row init" id="step1">
+          <div class="row-sub-title">
+            <strong>STEP 1. </strong>Provide the following.
+          </div>
+          <div class="form-input">
+            <select id="flipflop" class="required">
+              <option value="0">FLIP-FLOP TYPE</option>
+              <option value="JK">JK</option>
+              <option value="RS">RS</option>
+              <option value="D">D</option>
+              <option value="T">T</option>
+            </select>
+            <select id="flipflopCount" class="required">
+              <option value="0">FLIP-FLOP COUNT</option>
+              <option value="c1">1</option>
+              <option value="c2">2</option>
+            </select>
+            <select id="input" class="required">
+              <option value="0">INPUT COUNT</option>
+              <option value="i1">1</option>
+              <option value="i2">2</option>
+            </select>
+            <select id="output" class="required">
+              <option value="0">OUTPUT</option>
+              <option value="o1">YES</option>
+              <option value="o2">NO</option>
+            </select>
+          </div>
+          <div class="button-set">
+            <button type="button" id="backToAbout">
+              Back
+            </button>
+            <button type="button" id="confirmStep1">
+              Next
+            </button>
+          </div>
+        </div>
 
-				$('#summary').hide();
-				$('#summary').css('position', 'relative');
-				$('#summary').css('left', '0px');
+        <div class="gen-row init" id="step2">
+          <div>
+            <strong>STEP 2. </strong>Input the required flip-flop input/output
+            functions.
+          </div>
+          <div class="form-input"></div>
+          <div class="button-set">
+            <button type="button" id="backToStep1">
+              Back
+            </button>
+            <button type="button" id="confirmStep2">
+              Next
+            </button>
+          </div>
+        </div>
 
-				$('#stateTable').hide();
-				$('#stateTable').css('position', 'relative');
-				$('#stateTable').css('left', '0px');
+        <div class="gen-row init" id="summary">
+          <div id="summa"></div>
+          <p>
+            Feel free to review your input before generating your state table.
+          </p>
+          <div class="button-set">
+            <button type="button" id="backToStep2">
+              Back
+            </button>
+            <button type="button" id="confirmSummary">
+              Confirm
+            </button>
+          </div>
+        </div>
 
-				$(document).keypress(function(event) {
-					if (String.fromCharCode(event.which) == 'f' || String.fromCharCode(event.which) == 'F') {
-						if ($('#about').is(':visible')) {
-							$('#step1').fadeIn();
-							$('#about').hide();
-						}
-					}
-				});
+        <div class="init" id="stateTable">
+          <div id="table_container"></div>
+          <div id="stateDesc"></div>
+          <div class="button-set">
+            <button type="button" id="restart">Generate Another</button>
+          </div>
+        </div>
+      </div>
+      <script>
+        window.jQuery ||
+          document.write(
+            '<script src="../assets/js/vendor/jquery-3.4.1.min.js"><\/script>'
+          );
+      </script>
 
-				var input = {};
-				var flipflops = {};
-				var ioFunctions = "";
-				var functionCount = 1;
-				var inputCount = 0;
-				var flipflopCount = 0;
-				var outputCount = 0;
-				$('#confirmStep1').click(function() {
-					if ($('#flipflop').val() == "f0") {
-						$('#flipflop').focus();
-					} else if ($('#input').val() == "i0") {
-						$('#input').focus();
-					} else if ($('#output').val() == "o0") {
-						$('#output').focus();
-					} else if ($('#flipflopCount').val() == "c0") {
-						$('#flipflopCount').focus();
-					} else {
-						input = {};
-						ioFunctions = "";
-						functionCount = 1;
-						input['flipflop'] = $('#flipflop').val();
-						input['flipflopCount'] = $('#flipflopCount').val();
-						input['input'] = $('#input').val();
-						input['output'] = $('#output').val();
+      <script src="../assets/js/vendor/bootstrap.min.js"></script>
 
-						if (input['flipflopCount'] == "c2") {
-							functionCount *= 2;
-							flipflopCount = 2;
-						} else if (input['flipflopCount'] == "c1") {
-							flipflopCount = 1;
-						}
+      <script src="../assets/js/flipflop.js"></script>
 
-						if (input['input'] == "i1") {
-							inputCount = 1;
-						} else if (input['input'] == "i2") {
-							inputCount = 2;
-						}
+      <script>
+        $("#step1").hide();
+        $("#step1").css("position", "relative");
+        $("#step1").css("left", "0px");
 
-						if (input['flipflop'] == "JK") {
-							for (var i = 0; i < functionCount; i++) {
-								var alph = String.fromCharCode(65 + i);
-								flipflops['J' + alph] = "";
-								flipflops['K' + alph] = "";
-								ioFunctions += "<input type='text' style='width:150px' class='form-control' id='J" + alph + "' placeholder='J" + alph + "' required>&nbsp;";
-								ioFunctions += "<input type='text' style='width:150px' class='form-control' id='K" + alph + "' placeholder='K" + alph + "' required>&nbsp;";
-							}
-						} else if (input['flipflop'] == "RS") {
-							for (var i = 0; i < functionCount; i++) {
-								var alph = String.fromCharCode(65 + i);
-								flipflops['S' + alph] = "";
-								flipflops['R' + alph] = "";
-								ioFunctions += "<input type='text' style='width:150px' class='form-control' id='S" + alph + "' placeholder='R" + alph + "' required>&nbsp;";
-								ioFunctions += "<input type='text' style='width:150px' class='form-control' id='R" + alph + "' placeholder='S" + alph + "' required>&nbsp;";
-							}
-						} else if (input['flipflop'] == "D") {
-							for (var i = 0; i < functionCount; i++) {
-								var alph = String.fromCharCode(65 + i);
-								flipflops['D' + alph] = "";
-								ioFunctions += "<input type='text' style='width:150px' class='form-control' id='D" + alph + "' placeholder='D" + alph + "' required>&nbsp;";
-							}
-						} else {
-							for (var i = 0; i < functionCount; i++) {
-								var alph = String.fromCharCode(65 + i);
-								flipflops['T' + alph] = "";
-								ioFunctions += "<input type='text' style='width:150px' class='form-control' id='T" + alph + "' placeholder='T" + alph + "' required>&nbsp;";
-							}
-						}
+        $("#step2").hide();
+        $("#step2").css("position", "relative");
+        $("#step2").css("left", "0px");
 
-						if (input['output'] == "o1") {
-							outputCount = 1;
-							ioFunctions += "<input type='text' style='width:150px' class='form-control' id='Z' placeholder='Z ( Output )' required>&nbsp;";
-						}
+        $("#summary").hide();
+        $("#summary").css("position", "relative");
+        $("#summary").css("left", "0px");
 
-						$('#step2 p.form-inline').append(ioFunctions);
-						$('#step1').hide();
-						$('#step2').fadeIn();
-					}
-				});
+        $("#stateTable").hide();
+        $("#stateTable").css("position", "relative");
+        $("#stateTable").css("left", "0px");
 
-				$('#backToStep1').click(function() {
-					$('#step2 p.form-inline').empty();
-					$('#step2').hide();
-					$('#step1').fadeIn();
-				});
-				var flag = null;
-				$('#confirmStep2').click(function() {
-					var inp = $("#step2 p.form-inline").find('input');
-					for (var i = 0; i < inp.length; i++) {
-						if (inp[i].value == "") {
-							inp[i].focus();
-							flag = i;
-							break;
-						} else {
-							//alert(inp[i].id + ":" + inp[i].value);
-							flipflops[inp[i].id] = inp[i].value;
-						}
-					}
+        function begin() {
+          if ($("#about").is(":visible")) {
+            $("#step1").fadeIn();
+            $("#about").hide();
+          }
+        }
+        $("#backToAbout").click(function () {
+          $("#step1 select").val("0");
+          $("#step1").hide();
+          $("#about").fadeIn();
+        });
 
-					if (flag != null) {
-						inp[flag].focus();
-						flag = null;
-					} else {
-						var summary = '<p><strong>Summary of User Input.</strong>&nbsp;&nbsp;A sequential circuit that has <strong>' + flipflopCount + '</strong> <strong>' + input['flipflop'] + '</strong> flipflops( ';
+        var input = {};
+        var flipflops = {};
+        var ioFunctions = "";
+        var functionCount = 1;
+        var inputCount = 0;
+        var flipflopCount = 0;
+        var outputCount = 0;
+        $("#confirmStep1").click(function () {
+          if ($("#flipflop").val() == "0") {
+            $("#flipflop").focus();
+          } else if ($("#flipflopCount").val() == "0") {
+            $("#flipflopCount").focus();
+          } else if ($("#input").val() == "0") {
+            $("#input").focus();
+          } else if ($("#output").val() == "0") {
+            $("#output").focus();
+          } else {
+            input = {};
+            ioFunctions = "";
+            functionCount = 1;
+            input["flipflop"] = $("#flipflop").val();
+            input["flipflopCount"] = $("#flipflopCount").val();
+            input["input"] = $("#input").val();
+            input["output"] = $("#output").val();
 
-						for (var i = 0; i < flipflopCount; i++) {
-							summary += String.fromCharCode(65 + i) + ' ';
-						}
+            if (input["flipflopCount"] == "c2") {
+              functionCount *= 2;
+              flipflopCount = 2;
+            } else if (input["flipflopCount"] == "c1") {
+              flipflopCount = 1;
+            }
 
-						summary += '), <strong>' + inputCount + '</strong> inputs( ';
+            if (input["input"] == "i1") {
+              inputCount = 1;
+            } else if (input["input"] == "i2") {
+              inputCount = 2;
+            }
 
-						for (var i = 0; i < inputCount; i++) {
-							summary += String.fromCharCode(97 + 25 - inputCount + i) + ' ';
-						}
+            if (input["flipflop"] == "JK") {
+              for (var i = 0; i < functionCount; i++) {
+                var alph = String.fromCharCode(65 + i);
+                flipflops["J" + alph] = "";
+                flipflops["K" + alph] = "";
+                ioFunctions +=
+                  "<input type='text' class='form-control' id='J" +
+                  alph +
+                  "' placeholder='J" +
+                  alph +
+                  "' required>";
+                ioFunctions +=
+                  "<input type='text' class='form-control' id='K" +
+                  alph +
+                  "' placeholder='K" +
+                  alph +
+                  "' required>";
+              }
+            } else if (input["flipflop"] == "RS") {
+              for (var i = 0; i < functionCount; i++) {
+                var alph = String.fromCharCode(65 + i);
+                flipflops["S" + alph] = "";
+                flipflops["R" + alph] = "";
+                ioFunctions +=
+                  "<input type='text' class='form-control' id='S" +
+                  alph +
+                  "' placeholder='R" +
+                  alph +
+                  "' required>";
+                ioFunctions +=
+                  "<input type='text' class='form-control' id='R" +
+                  alph +
+                  "' placeholder='S" +
+                  alph +
+                  "' required>";
+              }
+            } else if (input["flipflop"] == "D") {
+              for (var i = 0; i < functionCount; i++) {
+                var alph = String.fromCharCode(65 + i);
+                flipflops["D" + alph] = "";
+                ioFunctions +=
+                  "<input type='text' class='form-control' id='D" +
+                  alph +
+                  "' placeholder='D" +
+                  alph +
+                  "' required>";
+              }
+            } else {
+              for (var i = 0; i < functionCount; i++) {
+                var alph = String.fromCharCode(65 + i);
+                flipflops["T" + alph] = "";
+                ioFunctions +=
+                  "<input type='text' class='form-control' id='T" +
+                  alph +
+                  "' placeholder='T" +
+                  alph +
+                  "' required>";
+              }
+            }
 
-						summary += ' )';
+            if (input["output"] == "o1") {
+              outputCount = 1;
+              ioFunctions +=
+                "<input type='text' class='form-control' id='Z' placeholder='Z ( Output )' required>";
+            }
 
-						if (outputCount == 1) {
-							summary += 'and an output(Z).';
-						} else {
-							summary += '.';
-						}
+            $("#step2 div.form-input").append(ioFunctions);
+            $("#step1").hide();
+            $("#step2").fadeIn();
+          }
+        });
 
-						summary += ' The flip-flop input functions and the circuit function are as follows:</p>';
-						summary += '<p class="form-inline">';
+        $("#backToStep1").click(function () {
+          $("#step2 div.form-input").empty();
+          $("#step2").hide();
+          $("#step1").fadeIn();
+        });
+        var flag = null;
+        $("#confirmStep2").click(function () {
+          var inp = $("#step2 div.form-input").find("input");
+          for (var i = 0; i < inp.length; i++) {
+            if (inp[i].value == "") {
+              inp[i].focus();
+              flag = i;
+              break;
+            } else {
+              flipflops[inp[i].id] = inp[i].value;
+            }
+          }
 
-						var keys = Object.keys(flipflops);
+          if (flag != null) {
+            inp[flag].focus();
+            flag = null;
+          } else {
+            var summary =
+              "<p><strong>Summary of User Input.</strong>&nbsp;&nbsp;A sequential circuit that has <strong>" +
+              flipflopCount +
+              "</strong> <strong>" +
+              input["flipflop"] +
+              "</strong> flipflops( ";
 
-						for (var i = 0; i < keys.length; i++) {
-							summary += '<h3>' + keys[i] + ' = ' + flipflops[keys[i]] + '</h3> ';
-						}
+            for (var i = 0; i < flipflopCount; i++) {
+              summary += String.fromCharCode(65 + i) + " ";
+            }
 
-						summary += '</p>';
+            summary += "), <strong>" + inputCount + "</strong> inputs( ";
 
-						$('#summary #summa').append(summary);
-						$('#step2').hide();
-						$('#summary').fadeIn();
-					}
-				});
-				$('#backToStep2').click(function() {
-					$('#summary #summa').empty();
-					$('#summary').hide();
-					$('#step2').fadeIn();
-				});
+            for (var i = 0; i < inputCount; i++) {
+              summary += String.fromCharCode(97 + 25 - inputCount + i) + " ";
+            }
 
-				$('#confirmSummary').click(function() {
-					var output = [];
-					output = generateStateTable(flipflopCount, inputCount, flipflops, input['flipflop']);
+            summary += " )";
 
-					var table = "<p><table class='table'><thead>";
+            if (outputCount == 1) {
+              summary += " and an output(Z).";
+            } else {
+              summary += ".";
+            }
 
-					// //table += "<th colspan=" + flipflopCount + ">Present State</th><th colspan=" + inputCount + ">Input</th><th colspan=" + flipflopCount + ">Next State</th><th colspan=" + flipflops.length + ">FlipFlop Inputs</th>";
-					// table += "<th>Present State</th><th>Input</th><th>Next State</th><th>FlipFlop Inputs</th>";
-					// if (outputCount == 1) {
-						// table += "<th>Output</th></thead>";
-					// }
+            summary +=
+              " The flip-flop input functions and the circuit function are as follows:</p>";
+            summary += '<div class="form-input">';
 
-					//table += "<tbody><tr>";
+            var keys = Object.keys(flipflops);
 
-					for (var j = 0; j < output.length; j++) {
-						table += "<th>" + output[j].col + "</th>";
-					}
-					table += "</thead><tbody>";
+            for (var i = 0; i < keys.length; i++) {
+              summary +=
+                "<h3>" + keys[i] + " = " + flipflops[keys[i]] + "</h3> ";
+            }
 
-					var temp = "";
-					var rowCount = Math.pow(2, flipflopCount + inputCount);
-					for (var i = 0; i < rowCount; i++) {
-						table += "<tr>"
+            summary += "</div>";
 
-						for (var j = 0; j < output.length; j++) {
-							temp = output[j].row.charAt(i);
-							table += "<td>" + temp + "</td>";
-						}
-						table += "</tr>";
-					}
+            $("#summary #summa").append(summary);
+            $("#step2").hide();
+            $("#summary").fadeIn();
+          }
+        });
 
-					table += "</tbody></p>";
+        $("#backToStep2").click(function () {
+          $("#summary #summa").empty();
+          $("#summary").hide();
+          $("#step2").fadeIn();
+        });
 
-					$('#table_container').append(table);
-					$('#summary').hide();
-					$('#stateTable').fadeIn();
+        $("#restart").click(function () {
+          $("#step1 select").val("0");
+          $("#step2 div.form-input").empty();
+          $("#summary #summa").empty();
+          $("#table_container").empty();
+          $("#stateDesc").empty();
+          $("#stateTable").hide();
+          $("#about").fadeIn();
+        });
 
-					//Description about the state table
+        $("#confirmSummary").click(function () {
+          var output = [];
+          output = generateStateTable(
+            flipflopCount,
+            inputCount,
+            flipflops,
+            input["flipflop"]
+          );
 
-					$("#stateTable").append("<strong>Description</strong>:");
-					for (var i=0; i < flipflopCount; i++) {
-					if (i===0)
-		                          $("#stateTable").append("<br><strong>A</strong>: Present State of flip-flop A.<br><strong>A*</strong>: Next State of flip-flop A.");
-				        if (i===1)
-				          $("#stateTable").append("<br><strong>B</strong>: Present State of flip-flop B.<br><strong>B*</strong>: Next State of flip-flop B.");
-					}
-			 		if (input['flipflop'] == "JK")
-			                  $("#stateTable").append("<br>The next state of the JK flip-flop is decided by the following points: <br>1. When <strong>J</strong> and <strong>K</strong> are equal to 0, it means the memory state that is the next state will be equal to the present state. <br>2. When <strong>J</strong> and <strong>K</strong> are equal to 1, the next state will be equal to the complement of the present state.");
-				        else if (input['flipflop'] == "D")
-					  $("#stateTable").append("<br>The next state of the D flip-flop is equal to the input <strong>D</strong>.");
-					else if (input['flipflop'] == "RS") {
-					  $("#stateTable").append("<br>In the state table above, you can see something like this <strong>?</strong>. It means that the next state cannot be determined ( INDETERMINATE ).");
-					  $("#stateTable").append("<br>The next state of the RS flip-flop is decided by the following points: <br>1. When both <strong>R</strong> and <strong>S</strong> are equal to 0, the next state will be equal to the present state ( NO CHANGE ).");
-		                          $("#stateTable").append("<br>2. When  <strong>R</strong> is equal to 1 and <strong>S</strong> is equal to 0, the next state will be equal to the 0 ( RESET ).<br>3. When  <strong>R</strong> is equal to 0 and <strong>S</strong> is equal to 1, the next state will be equal to the 1 ( SET ).");
-					  $("#stateTable").append("<br>4. When both <strong>R</strong> and <strong>S</strong> are equal to 1 , the next state will be equal to the ? ( INDETERMINATE ).");
-				        }
-					else if (input['flipflop'] == "T") {
-					  $("#stateTable").append("<br>T flip-flop is the simplified version of JK flip-flop where <strong>J</strong> and <strong>K</strong> are equal to the input <strong>T</strong>. So the state table generation of the T flip-flop is similar to that of JK flip-flop.");
-                                          $("#stateTable").append("<br>The next state of the T flip-flop is decided by the following points: <br>1. When <strong>T</strong> is equal to 0, it means the memory state ( since both <strong>J</strong> and <strong>K</strong> are equal to 0 ) that is the next state will be equal to the present state. <br>2. When <strong>T</strong> is equal to 1, the next state will be equal to the complement of the present state.");
-					}
-				});
+          var table = "<p><table class='table'><thead>";
 
-			</script>
+          for (var j = 0; j < output.length; j++) {
+            table += "<th>" + output[j].col + "</th>";
+          }
+          table += "</thead><tbody>";
 
+          var temp = "";
+          var rowCount = Math.pow(2, flipflopCount + inputCount);
+          for (var i = 0; i < rowCount; i++) {
+            table += "<tr>";
 
-		</div>
-	</body>
+            for (var j = 0; j < output.length; j++) {
+              temp = output[j].row.charAt(i);
+              table += "<td>" + temp + "</td>";
+            }
+            table += "</tr>";
+          }
+
+          table += "</tbody></p>";
+
+          $("#table_container").append(table);
+          $("#summary").hide();
+          $("#stateTable").fadeIn();
+
+          //Description about the state table
+
+          $("#stateDesc").append("<strong>Description</strong>:");
+          for (var i = 0; i < flipflopCount; i++) {
+            if (i === 0)
+              $("#stateDesc").append(
+                "<br><strong>A</strong>: Present State of flip-flop A.<br><strong>A*</strong>: Next State of flip-flop A."
+              );
+            if (i === 1)
+              $("#stateDesc").append(
+                "<br><strong>B</strong>: Present State of flip-flop B.<br><strong>B*</strong>: Next State of flip-flop B."
+              );
+          }
+          if (input["flipflop"] == "JK")
+            $("#stateDesc").append(
+              "<br>The next state of the JK flip-flop is decided by the following points: <br>1. When <strong>J</strong> and <strong>K</strong> are equal to 0, it means the memory state that is the next state will be equal to the present state. <br>2. When <strong>J</strong> and <strong>K</strong> are equal to 1, the next state will be equal to the complement of the present state."
+            );
+          else if (input["flipflop"] == "D")
+            $("#stateDesc").append(
+              "<br>The next state of the D flip-flop is equal to the input <strong>D</strong>."
+            );
+          else if (input["flipflop"] == "RS") {
+            $("#stateDesc").append(
+              "<br>In the state table above, you can see something like this <strong>?</strong>. It means that the next state cannot be determined ( INDETERMINATE )."
+            );
+            $("#stateDesc").append(
+              "<br>The next state of the RS flip-flop is decided by the following points: <br>1. When both <strong>R</strong> and <strong>S</strong> are equal to 0, the next state will be equal to the present state ( NO CHANGE )."
+            );
+            $("#stateDesc").append(
+              "<br>2. When  <strong>R</strong> is equal to 1 and <strong>S</strong> is equal to 0, the next state will be equal to the 0 ( RESET ).<br>3. When  <strong>R</strong> is equal to 0 and <strong>S</strong> is equal to 1, the next state will be equal to the 1 ( SET )."
+            );
+            $("#stateDesc").append(
+              "<br>4. When both <strong>R</strong> and <strong>S</strong> are equal to 1 , the next state will be equal to the ? ( INDETERMINATE )."
+            );
+          } else if (input["flipflop"] == "T") {
+            $("#stateDesc").append(
+              "<br>T flip-flop is the simplified version of JK flip-flop where <strong>J</strong> and <strong>K</strong> are equal to the input <strong>T</strong>. So the state table generation of the T flip-flop is similar to that of JK flip-flop."
+            );
+            $("#stateDesc").append(
+              "<br>The next state of the T flip-flop is decided by the following points: <br>1. When <strong>T</strong> is equal to 0, it means the memory state ( since both <strong>J</strong> and <strong>K</strong> are equal to 0 ) that is the next state will be equal to the present state. <br>2. When <strong>T</strong> is equal to 1, the next state will be equal to the complement of the present state."
+            );
+          }
+        });
+      </script>
+    </div>
+  </body>
 </html>
