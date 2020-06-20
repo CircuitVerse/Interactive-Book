@@ -3,6 +3,9 @@
 //
 // stylelint-disable max-nesting-depth, selector-no-type, selector-max-type
 
+$box-shadow-color-dark: rgba(0, 0, 0, 0.07);
+$box-shadow-color-light: rgba(0, 0, 0, 0.05);
+
 table {
   display: block;
   width: 100%;
@@ -77,8 +80,9 @@ thead {
   }
 }
 
-#table {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.07), 0 4px 14px rgba(0, 0, 0, 0.05);
+.table {
+  box-shadow: 0 1px 3px $box-shadow-color-dark,
+    0 4px 14px $box-shadow-color-light;
   overflow-x: auto;
 
   table {
