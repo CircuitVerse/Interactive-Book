@@ -1,4 +1,3 @@
-
 # Interactive-Book
 
 
@@ -10,7 +9,7 @@
 
 
 ## About the project
-The aim of this project is to create an online interactive guide for digital logic design. The primary goal is to develop an open sourcebook with quality content that teaches digital logic design. It will enable students to learn digital design by interacting with circuits, truth table, and other interactive elements as they proceed through the book. The professors and students all over the world can read and contribute to the same.
+The aim of this project is to create an _online interactive guide_ for _digital logic design_. The primary goal is to develop an open sourcebook with quality content that teaches digital logic design. It will enable students to learn digital design by interacting with circuits, truth tables, and other interactive elements as they proceed through the book. Professors and students all over the world can read and contribute to the same.
 
 As contributors and maintainers of this project, and in the interest of fostering an open and welcoming community, we pledge to respect all people who contribute through reporting issues, posting feature requests, updating documentation, submitting pull requests or patches, and other activities.
 
@@ -18,42 +17,7 @@ As contributors and maintainers of this project, and in the interest of fosterin
 [CircuitVerse](https://circuitverse.org) is a product developed by students at IIIT-Bangalore. It aims to provide a platform where circuits can be designed and simulated using a graphical user interface. While users can design complete CPU implementations within the simulator, the software is designed primarily for educational use. CircuitVerse is an opensource project with an active community.
 
 
-## Clone this repo!
 
-First things first. Make a local clone of this repo so you can work on it from your own computer.
-
-```
-git clone https://github.com/CircuitVerse/Interactive-Book.git
-cd Interactive-Book
-```
-
-## Install, and Serve!
-
-This website was built using [Jekyll](https://jekyllrb.com/). So if you are familiar with this and already have Jekyll installed, you can scroll past the instructions we have below.
-
-**Setting up your development environment**
-
-To do this, you are going to need a computer capable of running Ruby - while Mac OSX or Linux tends to be easiest, plenty of people do Ruby development on Windows as well. If you're not on Mac OSX, you will likely need to install Ruby yourself.
-
-**Install Gems and Serving the Website**
-
-The required gems for this project are [Bundler](http://bundler.io/) and [Jekyll](https://jekyllrb.com/). Once you have Ruby installed, open your terminal, `cd` to the local repo directory, and run the following commands:
-
-```
-gem install jekyll
-gem install bundle
-```
-
-This will install Bundler and Jekyll. If you have any errors, check to be sure you have installed Ruby correctly.
-
-Next, install the projects dependencies and serve:
-
-```
-bundle install
-bundle exec jekyll serve
-```
-
-This should start serving the website on http://0.0.0.0:4000/ - simply make changes to the source code and can see your changes live at that URL!
 
 ## Contribute!
 
