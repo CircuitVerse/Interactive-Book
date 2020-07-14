@@ -19,7 +19,7 @@ See [`ARCHITECTURE.md`](ARCHITECTURE.md) for more information on the various com
 We follow the [Code of Conduct](CODE_OF_CONDUCT.md) of the [CircuitVerse](https://circuitverse.org) Community.
 
 ## Contribute!
-We are open to all contributions by anyone, and we encourage all new members to create join our slack and discord channel.
+We are open to all contributions by anyone, and we encourage all new members to join our slack and discord channel.
 
 See [`CONTRIBUTING.md`](CONTRIBUTING.md) for more information on contributing to CircuitVerse.
 
