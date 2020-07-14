@@ -12,7 +12,7 @@ As contributors and maintainers of this project, and in the interest of fosterin
 ## Set-up
 See [`SETUP.md`](SETUP.md) for more information on setting up Interactive Book on your local
 
-# Architecture and Overview
+## Architecture and Overview
 See [`ARCHITECTURE.md`](ARCHITECTURE.md) for more information on the various components and code structure that comprise the Interactive Book
 
 ## Code of Conduct
