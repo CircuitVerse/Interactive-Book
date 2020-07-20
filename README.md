@@ -10,12 +10,12 @@
 
 
 ## About the project
-The aim of this project is to create an online interactive guide for digital logic design. The primary goal is to develop an open sourcebook with quality content that teaches digital logic design. It will enable students to learn digital design by interacting with circuits, truth table, and other interactive elements as they proceed through the book. The professors and students all over the world can read and contribute to the same.
+The aim of this project is to create an online interactive guide for digital logic design. The primary goal is to develop an open source-book with quality content that teaches digital logic design. It will enable students to learn digital design by interacting with circuits, truth table, and other interactive elements as they proceed through the book. The professors and students all over the world can read and contribute to the same.
 
 As contributors and maintainers of this project, and in the interest of fostering an open and welcoming community, we pledge to respect all people who contribute through reporting issues, posting feature requests, updating documentation, submitting pull requests or patches, and other activities.
 
 ### CircuitVerse
-[CircuitVerse](https://circuitverse.org) is a product developed by students at IIIT-Bangalore. It aims to provide a platform where circuits can be designed and simulated using a graphical user interface. While users can design complete CPU implementations within the simulator, the software is designed primarily for educational use. CircuitVerse is an opensource project with an active community.
+[CircuitVerse](https://circuitverse.org) is a product developed by students at IIIT-Bangalore. It aims to provide a platform where circuits can be designed and simulated using a graphical user interface. While users can design complete CPU implementations within the simulator, the software is designed primarily for educational use. CircuitVerse is an open source project with an active community.
 
 
 ## Clone this repo!
@@ -33,7 +33,7 @@ This website was built using [Jekyll](https://jekyllrb.com/). So if you are fami
 
 **Setting up your development environment**
 
-To do this, you are going to need a computer capable of running Ruby - while Mac OSX or Linux tends to be easiest, plenty of people do Ruby development on Windows as well. If you're not on Mac OSX, you will likely need to install Ruby yourself.
+To do this, you are going to need a computer capable of running Ruby - while Mac OSX or Linux tend to be the easiest, plenty of people do Ruby development on Windows as well. If you're not on Mac OSX, you will likely need to install Ruby yourself.
 
 **Install Gems and Serving the Website**
 
@@ -53,7 +53,7 @@ bundle install
 bundle exec jekyll serve
 ```
 
-This should start serving the website on http://0.0.0.0:4000/ - simply make changes to the source code and can see your changes live at that URL!
+This should start serving the website on http://0.0.0.0:4000/ - simply make changes to the source code and you can see your changes live at that URL!
 
 ## Contribute!
 
@@ -69,7 +69,7 @@ Thanks to everyone who has contributed to the Interactive Book so far!
 
 
 ## Overview
-The Interactive book has two components in it. 
+The Interactive book has two components in it.
 1. Content
 2. Interactions
 
@@ -82,7 +82,7 @@ It includes quality content that would be gathered from various books (primarily
 There would be two types of Interactions.
 
 1. **Circuit Interactions-** This includes designing optimal circuits which would help to clearly understand the logic. The student would be able to clearly detect the variation of output with the change in input via these circuits. With each Interaction module, there would be a set of instructions that would guide the user to see the desired changes.
-2. **Module Specific Interactions-** This includes interaction that is designed for an individual module like kmap simulator, truth table generator, etc.
+2. **Module Specific Interactions-** This includes interactions that are designed for an individual module like kmap simulator, truth table generator, etc.
 
 **However, we do have some rules and general guidelines we would like you to follow:**
 
@@ -99,11 +99,11 @@ There would be two types of Interactions.
 4. Once a pull request is merged, the branch should be removed.
 
 5. Always follow good Github etiquette. Several helpful reads on the topic:
-	* [Use Github keywords to auto-link close issues](https://help.github.com/articles/closing-issues-via-commit-messages/)	
+	* [Use Github keywords to auto-link close issues](https://help.github.com/articles/closing-issues-via-commit-messages/)
 	* [Git - Contributing to a Project](http://git-scm.com/book/ch5-2.html)
 	* [Who-T - On Commit Messages](http://who-t.blogspot.com/2009/12/on-commit-messages.html)
-	
-	
+
+
 ## Code Structure
 
 Jekyll is, at its core, a text transformation engine. The concept behind the system is this: you give it text written in your favorite markup language, be that Markdown, Textile, or just plain HTML, and it churns that through a layout or a series of layout files. Throughout that process you can tweak how you want the site URLs to look, what data gets displayed in the layout, and more. This is all done through editing text files; the static web site is the final product. The structure of Interactive Book looks something like this:
@@ -131,7 +131,7 @@ Jekyll is, at its core, a text transformation engine. The concept behind the sys
 |   └── binary.md
 ├── _site
 ├── .jekyll-metadata
-└── index.md 
+└── index.md
 </pre>
 
 ## Pop Quizzes
@@ -146,7 +146,7 @@ The quiz should be at the end of a page and is initialised with `{:.quiz}`. Ques
 	* Incorrect answer
 2. What is 1 + 1?
 	* 1
-	1. 2	
+	1. 2
    	* 3
 ```
 Note that answers must be text only and not contain any other formatting.
@@ -186,6 +186,3 @@ In addition to these plugins, Interactive book also inherit's all the plugins us
 ### Create, Contribute, Learn, and succeed with CircuitVerse!!!
 
 Interactive-Book is &copy; 2020 by [CircuitVerse](https://circuitverse.org/)
-
-
-
