@@ -32,9 +32,10 @@
 
 .search-results-wrap {
   display: none;
-  overflow-x:hidden;
-  overflow-y:scroll;
-  height:230px;
+  height: 230px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
 
   &.active {
     position: absolute;
