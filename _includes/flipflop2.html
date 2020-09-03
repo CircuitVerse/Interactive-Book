@@ -424,12 +424,24 @@
 
           var temp = "";
           var rowCount = Math.pow(2, flipflopCount + inputCount);
+          exit_loops:
           for (var i = 0; i < rowCount; i++) {
             table += "<tr>";
 
             for (var j = 0; j < output.length; j++) {
               temp = output[j].row.charAt(i);
-              table += "<td>" + temp + "</td>";
+              if(temp === 'u'){
+                alert("Your Table contains Undefined values. Press OK to enter values again")
+                  $("#summary #summa").empty();
+                  $("#summary").hide();
+                  $("#step2").fadeIn();
+                  $("#stateTable").empty();
+                  break exit_loops;
+                }
+                else {
+                  table += "<td>" + temp + "</td>";
+                
+                }
             }
             table += "</tr>";
           }
