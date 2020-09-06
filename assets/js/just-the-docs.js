@@ -43,7 +43,7 @@ function initSearch() {
 
   sc = document.getElementsByTagName("script");
   source = '';
-
+  
   for(idx = 0; idx < sc.length; idx++)
   {
     s = sc.item(idx);
@@ -90,7 +90,7 @@ function initSearch() {
   function searchResults(dataStore) {
     var searchInput = document.querySelector('.js-search-input');
     var searchResults = document.querySelector('.js-search-results');
-    var store = dataStore;
+    var store = dataStore;	
 
     function hideResults() {
       searchResults.innerHTML = '';
@@ -107,12 +107,12 @@ function initSearch() {
         hideResults();
       } else {
         var results = index.search(query);
-
+        
         if (results.length > 0) {
           searchResults.classList.add('active');
           var resultsList = document.createElement('ul');
           searchResults.appendChild(resultsList);
-
+          
           for (var i in results) {
             var resultsListItem = document.createElement('li');
             var resultsLink = document.createElement('a');
@@ -133,7 +133,30 @@ function initSearch() {
             resultsList.appendChild(resultsListItem);
             resultsListItem.appendChild(resultsLink);
             resultsLink.appendChild(resultsUrlDesc);
+            	
+            	//code for dynamic height of the result box
+	   	switch (results.length) {
+		  	case 4: 
+		  		document.querySelector(".search-results-wrap").style.height = "184px";
+		  		break;
+		  	
+		  	case 3: 
+		  		document.querySelector(".search-results-wrap").style.height = "138px";
+		  		break;
+		  	
+		  	case 2: 
+		  		document.querySelector(".search-results-wrap").style.height = "92px";
+		  		break;
+		  	
+		  	case 1: 
+		  		document.querySelector(".search-results-wrap").style.height = "46px";
+		  		break;
+		  	
+		  	default:
+		  		document.querySelector(".search-results-wrap").style.height = "230px";
+		  } 
           }
+          
         }
 
         // When esc key is pressed, hide the results and clear the field
