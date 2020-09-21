@@ -41,7 +41,7 @@ It is just like counting in decimal except we reach 10 much sooner.
 
 
 | Binary       | Explanation       |
-|:------------:|:-----------------:|
+|:------------:|:-----------------|
 | 0            | Start at 0     |
 | 1            | Then 1            |
 | ???          | But then there is no symbol for 2 ... what to do?  |
@@ -51,7 +51,7 @@ It is just like counting in decimal except we reach 10 much sooner.
 {: .no_toc}
 
 | Decimal       | Explanation            |
-|:-------------:|:----------------------:|
+|:-------------:|:----------------------|
 | 0            | Start at 0          |
 | 1            | Then 1                 |
 | 2-8          | Count 1,2,3,4,5,6,7,8  |
@@ -62,7 +62,7 @@ It is just like counting in decimal except we reach 10 much sooner.
 {: .no_toc}
 
 | Binary       | Explanation            |
-|:------------:|:----------------------:|
+|:------------:|:----------------------|
 | 0            | Start at 0          |
 | 1            | Then 1        |
 | **1**0     | Now start back at **0** again, but carry **1** on the left|
@@ -75,7 +75,7 @@ It is just like counting in decimal except we reach 10 much sooner.
 
 
 | Decimal       | Explanation            |
-|:-------------:|:----------------------:|
+|:-------------:|:----------------------|
 |	99	 |	When you run out of digits, ...|
 |	100	 |	... start from back at **0** again, but carry **1** on the left|
 
@@ -84,7 +84,7 @@ It is just like counting in decimal except we reach 10 much sooner.
 
 
 | Binary     | Explanation   |
-|:----------:|:-------------:|
+|:----------:|:-------------|
 | 0          | Start at 0    |
 | 1          | Then 1        |
 | **1**0     | Now start back at **0** again, but carry **1** on the left|
