@@ -1,0 +1,280 @@
+// Custom overrides
+
+//
+// Colors
+//
+
+$black: #000000 !default;
+
+$base-svg-path: $black !default;
+
+//
+// Spacing
+//
+
+$spacers: (
+  sp: $spacing-unit * -1,
+  sp-0: 0,
+  sp-1: $spacing-unit * 0.25,
+  sp-2: $spacing-unit * 0.5,
+  sp-3: $spacing-unit * 0.75,
+  sp-4: $spacing-unit,
+  sp-5: $spacing-unit * 1.5,
+  sp-6: $spacing-unit * 2,
+  sp-7: $spacing-unit * 2.5,
+  sp-8: $spacing-unit * 3,
+  sp-9: $spacing-unit * 3.5,
+  sp-10: $spacing-unit * 4
+) !default;
+
+$sp: map-get($spacers, sp) !default;
+
+//
+// Base element style overrides
+//
+
+input {
+  color: $black;
+}
+
+//
+// Styles for rendered markdown in the .main-content container
+//
+
+#sidebar.active {
+  display: none;
+}
+
+@media only screen and (min-width: 739px) {
+
+  #main-content.moved {
+    margin-left: calc((100% - 739px) / 2 + -80px);
+  }
+
+  #headerid.moved {
+    margin-left: calc((100% - 739px) / 2 + 65px);
+  }
+
+  #breadcrumb-nav.moved {
+    margin-left: calc((100% - 739px) / 2 + -80px);
+  }
+
+  #sidebarCollapse.moved {
+    margin-left: calc((100% - 739px) / 2 + -80px);
+
+  } }
+
+@media only screen and (max-width: 739px) {
+
+  #sidebarCollapse {
+    display: none;
+
+  }
+}
+
+#sidebarCollapse.new.colored {
+  background-color: $base-button-color;
+  color: $link-color;
+
+}
+#sidebarCollapse.new {
+  background-color: $link-color;
+  color: $white;
+
+}
+
+//
+// The basic two column layout
+//
+
+.side-bar {
+  z-index: 0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $sidebar-color;
+
+  @include mq(md) {
+    flex-wrap: nowrap;
+    position: fixed;
+    width: $nav-width-md;
+    height: 100%;
+    flex-direction: column;
+    border-right: $border $border-color;
+    align-items: flex-end;
+  }
+
+  @include mq(lg) {
+    width: calc((100% - #{$nav-width + $content-width}) / 4 + #{$nav-width});
+    min-width: $nav-width;
+  }
+  &.active {
+      display: none;
+  }
+}
+
+.main {
+  @include mq(md) {
+    position: relative;
+    max-width: $content-width;
+    margin-left: $nav-width-md;
+  }
+
+  @include mq(lg) {
+    margin-left: calc(
+      (100% - #{$nav-width + $content-width}) / 4 + #{$nav-width}
+    );
+  }
+}
+
+// .main-content -> main-content-header (?)
+
+
+//
+//  navigation.css
+//
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+
+}
+
+.connector{
+  margin-right: 5%;
+  height: 12px;
+  width: 12px;
+
+}
+
+.sub_heading{
+
+}
+
+.breadcrumb-nav {
+  @include mq(md) {
+    margin-top: $sp-4;
+  }
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev-next-controls {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+//
+// from selects.scss
+//
+select {
+  background-color: $base-button-color;
+  border: 0;
+
+  option {
+    color: $body-heading-color;
+  }
+}
+
+//
+// from scg_paths.scss
+//
+svg path {
+  stroke: $base-svg-path;
+}
+
+defs path {
+  stroke: none;
+}
+
+//
+// from quiz.scss
+//
+$correct-color: #5cd65c;
+$incorrect-color: #ff6666;
+$default-color: #f1f1f1;
+$border-color: #eeebee;
+$shadow-color: #eeeeee;
+$text-color: #111111;
+
+.quiz {
+  display: none;
+}
+
+.pop-quiz {
+  display: block;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.quiz-question {
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+
+  em {
+    font-size: 0.9em;
+  }
+
+  p {
+    font-size: 1.2em;
+    margin-bottom: 0.5rem;
+  }
+
+  code {
+    font-size: 0.9em;
+  }
+}
+
+.quiz-answers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .quiz-answer {
+    background-color: $default-color;
+    border: 1px solid $border-color;
+    border-radius: 0.2rem;
+    box-shadow: 1px 1px $shadow-color;
+    color: $text-color;
+    cursor: pointer;
+    line-height: 2rem;
+    margin: 0.2rem;
+    min-width: 10rem;
+  }
+}
+
+.quiz-show-answer {
+  &.quiz-true {
+    background-color: $correct-color;
+  }
+
+  &.quiz-false {
+    background-color: $incorrect-color;
+  }
+}
+
+//
+// from search.scss (not included since its too different from upstream)
+//
+
+//
+// DVLS new styles
+//
+.nav-list {
+    list-style: circle url('/assets/images/nav-marker-inactive.svg') inside;
+
+    .nav-list-item {
+	.nav-list-link{
+	    display: inline;
+	}
+	&.active {
+	    list-style: disc url('/assets/images/nav-marker-active.svg') inside;
+	}
+    }
+}
+
