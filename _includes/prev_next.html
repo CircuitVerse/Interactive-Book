@@ -1,0 +1,50 @@
+<!-- -*- engine:django -*- -->
+
+{% assign parent = page.parent %}
+{% assign pages_list = site.html_pages | sort:"nav_order" %}
+{% assign previous_page = null %}
+{% assign next_page = null %}
+{% assign current_page = false %}
+
+{% for single_page in pages_list %}
+    {% if single_page.parent == parent %}
+	{% if single_page.title == page.title %}
+	    {% assign current_page = true %}
+	{% elsif current_page %}
+	    {% if page.has_children == null %}
+		{% assign next_page = single_page.url %}
+	    {% endif %}
+	    {% break %}
+	{% else %}
+	    {% assign previous_page = single_page.url %}
+	{% endif %}
+    {% elsif single_page.parent == page.title %}
+	{% if single_page.nav_order == 1 %}
+	    {% assign next_page = single_page.url %}
+	{% endif %}
+    {% endif %}
+{% endfor %}
+
+{% assign current_page = false %}
+{% if next_page == null or previous_page == null %}
+    {% if page.parent != null %}
+	{% for single_page in pages_list %}
+	    {% if single_page.title == page.parent %}
+		{% assign current_page = true %}
+		{% if previous_page == null %}
+		    {% assign previous_page = single_page.url %}
+		{% endif %}
+	    {% elsif current_page %}
+		{% if next_page == null %}
+		    {% assign next_page = single_page.url %}
+		{% endif %}
+		{% break %}
+	    {% endif %}
+	{% endfor %}
+    {% endif %}
+{% endif %}
+
+{% if page.nav_order == 1 and page.parent == null %}
+    {% assign previous_page = null %}
+{% endif %}
+
