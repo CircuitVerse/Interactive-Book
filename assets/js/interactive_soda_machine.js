@@ -232,7 +232,7 @@ var soda_machine_graphics = {
 }
 
 soda_machine_graphics.initialize = function () {
-  soda_machine_graphics.paper = Raphael("soda_machine_graphics_canvas",550,300);
+  soda_machine_graphics.paper = Raphael("soda_machine_graphics_canvas","100%","100%");
   with(soda_machine_graphics){
     paper.setViewBox(0,40,650,350,false);
 	buttons = new Array();
