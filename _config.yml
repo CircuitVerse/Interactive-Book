@@ -130,3 +130,6 @@ jekyll-spaceship:
         tags: 'ams'
       svg:
         fontCache: 'global'
+
+# Repository name for Setting up Netlify
+repository: CircuitVerse/Interactive-Book
