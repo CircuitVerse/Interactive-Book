@@ -3,6 +3,9 @@
 //
 // stylelint-disable max-nesting-depth, selector-no-type, selector-max-type
 
+$box-shadow-color-dark: rgba(0, 0, 0, 0.07);
+$box-shadow-color-light: rgba(0, 0, 0, 0.05);
+
 table {
   display: block;
   width: 100%;
@@ -74,5 +77,15 @@ tbody {
 thead {
   th {
     border-bottom: 1px solid $border-color;
+  }
+}
+
+.table {
+  box-shadow: 0 1px 3px $box-shadow-color-dark,
+    0 4px 14px $box-shadow-color-light;
+  overflow-x: auto;
+
+  table {
+    margin-bottom: 0;
   }
 }
