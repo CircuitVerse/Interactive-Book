@@ -96,7 +96,7 @@ soda_machine_fsm.update = function() {
 }
 
 soda_machine_fsm.initialize = function() {
-  soda_machine_fsm.paper = Raphael("soda_machine_fsm_canvas",800,300);
+  soda_machine_fsm.paper = Raphael("soda_machine_fsm_canvas","100%","100%");
   with(soda_machine_fsm){
     paper.setViewBox(0,-25,950,400,0);
 	fsm_circles = new Array();
