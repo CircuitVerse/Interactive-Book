@@ -4,13 +4,13 @@ bit1_display[false] = "0";
 bit1_display[true] = "1";
 var operator = "OR";
 
-function toggle_bitc(column)
-{
+function toggle_bitc(column) {
     var decimal1 = 0;
-    document.getElementById(column+"c").innerHTML = bit1_display[bit1[column] = !bit1[column]];
-    for(var i=0; i < 8; i++)
-    {
-        if(bit1[i]) { decimal1 = decimal1 + Math.pow(2, i); }
+    document.getElementById(column + "c").innerHTML = bit1_display[bit1[column] = !bit1[column]];
+    for (var i = 0; i < 8; i++) {
+        if (bit1[i]) {
+            decimal1 = decimal1 + Math.pow(2, i);
+        }
     }
     document.getElementById("decimal1").innerHTML = decimal1;
 }
@@ -21,46 +21,48 @@ bit_display[false] = "0";
 bit_display[true] = "1";
 bit.fill(false);
 
-function set_bits()
-{
-    if(isNaN(document.getElementById("value_A").value) || document.getElementById("value_A").value > 255 || document.getElementById("value_A").value < 0 || isNaN(document.getElementById("value_B").value) || document.getElementById("value_B").value < 0 || document.getElementById("value_B").value > 255)
-    {
+function set_bits() {
+    if (isNaN(document.getElementById("value_A").value) || document.getElementById("value_A").value > 255 || document.getElementById("value_A").value < 0 || isNaN(document.getElementById("value_B").value) || document.getElementById("value_B").value < 0 || document.getElementById("value_B").value > 255) {
         document.getElementById("value_A").value = 0;
         document.getElementById("value_B").value = 0;
         alert("Only numbers between 0 and 255 can be entered.");
         set_bits();
-    }
-    else
-    {
-        for(var i=0; i < 8; i++)
-        {
-            if((document.getElementById("value_A").value&Math.pow(2,i))>0) { bit_value = true; } else { bit_value = false; }
+    } else {
+        for (var i = 0; i < 8; i++) {
+            if ((document.getElementById("value_A").value & Math.pow(2, i)) > 0) {
+                bit_value = true;
+            } else {
+                bit_value = false;
+            }
             document.getElementById(i).innerHTML = bit_display[bit[i] = bit_value];
-            if((document.getElementById("value_B").value&Math.pow(2,i))>0) { bit_value = true; } else { bit_value = false; }
-            document.getElementById(i+8).innerHTML = bit_display[bit[i+8] = bit_value];
+            if ((document.getElementById("value_B").value & Math.pow(2, i)) > 0) {
+                bit_value = true;
+            } else {
+                bit_value = false;
+            }
+            document.getElementById(i + 8).innerHTML = bit_display[bit[i + 8] = bit_value];
         }
         do_bitwise();
     }
 }
 
-function toggle_bit(column)
-{
+function toggle_bit(column) {
     var decimal = 0;
     document.getElementById(column).innerHTML = bit_display[bit[column] = !bit[column]];
-    for(var i=0; i < 16; i++)
-    {
-        if(bit[i]) { decimal = decimal + Math.pow(2, i); }
+    for (var i = 0; i < 16; i++) {
+        if (bit[i]) {
+            decimal = decimal + Math.pow(2, i);
+        }
     }
-    document.getElementById("value_A").value = decimal&255;
-    document.getElementById("value_B").value = Math.floor(decimal/256);
+    document.getElementById("value_A").value = decimal & 255;
+    document.getElementById("value_B").value = Math.floor(decimal / 256);
     do_bitwise(operator);
 }
 
-function change_operator(oper, ind)
-{
-    var tab =  document.querySelectorAll( '.oper' );
-    for(var i=0; i<tab.length; i++){
-        if(tab[i].classList.contains('active_oper')){
+function change_operator(oper, ind) {
+    var tab = document.querySelectorAll('.oper');
+    for (var i = 0; i < tab.length; i++) {
+        if (tab[i].classList.contains('active_oper')) {
             tab[i].classList.remove('active_oper');
         }
     }
@@ -70,27 +72,26 @@ function change_operator(oper, ind)
     do_bitwise(operator);
 }
 
-function do_bitwise(operator)
-{
+function do_bitwise(operator) {
     var decimal = 0;
     var bit_value;
-    
-    for(var i=0; i < 8; i++)
-    {
-        switch(operator)
-        {
+
+    for (var i = 0; i < 8; i++) {
+        switch (operator) {
             case "AND":
-                bit_value = bit[i]&bit[i+8];
+                bit_value = bit[i] & bit[i + 8];
                 break;
             case "OR":
-                bit_value = bit[i]|bit[i+8];
+                bit_value = bit[i] | bit[i + 8];
                 break;
             default:
-                bit_value = (bit[i]!=bit[i+8]);
+                bit_value = (bit[i] != bit[i + 8]);
         }
 
-        document.getElementById(i+16).innerHTML = bit_display[bit_value==true];
-        if(bit_value) { decimal = decimal + Math.pow(2, i); }
+        document.getElementById(i + 16).innerHTML = bit_display[bit_value == true];
+        if (bit_value) {
+            decimal = decimal + Math.pow(2, i);
+        }
     }
     document.getElementById("result").innerHTML = decimal;
 }
@@ -111,25 +112,19 @@ bit_display_bool[true] = "url(../assets/images/bulb_on.png)";
 switch_display[false] = "url(../assets/images/switch_off.png)";
 switch_display[true] = "url(../assets/images/switch_on.png)";
 
-function toggle_switch(switch_no)
-{
+function toggle_switch(switch_no) {
     document.getElementById(switch_no + "_bool").style.backgroundImage = switch_display[bit_bool[switch_no] = !bit_bool[switch_no]];
     show_result();
 }
 
-function show_result()
-{
-    if(document.getElementById("operator").value == "NOT")
-    {
+function show_result() {
+    if (document.getElementById("operator").value == "NOT") {
         document.getElementById("0_bool").style.backgroundImage = "none";
-    }
-    else
-    {
+    } else {
         document.getElementById("0_bool").style.backgroundImage = switch_display[bit_bool[0]];
     }
 
-    switch(document.getElementById("operator").value)
-    {
+    switch (document.getElementById("operator").value) {
         case "AND":
             document.getElementById("operator").style.backgroundImage = "url('../assets/images/AND_gate.png')";
             document.getElementById("result").style.backgroundImage = bit_display_bool[bit_bool[0] && bit_bool[1]];
@@ -184,7 +179,7 @@ function build() {
     }
     string += "<th>" + text + "</th></tr></thead><tbody>";
     for (i = 0; i < Math.pow(2, variables.length); i++) {
-        string += "<tr><td style=\"letter-spacing: 0; padding: initial;\">"+i.toString()+"</td>";
+        string += "<tr><td style=\"letter-spacing: 0; padding: initial;\">" + i.toString() + "</td>";
         let data = [];
         for (j = 0; j < variables.length; j++) {
             data[j] = Math.floor(i / Math.pow(2, variables.length - j - 1)) % 2;
@@ -215,9 +210,9 @@ function build() {
             let start = equation.lastIndexOf("(");
             let end = equation.indexOf(")", start);
             if (start != -1)
-                equation = equation.substring(0, start)
-                    + solve(equation.substring(start + 1, end))
-                    + equation.substring(end + 1);
+                equation = equation.substring(0, start) +
+                solve(equation.substring(start + 1, end)) +
+                equation.substring(end + 1);
         }
         equation = equation.replace(/''/g, '');
         equation = equation.replace(/0'/g, '1');
@@ -242,25 +237,19 @@ function build() {
 
 var subject_name = new Array("English", "Maths", "Science", "Computing", "History", "Geography", "French", "German");
 
-function decode()
-{
-    if(isNaN(document.getElementById("homework").value) | document.getElementById("homework").value < 0 | document.getElementById("homework").value > 255)
-    {
+function decode() {
+    if (isNaN(document.getElementById("homework").value) | document.getElementById("homework").value < 0 | document.getElementById("homework").value > 255) {
         alert("The code must be a number between 0 and 255");
-    }
-    else
-    {
+    } else {
         var subject_text;
-        if(document.getElementById("homework").value == 0)
-        {
+        if (document.getElementById("homework").value == 0) {
             subject_text = "<p>There is no homework today.</p>";
-        }
-        else
-        {
+        } else {
             subject_text = "<p>Today's homework:</p><ul>";
-            for(var i = 0; i<=78; i++)
-            {
-                if(document.getElementById("homework").value & Math.pow(2, i)) { subject_text = subject_text + "<li>" + subject_name[i] + "</li>"; }
+            for (var i = 0; i <= 78; i++) {
+                if (document.getElementById("homework").value & Math.pow(2, i)) {
+                    subject_text = subject_text + "<li>" + subject_name[i] + "</li>";
+                }
             }
             subject_text = subject_text + "</ul>";
         }
@@ -269,29 +258,20 @@ function decode()
     }
 }
 
-function update_display()
-{
+function update_display() {
     var values = document.querySelectorAll('input[type="text_2"]');
     var pixels = document.querySelectorAll('.pixel');
 
-    for(var i = 0; i<64; i+=8)
-    {
-        if(isNaN(values[i/8].value) || values[i/8].value > 255 || values[i/8].value < 0)
-        {
+    for (var i = 0; i < 64; i += 8) {
+        if (isNaN(values[i / 8].value) || values[i / 8].value > 255 || values[i / 8].value < 0) {
             alert("Only enter numbers between 0 and 255.");
-            values[i/8].select();
-        }
-        else
-        {
-            for(var n = 0; n<8; n++)
-            {
-                if(values[i/8].value & Math.pow(2,n))
-                {
-                    pixels[i+(7-n)].style.backgroundColor = "#404040";
-                }
-                else
-                {
-                    pixels[i+(7-n)].style.backgroundColor = "#F0F0F0";
+            values[i / 8].select();
+        } else {
+            for (var n = 0; n < 8; n++) {
+                if (values[i / 8].value & Math.pow(2, n)) {
+                    pixels[i + (7 - n)].style.backgroundColor = "#404040";
+                } else {
+                    pixels[i + (7 - n)].style.backgroundColor = "#F0F0F0";
                 }
             }
         }
@@ -299,15 +279,14 @@ function update_display()
 }
 
 
-function PetrickMethod()
-{
+function PetrickMethod() {
     this.problem;
     this.maxProblemSize = 100;
     this.solution;
     this.log = "";
     var that = this;
 
-    this.test = function() {
+    this.test = function () {
         var andArray = new Array();
         var orArray;
         var monomA;
@@ -372,7 +351,7 @@ function PetrickMethod()
         this.solve(andArray);
     };
 
-    this.solve = function(eq) {
+    this.solve = function (eq) {
 
         this.problem = eq;
         this.log = "";
@@ -496,16 +475,16 @@ function PetrickMethod()
                     str += " &or; ";
                 var monom = orArray[j];
                 for (var k in monom) {
-                    str += "<i>p</i><sub><small>"+ monom[k] + "</small></sub>";
+                    str += "<i>p</i><sub><small>" + monom[k] + "</small></sub>";
                 }
                 first = false;
             }
             str += ")";
         }
-        if(that.log.length > 0) {
+        if (that.log.length > 0) {
             that.log += "<p>&hArr;&nbsp;" + str + "</p>";
-        }else{
-            that.log += "<p>"+ str + "</p>";
+        } else {
+            that.log += "<p>" + str + "</p>";
         }
     }
 
@@ -565,9 +544,9 @@ function ImplicantGroup() {
 function PrimTermTable(ord) {
     this.essentialPrimTerms = new Array();
     this.order = ord;
-    this.remainingVars =  new Array();;
-    this.remainingPrimTerms =  new Array();
-    this.supersededPrimTerms =  new Array();
+    this.remainingVars = new Array();
+    this.remainingPrimTerms = new Array();
+    this.supersededPrimTerms = new Array();
 }
 
 function hsvToRgb(h, s, v) {
@@ -600,7 +579,7 @@ function hsvToRgb(h, s, v) {
             break;
     }
 
-    return [ Math.floor(r * 255), Math.floor(g * 255), Math.floor(b * 255) ];
+    return [Math.floor(r * 255), Math.floor(g * 255), Math.floor(b * 255)];
 }
 
 function QuineMcCluskeyDataCtrl() {
@@ -616,7 +595,7 @@ function QuineMcCluskeyDataCtrl() {
     this.petrickTermPrims = new Array;
     this.allowDontCare = false;
 
-    this.init = function(no) {
+    this.init = function (no) {
         this.noOfVars = no;
         this.funcdata.length = 0;
         this.primTerms.length = 0;
@@ -636,37 +615,37 @@ function QuineMcCluskeyDataCtrl() {
 
     };
 
-    this.setFuncData = function(i, val) {
+    this.setFuncData = function (i, val) {
         if (i < 0 || i >= this.funcdata.length)
             return;
         this.funcdata[i] = val;
     };
 
-    this.activated = function(i) {
+    this.activated = function (i) {
         if (i < 0 || i >= this.funcdata.length)
             return;
 
         this.funcdata[i] += 1;
-        if(this.allowDontCare) {
+        if (this.allowDontCare) {
             if (this.funcdata[i] > 2) this.funcdata[i] = 0;
-        }else{
+        } else {
             if (this.funcdata[i] > 1) this.funcdata[i] = 0;
         }
         this.compute();
     };
 
-    this.random = function() {
+    this.random = function () {
         for (var i = 0; i < this.funcdata.length; i++) {
-            if(this.allowDontCare) {
+            if (this.allowDontCare) {
                 this.funcdata[i] = Math.floor(Math.random() * 3);
-            }else{
+            } else {
                 this.funcdata[i] = Math.floor(Math.random() * 2);
             }
         }
         this.compute();
     };
 
-    this.clear = function() {
+    this.clear = function () {
         for (var i = 0; i < this.funcdata.length; i++) {
             this.funcdata[i] = 0;
         }
@@ -682,7 +661,7 @@ function QuineMcCluskeyDataCtrl() {
         return counter;
     }
 
-    this.compute = function() {
+    this.compute = function () {
         this.primTerms.length = 0;
         this.implicantGroups.length = 0;
         this.minimalTerm = "0";
@@ -694,14 +673,14 @@ function QuineMcCluskeyDataCtrl() {
         var counter = 0;
         var lastIg = -1;
         var continueLoop = true;
-        while(continueLoop) {
+        while (continueLoop) {
 
             continueLoop = false;
             var ig = new ImplicantGroup();
 
-            if(counter === 0) {
+            if (counter === 0) {
                 for (var i = 0; i < this.funcdata.length; i++) {
-                    if(this.funcdata[i] > 0) {
+                    if (this.funcdata[i] > 0) {
                         var impl = new Implicant();
                         impl.imp[i] = i;
                         impl.isPrim = true;
@@ -709,10 +688,10 @@ function QuineMcCluskeyDataCtrl() {
                         continueLoop = true;
                     }
                 }
-            }else{
+            } else {
 
                 for (var i = 0; i < lastIg.group.length; i++) {
-                    for (var j = i+1; j < lastIg.group.length; j++) {
+                    for (var j = i + 1; j < lastIg.group.length; j++) {
                         var imp1 = lastIg.group[i];
                         var imp2 = lastIg.group[j];
 
@@ -747,27 +726,27 @@ function QuineMcCluskeyDataCtrl() {
                                     impl.imp[n] = parseInt(n);
 
                                 var foundMatch = false; // determine if this combination is already there
-                                for(var k=0; k < ig.group.length; k++) {
+                                for (var k = 0; k < ig.group.length; k++) {
                                     var exist = ig.group[k];
                                     var isTheSame = true;
-                                    for(var m in impl.imp) {
+                                    for (var m in impl.imp) {
                                         var found = false;
                                         for (var n in exist.imp) {
-                                            if(parseInt(m) === parseInt(n)) {
+                                            if (parseInt(m) === parseInt(n)) {
                                                 found = true;
                                             }
                                         }
-                                        if(!found) {
+                                        if (!found) {
                                             isTheSame = false;
                                             break;
                                         }
                                     }
-                                    if(isTheSame) {
+                                    if (isTheSame) {
                                         foundMatch = true;
                                         break;
                                     }
                                 }
-                                if(!foundMatch) {
+                                if (!foundMatch) {
                                     ig.group.push(impl);
                                     continueLoop = true;
                                 }
@@ -777,7 +756,7 @@ function QuineMcCluskeyDataCtrl() {
                 }
             }
 
-            if(continueLoop) this.implicantGroups.push(ig);
+            if (continueLoop) this.implicantGroups.push(ig);
             lastIg = ig;
             counter++;
         }
@@ -786,24 +765,24 @@ function QuineMcCluskeyDataCtrl() {
         this.primTerms.length = 0;
         this.minimalTermPrims.length = 0;
         var color = 0.0;
-        for(var i= this.implicantGroups.length-1; i >=0; i--) {
+        for (var i = this.implicantGroups.length - 1; i >= 0; i--) {
             var g = this.implicantGroups[i].group;
 
-            for(var j=0; j < g.length; j++) {
-                if(g[j].isPrim) {
+            for (var j = 0; j < g.length; j++) {
+                if (g[j].isPrim) {
 
                     // prim terms introduced by don't cares
                     // must have at least one 1
                     var containsOne = false;
                     var allFuncPrimTerm = g[j].imp;
-                    for(var kk in allFuncPrimTerm) {
+                    for (var kk in allFuncPrimTerm) {
                         var k = allFuncPrimTerm[kk];
-                        if(this.funcdata[k] === 1) {
+                        if (this.funcdata[k] === 1) {
                             containsOne = true;
                         }
                     }
 
-                    if(!containsOne){
+                    if (!containsOne) {
                         g[j].isOnlyDontCare = true;
                     } else {
                         var primTerm = new PrimTerm();
@@ -848,7 +827,7 @@ function QuineMcCluskeyDataCtrl() {
         // looking for essential prime implicants
         var remaining = new Object();
         for (var i = 0; i < this.funcdata.length; i++) {
-            if(this.funcdata[i] === 1) {
+            if (this.funcdata[i] === 1) {
                 remaining[i] = i;
             }
         }
@@ -873,15 +852,15 @@ function QuineMcCluskeyDataCtrl() {
                 }
             } else {
                 // remove rows
-                var prevTable = this.primTermTables[primTableLoop-1];
-                for(var k=0; k <prevTable.remainingPrimTerms.length; k++) {
-                    if(!prevTable.remainingPrimTerms[k].used){
+                var prevTable = this.primTermTables[primTableLoop - 1];
+                for (var k = 0; k < prevTable.remainingPrimTerms.length; k++) {
+                    if (!prevTable.remainingPrimTerms[k].used) {
 
                         var superseded = false;
                         var impA = prevTable.remainingPrimTerms[k].implicant.imp;
                         var varCover = new Object;
                         var countA = 0;
-                        for(var r in remaining) {
+                        for (var r in remaining) {
                             var v = remaining[r];
                             if (v in impA) {
                                 varCover[v] = v;
@@ -899,7 +878,7 @@ function QuineMcCluskeyDataCtrl() {
                                         countB++;
                                     }
                                 }
-                                if(countA === countB) {
+                                if (countA === countB) {
                                     var countBInRemaining = 0;
                                     for (var r in remaining) {
                                         var v = remaining[r];
@@ -907,10 +886,10 @@ function QuineMcCluskeyDataCtrl() {
                                             countBInRemaining++;
                                         }
                                     }
-                                    if(countBInRemaining > countA) {
+                                    if (countBInRemaining > countA) {
                                         superseded = true;
-                                    }else{
-                                        if(k > l) {
+                                    } else {
+                                        if (k > l) {
                                             superseded = true;
                                         }
                                     }
@@ -919,9 +898,9 @@ function QuineMcCluskeyDataCtrl() {
                             }
                         }
 
-                        if(!superseded) {
+                        if (!superseded) {
                             primTermTable.remainingPrimTerms.push(prevTable.remainingPrimTerms[k]);
-                        }else{
+                        } else {
                             prevTable.supersededPrimTerms.push(prevTable.remainingPrimTerms[k]);
                         }
                     }
@@ -947,7 +926,7 @@ function QuineMcCluskeyDataCtrl() {
 
                     if (count === 1) {
                         currentTerms[term].neededByVar[i] = primTableLoop;
-                        if(!currentTerms[term].used) {
+                        if (!currentTerms[term].used) {
                             this.minimalTermPrims.push(currentTerms[term]);
                             currentTerms[term].used = true;
                             primTermTable.essentialPrimTerms.push(currentTerms[term]);
@@ -965,7 +944,7 @@ function QuineMcCluskeyDataCtrl() {
 
                 // remove columns
                 var tmpRemaining = new Object();
-                for (var e in remaining){
+                for (var e in remaining) {
                     var ee = remaining[e];
                     tmpRemaining[ee] = ee;
                     delete remaining[e];
@@ -973,17 +952,17 @@ function QuineMcCluskeyDataCtrl() {
                 var remainingCount = 0;
                 for (var r in tmpRemaining) {
                     var t = tmpRemaining[r];
-                    if(!(t in toBeRemoved)) {
-                        remaining [t] = t;
+                    if (!(t in toBeRemoved)) {
+                        remaining[t] = t;
                         remainingCount++;
                     }
                 }
             }
 
-            if( remainingCount === 0 ) {
+            if (remainingCount === 0) {
                 primTableFound = false; // break loop
-            }else{
-                if(!primTableFound) {
+            } else {
+                if (!primTableFound) {
                     cyclicCoveringFound = true;
                 }
             }
@@ -1005,7 +984,7 @@ function QuineMcCluskeyDataCtrl() {
 
                 for (var k = 0; k < primTermTable.remainingPrimTerms.length; k++) {
                     var imp = primTermTable.remainingPrimTerms[k].implicant.imp;
-                    if(ii in imp){
+                    if (ii in imp) {
                         var monom = new Object();
                         monom[k] = k;
                         orArray.push(monom);
@@ -1082,7 +1061,7 @@ function QuineMcCluskeyDataCtrl() {
                 this.minimalTerm = "0";
                 this.coloredMinimalTerm = "0";
             }
-        }else{
+        } else {
             this.minimalTerm = 'Error: The cyclic covering problem is too large (increase the "maxProblemSize" parameter)';
             this.coloredMinimalTerm = 'Error: The cyclic covering problem is too large (increase the "maxProblemSize" parameter)';
         }
@@ -1097,34 +1076,38 @@ function QuineMcCluskey(parentDivId, columns, language) {
     var divId = parentDivId;
     this.cols = columns + 1;
     this.rows = Math.pow(2, columns);
-    this.data =  new QuineMcCluskeyDataCtrl();
+    this.data = new QuineMcCluskeyDataCtrl();
     var that = this;
 
     var labels;
-    if(language === 0) {
-        labels = {ttable:"Truth table",
-            minExp:"Minimal boolean expression",
-            impli:"Implicants",
-            order:"Order",
-            primChart:"Prime implicant chart",
-            primChartReduced:"Reduced prime implicant chart (Iteration",
-            extractedPrims:"Extracted essential prime implicants",
-            extractedMPrims:"Extracted prime implicants",
-            petricksM:"Petrick's method"};
-    }else{
-        labels = {ttable:"Wahrheitstafel",
-            minExp:"Minimaler boolescher Ausdruck",
-            impli:"Implikanten",
-            order:"Ordnung",
-            primChart:"Primimplikantentafel",
-            primChartReduced:"Reduzierte Primimplikantentafel (Iteration",
-            extractedPrims:"Extrahierte essentielle Primimplikanten",
-            extractedMPrims:"Extrahierte Primimplikanten",
-            petricksM:"Verfahren von Petrick"};
+    if (language === 0) {
+        labels = {
+            ttable: "Truth table",
+            minExp: "Minimal boolean expression",
+            impli: "Implicants",
+            order: "Order",
+            primChart: "Prime implicant chart",
+            primChartReduced: "Reduced prime implicant chart (Iteration",
+            extractedPrims: "Extracted essential prime implicants",
+            extractedMPrims: "Extracted prime implicants",
+            petricksM: "Petrick's method"
+        };
+    } else {
+        labels = {
+            ttable: "Wahrheitstafel",
+            minExp: "Minimaler boolescher Ausdruck",
+            impli: "Implikanten",
+            order: "Ordnung",
+            primChart: "Primimplikantentafel",
+            primChartReduced: "Reduzierte Primimplikantentafel (Iteration",
+            extractedPrims: "Extrahierte essentielle Primimplikanten",
+            extractedMPrims: "Extrahierte Primimplikanten",
+            petricksM: "Verfahren von Petrick"
+        };
 
     }
 
-    this.init = function() {
+    this.init = function () {
 
         this.data.init(columns);
 
@@ -1136,7 +1119,7 @@ function QuineMcCluskey(parentDivId, columns, language) {
 
             var parent = document.getElementById(divId);
             if (!parent) {
-                if(divId !== "fakeDivId") {
+                if (divId !== "fakeDivId") {
                     console.log("QuineMcCluskey error: can not find an element with the given name: " + divId);
                 }
                 myDiv = -1;
@@ -1148,7 +1131,7 @@ function QuineMcCluskey(parentDivId, columns, language) {
         this.update();
     };
 
-    this.setNoOfVars = function(vars) {
+    this.setNoOfVars = function (vars) {
         var c = parseInt(vars);
         if (c < 1 && c > 6)
             return;
@@ -1158,22 +1141,22 @@ function QuineMcCluskey(parentDivId, columns, language) {
         this.update();
     };
 
-    this.genRandom = function() {
+    this.genRandom = function () {
         this.data.random();
         this.update();
     };
 
-    this.allowDontCares = function(type) {
-        if(type > 0) {
+    this.allowDontCares = function (type) {
+        if (type > 0) {
             this.data.allowDontCare = true;
-        }else{
+        } else {
             this.data.allowDontCare = false;
         }
         this.data.clear();
         this.update();
     };
 
-    this.drawImplicantGroup = function(g, parent, primFlag, t, drawPetrickVars) {
+    this.drawImplicantGroup = function (g, parent, primFlag, t, drawPetrickVars) {
         var primTermTable = this.data.primTermTables[t];
         var myTable = document.createElement('table');
         myTable.setAttribute('class', 'qmcTableClass');
@@ -1186,7 +1169,7 @@ function QuineMcCluskey(parentDivId, columns, language) {
 
         for (var j = 0; j < this.data.noOfVars; j++) {
             var myCell = document.createElement('th');
-            myCell.innerHTML = "<i>x</i><sub><small>" + (this.data.noOfVars-1-j) + "</small></sub>";
+            myCell.innerHTML = "<i>x</i><sub><small>" + (this.data.noOfVars - 1 - j) + "</small></sub>";
             myCell.setAttribute('class', 'qmcHeaderX qmcBit');
             myRow.appendChild(myCell);
         }
@@ -1209,15 +1192,17 @@ function QuineMcCluskey(parentDivId, columns, language) {
         myTable.appendChild(myRow);
 
         var iMax = 0;
-        if(!primFlag) iMax = g.group.length; else iMax = primTermTable.remainingPrimTerms.length;
+        if (!primFlag) iMax = g.group.length;
+        else iMax = primTermTable.remainingPrimTerms.length;
 
         for (var i = 0; i < iMax; i++) {
             var impl = -1;
-            if(!primFlag) impl = g.group[i]; else impl = primTermTable.remainingPrimTerms[i].implicant;
+            if (!primFlag) impl = g.group[i];
+            else impl = primTermTable.remainingPrimTerms[i].implicant;
             var bits = 0;
             var mask = impl.bitMask;
 
-            for(var m in impl.imp) {
+            for (var m in impl.imp) {
                 bits = impl.imp[m];
                 break;
             }
@@ -1227,8 +1212,8 @@ function QuineMcCluskey(parentDivId, columns, language) {
             var cell1 = document.createElement('td');
             var cell1Str = "";
             var first = true;
-            for(var m in impl.imp) {
-                if(!first) cell1Str +=  ", ";
+            for (var m in impl.imp) {
+                if (!first) cell1Str += ", ";
                 cell1Str += impl.imp[m].toString(10);
                 first = false;
             }
@@ -1242,7 +1227,7 @@ function QuineMcCluskey(parentDivId, columns, language) {
                 myCell.setAttribute('class', 'qmcBit');
                 var str;
 
-                var currentBit = Math.pow(2, (this.data.noOfVars - 1)-j);
+                var currentBit = Math.pow(2, (this.data.noOfVars - 1) - j);
 
                 if ((currentBit & mask) === currentBit) {
                     str = "-";
@@ -1264,15 +1249,15 @@ function QuineMcCluskey(parentDivId, columns, language) {
                 var cellLast = document.createElement('td');
                 cellLast.setAttribute('class', 'qmcTdNoBorder');
                 if (impl.isPrim) {
-                    cellLast.innerHTML = "&#x2713;";  //equivalent &check; in most browsers
-                    if(impl.isOnlyDontCare){
+                    cellLast.innerHTML = "&#x2713;"; //equivalent &check; in most browsers
+                    if (impl.isOnlyDontCare) {
                         cellLast.innerHTML = " (&times;)"
                     }
                 } else {
                     cellLast.innerHTML = "&rarr;";
                 }
                 myRow.appendChild(cellLast);
-            }else{
+            } else {
                 for (var v = 0; v < primTermTable.remainingVars.length; v++) {
                     var ii = primTermTable.remainingVars[v];
                     var cellUsed = document.createElement('td');
@@ -1280,7 +1265,7 @@ function QuineMcCluskey(parentDivId, columns, language) {
                     if (ii in impl.imp) {
                         cellUsed.innerHTML = "&#9675;";
                         if (ii in primTermTable.remainingPrimTerms[i].neededByVar) {
-                            if(primTermTable.remainingPrimTerms[i].neededByVar[ii] === t) {
+                            if (primTermTable.remainingPrimTerms[i].neededByVar[ii] === t) {
                                 cellUsed.innerHTML = "<span style='color:green;'>&#9679;</span>";
                             }
                         }
@@ -1291,7 +1276,7 @@ function QuineMcCluskey(parentDivId, columns, language) {
                 var cellLast = document.createElement('td');
                 cellLast.setAttribute('class', 'qmcTdNoBorder');
                 cellLast.innerHTML = primTermTable.remainingPrimTerms[i].coloredTermString;
-                if(drawPetrickVars) {
+                if (drawPetrickVars) {
                     var pVars = "&nbsp;&equiv;&nbsp;<i>p</i><sub><small>" + i + "</small></sub>";
                     cellLast.innerHTML += pVars;
                 }
@@ -1308,16 +1293,16 @@ function QuineMcCluskey(parentDivId, columns, language) {
     };
 
 
-    this.update = function() {
+    this.update = function () {
 
-        if(myDiv === -1) return;
+        if (myDiv === -1) return;
 
         // clean up
-        var oldInnerDiv = document.getElementById(divId+"_innerDiv");
+        var oldInnerDiv = document.getElementById(divId + "_innerDiv");
         if (oldInnerDiv) myDiv.removeChild(oldInnerDiv);
 
         var myInnerDiv = document.createElement('div');
-        myInnerDiv.setAttribute('id', divId+"_innerDiv");
+        myInnerDiv.setAttribute('id', divId + "_innerDiv");
 
 
         var myTruthTableDiv = document.createElement('div');
@@ -1338,7 +1323,7 @@ function QuineMcCluskey(parentDivId, columns, language) {
         for (var j = 0; j < this.cols; j++) {
             var myCell = document.createElement('th');
             if (j < this.cols - 1) {
-                myCell.innerHTML = "<i>x</i><sub><small>" + (this.cols-2-j) + "</small></sub>";
+                myCell.innerHTML = "<i>x</i><sub><small>" + (this.cols - 2 - j) + "</small></sub>";
                 myCell.setAttribute('class', 'qmcHeaderX qmcBit');
             } else {
                 myCell.innerHTML = "<i>Y</i>";
@@ -1375,7 +1360,7 @@ function QuineMcCluskey(parentDivId, columns, language) {
                 } else { // y element
                     myCell.setAttribute('class', 'qmcBit qmcBitY');
                     myCell.setAttribute('title', i);
-                    myCell.onmousedown = function(event) {
+                    myCell.onmousedown = function (event) {
                         myCellMouseDown(event);
                     };
 
@@ -1398,27 +1383,27 @@ function QuineMcCluskey(parentDivId, columns, language) {
         myInnerDiv.appendChild(myTruthTableDiv);
 
 
-        for(var i=0; i < this.data.implicantGroups.length; i++) {
+        for (var i = 0; i < this.data.implicantGroups.length; i++) {
             var myImplicantDiv = document.createElement('div');
-            myImplicantDiv.innerHTML = "<div>"+ labels['impli'] + " (" + labels['order'] + " "+i+"):</div>";
+            myImplicantDiv.innerHTML = "<div>" + labels['impli'] + " (" + labels['order'] + " " + i + "):</div>";
             myImplicantDiv.setAttribute('class', 'qmcTableLabelDiv');
-            this.drawImplicantGroup(this.data.implicantGroups[i],  myImplicantDiv, false, 0, false);
+            this.drawImplicantGroup(this.data.implicantGroups[i], myImplicantDiv, false, 0, false);
             myInnerDiv.appendChild(myImplicantDiv);
         }
 
 
         for (var i = 0; i < this.data.primTermTables.length; i++) {
             var resultDiv = document.createElement('div');
-            if(i === 0 ) {
+            if (i === 0) {
                 resultDiv.innerHTML = "<p>" + labels['primChart'] + ":</p";
-            }else{
-                resultDiv.innerHTML = "<p> " +labels['primChartReduced'] + " " + (i-1) + "):</p>";
+            } else {
+                resultDiv.innerHTML = "<p> " + labels['primChartReduced'] + " " + (i - 1) + "):</p>";
             }
 
             resultDiv.setAttribute('class', 'qmcTableResultDiv');
 
             var drawPetrickVars = false;
-            if(this.data.petrickTermPrims.length > 0 && i === this.data.primTermTables.length-1) {
+            if (this.data.petrickTermPrims.length > 0 && i === this.data.primTermTables.length - 1) {
                 drawPetrickVars = true;
             }
 
@@ -1428,12 +1413,12 @@ function QuineMcCluskey(parentDivId, columns, language) {
             var essPTermsStr = "";
             var primTermTable = this.data.primTermTables[i];
             var jj = primTermTable.essentialPrimTerms.length;
-            for(var j=0; j < jj; j++) {
+            for (var j = 0; j < jj; j++) {
                 essPTermsStr += primTermTable.essentialPrimTerms[j].coloredTermString;
-                if(j !== (jj-1)) essPTermsStr += ", ";
+                if (j !== (jj - 1)) essPTermsStr += ", ";
             }
-            if(jj > 0) {
-                essPTermsDiv.innerHTML = "<p>" + labels['extractedPrims'] +": <span class='qmcMathFont'>" + essPTermsStr + "</span></p>";
+            if (jj > 0) {
+                essPTermsDiv.innerHTML = "<p>" + labels['extractedPrims'] + ": <span class='qmcMathFont'>" + essPTermsStr + "</span></p>";
                 essPTermsDiv.setAttribute('class', 'qmcIndent');
                 resultDiv.appendChild(essPTermsDiv);
             }
@@ -1469,7 +1454,7 @@ function QuineMcCluskey(parentDivId, columns, language) {
 
 
         var termDiv = document.createElement('div');
-        termDiv.innerHTML = "<p><strong>" + labels['minExp']+ ":</strong> </p> <p ><span class='qmcMathFont'><i>Y</i>&nbsp;=&nbsp;" + this.data.coloredMinimalTerm; +"</span></p>";
+        termDiv.innerHTML = "<p><strong>" + labels['minExp'] + ":</strong> </p> <p ><span class='qmcMathFont'><i>Y</i>&nbsp;=&nbsp;" + this.data.coloredMinimalTerm; + "</span></p>";
         myInnerDiv.appendChild(termDiv);
         myDiv.appendChild(myInnerDiv);
     };
@@ -1499,7 +1484,7 @@ function UIElement(x, y, width, height, type, ref, subref, slotType) {
     this.y = y;
     this.x2 = x + width;
     this.y2 = y + height;
-    this.type = type; // 0 = field, 1 = slot, 2 connection
+    this.type = type;
     this.ref = ref;
 }
 
@@ -1561,45 +1546,59 @@ function KarnaughMapDataCtrl(qmcRef) {
             }
         }
 
-        var mapped = 0;
-        this.fields[0].truthmapID = 0;
-        this.fields[1].truthmapID = 1;
-        var mirrorDirection = 0;
-        var mirrorXCount = 2;
-        var mirrorYCount = 1;
-        var mapped = 2;
-        var x = 0;
-        var y = 1;
-        var loop = 0;
-        var direction = 0;
-        while (loop < this.noOfVars - 1) {
-            for (var xx = 0; xx < mirrorXCount; xx++) {
-                for (var yy = 0; yy < mirrorYCount; yy++) {
-                    var loc = xx + yy * this.fieldPerLine;
+        // kmaps table uniqueID's changes done corrected
+        var k1 = [0,1];
+        var k2 = [0, 1, 2, 3];
+        var k3 = [0, 1, 3, 2, 4, 5, 7, 6];
+        var k4 = [0, 1, 3, 2, 4, 5, 7, 6, 12, 13, 15, 14, 8, 9, 11, 10];
+        var k5 = [0, 1, 3, 2, 16, 17, 19, 18, 4, 5, 7, 6, 20, 21, 23, 22, 12, 13, 15, 14, 28, 29, 31, 30, 8, 9, 11, 10, 24, 25, 27, 26];
+        var k6 = [0, 1, 3, 2, 16, 17, 19, 18, 4, 5, 7, 6, 20, 21, 23, 22, 12, 13, 15, 14, 28, 29, 31, 30, 8, 9, 11, 10, 24, 25, 27, 26, 32, 33, 35, 34, 48, 49, 51, 50, 36, 37, 39, 38, 52, 53, 55, 54, 44, 45, 47, 46, 60, 61, 63, 62, 40, 41, 43, 42, 56, 57, 59, 58];
 
-                    if (direction === 0) {
-                        var mirrorLoc = (x + xx) + (y + (mirrorYCount - 1) - yy) * this.fieldPerLine;
-                        this.fields[mirrorLoc].truthmapID = this.fields[loc].truthmapID + mirrorXCount * mirrorYCount;
-                    } else {
-                        var mirrorLoc = (x + (mirrorXCount - 1) - xx) + (y + yy) * this.fieldPerLine;
-                        this.fields[mirrorLoc].truthmapID = this.fields[loc].truthmapID + mirrorYCount * mirrorYCount;
-                    }
-                }
-            }
-            if (direction === 0) {
-                mirrorYCount = mirrorYCount * 2;
-                x = mirrorXCount;
-                y = 0;
-                direction = 1;
-            } else {
-                mirrorXCount = mirrorXCount * 2;
-                y = mirrorYCount;
-                x = 0;
-                direction = 0;
-            }
-            loop++;
+        var k7 = [0, 1, 5, 4, 20, 21, 17, 16, 80, 81, 85, 84, 68, 69, 65, 64,
+                  2, 3, 7, 6, 22, 23, 19, 18, 82, 83, 87, 86, 70, 71, 67, 66,
+                  10, 11, 15, 14, 30, 31, 27, 26, 90, 91, 95, 94, 78, 79, 75, 74,
+                  8, 9, 13, 12, 28, 29, 25, 24, 88, 89, 93, 92, 76, 77, 73, 72,
+                  40, 41, 45, 44, 60, 61, 57, 56, 120, 121, 125, 124, 108, 109, 105, 104,
+                  42, 43, 47, 46, 62, 63, 59, 58, 122, 123, 127, 126, 110, 111, 107, 106,
+                  34, 35, 39, 38, 54, 55, 51, 50, 114, 115, 119, 118, 102, 103, 99, 98,
+                  32, 33, 37, 36, 52, 53, 49, 48, 112, 113, 117, 116, 100, 101, 97, 96];
+
+        var k8 = [0, 1, 5, 4, 20, 21, 17, 16, 80, 81, 85, 84, 68, 69, 65, 64,
+                  2, 3, 7, 6, 22, 23, 19, 18, 82, 83, 87, 86, 70, 71, 67, 66,
+                  10, 11, 15, 14, 30, 31, 27, 26, 90, 91, 95, 94, 78, 79, 75, 74,
+                  8, 9, 13, 12, 28, 29, 25, 24, 88, 89, 93, 92, 76, 77, 73, 72,
+                  40, 41, 45, 44, 60, 61, 57, 56, 120, 121, 125, 124, 108, 109, 105, 104,
+                  42, 43, 47, 48, 62, 63, 59, 58, 122, 123, 127, 126, 110, 111, 107, 106,
+                  34, 35, 39, 38, 54, 55, 51, 50, 114, 115, 119, 118, 102, 103, 99, 98,
+                  32, 33, 37, 36, 52, 53, 49, 48, 112, 113, 117, 116, 100, 101, 97, 96,
+                  160, 161, 165, 164, 180, 181, 177, 176, 240, 241, 245, 244, 228, 229, 225, 224,
+                  162, 163, 167, 166, 182, 183, 179, 178, 242, 243, 247, 246, 230, 231, 227, 226,
+                  170, 171, 175, 174, 190, 191, 187, 186, 250, 251, 255, 254, 238, 239, 235, 234,
+                  168, 169, 173, 172, 188, 189, 185, 184, 248, 249, 253, 252, 236, 237, 233, 232,
+                  136, 137, 141, 140, 156, 157, 153, 152, 216, 217, 221, 220, 204, 205, 201, 200,
+                  138, 139, 143, 142, 158, 159, 155, 154, 218, 219, 223, 222, 206, 207, 203, 202,
+                  130, 131, 135, 134, 150, 151, 147, 146, 210, 211, 215, 214, 198, 199, 195, 194,
+                  128, 129, 133, 132, 148, 149, 145, 144, 208, 209, 213, 212, 196, 197, 193, 192
+                  ];
+
+        for (var i = 0; i < Math.pow(2, no); i++) {
+            if(no == 1)
+                this.fields[i].truthmapID = k1[i];
+            if (no === 2)
+                this.fields[i].truthmapID = k2[i];
+            else if (no === 3)
+                this.fields[i].truthmapID = k3[i];
+            else if (no === 4)
+                this.fields[i].truthmapID = k4[i];
+            else if (no === 5)
+                this.fields[i].truthmapID = k5[i];
+            else if (no === 6)
+                this.fields[i].truthmapID = k6[i];
+            else if (no === 7)
+                this.fields[i].truthmapID = k7[i];
+            else if (no === 8)
+                this.fields[i].truthmapID = k8[i];
         }
-
     };
 
     this.getKVFieldsCount = function () {
@@ -1617,6 +1616,8 @@ function KarnaughMapDataCtrl(qmcRef) {
     this.getKVFieldTruthmapID = function (fieldId) {
         return this.fields[fieldId].truthmapID;
     };
+
+
 
     this.getKVFieldValue = function (fieldId) {
         return this.fields[fieldId].value;
@@ -1733,6 +1734,8 @@ function KarnaughMapDataCtrl(qmcRef) {
         } // end m
     };
 }
+
+
 
 function KarnaughMap(parentDivId, qmcRef) {
     var data = new KarnaughMapDataCtrl(qmcRef);
@@ -1896,6 +1899,7 @@ function KarnaughMap(parentDivId, qmcRef) {
             value = "X";
             textColor = "#C8C8C8";
         }
+
         text.setAttribute("fill", textColor);
         //text.setAttribute("style", "font-family: sans-serif; font-weight: normal; font-style: normal");
         text.setAttribute("font-family", "sans-serif");
@@ -2163,7 +2167,7 @@ function KarnaughMap(parentDivId, qmcRef) {
         drawKVFields();
 
         // draws all blocks
-        if(!dontShowResult) drawKVBlocks();
+        if (!dontShowResult) drawKVBlocks();
 
         // draw labels
         if (overlays.length !== data.noOfVars + 2)
@@ -2189,11 +2193,11 @@ function KarnaughMap(parentDivId, qmcRef) {
                     path.setAttribute("fill", "none");
 
                     var d = "";
-                    d += "M " + x0 + "," + (labelPos - 2);  // start marker
+                    d += "M " + x0 + "," + (labelPos - 2); // start marker
                     d += " L " + x0 + "," + (labelPos + 2);
                     d += " M " + x0 + "," + labelPos;
                     d += " L " + x1 + "," + labelPos;
-                    d += " M " + x1 + "," + (labelPos - 2);  // end marker
+                    d += " M " + x1 + "," + (labelPos - 2); // end marker
                     d += " L " + x1 + "," + (labelPos + 2);
                     path.setAttribute("d", d);
                     svg.appendChild(path);
@@ -2221,11 +2225,11 @@ function KarnaughMap(parentDivId, qmcRef) {
                         path.setAttribute("fill", "none");
 
                         var d = "";
-                        d += "M " + (labelPos - 2) + "," + x0;  // start marker
+                        d += "M " + (labelPos - 2) + "," + x0; // start marker
                         d += " L " + (labelPos + 2) + "," + x0;
                         d += " M " + labelPos + "," + x0;
                         d += " L " + labelPos + "," + x1;
-                        d += " M " + (labelPos - 2) + "," + x1;  // end marker
+                        d += " M " + (labelPos - 2) + "," + x1; // end marker
                         d += " L " + (labelPos + 2) + "," + x1;
                         path.setAttribute("d", d);
                         svg.appendChild(path);
@@ -2275,10 +2279,10 @@ function KarnaughMap(parentDivId, qmcRef) {
         var termY = data.fieldHeight * data.fieldLines + data.fieldBorder;
         var termStyle = resultStyle + 'max-width:' + data.fieldPerLine * data.fieldWidth + 'px;';
         overlays[data.noOfVars + 1].setAttribute('style', termStyle);
-        if(!dontShowResult) {
+        if (!dontShowResult) {
             overlays[data.noOfVars + 1].innerHTML = "<span class='qmcMathFont'><i>Y</i>&nbsp;=&nbsp;" + qmc.data.coloredMinimalTerm + "</span></p>";
-        }else{
-            overlays[data.noOfVars + 1].innerHTML = "<span class='qmcMathFont'><i>Y</i>&nbsp;=&nbsp;" + "<span style='color:rgb(255,0,0)'>hidden</span>"+ "</span></p>";
+        } else {
+            overlays[data.noOfVars + 1].innerHTML = "<span class='qmcMathFont'><i>Y</i>&nbsp;=&nbsp;" + "<span style='color:rgb(255,0,0)'>hidden</span>" + "</span></p>";
         }
     };
 
@@ -2290,8 +2294,7 @@ function KarnaughMap(parentDivId, qmcRef) {
                 if (uiElements[n].x - 1 < pos.x &&
                     uiElements[n].x2 + 1 > pos.x &&
                     uiElements[n].y - 1 < pos.y &&
-                    uiElements[n].y2 + 1 > pos.y)
-                {
+                    uiElements[n].y2 + 1 > pos.y) {
                     selectedElement = n;
                 }
             }
@@ -2317,8 +2320,7 @@ function KarnaughMap(parentDivId, qmcRef) {
         event.preventDefault();
     }
 
-    function canvasMouseUp(event) {
-    }
+    function canvasMouseUp(event) {}
 
     function canvasMouseMove(event) {
         var pos = getMouse(event);
@@ -2338,7 +2340,9 @@ function KarnaughMap(parentDivId, qmcRef) {
 
     function getMouse(e) {
         var element = document.getElementById(divId);
-        var offsetX = 0, offsetY = 0, mx, my;
+        var offsetX = 0,
+            offsetY = 0,
+            mx, my;
 
         // compute the total offset
         if (element.offsetParent !== undefined) {
@@ -2350,7 +2354,10 @@ function KarnaughMap(parentDivId, qmcRef) {
 
         mx = e.pageX - offsetX;
         my = e.pageY - offsetY + document.getElementById("scrollcount").scrollTop;
-        console.log(mx + " " + my + " " + document.getElementById("scrollcount").scrollTop );
-        return {x: mx, y: my};
+        console.log(mx + " " + my + " " + document.getElementById("scrollcount").scrollTop);
+        return {
+            x: mx,
+            y: my
+        };
     }
 }
