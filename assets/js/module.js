@@ -544,7 +544,7 @@ function ImplicantGroup() {
 function PrimTermTable(ord) {
     this.essentialPrimTerms = new Array();
     this.order = ord;
-    this.remainingVars = new Array();;
+    this.remainingVars = new Array();
     this.remainingPrimTerms = new Array();
     this.supersededPrimTerms = new Array();
 }
