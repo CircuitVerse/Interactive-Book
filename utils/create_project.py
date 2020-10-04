@@ -100,8 +100,11 @@ with open(chapter_filename, 'w') as cf:
     print("", file=cf)
 
     # create sections
-    for level in ('basic', 'medium', 'advanced'):
-        for order, section in enumerate(chapter['sections'][level]):
+    order = 1
+    for level_order, level in enumerate(('basic', 'medium', 'advanced')):
+        for section_order, section in enumerate(chapter['sections'][level]):
+            # order string of the form l2s001, encoding level and section
+            order = 'l'+str(level_order)+'s'+str(section_order).zfill(3)
             section_filename = chapter_dir+'/'+section['filename']+'.md'
             if orgmode:
                 section_filename = chapter_dir+'/'+section['filename']+'.org'
@@ -114,7 +117,7 @@ with open(chapter_filename, 'w') as cf:
                 print(section_fm.format(chapter=chapter['toc_title'],
                                         toc_title=section['toc_title'],
                                         title=section['title'],
-                                        order=order+1,
+                                        order=order,
                                         level=level), file=sf)
                 if orgmode:
                     print("#+END_EXPORT", file=sf)
