@@ -1,11 +1,11 @@
 ---
 layout: circuitverse
-title: Binary representation
+title: Combinational MSI
 nav_order:
 has_children: true
 ---
 
-# Representation using binary numbers
+# Combinational MSI components
 {: .no_toc}
 
 ## Table of contents

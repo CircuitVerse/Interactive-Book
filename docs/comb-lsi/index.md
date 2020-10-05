@@ -1,11 +1,11 @@
 ---
 layout: circuitverse
-title: Binary representation
+title: Combinational LSI
 nav_order:
 has_children: true
 ---
 
-# Representation using binary numbers
+# Combinational LSI components
 {: .no_toc}
 
 ## Table of contents

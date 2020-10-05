@@ -1,11 +1,11 @@
 ---
 layout: circuitverse
-title: Binary representation
+title: Sequential SSI
 nav_order:
 has_children: true
 ---
 
-# Representation using binary numbers
+# Sequential SSI components
 {: .no_toc}
 
 ## Table of contents

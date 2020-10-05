@@ -1,11 +1,11 @@
 ---
 layout: circuitverse
-title: Binary representation
+title: Sequential Design
 nav_order:
 has_children: true
 ---
 
-# Representation using binary numbers
+# Sequential Design
 {: .no_toc}
 
 ## Table of contents

@@ -1,11 +1,11 @@
 ---
 layout: circuitverse
-title: Binary representation
+title: Logic Design
 nav_order:
 has_children: true
 ---
 
-# Representation using binary numbers
+# Combinational logic design
 {: .no_toc}
 
 ## Table of contents
