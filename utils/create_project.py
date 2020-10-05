@@ -34,6 +34,7 @@ layout: circuitverse
 title: {toc_title}
 nav_order:
 has_children: true
+has_toc: false
 ---"""
 
 chapter_title_md="""# {title}

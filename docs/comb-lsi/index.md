@@ -3,6 +3,7 @@ layout: circuitverse
 title: Combinational LSI
 nav_order:
 has_children: true
+has_toc: false
 ---
 
 # Combinational LSI components
