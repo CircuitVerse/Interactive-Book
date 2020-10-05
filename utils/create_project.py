@@ -4,7 +4,9 @@ import sys
 from yaml import load
 
 # load yaml chapter definition
-chapterfile = 'chapter_br.yml'
+if not (len(sys.argv) == 2):
+    sys.exit("Wrong number of arguments")
+chapterfile = sys.argv[1]
 
 orgmode = False
 mdmode = True
@@ -102,40 +104,41 @@ with open(chapter_filename, 'w') as cf:
     # create sections
     order = 1
     for level_order, level in enumerate(('basic', 'medium', 'advanced')):
-        for section_order, section in enumerate(chapter['sections'][level]):
-            # order string of the form l2s001, encoding level and section
-            order = 'l'+str(level_order)+'s'+str(section_order).zfill(3)
-            section_filename = chapter_dir+'/'+section['filename']+'.md'
-            if orgmode:
-                section_filename = chapter_dir+'/'+section['filename']+'.org'
-            with open(section_filename, 'w') as sf:
+        if level in chapter['sections']:
+            for section_order, section in enumerate(chapter['sections'][level]):
+                # order string of the form l2s001, encoding level and section
+                order = 'l'+str(level_order)+'s'+str(section_order).zfill(3)
+                section_filename = chapter_dir+'/'+section['filename']+'.md'
                 if orgmode:
-                    print("#+OPTIONS: toc:nil todo:nil title:nil author:nil date:nil\n",
-                          file=sf)
-                    print("#+BEGIN_EXPORT html", file=sf)
-                # section's frontmatter
-                print(section_fm.format(chapter=chapter['toc_title'],
-                                        toc_title=section['toc_title'],
-                                        title=section['title'],
-                                        order=order,
-                                        level=level), file=sf)
-                if orgmode:
-                    print("#+END_EXPORT", file=sf)
-                print("", file=sf)
-                #main heading and toc heading
-                if mdmode:
-                    print(section_title_md.format(title=section['title']), file=sf)
-                elif orgmode:
-                    print(section_title_org.format(title=section['title']), file=sf)
-                print("", file=sf)
-                # section table of content
-                if mdmode:
-                    print(section_toc_md, file=sf)
-                elif orgmode:
-                    print(section_toc_org, file=sf)
-                # inform we are ready with the section
-                print("- Section '{}' (file: {}) created.".format(section['toc_title'],
-                                                                  section['filename']))
+                    section_filename = chapter_dir+'/'+section['filename']+'.org'
+                with open(section_filename, 'w') as sf:
+                    if orgmode:
+                        print("#+OPTIONS: toc:nil todo:nil title:nil author:nil date:nil\n",
+                              file=sf)
+                        print("#+BEGIN_EXPORT html", file=sf)
+                    # section's frontmatter
+                    print(section_fm.format(chapter=chapter['toc_title'],
+                                            toc_title=section['toc_title'],
+                                            title=section['title'],
+                                            order=order,
+                                            level=level), file=sf)
+                    if orgmode:
+                        print("#+END_EXPORT", file=sf)
+                    print("", file=sf)
+                    #main heading and toc heading
+                    if mdmode:
+                        print(section_title_md.format(title=section['title']), file=sf)
+                    elif orgmode:
+                        print(section_title_org.format(title=section['title']), file=sf)
+                    print("", file=sf)
+                    # section table of content
+                    if mdmode:
+                        print(section_toc_md, file=sf)
+                    elif orgmode:
+                        print(section_toc_org, file=sf)
+                    # inform we are ready with the section
+                    print("- Section '{}' (file: {}) created.".format(section['toc_title'],
+                                                                      section['filename']))
                     
     # tell the user the chapter is finished
     print('Chapter created')
