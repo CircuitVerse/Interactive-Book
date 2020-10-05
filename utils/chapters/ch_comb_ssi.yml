@@ -1,0 +1,30 @@
+title: Combinational SSI components
+toc_title: Combinational SSI
+dir_name: comb-ssi
+export_mode: 'md'
+
+sections:
+  basic:
+    - title: Symbols
+      toc_title: Symbols
+      filename: symbols
+    - title: Logic gates
+      toc_title: Logic gates
+      filename: logic-gates
+    - title: Truth tables
+      toc_title: Truth tables
+      filename: truth-tables
+  medium:
+    - title: Logic families
+      toc_title: Logic families
+      filename: logic-families
+    - title: Universal gates
+      toc_title: Universal gates
+      filename: universal-gates
+    - title: Gate technologies
+      toc_title: Gate technologies
+      filename: gate-technologies
+  advanced:
+    - title: Time behaviour
+      toc_title: Time behaviour
+      filename: time-behaviour
