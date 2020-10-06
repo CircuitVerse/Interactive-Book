@@ -1,16 +1,21 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
 
+    <meta charset="utf-8">
     <meta name="viewport" content="width=240" />
+
     <script src="../assets/js/module.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+
     <script language="JavaScript" type="text/javascript">
         var karnaugh = -1;
         var qmc = -1;
         function run() {
             qmc = new QuineMcCluskey("fakeDivId", 2, 4, 0);
-            //qmc = new QuineMcCluskey("myQmcDisplay", 2, 4, 0); // enable for debugging
+
             qmc.init();
 
             karnaugh = new KarnaughMap("myKarnaughMap", qmc);
@@ -33,15 +38,62 @@
         }
 
     </script>
+
     <style type="text/css">
-        .qmcMathFont{font-family:"Times New Roman",Georgia,Serif;font-size:30px}
+
+        body{
+            padding: 1.6rem;
+            background-color: #f0efeb;
+            font-family: 'Ramabhadra', sans-serif;
+
+        }
+
+        p{
+            font-size: 1.2rem;
+        }
+
+        button{
+            padding: 0.8rem;
+            font-family: 'Carter One', cursive;
+            font-size: 1rem;
+            background-color: #6930c3;
+            color: white;
+        }
+
+        button:hover{
+            background-color: #3d405b;
+        }
+
+        #noOfVarsChanged_id{
+            padding: 0.4rem;
+            font-size: 1rem;
+        }
+
+        #select_dontCare{
+            padding: 0.4rem;
+            font-size: 1rem;
+        }
+
+        #select_dontShow{
+            padding: 0.4rem;
+            font-size: 1rem;
+        }
+
+        .qmcMathFont{
+            font-family:"Times New Roman",Georgia,Serif;font-size:30px
+        }
+
     </style>
+
 </head>
 <body onload="run();">
 
-<p>This Interactive Karnaugh-Map represents the function- <i>Y</i>&nbsp;=&nbsp;f(<i>x</i><sub><small>n</small></sub>,...,<i>x</i><sub><small>1</small></sub>, <i>x</i><sub><small>0</small></sub>).
+    <p>This Interactive Karnaugh-Map represents the function- <i>Y</i>&nbsp;=&nbsp;f(<i>x</i><sub><small>n</small></sub>,...,<i>x</i><sub><small>1</small></sub>, <i>x</i><sub><small>0</small></sub>).
+    <br>
     This function can manually be edited by a click on different cells in the K-map, or by pressing the button:'Random example' a random function can be generated.</p>
+
 <p>
+
     <button type="button" onclick="karnaugh.genRandom();">Random example</button>
     <button type="button" onclick="karnaugh.clear();">Reset</button>
     <br>
@@ -51,24 +103,24 @@
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
-        <option value="4" selected>4</option>
-        <option value="5" >5</option>
+        <option value="4"selected>4</option>
+        <option value="5">5</option>
         <option value="6">6</option>
         <option value="7">7</option>
         <option value="8">8</option>
     </select>&nbsp;&nbsp;&nbsp;&nbsp; Allow Don’t-Care:
     <select onchange="dontCareChanged();" id="select_dontCare">
-        <option value="0" selected>no</option>
+        <option value="0" selected>No</option>
         <option value="1">Yes</option>
     </select>&nbsp;&nbsp;&nbsp;&nbsp; Hide result:
     <select onchange="dontShowChanged();" id="select_dontShow">
-        <option value="0" selected>no</option>
+        <option value="0" selected>No</option>
         <option value="1">Yes</option>
     </select>  <br>
 </p>
 
 
-<div id="myKarnaughMap"> </div>
+<div id="myKarnaughMap"></div>
 
 <div id="myQmcDisplay"></div>
 
