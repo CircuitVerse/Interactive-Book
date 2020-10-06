@@ -1,6 +1,7 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=240" />
 
@@ -14,7 +15,7 @@
         var qmc = -1;
         function run() {
             qmc = new QuineMcCluskey("fakeDivId", 2, 4, 0);
-            //qmc = new QuineMcCluskey("myQmcDisplay", 2, 4, 0); // enable for debugging
+
             qmc.init();
 
             karnaugh = new KarnaughMap("myKarnaughMap", qmc);
