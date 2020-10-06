@@ -2,6 +2,7 @@ title: Sequential Design
 toc_title: Sequential Design
 dir_name: seq-design
 export_mode: 'md'
+order: 80
 
 sections:
   basic:

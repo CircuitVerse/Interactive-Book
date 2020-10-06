@@ -2,6 +2,7 @@ title: Sequential LSI components
 toc_title: Sequential LSI
 dir_name: seq-lsi
 export_mode: 'md'
+order: 100
 
 sections:
   basic:

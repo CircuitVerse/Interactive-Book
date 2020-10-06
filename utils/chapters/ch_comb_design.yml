@@ -2,6 +2,7 @@ title: Combinational logic design
 toc_title: Logic Design
 dir_name: logic-design
 export_mode: 'md'
+order: 40
 
 sections:
   basic:

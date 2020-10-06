@@ -2,6 +2,7 @@ title: Combinational LSI components
 toc_title: Combinational LSI
 dir_name: comb-lsi
 export_mode: 'md'
+order: 60
 
 sections:
   basic:

@@ -2,6 +2,7 @@ title: 'Mathematical operations with binary numbers'
 toc_title: 'Binary algebra'
 dir_name: 'binary-algebra'
 export_mode: 'md'
+order: 20
 
 sections:
   basic:

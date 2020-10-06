@@ -2,7 +2,8 @@ title: 'Representation using binary numbers'
 toc_title: 'Binary representation'
 dir_name: 'binary-representation'
 export_mode: 'md'
-
+order: 10
+  
 sections:
   basic:
     - title: 'Binary numbers'

@@ -2,6 +2,7 @@ title: Combinational SSI components
 toc_title: Combinational SSI
 dir_name: comb-ssi
 export_mode: 'md'
+order: 30
 
 sections:
   basic:

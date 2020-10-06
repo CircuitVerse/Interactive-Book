@@ -1,7 +1,8 @@
 title: Combinational MSI components
 toc_title: Combinational MSI
-dir_name: comb-ssi
+dir_name: comb-msi
 export_mode: 'md'
+order: 50
 
 sections:
   basic:

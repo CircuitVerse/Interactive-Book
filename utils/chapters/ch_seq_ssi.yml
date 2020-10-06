@@ -2,6 +2,7 @@ title: Sequential SSI components
 toc_title: Sequential SSI
 dir_name: seq-ssi
 export_mode: 'md'
+order: 70
 
 sections:
   basic:

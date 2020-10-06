@@ -2,6 +2,7 @@ title: Sequential MSI components
 toc_title: Sequential MSI
 dir_name: seq-msi
 export_mode: 'md'
+order: 90
 
 sections:
   basic:
