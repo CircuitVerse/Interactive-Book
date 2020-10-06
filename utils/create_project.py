@@ -32,7 +32,7 @@ except FileExistsError as e:
 chapter_fm="""---
 layout: circuitverse
 title: {toc_title}
-nav_order:
+nav_order: {order}
 has_children: true
 has_toc: false
 ---"""
@@ -40,7 +40,8 @@ has_toc: false
 chapter_title_md="""# {title}
 {{: .no_toc}}
 
-## Table of contents"""
+## Table of contents
+{{: .no_toc}}"""
 
 chapter_title_org="""* {title}
   :PROPERTIES:
@@ -82,7 +83,12 @@ with open(chapter_filename, 'w') as cf:
 
 
     # frontmatter
-    print(chapter_fm.format(toc_title=chapter['toc_title']), file=cf)
+    if 'order' in chapter:
+        order = chapter['order']
+    else:
+        order = ""
+    print(chapter_fm.format(toc_title=chapter['toc_title'], order=order),
+          file=cf)
     if orgmode:
         print("#+END_EXPORT", file=cf)
     print("", file=cf)
