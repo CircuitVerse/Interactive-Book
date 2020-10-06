@@ -1,42 +1,24 @@
-<main id="main">
-    <!-- Input -->
-    <div class="align-center container">
-        <h1 class="truth-table">Truth Table Generator</h1>
-        <p class="truth-table">Enter your boolean logic expression in the following format<br>
-            AND = <span class="example">AB</span>&emsp;
-            OR = <span class="example">A+B</span>&emsp;
-            NOT = <span class="example">A'</span><br>
-            NAND = <span class="example">(AB)'</span>
-            NOR = <span class="example">(A+B)'</span></p>
-        <input class="truth_table_input" autofocus id="expression" oninput="build()" placeholder="Example: (AB)'C+D" type="text">
-        <noscript>
-            <p>This app requires JavaScript to run. Please enable JavaScript and refresh this page.</p>
-        </noscript>
-    </div>
-    <br>
-    <!-- Output -->
-    <div class="align-center container" id="table-area">
-        <div id="table-placeholder"></div>
-    </div>
-</main>
+<!DOCTYPE html>
 
-<style>
+<html>
 
-    * {
-        font-family: Roboto, sans-serif;
-        font-style: normal;
-        text-transform: none;
-        font-weight: normal;
-        font-variant: normal;
-    }
+<head>
+
+    <title>Truth Table Generator</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+    <style>
 
     body {
-        padding: 50px;
+        background-color: #edf6f9;
     }
 
-    .truth-table h1 {
-        color: black;
-        margin: 0;
+    h1{
+        font-size: 3rem;
+        background-color: black;
+        color: #edf6f9;
+        font-family: 'Acme', sans-serif;
     }
 
     .truth_table_input {
@@ -44,17 +26,18 @@
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
-        font-size: 16px;
+        font-size: 20px;
         line-height: 24px;
         padding: 8px;
-        font-family: 'Source Code Pro', monospace;
+        font-family: 'Acme', sans-serif;
         max-width: 100%;
     }
 
-    .truth-table p {
+    p{
         color: #444;
-        font-size: 16px;
+        font-size: 20px;
         line-height: 24px;
+        font-family: 'Acme', sans-serif;
     }
 
     table {
@@ -63,7 +46,7 @@
     }
 
     th, td {
-        font-family: 'Source Code Pro', monospace;
+        font-family: 'Acme', sans-serif;
         letter-spacing: 1em;
         padding: 0.5em 0 0.5em 1em;
         text-align: center;
@@ -114,4 +97,45 @@
         height: auto;
         max-height: 80vh;
     }
-</style>
+
+    </style>
+
+</head>
+
+<body>
+
+    <main id="main">
+
+    <!-- Input -->
+    <div class="align-center container">
+
+        <h1 class="truth-table">Truth Table Generator</h1>
+
+        <p class="truth-table">Enter your boolean logic expression in the following format<br>
+            AND = <span class="example">AB</span>&emsp;
+            OR = <span class="example">A+B</span>&emsp;
+            NOT = <span class="example">A'</span><br>
+            NAND = <span class="example">(AB)'</span>
+            NOR = <span class="example">(A+B)'</span>
+        </p>
+
+        <input class="truth_table_input" autofocus id="expression" oninput="build()" placeholder="Example: (AB)'C+D" type="text">
+
+        <noscript>
+            <p>This app requires JavaScript to run. Please enable JavaScript and refresh this page.</p>
+        </noscript>
+
+    </div>
+
+    <br>
+
+    <!-- Output -->
+    <div class="align-center container" id="table-area">
+        <div id="table-placeholder"></div>
+    </div>
+
+    </main>
+
+</body>
+
+</html>
