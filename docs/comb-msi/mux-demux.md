@@ -1,13 +1,13 @@
 ---
 layout: circuitverse
-title: ALU
-nav_order: l0s001
+title: MUX/DEMUX
+nav_order: l0s000
 cvib_level: basic
-parent: Combinational LSI
+parent: Combinational MSI
 has_children: false
 ---
 
-# Arithmetic Logic Unit
+# Multiplexers and Demultiplexers
 {: .no_toc}
 
 ## Table of contents

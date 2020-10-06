@@ -1,16 +1,17 @@
 ---
 layout: circuitverse
-title: Encoders/Decoders
-nav_order: l0s001
+title: Symbols
+nav_order: l0s000
 cvib_level: basic
-parent: Combinational MSI
+parent: Combinational SSI
 has_children: false
 ---
 
-# Encoders and Decoders
+# Symbols
 {: .no_toc}
 
 ## Table of contents
+{: .no_toc}
 
 1. TOC
 {:toc}

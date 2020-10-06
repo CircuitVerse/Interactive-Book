@@ -1,15 +1,16 @@
 ---
 layout: circuitverse
-title: Combinational MSI
-nav_order:
+title: Combinational SSI
+nav_order: 30
 has_children: true
 has_toc: false
 ---
 
-# Combinational MSI components
+# Combinational SSI components
 {: .no_toc}
 
 ## Table of contents
+{: .no_toc}
 
 {% include chapter_toc.html %}
 

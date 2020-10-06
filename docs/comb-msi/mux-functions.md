@@ -1,13 +1,13 @@
 ---
 layout: circuitverse
-title: Sampling theorem
-nav_order: l1s001
+title: MUX-based functions
+nav_order: l1s000
 cvib_level: medium
-parent: Binary representation
+parent: Combinational MSI
 has_children: false
 ---
 
-# Sampling theorem
+# MUX-based functions
 {: .no_toc}
 
 ## Table of contents

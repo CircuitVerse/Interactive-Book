@@ -11,6 +11,7 @@ has_children: false
 {: .no_toc}
 
 ## Table of contents
+{: .no_toc}
 
 1. TOC
 {:toc}

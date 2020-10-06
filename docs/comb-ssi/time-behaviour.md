@@ -1,13 +1,13 @@
 ---
 layout: circuitverse
-title: Sampling theorem
-nav_order: l1s001
-cvib_level: medium
-parent: Binary representation
+title: Time behaviour
+nav_order: l2s000
+cvib_level: advanced
+parent: Combinational SSI
 has_children: false
 ---
 
-# Sampling theorem
+# Time behaviour
 {: .no_toc}
 
 ## Table of contents

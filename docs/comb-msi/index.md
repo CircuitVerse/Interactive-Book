@@ -1,12 +1,12 @@
 ---
 layout: circuitverse
-title: Combinational LSI
-nav_order: 60
+title: Combinational MSI
+nav_order: 50
 has_children: true
 has_toc: false
 ---
 
-# Combinational LSI components
+# Combinational MSI components
 {: .no_toc}
 
 ## Table of contents

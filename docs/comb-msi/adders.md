@@ -1,13 +1,13 @@
 ---
 layout: circuitverse
-title: Sampling theorem
-nav_order: l1s001
-cvib_level: medium
-parent: Binary representation
+title: Adders
+nav_order: l0s002
+cvib_level: basic
+parent: Combinational MSI
 has_children: false
 ---
 
-# Sampling theorem
+# Adders
 {: .no_toc}
 
 ## Table of contents

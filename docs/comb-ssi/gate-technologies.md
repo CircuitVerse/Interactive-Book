@@ -1,16 +1,17 @@
 ---
 layout: circuitverse
-title: MUX-based functions
-nav_order: l1s000
+title: Gate technologies
+nav_order: l1s002
 cvib_level: medium
-parent: Combinational MSI
+parent: Combinational SSI
 has_children: false
 ---
 
-# MUX-based functions
+# Gate technologies
 {: .no_toc}
 
 ## Table of contents
+{: .no_toc}
 
 1. TOC
 {:toc}

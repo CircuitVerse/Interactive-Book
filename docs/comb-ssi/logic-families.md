@@ -1,13 +1,13 @@
 ---
 layout: circuitverse
-title: Sampling theorem
-nav_order: l1s001
+title: Logic families
+nav_order: l1s000
 cvib_level: medium
-parent: Binary representation
+parent: Combinational SSI
 has_children: false
 ---
 
-# Sampling theorem
+# Logic families
 {: .no_toc}
 
 ## Table of contents

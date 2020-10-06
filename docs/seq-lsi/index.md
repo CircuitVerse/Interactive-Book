@@ -1,7 +1,7 @@
 ---
 layout: circuitverse
 title: Sequential LSI
-nav_order:
+nav_order: 100
 has_children: true
 has_toc: false
 ---
@@ -10,6 +10,7 @@ has_toc: false
 {: .no_toc}
 
 ## Table of contents
+{: .no_toc}
 
 {% include chapter_toc.html %}
 

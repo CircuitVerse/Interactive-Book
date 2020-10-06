@@ -1,16 +1,17 @@
 ---
 layout: circuitverse
-title: MUX/DEMUX
-nav_order: l0s000
+title: Truth tables
+nav_order: l0s002
 cvib_level: basic
-parent: Combinational MSI
+parent: Combinational SSI
 has_children: false
 ---
 
-# Multiplexers and Demultiplexers
+# Truth tables
 {: .no_toc}
 
 ## Table of contents
+{: .no_toc}
 
 1. TOC
 {:toc}

@@ -1,13 +1,13 @@
 ---
 layout: circuitverse
-title: Sampling theorem
+title: Universal gates
 nav_order: l1s001
 cvib_level: medium
-parent: Binary representation
+parent: Combinational SSI
 has_children: false
 ---
 
-# Sampling theorem
+# Universal gates
 {: .no_toc}
 
 ## Table of contents
