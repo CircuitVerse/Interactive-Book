@@ -62,3 +62,9 @@ a communication channel."
 				(org-export-get-reference headline info))))))
 	  (concat (org-md--headline-title style level heading anchor tags jtd)
 		  contents)))))))
+
+;; enable font styles (bold, italics, etc.) in the middle of words
+;; https://stackoverflow.com/a/24540651
+(setcar org-emphasis-regexp-components " \t('\"{[:alnum:]")
+(setcar (nthcdr 1 org-emphasis-regexp-components) "[:alnum:]- \t.,:!?;'\")}\\")
+(org-set-emph-re 'org-emphasis-regexp-components org-emphasis-regexp-components)
