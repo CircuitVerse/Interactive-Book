@@ -1,0 +1,27 @@
+#+OPTIONS: toc:nil todo:nil title:nil author:nil date:nil
+
+#+BEGIN_EXPORT html
+---
+layout: circuitverse
+title: Binary cubes
+nav_order: l2s003
+cvib_level: advanced
+parent: Logic Design
+has_children: false
+---
+#+END_EXPORT
+
+* Binary cubes representation
+  :PROPERTIES:
+  :JTD:      {: .no_toc}
+  :END:
+  
+** Table of contents
+   :PROPERTIES:
+   :JTD:      {: .no_toc}
+   :END:
+
+#+BEGIN_EXPORT html
+1. TOC
+{:toc}
+#+END_EXPORT

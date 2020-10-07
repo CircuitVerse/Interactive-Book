@@ -1,0 +1,26 @@
+#+OPTIONS: toc:nil todo:nil title:nil author:nil date:nil
+
+#+BEGIN_EXPORT html
+---
+layout: circuitverse
+title: Logic Design
+nav_order: 40
+has_children: true
+has_toc: false
+---
+#+END_EXPORT
+
+* Combinational logic design
+  :PROPERTIES:
+  :JTD:      {: .no_toc}
+  :END:
+  
+** Table of contents
+   :PROPERTIES:
+   :JTD:      {: .no_toc}
+   :END:
+
+#+BEGIN_EXPORT html
+{% include chapter_toc.html %}
+#+END_EXPORT
+

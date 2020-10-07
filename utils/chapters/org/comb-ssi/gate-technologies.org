@@ -1,0 +1,27 @@
+#+OPTIONS: toc:nil todo:nil title:nil author:nil date:nil
+
+#+BEGIN_EXPORT html
+---
+layout: circuitverse
+title: Gate technologies
+nav_order: l1s002
+cvib_level: medium
+parent: Combinational SSI
+has_children: false
+---
+#+END_EXPORT
+
+* Gate technologies
+  :PROPERTIES:
+  :JTD:      {: .no_toc}
+  :END:
+  
+** Table of contents
+   :PROPERTIES:
+   :JTD:      {: .no_toc}
+   :END:
+
+#+BEGIN_EXPORT html
+1. TOC
+{:toc}
+#+END_EXPORT
