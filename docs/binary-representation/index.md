@@ -13,4 +13,3 @@ has_toc: false
 {: .no_toc}
 
 {% include chapter_toc.html %}
-

@@ -77,12 +77,6 @@ aux_links:
   "Circuitverse on GitHub":
     - "//github.com/CircuitVerse"
 
-# Heading anchor links appear on hover over h1-h6 tags in page content
-# allowing users to deep link to a particular heading on a page.
-#
-# Supports true (default) or false
-heading_anchors: true
-
 # Footer content 
 # appears at the bottom of every page's main content
 footer_content: "Copyright &copy; 2020 Contributors to CircuitVerse. Distributed under a [CC-by-sa] license."
@@ -130,3 +124,7 @@ jekyll-spaceship:
         tags: 'ams'
       svg:
         fontCache: 'global'
+
+# Repository name for Setting up Netlify
+repository: CircuitVerse/Interactive-Book
+
