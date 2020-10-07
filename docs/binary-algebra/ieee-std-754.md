@@ -7,7 +7,7 @@ parent: Binary algebra
 has_children: false
 ---
 
-# IEEE Standar 754
+# IEEE Standard 754
 {: .no_toc}
 
 ## Table of contents

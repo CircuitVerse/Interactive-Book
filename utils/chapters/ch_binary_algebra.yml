@@ -32,6 +32,6 @@ sections:
     - title: Shannon decomposition
       toc_title: Shannon decomposition
       filename: shannon
-    - title: IEEE Standar 754
+    - title: IEEE Standard 754
       toc_title: IEEE Std 754
       filename: ieee-std-754
