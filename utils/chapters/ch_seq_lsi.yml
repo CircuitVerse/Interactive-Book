@@ -1,0 +1,21 @@
+title: Sequential LSI components
+toc_title: Sequential LSI
+dir_name: seq-lsi
+export_mode: 'md'
+order: 100
+
+sections:
+  basic:
+    - title: ROM-based µcontrollers
+      toc_title: ROM-based µcontrollers
+      filename: rom-microcontrollers
+    - title: Field-Programmable Gate Arrays
+      toc_title: FPGA
+      filename: fpga
+    - title: Microprocessors
+      toc_title: Microprocessors
+      filename: microprocessors
+  medium:
+    - title: LSI-based design
+      toc_title: LSI-based design
+      filename: lsi-seq-design

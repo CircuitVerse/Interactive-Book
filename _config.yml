@@ -59,7 +59,7 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile", "vendor"]
+exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile", "vendor", "utils/"]
 
 #JTD config
 
@@ -77,12 +77,6 @@ aux_links:
   "Circuitverse on GitHub":
     - "//github.com/CircuitVerse"
 
-# Heading anchor links appear on hover over h1-h6 tags in page content
-# allowing users to deep link to a particular heading on a page.
-#
-# Supports true (default) or false
-heading_anchors: true
-
 # Footer content 
 # appears at the bottom of every page's main content
 footer_content: "Copyright &copy; 2020 Contributors to CircuitVerse. Distributed under a [CC-by-sa] license."
@@ -94,7 +88,7 @@ last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https:/
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
 gh_edit_link_text: "Edit this page on GitHub."
-gh_edit_repository: "https://github.com/pmarsceill/just-the-docs" # the github URL for your repo
+gh_edit_repository: "https://github.com/CircuitVerse/Interactive-Book" # the github URL for your repo
 gh_edit_branch: "master" # the branch that your docs is served from
 # gh_edit_source: docs # the source that your files originate from
 gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
@@ -133,3 +127,4 @@ jekyll-spaceship:
 
 # Repository name for Setting up Netlify
 repository: CircuitVerse/Interactive-Book
+

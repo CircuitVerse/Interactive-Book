@@ -1,0 +1,37 @@
+title: 'Mathematical operations with binary numbers'
+toc_title: 'Binary algebra'
+dir_name: 'binary-algebra'
+export_mode: 'md'
+order: 20
+
+sections:
+  basic:
+    - title: Binary addition
+      toc_title: Addition
+      filename: addition
+    - title: Binary subtraction
+      toc_title: Subtraction
+      filename: subtraction
+    - title: Binary multiplication
+      toc_title: Multiplication
+      filename: multiplication
+    - title: Binary division
+      toc_title: Division
+      filename: division
+  medium:
+    - title: Boolean algebra
+      toc_title: Boolean algebra
+      filename: boolean-algebra
+    - title: Boolean functions
+      toc_title: Boolean functions
+      filename: boolean-functions
+  advanced:
+    - title: Binary algebras
+      toc_title: Binary algebras
+      filename: binary-algebras
+    - title: Shannon decomposition
+      toc_title: Shannon decomposition
+      filename: shannon
+    - title: IEEE Standard 754
+      toc_title: IEEE Std 754
+      filename: ieee-std-754

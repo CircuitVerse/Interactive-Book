@@ -1,0 +1,34 @@
+title: Combinational logic design
+toc_title: Logic Design
+dir_name: logic-design
+export_mode: 'md'
+order: 40
+
+sections:
+  basic:
+    - title: Functional description
+      toc_title: Functional description
+      filename: functional-description
+    - title: Implementation
+      toc_title: Implementation
+      filename: implementation
+  medium:
+    - title: Canonical functions
+      toc_title: Canonical functions
+      filename: canonical
+    - title: K-Maps
+      toc_title: K-Maps
+      filename: kmaps
+  advanced:
+    - title: Map-entered variables
+      toc_title: Map-entered variables
+      filename: mev
+    - title: Binary cubes representation
+      toc_title: Binary cubes
+      filename: binary-cubes
+    - title: Quine McCluskey
+      toc_title: Quine McCluskey
+      filename: qmc
+    - title: Binary cubes representation
+      toc_title: Binary cubes
+      filename: binary-cubes

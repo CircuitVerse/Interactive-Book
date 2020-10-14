@@ -1,15 +1,16 @@
 ---
 layout: circuitverse
-title: Binary representation
-nav_order: 10
+title: Combinational SSI
+nav_order: 30
 has_children: true
 has_toc: false
 ---
 
-# Representation using binary numbers
+# Combinational SSI components
 {: .no_toc}
 
 ## Table of contents
 {: .no_toc}
 
 {% include chapter_toc.html %}
+

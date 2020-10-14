@@ -1,0 +1,28 @@
+title: Sequential Design
+toc_title: Sequential Design
+dir_name: seq-design
+export_mode: 'md'
+order: 80
+
+sections:
+  basic:
+    - title: Symbols
+      toc_title: Symbols
+      filename: symbols
+    - title: Finite State Machines
+      toc_title: FSM
+      filename: fsm
+    - title: Sequential synthesis
+      toc_title: Sequential synthesis
+      filename: seq-synth
+  medium:
+    - title: Race conditions
+      toc_title: Race conditions
+      filename: race-conditions
+  advanced:
+    - title: Flow diagrams
+      toc_title: Flow diagrams
+      filename: flow-diagrams
+    - title: Mnemonic Documented State Diagrams
+      toc_title: MDS Diagrams
+      filename: mds

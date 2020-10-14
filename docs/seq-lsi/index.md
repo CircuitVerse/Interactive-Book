@@ -1,15 +1,16 @@
 ---
 layout: circuitverse
-title: Binary representation
-nav_order: 10
+title: Sequential LSI
+nav_order: 100
 has_children: true
 has_toc: false
 ---
 
-# Representation using binary numbers
+# Sequential LSI components
 {: .no_toc}
 
 ## Table of contents
 {: .no_toc}
 
 {% include chapter_toc.html %}
+

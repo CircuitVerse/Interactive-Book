@@ -1,0 +1,79 @@
+<div id="container">
+    <div id="binary">
+        <div class="binary_heading"><div class="binary_heading_text">Binary</div></div>
+        <div class="column"><div class="column_heading">128</div><div id="7c" class="bit" onClick="toggle_bitc(7);">0</div></div>
+        <div class="column"><div class="column_heading">64</div><div id="6c" class="bit" onClick="toggle_bitc(6);">0</div></div>
+        <div class="column"><div class="column_heading">32</div><div id="5c" class="bit" onClick="toggle_bitc(5);">0</div></div>
+        <div class="column"><div class="column_heading">16</div><div id="4c" class="bit" onClick="toggle_bitc(4);">0</div></div>
+        <div class="column"><div class="column_heading">8</div><div id="3c" class="bit" onClick="toggle_bitc(3);">0</div></div>
+        <div class="column"><div class="column_heading">4</div><div id="2c" class="bit" onClick="toggle_bitc(2);">0</div></div>
+        <div class="column"><div class="column_heading">2</div><div id="1c" class="bit" onClick="toggle_bitc(1);">0</div></div>
+        <div class="column"><div class="column_heading">1</div><div id="0c" class="bit" onClick="toggle_bitc(0);">0</div></div>
+        <div class="column result"><div class="column_heading">Decimal</div><div id="decimal1" class="bit">0</div></div>
+    </div>
+</div>
+<style>
+    #binary	{
+        font-family: Arial, Helvetica, sans-serif; 
+        width: 100%; 
+        display: flex; 
+        justify-content: center;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .column {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        flex: 1.2;
+        text-align: center;
+    }
+    .column_heading {
+        width: 100%;
+        background-color: #302d36 ;
+        color: #00e8b3;
+    }
+    .bit {
+        width: 100%;
+        padding: 10px 0;
+        cursor: pointer;
+        font-size: 1.5em;
+        border-right: thin solid #dcdcdc;
+        background-color: #f1f1f1;
+        color: #111111;
+    }
+    .bit:hover {
+        background-color: #f0fff0;
+    }
+    /* For Side Heading: "Binary" */
+    .binary_heading {
+        background-color: #302d36;
+        color:#00e8b3;
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+    }
+    .binary_heading_text {
+        /* To rotate the text sideways */
+        writing-mode:vertical-rl;
+        transform:scale(-1);
+    }
+    /* For Result Section */
+    .result {
+        flex: 2;
+        /* To disable any mouse event including click, hover */
+        pointer-events: none;
+    }
+    .result .bit {
+        background: rgba(90, 239, 158, 1);
+        border-right: none ;
+    }
+    /* Extra Tweaks */
+    .column, .binary_heading {
+        /* To disable mouse selection */
+        -moz-user-select: none;
+        -webkit-user-select: none; 
+        -webkit-touch-callout: none;
+    }
+</style>

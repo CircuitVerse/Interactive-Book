@@ -1,15 +1,16 @@
 ---
 layout: circuitverse
-title: Binary representation
-nav_order: 10
+title: Sequential Design
+nav_order: 80
 has_children: true
 has_toc: false
 ---
 
-# Representation using binary numbers
+# Sequential Design
 {: .no_toc}
 
 ## Table of contents
 {: .no_toc}
 
 {% include chapter_toc.html %}
+
