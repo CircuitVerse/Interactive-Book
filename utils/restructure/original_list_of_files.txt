@@ -12,7 +12,7 @@ docs/Combinational/half_adder.md
 docs/Combinational/combinational.md
 docs/finitestatemachine.md
 docs/kmapi.md
-docs/gates.md
+docs/gates.md,comb-ssi/logic-gates,comb-ssi/universal-gates
 docs/MSI
 docs/MSI/encoder.md
 docs/MSI/mux.md
