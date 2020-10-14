@@ -2,7 +2,7 @@ docs/application.md
 docs/binary.md,binary-representation/binary-numbers,binary-representation/negative-quantities
 docs/jk_race_around_condition.md
 docs/universal_gates.md
-docs/binary2.md,binary-algebra/addition,
+docs/binary2.md,binary-algebra/addition,binary-algebra/subtraction,binary-algebra/multiplication,binary-algebra/division,binary-representation/negative-quantities,binary-algebra/boolean-algebra
 docs/Combinational
 docs/Combinational/full_adder.md
 docs/Combinational/N-Bit Parallel Adder & Subtractor.md
