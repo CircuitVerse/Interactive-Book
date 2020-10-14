@@ -32,3 +32,36 @@ The downside to using a signed number is that it removes one bit from the actual
 
 -   The minimum and maximum values for an \`unsigned 8-bit\` number would be \`0\` to \`2<sup>8</sup>-1\` (\`0\` to \`255\`)
 -   The minimum and maximum values for a \`signed 8-bit\` number would be \`-2<sup>7</sup>-1\` to \`2<sup>7</sup>-1\` (\`-127\` to \`127\`)
+
+
+## Complements in binary system
+
+The Binary system has a base of r = 2. The base has r = 2 so the Binary system two types of complements. They are:
+
+1.  1's complement
+2.  2's complement.
+
+
+### 1's complement
+
+To find the 1's complement of a given number, you should change all the 0's to 1's and then all the 1's to 0's. This process is called as 1's complement. Simply negate each digit present in the binary number. An Example for 1's complement is as follows:
+
+```yaml
+Given number        1  0  1  0  1
+1's complement      0  1  0  1  0
+```
+
+
+### 2's complement
+
+In order to find 2's complement firstly, evaluate 1's complement of the number, and further add 1 to it. 2's complement = 1's complement + 1. An Example of 2's complement is as follows:
+
+```yaml
+Given number        1  0  1  0  1
+1's complement      0  1  0  1  0
+
+add 1               +           1
+		   ---------------
+2's complement      0  1  0  1  1
+		   ---------------
+```
