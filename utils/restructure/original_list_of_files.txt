@@ -2,9 +2,9 @@ docs/binary.md,binary-representation/binary-numbers,binary-representation/negati
 docs/binary2.md,binary-algebra/addition,binary-algebra/subtraction,binary-algebra/multiplication,binary-algebra/division,binary-representation/negative-quantities,binary-algebra/boolean-algebra
 docs/gates.md,comb-ssi/logic-gates,comb-ssi/universal-gates
 docs/gatesi.md,comb-ssi/logic-gates
+docs/universal_gates.md,comb-ssi/universal-gates
 docs/application.md
 docs/jk_race_around_condition.md
-docs/universal_gates.md
 docs/Combinational
 docs/Combinational/full_adder.md
 docs/Combinational/N-Bit Parallel Adder & Subtractor.md
