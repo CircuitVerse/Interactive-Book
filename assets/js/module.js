@@ -101,15 +101,15 @@ var bit_bool = new Array(2);
 bit_bool[0] = false;
 bit_bool[1] = false;
 var image_cache1 = new Image();
-image_cache1.src = "../assets/images/bulb_on.png";
+image_cache1.src = "../../assets/images/bulb_on.png";
 var image_cache2 = new Image();
-image_cache2.src = "../assets/images/switch_on.png";
+image_cache2.src = "../../assets/images/switch_on.png";
 var bit_display_bool = new Array(2);
 var switch_display = new Array(2);
-bit_display_bool[false] = "url(../assets/images/bulb_off.png)";
-bit_display_bool[true] = "url(../assets/images/bulb_on.png)";
-switch_display[false] = "url(../assets/images/switch_off.png)";
-switch_display[true] = "url(../assets/images/switch_on.png)";
+bit_display_bool[false] = "url(/assets/images/bulb_off.png)";
+bit_display_bool[true] = "url(/assets/images/bulb_on.png)";
+switch_display[false] = "url(/assets/images/switch_off.png)";
+switch_display[true] = "url(/assets/images/switch_on.png)";
 
 function toggle_switch(switch_no)
 {
@@ -131,19 +131,19 @@ function show_result()
     switch(document.getElementById("operator").value)
     {
         case "AND":
-            document.getElementById("operator").style.backgroundImage = "url('../assets/images/AND_gate.png')";
+            document.getElementById("operator").style.backgroundImage = "url('/assets/images/AND_gate.png')";
             document.getElementById("result").style.backgroundImage = bit_display_bool[bit_bool[0] && bit_bool[1]];
             break;
         case "OR":
-            document.getElementById("operator").style.backgroundImage = "url('../assets/images/OR_gate.png')";
+            document.getElementById("operator").style.backgroundImage = "url('/assets/images/OR_gate.png')";
             document.getElementById("result").style.backgroundImage = bit_display_bool[bit_bool[0] || bit_bool[1]];
             break;
         case "XOR":
-            document.getElementById("operator").style.backgroundImage = "url('../assets/images/EOR_gate.png')";
+            document.getElementById("operator").style.backgroundImage = "url('/assets/images/EOR_gate.png')";
             document.getElementById("result").style.backgroundImage = bit_display_bool[bit_bool[0] != bit_bool[1]];
             break;
         default:
-            document.getElementById("operator").style.backgroundImage = "url('../assets/images/NOT_gate.png')";
+            document.getElementById("operator").style.backgroundImage = "url('/assets/images/NOT_gate.png')";
             document.getElementById("result").style.backgroundImage = bit_display_bool[!bit_bool[1]];
     }
 }

@@ -220,3 +220,5 @@ module xnor_gate(
 assign c=~(a ^ b);
 endmodule
 ```
+
+{% include gates.html %}
