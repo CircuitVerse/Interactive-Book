@@ -7,6 +7,7 @@ docs/application2.md,binary-representation/encoding-information
 docs/bool.md,binary-algebra/boolean-algebra
 docs/bool2.md,binary-algebra/boolean-functions
 docs/nand_gate_method.md,comb-ssi/universal-gates
+docs/nor_gate_method.md,comb-ssi/universal-gates
 
 docs/application.md
 docs/jk_race_around_condition.md
@@ -46,7 +47,6 @@ docs/references.md
 docs/about.md
 docs/counter.md
 docs/clock.md
-docs/nor_gate_method.md
 docs/sequential.md
 docs/registers
 docs/registers/ps.md
