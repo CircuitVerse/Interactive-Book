@@ -21,6 +21,7 @@ docs/MSI/encoder.md,comb-msi/encoders-decoders
 docs/MSI/decoder.md,comb-msi/encoders-decoders
 docs/MSI/mux.md,comb-msi/mux-demux
 docs/MSI/demux.md,comb-msi/mux-demux
+docs/alu.md,comb-lsi/alu
 
 docs/application.md
 docs/jk_race_around_condition.md
@@ -40,7 +41,6 @@ docs/flipflop/t_flipflop.md
 docs/flipflop/sr_flipflop.md
 docs/flipflop/jk_flipflop.md
 docs/flipflop/masterslave_jk_flipflop.md
-docs/alu.md
 docs/references.md
 docs/about.md
 docs/counter.md
