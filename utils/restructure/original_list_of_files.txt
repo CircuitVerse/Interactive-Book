@@ -42,8 +42,8 @@ docs/registers/ss.md,seq-msi/registers
 docs/registers/sp.md,seq-msi/registers
 docs/registers/ps.md,seq-msi/registers
 docs/registers/pp.md,seq-msi/registers
+docs/application.md,seq-msi/registers
 
-docs/application.md
 docs/finitestatemachine.md
 docs/fsm_interactive.md
 docs/references.md
