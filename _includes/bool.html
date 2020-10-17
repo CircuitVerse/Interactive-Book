@@ -1,0 +1,34 @@
+
+<div id="boolean">
+    <div id="0_bool" class="switch" onClick="toggle_switch(0);"></div>
+    <div id="select_container">
+        <select id="operator" onChange="show_result();">
+            <option value="AND">AND</option>
+            <option value="OR"> OR</option>
+            <option value="XOR">XOR</option>
+            <option value="NOT">NOT</option>
+        </select>
+    </div>
+    <div id="1_bool" class="switch" onClick="toggle_switch(1);"></div> <div id="boole"> = </div>
+    <div id="result" class="bulb"></div>
+    <p class="d-none d-sm-block" style="padding-bottom: 150px;"></p>
+    <p class="d-block d-sm-none" style="padding-bottom: 600px;"></p>
+</div>
+
+
+<style>
+    #select_container   {position: relative;}
+    #boolean	{margin: auto;}
+    #too_big	{display: none; font-style: italic; clear: left}
+    #operator	{background-image: url('../assets/images/AND_gate.png'); background-position: center;background-repeat: no-repeat;background-size: contain; color: transparent; width: 150px; float: left; font-size: 60px; text-align: center; margin: 8px; margin-top: 20px;}
+    .bulb		{float: left; background-image:url(../assets/images/bulb_off.png); width: 60px; height: 100px; margin: 5px}
+    .switch		{float: left; background-image:url(../assets/images/switch_off.png); width: 87px; height: 90px; margin: 10px 5px 0px 5px}
+    #boole      {float: left; font-size: 60px; margin: 20px}
+    @media screen and (max-width: 600px) {
+        #result     {margin-left: 20px;}
+        #operator   {width: 80px;}
+        #boolean    {padding:8%; width: 40%;}
+        #boole    {float: left; font-size: 60px; margin: 30px; margin-bottom: 10px;}
+        #too_big	{display: block}
+    }
+</style>
