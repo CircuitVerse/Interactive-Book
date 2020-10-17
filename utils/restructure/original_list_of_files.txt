@@ -24,6 +24,14 @@ docs/MSI/demux.md,comb-msi/mux-demux
 docs/alu.md,comb-lsi/alu
 docs/clock.md,seq-ssi/clock-signals
 docs/sequential.md,seq-ssi/index
+docs/flipflop/flipflops.md,seq-ssi/flip-flops
+docs/flipflop/sr_flipflop.md,seq-ssi/flip-flops
+docs/flipflop/d_flipflop.md,seq-ssi/flip-flops
+docs/flipflop/jk_flipflop.md,seq-ssi/flip-flops
+docs/flipflop/t_flipflop.md,seq-ssi/flip-flops
+docs/flipflop/masterslave_jk_flipflop.md,seq-ssi/flip-flops
+docs/flipflop2.md,seq-ssi/flip-flops
+
 
 docs/application.md
 docs/jk_race_around_condition.md
@@ -34,15 +42,7 @@ docs/Latches/sr_latch.md
 docs/Latches/d_latch.md
 docs/Latches/jk_latch.md
 docs/Latches/t_latch.md
-docs/flipflop2.md
 docs/fsm_interactive.md
-docs/flipflop
-docs/flipflop/d_flipflop.md
-docs/flipflop/flipflops.md
-docs/flipflop/t_flipflop.md
-docs/flipflop/sr_flipflop.md
-docs/flipflop/jk_flipflop.md
-docs/flipflop/masterslave_jk_flipflop.md
 docs/references.md
 docs/about.md
 docs/counter.md
