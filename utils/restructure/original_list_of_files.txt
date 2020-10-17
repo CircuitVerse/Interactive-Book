@@ -8,6 +8,7 @@ docs/bool.md,binary-algebra/boolean-algebra
 docs/bool2.md,binary-algebra/boolean-functions
 docs/nand_gate_method.md,comb-ssi/universal-gates
 docs/nor_gate_method.md,comb-ssi/universal-gates
+docs/maps.md,logic-design/kmaps
 
 docs/application.md
 docs/jk_race_around_condition.md
@@ -41,7 +42,6 @@ docs/flipflop/t_flipflop.md
 docs/flipflop/sr_flipflop.md
 docs/flipflop/jk_flipflop.md
 docs/flipflop/masterslave_jk_flipflop.md
-docs/maps.md
 docs/alu.md
 docs/references.md
 docs/about.md
