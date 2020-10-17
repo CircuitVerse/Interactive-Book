@@ -16,16 +16,15 @@ docs/Combinational/full_adder.md,comb-msi/adders
 docs/Combinational/half_sub.md,comb-msi/adders
 docs/Combinational/full_sub.md,comb-msi/adders
 docs/Combinational/N-Bit Parallel Adder & Subtractor.md,comb-msi/adders
+docs/MSI/msi.md,comb-msi/index
+docs/MSI/encoder.md,comb-msi/encoders-decoders
+docs/MSI/decoder.md,comb-msi/encoders-decoders
+docs/MSI/mux.md,comb-msi/mux-demux
+docs/MSI/demux.md,comb-msi/mux-demux
 
 docs/application.md
 docs/jk_race_around_condition.md
 docs/finitestatemachine.md
-docs/MSI
-docs/MSI/encoder.md
-docs/MSI/mux.md
-docs/MSI/decoder.md
-docs/MSI/demux.md
-docs/MSI/msi.md
 docs/Latches
 docs/Latches/latches.md
 docs/Latches/sr_latch.md
