@@ -1,0 +1,41 @@
+<style >
+    #values			{width: 40px; display: inline-block; vertical-align: top; float: left; margin: 15px 0px 10px 10px}
+    #values input	{width: 40px; font-size: 16px; margin: 0px 0px 1px 0px; height: 27px; text-align: right}
+    #display		{display: inline-block; width: 240px; vertical-align: top; margin: 0px 20px 10px 0px; float: left}
+    #character		{display: inline-block; width: 310px; float: left}
+    .little			{width: 30px; height: 15px; margin: 0px; display: run-in; float:left; font-size: 10px; text-align: center}
+    .pixel			{width: 28px; height: 28px; margin: 0px; display: run-in; float:left; border: 1px solid lightgray; background-color: #F0F0F0}
+</style>
+
+
+<div id="character">
+    <div id="values">
+        <input type="text_2" onkeyup="update_display();" maxlength="3" value="0">
+        <input type="text_2" onkeyup="update_display();" maxlength="3" value="0">
+        <input type="text_2" onkeyup="update_display();" maxlength="3" value="0">
+        <input type="text_2" onkeyup="update_display();" maxlength="3" value="0">
+        <input type="text_2" onkeyup="update_display();" maxlength="3" value="0">
+        <input type="text_2" onkeyup="update_display();" maxlength="3" value="0">
+        <input type="text_2" onkeyup="update_display();" maxlength="3" value="0">
+        <input type="text_2" onkeyup="update_display();" maxlength="3" value="0">
+    </div>
+    <div id="display">
+        <div class="little">128</div>
+        <div class="little">64</div>
+        <div class="little">32</div>
+        <div class="little">16</div>
+        <div class="little">8</div>
+        <div class="little">4</div>
+        <div class="little">2</div>
+        <div class="little">1</div>
+
+        <div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div>
+        <div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div>
+        <div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div>
+        <div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div>
+        <div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div>
+        <div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div>
+        <div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div>
+        <div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div>
+    </div>
+</div>

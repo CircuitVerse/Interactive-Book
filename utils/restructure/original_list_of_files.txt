@@ -3,6 +3,8 @@ docs/binary2.md,binary-algebra/addition,binary-algebra/subtraction,binary-algebr
 docs/gates.md,comb-ssi/logic-gates,comb-ssi/universal-gates
 docs/gatesi.md,comb-ssi/logic-gates
 docs/universal_gates.md,comb-ssi/universal-gates
+docs/application2.md,binary-representation/encoding-information
+
 docs/application.md
 docs/jk_race_around_condition.md
 docs/Combinational
@@ -28,7 +30,6 @@ docs/Latches/jk_latch.md
 docs/Latches/t_latch.md
 docs/flipflop2.md
 docs/fsm_interactive.md
-docs/application2.md
 docs/flipflop
 docs/flipflop/d_flipflop.md
 docs/flipflop/flipflops.md
