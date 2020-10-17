@@ -1,0 +1,117 @@
+<main id="main">
+    <!-- Input -->
+    <div class="align-center container">
+        <h1 class="truth-table">Truth Table Generator</h1>
+        <p class="truth-table">Enter your boolean logic expression in the following format<br>
+            AND = <span class="example">AB</span>&emsp;
+            OR = <span class="example">A+B</span>&emsp;
+            NOT = <span class="example">A'</span><br>
+            NAND = <span class="example">(AB)'</span>
+            NOR = <span class="example">(A+B)'</span></p>
+        <input class="truth_table_input" autofocus id="expression" oninput="build()" placeholder="Example: (AB)'C+D" type="text">
+        <noscript>
+            <p>This app requires JavaScript to run. Please enable JavaScript and refresh this page.</p>
+        </noscript>
+    </div>
+    <br>
+    <!-- Output -->
+    <div class="align-center container" id="table-area">
+        <div id="table-placeholder"></div>
+    </div>
+</main>
+
+<style>
+
+    * {
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        text-transform: none;
+        font-weight: normal;
+        font-variant: normal;
+    }
+
+    body {
+        padding: 50px;
+    }
+
+    .truth-table h1 {
+        color: black;
+        margin: 0;
+    }
+
+    .truth_table_input {
+        width: 500px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 8px;
+        font-family: 'Source Code Pro', monospace;
+        max-width: 100%;
+    }
+
+    .truth-table p {
+        color: #444;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin: 0 auto;
+    }
+
+    th, td {
+        font-family: 'Source Code Pro', monospace;
+        letter-spacing: 1em;
+        padding: 0.5em 0 0.5em 1em;
+        text-align: center;
+    }
+
+    td {
+        border: 1px solid #ddd;
+    }
+
+    .align-center {
+        text-align: center;
+    }
+
+    .example {
+        background-color: #eee;
+        color: black;
+        font-family: 'Source Code Pro', monospace;
+        padding: 0 0.3em;
+    }
+
+    @media screen and (max-width: 768px) {
+        body {
+            padding: 10px;
+        }
+    }
+
+    #truth_generator thead th{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    #truth_generator tr td:first-child{
+        position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+        z-index: 2;
+    }
+
+    #truth_generator thead th:first-child {
+        left: 0;
+        z-index: 3;
+    }
+    
+    #table-placeholder {
+        overflow: auto;
+        height: auto;
+        max-height: 80vh;
+    }
+</style>
