@@ -10,16 +10,15 @@ docs/nand_gate_method.md,comb-ssi/universal-gates
 docs/nor_gate_method.md,comb-ssi/universal-gates
 docs/maps.md,logic-design/kmaps
 docs/kmapi.md,logic-design/kmaps
+docs/Combinational/combinational.md,logic-design/functional-description
+docs/Combinational/half_adder.md,comb-msi/adders
+docs/Combinational/full_adder.md,comb-msi/adders
+docs/Combinational/half_sub.md,comb-msi/adders
+docs/Combinational/full_sub.md,comb-msi/adders
+docs/Combinational/N-Bit Parallel Adder & Subtractor.md,comb-msi/adders
 
 docs/application.md
 docs/jk_race_around_condition.md
-docs/Combinational
-docs/Combinational/full_adder.md
-docs/Combinational/N-Bit Parallel Adder & Subtractor.md
-docs/Combinational/full_sub.md
-docs/Combinational/half_sub.md
-docs/Combinational/half_adder.md
-docs/Combinational/combinational.md
 docs/finitestatemachine.md
 docs/MSI
 docs/MSI/encoder.md
