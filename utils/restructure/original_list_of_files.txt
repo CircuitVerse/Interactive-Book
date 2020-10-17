@@ -31,17 +31,15 @@ docs/flipflop/jk_flipflop.md,seq-ssi/flip-flops
 docs/flipflop/t_flipflop.md,seq-ssi/flip-flops
 docs/flipflop/masterslave_jk_flipflop.md,seq-ssi/flip-flops
 docs/flipflop2.md,seq-ssi/flip-flops
-
+docs/Latches/latches.md,seq-ssi/latches
+docs/Latches/sr_latch.md,seq-ssi/latches
+docs/Latches/d_latch.md,seq-ssi/latches
+docs/Latches/jk_latch.md,seq-ssi/latches
+docs/Latches/t_latch.md,seq-ssi/latches
 
 docs/application.md
 docs/jk_race_around_condition.md
 docs/finitestatemachine.md
-docs/Latches
-docs/Latches/latches.md
-docs/Latches/sr_latch.md
-docs/Latches/d_latch.md
-docs/Latches/jk_latch.md
-docs/Latches/t_latch.md
 docs/fsm_interactive.md
 docs/references.md
 docs/about.md
