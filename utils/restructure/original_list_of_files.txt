@@ -9,6 +9,7 @@ docs/bool2.md,binary-algebra/boolean-functions
 docs/nand_gate_method.md,comb-ssi/universal-gates
 docs/nor_gate_method.md,comb-ssi/universal-gates
 docs/maps.md,logic-design/kmaps
+docs/kmapi.md,logic-design/kmaps
 
 docs/application.md
 docs/jk_race_around_condition.md
@@ -20,7 +21,6 @@ docs/Combinational/half_sub.md
 docs/Combinational/half_adder.md
 docs/Combinational/combinational.md
 docs/finitestatemachine.md
-docs/kmapi.md
 docs/MSI
 docs/MSI/encoder.md
 docs/MSI/mux.md
