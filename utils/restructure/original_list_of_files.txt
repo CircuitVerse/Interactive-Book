@@ -22,6 +22,7 @@ docs/MSI/decoder.md,comb-msi/encoders-decoders
 docs/MSI/mux.md,comb-msi/mux-demux
 docs/MSI/demux.md,comb-msi/mux-demux
 docs/alu.md,comb-lsi/alu
+docs/clock.md,seq-ssi/clock-signals
 
 docs/application.md
 docs/jk_race_around_condition.md
@@ -44,7 +45,6 @@ docs/flipflop/masterslave_jk_flipflop.md
 docs/references.md
 docs/about.md
 docs/counter.md
-docs/clock.md
 docs/sequential.md
 docs/registers
 docs/registers/ps.md
