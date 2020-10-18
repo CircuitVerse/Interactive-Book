@@ -45,8 +45,8 @@ docs/registers/pp.md,seq-msi/registers
 docs/application.md,seq-msi/registers
 docs/counter.md,seq-msi/counters
 docs/finitestatemachine.md,seq-design/fsm
+docs/fsm_interactive.md,seq-design/fsm
 
-docs/fsm_interactive.md
 docs/references.md
 docs/about.md
 
