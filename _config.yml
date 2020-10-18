@@ -26,7 +26,7 @@ email: your-email@example.com
 #   Google search results) and in your feed.xml site description.
 description: A Book to learn Digital Logic Design.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://learn.circuitverse.org" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://betalearn.circuitverse.org" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
