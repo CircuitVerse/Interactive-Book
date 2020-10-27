@@ -64,13 +64,13 @@ The switching equation can also be converted into a Truth Table. For example- Co
 
 | A       | B       | C      | F      |
 |:-------:|:-------:|:------:|:------:|
+| 0       | 0       | 0      |0       |
 | 0       | 0       | 1      |0       |
 | 0       | 1       | 0      |0       |
-| 0       | 1       | 1      |0       |
 | 0       | 1       | 1      |1       |
+| 1       | 0       | 0      |1       |
 | 1       | 0       | 1      |1       |
 | 1       | 1       | 0      |1       |
-| 1       | 1       | 1      |1       |
 | 1       | 1       | 1      |1       |
 
 
