@@ -24,7 +24,7 @@ $spacers: (
   sp-7: $spacing-unit * 2.5,
   sp-8: $spacing-unit * 3,
   sp-9: $spacing-unit * 3.5,
-  sp-10: $spacing-unit * 4
+  sp-10: $spacing-unit * 4,
 ) !default;
 
 $sp: map-get($spacers, sp) !default;
@@ -46,7 +46,6 @@ input {
 }
 
 @media only screen and (min-width: 739px) {
-
   #main-content.moved {
     margin-left: calc((100% - 739px) / 2 + -80px);
   }
@@ -61,26 +60,22 @@ input {
 
   #sidebarCollapse.moved {
     margin-left: calc((100% - 739px) / 2 + -80px);
-
-  } }
+  }
+}
 
 @media only screen and (max-width: 739px) {
-
   #sidebarCollapse {
     display: none;
-
   }
 }
 
 #sidebarCollapse.new.colored {
   background-color: $base-button-color;
   color: $link-color;
-
 }
 #sidebarCollapse.new {
   background-color: $link-color;
   color: $white;
-
 }
 
 //
@@ -108,7 +103,7 @@ input {
     min-width: $nav-width;
   }
   &.active {
-      display: none;
+    display: none;
   }
 }
 
@@ -128,7 +123,6 @@ input {
 
 // .main-content -> main-content-header (?)
 
-
 //
 //  navigation.css
 //
@@ -137,18 +131,15 @@ input {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-
 }
 
-.connector{
+.connector {
   margin-right: 5%;
   height: 12px;
   width: 12px;
-
 }
 
-.sub_heading{
-
+.sub_heading {
 }
 
 .breadcrumb-nav {
@@ -156,7 +147,6 @@ input {
     margin-top: $sp-4;
   }
 }
-
 
 .navbar {
   display: flex;
@@ -266,22 +256,22 @@ $text-color: #111111;
 // DVLS new styles
 //
 .nav-list {
-    list-style: circle url('/assets/images/nav-marker-inactive.svg') inside;
+  list-style: circle url("/assets/images/nav-marker-inactive.svg") inside;
 
-    .nav-list-item {
-      padding-left: 15px;
-	.nav-list-link{
+  .nav-list-item {
+    padding-left: 15px;
+    .nav-list-link {
       display: inline;
       padding-left: 0.5rem;
 
       &.active {
         padding-left: 0;
       }
-	}
-	&.active {
-	    list-style: disc url('/assets/images/nav-marker-active.svg') inside;
-	}
     }
+    &.active {
+      list-style: disc url("/assets/images/nav-marker-active.svg") inside;
+    }
+  }
 }
 .site-button {
   height: 50%;
@@ -293,4 +283,3 @@ $text-color: #111111;
   margin-right: 0.5rem;
   padding: 0.5rem;
 }
-
