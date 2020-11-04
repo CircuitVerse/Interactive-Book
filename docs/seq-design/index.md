@@ -6,11 +6,19 @@ has_children: true
 has_toc: false
 ---
 
+
 # Sequential Design
 {: .no_toc}
 
-## Table of contents
+
+## Introduction
+
+The previous chapter about SSI sequential components presented application examples using basic sequential building blocks such as latches and flip-flops.
+
+This chapter will describe tools and methods to design and synthesise optimal sequential circuits.
+
+
+## Chapter contents
 {: .no_toc}
 
 {% include chapter_toc.html %}
-
