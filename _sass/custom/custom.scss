@@ -269,12 +269,28 @@ $text-color: #111111;
     list-style: circle url('/assets/images/nav-marker-inactive.svg') inside;
 
     .nav-list-item {
+      padding-left: 15px;
 	.nav-list-link{
-	    display: inline;
+      display: inline;
+      padding-left: 0.5rem;
+
+      &.active {
+        padding-left: 0;
+      }
 	}
 	&.active {
 	    list-style: disc url('/assets/images/nav-marker-active.svg') inside;
 	}
     }
+}
+.site-button {
+  height: 50%;
+  background-color: #f7f7f7;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
+  margin-top: 1rem;
+  border-radius: 3px;
+  border-width: 0;
+  margin-right: 0.5rem;
+  padding: 0.5rem;
 }
 
