@@ -10,6 +10,6 @@ has_toc: false
 {: .no_toc}
 
 ## Table of contents
-{: .no_toc}
+{: .no_toc .text-delta}
 
 {% include chapter_toc.html %}

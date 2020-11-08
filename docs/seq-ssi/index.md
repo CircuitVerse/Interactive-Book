@@ -54,6 +54,6 @@ If all the outputs of a sequential circuit change (affect) with respect to activ
 
 
 ## Table of contents
-{: .no_toc}
+{: .no_toc .text-delta}
 
 {% include chapter_toc.html %}
