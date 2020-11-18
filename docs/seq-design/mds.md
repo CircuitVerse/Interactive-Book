@@ -22,3 +22,5 @@ has_children: false
 ## Introduction
 
 For very complex systems the state diagram might not be well suited. In this case a tool called the *Mnemonic Documented State* Diagram or MDS Diagram can incorporate in a more compact way all the complexities of a large system controller.
+
+More information about MDS diagrams can be found in the book *An Engineering Approach to Digital Design* by William I. Fletcher.
