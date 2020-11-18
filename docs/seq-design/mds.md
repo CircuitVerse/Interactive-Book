@@ -7,11 +7,18 @@ parent: Sequential Design
 has_children: false
 ---
 
+
 # Mnemonic Documented State Diagrams
 {: .no_toc}
+
 
 ## Table of contents
 {: .no_toc}
 
 1. TOC
 {:toc}
+
+
+## Introduction
+
+For very complex systems the state diagram might not be well suited. In this case a tool called the *Mnemonic Documented State* Diagram or MDS Diagram can incorporate in a more compact way all the complexities of a large system controller.
