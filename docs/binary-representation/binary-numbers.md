@@ -116,7 +116,7 @@ In this Case ::
 
 
 ## Use the Simulator below to get the decimal equivalent of a binary number
-{: .no_toc .text-delta}
+{: .no_toc }
 
 Click on the '0' to change it to '1' and vice-versa
 

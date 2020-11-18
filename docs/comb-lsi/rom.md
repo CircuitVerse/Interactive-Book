@@ -65,7 +65,7 @@ In *Programmable read-only memory* (PROM), the data can be stored after the manu
 
 ### Flash memory
 
-*Flash* memory is a more modern version of the EEPROM. The erasing and rewritting phases are faster.
+*Flash* memory is a more modern version of the EEPROM. The erasing and rewriting phases are faster.
 
 
 ## Implementing a combinational circuit using a ROM
@@ -83,7 +83,7 @@ Then, the equivalent truth-table has to be stored or "programmed" into the circu
 -   If there are unused memory cells, then more functionality can be added to the same circuit. If the ROM is erasable/re-programmable the truth table can be rewritten into the memory, or the IC can be replaced if it is an OTP memory or Mask ROM.
 -   Depending on the type of ROM the power consumption might be larger than the equivalent AND/OR network power consumption.
 -   In general, ROM access takes a longer time than the propagation time of the equivalent AND/OR network. For instance, 150ns access time for the AT28C64B ROM vs 4.2ns (2×2.1ns) of a 74LVC quad gate.
--   For very simple or small logic functions, available COTS ROM might be too large, so choosing a ROM would be unefficient in terms of costs and power consumption, considering that most of the ROM circuit will never be used.
+-   For very simple or small logic functions, available COTS ROM might be too large, so choosing a ROM would be inefficient in terms of costs and power consumption, considering that most of the ROM circuit will never be used.
 
 
 ## Interactive example
