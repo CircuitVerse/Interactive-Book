@@ -197,49 +197,276 @@ description: ""
 
 -----
 
-** TODO Style manual
+** DONE Style manual
 
-   [to be defined]
+   [Work in Progress]
 
-   While most of the formatting style is carried out automatically by the layout, templates
-   and stylesheets in the SSG (jekyll) pipeline, it is important to also adhere to a common 
-   writing style in order to assure consitency of the book.
+   While most of the formatting style is carried out automatically by the
+   layout, templates and stylesheets in the SSG (jekyll) pipeline, it is
+   important to also adhere to a common writing style in order to assure
+   consitency of the book.
 
-   - figure/table captioning, positioning, labels, etc.
-   - mathematical equations (numbering, letters, symbols)
-   - language (neutral)
-   - bibliographic references
-   - chapter, section structure
-   - examples
+   Please use a neutral and simple language. Avoid slang. Also, technical
+   jargon should be explained.
 
-     
-   #+HTML: $ f(x)=\int_2^n \frac{1}{2\pi}x^2 $
+*** Figures and tables
 
+    Figures and tables should include a description or caption, and they should be
+    commented in text. If a figure or table is not part of the description,
+    probably it is not needed and can be removed from the book.
 
-   $ F(A,B,C) = A + B \cdot C $
+    See an example in section
+    @@html:[Templates and examples](#templates-and-examples)@@.
 
-   #+HTML:$ \begin{equation}F(x_0, x_1) = x_0 + \overline{x_1} \end{equation} $
+*** Equations
+    # - mathematical equations (numbering, letters, symbols)
+    
+    Equations can be typesetted in LaTeX to be rendered by
+    [[https://www.mathjax.org/][MathJax]].
+    A few examples can be found in the
+    @@html:[Templates and examples](#templates-and-examples)@@
+    section.
+    If equations need to be referenced in the text, use numbered or labelled equations.
+    General useful guidelines:
+    - There are many variants for the notation of negated variables, prefer the
+      bar over the variable or the /prime/ (complement) symbol.
+    - For binary words with many literals (high number of bits) prefer a single
+      letter with subscript numbers for each bit.
+      For instance a four bit word can be written as
+      @@html:$(x_3,x_2,x_1,x_0)$@@
+      instead of a different letter for each literal @@html:$(A,B,C,D)$@@.
+      The least significant bit should be subscripted with 0.
+      In case of ambiguity or if the opossite arrangement is necessary, use a
+      superscript mark to identify the MSB and LSB:
+      @@html:$(x_0^{\text{MSB}},x_1,x_2,x_3^{\text{LSB}})$@@
 
-   #+HTML:\\[ F(A,B,C) = A + B \cdot C \tag{1}\\]
+*** References
+
+    Information obtained from other sources should be properly cited and
+    referenced.
+    Check the
+    @@html:[Templates and examples](#templates-and-examples)@@ section
+    for examples.
+    
+ 
 
 -----
 
-** DONE Code of conduct, interacting with the community / etiquette
-
-   Refer to the Contributor Covenant Code of Conduct
-
------
-
-** DONE Templates
+** DONE Templates and examples
 
    To help you with getting started with writing your contribution, please use
    the following templates and examples, accordingly
 
-   - New chapter template [to be created]
-   - New section template [to be created]
-   - Equations example [to be created]
-   - Figure example [to be created]
-   - Table example [to be created]
+   - New chapter template
+   - New section template 
+   - Equations example 
+   - Figure example 
+   - Table example 
+
+
+   The structure of the book, as well as the navigation menu is handled by
+   Jekyll's Just-the-docs plugin. A two-level structure has been chosen.
+   The top-level is for chapters and the second level is for sections in a chapter
+   
+   
+*** New chapter template
+
+    Each chapter should be a directory under the =docs= directory. The =index.md=
+    in the chapter directory is used for the Chapter text and table of contents.
+
+    The =index.md= file should have the following contents:
+    
+    #+BEGIN_SRC markdown
+      ---
+      layout: circuitverse
+      title: Chapter title
+      nav_order: 10
+      has_children: true
+      has_toc: false
+      ---
+
+      # Long chapter title
+      {: .no_toc}
+
+      Introductory chapter text
+
+      ## Table of contents
+      {: .no_toc .text-delta}
+
+      {% raw %}
+      {% include chapter_toc.html %}
+      {% endraw %}
+    #+END_SRC
+
+    The =title= and =nav_order= elements in the front matter should be filled-in
+    accordingly. The other elements in the front matter block should be left as in
+    the template above.
+
+    After the "Long" chapter title an introductory text for the chapter can be
+    added. It is followed by the Table of contents' title and the include
+    directive which
+    create a list of links to the sections of the chapter according to their
+    level and navigation order.
+    
+*** New section template
+
+    Files for sections within a chapter must be placed in the chapter's directory.
+    Currently, the contents of the book are organised in three levels of difficulty:
+    1. basic
+    2. medium
+    3. advanced
+
+
+    The following code represents an empty section and can be used as a template
+    
+    #+BEGIN_SRC markdown
+      ---
+      layout: circuitverse
+      title: Section title
+      nav_order: l0s000
+      cvib_level: advanced
+      parent: Parent Chapter
+      has_children: false
+      ---
+
+      # Long section title
+      {: .no_toc}
+
+      ## Table of contents
+      {: .no_toc .text-delta}
+
+      1. TOC
+      {:toc}
+
+      ## Title
+
+      Text
+    #+END_SRC
+
+    Each section file should have content belonging only to one of these levels.
+    Therefore, the front matter block presents the =cvib_level= which correspond
+    to one of the levels.
+
+    The =parent= element must be the name of the Chapter containing the section.
+
+    The section's title goes in the =title= element.
+
+    To standarize the order of sections in the navigation bar according to the
+    difficulty level, the =nav_order= element is an "encoded" string with this
+    form: =l=, followed by a digit, followed by =s=, followed by three digits.
+    =l= stands for /level/ and is a number between 0 and 2 and represent the basic,
+    medium and advanced level, respectively. =s= stands for /section/ and the three
+    digit number after it is a zero-padded number indicating the section position
+    in the chapter.
+
+    The other elements in the front matter block (=layout=, =has_children=) should
+    be should be left as they are.
+
+    After the front matter block comes the section's title followed by the table of
+    contents title and code to generate it automatically.
+
+    After that, parts within the section can be added.
+
+
+*** Equations examples
+
+    Equations are processed using MathJax provided by the [[https://github.com/jeffreytse/jekyll-spaceship#2-mathjax-usage][jekyll-spaceship]] plugin.
+
+    The following are valid mathematical formulas and their rendering:
+
+**** Unnumbered equations
+     #+begin_src latex
+       $ f(x)=\int_2^n \frac{1}{2\pi}x^2 $
+     #+end_src
+     #+HTML: $ f(x)=\int_2^n \frac{1}{2\pi}x^2 $
+
+     #+begin_src latex
+       $ F(A,B,C) = A + B \cdot C $
+     #+end_src
+     $ F(A,B,C) = A + B \cdot C $
+
+**** Automaticaly numbered equations
+    
+     #+begin_src latex
+       $ \begin{equation}F(x_0, x_1) = x_0 + \overline{x_1} \end{equation} $
+     #+end_src
+     #+HTML:$ \begin{equation}F(x_0, x_1) = x_0 + \overline{x_1} \end{equation} $
+
+**** Manually numbered equations
+    
+     #+begin_src latex
+       \\[ F(A,B,C) = A + B \cdot C \tag{1}\\]
+     #+end_src
+     #+HTML:\\[ F(A,B,C) = A + B \cdot C \tag{1}\\]
+    
+    
+    
+    
+*** Figure examples
+
+    Neither Jekyll nor Markdown provide facilities to add captions to images.
+    Therefore, instead of using direct inclusion of images in MD syntax, the
+    Jekyll include mechanism is used to generate properly captioned figures in
+    the HTML rendering.
+    To use it the figures like this:
+
+    #+begin_src markdown
+      {% raw %}
+      {% include image.html url="/assets/images/path-to-image/image.svg" description="Image caption" %}
+      {% endraw %}
+    #+end_src
+
+    For instance, the following code:
+    #+begin_src markdown
+      {% raw %}
+      {% include image.html url="/assets/images/XnorGate.svg" description="XNOR Gate" %}
+      {% endraw %}
+    #+end_src
+    
+    will render like this:
+
+    #+begin_export markdown
+    {% include image.html url="/assets/images/XnorGate.svg" description="XNOR Gate" %}
+    #+end_export
+
+*** Table examples
+
+    Complex tables can be handled by the [[https://github.com/jeffreytse/jekyll-spaceship#1-table-usage][jekyll-spaceship]] plugin.
+    However, there is no support for table captions.
+    As a workaround, the Table caption can be included in the first row and styled
+    with the table caption CSS =tblcap=.
+
+    #+begin_src markdown
+      |: Table: Sample data     {: .tblcap}  :|||
+      | col 1       | col 2       | col 3       |
+      |:-----------:|:------------|------------:|
+      | row1 col2   | row1 col2   | row1 col3   |
+      | row2 col1   | row2 col2   | row2 col3   |
+    #+end_src
+
+    which renders to
+    
+    #+begin_export markdown
+      |: Table: Sample data     {: .tblcap}  :|||
+      | col 1       | col 2       | col 3       |
+      |:-----------:|:------------|------------:|
+      | row1 col2   | row1 col2   | row1 col3   |
+      | row2 col1   | row2 col2   | row2 col3   |
+    #+end_export
+    
+
+
+*** TODO Bibliography example
+
+
+    Bibliographic references are processed by the =jekyll-scholar= plugin.
+    
+    
+-----
+    
+** DONE Code of conduct, interacting with the community / etiquette
+
+   Refer to the Contributor Covenant Code of Conduct
 
 -----
 
