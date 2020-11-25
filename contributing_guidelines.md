@@ -367,6 +367,8 @@ Bibliographic references are processed by the `jekyll-scholar` plugin. It uses B
         {% endraw %}
         ```
 
+Check the [plugin page](https://github.com/inukshuk/jekyll-scholar) for more complex uses.
+
 ---
 
 

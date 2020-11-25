@@ -484,7 +484,10 @@ description: ""
 	    {% bibliography --cited --file myrefs %}
 	    {% endraw %}
 	  #+end_src
-    
+
+
+    Check the [[https://github.com/inukshuk/jekyll-scholar][plugin page]]
+    for more complex uses.
     
     
 -----
