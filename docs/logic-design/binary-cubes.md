@@ -32,7 +32,7 @@ More information can be found in the section on Karnaugh Maps in {% cite donzell
 
 Any logic function of a single variable $f(x)$ can be represented by a line:
 
-{% include image.html url="/assets/images/comb/binary-cube0.svg" description="Cube representing a logic function with one variable." %}
+{% include image.html url="/assets/images/comb/binary-cube-1var.svg" description="Cube representing a logic function with one variable." %}
 
 The points at both ends of the line indicate the values that the variable $x$ can take (0 or 1).
 
@@ -50,7 +50,7 @@ In the figure it is easy to see that (1,0) and (0,1) are not adjacent, while (1,
 
 This representation can be further extended to higher orders. For instance, a function with three variables would be represented by the following three-dimensional cube:
 
-{% include image.html url="/assets/images/comb/binary-cube-3var.png" description="Cube representing a logic function with three variables." %}
+{% include image.html url="/assets/images/comb/binary-cube-3var.svg" description="Cube representing a logic function with three variables." %}
 
 Again, the adjacencies can be identified by the lines connecting the corners of the cube. If there is not a line, those binary numbers are not adjacent.
 
