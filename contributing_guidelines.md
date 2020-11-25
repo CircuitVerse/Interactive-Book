@@ -168,13 +168,14 @@ Currently, references are formatted according to the `ieee-with-url` style defin
 
 ## Templates and examples
 
-To help you with getting started with writing your contribution, please use the following templates and examples, accordingly
+To help you with getting started with writing your contribution, please use the following templates and examples, accordingly:
 
 -   New chapter template
 -   New section template
 -   Equations example
 -   Figure example
 -   Table example
+-   Bibliography example
 
 The structure of the book, as well as the navigation menu is handled by Jekyll's Just-the-docs plugin. A two-level structure has been chosen. The top-level is for chapters and the second level is for sections in a chapter
 
