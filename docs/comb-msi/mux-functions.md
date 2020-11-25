@@ -27,7 +27,7 @@ $ \begin{equation}F(\underbrace{x_1,\ldots,x_p}\_{\text{inputs}}, \underbrace{y_
 
 where $k=2^p-1$ and $\dot{x_j} \in \\{x_j, \overline{x_j}\\}$
 
-More examples can be found in {% cite kohavi2010switching --file books %}.
+More examples can be found in {% cite kohavi2010switching --file books %} (Section on Data Selectors).
 
 
 ## Shannon theorem with MUX
