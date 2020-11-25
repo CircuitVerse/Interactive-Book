@@ -31,7 +31,7 @@ The revision history is presented in the following table
 
 | Revision number | Date       | Revised by |
 |--------------- |---------- |---------- |
-| 1.0             | 2020-09-?? | DVLS       |
+| 1.0             | 2020-11-25 | DVLS       |
 
 
 ### Purpose of the guidelines
@@ -69,12 +69,12 @@ Usually, the contribution process will include the following steps:
 
 ## Licensing
 
-The book is licensed under the [LICENSE] and copyrighted by contributors to CircuitVerse unless otherwise noted. The author has to make sure that the all content contributed can be licensed under the specified license. Never submit copyrighted material without permission from copyright owner. If you contribute to the book, you irrevocably agree to license it to the public under [LICENSE].
+The book is licensed under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) and copyrighted by contributors to CircuitVerse unless otherwise noted. The author has to make sure that the all content contributed can be licensed under the specified license. Never submit copyrighted material without permission from copyright owner. If you contribute to the book, you irrevocably agree to license it to the public under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0).
 
 
 ### Non-free materials and special requirements
 
-CircuitVerse's Interactive Book may also include quotations, images, or other media under the U.S. Copyright law "fair use" doctrine. In CircuitVerse, such "fair use" material should be identified as from an external source by an appropriate method (on the figure or table description, as appropriate; quotations should be denoted as a quotation block. This leads to possible restrictions on the use, outside of the Interactive Book, of such "fair use" content retrieved from the book: this "fair use" content does not fall under the [LICENSE] license as such, but under the "fair use" (or similar/different) regulations in the country where the media are retrieved.
+CircuitVerse's Interactive Book may also include quotations, images, or other media under the U.S. Copyright law "fair use" doctrine. In CircuitVerse, such "fair use" material should be identified as from an external source by an appropriate method (on the figure or table description, as appropriate; quotations should be denoted as a quotation block. This leads to possible restrictions on the use, outside of the Interactive Book, of such "fair use" content retrieved from the book: this "fair use" content does not fall under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) license as such, but under the "fair use" (or similar/different) regulations in the country where the media are retrieved.
 
 More information about "Fair use"
 
@@ -160,6 +160,8 @@ Equations can be typesetted in LaTeX to be rendered by [MathJax](https://www.mat
 ### References
 
 Information obtained from other sources should be properly cited and referenced. Check the [Templates and examples](#templates-and-examples) section for examples.
+
+Currently, references are formatted according to the `ieee-with-url` style defined [CiteProc-Ruby](https://github.com/inukshuk/citeproc-ruby).
 
 ---
 
@@ -298,7 +300,7 @@ The following are valid mathematical formulas and their rendering:
 
 ### Figure examples
 
-Neither Jekyll nor Markdown provide facilities to add captions to images. Therefore, instead of using direct inclusion of images in MD syntax, the Jekyll include mechanism is used to generate properly captioned figures in the HTML rendering. To use it the figures like this:
+Neither Jekyll nor Markdown provide facilities to add captions to images. Therefore, instead of using direct inclusion of images in MD syntax, the Jekyll include mechanism is used to generate properly captioned figures in the HTML rendering. To use it, include a figure like this:
 
 ```markdown
 {% raw %}
@@ -342,7 +344,27 @@ which renders to
 
 ### Bibliography example
 
-Bibliographic references are processed by the `jekyll-scholar` plugin.
+Bibliographic references are processed by the `jekyll-scholar` plugin. It uses BibTeX files as the source for the references. To use it, the following must be done:
+
+1.  Add the the BibTeX file to the `_bibliography/` directory. Care must be taken to not overwrite other bib files in the directory.
+2.  If the BibTex file is named `myrefs.bib`, then
+    1.  To cite a reference use this tag:
+        
+        ```markdown
+        {% raw %}
+        {% cite refid --file myrefs %}
+        {% endraw %}
+        ```
+        
+        where `refid` is the BibTeX id of the reference and `myfile` is the BibTeX file without the `.bib` extension.
+    2.  To print the list of references cited in the section use the following code:
+        
+        ```markdown
+        ## References
+        {% raw %}
+        {% bibliography --cited --file myrefs %}
+        {% endraw %}
+        ```
 
 ---
 
