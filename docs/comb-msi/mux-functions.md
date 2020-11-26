@@ -38,6 +38,8 @@ $ f(x_1,x_2,x_3,\ldots, x_n) = x_1 \cdot f_1(1,x_2,x_3,\ldots,x_n) + \overline{x
 
 {% include image.html url="/assets/images/comb/mux-shannon.svg" description="MUX based implementation of Shannon decomposition theorem." %}
 
+See {% cite cerny1979 --file books --file mux %} for a more general description.
+
 
 ## Interactive MUX based logic gates
 
@@ -59,4 +61,4 @@ The set $\\{M(1),0,1\\}$ is functionally complete (See section **Functionally Co
 
 ## References
 
-{% bibliography --cited --file books %}
+{% bibliography --cited --file books --file mux %}
