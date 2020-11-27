@@ -99,7 +99,7 @@ Let's take a look at an more complex expression `F(A, B, C, D) = AB'C + BD + CD 
 
 In this example an interesting observation is that, you are doing a sum of product evaluation, that is, `AB'C + BD + CD + D` is a sum of products. The significance of sum of product is that when you are doing `+`, you are in fact invoking the `OR` operator. 
 
-Moreover, the `OR` operator returns `true` so long as any one of its arguements returns `true`. Therefore, if _any_ of the terms in the sum of product (SOP) expressions is `true`, then you know that the final expression is `true` for certain. 
+Moreover, the `OR` operator returns `true` so long as any one of its arguments returns `true`. Therefore, if _any_ of the terms in the sum of product (SOP) expressions is `true`, then you know that the final expression is `true` for certain. 
 
 ## Product of sum expressions (POS)
 Let's take a look at another expression `F(A, B, C, D) = (A + B + C + D')(A + B' + C' + D)(A' + B' + C + D')`. Let's generate the truth table:

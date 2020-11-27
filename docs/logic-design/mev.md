@@ -97,7 +97,7 @@ In this phase, the goal is to obtain the largest grouping or coverage for both t
 1.  Start by covering the variables alone.
 2.  Expand the coverage to identical adjacent variables.
 3.  Expand the coverage by incorporating ones (1s).
-4.  Expand the coverage by incorporating cells contaning *don't cares*.
+4.  Expand the coverage by incorporating cells containing *don't cares*.
 5.  Repeat from step 2 to extend the coverage as much as possible
 
 The Boolean product expressions of the groups will be part of the final sum.
@@ -105,7 +105,7 @@ The Boolean product expressions of the groups will be part of the final sum.
 
 ### Phase 2: Transformation
 
-The goal of this phase is to discard the MEV variables, since thay have already been covered in *Phase 1*:
+The goal of this phase is to discard the MEV variables, since they have already been covered in *Phase 1*:
 
 1.  MEV variables $D$ and $\overline{D}$ are replaced by 0.
 2.  Cells with 0s and $\phi$ remain the same.

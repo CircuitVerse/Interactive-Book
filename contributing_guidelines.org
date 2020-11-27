@@ -204,7 +204,7 @@ description: ""
    While most of the formatting style is carried out automatically by the
    layout, templates and stylesheets in the SSG (jekyll) pipeline, it is
    important to also adhere to a common writing style in order to assure
-   consitency of the book.
+   consistency of the book.
 
    Please use a neutral and simple language. Avoid slang. Also, technical
    jargon should be explained.
@@ -236,7 +236,7 @@ description: ""
       @@html:$(x_3,x_2,x_1,x_0)$@@
       instead of a different letter for each literal @@html:$(A,B,C,D)$@@.
       The least significant bit should be subscripted with 0.
-      In case of ambiguity or if the opossite arrangement is necessary, use a
+      In case of ambiguity or if the opposite arrangement is necessary, use a
       superscript mark to identify the MSB and LSB:
       @@html:$(x_0^{\text{MSB}},x_1,x_2,x_3^{\text{LSB}})$@@
 
@@ -354,7 +354,7 @@ description: ""
 
     The section's title goes in the =title= element.
 
-    To standarize the order of sections in the navigation bar according to the
+    To standardise the order of sections in the navigation bar according to the
     difficulty level, the =nav_order= element is an "encoded" string with this
     form: =l=, followed by a digit, followed by =s=, followed by three digits.
     =l= stands for /level/ and is a number between 0 and 2 and represent the basic,
@@ -388,7 +388,7 @@ description: ""
      #+end_src
      $ F(A,B,C) = A + B \cdot C $
 
-**** Automaticaly numbered equations
+**** Automatically numbered equations
     
      #+begin_src latex
        $ \begin{equation}F(x_0, x_1) = x_0 + \overline{x_1} \end{equation} $

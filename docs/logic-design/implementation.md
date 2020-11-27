@@ -48,7 +48,7 @@ can be represented by the function:
 
 $F(x,y,z) = \overline{x}\overline{y}z + xy\overline{z} + xyz$
 
-using Boolean algebra's ruels and laws the function can be re-arranged as
+using Boolean algebra's rules and laws the function can be re-arranged as
 
 $\begin{align\*}
 F(x,y,z) &= \overline{x}\overline{y}z + xy\underbrace{(\overline{z} + z)}\_{=1}\\\\\\

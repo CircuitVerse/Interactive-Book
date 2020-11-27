@@ -13,7 +13,7 @@ has_children: false
 
 
 ## Table of contents
-{: .no_toc}
+{: .no_toc .text-delta}
 
 1. TOC
 {:toc}
@@ -23,6 +23,6 @@ has_children: false
 
 ## Introduction
 
-Finite State Machines can also be represented graphically by means of Flowchart diagrams. Therefore a direct convertion from Flowchart diagrams to State Diagrams is possible.
+Finite State Machines can also be represented graphically by means of Flowchart diagrams. Therefore a direct conversion from Flowchart diagrams to State Diagrams is possible.
 
 Several resources about Flowcharts can be found in the References and Further reading sections of the Wikipedia entry about [Flowcharts](https://en.wikipedia.org/wiki/Flowchart)

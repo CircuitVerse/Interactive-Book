@@ -54,7 +54,7 @@ This representation can be further extended to higher orders. For instance, a fu
 
 Again, the adjacencies can be identified by the lines connecting the corners of the cube. If there is not a line, those binary numbers are not adjacent.
 
-The adjacency is key to group cubes in Karnaugh maps and in the Quine McCluskey method to obtain minimal expresions.
+The adjacency is key to group cubes in Karnaugh maps and in the Quine McCluskey method to obtain minimal expressions.
 
 
 ## References

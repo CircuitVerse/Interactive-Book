@@ -137,7 +137,7 @@ Besides researching and validating your sources and adhering to the Interactive 
 
 [Work in Progress]
 
-While most of the formatting style is carried out automatically by the layout, templates and stylesheets in the SSG (jekyll) pipeline, it is important to also adhere to a common writing style in order to assure consitency of the book.
+While most of the formatting style is carried out automatically by the layout, templates and stylesheets in the SSG (jekyll) pipeline, it is important to also adhere to a common writing style in order to assure consistency of the book.
 
 Please use a neutral and simple language. Avoid slang. Also, technical jargon should be explained.
 
@@ -154,7 +154,7 @@ See an example in section [Templates and examples](#templates-and-examples).
 Equations can be typesetted in LaTeX to be rendered by [MathJax](https://www.mathjax.org/). A few examples can be found in the [Templates and examples](#templates-and-examples) section. If equations need to be referenced in the text, use numbered or labelled equations. General useful guidelines:
 
 -   There are many variants for the notation of negated variables, prefer the bar over the variable or the *prime* (complement) symbol.
--   For binary words with many literals (high number of bits) prefer a single letter with subscript numbers for each bit. For instance a four bit word can be written as $(x_3,x_2,x_1,x_0)$ instead of a different letter for each literal $(A,B,C,D)$. The least significant bit should be subscripted with 0. In case of ambiguity or if the opossite arrangement is necessary, use a superscript mark to identify the MSB and LSB: $(x_0^{\text{MSB}},x_1,x_2,x_3^{\text{LSB}})$
+-   For binary words with many literals (high number of bits) prefer a single letter with subscript numbers for each bit. For instance a four bit word can be written as $(x_3,x_2,x_1,x_0)$ instead of a different letter for each literal $(A,B,C,D)$. The least significant bit should be subscripted with 0. In case of ambiguity or if the opposite arrangement is necessary, use a superscript mark to identify the MSB and LSB: $(x_0^{\text{MSB}},x_1,x_2,x_3^{\text{LSB}})$
 
 
 ### References
@@ -253,7 +253,7 @@ The `parent` element must be the name of the Chapter containing the section.
 
 The section's title goes in the `title` element.
 
-To standarize the order of sections in the navigation bar according to the difficulty level, the `nav_order` element is an "encoded" string with this form: `l`, followed by a digit, followed by `s`, followed by three digits. `l` stands for *level* and is a number between 0 and 2 and represent the basic, medium and advanced level, respectively. `s` stands for *section* and the three digit number after it is a zero-padded number indicating the section position in the chapter.
+To standardise the order of sections in the navigation bar according to the difficulty level, the `nav_order` element is an "encoded" string with this form: `l`, followed by a digit, followed by `s`, followed by three digits. `l` stands for *level* and is a number between 0 and 2 and represent the basic, medium and advanced level, respectively. `s` stands for *section* and the three digit number after it is a zero-padded number indicating the section position in the chapter.
 
 The other elements in the front matter block (`layout`, `has_children`) should be should be left as they are.
 
@@ -282,7 +282,7 @@ The following are valid mathematical formulas and their rendering:
     
     $ F(A,B,C) = A + B &sdot; C $
 
-2.  Automaticaly numbered equations
+2.  Automatically numbered equations
 
     ```latex
     $ \begin{equation}F(x_0, x_1) = x_0 + \overline{x_1} \end{equation} $
