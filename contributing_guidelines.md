@@ -200,7 +200,7 @@ has_toc: false
 
 Introductory chapter text
 
-## Table of contents
+## Chapter contents
 {: .no_toc .text-delta}
 
 {% raw %}

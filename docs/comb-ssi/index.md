@@ -6,11 +6,14 @@ has_children: true
 has_toc: false
 ---
 
+
 # Combinational SSI components
 {: .no_toc}
 
-## Table of contents
-{: .no_toc}
+Small scale integration combinational components (i.e. logic gates) and some of their features are presented in this chapter.
+
+
+## Chapter contents
+{: .no_toc .text-delta}
 
 {% include chapter_toc.html %}
-

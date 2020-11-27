@@ -22,7 +22,7 @@ For each type, you will start with a brief discussion of its basic operating pri
 Now let's see how they can be used alone or in combination with other ICs in various applications.
 
 
-## Table of contents
-{: .no_toc}
+## Chapter contents
+{: .no_toc .text-delta}
 
 {% include chapter_toc.html %}
