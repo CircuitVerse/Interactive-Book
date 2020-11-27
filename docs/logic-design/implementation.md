@@ -74,4 +74,4 @@ There are several methods to minimise a logic function:
 1.  Use the Boolean algebra's laws and rules. This process is complex and difficult but it works for any function, independent of the number of variables.
 2.  A graphical, visual inspection method based on the representation using Karnaugh Maps as described in section [K-Maps]({% link docs/logic-design/kmaps.md %}) or the extension using Map-entered Variables shown in section [Map-entered variables]({% link docs/logic-design/mev.md %}) or the
 3.  A tabular recursive algorithm known as Quine-McCluskey method which is explained in section [Quine McCluskey]({% link docs/logic-design/qmc.md %}).
-4.  Even other optimisation methods can be used (for instance, evolutionary computation), specially with extremely large circuits or when additional restrictions need to be satisfied.
+4.  Even other optimisation methods can be used (for instance, heuristic based, or evolutionary computation), specially with extremely large circuits or when additional restrictions need to be satisfied.
