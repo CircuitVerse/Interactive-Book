@@ -26,3 +26,8 @@ has_children: false
 Finite State Machines can also be represented graphically by means of Flowchart diagrams. Therefore a direct conversion from Flowchart diagrams to State Diagrams is possible.
 
 Several resources about Flowcharts can be found in the References and Further reading sections of the Wikipedia entry about [Flowcharts](https://en.wikipedia.org/wiki/Flowchart)
+
+
+## Example
+
+{% include image.html url="/assets/images/seq/flowchart-example.svg" description="Equivalence between state diagram and flowchart diagram"%}
