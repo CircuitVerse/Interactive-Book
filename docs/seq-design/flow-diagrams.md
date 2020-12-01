@@ -31,3 +31,14 @@ Several resources about Flowcharts can be found in the References and Further re
 ## Example
 
 {% include image.html url="/assets/images/seq/flowchart-example.svg" description="Equivalence between state diagram and flowchart diagram"%}
+
+
+## Algorithmic State Machines
+
+An extension to the flowchart diagram which includes timing information is known as the Algorithmic State Machine (ASM) chart.
+
+More information about ASM charts can be found in:
+
+-   Section 7.2 "ASM Diagrams" in {% cite donzellini2018introduction --file books %}
+-   Section "Algoritmic state machines" (Chapter 5) in {% cite stonham2017digital --file books %}
+-   ASM~~+ Project webpage at the Universidad de Valladolid @@html:[ASM+~~: a modern Algorithmic State Machine methodology for RTL designs](<http://www.epyme.uva.es/asm++/>)@@
