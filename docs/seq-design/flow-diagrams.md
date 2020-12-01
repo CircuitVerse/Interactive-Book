@@ -41,4 +41,9 @@ More information about ASM charts can be found in:
 
 -   Section 7.2 "ASM Diagrams" in {% cite donzellini2018introduction --file books %}
 -   Section "Algoritmic state machines" (Chapter 5) in {% cite stonham2017digital --file books %}
--   ASM~~+ Project webpage at the Universidad de Valladolid @@html:[ASM+~~: a modern Algorithmic State Machine methodology for RTL designs](<http://www.epyme.uva.es/asm++/>)@@
+-   *ASM++* Project webpage at the Universidad de Valladolid [ASM++: a modern Algorithmic State Machine methodology for RTL designs](http://www.epyme.uva.es/asm++/)
+
+
+## References
+
+{% bibliography --cited --file books %}
