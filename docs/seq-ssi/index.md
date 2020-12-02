@@ -53,7 +53,7 @@ If all the outputs of a sequential circuit change (affect) with respect to activ
 <div style="text-align:center"><img src="/assets/images/sequential_synchronous_circuit.jpg" /></div>
 
 
-## Table of contents
-{: .no_toc}
+## Chapter contents
+{: .no_toc .text-delta}
 
 {% include chapter_toc.html %}

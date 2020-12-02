@@ -38,6 +38,7 @@ plugins:
   - jekyll-github-metadata
   - jekyll/tagging
   - jekyll-spaceship
+  - jekyll/scholar
   #- jekyll-feed
 
 # Exclude from processing.
@@ -124,6 +125,10 @@ jekyll-spaceship:
         tags: 'ams'
       svg:
         fontCache: 'global'
+
+scholar:
+  style: ieee-with-url
+  bibliography_list_tag: ul
 
 # Repository name for Setting up Netlify
 repository: CircuitVerse/Interactive-Book
