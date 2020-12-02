@@ -30,6 +30,7 @@ has_children: false
 ## Converting to and from the analog world
 
 -   Section "Interfacing the digital system to the real world" (Chapter 8) in {% cite stonham2017digital --file books %}
+-   Chapter 6 "Analogue to Digital and Digital to Analogue Conversion" in {% cite morris2013digital --file books %}
 
 
 ## Sampling theorem
