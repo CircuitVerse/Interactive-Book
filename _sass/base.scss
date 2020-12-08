@@ -59,6 +59,30 @@ h6 {
   color: $body-heading-color;
 }
 
+#soda_machine_fsm_canvas circle:nth-child(n+4) {
+  fill: $white;
+}
+
+#soda_machine_fsm_canvas text:nth-child(n+67) {
+  fill: $body-heading-color;
+}
+
+#soda_machine_graphics_canvas rect:nth-child(n+7) {
+  fill: $body-background-color;
+}
+
+select {
+  color: $grey-dk-100;
+}
+
+input {
+  color: $black;
+}
+
+path {
+  stroke: $body-text-color;
+}
+
 p {
   margin-bottom: 1em;
 }
