@@ -53,3 +53,32 @@ The only time the NAND gate output is 0 is when both inputs are 1. Therefore, by
 ### Implementing AND gate
 The AND gate is simply the output of a NAND gate inverted.
 <iframe width="600px" height="400px" src="https://circuitverse.org/simulator/embed/45180" id="universal_gates_06" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+
+{:.quiz}
+1. How many NOR gates are used to implement OR gate?
+   1. 2
+   *  1
+   *  3
+   *  0 
+2. How many NAND gates are used to implement OR gate? 
+   1. 3
+   *  2
+   *  0
+   *  1 
+3. The NAND gate is AND gate followed by `__________`.
+    1. NOT Gate
+    *  OR Gate
+    *  AND Gate
+    *  XOR Gate 
+4. Digital circuit can be made by the repeated use of `__________`.
+    *  OR Gate
+    *  AND Gate
+    *  NOT Gate 
+    1. NAND Gate
+5. How many NAND gates are used to implement AND gate?
+    1. 2
+    *  1
+    *  3
+    *  0 
+
+    
