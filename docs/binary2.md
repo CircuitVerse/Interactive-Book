@@ -164,4 +164,38 @@ add 1               +           1
  
 {% include binary2.html %}
 
+{:.quiz}
+
+1. What is the addition of the binary numbers 11011011010 and 010100101?
+   * 0111001000
+   * 1100110110
+   1. 11101111111
+   * 10011010011
+
+2. Perform binary subtraction: 101111 – 010101 = ?
+   * 100100
+   * 010101
+   1. 011010
+   * 011001
+
+3. Perform multiplication of the binary numbers: 01001 × 01011 = ?
+   1. 001100011
+   * 110011100
+   * 010100110
+   * 101010111
+
+4. On multiplication of (10.10) and (01.01), what will be the answer ?
+   * 101.0010
+   * 0010.101
+   * 110.0011
+   1. 011.0010
+
+5. Divide the binary numbers: 111101 ÷ 1001 and find the remainder.
+   * 0010
+   1. 0111
+   * 1100
+   * 1010
+
+
+
 
