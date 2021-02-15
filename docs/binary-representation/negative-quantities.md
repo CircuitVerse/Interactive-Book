@@ -65,3 +65,30 @@ add 1               +           1
 2's complement      0  1  0  1  1
 		   ---------------
 ```
+
+{:.quiz}
+
+1. Using signed two's complement notation,what is the decimal value of 00010001 ?
+	* -47
+	* +37
+	* -149
+	1. +17
+
+2. Using signed two's complement notation,what is the decimal value of 00010001 ?
+	*  positive
+	* incorrect
+	1. negative
+	* an octal value
+
+3. The two's complement of the signed decimal number -78 is ?
+    * 11001110
+	* 01001110
+	1. 10110010
+	* 10110001
+
+4. The range of positive numbers possible in an eight-bit two's complement system is ?
+    *  0 to 64
+	1. 0 to 127
+	* 0 to 256
+	* 0 to 100.
+
