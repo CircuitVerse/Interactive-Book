@@ -38,3 +38,15 @@ Binary multiplication requires two concepts i.e., binary addition and decimal mu
 1  1  1  1  0       (30)
 --------------
 ```
+
+{:.quiz}
+1. Perform multiplication of the binary numbers: `01001`×`01011`= ?
+   1. 001100011
+   * 110011100
+   * 010100110
+   * 101010111
+2. Perform multiplication of the binary numbers: `100101`×`0110`= ?
+   1. 101111110
+   * 1011001111
+   * 0100110011
+   * 0110100101  

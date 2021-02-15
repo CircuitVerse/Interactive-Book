@@ -46,3 +46,19 @@ In the above example, for units place gives 1 as the submission of 1 and 0, wher
 1 1 0   (6)
 -----
 ```
+
+{:.quiz}
+1. What is the answer to `1010` + `0101`=?
+   1. 1011
+   * 1101
+   * 1110
+   * 1111
+2. What is `11111111`+`00000001`=`100000000` an example of 
+   1. Overflow error
+   * 8 bit binary addition
+3. What is the answer to `01101001` + `00010100`=?
+   1. 01111101
+   * 01111011
+   * 01101111
+   * 01101101  
+   

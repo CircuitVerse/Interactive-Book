@@ -49,3 +49,20 @@ Another method which can achieve Division in binary is by using Binary Multiplic
 	  0  (Remainder)     ans = 6 (110) (Quotient)
 -------------                 -------
 ```
+
+{:.quiz}
+1. Perform divison of the binary numbers: `1111101` by `101`= ?
+   1. 11001
+   * 11111
+   * 1111000
+   * 101
+2. Perform divison of the binary numbers: `111101`÷`1001`= ?
+   1. 0011
+   * 0010
+   * 1100
+   * 101
+3. Perform divison of the binary numbers: `011010000` by `0101`= ?
+   1. 101001
+   * 100011
+   * 110010
+   * 010001  

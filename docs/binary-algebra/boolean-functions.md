@@ -51,3 +51,25 @@ The following is a list of definitions for fundamental concepts used in Boolean 
 ## References
 
 {% bibliography --cited --file books %}
+
+{:.quiz}
+1. Boolean Function is of the form of `________` ?
+   1. Truth values
+   * K=f(X,Y,X)
+   * Algebraic Expression
+   * Truth Table
+2. In the boolean function w=f(X,Y,Z), what is the RHS referred to as `________`?
+   1. expression
+   * right hand side
+   * literals
+   * boolean
+3. The number of literals in the expression F=X.Y’ + Z are `__________`?
+   1. 3
+   * 4
+   * 2
+   * 1   
+4. The number of literals in the expression F=X.Y’ + Z are `__________`?
+   1. (X+Y+Z’)(X’+Y’)
+   * XYZ’+X’Y’
+   * (X+Y+Z’)(X’+Y)
+   * (X+Y+Z’)(X’+Y)   
