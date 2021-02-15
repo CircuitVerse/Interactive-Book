@@ -68,13 +68,13 @@ add 1               +           1
 
 {:.quiz}
 
-1. When using signed two's complement notation, what is the decimal value of 00010001 ?
+1. Using signed two's complement notation,what is the decimal value of 00010001 ?
 	* -47
 	* +37
 	* -149
 	1. +17
 
-2. When using signed two's complement notation, what is the decimal value of 00010001 ?
+2. Using signed two's complement notation,what is the decimal value of 00010001 ?
 	*  positive
 	* incorrect
 	1. negative
