@@ -148,3 +148,32 @@ F = (A NOR (B NOR B)) NOR ((C NOR C) NOR D)
 Notice that there are input elements that are present in the negative form, namely `B'` and `C'`. You can represent them by using the NOR gate in order to realise the [NOT gate](https://learn.circuitverse.org/docs/universal_gates.html#implementing-not-gate).
 
 <iframe width="600px" height="300px" src="https://circuitverse.org/simulator/embed/97663" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
+
+
+
+{:.quiz}
+1. How many NOR gates are used to implement OR gate?
+   1. 2
+   *  1
+   *  3
+   *  0 
+2. How many NAND gates are used to implement OR gate? 
+   1. 3
+   *  2
+   *  0
+   *  1 
+3. The NAND gate is AND gate followed by `__________`.
+    1. NOT Gate
+    *  OR Gate
+    *  AND Gate
+    *  XOR Gate 
+4. Digital circuit can be made by the repeated use of `__________`.
+    *  OR Gate
+    *  AND Gate
+    *  NOT Gate 
+    1. NAND Gate
+5. How many NAND gates are used to implement AND gate?
+    1. 2
+    *  1
+    *  3
+    *  0 

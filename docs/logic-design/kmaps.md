@@ -186,3 +186,24 @@ Both groupings have the same size and are the same dimension. However, upon reac
 This illustrates the idea that this is a greedy algorithm, and does not always return the most simplified SOP expression. In later sections, algorithms illustrating a globally optimal algorithm will be discussed.
 
 {% include kmap.html %}
+
+
+{:.quiz}
+1. A Karnaugh map (K-map) is an abstract form of `_______` diagram organized as a matrix of squares.
+   1. Venn Diagram
+   * Block Diagram
+   * Cylce Diagram
+   * None
+
+2. There are `_______` cells in a 4-variable K-map.
+   1. 16
+   * 12
+   * 8
+   * 4
+
+3. The K-map boolean reduction is based on the Unifying Theorem `A + A’ = 1`.
+   1. Non Impact
+   * Impact
+   * Force
+   * Complementary 
+

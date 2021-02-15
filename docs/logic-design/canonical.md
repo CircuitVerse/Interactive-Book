@@ -365,3 +365,21 @@ The following methods can be used to simplify the the Boolean function:
 
 1. The [Karnaugh-map](https://learn.circuitverse.org/docs/maps.html) or K-map method.
 1. The [NAND gate method](https://learn.circuitverse.org/docs/nand_gate_method.html).
+
+
+{:.quiz}
+1. The boolean functions which can be represented by the sum of minterms and product of maxterms is `_______`.
+   1. Canonical form
+   * Standard form
+   * Both
+   * None
+2. What are the possible combinations of maxterms comprising `n` variables with an accomplishment of an OR gate generation?
+   1. 2^n
+   * 2^n+1
+   * 2^n+2
+   * 2^n-1
+2. Each product term of a group, w’.x.y’ and w.y, represents the `_______` in that group.
+   1. Sum-of-Minterms
+   * Sum-of-Manterms
+   * Input
+   * POS
