@@ -165,7 +165,7 @@ A 1 : 16 demultiplexer can be implemented using **two** 1 : 8 demultiplexers.
    1. Demultiplexer
    * Multiplexer
    * Coder
-   *  Both Multiplexer and Demultiplexer
+   *  Both MUX and DEMUX
 
 2. Which of the following logic block has a number of input lines and one signle output line ?
 
