@@ -153,28 +153,22 @@ Try to implement any gate you wish to with the help of the simulator present bel
 {% include binary2.html %}
 
 {:.quiz}
-1. DeMorgan’s theorem states that `_________` ?
+1. Which amoung the following states DeMorgan’s theorem ?
    1. (AB)’ = A’ + B’
    * (A + B)’ = A’ * B
    * A’ + B’ = A’B’
    * (AB)’ = A’ + B
-2. In boolean algebra, the `OR` operation is performed by which properties ?
-   1. All of the Mentioned
-   * Associative properties
-   * Commutative properties
-   * Distributive properties
-3. The expression for Absorption law is given by `_________` ?
-   1. A + AB = A
-   * A + AB = B
-   * AB + AA’ = A
-   * A + B = B + A 
-4. According to boolean law: `A + 1`=?
-   1. 1
-   * A
-   * 0
-   * A'   
-5. `(A + B)(A’ * B’)` = ?
-   1. 0
-   * 1
-   * AB
-   * AB'  
+2. Idempotence law states that `_________` ?
+   1. A + A = A
+   * A + B = B + A
+   * A + A.B = A
+   * A + B)' = (A'B') 
+3. `A(A + B) = A` is known as `_________` ?
+   1. Redundance law
+   * Distributive law
+   * Associative law  
+4. `A(A + B)` is equivalent to `_________` ?
+   1. A
+   * (A'B')
+   * (A'B')
+   *  A'
