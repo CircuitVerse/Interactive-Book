@@ -368,18 +368,19 @@ The following methods can be used to simplify the the Boolean function:
 
 
 {:.quiz}
-1. The boolean functions which can be represented by the sum of minterms and product of maxterms is `_______`.
+
+1. `_______` is the representation of boolean function as the sum of minterms and product of maxterms.
    1. Canonical form
    * Standard form
    * Both
    * None
-2. What are the possible combinations of maxterms comprising `n` variables with an accomplishment of an OR gate generation?
-   1. 2^n
-   * 2^n+1
-   * 2^n+2
-   * 2^n-1
-2. Each product term of a group, w’.x.y’ and w.y, represents the `_______` in that group.
-   1. Sum-of-Minterms
-   * Sum-of-Manterms
-   * Input
-   * POS
+2. Sum of Products is also known as `_______`.
+   1. Sum of minterm
+   * Product of minterm
+   * Sum of maxterm
+   * Product of maxterm
+3. Conjunctive normal form is known as `_______`.
+   1. maxterm
+   * minterm
+   * minimal term
+   * maximal term

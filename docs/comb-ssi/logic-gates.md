@@ -224,26 +224,21 @@ endmodule
 {% include gates.html %}
 
 {:.quiz}
-1. The expression of an EXOR gate is `____________`
-   1. A’B+AB’
-   * AB+A’B’
-   * A+A.B
-   * A’+B’
-2. An OR gate has 4 inputs. One input is high and the other three are low. Output is `____________`
-   1. Low
-   * High
+1. An OR gate has n inputs. One input is high and n-1 are low, output is `____________`
+   1. High
+   * Low
    * alternately high and low
-3. When an input signal 1 is applied to a NOT gate, the output is `____________`
-   1. 0
-   * 1
+2. When an input signal 1 is applied to a `NOT` of `NOT` gate, the output is `____________`
+   1. 1
+   * 0
    * Either 0 & 1 
    * None
-4. How to make `NAND` gate ?
+3. How to make `NAND` gate ?
    1. AND gate followed by NOT gate
    * OR gate followed by NOT gate
 
-5. Which Logic gate gives `high(1)` output when both the inputs are same ?
-   1. XNOR
-   * XOR
+4. Which Logic gate gives `low(0)` output when both the inputs are same ?
+   1. XOR
+   * XNOR
    * NOR 
    * AND

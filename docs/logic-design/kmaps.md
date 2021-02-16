@@ -189,21 +189,22 @@ This illustrates the idea that this is a greedy algorithm, and does not always r
 
 
 {:.quiz}
-1. A Karnaugh map (K-map) is an abstract form of `_______` diagram organized as a matrix of squares.
-   1. Venn Diagram
-   * Block Diagram
-   * Cylce Diagram
+
+1. If the combination of inputs for which the Boolean function is `0` we use `______` to simplify in K-map.
+   1. POS
+   * SOP
+   * Both
    * None
 
-2. There are `_______` cells in a 4-variable K-map.
-   1. 16
-   * 12
-   * 8
-   * 4
+2. How many cells are there in n-variable K-map?
+   1. 2^n
+   * 2^n+1
+   * 2^n+2
+   * 2^n-1
 
-3. The K-map boolean reduction is based on the Unifying Theorem `A + A’ = 1`.
-   1. Non Impact
-   * Impact
-   * Force
-   * Complementary 
+3. If the combination of inputs for which the Boolean function is `1` we use `______` to simplify in K-map.
+   1. SOP
+   * POS
+   * Both
+   * None
 

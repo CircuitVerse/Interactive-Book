@@ -168,10 +168,10 @@ Notice that there are input elements that are present in the negative form, name
     *  AND Gate
     *  XOR Gate 
 4. Digital circuit can be made by the repeated use of `__________`.
-    *  OR Gate
-    *  AND Gate
-    *  NOT Gate 
-    1. NAND Gate
+    *  XOR,XNOR 
+    *  AND,OR
+    *  NOT  
+    1. NOR,NAND 
 5. How many NAND gates are used to implement AND gate?
     1. 2
     *  1
