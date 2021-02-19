@@ -1,3 +1,4 @@
+{%- if previous_page or next_page -%}
 <div id="content">
     <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
         <button type="button" id="sidebarCollapse" class="btn btn-info new mr-3">
@@ -6,15 +7,16 @@
         </button>
         <div class="prev-next-controls">
             <div>
-                {% if previous_page != null %}
-                <a href="{{ previous_page }}" class="btn btn-info">Previous</a>
-                {% endif %}
+                {%- if previous_page -%}
+                <a href="{{ previous_page.url | absolute_url }}" class="btn btn-info">Previous</a>
+                {%- endif -%}
             </div>
             <div>
-                {% if next_page != null %}
-                <a href="{{ next_page }}" class="btn btn-info">Next</a>
-                {% endif %}
+                {%- if next_page -%}
+                <a href="{{ next_page.url | absolute_url }}" class="btn btn-info">Next</a>
+                {%- endif -%}
             </div>
         </div>
     </nav>
 </div>
+{%- endif -%}
