@@ -1,50 +1,101 @@
 <!-- -*- engine:django -*- -->
+{%- comment -%}
+Code based off https://github.com/pmarsceill/just-the-docs/blob/master/_includes/nav.html
+{%- endcomment -%}
 
-{% assign parent = page.parent %}
-{% assign pages_list = site.html_pages | sort:"nav_order" %}
-{% assign previous_page = null %}
-{% assign next_page = null %}
-{% assign current_page = false %}
+{%- assign titled_pages = site.html_pages
+	| where_exp:"item", "item.title != nil" -%}
 
-{% for single_page in pages_list %}
-    {% if single_page.parent == parent %}
-	{% if single_page.title == page.title %}
-	    {% assign current_page = true %}
-	{% elsif current_page %}
-	    {% if page.has_children == null %}
-		{% assign next_page = single_page.url %}
-	    {% endif %}
-	    {% break %}
-	{% else %}
-	    {% assign previous_page = single_page.url %}
-	{% endif %}
-    {% elsif single_page.parent == page.title %}
-	{% if single_page.nav_order == 1 %}
-	    {% assign next_page = single_page.url %}
-	{% endif %}
-    {% endif %}
-{% endfor %}
+{%- comment -%}
+The values of `title` and `nav_order` can be numbers or strings.
+Jekyll gives build failures when sorting on mixtures of different types,
+so numbers and strings need to be sorted separately.
 
-{% assign current_page = false %}
-{% if next_page == null or previous_page == null %}
-    {% if page.parent != null %}
-	{% for single_page in pages_list %}
-	    {% if single_page.title == page.parent %}
-		{% assign current_page = true %}
-		{% if previous_page == null %}
-		    {% assign previous_page = single_page.url %}
-		{% endif %}
-	    {% elsif current_page %}
-		{% if next_page == null %}
-		    {% assign next_page = single_page.url %}
-		{% endif %}
-		{% break %}
-	    {% endif %}
-	{% endfor %}
-    {% endif %}
-{% endif %}
+Here, numbers are sorted by their values, and come before all strings.
+An omitted `nav_order` value is equivalent to the page's `title` value
+(except that a numerical `title` value is treated as a string).
 
-{% if page.nav_order == 1 and page.parent == null %}
-    {% assign previous_page = null %}
-{% endif %}
+The case-sensitivity of string sorting is determined by `site.nav_sort`.
+{%- endcomment -%}
 
+{%- assign string_ordered_pages = titled_pages
+	| where_exp:"item", "item.nav_order == nil" -%}
+{%- assign nav_ordered_pages = titled_pages
+	| where_exp:"item", "item.nav_order != nil"  -%}
+
+{%- comment -%}
+The nav_ordered_pages have to be added to number_ordered_pages and
+string_ordered_pages, depending on the nav_order value.
+The first character of the jsonify result is `"` only for strings.
+{%- endcomment -%}
+{%- assign nav_ordered_groups = nav_ordered_pages
+	| group_by_exp:"item", "item.nav_order | jsonify | slice: 0" -%}
+{%- assign number_ordered_pages = "" | split:"X" -%}
+{%- for group in nav_ordered_groups -%}
+{%- if group.name == '"' -%}
+  {%- assign string_ordered_pages = string_ordered_pages | concat: group.items -%}
+{%- else -%}
+  {%- assign number_ordered_pages = number_ordered_pages | concat: group.items -%}
+{%- endif -%}
+{%- endfor -%}
+
+{%- assign sorted_number_ordered_pages = number_ordered_pages | sort:"nav_order" -%}
+
+{%- comment -%}
+The string_ordered_pages have to be sorted by nav_order, and otherwise title
+(where appending the empty string to a numeric title converts it to a string).
+After grouping them by those values, the groups are sorted, then the items
+of each group are concatenated.
+{%- endcomment -%}
+{%- assign string_ordered_groups = string_ordered_pages
+	| group_by_exp:"item", "item.nav_order | default: item.title | append:''" -%}
+{%- if site.nav_sort == 'case_insensitive' -%}
+{%- assign sorted_string_ordered_groups = string_ordered_groups | sort_natural:"name" -%}
+{%- else -%}
+{%- assign sorted_string_ordered_groups = string_ordered_groups | sort:"name" -%}
+{%- endif -%}
+{%- assign sorted_string_ordered_pages = "" | split:"X" -%}
+{%- for group in sorted_string_ordered_groups -%}
+{%- assign sorted_string_ordered_pages = sorted_string_ordered_pages | concat: group.items -%}
+{%- endfor -%}
+
+{%- assign pages_list = sorted_number_ordered_pages | concat: sorted_string_ordered_pages -%}
+
+{%- assign current_page = false -%}
+{%- assign previous_page = nil -%}
+{%- assign next_page = nil -%}
+
+{%- for node in pages_list -%}
+  {%- unless node.nav_exclude -%}
+    {%- if node.parent == nil and node.title -%}
+
+      {%- if page.url == node.url -%}
+        {%- assign current_page = true -%}
+      {%- elsif current_page -%}
+        {%- assign next_page = node -%}
+        {%- break -%}
+      {%- else -%}
+        {%- assign previous_page = node -%}
+      {%- endif -%}
+
+      {%- if node.has_children -%}
+        {%- assign children_list = pages_list | where: "parent", node.title -%}
+        {%- for child in children_list -%}
+          {%- if page.url == child.url -%}
+           {%- assign current_page = true -%}
+          {%- elsif current_page -%}
+            {%- assign next_page = child -%}
+            {%- break -%}
+          {%- else -%}
+           {%- assign previous_page = child -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+
+      {%- if next_page != nil -%}
+        {%- break -%}
+      {%- endif -%}
+
+    {%- endif -%}
+  {%- endunless -%}
+{%- endfor -%}
