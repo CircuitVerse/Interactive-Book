@@ -169,3 +169,39 @@ If A > B Cout = 0 and the result of binary form (A-B) then Cout = 1 and the resu
 ## 8-bit full adder and subtractor   
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/2018" id="nbit_parallel_adder_subtractor_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+
+
+{:.quiz}
+
+1. Consider a half adder circuit - for which of the following inputs A,B the sum (S) output is same ?
+	1. 0,0
+	* 0,1
+	* 1,0
+	1. 1,1
+
+2. Using only which of the following gates in minimum number Half Adder circuit can be implemented?
+	1. NOR
+	* AND
+	* OR
+	* NOT
+
+3. Which of the following is 4-bit Full Adder IC ?
+	1. 74LS83
+	* 7474
+	* 7408
+	* 7432
+
+4. Which of the following circuit is called n-bit parallel adder ?
+	1. Ripple Carry Adder
+	* Half Adder
+	* Half Substractor
+	* Full Adder
+
+5. In which of the following cases Adders can be used as a primary element ?
+	1. Arithmatic Logic Unit (ALU)
+	1. Digital Calculator
+	* Memory Block
+	* Loop Operation
+
+
+
