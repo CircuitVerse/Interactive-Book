@@ -51,12 +51,3 @@ The following is a list of definitions for fundamental concepts used in Boolean 
 ## References
 
 {% bibliography --cited --file books %}
-
-{:.quiz}
-1. Every Boolean Function can be expressed as `________` ?
-   1. Algebraic expression
-   * Laplace expression
-   * Binomial expression
-2. SOP(Sum of Product) is referred as `________`?
-   1. (x+xwz+xy)
-   * ((x+y+z)(z+w)(z+x))
