@@ -101,3 +101,22 @@ Now translate the options which are listed above into an FSM diagram/flow-chart:
 {% include fsm.html %}
 
 Lets try the soda can vending machine and look for the corresponding state changes FSM diagram in each of the above mentioned possibilities.
+
+{:.quiz}
+
+1. Behavior of synchronous sequential circuits represented in the graphical form is called `_____`.
+   1. State diagram
+   * Block diagram
+   * Flow diagram
+   * All of these
+2. Which of the following is a type of `FSM(Finite State Machine)`?
+   1. Mealy State Machine
+   * Moore State Machine
+   * Both 
+   * None   
+3. Finite State Machine is said to be `Mealy state machine`?
+   1. Outputs depend on present inputs & present states.
+   * Outputs depend only on present states.  
+3. Finite State Machine is said to be `Moore state machine`?
+   1. Outputs depend only on present states.
+   * Outputs depend on present inputs & present states.     
