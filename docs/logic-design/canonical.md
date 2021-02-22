@@ -366,21 +366,3 @@ The following methods can be used to simplify the the Boolean function:
 1. The [Karnaugh-map](https://learn.circuitverse.org/docs/maps.html) or K-map method.
 1. The [NAND gate method](https://learn.circuitverse.org/docs/nand_gate_method.html).
 
-
-{:.quiz}
-
-1. `_______` is the representation of boolean function as the sum of minterms and product of maxterms.
-   1. Canonical form
-   * Standard form
-   * Both
-   * None
-2. Sum of Products is also known as `_______`.
-   1. Sum of minterm
-   * Product of minterm
-   * Sum of maxterm
-   * Product of maxterm
-3. Conjunctive normal form is known as `_______`.
-   1. maxterm
-   * minterm
-   * minimal term
-   * maximal term

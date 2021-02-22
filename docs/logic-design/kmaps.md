@@ -188,23 +188,4 @@ This illustrates the idea that this is a greedy algorithm, and does not always r
 {% include kmap.html %}
 
 
-{:.quiz}
-
-1. If the combination of inputs for which the Boolean function is `0` we use `______` to simplify in K-map.
-   1. POS
-   * SOP
-   * Both
-   * None
-
-2. How many cells are there in n-variable K-map?
-   1. 2^n
-   * 2^n+1
-   * 2^n+2
-   * 2^n-1
-
-3. If the combination of inputs for which the Boolean function is `1` we use `______` to simplify in K-map.
-   1. SOP
-   * POS
-   * Both
-   * None
-
+{
