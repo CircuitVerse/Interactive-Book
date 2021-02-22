@@ -65,4 +65,22 @@ For FSM which do not exhibit a simple sequence of states, the counter can be rep
 
 ROM capacity: $2^N \times (2N+K+\log_2 M)$
 
+{:.quiz}
 
+1. What is the ROM capacity of Counter based µcontroller?
+   1. 2^N\times(K+\log_2 M)
+   * 2^N\times(N+K+\log_2 M)
+   * 2^{(M+N)}\times(K+N)
+   * 2^M\times(M+N)
+
+2. Which among the following is not micro-controller?
+   1. DMUX based µcontroller
+   * MUX based µcontroller
+   * ROM-based µcontroller
+   * None
+
+3. What is the ROM capacity of Preset counter based µcontroller?
+   1. 2^N\times(N+K+\log_2 M)
+   * 2^N\times(K+\log_2 M)
+   * 2^{(M+N)}\times(K+N)
+   * 2^M\times(M+N)
