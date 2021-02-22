@@ -35,5 +35,3 @@ This combinational circuit has ‘n’ input variables and ‘m’ outputs. Each
 1.  Implement the above Boolean expressions corresponding to each output by using Logic gates.
 
 
-
-

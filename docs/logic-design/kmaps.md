@@ -188,4 +188,3 @@ This illustrates the idea that this is a greedy algorithm, and does not always r
 {% include kmap.html %}
 
 
-
