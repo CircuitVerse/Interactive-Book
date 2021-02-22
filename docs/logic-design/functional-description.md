@@ -36,13 +36,4 @@ This combinational circuit has ‘n’ input variables and ‘m’ outputs. Each
 
 
 
-{:.quiz}
-1. How many input and output variables are present in combinational circuit?
-   1. n,m
-   * 1,2
-   * 2,1
-   * 1,1
-2. Is there any feedback system in combinational circuit?
-   1. No
-   * Yes
 

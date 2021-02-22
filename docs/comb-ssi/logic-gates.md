@@ -222,23 +222,3 @@ endmodule
 ```
 
 {% include gates.html %}
-
-{:.quiz}
-1. An OR gate has n inputs. One input is high and n-1 are low, output is `____________`
-   1. High
-   * Low
-   * alternately high and low
-2. When an input signal 1 is applied to a `NOT` of `NOT` gate, the output is `____________`
-   1. 1
-   * 0
-   * Either 0 & 1 
-   * None
-3. How to make `NAND` gate ?
-   1. AND gate followed by NOT gate
-   * OR gate followed by NOT gate
-
-4. Which Logic gate gives `low(0)` output when both the inputs are same ?
-   1. XOR
-   * XNOR
-   * NOR 
-   * AND
