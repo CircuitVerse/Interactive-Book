@@ -26,3 +26,4 @@ Microprocessors are general purpose rom-based sequential circuits with a fixed *
 Other combinational and sequential components, such as MUXs, registers and counters are also part of the microprocessor to provide the functionality required by the software, to optimise its execution and to connect to other external components.
 
 One of the first "single-chip" microprocessors is the Intel 4004. Read more about it and other interesting microprocessors and their history in the [IEEE Chip Hall of Fame](https://spectrum.ieee.org/static/chip-hall-of-fame) and the website [Great Microprocessors of the Past and Present](http://www.cpushack.com/CPU/cpu.html) at the CPUSHACK museum.
+
