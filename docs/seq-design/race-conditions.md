@@ -120,3 +120,21 @@ If the clock is High for a time interval less than the propagation delay of the 
 
 If the flip flop is made to toggle over one clock period then racing around condition can be eliminated.
 This is done by using Master-Slave JK flip-flop.
+
+{:.quiz}
+
+1. The delay between input and output is called `______`.
+   1. Propagation delay
+   * Contamination delay
+   * Rise time
+   * Edge rate
+2. What are the methods to eliminate race around condition ?
+   1. All of these
+   * Edge-triggered flip-flop
+   * Master-slave JK flip-flop
+   * Increase flip-flop delay
+3. Which among the following is the race around condition ?
+   1. J=1,K=1,Clock=1
+   * S=1,R=1,Clock=1
+   * J=0,K=0,Clock=0
+   * All of these
