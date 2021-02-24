@@ -7,7 +7,7 @@ $(document).ready(function () {
     //dark mode functionality for home page
     var aTags = document.querySelectorAll("a.site-button");
      var searchText = "mode";
-     var storageItem = "colorMode"
+     var storageItem = "colorMode";
      var a;
      var isDarkMode = localStorage.getItem(storageItem);
      for (var i = 0; i < aTags.length; i++) {
@@ -37,7 +37,7 @@ $(document).ready(function () {
 	     localStorage.setItem(storageItem, isDarkMode);
 	 }
 	 return false;
-     }
+     };
 
 
     // Collapse active nav lists if opened
