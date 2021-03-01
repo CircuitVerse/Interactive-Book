@@ -272,17 +272,15 @@ $text-color: #111111;
 
     .nav-list-item {
 
-	    &.active {
-	      list-style: disc url("/assets/images/nav-marker-active.svg") inside;
+	    .nav-list-link {
+	      display: inline;
 
-	    }
+	}
+
+	&.active {
+	  list-style: disc url("/assets/images/nav-marker-active.svg") inside;
+	}
     }
-}
-
-.nav-list-item {
-  .nav-list-link {
-    display: inline;
-  }
 }
 
 // table caption style
