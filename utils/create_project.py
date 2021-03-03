@@ -41,7 +41,7 @@ chapter_title_md="""# {title}
 {{: .no_toc}}
 
 ## Table of contents
-{{: .no_toc .text-delta}}"""
+{{: .no_toc}}"""
 
 chapter_title_org="""* {title}
   :PROPERTIES:
@@ -50,7 +50,7 @@ chapter_title_org="""* {title}
   
 ** Table of contents
    :PROPERTIES:
-   :JTD:      {{: .no_toc .text-delta}}
+   :JTD:      {{: .no_toc}}
    :END:"""
 
 section_fm="""---
