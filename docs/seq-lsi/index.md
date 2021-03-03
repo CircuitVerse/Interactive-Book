@@ -16,6 +16,6 @@ Another approach, derived from programmable logic devices (PLDs), is based on Fi
 
 
 ## Chapter contents
-{: .no_toc .text-delta}
+{: .no_toc }
 
 {% include chapter_toc.html %}

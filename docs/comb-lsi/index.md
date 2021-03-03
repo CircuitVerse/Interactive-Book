@@ -14,6 +14,6 @@ Large scale integration combinational components such as *Read-only Memories* (R
 
 
 ## Chapter contents
-{: .no_toc .text-delta}
+{: .no_toc }
 
 {% include chapter_toc.html %}

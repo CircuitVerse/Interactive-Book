@@ -18,7 +18,7 @@ description: ""
 
 ** Table of contents
    :PROPERTIES:
-   :JTD:      {: .no_toc .text-delta }
+   :JTD:      {: .no_toc  }
    :END:
 
 #+BEGIN_EXPORT html 
@@ -294,7 +294,7 @@ description: ""
       Introductory chapter text
 
       ## Chapter contents
-      {: .no_toc .text-delta}
+      {: .no_toc }
 
       {% raw %}
       {% include chapter_toc.html %}
@@ -336,7 +336,7 @@ description: ""
       {: .no_toc}
 
       ## Table of contents
-      {: .no_toc .text-delta}
+      {: .no_toc }
 
       1. TOC
       {:toc}

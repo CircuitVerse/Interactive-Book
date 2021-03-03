@@ -14,6 +14,6 @@ This chapter explain the basics of representing quantities and information using
 
 
 ## Chapter contents
-{: .no_toc .text-delta}
+{: .no_toc }
 
 {% include chapter_toc.html %}

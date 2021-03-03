@@ -14,6 +14,6 @@ This chapter explains how to obtain a circuit from a functional definition. It a
 
 
 ## Table of contents
-{: .no_toc .text-delta}
+{: .no_toc }
 
 {% include chapter_toc.html %}

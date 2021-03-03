@@ -12,7 +12,7 @@ description: ""
 
 
 ## Table of contents
-{: .no_toc .text-delta }
+{: .no_toc  }
 
 1. TOC
 {:toc}
@@ -201,7 +201,7 @@ has_toc: false
 Introductory chapter text
 
 ## Chapter contents
-{: .no_toc .text-delta}
+{: .no_toc }
 
 {% raw %}
 {% include chapter_toc.html %}
@@ -237,7 +237,7 @@ has_children: false
 {: .no_toc}
 
 ## Table of contents
-{: .no_toc .text-delta}
+{: .no_toc }
 
 1. TOC
 {:toc}

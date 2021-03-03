@@ -23,6 +23,6 @@ Now let's see how they can be used alone or in combination with other ICs in var
 
 
 ## Chapter contents
-{: .no_toc .text-delta}
+{: .no_toc }
 
 {% include chapter_toc.html %}

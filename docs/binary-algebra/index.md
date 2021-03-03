@@ -14,6 +14,6 @@ This chapter introduce the basic arithmetic operations using binary numbers as w
 
 
 ## Chapter contents
-{: .no_toc .text-delta}
+{: .no_toc }
 
 {% include chapter_toc.html %}

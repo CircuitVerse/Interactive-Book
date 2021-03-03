@@ -14,6 +14,6 @@ Small scale integration combinational components (i.e. logic gates) and some of 
 
 
 ## Chapter contents
-{: .no_toc .text-delta}
+{: .no_toc }
 
 {% include chapter_toc.html %}
