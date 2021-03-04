@@ -2,21 +2,25 @@
  * Global Scripts for Interactive Book
  */
 
+// Switch Color Scheme as soon as possible
+var searchText = "mode";
+var storageItem = "colorMode";
+var isDarkMode = localStorage.getItem(storageItem);
+
+if (isDarkMode == 0 || isDarkMode == null) {
+	isDarkMode = 0;
+	localStorage.setItem(storageItem, isDarkMode);
+} else if (isDarkMode == 1) {
+	jtd.setTheme('circuitversedark');
+	
+}
+
 $(document).ready(function () {
 
 	//dark mode functionality
 	var a = $('a.site-button:contains("mode")');
 
-	// Switch Color Scheme as soon as possible
-	var searchText = "mode";
-	var storageItem = "colorMode";
-	var isDarkMode = localStorage.getItem(storageItem);
-
-	if (isDarkMode == 0 || isDarkMode == null) {
-		isDarkMode = 0;
-		localStorage.setItem(storageItem, isDarkMode);
-	} else if (isDarkMode == 1) {
-		jtd.setTheme('circuitversedark');
+	if (isDarkMode == 1) {
 		a.text("Light mode");
 	}
 
