@@ -71,7 +71,7 @@ The set $\\{M(1),0,1\\}$ is functionally complete (See section **Functionally Co
   2. Can one DEMUX block be said an universal logic block ?
      1. Yes
      * No
-  3. Select the MUX-based gates which is/are possible
+  3. Select the MUX-based gates which is/are possible ?
      * MUX-based XOR gate is impossible
      * MUX-based XNOR gate is impossible
 	 1. XOR and XNOR both gates are possible
