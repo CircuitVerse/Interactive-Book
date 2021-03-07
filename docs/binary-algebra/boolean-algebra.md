@@ -153,7 +153,7 @@ Try to implement any gate you wish to with the help of the simulator present bel
 {% include binary2.html %}
 
 {:.quiz}
-1. Which amoung the following states DeMorgan’s theorem ?
+1. Which among the following states DeMorgan’s theorem ?
    1. (AB)’ = A’ + B’
    * (A + B)’ = A’ * B
    * A’ + B’ = A’B’
