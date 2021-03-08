@@ -16,6 +16,6 @@ This chapter will describe tools and methods to design and synthesise optimal se
 
 
 ## Chapter contents
-{: .no_toc }
+{: .no_toc .text-delta}
 
 {% include chapter_toc.html %}

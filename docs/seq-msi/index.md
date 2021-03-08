@@ -14,6 +14,6 @@ This chapter presents medium scale integration (MSI) sequential components as we
 
 
 ## Chapter contents
-{: .no_toc }
+{: .no_toc .text-delta}
 
 {% include chapter_toc.html %}

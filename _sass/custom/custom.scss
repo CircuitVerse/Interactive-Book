@@ -332,13 +332,3 @@ $text-color: #111111;
     padding: 0.5rem;
   }
 }
-
-// Text Delta style for TOC
-#table-of-contents {
-  @extend .text-delta;
-}
-
-// Text Delta style for Chapter Contents
-#chapter-contents {
-  @extend .text-delta;
-}
