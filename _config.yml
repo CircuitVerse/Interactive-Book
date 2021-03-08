@@ -75,7 +75,7 @@ search_enabled: true
 aux_links:
   "Dark mode":
     - "#"
-  "Circuitverse on GitHub":
+  "CircuitVerse on GitHub":
     - "//github.com/CircuitVerse"
 
 # Footer content 
