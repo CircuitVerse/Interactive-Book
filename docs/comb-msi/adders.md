@@ -179,7 +179,7 @@ If A > B Cout = 0 and the result of binary form (A-B) then Cout = 1 and the resu
 	* 1,0
 	1. 1,1
 
-2. Using only which of the following gates in minimum number Half Adder circuit can be implemented?
+2. Using only which of the following gates in minimum number Half Adder circuit can be implemented ?
 	1. NOR
 	* AND
 	* OR
@@ -202,6 +202,5 @@ If A > B Cout = 0 and the result of binary form (A-B) then Cout = 1 and the resu
 	1. Digital Calculator
 	* Memory Block
 	* Loop Operation
-
 
 
