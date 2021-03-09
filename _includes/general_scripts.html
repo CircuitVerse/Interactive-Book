@@ -3,42 +3,6 @@
  // Wait for the page to load first
  window.onload = function() {
      
-     //Get a reference to the link on the page
-     // with class site-button and content Color
-     var aTags = document.querySelectorAll("a.site-button");
-     var searchText = "mode";
-     var storageItem = "colorMode"
-     var a;
-     var isDarkMode = localStorage.getItem(storageItem);
-     for (var i = 0; i < aTags.length; i++) {
-	 if (aTags[i].textContent.search(searchText)>=0) {
-	     a = aTags[i];
-	     break;
-	 }
-     }
-     if (isDarkMode == 0 || isDarkMode == null) {
-	 isDarkMode = 0;
-	 localStorage.setItem(storageItem, isDarkMode);
-     } else if(isDarkMode == 1) {
-	 jtd.setTheme('circuitversedark');
-	 a.textContent = "Light mode";
-     }
-     
-     a.onclick = function() {
-	 if (isDarkMode == 0 || isDarkMode == null) {
-	     jtd.setTheme('circuitversedark');
-	     a.textContent = "Light mode";
-	     isDarkMode = 1;
-	     localStorage.setItem(storageItem, isDarkMode);
-	 } else {
-	     jtd.setTheme('circuitverse');
-	     a.textContent = "Dark mode";
-	     isDarkMode = 0;
-	     localStorage.setItem(storageItem, isDarkMode);
-	 }
-	 return false;
-     }
-
      // sidebar collapse code
      // TODO: correct style and add media size checking(is it needed?)
      var sidebar = document.querySelector("div.side-bar");
