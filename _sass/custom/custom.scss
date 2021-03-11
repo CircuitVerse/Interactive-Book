@@ -274,7 +274,7 @@ $text-color: #111111;
 // DVLS new styles
 // CV flavored side nav
 //
-//--[hound-issue]:selector should have depth 2 instead of 3 (resolving this creates ambiguity of .nav-list)
+//---[hound-issue]:selector should have depth 2 instead of 3 (resolving this creates ambiguity of .nav-list)
 .nav-list {
   list-style: circle url("/assets/images/nav-marker-inactive.svg") inside;
 
