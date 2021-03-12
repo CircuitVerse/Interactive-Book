@@ -283,9 +283,9 @@ $text-color: #111111;
 	    .nav-list-link {
 	      display: inline;
 
-	}
+  }
 
-	&.active {
+  &.active {
 	  list-style: disc url("/assets/images/nav-marker-active.svg") inside;
 	}
     }
