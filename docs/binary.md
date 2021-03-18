@@ -95,8 +95,8 @@ It is just like counting in decimal except we reach 10 much sooner.
 | 111        | |
 | **1**000   |Start back at 0 again (for all 3 digits), add 1 on the left|
 
-## Binary to decimal demonstration
 ---
+## Binary to decimal demonstration
 Let's tell you something more about conversion. Conversion from Binary to Decimal is quite a simple task.
 All you need to do is begin from the right. Follow the steps below:
 - STEP 1 :: 
@@ -113,12 +113,20 @@ Result is ready :)
 increase subsequently._**
 ```yaml
 Example ::
-Decimal number :: 25
+Binary number :: 11001
 You can convert the 1st, 4th, and the 5th digit from the right by tapping on it to convert from 0 to 1.
 Further, the respective binary digit is multiplied with the value present on top of each digit. Now add.
 In this Case ::
 1x16 + 1x8 + 0x4 + 0x2 + 1x1 = 25 which is the decimal equivalent of the binary number 11001
 ```
+
+## Demical to binary demonstration
+
+By the instructions above, you will know that binary and demical transformation is like: `25 = 1 * 2^4 + 1 * 2^3 + 0 * 2^2 + 0 * 2^1 + 1 * 2^0` so if you want to trans a demical to a binary, just find the max `2^?` and keep subtract it from the original number.
+
+For example: the max `2^?` less than `25` is `16`. So subtract `16` from `25` and write `2^4+` on the draft. Then the left number is `25-16=9` then you find the max `2^?` less than `9` is `2^3=8` so subtract it from `9` and write `2^3+` on the draft. Then the left number is `9-8=1`. So the demical `25` can be written as `2^4+2^3+1`. Then you can read the correspending binary from this.
+
+From `25 = 2^4+2^3+2^0 = 1*2^4 + 1*2^3 + 0*2^2 + 0*2^1 + 1*2^0` you can easily read the binary `11001`.
 
 ## Signed and unsigned numbers
 
