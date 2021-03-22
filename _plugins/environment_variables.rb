@@ -14,7 +14,7 @@ module Jekyll
         site.config['url'] = cv_site_url
       elsif gp_url
         site.config['url'] = `gp url 4000`.strip
-      elsif netlify_build
+      elsif netlify_build && ENV['CONTEXT'] != 'production'
         site.config['url'] = ENV['DEPLOY_PRIME_URL']
       end
     end
