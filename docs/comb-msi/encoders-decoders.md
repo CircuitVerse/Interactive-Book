@@ -13,7 +13,7 @@ has_children: false
 
 
 ## Table of contents
-{: .no_toc}
+{: .no_toc .text-delta}
 
 1. TOC
 {:toc}
@@ -116,3 +116,36 @@ It shows that each output is 1 for only a specific combination of inputs.
 
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/763" id="decoder_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+
+
+{:.quiz}
+
+1. How many input lines exist in Decimal to BCD Encoder ?
+	* 4
+	1. 10
+	* 8
+	* 2
+
+2. How many output lines exist in Decimal to BCD Encoder ?
+    * 1
+	1. 4
+	* 3
+	* 2
+
+3. For conversion of BCD to seven segment display which of the following component will you use ?
+    * Encoder
+	1. Decoder
+	* Comparator
+	* Multiplexer
+
+4. Identify the decoder IC ?
+    * 7890
+	1. 8870
+	* 4047
+	* 4041
+
+5. By using only which of the gates decoder can be formed ?
+    * AND
+	1. OR
+	* NOT
+

@@ -13,7 +13,7 @@ has_children: false
 
 
 ## Table of contents
-{: .no_toc}
+{: .no_toc .text-delta}
 
 1. TOC
 {:toc}
@@ -64,3 +64,5 @@ For FSM which do not exhibit a simple sequence of states, the counter can be rep
 ![MUX based microcontroller](/assets/images/seq/rom_mux.svg)
 
 ROM capacity: $2^N \times (2N+K+\log_2 M)$
+
+
