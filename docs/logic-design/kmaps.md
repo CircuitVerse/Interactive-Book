@@ -13,7 +13,7 @@ has_children: false
 
 
 ## Table of contents
-{: .no_toc}
+{: .no_toc .text-delta}
 
 1. TOC
 {:toc}
@@ -187,7 +187,6 @@ This illustrates the idea that this is a greedy algorithm, and does not always r
 
 {% include kmap.html %}
 
-
 {:.quiz}
 
 1. If the combination of inputs for which the Boolean function is `0` we use `______` to simplify in K-map.
@@ -207,4 +206,3 @@ This illustrates the idea that this is a greedy algorithm, and does not always r
    * POS
    * Both
    * None
-

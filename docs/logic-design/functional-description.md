@@ -13,7 +13,7 @@ has_children: false
 
 
 ## Table of contents
-{: .no_toc}
+{: .no_toc .text-delta}
 
 1. TOC
 {:toc}
@@ -34,8 +34,6 @@ This combinational circuit has ‘n’ input variables and ‘m’ outputs. Each
 1.  Find the Boolean expressions for each output. If necessary, simplify those expressions.   
 1.  Implement the above Boolean expressions corresponding to each output by using Logic gates.
 
-
-
 {:.quiz}
 1. How many input and output variables are present in combinational circuit?
    1. n,m
@@ -45,4 +43,3 @@ This combinational circuit has ‘n’ input variables and ‘m’ outputs. Each
 2. Is there any feedback system in combinational circuit?
    1. No
    * Yes
-
