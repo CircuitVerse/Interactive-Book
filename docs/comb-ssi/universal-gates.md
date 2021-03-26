@@ -152,27 +152,27 @@ Notice that there are input elements that are present in the negative form, name
 
 
 {:.quiz}
-1. How many NOR gates are used to implement OR gate?
+1. How many NOR gates are used to implement OR gate ?
    1. 2
    *  1
    *  3
    *  0 
-2. How many NAND gates are used to implement OR gate? 
+2. How many NAND gates are used to implement OR gate ? 
    1. 3
    *  2
    *  0
    *  1 
-3. The NAND gate is AND gate followed by `__________`.
+3. The NAND gate is AND gate followed by 
     1. NOT Gate
     *  OR Gate
     *  AND Gate
     *  XOR Gate 
-4. Digital circuit can be made by the repeated use of `__________`.
+4. Digital circuit can be made by the repeated use of 
     *  XOR,XNOR 
     *  AND,OR
     *  NOT  
     1. NOR,NAND 
-5. How many NAND gates are used to implement AND gate?
+5. How many NAND gates are used to implement AND gate ?
     1. 2
     *  1
     *  3
