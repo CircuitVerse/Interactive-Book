@@ -46,4 +46,3 @@ In the above example, for units place gives 1 as the submission of 1 and 0, wher
 1 1 0   (6)
 -----
 ```
-
