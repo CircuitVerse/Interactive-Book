@@ -29,13 +29,13 @@ One of the first "single-chip" microprocessors is the Intel 4004. Read more abou
 
 {:.quiz}
 
-1. Which of the following is `single-clip` microprocessors?.
+1. Which of the following is `single-clip` microprocessors ?
    1. Intel 4004
    * Intel 4408
    * Intel 2004
    * Intel 4002
 
-2. Which of the following is/are benefits of microprocessor?
+2. Which of the following is/are benefits of microprocessor ?
    1. All of mentioned
    * Inexpensive
    * Portable
