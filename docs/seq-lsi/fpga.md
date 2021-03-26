@@ -58,12 +58,12 @@ FPGA are so versatile than even full microprocessors can be implemented in them,
    * chips
    * flip-flop
    * finite 
-2. What is the function of D flip flop in FPGA?
+2. What is the function of D flip flop in FPGA ?
    1. Store output
    * Store input
    * Display output
    * None
-3. FPGA was invented by `__________`?
+3. FPGA was invented by `__________` ?
    1. Xilinx
    * Altera
    * Actel
@@ -73,4 +73,3 @@ FPGA are so versatile than even full microprocessors can be implemented in them,
    * Coarse-grain
    * Rely-grain
    * None 
-
