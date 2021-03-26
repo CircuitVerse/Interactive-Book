@@ -53,6 +53,7 @@ FPGA are so versatile than even full microprocessors can be implemented in them,
 </iframe>
 
 {:.quiz}
+
 1. Configurable Logic Blocks are surrounded by a system of programmable interconnects is known as
    1. fabric
    * chips
