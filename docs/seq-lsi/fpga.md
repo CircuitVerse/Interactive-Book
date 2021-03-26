@@ -51,4 +51,3 @@ FPGA are so versatile than even full microprocessors can be implemented in them,
 	id="projectPreview" scrolling="no"
 	webkitAllowFullScreen mozAllowFullScreen allowFullScreen>
 </iframe>
-
