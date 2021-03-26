@@ -13,7 +13,7 @@ has_children: false
 
 
 ## Table of contents
-{: .no_toc}
+{: .no_toc .text-delta}
 
 1. TOC
 {:toc}
@@ -148,3 +148,6 @@ F = (A NOR (B NOR B)) NOR ((C NOR C) NOR D)
 Notice that there are input elements that are present in the negative form, namely `B'` and `C'`. You can represent them by using the NOR gate in order to realise the [NOT gate](https://learn.circuitverse.org/docs/universal_gates.html#implementing-not-gate).
 
 <iframe width="600px" height="300px" src="https://circuitverse.org/simulator/embed/97663" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
+
+
+

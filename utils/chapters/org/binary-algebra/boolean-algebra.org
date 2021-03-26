@@ -18,7 +18,7 @@ has_children: false
   
 ** Table of contents
    :PROPERTIES:
-   :JTD:      {: .no_toc}
+   :JTD:      {: .no_toc .text-delta}
    :END:
 
 #+BEGIN_EXPORT html

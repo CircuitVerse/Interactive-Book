@@ -13,7 +13,7 @@ has_children: false
 
 
 ## Table of contents
-{: .no_toc}
+{: .no_toc .text-delta}
 
 1. TOC
 {:toc}
@@ -51,3 +51,4 @@ FPGA are so versatile than even full microprocessors can be implemented in them,
 	id="projectPreview" scrolling="no"
 	webkitAllowFullScreen mozAllowFullScreen allowFullScreen>
 </iframe>
+
