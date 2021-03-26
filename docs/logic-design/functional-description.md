@@ -33,7 +33,3 @@ This combinational circuit has ‘n’ input variables and ‘m’ outputs. Each
 1.  Formulate the Truth table. If there are ‘n’ input variables, then there will be 2n possible combinations. For each combination of input, find the output values.   
 1.  Find the Boolean expressions for each output. If necessary, simplify those expressions.   
 1.  Implement the above Boolean expressions corresponding to each output by using Logic gates.
-
-
-
-
