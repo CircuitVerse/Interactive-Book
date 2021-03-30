@@ -25,7 +25,7 @@ $spacers: (
   sp-7: $spacing-unit * 2.5,
   sp-8: $spacing-unit * 3,
   sp-9: $spacing-unit * 3.5,
-  sp-10: $spacing-unit * 4
+  sp-10: $spacing-unit * 4,
 ) !default;
 
 $sp: map-get($spacers, sp) !default;
@@ -47,7 +47,6 @@ input {
 }
 
 @media only screen and (min-width: 739px) {
-
   #main-content.moved {
     margin-left: calc((100% - 739px) / 2 + -80px);
   }
@@ -62,27 +61,23 @@ input {
 
   #sidebarCollapse.moved {
     margin-left: calc((100% - 739px) / 2 + -80px);
-
-  } }
+  }
+}
 
 @media only screen and (max-width: 739px) {
-
   #sidebarCollapse {
     display: none;
-
   }
 }
 
 #sidebarCollapse.new.colored {
   background-color: $base-button-color;
   color: $link-color;
-
 }
 
 #sidebarCollapse.new {
   background-color: $link-color;
   color: $white;
-
 }
 
 //
@@ -94,7 +89,6 @@ input {
   display: flex;
   flex-wrap: wrap;
   z-index: 0;
-
 
   @include mq(md) {
     align-items: flex-end;
@@ -124,14 +118,11 @@ input {
   }
 
   @include mq(lg) {
-    margin-left: calc(
-      (100% - #{$nav-width + $content-width}) / 4 + #{$nav-width}
-    );
+    margin-left: calc((100% - #{$nav-width + $content-width}) / 4 + #{$nav-width});
   }
 }
 
 // .main-content -> main-content-header (?)
-
 
 //
 //  navigation.css
@@ -147,7 +138,6 @@ input {
   height: 12px;
   margin-right: 5%;
   width: 12px;
-
 }
 
 // .sub_heading {
@@ -159,7 +149,6 @@ input {
     margin-top: $sp-4;
   }
 }
-
 
 .navbar {
   display: flex;
@@ -274,21 +263,19 @@ $text-color: #111111;
 // DVLS new styles
 // CV flavored side nav
 //
-//---[hound-issue]:selector should have depth 2 instead of 3 (resolving this creates ambiguity of .nav-list)
 .nav-list {
   list-style: circle url("/assets/images/nav-marker-inactive.svg") inside;
 
-    .nav-list-item {
-
-	    .nav-list-link {
-	      display: inline;
-
-	}
-
-	&.active {
-	  list-style: disc url("/assets/images/nav-marker-active.svg") inside;
-	}
+  .nav-list-item {
+    // scss-lint:disable SelectorDepth
+    .nav-list-link {
+      display: inline;
     }
+
+    &.active {
+      list-style: disc url("/assets/images/nav-marker-active.svg") inside;
+    }
+  }
 
   .nav-list-item .nav-list-link {
     display: inline;
@@ -310,9 +297,9 @@ $text-color: #111111;
 }
 
 // table caption style
-.tblcap {
-    // to be defined
-}
+//.tblcap {
+// to be defined
+//}
 
 .site-nav {
   padding-left: 1rem;
@@ -326,7 +313,6 @@ $text-color: #111111;
 
   // Auxiliary Nav Styles for tablet and above
   .aux-nav {
-
     .aux-nav-list-item {
       align-items: center;
       display: flex;
