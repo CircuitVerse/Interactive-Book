@@ -78,6 +78,7 @@ input {
   color: $link-color;
 
 }
+
 #sidebarCollapse.new {
   background-color: $link-color;
   color: $white;
@@ -89,35 +90,37 @@ input {
 //
 
 .side-bar {
-  z-index: 0;
+  background-color: $sidebar-color;
   display: flex;
   flex-wrap: wrap;
-  background-color: $sidebar-color;
+  z-index: 0;
+
 
   @include mq(md) {
+    align-items: flex-end;
+    border-right: $border $border-color;
+    flex-direction: column;
     flex-wrap: nowrap;
+    height: 100%;
     position: fixed;
     width: $nav-width-md;
-    height: 100%;
-    flex-direction: column;
-    border-right: $border $border-color;
-    align-items: flex-end;
   }
 
   @include mq(lg) {
-    width: calc((100% - #{$nav-width + $content-width}) / 4 + #{$nav-width});
     min-width: $nav-width;
+    width: calc((100% - #{$nav-width + $content-width}) / 4 + #{$nav-width});
   }
+
   &.active {
-      display: none;
+    display: none;
   }
 }
 
 .main {
   @include mq(md) {
-    position: relative;
-    max-width: $content-width;
     margin-left: $nav-width-md;
+    max-width: $content-width;
+    position: relative;
   }
 
   @include mq(lg) {
@@ -135,22 +138,21 @@ input {
 //
 
 .flex-container {
+  align-items: baseline;
   display: flex;
   flex-direction: row;
-  align-items: baseline;
-
 }
 
-.connector{
-  margin-right: 5%;
+.connector {
   height: 12px;
+  margin-right: 5%;
   width: 12px;
 
 }
 
-.sub_heading{
+// .sub_heading {
 
-}
+// }
 
 .breadcrumb-nav {
   @include mq(md) {
@@ -272,8 +274,21 @@ $text-color: #111111;
 // DVLS new styles
 // CV flavored side nav
 //
+//---[hound-issue]:selector should have depth 2 instead of 3 (resolving this creates ambiguity of .nav-list)
 .nav-list {
   list-style: circle url("/assets/images/nav-marker-inactive.svg") inside;
+
+    .nav-list-item {
+
+	    .nav-list-link {
+	      display: inline;
+
+	}
+
+	&.active {
+	  list-style: disc url("/assets/images/nav-marker-active.svg") inside;
+	}
+    }
 
   .nav-list-item .nav-list-link {
     display: inline;
