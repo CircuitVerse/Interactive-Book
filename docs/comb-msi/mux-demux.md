@@ -158,3 +158,32 @@ A de-multiplexer is equivalent to a single pole multiple way switch as shown in 
 ### 1 : 16 demultiplexer
 A 1 : 16 demultiplexer can be implemented using **two** 1 : 8 demultiplexers.
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/44796" id="demux_04" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+
+{:.quiz}
+
+1. Which of the following directs data from input to a selected output line ?
+   1. Demultiplexer
+   * Multiplexer
+   * Coder
+   *  Both MUX & DEMUX
+
+2. Which of the following logic block has a number of input lines and one signle output line ?
+
+   * Decoder
+   1. Multiplexer
+   * Demultiplexer
+   * Encoder
+
+3. How many selection line will be there if a multiplexer has 8 input lines ?
+
+   * 1
+   * 2
+   1. 3
+   * 4
+
+4. How many output lines will be there in a demultiplexer if it has 3 selection lines ?
+
+   1. 1
+   * 2
+   * 3
+   * 4
