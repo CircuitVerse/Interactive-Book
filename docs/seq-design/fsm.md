@@ -116,7 +116,7 @@ Lets try the soda can vending machine and look for the corresponding state chang
    * None   
 3. In `Mealy state machine` the outputs depends on ?
    1. On present inputs & present states.
-   * Outputs depend only on present states.  
+   * Only on present states.  
 3. Finite State Machine is said to be `Moore state machine`?
    1. Outputs depend only on present states.
    * Outputs depend on present inputs & present states.     
