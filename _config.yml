@@ -75,12 +75,12 @@ search_enabled: true
 aux_links:
   "Dark mode":
     - "#"
-  "Circuitverse on GitHub":
+  "CircuitVerse on GitHub":
     - "//github.com/CircuitVerse"
 
 # Footer content 
 # appears at the bottom of every page's main content
-footer_content: "Copyright &copy; 2020 Contributors to CircuitVerse. Distributed under a [CC-by-sa] license."
+footer_content: "Copyright &copy; 2021 Contributors to CircuitVerse. Distributed under a [CC-by-sa] license."
 
 # Footer last edited timestamp
 last_edit_timestamp: false # show or hide edit time - page must have `last_modified_date` defined in the frontmatter

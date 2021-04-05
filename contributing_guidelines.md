@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 100
+nav_order: 1000
 title: Guidelines
 disable_comments: true
 description: ""
