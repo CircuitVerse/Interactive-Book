@@ -51,17 +51,17 @@ Another method which can achieve Division in binary is by using Binary Multiplic
 ```
 
 {:.quiz}
-1. Perform divison of the binary numbers: `1010101` by `101 `= ?
+1. Perform division of the binary numbers: `1010101` by `101` = ?
    1. 010001
    * 110101
    * 1111000
    * 101
-2. Divison of the binary numbers: `101001` by `1011` will give remainder as ?
+2. Division of the binary numbers: `101001` by `1011` will give remainder as ?
    1. 1000
    * 1010
    * 1101
    * 0011
-3. Divison of the binary numbers: `011010000` by `0101` will give quotient as ?
+3. Division of the binary numbers: `011010000` by `0101` will give quotient as ?
    1. 0101010
    * 0000010
    * 0110010
