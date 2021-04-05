@@ -53,7 +53,7 @@ In the above example, for units place gives 1 as the submission of 1 and 0, wher
    * 1101
    * 1110
    * 1100
-2. `11111111`+`00100000`=`100011111` an example of `______`
+2. `11111111` + `00100000` = `100011111` is an example of `______`
    1. Overflow error
    * 8 bit binary addition
 3. What is the answer to `01101011` + `01010100`=?
