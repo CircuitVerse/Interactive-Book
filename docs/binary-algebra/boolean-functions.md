@@ -51,4 +51,3 @@ The following is a list of definitions for fundamental concepts used in Boolean 
 ## References
 
 {% bibliography --cited --file books %}
-
