@@ -53,7 +53,7 @@ More information about ASM charts can be found in:
    1. Rectangular box
    * Diamond
    * Arrow head
-2. Flowchart helps to indentify `________` ?
+2. Flowchart helps to identify `________` ?
    1. All of these
    * Flow of algorithms
    * Flaws
