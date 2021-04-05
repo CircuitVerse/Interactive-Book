@@ -13,7 +13,7 @@ has_children: false
 
 
 ## Table of contents
-{: .no_toc}
+{: .no_toc .text-delta}
 
 1. TOC
 {:toc}
@@ -47,6 +47,7 @@ In the above example, for units place gives 1 as the submission of 1 and 0, wher
 -----
 ```
 
+
 {:.quiz}
 1. What is the answer to `1100` + `0011`= ?
    1. 1111
@@ -61,4 +62,3 @@ In the above example, for units place gives 1 as the submission of 1 and 0, wher
    * 01111011
    * 11101111
    * 11101101  
-   

@@ -2,7 +2,7 @@
 # Interactive-Book
 
 
-![download](https://github.com/CircuitVerse/CircuitVerse/raw/master/public/img/cvlogo.svg?sanitize=true)
+<img src="/assets/images/cvlogo.svg" alt="The CircuitVerse logo" width="736"/></br>
 
 [![Slack](https://img.shields.io/badge/chat-on_slack-purple.svg?style=for-the-badge&logo=slack)](https://join.slack.com/t/circuitverse-team/shared_invite/enQtNjc4MzcyNDE5OTA3LTdjYTM5NjFiZWZlZGI2MmU1MmYzYzczNmZlZDg5MjYxYmQ4ODRjMjQxM2UyMWI5ODUzODQzMDU2ZDEzNjI4NmE)
 
@@ -29,6 +29,12 @@ cd Interactive-Book
 
 ## Install, and Serve!
 
+### Gitpod Cloud Environment
+[Gitpod](https://www.gitpod.io/) is a free platform that allows you to develop CircuitVerse in a cloud VS Code environment. 
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/CircuitVerse/Interactive-Book)
+
+### Local Environment
 This website was built using [Jekyll](https://jekyllrb.com/). So if you are familiar with this and already have Jekyll installed, you can scroll past the instructions we have below.
 
 **Setting up your development environment**
@@ -54,6 +60,8 @@ bundle exec jekyll serve
 ```
 
 This should start serving the website on http://0.0.0.0:4000/ - simply make changes to the source code and can see your changes live at that URL!
+
+> NOTE: If you are running into problems where your site is getting redirected to learn.circuitverse.org, you can set `CV_SITE_URL` before running the server.
 
 ## Contribute!
 

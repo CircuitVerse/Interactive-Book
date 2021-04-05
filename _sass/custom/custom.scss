@@ -5,6 +5,7 @@
 //
 
 $black: #000000 !default;
+$box-shadow: rgba(0, 0, 0, 0.12);
 
 $base-svg-path: $black !default;
 
@@ -24,7 +25,7 @@ $spacers: (
   sp-7: $spacing-unit * 2.5,
   sp-8: $spacing-unit * 3,
   sp-9: $spacing-unit * 3.5,
-  sp-10: $spacing-unit * 4
+  sp-10: $spacing-unit * 4,
 ) !default;
 
 $sp: map-get($spacers, sp) !default;
@@ -46,7 +47,6 @@ input {
 }
 
 @media only screen and (min-width: 739px) {
-
   #main-content.moved {
     margin-left: calc((100% - 739px) / 2 + -80px);
   }
@@ -61,26 +61,23 @@ input {
 
   #sidebarCollapse.moved {
     margin-left: calc((100% - 739px) / 2 + -80px);
-
-  } }
+  }
+}
 
 @media only screen and (max-width: 739px) {
-
   #sidebarCollapse {
     display: none;
-
   }
 }
 
 #sidebarCollapse.new.colored {
   background-color: $base-button-color;
   color: $link-color;
-
 }
+
 #sidebarCollapse.new {
   background-color: $link-color;
   color: $white;
-
 }
 
 //
@@ -88,75 +85,70 @@ input {
 //
 
 .side-bar {
-  z-index: 0;
+  background-color: $sidebar-color;
   display: flex;
   flex-wrap: wrap;
-  background-color: $sidebar-color;
+  z-index: 0;
 
   @include mq(md) {
+    align-items: flex-end;
+    border-right: $border $border-color;
+    flex-direction: column;
     flex-wrap: nowrap;
+    height: 100%;
     position: fixed;
     width: $nav-width-md;
-    height: 100%;
-    flex-direction: column;
-    border-right: $border $border-color;
-    align-items: flex-end;
   }
 
   @include mq(lg) {
-    width: calc((100% - #{$nav-width + $content-width}) / 4 + #{$nav-width});
     min-width: $nav-width;
+    width: calc((100% - #{$nav-width + $content-width}) / 4 + #{$nav-width});
   }
+
   &.active {
-      display: none;
+    display: none;
   }
 }
 
 .main {
   @include mq(md) {
-    position: relative;
-    max-width: $content-width;
     margin-left: $nav-width-md;
+    max-width: $content-width;
+    position: relative;
   }
 
   @include mq(lg) {
-    margin-left: calc(
-      (100% - #{$nav-width + $content-width}) / 4 + #{$nav-width}
-    );
+    margin-left: calc((100% - #{$nav-width + $content-width}) / 4 + #{$nav-width});
   }
 }
 
 // .main-content -> main-content-header (?)
-
 
 //
 //  navigation.css
 //
 
 .flex-container {
+  align-items: baseline;
   display: flex;
   flex-direction: row;
-  align-items: baseline;
-
 }
 
-.connector{
-  margin-right: 5%;
+.connector {
   height: 12px;
+  margin-right: 5%;
   width: 12px;
-
 }
 
-.sub_heading{
+// .sub_heading {
 
-}
+// }
 
 .breadcrumb-nav {
   @include mq(md) {
     margin-top: $sp-4;
   }
 }
-
 
 .navbar {
   display: flex;
@@ -167,6 +159,11 @@ input {
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
+
+  // Workaround for buttons bar overflow issues.
+  a {
+    overflow: inherit;
+  }
 }
 
 //
@@ -264,21 +261,75 @@ $text-color: #111111;
 
 //
 // DVLS new styles
+// CV flavored side nav
 //
 .nav-list {
-    list-style: circle url('/assets/images/nav-marker-inactive.svg') inside;
+  list-style: circle url("/assets/images/nav-marker-inactive.svg") inside;
 
-    .nav-list-item {
-	.nav-list-link{
-	    display: inline;
-	}
-	&.active {
-	    list-style: disc url('/assets/images/nav-marker-active.svg') inside;
-	}
+  .nav-list-item {
+    // scss-lint:disable SelectorDepth
+    .nav-list-link {
+      display: inline;
     }
+
+    &.active {
+      list-style: disc url("/assets/images/nav-marker-active.svg") inside;
+    }
+  }
+
+  .nav-list-item .nav-list-link {
+    display: inline;
+    padding-left: 0;
+  }
+
+  .nav-list-item.active {
+    list-style: disc url("/assets/images/nav-marker-active.svg") inside;
+  }
+}
+
+// Nested nav lists
+.nav-list .nav-list-item > .nav-list .nav-list-item .nav-list-link {
+  padding-left: 1rem;
+
+  &.active {
+    padding-left: 0;
+  }
 }
 
 // table caption style
-.tblcap {
-    // to be defined
+//.tblcap {
+// to be defined
+//}
+
+.site-nav {
+  padding-left: 1rem;
+}
+
+@media (min-width: 50rem) {
+  // Sidebar Navigation
+  .site-nav {
+    padding-left: 2rem;
+  }
+
+  // Auxiliary Nav Styles for tablet and above
+  .aux-nav {
+    .aux-nav-list-item {
+      align-items: center;
+      display: flex;
+    }
+
+    .aux-nav-list {
+      padding-left: 10px;
+    }
+  }
+
+  .aux-nav-list-item .site-button {
+    background-color: $base-button-color;
+    border-radius: 3px;
+    border-width: 0;
+    box-shadow: 0 1px 2px $box-shadow, 0 3px 10px $box-shadow;
+    height: 50%;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+  }
 }
