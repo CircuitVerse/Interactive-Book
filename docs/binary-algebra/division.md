@@ -49,4 +49,3 @@ Another method which can achieve Division in binary is by using Binary Multiplic
 	  0  (Remainder)     ans = 6 (110) (Quotient)
 -------------                 -------
 ```
-
