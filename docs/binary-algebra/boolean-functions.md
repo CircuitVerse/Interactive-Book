@@ -57,6 +57,6 @@ The following is a list of definitions for fundamental concepts used in Boolean 
    1. Algebraic expression
    * Laplace expression
    * Binomial expression
-2. SOP(Sum of Product) is referred as `________`?
+2. SOP (Sum of Product) is referred as `________` ?
    1. (x+xwz+xy)
    * ((x+y+z)(z+w)(z+x))
