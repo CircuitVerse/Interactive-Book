@@ -151,3 +151,24 @@ Try to implement any gate you wish to with the help of the simulator present bel
 | ~bit1            | The COMPLEMENT(****~****) operator is similar to 1's complement and can be used to convert all the 1's to 0's and all the 1' to 0's of the operand.                                  |
 
 {% include binary2.html %}
+
+{:.quiz}
+1. Which among the following states DeMorgan’s theorem ?
+   1. (AB)’ = A’ + B’
+   * (A + B)’ = A’ * B
+   * A’ + B’ = A’B’
+   * (AB)’ = A’ + B
+2. Idempotence law states that `_________` ?
+   1. A + A = A
+   * A + B = B + A
+   * A + A.B = A
+   * A + B)' = (A'B') 
+3. `A(A + B) = A` is known as `_________` ?
+   1. Redundance law
+   * Distributive law
+   * Associative law  
+4. `A(A + B)` is equivalent to `_________` ?
+   1. A
+   * (A'B')
+   * (A'B')
+   *  A'
