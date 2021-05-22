@@ -51,3 +51,26 @@ FPGA are so versatile than even full microprocessors can be implemented in them,
 	id="projectPreview" scrolling="no"
 	webkitAllowFullScreen mozAllowFullScreen allowFullScreen>
 </iframe>
+
+{:.quiz}
+
+1. Configurable Logic Blocks are surrounded by a system of programmable interconnects is known as
+   1. fabric
+   * chips
+   * flip-flop
+   * finite 
+2. What is the function of D flip flop in FPGA ?
+   1. Store output
+   * Store input
+   * Display output
+   * None
+3. FPGA was invented by `__________` ?
+   1. Xilinx
+   * Altera
+   * Actel
+   * Lattice   
+4. FPGAs are `__________` devices.
+   1. Fine-grain
+   * Coarse-grain
+   * Rely-grain
+   * None 

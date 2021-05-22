@@ -1,0 +1,9 @@
+tasks:
+  - init: npm install
+  - name: Jekyll
+    init: bundle install
+    command: bundle exec jekyll serve
+
+ports: 
+  - port: 4000
+    onOpen: open-preview
