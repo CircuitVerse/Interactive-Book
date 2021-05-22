@@ -47,4 +47,19 @@ More information about ASM charts can be found in:
 ## References
 
 {% bibliography --cited --file books %}
-   
+
+{:.quiz}
+1. A processing step is denoted by a  ?
+   1. Rectangular box
+   * Diamond
+   * Arrow head
+2. Flowchart helps to identify ?
+   1. All of these
+   * Flow of algorithms
+   * Flaws
+   * Bottlenecks   
+3. What does a `terminator` symbol represents ?
+   1. Starting or ending point
+   * Document or a report
+   * Direction of a process
+   * Document or a report      
