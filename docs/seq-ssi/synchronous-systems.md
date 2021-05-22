@@ -5,6 +5,7 @@ nav_order: l1s001
 cvib_level: medium
 parent: Sequential SSI
 has_children: false
+published: false
 ---
 
 # Synchronous systems

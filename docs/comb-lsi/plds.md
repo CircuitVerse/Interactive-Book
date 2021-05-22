@@ -5,6 +5,7 @@ nav_order: l1s000
 cvib_level: medium
 parent: Combinational LSI
 has_children: false
+published: false
 ---
 
 # Programmable Logic Devices

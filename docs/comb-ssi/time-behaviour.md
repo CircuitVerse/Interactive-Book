@@ -5,6 +5,7 @@ nav_order: l2s000
 cvib_level: advanced
 parent: Combinational SSI
 has_children: false
+published: false
 ---
 
 # Time behaviour

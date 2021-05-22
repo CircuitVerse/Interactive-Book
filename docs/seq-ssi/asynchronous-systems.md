@@ -5,6 +5,7 @@ nav_order: l1s002
 cvib_level: medium
 parent: Sequential SSI
 has_children: false
+published: false
 ---
 
 # Asynchronous systems
