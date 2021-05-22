@@ -49,11 +49,11 @@ More information about ASM charts can be found in:
 {% bibliography --cited --file books %}
 
 {:.quiz}
-1. A processing step is denoted by a `________` ?
+1. A processing step is denoted by a  ?
    1. Rectangular box
    * Diamond
    * Arrow head
-2. Flowchart helps to identify `________` ?
+2. Flowchart helps to identify ?
    1. All of these
    * Flow of algorithms
    * Flaws

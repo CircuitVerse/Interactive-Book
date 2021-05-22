@@ -37,9 +37,6 @@ Binary multiplication requires two concepts i.e., binary addition and decimal mu
 --------------
 1  1  1  1  0       (30)
 --------------
-
-```
-
 ```
 
 {:.quiz}
