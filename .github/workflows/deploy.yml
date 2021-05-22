@@ -20,9 +20,16 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
 
-      - name: Build and Deploy
+      - name: Build
         uses: helaili/jekyll-action@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          target_branch: 'gh-pages'
+          build_only: true
+          jekyll_build_options: -d out
 
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
+          cname: betalearn.circuitverse.org
