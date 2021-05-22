@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+
+  <link rel="shortcut icon" href="/pages/CircuitVerse/Interactive-Book/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="/pages/CircuitVerse/Interactive-Book/assets/css/just-the-docs-default.css">
+
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112678513-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112678513-3');
+    </script>
+
+  
+
+  
+    <script type="text/javascript" src="/pages/CircuitVerse/Interactive-Book/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="/pages/CircuitVerse/Interactive-Book/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Registers | CircuitVerse</title>
+<meta name="generator" content="Jekyll v3.9.0">
+<meta property="og:title" content="Registers">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="A Book to learn Digital Logic Design.">
+<meta property="og:description" content="A Book to learn Digital Logic Design.">
+<link rel="canonical" href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-msi/registers.html">
+<meta property="og:url" content="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-msi/registers.html">
+<meta property="og:site_name" content="CircuitVerse">
+<script type="application/ld+json">
+{"description":"A Book to learn Digital Logic Design.","url":"https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-msi/registers.html","@type":"WebPage","headline":"Registers","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <script defer src="/assets/js/fontawesome-solid.js"></script>
+<script defer src="/assets/js/fontawesome-main.js"></script>
+<script src="/assets/js/jquery-3.4.1.min.js"></script>
+<script src="/assets/js/module.js"></script>
+<script src="/assets/js/quiz.js"></script>
+<script src="/assets/js/global_scripts.js"></script>
+
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="svg-link" viewbox="0 0 24 24">
+      <title>Link</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+      </svg>
+    </symbol>
+    <symbol id="svg-search" viewbox="0 0 24 24">
+      <title>Search</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+        <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </symbol>
+    <symbol id="svg-menu" viewbox="0 0 24 24">
+      <title>Menu</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+        <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </symbol>
+    <symbol id="svg-arrow-right" viewbox="0 0 24 24">
+      <title>Expand</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </symbol>
+    <symbol id="svg-doc" viewbox="0 0 24 24">
+      <title>Document</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+        <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+      </svg>
+    </symbol>
+  </svg>
+
+  <div class="side-bar">
+    <div class="site-header">
+      <a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/" class="site-title lh-tight">
+  CircuitVerse
+
+</a>
+      <a href="#" id="menu-button" class="site-button">
+        <svg viewbox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
+      </a>
+    </div>
+    <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
+      
+        <ul class="nav-list">
+<li class="nav-list-item"><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/" class="nav-list-link">Home</a></li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-representation/" class="nav-list-link">Binary representation</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-representation/binary-numbers.html" class="nav-list-link">Binary numbers</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-representation/negative-quantities.html" class="nav-list-link">Negative quantities</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-representation/number-bases.html" class="nav-list-link">Number bases</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-representation/encoding-information.html" class="nav-list-link">Encoding information</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-representation/discrete-quantities.html" class="nav-list-link">Discrete quantities</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/" class="nav-list-link">Binary algebra</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/addition.html" class="nav-list-link">Addition</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/subtraction.html" class="nav-list-link">Subtraction</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/multiplication.html" class="nav-list-link">Multiplication</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/division.html" class="nav-list-link">Division</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/boolean-algebra.html" class="nav-list-link">Boolean algebra</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/boolean-functions.html" class="nav-list-link">Boolean functions</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/shannon.html" class="nav-list-link">Shannon decomposition</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/ieee-std-754.html" class="nav-list-link">IEEE Std 754</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-ssi/" class="nav-list-link">Combinational SSI</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-ssi/logic-gates.html" class="nav-list-link">Logic gates</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-ssi/logic-families.html" class="nav-list-link">Logic families</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-ssi/universal-gates.html" class="nav-list-link">Universal gates</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/" class="nav-list-link">Logic Design</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/functional-description.html" class="nav-list-link">Functional description</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/implementation.html" class="nav-list-link">Implementation</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/canonical.html" class="nav-list-link">Canonical functions</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/kmaps.html" class="nav-list-link">K-Maps</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/mev.html" class="nav-list-link">Map-entered variables</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/qmc.html" class="nav-list-link">Quine McCluskey</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/binary-cubes.html" class="nav-list-link">Binary cubes</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-msi/" class="nav-list-link">Combinational MSI</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-msi/mux-demux.html" class="nav-list-link">MUX/DEMUX</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-msi/encoders-decoders.html" class="nav-list-link">Encoders/Decoders</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-msi/adders.html" class="nav-list-link">Adders</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-msi/mux-functions.html" class="nav-list-link">MUX-based functions</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-lsi/" class="nav-list-link">Combinational LSI</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-lsi/rom.html" class="nav-list-link">ROM</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-lsi/alu.html" class="nav-list-link">ALU</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-ssi/" class="nav-list-link">Sequential SSI</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-ssi/latches.html" class="nav-list-link">Latches</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-ssi/flip-flops.html" class="nav-list-link">Flip-flops</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-ssi/clock-signals.html" class="nav-list-link">Clock signals</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-design/" class="nav-list-link">Sequential Design</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-design/fsm.html" class="nav-list-link">FSM</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-design/seq-synth.html" class="nav-list-link">Sequential synthesis</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-design/race-conditions.html" class="nav-list-link">Race conditions</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-design/flow-diagrams.html" class="nav-list-link">Flowchart diagrams</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-design/mds.html" class="nav-list-link">MDS Diagrams</a></li>
+</ul>
+</li>
+<li class="nav-list-item active">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-msi/" class="nav-list-link">Sequential MSI</a><ul class="nav-list ">
+<li class="nav-list-item  active"><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-msi/registers.html" class="nav-list-link active">Registers</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-msi/counters.html" class="nav-list-link">Counters</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-msi/msi-seq-design.html" class="nav-list-link">MSI based design</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-msi/mult-div.html" class="nav-list-link">Multipliers/Dividers</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-lsi/" class="nav-list-link">Sequential LSI</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-lsi/rom-microcontrollers.html" class="nav-list-link">ROM-based µcontrollers</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-lsi/fpga.html" class="nav-list-link">FPGA</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-lsi/microprocessors.html" class="nav-list-link">Microprocessors</a></li>
+</ul>
+</li>
+<li class="nav-list-item"><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/contributing_guidelines.html" class="nav-list-link">Guidelines</a></li>
+</ul>
+
+      
+    </nav>
+    <footer class="site-footer">
+      This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
+    </footer>
+  </div>
+  <div class="main" id="top">
+    <div id="main-header" class="main-header">
+      
+        <div class="search">
+          <div class="search-input-wrap">
+            <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search CircuitVerse" aria-label="Search CircuitVerse" autocomplete="off">
+            <label for="search-input" class="search-label"><svg viewbox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
+          </div>
+          <div id="search-results" class="search-results"></div>
+        </div>
+      
+      
+        <nav aria-label="Auxiliary" class="aux-nav">
+          <ul class="aux-nav-list">
+            
+              <li class="aux-nav-list-item">
+                <a href="#" class="site-button">
+                  Dark mode
+                </a>
+              </li>
+            
+              <li class="aux-nav-list-item">
+                <a href="//github.com/CircuitVerse" class="site-button">
+                  CircuitVerse on GitHub
+                </a>
+              </li>
+            
+          </ul>
+        </nav>
+      
+    </div>
+    <div id="main-content-wrap" class="main-content-wrap">
+      
+        
+          <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+            <ol class="breadcrumb-nav-list">
+              
+                <li class="breadcrumb-nav-list-item"><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-msi/">Sequential MSI</a></li>
+              
+              <li class="breadcrumb-nav-list-item"><span>Registers</span></li>
+            </ol>
+          </nav>
+        
+      
+      <div id="main-content" class="main-content" role="main">
+        
+          <script type="text/javascript">
+ 
+ // Wait for the page to load first
+ window.onload = function() {
+     
+     // sidebar collapse code
+     // TODO: correct style and add media size checking(is it needed?)
+     var sidebar = document.querySelector("div.side-bar");
+     var sidebarButton = document.getElementById("sidebarCollapse");
+     var breadcrumbs = document.getElementById("breadcrumb-nav");
+     sidebarButton.onclick = function() {
+	 sidebar.classList.toggle("active");
+	 document.getElementById("main-content").classList.toggle("moved");
+	 document.getElementById("main-header").classList.toggle("moved");
+	 if (breadcrumbs) {
+	     breadcrumbs.classList.toggle("moved");
+	 }
+	 sidebarButton.classList.toggle("moved");
+	 sidebarButton.classList.toggle("colored");
+     }
+ }
+ 
+</script>
+
+<!-- -*- engine:django -*- -->	
+<div id="content">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
+        <button type="button" id="sidebarCollapse" class="btn btn-info new mr-3">
+            <i class="fas fa-align-left"></i>
+            <span>Sidebar</span>
+        </button>
+        <div class="prev-next-controls">
+            <div><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-msi/" class="btn btn-info">Previous</a></div>
+            <div><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-msi/counters.html" class="btn btn-info">Next</a></div>
+        </div>
+    </nav>
+</div>
+      <h1 class="no_toc" id="registers">
+        
+        
+          <a href="#registers" class="anchor-heading" aria-labelledby="registers"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Registers
+        
+        
+      </h1>
+    
+      <h2 class="no_toc text-delta" id="table-of-contents">
+        
+        
+          <a href="#table-of-contents" class="anchor-heading" aria-labelledby="table-of-contents"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Table of contents
+        
+        
+      </h2>
+    
+
+<ol id="markdown-toc">
+  <li><a href="#registers-1" id="markdown-toc-registers-1">Registers</a></li>
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#sub-modules" id="markdown-toc-sub-modules">Sub-modules</a></li>
+  <li><a href="#serial-in-serial-out" id="markdown-toc-serial-in-serial-out">Serial-in serial-out</a></li>
+  <li><a href="#introduction-1" id="markdown-toc-introduction-1">Introduction</a></li>
+  <li><a href="#block-diagram" id="markdown-toc-block-diagram">Block diagram</a></li>
+  <li><a href="#operation" id="markdown-toc-operation">Operation</a></li>
+  <li><a href="#truth-table" id="markdown-toc-truth-table">Truth table</a></li>
+  <li><a href="#waveforms" id="markdown-toc-waveforms">Waveforms</a></li>
+  <li><a href="#serial-in-parallel-out" id="markdown-toc-serial-in-parallel-out">Serial-in parallel-out</a></li>
+  <li><a href="#introduction-2" id="markdown-toc-introduction-2">Introduction</a></li>
+  <li><a href="#block-diagram-1" id="markdown-toc-block-diagram-1">Block diagram</a></li>
+  <li><a href="#parallel-in-serial-out" id="markdown-toc-parallel-in-serial-out">Parallel-in serial-out</a></li>
+  <li><a href="#introduction-3" id="markdown-toc-introduction-3">Introduction</a></li>
+  <li><a href="#load-mode" id="markdown-toc-load-mode">Load mode</a></li>
+  <li><a href="#shift-mode" id="markdown-toc-shift-mode">Shift mode</a></li>
+  <li><a href="#block-diagram-2" id="markdown-toc-block-diagram-2">Block diagram</a></li>
+  <li><a href="#parallel-in-parallel-out" id="markdown-toc-parallel-in-parallel-out">Parallel-in parallel-out</a></li>
+  <li><a href="#introduction-4" id="markdown-toc-introduction-4">Introduction</a></li>
+  <li><a href="#block-diagram-3" id="markdown-toc-block-diagram-3">Block diagram</a></li>
+  <li><a href="#applications-of-shift-registers" id="markdown-toc-applications-of-shift-registers">Applications of shift registers</a></li>
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#ring-counter" id="markdown-toc-ring-counter">Ring counter</a></li>
+  <li><a href="#johnson-ring-counter" id="markdown-toc-johnson-ring-counter">Johnson ring counter</a></li>
+</ol>
+      <h2 id="registers-1">
+        
+        
+          <a href="#registers-1" class="anchor-heading" aria-labelledby="registers-1"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Registers
+        
+        
+      </h2>
+    
+      <h2 id="introduction">
+        
+        
+          <a href="#introduction" class="anchor-heading" aria-labelledby="introduction"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Introduction
+        
+        
+      </h2>
+    
+
+<p>A Flip-flop is a 1 bit memory cell which can be used for storing the digital data. 
+To increase the storage capacity in terms of number of bits, you can use a group of flip-flops. Such a group of flip-flops is known as a Register. 
+The n-bit register will consist of n number of flip-flop(s) and it is capable of storing an n-bit word.</p>
+
+<p>The binary-data, in a register, can be transfered within itself from one flip-flop to another. 
+A shift register is a type of register that allows such data transfers.
+Shift register has 4 modes of operations.</p>
+      <h2 id="sub-modules">
+        
+        
+          <a href="#sub-modules" class="anchor-heading" aria-labelledby="sub-modules"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Sub-modules
+        
+        
+      </h2>
+    
+
+<p>Next, let us have a look at each register operation one by one.</p>
+
+<ol>
+  <li><a href="https://learn.circuitverse.org/docs/registers/ss.html">Serial-in serial-out</a></li>
+  <li><a href="https://learn.circuitverse.org/docs/registers/sp.html">Serial-in parallel-out</a></li>
+  <li><a href="https://learn.circuitverse.org/docs/registers/ps.html">Parallel-in serial-out</a></li>
+  <li><a href="https://learn.circuitverse.org/docs/registers/pp.html">Parallel-in parallel-out</a></li>
+</ol>
+      <h2 id="serial-in-serial-out">
+        
+        
+          <a href="#serial-in-serial-out" class="anchor-heading" aria-labelledby="serial-in-serial-out"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Serial-in serial-out
+        
+        
+      </h2>
+    
+      <h2 id="introduction-1">
+        
+        
+          <a href="#introduction-1" class="anchor-heading" aria-labelledby="introduction-1"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Introduction
+        
+        
+      </h2>
+    
+
+<p>Let all the flip-flops be initially in the reset condition i.e. Q3 = Q2 = Q1 = Q0 = 0. If an entry of a four-bit binary number 1 1 1 1 is made into the register, this number should be applied to Din bit with the LSB bit applied first. The D input of FF-3 i.e. D3 is connected to serial data input Din. The output of FF-3 i.e. Q3 is connected to the input of the next flip-flop i.e. D2, and so on.</p>
+      <h2 id="block-diagram">
+        
+        
+          <a href="#block-diagram" class="anchor-heading" aria-labelledby="block-diagram"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Block diagram
+        
+        
+      </h2>
+    
+
+<div style="text-align:center"><img src="/assets/images/siso_blockdiagram.jpg"></div>
+      <h2 id="operation">
+        
+        
+          <a href="#operation" class="anchor-heading" aria-labelledby="operation"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Operation
+        
+        
+      </h2>
+    
+
+<p>Before application of the clock signal, let Q3 Q2 Q1 Q0 = 0000 and apply the LSB bit of the number to Din. So Din = D3 = 1. Now, apply the clock. On the first falling edge of the clock, the FF-3 is set, and stored word in the register is Q3 Q2 Q1 Q0 = 1000.</p>
+
+<div style="text-align:center"><img src="/assets/images/siso_operation1.jpg"></div>
+
+<p>Apply the next bit to Din. So Din = 1. As soon as the next negative edge of the clock gets triggered, FF-2 will set and the stored word change to Q3 Q2 Q1 Q0 = 1100.</p>
+
+<div style="text-align:center"><img src="/assets/images/siso_operation2.jpg"></div>
+
+<p>Apply the next bit to be stored i.e. 1 to Din. Apply the clock pulse. As soon as the third negative clock edge gets triggered, FF-1 will be set and output will get modified to Q3 Q2 Q1 Q0 = 1110.</p>
+
+<div style="text-align:center"><img src="/assets/images/siso_operation3.jpg"></div>
+
+<p>Similarly with Din = 1 and with the fourth negative clock edge arriving, the stored word in the register is Q3 Q2 Q1 Q0 = 1111.</p>
+
+<div style="text-align:center"><img src="/assets/images/siso_operation4.jpg"></div>
+      <h2 id="truth-table">
+        
+        
+          <a href="#truth-table" class="anchor-heading" aria-labelledby="truth-table"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Truth table
+        
+        
+      </h2>
+    
+<div style="text-align:center"><img src="/assets/images/siso_truthtable.jpg"></div>
+      <h2 id="waveforms">
+        
+        
+          <a href="#waveforms" class="anchor-heading" aria-labelledby="waveforms"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Waveforms
+        
+        
+      </h2>
+    
+<div style="text-align:center"><img src="/assets/images/siso_waveform.jpg"></div>
+
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/93866" id="ss_01" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+      <h2 id="serial-in-parallel-out">
+        
+        
+          <a href="#serial-in-parallel-out" class="anchor-heading" aria-labelledby="serial-in-parallel-out"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Serial-in parallel-out
+        
+        
+      </h2>
+    
+      <h2 id="introduction-2">
+        
+        
+          <a href="#introduction-2" class="anchor-heading" aria-labelledby="introduction-2"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Introduction
+        
+        
+      </h2>
+    
+
+<ul>
+  <li>
+    <p>In such types of operations, the data is entered serially and taken out in parallel fashion.</p>
+  </li>
+  <li>
+    <p>Data is loaded bit-by-bit. The output(s) are disabled as long as the data is loading.</p>
+  </li>
+  <li>
+    <p>As soon as the data loading gets completed, all the flip-flops contain their required data. The output(s) are enabled so that all the loaded data is made available over all the output lines at the same time.</p>
+  </li>
+  <li>
+    <p>4 clock cycles are required to load a four-bit word. Hence the speed of operation of SIPO mode is the same as that of the SISO mode.</p>
+  </li>
+</ul>
+      <h2 id="block-diagram-1">
+        
+        
+          <a href="#block-diagram-1" class="anchor-heading" aria-labelledby="block-diagram-1"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Block diagram
+        
+        
+      </h2>
+    
+
+<div style="text-align:center"><img src="/assets/images/sipo_blockdiagram.jpg"></div>
+
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/93880" id="sp_01" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+      <h2 id="parallel-in-serial-out">
+        
+        
+          <a href="#parallel-in-serial-out" class="anchor-heading" aria-labelledby="parallel-in-serial-out"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Parallel-in serial-out
+        
+        
+      </h2>
+    
+      <h2 id="introduction-3">
+        
+        
+          <a href="#introduction-3" class="anchor-heading" aria-labelledby="introduction-3"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Introduction
+        
+        
+      </h2>
+    
+
+<ul>
+  <li>
+    <p>Data bits enter in a parallel fashion.</p>
+  </li>
+  <li>
+    <p>The circuit, shown below, is a four-bit parallel-in serial-out register.</p>
+  </li>
+  <li>
+    <p>Output of the previous flip Flop is connected to the input of the next one via a combinational circuit.</p>
+  </li>
+  <li>
+    <p>The binary input data bits B0, B1, B2, B3 are applied through the same combinational logic circuit.</p>
+  </li>
+  <li>
+    <p>There are two modes in which this circuit can work, namely - shift mode and load mode.</p>
+  </li>
+</ul>
+      <h2 id="load-mode">
+        
+        
+          <a href="#load-mode" class="anchor-heading" aria-labelledby="load-mode"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Load mode
+        
+        
+      </h2>
+    
+
+<p>When the shift/load bar line is low (0), the AND gates 2, 4 and 6 become active, and they will pass B1, B2, B3 bits to the corresponding flip-flops. 
+On the low going edge of the clock, the binary inputs B0, B1, B2, B3 will get loaded into the corresponding flip-flops. 
+Thus, the parallel loading takes place.</p>
+      <h2 id="shift-mode">
+        
+        
+          <a href="#shift-mode" class="anchor-heading" aria-labelledby="shift-mode"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Shift mode
+        
+        
+      </h2>
+    
+<p>When the shift/load bar line is low (1), the AND gates 2, 4 and 6 become inactive. 
+Hence, the parallel loading of the data becomes impossible. 
+But the AND gates 1,3 and 5 become active. 
+Therefore the shifting of data takes place from left-to-right bit-by-bit on the application of clock pulses. 
+Thus, the parallel-in serial-out operation takes place.</p>
+      <h2 id="block-diagram-2">
+        
+        
+          <a href="#block-diagram-2" class="anchor-heading" aria-labelledby="block-diagram-2"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Block diagram
+        
+        
+      </h2>
+    
+
+<div style="text-align:center"><img src="/assets/images/piso_blockdiagram.jpg"></div>
+
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/93910" id="ps_01" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+      <h2 id="parallel-in-parallel-out">
+        
+        
+          <a href="#parallel-in-parallel-out" class="anchor-heading" aria-labelledby="parallel-in-parallel-out"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Parallel-in parallel-out
+        
+        
+      </h2>
+    
+      <h2 id="introduction-4">
+        
+        
+          <a href="#introduction-4" class="anchor-heading" aria-labelledby="introduction-4"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Introduction
+        
+        
+      </h2>
+    
+
+<p>Here, the 4-bit binary datda inputs B0, B1, B2, B3 are applied to the data inputs D0, D1, D2, D3, respectively, of the four flip-flops. 
+When a negative edge of the clock is triggered, then the flip-flops get loaded with the input binary bits simultaneously. 
+The loaded bits appear at the output side, simultaneously, as well. 
+Only the clock pulse is essential to load all the binary bits.</p>
+      <h2 id="block-diagram-3">
+        
+        
+          <a href="#block-diagram-3" class="anchor-heading" aria-labelledby="block-diagram-3"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Block diagram
+        
+        
+      </h2>
+    
+
+<div style="text-align:center"><img src="/assets/images/pipo_blockdiagram.jpg"></div>
+
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/93890" id="pp_01" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+      <h2 id="applications-of-shift-registers">
+        
+        
+          <a href="#applications-of-shift-registers" class="anchor-heading" aria-labelledby="applications-of-shift-registers"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Applications of shift registers
+        
+        
+      </h2>
+    
+      <h1 id="overview">
+        
+        
+          <a href="#overview" class="anchor-heading" aria-labelledby="overview"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Overview
+        
+        
+      </h1>
+    
+<p>Shift registers are sequential circuits used primarily used for:</p>
+<ol>
+  <li>Storage of Data</li>
+  <li>Data transfer through movement of binary data</li>
+  <li>Data manipulation</li>
+  <li>Counter implementation</li>
+</ol>
+
+<p>They are called <em>shift registers</em> as it moves or <em>shifts</em> binary input data to its output per clock cycle. Shift registers are commonly used to store data inside calculators. Even in computer systems, operations like addition, subtraction, division and multiplication are performed by registers.</p>
+
+<p>Shift registers can be applied in the following ways:</p>
+<ul>
+  <li>
+    <p><strong>Parallel to Serial conversion:</strong> Used in transmitters after analog to digital conversion in order to convert parallel input data into serial data</p>
+  </li>
+  <li>
+    <p><strong>Serial to Parallel conversion:</strong> Used in receivers before digital to anlogous conversion takes place in order to convert serial input data into parallel data</p>
+  </li>
+  <li>
+    <p><strong>Sequence Generator:</strong> Generate a sequence of 0s and 1s when combined with some additional gates</p>
+  </li>
+  <li>
+    <p><strong>Counters:</strong> Shift registers can be implemented as counters based on the output of the rightmost D flip-flop that is connected to the serial input, namely the <em>Ring Counter</em> and the <em>Johnson Ring Counter</em></p>
+  </li>
+  <li>
+    <p><a href="https://learn.circuitverse.org/docs/registers/ss.html">Serial-in Serial-out</a> registers are used for time delays</p>
+  </li>
+</ul>
+      <h1 id="ring-counter">
+        
+        
+          <a href="#ring-counter" class="anchor-heading" aria-labelledby="ring-counter"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Ring counter
+        
+        
+      </h1>
+    
+<p>Similar to how the <a href="https://learn.circuitverse.org/docs/registers/sp.html">Serial-in Serial-out</a> register requires <em>‘N’</em> clock pulses to shift <em>N</em> bit data, the <em>‘N’</em> Ring Counter produces a sequence of 0s and 1s, by having the rightmost D flip-flop as input to the leftmost D flip-flop as opposed to applying data externally. That is, the output of the last flip-flop is connected to the output of the first flip-flop in the ring. These patterns of states (0s and 1s) are repeated every <em>‘N’</em> clock cycles.</p>
+
+<p>The number of states in a Ring Counter are directly proportional to the number of flip-flops used.</p>
+
+<p>The block diagram of the 3-bit Ring counter is shown in the following figure.</p>
+
+<div style="text-align:center"><img src="/assets/images/ring_counter.jpg"></div>
+
+<p>A 3-bit Ring Counter will contain only a 3-bit SIPO shift register.</p>
+
+<p>Assume, the initial status of the D flip-flops from leftmost to rightmost is Q2Q1Q0=001. Here, Q2 &amp; Q0 are MSB &amp; LSB respectively. You can understand the working of Ring counter from the following table.</p>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: center">No of positive edge of Clock</th>
+      <th style="text-align: center">Serial Input = Q0</th>
+      <th style="text-align: center">Q2(MSB)</th>
+      <th style="text-align: center">Q1</th>
+      <th style="text-align: center">Q0(LSB)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>Due to the absence of the clock signal, the initial status of the D flip-flops is Q2Q1Q0=001. This state will repeat every third positive edge transition of the clock signal.</p>
+
+<p>Similarly, the following operations take place every positive edge of the clock cycle:</p>
+<ul>
+  <li>
+    <p>Serial input of the first D flip-flop gets the previous output of the third flip-flop. Thus, the present output of the first D flip-flop is equal to the previous output of the third flip-flop.</p>
+  </li>
+  <li>
+    <p>The previous outputs of first and second D flip-flops are right-shifted by one bit. That implies that the present outputs of second and third D flip-flops are equal to the previous outputs of first and second D flip-flops.</p>
+  </li>
+</ul>
+      <h1 id="johnson-ring-counter">
+        
+        
+          <a href="#johnson-ring-counter" class="anchor-heading" aria-labelledby="johnson-ring-counter"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Johnson ring counter
+        
+        
+      </h1>
+    
+<p>The Johnson ring counter functions similarly to the Ring counter. The difference being that the complemented output of rightmost D flip-flop is given as input of leftmost D flip-flop instead of normal output. Thus, ‘N’ bit Johnson Ring counter produces a sequence of states (pattern of zeros and ones) and it repeats for every ‘2N’ clock cycles.</p>
+
+<p>Johnson ring counter is also called the <em>Twisted ring counter</em> and <em>Switch tail ring counter</em>. The block diagram of 3-bit Johnson Ring counter is shown in the following figure.</p>
+
+<div style="text-align:center"><img src="/assets/images/twisted_ring_counter.jpg"></div>
+
+<p>The 3-bit Johnson Ring counter also contains only a 3-bit SIPO shift register.</p>
+
+<p>Assume, initially, all the D flip-flops are cleared. So, Q2Q1Q0=000. Here, Q2 is the MSB &amp; Q0 is the LSB.</p>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: center">No of positive edge of Clock</th>
+      <th style="text-align: center">Serial Input = Q0</th>
+      <th style="text-align: center">Q2(MSB)</th>
+      <th style="text-align: center">Q1</th>
+      <th style="text-align: center">cQ0(LSB)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">4</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">5</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">6</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>The initial status of the D flip-flops in the absence of the clock signal is Q2Q1Q0=000. This status repeats for every six positive edge transitions of the clock signal.</p>
+
+<p>Similarly, the following operations take place for every positive edge of the clock signal.</p>
+<ul>
+  <li>Serial input of first D flip-flop gets the previous complemented output of the third flip-flop. So, the present output of the first D flip-flop is equal to the previous complemented output of the third flip-flop.</li>
+  <li>The previous outputs of first and second D flip-flops are right shifted by one bit. That means, the present outputs of second and third D flip-flops are equal to the previous outputs of first and second D flip-flops.</li>
+</ul>
+
+
+<div class="prev-next-controls mt-3">
+  <div><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-msi/" class="btn btn-info">Previous</a></div>
+  <div><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-msi/counters.html" class="btn btn-info">Next</a></div>
+</div>
+
+<!-- -*- engine:django -*- -->
+
+<div id="disqus_thread" style="margin-top:75px"></div>
+<script>
+     
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  /*
+  var disqus_config = function () {
+  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
+  */
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://interactive-book.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
+        
+
+        
+
+        
+          <hr>
+          <footer>
+            
+            
+              <p class="text-small text-grey-dk-000 mb-0">Copyright © 2021 Contributors to CircuitVerse. Distributed under a [CC-by-sa] license.</p>
+            
+
+            
+              <div class="d-flex mt-2">
+                
+                
+                  <p class="text-small text-grey-dk-000 mb-0">
+                    <a href="https://github.com/CircuitVerse/Interactive-Book/tree/master/docs/seq-msi/registers.md" id="edit-this-page">Edit this page on GitHub.</a>
+                  </p>
+                
+              </div>
+            
+          </footer>
+        
+
+      </div>
+    </div>
+
+    
+      
+
+      <div class="search-overlay"></div>
+    
+  </div>
+</body>
+</html>

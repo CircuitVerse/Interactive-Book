@@ -1,0 +1,1667 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+
+  <link rel="shortcut icon" href="/pages/CircuitVerse/Interactive-Book/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="/pages/CircuitVerse/Interactive-Book/assets/css/just-the-docs-default.css">
+
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112678513-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112678513-3');
+    </script>
+
+  
+
+  
+    <script type="text/javascript" src="/pages/CircuitVerse/Interactive-Book/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="/pages/CircuitVerse/Interactive-Book/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Flip-flops | CircuitVerse</title>
+<meta name="generator" content="Jekyll v3.9.0">
+<meta property="og:title" content="Flip-flops">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="A Book to learn Digital Logic Design.">
+<meta property="og:description" content="A Book to learn Digital Logic Design.">
+<link rel="canonical" href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-ssi/flip-flops.html">
+<meta property="og:url" content="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-ssi/flip-flops.html">
+<meta property="og:site_name" content="CircuitVerse">
+<script type="application/ld+json">
+{"description":"A Book to learn Digital Logic Design.","url":"https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-ssi/flip-flops.html","@type":"WebPage","headline":"Flip-flops","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <script defer src="/assets/js/fontawesome-solid.js"></script>
+<script defer src="/assets/js/fontawesome-main.js"></script>
+<script src="/assets/js/jquery-3.4.1.min.js"></script>
+<script src="/assets/js/module.js"></script>
+<script src="/assets/js/quiz.js"></script>
+<script src="/assets/js/global_scripts.js"></script>
+
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="svg-link" viewbox="0 0 24 24">
+      <title>Link</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+      </svg>
+    </symbol>
+    <symbol id="svg-search" viewbox="0 0 24 24">
+      <title>Search</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+        <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </symbol>
+    <symbol id="svg-menu" viewbox="0 0 24 24">
+      <title>Menu</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+        <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </symbol>
+    <symbol id="svg-arrow-right" viewbox="0 0 24 24">
+      <title>Expand</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </symbol>
+    <symbol id="svg-doc" viewbox="0 0 24 24">
+      <title>Document</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+        <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+      </svg>
+    </symbol>
+  </svg>
+
+  <div class="side-bar">
+    <div class="site-header">
+      <a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/" class="site-title lh-tight">
+  CircuitVerse
+
+</a>
+      <a href="#" id="menu-button" class="site-button">
+        <svg viewbox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
+      </a>
+    </div>
+    <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
+      
+        <ul class="nav-list">
+<li class="nav-list-item"><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/" class="nav-list-link">Home</a></li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-representation/" class="nav-list-link">Binary representation</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-representation/binary-numbers.html" class="nav-list-link">Binary numbers</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-representation/negative-quantities.html" class="nav-list-link">Negative quantities</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-representation/number-bases.html" class="nav-list-link">Number bases</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-representation/encoding-information.html" class="nav-list-link">Encoding information</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-representation/discrete-quantities.html" class="nav-list-link">Discrete quantities</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/" class="nav-list-link">Binary algebra</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/addition.html" class="nav-list-link">Addition</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/subtraction.html" class="nav-list-link">Subtraction</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/multiplication.html" class="nav-list-link">Multiplication</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/division.html" class="nav-list-link">Division</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/boolean-algebra.html" class="nav-list-link">Boolean algebra</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/boolean-functions.html" class="nav-list-link">Boolean functions</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/shannon.html" class="nav-list-link">Shannon decomposition</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/ieee-std-754.html" class="nav-list-link">IEEE Std 754</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-ssi/" class="nav-list-link">Combinational SSI</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-ssi/logic-gates.html" class="nav-list-link">Logic gates</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-ssi/logic-families.html" class="nav-list-link">Logic families</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-ssi/universal-gates.html" class="nav-list-link">Universal gates</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/" class="nav-list-link">Logic Design</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/functional-description.html" class="nav-list-link">Functional description</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/implementation.html" class="nav-list-link">Implementation</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/canonical.html" class="nav-list-link">Canonical functions</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/kmaps.html" class="nav-list-link">K-Maps</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/mev.html" class="nav-list-link">Map-entered variables</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/qmc.html" class="nav-list-link">Quine McCluskey</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/binary-cubes.html" class="nav-list-link">Binary cubes</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-msi/" class="nav-list-link">Combinational MSI</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-msi/mux-demux.html" class="nav-list-link">MUX/DEMUX</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-msi/encoders-decoders.html" class="nav-list-link">Encoders/Decoders</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-msi/adders.html" class="nav-list-link">Adders</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-msi/mux-functions.html" class="nav-list-link">MUX-based functions</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-lsi/" class="nav-list-link">Combinational LSI</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-lsi/rom.html" class="nav-list-link">ROM</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-lsi/alu.html" class="nav-list-link">ALU</a></li>
+</ul>
+</li>
+<li class="nav-list-item active">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-ssi/" class="nav-list-link">Sequential SSI</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-ssi/latches.html" class="nav-list-link">Latches</a></li>
+<li class="nav-list-item  active"><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-ssi/flip-flops.html" class="nav-list-link active">Flip-flops</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-ssi/clock-signals.html" class="nav-list-link">Clock signals</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-design/" class="nav-list-link">Sequential Design</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-design/fsm.html" class="nav-list-link">FSM</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-design/seq-synth.html" class="nav-list-link">Sequential synthesis</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-design/race-conditions.html" class="nav-list-link">Race conditions</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-design/flow-diagrams.html" class="nav-list-link">Flowchart diagrams</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-design/mds.html" class="nav-list-link">MDS Diagrams</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-msi/" class="nav-list-link">Sequential MSI</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-msi/registers.html" class="nav-list-link">Registers</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-msi/counters.html" class="nav-list-link">Counters</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-msi/msi-seq-design.html" class="nav-list-link">MSI based design</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-msi/mult-div.html" class="nav-list-link">Multipliers/Dividers</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-lsi/" class="nav-list-link">Sequential LSI</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-lsi/rom-microcontrollers.html" class="nav-list-link">ROM-based µcontrollers</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-lsi/fpga.html" class="nav-list-link">FPGA</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-lsi/microprocessors.html" class="nav-list-link">Microprocessors</a></li>
+</ul>
+</li>
+<li class="nav-list-item"><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/contributing_guidelines.html" class="nav-list-link">Guidelines</a></li>
+</ul>
+
+      
+    </nav>
+    <footer class="site-footer">
+      This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
+    </footer>
+  </div>
+  <div class="main" id="top">
+    <div id="main-header" class="main-header">
+      
+        <div class="search">
+          <div class="search-input-wrap">
+            <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search CircuitVerse" aria-label="Search CircuitVerse" autocomplete="off">
+            <label for="search-input" class="search-label"><svg viewbox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
+          </div>
+          <div id="search-results" class="search-results"></div>
+        </div>
+      
+      
+        <nav aria-label="Auxiliary" class="aux-nav">
+          <ul class="aux-nav-list">
+            
+              <li class="aux-nav-list-item">
+                <a href="#" class="site-button">
+                  Dark mode
+                </a>
+              </li>
+            
+              <li class="aux-nav-list-item">
+                <a href="//github.com/CircuitVerse" class="site-button">
+                  CircuitVerse on GitHub
+                </a>
+              </li>
+            
+          </ul>
+        </nav>
+      
+    </div>
+    <div id="main-content-wrap" class="main-content-wrap">
+      
+        
+          <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+            <ol class="breadcrumb-nav-list">
+              
+                <li class="breadcrumb-nav-list-item"><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-ssi/">Sequential SSI</a></li>
+              
+              <li class="breadcrumb-nav-list-item"><span>Flip-flops</span></li>
+            </ol>
+          </nav>
+        
+      
+      <div id="main-content" class="main-content" role="main">
+        
+          <script type="text/javascript">
+ 
+ // Wait for the page to load first
+ window.onload = function() {
+     
+     // sidebar collapse code
+     // TODO: correct style and add media size checking(is it needed?)
+     var sidebar = document.querySelector("div.side-bar");
+     var sidebarButton = document.getElementById("sidebarCollapse");
+     var breadcrumbs = document.getElementById("breadcrumb-nav");
+     sidebarButton.onclick = function() {
+	 sidebar.classList.toggle("active");
+	 document.getElementById("main-content").classList.toggle("moved");
+	 document.getElementById("main-header").classList.toggle("moved");
+	 if (breadcrumbs) {
+	     breadcrumbs.classList.toggle("moved");
+	 }
+	 sidebarButton.classList.toggle("moved");
+	 sidebarButton.classList.toggle("colored");
+     }
+ }
+ 
+</script>
+
+<!-- -*- engine:django -*- -->	
+<div id="content">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
+        <button type="button" id="sidebarCollapse" class="btn btn-info new mr-3">
+            <i class="fas fa-align-left"></i>
+            <span>Sidebar</span>
+        </button>
+        <div class="prev-next-controls">
+            <div><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-ssi/latches.html" class="btn btn-info">Previous</a></div>
+            <div><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-ssi/clock-signals.html" class="btn btn-info">Next</a></div>
+        </div>
+    </nav>
+</div>
+      <h1 class="no_toc" id="flip-flops">
+        
+        
+          <a href="#flip-flops" class="anchor-heading" aria-labelledby="flip-flops"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Flip-flops
+        
+        
+      </h1>
+    
+      <h2 class="no_toc text-delta" id="table-of-contents">
+        
+        
+          <a href="#table-of-contents" class="anchor-heading" aria-labelledby="table-of-contents"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Table of contents
+        
+        
+      </h2>
+    
+
+<ol id="markdown-toc">
+  <li><a href="#flip-flops-1" id="markdown-toc-flip-flops-1">Flip-flops</a></li>
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#differences-between-latches-and-flip-flops" id="markdown-toc-differences-between-latches-and-flip-flops">Differences between latches and flip-flops</a></li>
+  <li><a href="#sub-modules" id="markdown-toc-sub-modules">Sub-modules</a></li>
+  <li><a href="#sr-flip-flop" id="markdown-toc-sr-flip-flop">SR flip-flop</a></li>
+  <li><a href="#introduction-1" id="markdown-toc-introduction-1">Introduction</a></li>
+  <li><a href="#state-table" id="markdown-toc-state-table">State table</a></li>
+  <li><a href="#characteristic-table" id="markdown-toc-characteristic-table">Characteristic table</a></li>
+  <li><a href="#d-flip-flop" id="markdown-toc-d-flip-flop">D flip-flop</a></li>
+  <li><a href="#introduction-2" id="markdown-toc-introduction-2">Introduction</a></li>
+  <li><a href="#state-table-1" id="markdown-toc-state-table-1">State table</a></li>
+  <li><a href="#jk-flip-flop" id="markdown-toc-jk-flip-flop">JK flip-flop</a></li>
+  <li><a href="#introduction-3" id="markdown-toc-introduction-3">Introduction</a></li>
+  <li><a href="#state-table-2" id="markdown-toc-state-table-2">State table</a></li>
+  <li><a href="#characteristic-table-1" id="markdown-toc-characteristic-table-1">Characteristic table</a></li>
+  <li><a href="#t-flip-flop" id="markdown-toc-t-flip-flop">T flip-flop</a></li>
+  <li><a href="#introduction-4" id="markdown-toc-introduction-4">Introduction</a></li>
+  <li><a href="#state-table-3" id="markdown-toc-state-table-3">State table</a></li>
+  <li><a href="#characteristic-table-2" id="markdown-toc-characteristic-table-2">Characteristic table</a></li>
+  <li><a href="#master-slave-jk-flip-flop" id="markdown-toc-master-slave-jk-flip-flop">Master-slave JK flip-Flop</a></li>
+  <li><a href="#introduction-5" id="markdown-toc-introduction-5">Introduction</a></li>
+  <li><a href="#master-slave-jk-flip-flop-constructed-by-using-nand-gates" id="markdown-toc-master-slave-jk-flip-flop-constructed-by-using-nand-gates">Master-slave JK flip-flop constructed by using NAND gates</a></li>
+  <li><a href="#state-table-4" id="markdown-toc-state-table-4">State table</a></li>
+  <li><a href="#characteristic-table-3" id="markdown-toc-characteristic-table-3">Characteristic table</a></li>
+  <li><a href="#excitation-table" id="markdown-toc-excitation-table">Excitation table</a></li>
+  <li><a href="#characteristic-equation" id="markdown-toc-characteristic-equation">Characteristic equation</a></li>
+  <li><a href="#flip-flops-interaction" id="markdown-toc-flip-flops-interaction">Flip-flops interaction</a></li>
+</ol>
+      <h2 id="flip-flops-1">
+        
+        
+          <a href="#flip-flops-1" class="anchor-heading" aria-labelledby="flip-flops-1"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Flip-flops
+        
+        
+      </h2>
+    
+      <h2 id="introduction">
+        
+        
+          <a href="#introduction" class="anchor-heading" aria-labelledby="introduction"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Introduction
+        
+        
+      </h2>
+    
+
+<p>You covered about latches in the previous modules. Those are the basic building blocks of flip-flops. You can implement flip-flops in two methods.</p>
+
+<p>In first method, cascade two latches in such a way that the first latch is enabled for every positive clock pulse and second latch is enabled for every negative clock pulse. So that the combination of these two latches become a flip-flop.</p>
+
+<p>In second module, you can directly implement the flip-flop, which is edge sensitive. In this module, let us discuss the following flip-flops using second method.</p>
+      <h2 id="differences-between-latches-and-flip-flops">
+        
+        
+          <a href="#differences-between-latches-and-flip-flops" class="anchor-heading" aria-labelledby="differences-between-latches-and-flip-flops"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Differences between latches and flip-flops
+        
+        
+      </h2>
+    
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Latches</th>
+      <th style="text-align: left">Flip-flops</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Level triggered</td>
+      <td style="text-align: left">Edge triggered</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Asynchronous device</td>
+      <td style="text-align: left">Synchronous device</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Doesn’t contain clock signal</td>
+      <td style="text-align: left">Contains a clock signal</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">It will change its state as long as it is enabled</td>
+      <td style="text-align: left">It will change its state only during a given clock cycle</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Consumes less power</td>
+      <td style="text-align: left">Consumes more power</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Faster</td>
+      <td style="text-align: left">Slower</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Examples: D-Latch, T-Latch</td>
+      <td style="text-align: left">Examples: D-Flip flop, T-Flop flop</td>
+    </tr>
+  </tbody>
+</table></div>
+      <h2 id="sub-modules">
+        
+        
+          <a href="#sub-modules" class="anchor-heading" aria-labelledby="sub-modules"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Sub-modules
+        
+        
+      </h2>
+    
+<p>Now let us implement various flip-flops by providing the cross coupling between NOR gates. You can also implement these flip-flops by using NAND gates, as well.</p>
+
+<ol>
+  <li><a href="https://learn.circuitverse.org/docs/flipflop/sr_flipflop.html">SR flip-flop</a></li>
+  <li><a href="https://learn.circuitverse.org/docs/flipflop/d_flipflop.html">D flip-flop</a></li>
+  <li><a href="https://learn.circuitverse.org/docs/flipflop/jk_flipflop.html">JK flip-flop</a></li>
+  <li><a href="https://learn.circuitverse.org/docs/flipflop/t_flipflop.html">T flip-flop</a></li>
+  <li><a href="https://learn.circuitverse.org/docs/flipflop/masterslave_jk_flipflop.html">Master-slave JK flip-flop</a></li>
+</ol>
+      <h2 id="sr-flip-flop">
+        
+        
+          <a href="#sr-flip-flop" class="anchor-heading" aria-labelledby="sr-flip-flop"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> SR flip-flop
+        
+        
+      </h2>
+    
+      <h2 id="introduction-1">
+        
+        
+          <a href="#introduction-1" class="anchor-heading" aria-labelledby="introduction-1"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Introduction
+        
+        
+      </h2>
+    
+
+<p>SR flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, SR latch operates with enable signal. The circuit diagram of SR flip-flop is shown in the following figure.</p>
+
+<div style="text-align:center"><img src="/assets/images/sr_flipflop.jpg"></div>
+
+<p>his circuit has two inputs S &amp; R and two outputs Q(t) &amp; Q(t)’. The operation of SR flipflop is similar to SR Latch. But, this flip-flop affects the outputs only when positive transition of the clock signal is applied instead of active enable.</p>
+      <h2 id="state-table">
+        
+        
+          <a href="#state-table" class="anchor-heading" aria-labelledby="state-table"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> State table
+        
+        
+      </h2>
+    
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: left">S</th>
+      <th style="text-align: left">R</th>
+      <th style="text-align: left">Q(t+1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">Q(t)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">-</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>Here, Q(t) &amp; Q(t + 1) are present state &amp; next state respectively. So, SR flip-flop can be used for one of these three functions such as Hold, Reset &amp; Set based on the input conditions, when positive transition of clock signal is applied.</p>
+      <h2 id="characteristic-table">
+        
+        
+          <a href="#characteristic-table" class="anchor-heading" aria-labelledby="characteristic-table"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Characteristic table
+        
+        
+      </h2>
+    
+
+<p>Therefore, SR Latch performs three types of functions such as Hold, Set &amp; Reset based on the input conditions.</p>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: left">S</th>
+      <th style="text-align: left">R</th>
+      <th style="text-align: left">Q(t)</th>
+      <th style="text-align: left">Q(t+1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">x</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">x</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>By using three <strong>variable K-Map</strong>, you can get the simplified expression for next state, Q(t + 1). The three variable K-Map for next state, Q(t + 1) is shown in the following figure.</p>
+
+<div style="text-align:center"><img src="/assets/images/3_variable_k_map_next_state.jpg"></div>
+
+<p>The maximum possible groupings of adjacent ones are already shown in the figure. Therefore, the simplified expression for next state Q(t + 1) is</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>          <span class="s">Q(t + 1) = S + R'.Q(t)</span>
+</code></pre></div></div>
+
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/12264" id="sr_flipflop_01" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+      <h2 id="d-flip-flop">
+        
+        
+          <a href="#d-flip-flop" class="anchor-heading" aria-labelledby="d-flip-flop"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> D flip-flop
+        
+        
+      </h2>
+    
+      <h2 id="introduction-2">
+        
+        
+          <a href="#introduction-2" class="anchor-heading" aria-labelledby="introduction-2"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Introduction
+        
+        
+      </h2>
+    
+
+<p>D flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, D latch operates with enable signal. That means, the output of D flip-flop is insensitive to the changes in the input, D except for active transition of the clock signal. The circuit diagram of D flip-flop is shown in the following figure.</p>
+
+<div style="text-align:center"><img src="/assets/images/d_flipflop.jpg"></div>
+
+<p>This circuit has single input D and two outputs Q(t) &amp; Q(t)’. The operation of D flip-flop is similar to D Latch. But, this flip-flop affects the outputs only when positive transition of the clock signal is applied instead of active enable.</p>
+      <h2 id="state-table-1">
+        
+        
+          <a href="#state-table-1" class="anchor-heading" aria-labelledby="state-table-1"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> State table
+        
+        
+      </h2>
+    
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: left">D</th>
+      <th style="text-align: left">Q(t+1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>Therefore, D flip-flop always Hold the information, which is available on data input, D of earlier positive transition of clock signal. From the above state table, the next state equation can be directly written as</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="s">Q(t + 1) = D</span>
+</code></pre></div></div>
+<p>Next state of D flip-flop is always equal to data input, D for every positive transition of the clock signal. Hence, D flip-flops can be used in registers, shift registers and some of the counters.</p>
+
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/12254" id="d_flipflop_01" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+      <h2 id="jk-flip-flop">
+        
+        
+          <a href="#jk-flip-flop" class="anchor-heading" aria-labelledby="jk-flip-flop"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> JK flip-flop
+        
+        
+      </h2>
+    
+      <h2 id="introduction-3">
+        
+        
+          <a href="#introduction-3" class="anchor-heading" aria-labelledby="introduction-3"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Introduction
+        
+        
+      </h2>
+    
+
+<p>JK flip-flop is the modified version of SR flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of JK flip-flop is shown in the following figure.</p>
+
+<div style="text-align:center"><img src="/assets/images/jk_flipflop.jpg"></div>
+
+<p>This circuit has two inputs J &amp; K and two outputs Q(t) &amp; Q(t)’. The operation of JK flip-flop is similar to SR flip-flop. Here, the inputs of SR flip-flop are considered as <strong>S = J Q(t)’</strong> and <strong>R = KQ(t)</strong> in order to utilize the modified SR flip-flop for 4 combinations of inputs.</p>
+      <h2 id="state-table-2">
+        
+        
+          <a href="#state-table-2" class="anchor-heading" aria-labelledby="state-table-2"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> State table
+        
+        
+      </h2>
+    
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: left">J</th>
+      <th style="text-align: left">K</th>
+      <th style="text-align: left">Q(t+1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">Q(t)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">Q(t)’</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>Here, Q(t) &amp; Q(t + 1) are present state &amp; next state respectively. So, JK flip-flop can be used for one of these four functions such as Hold, Reset, Set &amp; Complement of present state based on the input conditions, when positive transition of clock signal is applied.</p>
+      <h2 id="characteristic-table-1">
+        
+        
+          <a href="#characteristic-table-1" class="anchor-heading" aria-labelledby="characteristic-table-1"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Characteristic table
+        
+        
+      </h2>
+    
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: left">J</th>
+      <th style="text-align: left">K</th>
+      <th style="text-align: left">Q(t)</th>
+      <th style="text-align: left">Q(t+1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>By using three variable K-Map, you can get the simplified expression for next state, Q(t + 1). The <strong>three variable K-Map</strong> for next state, Q(t + 1) is shown in the following figure.</p>
+
+<div style="text-align:center"><img src="/assets/images/jk_3_variable_kmap.jpg"></div>
+
+<p>The maximum possible groupings of adjacent ones are already shown in the figure. Therefore, the simplified expression for next state Q(t+1) is</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>          <span class="s">Q(t + 1) = J.Q(t)' + K'.Q(t)</span>
+</code></pre></div></div>
+
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/12263" id="jk_flipflop_01" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+      <h2 id="t-flip-flop">
+        
+        
+          <a href="#t-flip-flop" class="anchor-heading" aria-labelledby="t-flip-flop"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> T flip-flop
+        
+        
+      </h2>
+    
+      <h2 id="introduction-4">
+        
+        
+          <a href="#introduction-4" class="anchor-heading" aria-labelledby="introduction-4"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Introduction
+        
+        
+      </h2>
+    
+
+<p>T flip-flop is the simplified version of JK flip-flop. It is obtained by connecting the same input ‘T’ to both inputs of JK flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of T flip-flop is shown in the following figure.</p>
+
+<div style="text-align:center"><img src="/assets/images/t_flipflop.jpg"></div>
+
+<p>This circuit has single input T and two outputs Q(t) &amp; Q(t)’. The operation of T flip-flop is same as that of JK flip-flop. Here, the inputs of JK flip-flop are considered as J = T and K = T in order to utilize the modified JK flip-flop for 2 combinations of inputs. So, the other two combinations of J &amp; K are eliminated, for which those two values are complement to each other in T flip-flop.</p>
+      <h2 id="state-table-3">
+        
+        
+          <a href="#state-table-3" class="anchor-heading" aria-labelledby="state-table-3"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> State table
+        
+        
+      </h2>
+    
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: left">D</th>
+      <th style="text-align: left">Q(t+1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">Q(t)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">Q(t)’</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>Here, Q(t) &amp; Q(t + 1) are present state &amp; next state respectively. So, T flip-flop can be used for one of these two functions such as Hold, &amp; Complement of present state based on the input conditions, when positive transition of clock signal is applied.</p>
+      <h2 id="characteristic-table-2">
+        
+        
+          <a href="#characteristic-table-2" class="anchor-heading" aria-labelledby="characteristic-table-2"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Characteristic table
+        
+        
+      </h2>
+    
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: left">T</th>
+      <th style="text-align: left">Q(t)</th>
+      <th style="text-align: left">Q(t + 1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">0</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>From the above characteristic table, the next state equation can be directly written as:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>          <span class="s">Q(t + 1) = T'.Q(t) + T.Q(t)'</span>
+          <span class="s">=&gt; Q(t + 1) = T ⊕ Q(t)</span>
+</code></pre></div></div>
+
+<p>The output of T flip-flop always toggles for every positive transition of the clock signal, when input T remains at logic High (1). Hence, T flip-flop can be used in counters.</p>
+
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/12258" id="t_flipflop_01" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+      <h2 id="master-slave-jk-flip-flop">
+        
+        
+          <a href="#master-slave-jk-flip-flop" class="anchor-heading" aria-labelledby="master-slave-jk-flip-flop"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Master-slave JK flip-Flop
+        
+        
+      </h2>
+    
+      <h2 id="introduction-5">
+        
+        
+          <a href="#introduction-5" class="anchor-heading" aria-labelledby="introduction-5"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Introduction
+        
+        
+      </h2>
+    
+
+<p>Master-slave JK flip-flop is designed to eliminate the race around condition in JK flip-flop and it is constructed by using two JK flip-flops as shown in the circuit diagram below.</p>
+
+<div style="text-align:center"><img src="/assets/images/masterslave_jk_flipflop.png"></div>
+
+<p>The first flip-flop is called the <em>master</em>, and it is driven by the positive clock cycle.
+The second flip-flop is called the <em>slave</em>, and it is driven by the negative clock cycle.
+During the positive clock cycle, master flip-flop gives the intermediate output but slave flip-flop will not give the final output.
+During the negative clock cycle, slave flip-flop gets activated and copies the previous output of the master flip-flop and produces the final output.</p>
+      <h2 id="master-slave-jk-flip-flop-constructed-by-using-nand-gates">
+        
+        
+          <a href="#master-slave-jk-flip-flop-constructed-by-using-nand-gates" class="anchor-heading" aria-labelledby="master-slave-jk-flip-flop-constructed-by-using-nand-gates"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Master-slave JK flip-flop constructed by using NAND gates
+        
+        
+      </h2>
+    
+
+<div style="text-align:center"><img src="/assets/images/masterslave_jk_flipflop_nand.png"></div>
+      <h2 id="state-table-4">
+        
+        
+          <a href="#state-table-4" class="anchor-heading" aria-labelledby="state-table-4"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> State table
+        
+        
+      </h2>
+    
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Clock</th>
+      <th style="text-align: center">J</th>
+      <th style="text-align: center">K</th>
+      <th style="text-align: center">Q(n+1)</th>
+      <th style="text-align: center">Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">X</td>
+      <td style="text-align: center">X</td>
+      <td style="text-align: center">Q(n)</td>
+      <td style="text-align: center">No change</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">Q(n)</td>
+      <td style="text-align: center">No change</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">Reset</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">Set</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">Q(n)’</td>
+      <td style="text-align: center">Toggle</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>Here, Q(n) is the present state and Q(n+1) is the next state.</p>
+      <h2 id="characteristic-table-3">
+        
+        
+          <a href="#characteristic-table-3" class="anchor-heading" aria-labelledby="characteristic-table-3"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Characteristic table
+        
+        
+      </h2>
+    
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Q(n)</th>
+      <th style="text-align: center">J</th>
+      <th style="text-align: center">K</th>
+      <th style="text-align: center">Q(n+1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+    </tr>
+  </tbody>
+</table></div>
+      <h2 id="excitation-table">
+        
+        
+          <a href="#excitation-table" class="anchor-heading" aria-labelledby="excitation-table"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Excitation table
+        
+        
+      </h2>
+    
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Q(n)</th>
+      <th style="text-align: center">Q(n+1)</th>
+      <th style="text-align: center">J</th>
+      <th style="text-align: center">K</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">X</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">X</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">X</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">X</td>
+      <td style="text-align: center">0</td>
+    </tr>
+  </tbody>
+</table></div>
+      <h2 id="characteristic-equation">
+        
+        
+          <a href="#characteristic-equation" class="anchor-heading" aria-labelledby="characteristic-equation"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Characteristic equation
+        
+        
+      </h2>
+    
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Q(n+1) = Q(n)'J + Q(n)K'
+</code></pre></div></div>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/47630" id="masterslave_jk_flipflop_01" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+      <h2 id="flip-flops-interaction">
+        
+        
+          <a href="#flip-flops-interaction" class="anchor-heading" aria-labelledby="flip-flops-interaction"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Flip-flops interaction
+        
+        
+      </h2>
+    
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+      .init {
+        position: absolute;
+        left: -9999px;
+      }
+
+      .gen-container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .gen-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .button-set > button {
+        min-width: 8em;
+        padding: 0.6em 1em;
+        margin: 0 0.6em;
+      }
+
+      .button-set {
+        margin: 0 0 1em;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      #stateTable > .button-set {
+        margin: 1em 0;
+      }
+
+      .form-input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+        margin: 1em 0;
+      }
+
+      .form-input > select,
+      .form-input > input[type="text"] {
+        padding: 0.6em;
+        margin: 0.4em 0;
+        width: 100% !important;
+        background: #f7f7f7;
+        color: #000;
+        border: thin solid #00e8b3;
+      }
+
+      .form-input > select > * {
+        color: #000;
+      }
+
+      #summa > .form-input {
+        width: 100%;
+      }
+
+      #table_container {
+        overflow-x: auto;
+        white-space: nowrap;
+        margin-bottom: 30px;
+      }
+    </style>
+
+    <script src="/assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  
+  
+    <div class="container-fluid">
+      <div class="gen-container">
+        <div class="row">
+      <h1 class="title">
+        
+        
+          State Table Generator
+        
+        
+      </h1>
+    
+        </div>
+        <div class="gen-row" id="about">
+          <p>
+            "A <i>State Table</i> is a tabular representation of the time
+            sequence of inputs, outputs, and flip-flop states. The table
+            consists of four sections marked as <i>present table</i>,
+            <i>next state</i>, and the <i>output</i>. The present-state section
+            shows the states of flip-flops at any given time t. The input
+            section gives a value for each possible present state. The
+            next-state section lists the state of flip-flops one clock period
+            later at time t + 1. Lastly, the output section gives the value for
+            each present state."
+          </p>
+          <div class="button-set">
+            <button onclick="begin()">Let's Begin</button>
+          </div>
+        </div>
+        <div class="gen-row init" id="step1">
+          <div class="row-sub-title">
+            <strong>STEP 1. </strong>Provide the following.
+          </div>
+          <div class="form-input">
+            <select id="flipflop" class="required">
+              <option value="0">FLIP-FLOP TYPE</option>
+              <option value="JK">JK</option>
+              <option value="RS">RS</option>
+              <option value="D">D</option>
+              <option value="T">T</option>
+            </select>
+            <select id="flipflopCount" class="required">
+              <option value="0">FLIP-FLOP COUNT</option>
+              <option value="c1">1</option>
+              <option value="c2">2</option>
+            </select>
+            <select id="input" class="required">
+              <option value="0">INPUT COUNT</option>
+              <option value="i1">1</option>
+              <option value="i2">2</option>
+            </select>
+            <select id="output" class="required">
+              <option value="0">OUTPUT</option>
+              <option value="o1">YES</option>
+              <option value="o2">NO</option>
+            </select>
+          </div>
+          <div class="button-set">
+            <button type="button" id="backToAbout">
+              Back
+            </button>
+            <button type="button" id="confirmStep1">
+              Next
+            </button>
+          </div>
+        </div>
+
+        <div class="gen-row init" id="step2">
+          <div>
+            <strong>STEP 2. </strong>Input the required flip-flop input/output
+            functions.
+          </div>
+          <div class="form-input"></div>
+          <div class="button-set">
+            <button type="button" id="backToStep1">
+              Back
+            </button>
+            <button type="button" id="confirmStep2">
+              Next
+            </button>
+          </div>
+        </div>
+
+        <div class="gen-row init" id="summary">
+          <div id="summa"></div>
+          <p>
+            Feel free to review your input before generating your state table.
+          </p>
+          <div class="button-set">
+            <button type="button" id="backToStep2">
+              Back
+            </button>
+            <button type="button" id="confirmSummary">
+              Confirm
+            </button>
+          </div>
+        </div>
+
+        <div class="init" id="stateTable">
+          <div id="table_container"></div>
+          <div id="stateDesc"></div>
+          <div class="button-set">
+            <button type="button" id="restart">Generate Another</button>
+          </div>
+        </div>
+      </div>
+      <script>
+        window.jQuery ||
+          document.write(
+            '<script src="../assets/js/vendor/jquery-3.4.1.min.js"><\/script>'
+          );
+      </script>
+
+      <script src="/assets/js/vendor/bootstrap.min.js"></script>
+
+      <script src="/assets/js/flipflop.js"></script>
+
+      <script>
+        $("#step1").hide();
+        $("#step1").css("position", "relative");
+        $("#step1").css("left", "0px");
+
+        $("#step2").hide();
+        $("#step2").css("position", "relative");
+        $("#step2").css("left", "0px");
+
+        $("#summary").hide();
+        $("#summary").css("position", "relative");
+        $("#summary").css("left", "0px");
+
+        $("#stateTable").hide();
+        $("#stateTable").css("position", "relative");
+        $("#stateTable").css("left", "0px");
+
+        function begin() {
+          if ($("#about").is(":visible")) {
+            $("#step1").fadeIn();
+            $("#about").hide();
+          }
+        }
+        $("#backToAbout").click(function () {
+          $("#step1 select").val("0");
+          $("#step1").hide();
+          $("#about").fadeIn();
+        });
+
+        var input = {};
+        var flipflops = {};
+        var ioFunctions = "";
+        var functionCount = 1;
+        var inputCount = 0;
+        var flipflopCount = 0;
+        var outputCount = 0;
+        $("#confirmStep1").click(function () {
+          if ($("#flipflop").val() == "0") {
+            $("#flipflop").focus();
+          } else if ($("#flipflopCount").val() == "0") {
+            $("#flipflopCount").focus();
+          } else if ($("#input").val() == "0") {
+            $("#input").focus();
+          } else if ($("#output").val() == "0") {
+            $("#output").focus();
+          } else {
+            input = {};
+            ioFunctions = "";
+            functionCount = 1;
+            input["flipflop"] = $("#flipflop").val();
+            input["flipflopCount"] = $("#flipflopCount").val();
+            input["input"] = $("#input").val();
+            input["output"] = $("#output").val();
+
+            if (input["flipflopCount"] == "c2") {
+              functionCount *= 2;
+              flipflopCount = 2;
+            } else if (input["flipflopCount"] == "c1") {
+              flipflopCount = 1;
+            }
+
+            if (input["input"] == "i1") {
+              inputCount = 1;
+            } else if (input["input"] == "i2") {
+              inputCount = 2;
+            }
+
+            if (input["flipflop"] == "JK") {
+              for (var i = 0; i < functionCount; i++) {
+                var alph = String.fromCharCode(65 + i);
+                flipflops["J" + alph] = "";
+                flipflops["K" + alph] = "";
+                ioFunctions +=
+                  "<input type='text' class='form-control' id='J" +
+                  alph +
+                  "' placeholder='J" +
+                  alph +
+                  "' required>";
+                ioFunctions +=
+                  "<input type='text' class='form-control' id='K" +
+                  alph +
+                  "' placeholder='K" +
+                  alph +
+                  "' required>";
+              }
+            } else if (input["flipflop"] == "RS") {
+              for (var i = 0; i < functionCount; i++) {
+                var alph = String.fromCharCode(65 + i);
+                flipflops["S" + alph] = "";
+                flipflops["R" + alph] = "";
+                ioFunctions +=
+                  "<input type='text' class='form-control' id='S" +
+                  alph +
+                  "' placeholder='R" +
+                  alph +
+                  "' required>";
+                ioFunctions +=
+                  "<input type='text' class='form-control' id='R" +
+                  alph +
+                  "' placeholder='S" +
+                  alph +
+                  "' required>";
+              }
+            } else if (input["flipflop"] == "D") {
+              for (var i = 0; i < functionCount; i++) {
+                var alph = String.fromCharCode(65 + i);
+                flipflops["D" + alph] = "";
+                ioFunctions +=
+                  "<input type='text' class='form-control' id='D" +
+                  alph +
+                  "' placeholder='D" +
+                  alph +
+                  "' required>";
+              }
+            } else {
+              for (var i = 0; i < functionCount; i++) {
+                var alph = String.fromCharCode(65 + i);
+                flipflops["T" + alph] = "";
+                ioFunctions +=
+                  "<input type='text' class='form-control' id='T" +
+                  alph +
+                  "' placeholder='T" +
+                  alph +
+                  "' required>";
+              }
+            }
+
+            if (input["output"] == "o1") {
+              outputCount = 1;
+              ioFunctions +=
+                "<input type='text' class='form-control' id='Z' placeholder='Z ( Output )' required>";
+            }
+
+            $("#step2 div.form-input").append(ioFunctions);
+            $("#step1").hide();
+            $("#step2").fadeIn();
+          }
+        });
+
+        $("#backToStep1").click(function () {
+          $("#step2 div.form-input").empty();
+          $("#step2").hide();
+          $("#step1").fadeIn();
+        });
+        var flag = null;
+        $("#confirmStep2").click(function () {
+          var inp = $("#step2 div.form-input").find("input");
+          for (var i = 0; i < inp.length; i++) {
+            if (inp[i].value == "") {
+              inp[i].focus();
+              flag = i;
+              break;
+            } else {
+              flipflops[inp[i].id] = inp[i].value;
+            }
+          }
+
+          if (flag != null) {
+            inp[flag].focus();
+            flag = null;
+          } else {
+            var summary =
+              "<p><strong>Summary of User Input.</strong>&nbsp;&nbsp;A sequential circuit that has <strong>" +
+              flipflopCount +
+              "</strong> <strong>" +
+              input["flipflop"] +
+              "</strong> flipflops( ";
+
+            for (var i = 0; i < flipflopCount; i++) {
+              summary += String.fromCharCode(65 + i) + " ";
+            }
+
+            summary += "), <strong>" + inputCount + "</strong> inputs( ";
+
+            for (var i = 0; i < inputCount; i++) {
+              summary += String.fromCharCode(97 + 25 - inputCount + i) + " ";
+            }
+
+            summary += " )";
+
+            if (outputCount == 1) {
+              summary += " and an output(Z).";
+            } else {
+              summary += ".";
+            }
+
+            summary +=
+              " The flip-flop input functions and the circuit function are as follows:</p>";
+            summary += '<div class="form-input">';
+
+            var keys = Object.keys(flipflops);
+
+            for (var i = 0; i < keys.length; i++) {
+              summary +=
+                "
+      <h3>
+        
+        
+          " + keys[i] + " = " + flipflops[keys[i]] + "
+        
+        
+      </h3>
+     ";
+            }
+
+            summary += "</div>";
+
+            $("#summary #summa").append(summary);
+            $("#step2").hide();
+            $("#summary").fadeIn();
+          }
+        });
+
+        $("#backToStep2").click(function () {
+          $("#summary #summa").empty();
+          $("#summary").hide();
+          $("#step2").fadeIn();
+        });
+
+        $("#restart").click(function () {
+          $("#step1 select").val("0");
+          $("#step2 div.form-input").empty();
+          $("#summary #summa").empty();
+          $("#table_container").empty();
+          $("#stateDesc").empty();
+          $("#stateTable").hide();
+          $("#about").fadeIn();
+        });
+
+        $("#confirmSummary").click(function () {
+          var output = [];
+          output = generateStateTable(
+            flipflopCount,
+            inputCount,
+            flipflops,
+            input["flipflop"]
+          );
+
+          var table = "<p><div class="table-wrapper"><table class='table'><thead>";
+
+          for (var j = 0; j < output.length; j++) {
+            table += "<th>" + output[j].col + "</th>";
+          }
+          table += "</thead><tbody>";
+
+          var temp = "";
+          var rowCount = Math.pow(2, flipflopCount + inputCount);
+          exit_loops:
+          for (var i = 0; i < rowCount; i++) {
+            table += "<tr>";
+
+            for (var j = 0; j < output.length; j++) {
+              temp = output[j].row.charAt(i);
+              if(temp === 'u'){
+                alert("Your Table contains Undefined values. Press OK to enter values again")
+                  $("#summary #summa").empty();
+                  $("#summary").hide();
+                  $("#step2").fadeIn();
+                  $("#stateTable").empty();
+                  break exit_loops;
+                }
+                else {
+                  table += "<td>" + temp + "</td>";
+                
+                }
+            }
+            table += "</tr>";
+          }
+
+          table += "</tbody></p>";
+
+          $("#table_container").append(table);
+          $("#summary").hide();
+          $("#stateTable").fadeIn();
+
+          //Description about the state table
+
+          $("#stateDesc").append("<strong>Description</strong>:");
+          for (var i = 0; i < flipflopCount; i++) {
+            if (i === 0)
+              $("#stateDesc").append(
+                "<br><strong>A</strong>: Present State of flip-flop A.<br><strong>A*</strong>: Next State of flip-flop A."
+              );
+            if (i === 1)
+              $("#stateDesc").append(
+                "<br><strong>B</strong>: Present State of flip-flop B.<br><strong>B*</strong>: Next State of flip-flop B."
+              );
+          }
+          if (input["flipflop"] == "JK")
+            $("#stateDesc").append(
+              "<br>The next state of the JK flip-flop is decided by the following points: <br>1. When <strong>J</strong> and <strong>K</strong> are equal to 0, it means the memory state that is the next state will be equal to the present state. <br>2. When <strong>J</strong> and <strong>K</strong> are equal to 1, the next state will be equal to the complement of the present state."
+            );
+          else if (input["flipflop"] == "D")
+            $("#stateDesc").append(
+              "<br>The next state of the D flip-flop is equal to the input <strong>D</strong>."
+            );
+          else if (input["flipflop"] == "RS") {
+            $("#stateDesc").append(
+              "<br>In the state table above, you can see something like this <strong>?</strong>. It means that the next state cannot be determined ( INDETERMINATE )."
+            );
+            $("#stateDesc").append(
+              "<br>The next state of the RS flip-flop is decided by the following points: <br>1. When both <strong>R</strong> and <strong>S</strong> are equal to 0, the next state will be equal to the present state ( NO CHANGE )."
+            );
+            $("#stateDesc").append(
+              "<br>2. When  <strong>R</strong> is equal to 1 and <strong>S</strong> is equal to 0, the next state will be equal to the 0 ( RESET ).<br>3. When  <strong>R</strong> is equal to 0 and <strong>S</strong> is equal to 1, the next state will be equal to the 1 ( SET )."
+            );
+            $("#stateDesc").append(
+              "<br>4. When both <strong>R</strong> and <strong>S</strong> are equal to 1 , the next state will be equal to the ? ( INDETERMINATE )."
+            );
+          } else if (input["flipflop"] == "T") {
+            $("#stateDesc").append(
+              "<br>T flip-flop is the simplified version of JK flip-flop where <strong>J</strong> and <strong>K</strong> are equal to the input <strong>T</strong>. So the state table generation of the T flip-flop is similar to that of JK flip-flop."
+            );
+            $("#stateDesc").append(
+              "<br>The next state of the T flip-flop is decided by the following points: <br>1. When <strong>T</strong> is equal to 0, it means the memory state ( since both <strong>J</strong> and <strong>K</strong> are equal to 0 ) that is the next state will be equal to the present state. <br>2. When <strong>T</strong> is equal to 1, the next state will be equal to the complement of the present state."
+            );
+          }
+        });
+      </script>
+    </div>
+  
+
+
+
+
+<div class="prev-next-controls mt-3">
+  <div><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-ssi/latches.html" class="btn btn-info">Previous</a></div>
+  <div><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-ssi/clock-signals.html" class="btn btn-info">Next</a></div>
+</div>
+
+<!-- -*- engine:django -*- -->
+
+<div id="disqus_thread" style="margin-top:75px"></div>
+<script>
+     
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  /*
+  var disqus_config = function () {
+  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
+  */
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://interactive-book.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
+        
+
+        
+
+        
+          <hr>
+          <footer>
+            
+            
+              <p class="text-small text-grey-dk-000 mb-0">Copyright © 2021 Contributors to CircuitVerse. Distributed under a [CC-by-sa] license.</p>
+            
+
+            
+              <div class="d-flex mt-2">
+                
+                
+                  <p class="text-small text-grey-dk-000 mb-0">
+                    <a href="https://github.com/CircuitVerse/Interactive-Book/tree/master/docs/seq-ssi/flip-flops.md" id="edit-this-page">Edit this page on GitHub.</a>
+                  </p>
+                
+              </div>
+            
+          </footer>
+        
+
+      </div>
+    </div>
+
+    
+      
+
+      <div class="search-overlay"></div>
+    
+  </div>
+</body>
+</html>

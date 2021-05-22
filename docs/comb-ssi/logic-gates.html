@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+
+  <link rel="shortcut icon" href="/pages/CircuitVerse/Interactive-Book/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="/pages/CircuitVerse/Interactive-Book/assets/css/just-the-docs-default.css">
+
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112678513-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112678513-3');
+    </script>
+
+  
+
+  
+    <script type="text/javascript" src="/pages/CircuitVerse/Interactive-Book/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="/pages/CircuitVerse/Interactive-Book/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Logic gates | CircuitVerse</title>
+<meta name="generator" content="Jekyll v3.9.0">
+<meta property="og:title" content="Logic gates">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="A Book to learn Digital Logic Design.">
+<meta property="og:description" content="A Book to learn Digital Logic Design.">
+<link rel="canonical" href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-ssi/logic-gates.html">
+<meta property="og:url" content="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-ssi/logic-gates.html">
+<meta property="og:site_name" content="CircuitVerse">
+<script type="application/ld+json">
+{"description":"A Book to learn Digital Logic Design.","url":"https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-ssi/logic-gates.html","@type":"WebPage","headline":"Logic gates","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <script defer src="/assets/js/fontawesome-solid.js"></script>
+<script defer src="/assets/js/fontawesome-main.js"></script>
+<script src="/assets/js/jquery-3.4.1.min.js"></script>
+<script src="/assets/js/module.js"></script>
+<script src="/assets/js/quiz.js"></script>
+<script src="/assets/js/global_scripts.js"></script>
+
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="svg-link" viewbox="0 0 24 24">
+      <title>Link</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+      </svg>
+    </symbol>
+    <symbol id="svg-search" viewbox="0 0 24 24">
+      <title>Search</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+        <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </symbol>
+    <symbol id="svg-menu" viewbox="0 0 24 24">
+      <title>Menu</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+        <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </symbol>
+    <symbol id="svg-arrow-right" viewbox="0 0 24 24">
+      <title>Expand</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </symbol>
+    <symbol id="svg-doc" viewbox="0 0 24 24">
+      <title>Document</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+        <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+      </svg>
+    </symbol>
+  </svg>
+
+  <div class="side-bar">
+    <div class="site-header">
+      <a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/" class="site-title lh-tight">
+  CircuitVerse
+
+</a>
+      <a href="#" id="menu-button" class="site-button">
+        <svg viewbox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
+      </a>
+    </div>
+    <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
+      
+        <ul class="nav-list">
+<li class="nav-list-item"><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/" class="nav-list-link">Home</a></li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-representation/" class="nav-list-link">Binary representation</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-representation/binary-numbers.html" class="nav-list-link">Binary numbers</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-representation/negative-quantities.html" class="nav-list-link">Negative quantities</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-representation/number-bases.html" class="nav-list-link">Number bases</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-representation/encoding-information.html" class="nav-list-link">Encoding information</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-representation/discrete-quantities.html" class="nav-list-link">Discrete quantities</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/" class="nav-list-link">Binary algebra</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/addition.html" class="nav-list-link">Addition</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/subtraction.html" class="nav-list-link">Subtraction</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/multiplication.html" class="nav-list-link">Multiplication</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/division.html" class="nav-list-link">Division</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/boolean-algebra.html" class="nav-list-link">Boolean algebra</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/boolean-functions.html" class="nav-list-link">Boolean functions</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/shannon.html" class="nav-list-link">Shannon decomposition</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/ieee-std-754.html" class="nav-list-link">IEEE Std 754</a></li>
+</ul>
+</li>
+<li class="nav-list-item active">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-ssi/" class="nav-list-link">Combinational SSI</a><ul class="nav-list ">
+<li class="nav-list-item  active"><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-ssi/logic-gates.html" class="nav-list-link active">Logic gates</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-ssi/logic-families.html" class="nav-list-link">Logic families</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-ssi/universal-gates.html" class="nav-list-link">Universal gates</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/" class="nav-list-link">Logic Design</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/functional-description.html" class="nav-list-link">Functional description</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/implementation.html" class="nav-list-link">Implementation</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/canonical.html" class="nav-list-link">Canonical functions</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/kmaps.html" class="nav-list-link">K-Maps</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/mev.html" class="nav-list-link">Map-entered variables</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/qmc.html" class="nav-list-link">Quine McCluskey</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/binary-cubes.html" class="nav-list-link">Binary cubes</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-msi/" class="nav-list-link">Combinational MSI</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-msi/mux-demux.html" class="nav-list-link">MUX/DEMUX</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-msi/encoders-decoders.html" class="nav-list-link">Encoders/Decoders</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-msi/adders.html" class="nav-list-link">Adders</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-msi/mux-functions.html" class="nav-list-link">MUX-based functions</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-lsi/" class="nav-list-link">Combinational LSI</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-lsi/rom.html" class="nav-list-link">ROM</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-lsi/alu.html" class="nav-list-link">ALU</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-ssi/" class="nav-list-link">Sequential SSI</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-ssi/latches.html" class="nav-list-link">Latches</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-ssi/flip-flops.html" class="nav-list-link">Flip-flops</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-ssi/clock-signals.html" class="nav-list-link">Clock signals</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-design/" class="nav-list-link">Sequential Design</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-design/fsm.html" class="nav-list-link">FSM</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-design/seq-synth.html" class="nav-list-link">Sequential synthesis</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-design/race-conditions.html" class="nav-list-link">Race conditions</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-design/flow-diagrams.html" class="nav-list-link">Flowchart diagrams</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-design/mds.html" class="nav-list-link">MDS Diagrams</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-msi/" class="nav-list-link">Sequential MSI</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-msi/registers.html" class="nav-list-link">Registers</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-msi/counters.html" class="nav-list-link">Counters</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-msi/msi-seq-design.html" class="nav-list-link">MSI based design</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-msi/mult-div.html" class="nav-list-link">Multipliers/Dividers</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-lsi/" class="nav-list-link">Sequential LSI</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-lsi/rom-microcontrollers.html" class="nav-list-link">ROM-based µcontrollers</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-lsi/fpga.html" class="nav-list-link">FPGA</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-lsi/microprocessors.html" class="nav-list-link">Microprocessors</a></li>
+</ul>
+</li>
+<li class="nav-list-item"><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/contributing_guidelines.html" class="nav-list-link">Guidelines</a></li>
+</ul>
+
+      
+    </nav>
+    <footer class="site-footer">
+      This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
+    </footer>
+  </div>
+  <div class="main" id="top">
+    <div id="main-header" class="main-header">
+      
+        <div class="search">
+          <div class="search-input-wrap">
+            <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search CircuitVerse" aria-label="Search CircuitVerse" autocomplete="off">
+            <label for="search-input" class="search-label"><svg viewbox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
+          </div>
+          <div id="search-results" class="search-results"></div>
+        </div>
+      
+      
+        <nav aria-label="Auxiliary" class="aux-nav">
+          <ul class="aux-nav-list">
+            
+              <li class="aux-nav-list-item">
+                <a href="#" class="site-button">
+                  Dark mode
+                </a>
+              </li>
+            
+              <li class="aux-nav-list-item">
+                <a href="//github.com/CircuitVerse" class="site-button">
+                  CircuitVerse on GitHub
+                </a>
+              </li>
+            
+          </ul>
+        </nav>
+      
+    </div>
+    <div id="main-content-wrap" class="main-content-wrap">
+      
+        
+          <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+            <ol class="breadcrumb-nav-list">
+              
+                <li class="breadcrumb-nav-list-item"><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-ssi/">Combinational SSI</a></li>
+              
+              <li class="breadcrumb-nav-list-item"><span>Logic gates</span></li>
+            </ol>
+          </nav>
+        
+      
+      <div id="main-content" class="main-content" role="main">
+        
+          <script type="text/javascript">
+ 
+ // Wait for the page to load first
+ window.onload = function() {
+     
+     // sidebar collapse code
+     // TODO: correct style and add media size checking(is it needed?)
+     var sidebar = document.querySelector("div.side-bar");
+     var sidebarButton = document.getElementById("sidebarCollapse");
+     var breadcrumbs = document.getElementById("breadcrumb-nav");
+     sidebarButton.onclick = function() {
+	 sidebar.classList.toggle("active");
+	 document.getElementById("main-content").classList.toggle("moved");
+	 document.getElementById("main-header").classList.toggle("moved");
+	 if (breadcrumbs) {
+	     breadcrumbs.classList.toggle("moved");
+	 }
+	 sidebarButton.classList.toggle("moved");
+	 sidebarButton.classList.toggle("colored");
+     }
+ }
+ 
+</script>
+
+<!-- -*- engine:django -*- -->	
+<div id="content">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
+        <button type="button" id="sidebarCollapse" class="btn btn-info new mr-3">
+            <i class="fas fa-align-left"></i>
+            <span>Sidebar</span>
+        </button>
+        <div class="prev-next-controls">
+            <div><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-ssi/" class="btn btn-info">Previous</a></div>
+            <div><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-ssi/logic-families.html" class="btn btn-info">Next</a></div>
+        </div>
+    </nav>
+</div>
+      <h1 class="no_toc" id="logic-gates">
+        
+        
+          <a href="#logic-gates" class="anchor-heading" aria-labelledby="logic-gates"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Logic gates
+        
+        
+      </h1>
+    
+      <h2 class="no_toc text-delta" id="table-of-contents">
+        
+        
+          <a href="#table-of-contents" class="anchor-heading" aria-labelledby="table-of-contents"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Table of contents
+        
+        
+      </h2>
+    
+
+<ol id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li>
+<a href="#not-gate" id="markdown-toc-not-gate">NOT gate</a>    <ol>
+      <li><a href="#verilog-code-for-not-gate" id="markdown-toc-verilog-code-for-not-gate">Verilog code for NOT gate</a></li>
+    </ol>
+  </li>
+  <li>
+<a href="#and-gate" id="markdown-toc-and-gate">AND gate</a>    <ol>
+      <li><a href="#verilog-code-for-and-gate" id="markdown-toc-verilog-code-for-and-gate">Verilog code for AND gate</a></li>
+    </ol>
+  </li>
+  <li>
+<a href="#or-gate" id="markdown-toc-or-gate">OR gate</a>    <ol>
+      <li><a href="#verilog-code-for-or-gate" id="markdown-toc-verilog-code-for-or-gate">Verilog code for OR gate</a></li>
+    </ol>
+  </li>
+  <li>
+<a href="#nand-gate" id="markdown-toc-nand-gate">NAND gate</a>    <ol>
+      <li><a href="#verilog-code-for-nand-gate" id="markdown-toc-verilog-code-for-nand-gate">Verilog code for NAND gate</a></li>
+    </ol>
+  </li>
+  <li>
+<a href="#nor-gate" id="markdown-toc-nor-gate">NOR gate</a>    <ol>
+      <li><a href="#verilog-code-for-nor-gate" id="markdown-toc-verilog-code-for-nor-gate">Verilog code for NOR gate</a></li>
+    </ol>
+  </li>
+  <li>
+<a href="#xor-gate" id="markdown-toc-xor-gate">XOR gate</a>    <ol>
+      <li><a href="#verilog-code-for-xor-gate" id="markdown-toc-verilog-code-for-xor-gate">Verilog code for XOR gate</a></li>
+    </ol>
+  </li>
+  <li>
+<a href="#xnor-gate" id="markdown-toc-xnor-gate">XNOR gate</a>    <ol>
+      <li><a href="#verilog-code-for-xnor-gate" id="markdown-toc-verilog-code-for-xnor-gate">Verilog code for XNOR gate</a></li>
+    </ol>
+  </li>
+</ol>
+<hr>
+      <h2 id="introduction">
+        
+        
+          <a href="#introduction" class="anchor-heading" aria-labelledby="introduction"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Introduction
+        
+        
+      </h2>
+    
+
+<p>Logic Gates are devices which perform logical operations on one or more inputs and produces a single output.
+Logic gates can be categorized into 3 groups:</p>
+<ol>
+  <li>Basic Gates: NOT, AND, OR</li>
+  <li>Universal Gates: NAND, NOR</li>
+  <li>Arithmetic Gates: X-OR, X-NOR</li>
+</ol>
+      <h2>
+        
+        
+          Truth Table
+        
+        
+      </h2>
+    
+
+<p>The Table which contains all logical possibilities is known as truth table.</p>
+      <h2 id="not-gate">
+        
+        
+          <a href="#not-gate" class="anchor-heading" aria-labelledby="not-gate"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> NOT gate
+        
+        
+      </h2>
+    
+
+<p>The NOT gate is also known as an inverter because it produces the exact opposite of the input as output. It has one input and one output. The Truth table for NOT gate is given below</p>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Input</th>
+      <th style="text-align: center">Output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p><img src="/assets/images/NotGate.svg"></p>
+
+<iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46600" id="gates_01" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+      <h3 id="verilog-code-for-not-gate">
+        
+        
+          <a href="#verilog-code-for-not-gate" class="anchor-heading" aria-labelledby="verilog-code-for-not-gate"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Verilog code for NOT gate
+        
+        
+      </h3>
+    
+
+<div class="language-verilog highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">module</span> <span class="n">not_gate</span><span class="p">(</span>
+    <span class="kt">input</span> <span class="n">a</span><span class="p">,</span>
+    <span class="kt">output</span> <span class="n">c</span> <span class="p">);</span>
+<span class="k">assign</span> <span class="n">c</span><span class="o">=~</span><span class="n">a</span><span class="p">;</span>
+<span class="k">endmodule</span>
+</code></pre></div></div>
+      <h2 id="and-gate">
+        
+        
+          <a href="#and-gate" class="anchor-heading" aria-labelledby="and-gate"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> AND gate
+        
+        
+      </h2>
+    
+
+<p>The AND gate’s operation is similar to that of multiplication. It has two inputs and one output. The output is high (1) if both inputs are 1, and for all other cases, the output is low (0).
+The Truth table for AND gate which consists of two inputs is given below</p>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Input 1</th>
+      <th style="text-align: center">Input 2</th>
+      <th style="text-align: center">Output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p><img src="/assets/images/AndGate.svg"></p>
+
+<iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46601" id="gates_02" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+      <h3 id="verilog-code-for-and-gate">
+        
+        
+          <a href="#verilog-code-for-and-gate" class="anchor-heading" aria-labelledby="verilog-code-for-and-gate"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Verilog code for AND gate
+        
+        
+      </h3>
+    
+
+<div class="language-verilog highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">module</span> <span class="n">and_gate</span><span class="p">(</span>
+    <span class="kt">input</span> <span class="n">a</span><span class="p">,</span>
+    <span class="kt">input</span> <span class="n">b</span><span class="p">,</span>
+    <span class="kt">output</span> <span class="n">c</span> <span class="p">);</span>
+<span class="k">assign</span> <span class="n">c</span><span class="o">=</span><span class="n">a</span> <span class="o">&amp;</span> <span class="n">b</span><span class="p">;</span>
+<span class="k">endmodule</span>
+</code></pre></div></div>
+      <h2 id="or-gate">
+        
+        
+          <a href="#or-gate" class="anchor-heading" aria-labelledby="or-gate"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> OR gate
+        
+        
+      </h2>
+    
+
+<p>The OR gate has two inputs and one output. If at least one of the inputs is 1, then the output will be high (1). If neither of the inputs is 1, then the output will be low (0).
+The Truth table of OR gate which consists of two inputs is given below</p>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Input 1</th>
+      <th style="text-align: center">Input 2</th>
+      <th style="text-align: center">Output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p><img src="/assets/images/OrGate.svg"></p>
+
+<iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46603" id="gates_03" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+      <h3 id="verilog-code-for-or-gate">
+        
+        
+          <a href="#verilog-code-for-or-gate" class="anchor-heading" aria-labelledby="verilog-code-for-or-gate"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Verilog code for OR gate
+        
+        
+      </h3>
+    
+
+<div class="language-verilog highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">module</span> <span class="n">or_gate</span><span class="p">(</span>
+    <span class="kt">input</span> <span class="n">a</span><span class="p">,</span>
+    <span class="kt">input</span> <span class="n">b</span><span class="p">,</span>
+    <span class="kt">output</span> <span class="n">c</span> <span class="p">);</span>
+<span class="k">assign</span> <span class="n">c</span><span class="o">=</span><span class="n">a</span> <span class="o">|</span> <span class="n">b</span><span class="p">;</span>
+<span class="k">endmodule</span>
+</code></pre></div></div>
+      <h2 id="nand-gate">
+        
+        
+          <a href="#nand-gate" class="anchor-heading" aria-labelledby="nand-gate"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> NAND gate
+        
+        
+      </h2>
+    
+
+<p>The NAND gate is the complement of the AND gate. You can think of it as an AND gate followed immediately by a NOT gate. Its output is low (0) when both the inputs are 1, and for all other cases, its output is high (1). The symbol of NAND gate consists of AND gate followed by a small circle.
+The Truth table of NAND gate which consists of two inputs is given below</p>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Input 1</th>
+      <th style="text-align: center">Input 2</th>
+      <th style="text-align: center">Output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p><img src="/assets/images/NandGate.svg"></p>
+
+<iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46604" id="gates_04" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+      <h3 id="verilog-code-for-nand-gate">
+        
+        
+          <a href="#verilog-code-for-nand-gate" class="anchor-heading" aria-labelledby="verilog-code-for-nand-gate"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Verilog code for NAND gate
+        
+        
+      </h3>
+    
+
+<div class="language-verilog highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">module</span> <span class="n">nand_gate</span><span class="p">(</span>
+    <span class="kt">input</span> <span class="n">a</span><span class="p">,</span>
+    <span class="kt">input</span> <span class="n">b</span><span class="p">,</span>
+    <span class="kt">output</span> <span class="n">c</span> <span class="p">);</span>
+<span class="k">assign</span> <span class="n">c</span><span class="o">=~</span><span class="p">(</span><span class="n">a</span> <span class="o">&amp;</span> <span class="n">b</span><span class="p">);</span>
+<span class="k">endmodule</span>
+</code></pre></div></div>
+      <h2 id="nor-gate">
+        
+        
+          <a href="#nor-gate" class="anchor-heading" aria-labelledby="nor-gate"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> NOR gate
+        
+        
+      </h2>
+    
+
+<p>The NOR gate is the complement of the OR gate. You can think of it as an OR gate followed immediately by a NOT gate. Its output is low (0) when one or both of the inputs are 1, and for all other cases, its output is high (1). The symbol of NOR gate consists of OR gate followed by a small circle.
+The Truth table of NOR gate which consists of two inputs is given below</p>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Input 1</th>
+      <th style="text-align: center">Input 2</th>
+      <th style="text-align: center">Output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p><img src="/assets/images/NorGate.svg"></p>
+
+<iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46606" id="gates_05" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+      <h3 id="verilog-code-for-nor-gate">
+        
+        
+          <a href="#verilog-code-for-nor-gate" class="anchor-heading" aria-labelledby="verilog-code-for-nor-gate"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Verilog code for NOR gate
+        
+        
+      </h3>
+    
+
+<div class="language-verilog highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">module</span> <span class="n">nor_gate</span><span class="p">(</span>
+    <span class="kt">input</span> <span class="n">a</span><span class="p">,</span>
+    <span class="kt">input</span> <span class="n">b</span><span class="p">,</span>
+    <span class="kt">output</span> <span class="n">c</span> <span class="p">);</span>
+<span class="k">assign</span> <span class="n">c</span><span class="o">=~</span><span class="p">(</span><span class="n">a</span> <span class="o">|</span> <span class="n">b</span><span class="p">);</span>
+<span class="k">endmodule</span>
+</code></pre></div></div>
+      <h2 id="xor-gate">
+        
+        
+          <a href="#xor-gate" class="anchor-heading" aria-labelledby="xor-gate"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> XOR gate
+        
+        
+      </h2>
+    
+
+<p>The XOR (or) Exclusive-OR is a digital Logic gate that gives the output as high (1) if and only if one of the input is 1.
+The Truth table of XOR gate which consists of two inputs is given below</p>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Input 1</th>
+      <th style="text-align: center">Input 2</th>
+      <th style="text-align: center">Output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p><img src="/assets/images/XorGate.svg"></p>
+
+<iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46609" id="gates_06" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+      <h3 id="verilog-code-for-xor-gate">
+        
+        
+          <a href="#verilog-code-for-xor-gate" class="anchor-heading" aria-labelledby="verilog-code-for-xor-gate"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Verilog code for XOR gate
+        
+        
+      </h3>
+    
+
+<div class="language-verilog highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">module</span> <span class="n">xor_gate</span><span class="p">(</span>
+    <span class="kt">input</span> <span class="n">a</span><span class="p">,</span>
+    <span class="kt">input</span> <span class="n">b</span><span class="p">,</span>
+    <span class="kt">output</span> <span class="n">c</span> <span class="p">);</span>
+<span class="k">assign</span> <span class="n">c</span><span class="o">=</span><span class="n">a</span> <span class="o">^</span> <span class="n">b</span><span class="p">;</span>
+<span class="k">endmodule</span>
+</code></pre></div></div>
+      <h2 id="xnor-gate">
+        
+        
+          <a href="#xnor-gate" class="anchor-heading" aria-labelledby="xnor-gate"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> XNOR gate
+        
+        
+      </h2>
+    
+
+<p>The XNOR (or) Exclusive-NOR is a digital Logic gate that gives the output as high (1) when both the inputs are same.
+The Truth table of XNOR gate which consists of two inputs is given below</p>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Input 1</th>
+      <th style="text-align: center">Input 2</th>
+      <th style="text-align: center">Output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p><img src="/assets/images/XnorGate.svg"></p>
+
+<iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46613" id="gates_07" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+      <h3 id="verilog-code-for-xnor-gate">
+        
+        
+          <a href="#verilog-code-for-xnor-gate" class="anchor-heading" aria-labelledby="verilog-code-for-xnor-gate"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Verilog code for XNOR gate
+        
+        
+      </h3>
+    
+
+<div class="language-verilog highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">module</span> <span class="n">xnor_gate</span><span class="p">(</span>
+    <span class="kt">input</span> <span class="n">a</span><span class="p">,</span>
+    <span class="kt">input</span> <span class="n">b</span><span class="p">,</span>
+    <span class="kt">output</span> <span class="n">c</span> <span class="p">);</span>
+<span class="k">assign</span> <span class="n">c</span><span class="o">=~</span><span class="p">(</span><span class="n">a</span> <span class="o">^</span> <span class="n">b</span><span class="p">);</span>
+<span class="k">endmodule</span>
+</code></pre></div></div>
+
+<style>
+.container		{width: 450px; margin: auto; margin-top: -10px;}
+.circuit		{display: inline-block; float: left; width: 100%; min-width: 450px; border: 2px solid Grey; padding: 0px 5px 0px 5px; height: 460px; margin: 2px}
+.bulb			{float: left; background-image:url(/assets/images/bulb_off.png); width: 60px; height: 100px; margin: 80px 0px 0px 5px}
+.dark			{background-image:url(/assets/images/dark_off.png); background-repeat: no-repeat; width: 100px; height: 115px; margin: 10px; padding: 1px}
+.burglar		{background-image:url(/assets/images/burglar_off.png); background-repeat: no-repeat; width: 100px; height: 115px; margin: 10px; padding: 1px}
+.switch			{background-image:url(/assets/images/switch_off.png); background-repeat: no-repeat; width: 87px; height: 105px; margin: 25px 5px 15px 5px; padding: 1px}
+.label			{margin-top: 100px; text-align: center; font-style:italic}
+.drop 			{height: 110px; width: 110px; padding: 5px; border: 1px dashed black; float: left; margin: 75px -9px 0 -22px}
+.tile			{margin-left: 5px; float:left; max-width: 70px; max-height: 70px; height: 15%; width: 15%}
+#clipboard		{position: relative; float:right; width: 75px; height: 75px; border: 1px dotted green; margin: -2px 5px 5px 5px; overflow: hidden; text-align:center}
+#clipboard img	{padding: 2px; float:none}
+#clipboard img:hover {cursor: pointer;}
+img:hover {cursor: pointer;}
+
+
+@media screen and (max-width: 849px) {
+.clipboard_div {padding-top: 10%;margin: 5%;}
+}
+@media screen and (max-width: 499px) {
+    p			{display: none}
+.circuit	{display: none}
+.tile		{display: none}
+    #too_small	{display: block; margin-top: -14px}
+}
+@media screen and (min-width: 500px) {
+    #too_small		{display: none}
+}
+</style>
+
+<script type="text/javascript">
+
+var bit = new Array(4);
+bit[0] = false;
+bit[1] = false;
+bit[2] = false;
+bit[3] = false;
+var bit_display = new Array(2);
+var switch_display = new Array(4);
+var image_cache1 = new Image();
+image_cache1.src = "/assets/images/bulb_on.png";
+var image_cache2 = new Image();
+image_cache2.src = "/assets/images/dark_on.png";
+var image_cache3 = new Image();
+image_cache3.src = "/assets/images/burglar_on.png";
+var image_cache4 = new Image();
+image_cache4.src = "/assets/images/switch_on.png";
+switch_display[0] = new Array(2);
+switch_display[1] = new Array(2);
+switch_display[2] = new Array(2);
+switch_display[3] = new Array(2);
+bit_display[false] = "url(/assets/images/bulb_off.png)";
+bit_display[true] = "url(/assets/images/bulb_on.png)";
+switch_display[0][false] = "url(/assets/images/dark_off.png)";
+switch_display[0][true] = "url(/assets/images/dark_on.png)";
+switch_display[1][false] = "url(/assets/images/burglar_off.png)";
+switch_display[1][true] = "url(/assets/images/burglar_on.png)";
+switch_display[2][false] = "url(/assets/images/switch_off.png)";
+switch_display[2][true] = "url(/assets/images/switch_on.png)";
+switch_display[3][false] = "url(/assets/images/switch_off.png)";
+switch_display[3][true] = "url(/assets/images/switch_on.png)";
+
+function toggle_switch(switch_no)
+{
+    document.getElementById(switch_no).style.backgroundImage = switch_display[switch_no][bit[switch_no] = !bit[switch_no]];
+    if(switch_no < 2) { show_result(1); } else { show_result(2); }
+}
+
+function show_result(circuit_no)
+{
+    if(circuit_no == 1) { var a = 0, b = 1; } else { var a = 2, b = 3; }
+
+    switch(document.getElementById("R"+circuit_no).value)
+    {
+        case "AND":
+            document.getElementById("result"+circuit_no).style.backgroundImage = bit_display[bit[a] && bit[b]];
+            break;
+        case "OR":
+            document.getElementById("result"+circuit_no).style.backgroundImage = bit_display[bit[a] || bit[b]];
+            break;
+        case "NAND":
+            document.getElementById("result"+circuit_no).style.backgroundImage = bit_display[!(bit[a] && bit[b])];
+            break;
+        case "NOR":
+            document.getElementById("result"+circuit_no).style.backgroundImage = bit_display[!(bit[a] || bit[b])];
+            break;
+        case "EOR":
+            document.getElementById("result"+circuit_no).style.backgroundImage = bit_display[bit[a] != bit[b]];
+            break;
+        case "NXOR":
+            document.getElementById("result"+circuit_no).style.backgroundImage = bit_display[!(bit[a] != bit[b])];
+            break;
+        default:
+            document.getElementById("result"+circuit_no).style.backgroundImage = bit_display[false];
+    }
+}
+
+function disableSelection(target)
+{
+    if(typeof target.onselectstart!="undefined") //IE route
+        target.onselectstart=function(){return false;}
+    else if(typeof target.style.MozUserSelect!="undefined") //Firefox route
+        target.style.MozUserSelect="none";
+    else //All other route (ie: Opera)
+        target.onmousedown=function(){return false;}
+    target.style.cursor = "default";
+}
+</script>
+
+<p><img src="/assets/images/AND_gate.png" alt="AND" class="tile">
+<img src="/assets/images/OR_gate.png" alt="OR" class="tile">
+<img src="/assets/images/NAND_gate.png" alt="NAND" class="tile">
+<img src="/assets/images/NOR_gate.png" alt="NOR" class="tile">
+<img src="/assets/images/EOR_gate.png" alt="EOR" class="tile">
+<img src="/assets/images/XNOR_gate.png" alt="NXOR" class="tile"></p>
+<div class="clipboard_div"><div id="clipboard"></div></div>
+<p style="clear:left">You can also click/tap a symbol to copy it and then click/tap to paste it into the box. </p>
+<div style="display: inline-block">
+    <div class="circuit">
+      <h2 align="center">
+        
+        
+          Two-Way Light Switch
+        
+        
+      </h2>
+    
+        <p>In your house you probabably have a light with more than one switch - e.g. landing lights often have switches upstairs and downstairs.  Add the correct logic gate to the circuit and see if you can get this light work to work in the same way.  You can click on <em>Upstairs</em> and <em>Downstairs</em> switches to change them.</p>
+        <div class="container">
+            <div style="width: 100px; height: 210px; float:left">
+                <div id="2" class="switch" onclick="toggle_switch(2);">
+                    <div class="label">Upstairs</div>
+                </div>
+                <div id="3" class="switch" onclick="toggle_switch(3);"><div class="label">Downstairs</div></div>
+            </div>
+            <div style="margin: 30px 0px 0px 10px; float: left"><img src="/assets/images/input.png" width="91" height="201" alt="Upstairs"></div>
+            <div id="Q2" class="drop"></div>
+<input id="R2" onchange="show_result(2);" type="hidden">
+            <div style="margin: 28px 5px 0px 0px; float: left"><img src="/assets/images/output.png" width="91" height="201" alt="Downstairs"></div>
+            <div id="result2" class="bulb"></div>
+        </div>
+</div>
+    <div class="circuit">
+      <h2 align="center">
+        
+        
+          Security Light
+        
+        
+      </h2>
+    
+        <p>You can buy security lights that come on only when it's dark and they sense some movement. Add the correct logic gate to the circuit and see if you can get it to work (you can click on <em>Darkness</em> and <em>Movement</em> to change them).</p>
+        <div class="container">
+            <div style="width: 100px; height: 210px; float:left">
+                <div id="0" class="dark" onclick="toggle_switch(0);"><div class="label">Darkness</div></div>
+                <div id="1" class="burglar" onclick="toggle_switch(1);"><div class="label">Movement</div></div>
+            </div>
+            <div style="margin: 30px 0px 0px 10px; float: left"><img src="/assets/images/input.png" width="91" height="201" alt="Darkness"></div>
+            <div id="Q1" class="drop"></div>
+<input id="R1" onchange="show_result(1);" type="hidden">
+            <div style="margin: 28px 5px 0px 0px; float: left"><img src="/assets/images/output.png" width="91" height="201" alt="Movement"></div>
+            <div id="result1" class="bulb"></div>
+</div>
+    </div>
+</div>
+<div id="too_small">Unfortunately your screen is too small to display this page correctly.  If you are using a tablet or phone you could try turning it round to landscape orientation.</div>
+
+<script type="text/javascript">
+
+    function receive_drop(e)
+    {
+        if(e.target.tagName == "IMG") { var drop_area = e.target.parentNode.id; } else { var drop_area = e.target.id; }
+        var answer_area = "R" + drop_area.substring(1);
+        e.preventDefault();
+        if(e.dataTransfer.getData('Text') != null && e.dataTransfer.getData('Text').substring(0,4) != "http")
+        {
+            document.getElementById(drop_area).innerHTML = e.dataTransfer.getData('Text');
+            document.getElementById(answer_area).value = image.getAttribute('alt');
+        }
+        e.cancelBubble = true;
+        show_result(1);
+        show_result(2);
+        return false;
+    }
+
+    function clicked(e)
+    {
+        if(e.target.tagName == "IMG") { var drop_area = e.target.parentNode.id; } else { var drop_area = e.target.id; }
+        var answer_area = "R" + drop_area.substring(1);
+        e.preventDefault();
+        if(document.getElementById("clipboard").innerHTML > "")
+        {
+            document.getElementById(drop_area).innerHTML = document.getElementById("clipboard").innerHTML;
+            document.getElementById(answer_area).value = answer;
+            document.getElementById("clipboard").innerHTML = "";
+        }
+        e.cancelBubble = true;
+        show_result(1);
+        show_result(2);
+        return false;
+    }
+
+    function cancelEvent() { return false; }
+
+    var image, copied, answer;
+    disableSelection(document.body);
+
+    var drops = document.getElementsByClassName('drop'), i = drops.length;
+    while(i--) {
+        drops[i].ondragenter = cancelEvent;
+        drops[i].ondragover = cancelEvent;
+        drops[i].ondrop = function (event) { receive_drop(event || window.event); };
+        drops[i].ondragover = function () { return false; };
+        drops[i].onclick = function (event) { clicked(event || window.event); };
+    }
+
+    var imgs = document.getElementsByClassName('tile');
+    i = imgs.length;
+    while(i--) {
+        imgs[i].ondragstart = function (event) {
+            event = event || window.event;
+            event.dataTransfer.setData('Text', '<img src="'+this.src+'">');
+            image = this;
+        }
+        imgs[i].onclick = function (event) {
+            event = event || window.event;
+            document.getElementById("clipboard").innerHTML = '<img src="'+this.src+'">';
+            copied = this;
+            answer = this.getAttribute('alt');
+        }
+    }
+
+</script>
+
+
+
+<div class="prev-next-controls mt-3">
+  <div><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-ssi/" class="btn btn-info">Previous</a></div>
+  <div><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-ssi/logic-families.html" class="btn btn-info">Next</a></div>
+</div>
+
+<!-- -*- engine:django -*- -->
+
+<div id="disqus_thread" style="margin-top:75px"></div>
+<script>
+     
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  /*
+  var disqus_config = function () {
+  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
+  */
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://interactive-book.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
+        
+
+        
+
+        
+          <hr>
+          <footer>
+            
+            
+              <p class="text-small text-grey-dk-000 mb-0">Copyright © 2021 Contributors to CircuitVerse. Distributed under a [CC-by-sa] license.</p>
+            
+
+            
+              <div class="d-flex mt-2">
+                
+                
+                  <p class="text-small text-grey-dk-000 mb-0">
+                    <a href="https://github.com/CircuitVerse/Interactive-Book/tree/master/docs/comb-ssi/logic-gates.md" id="edit-this-page">Edit this page on GitHub.</a>
+                  </p>
+                
+              </div>
+            
+          </footer>
+        
+
+      </div>
+    </div>
+
+    
+      
+
+      <div class="search-overlay"></div>
+    
+  </div>
+</body>
+</html>

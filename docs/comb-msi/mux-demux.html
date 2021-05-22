@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+
+  <link rel="shortcut icon" href="/pages/CircuitVerse/Interactive-Book/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="/pages/CircuitVerse/Interactive-Book/assets/css/just-the-docs-default.css">
+
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112678513-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112678513-3');
+    </script>
+
+  
+
+  
+    <script type="text/javascript" src="/pages/CircuitVerse/Interactive-Book/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="/pages/CircuitVerse/Interactive-Book/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>MUX/DEMUX | CircuitVerse</title>
+<meta name="generator" content="Jekyll v3.9.0">
+<meta property="og:title" content="MUX/DEMUX">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="A Book to learn Digital Logic Design.">
+<meta property="og:description" content="A Book to learn Digital Logic Design.">
+<link rel="canonical" href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-msi/mux-demux.html">
+<meta property="og:url" content="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-msi/mux-demux.html">
+<meta property="og:site_name" content="CircuitVerse">
+<script type="application/ld+json">
+{"description":"A Book to learn Digital Logic Design.","url":"https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-msi/mux-demux.html","@type":"WebPage","headline":"MUX/DEMUX","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <script defer src="/assets/js/fontawesome-solid.js"></script>
+<script defer src="/assets/js/fontawesome-main.js"></script>
+<script src="/assets/js/jquery-3.4.1.min.js"></script>
+<script src="/assets/js/module.js"></script>
+<script src="/assets/js/quiz.js"></script>
+<script src="/assets/js/global_scripts.js"></script>
+
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="svg-link" viewbox="0 0 24 24">
+      <title>Link</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+      </svg>
+    </symbol>
+    <symbol id="svg-search" viewbox="0 0 24 24">
+      <title>Search</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+        <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </symbol>
+    <symbol id="svg-menu" viewbox="0 0 24 24">
+      <title>Menu</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+        <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </symbol>
+    <symbol id="svg-arrow-right" viewbox="0 0 24 24">
+      <title>Expand</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </symbol>
+    <symbol id="svg-doc" viewbox="0 0 24 24">
+      <title>Document</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+        <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+      </svg>
+    </symbol>
+  </svg>
+
+  <div class="side-bar">
+    <div class="site-header">
+      <a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/" class="site-title lh-tight">
+  CircuitVerse
+
+</a>
+      <a href="#" id="menu-button" class="site-button">
+        <svg viewbox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
+      </a>
+    </div>
+    <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
+      
+        <ul class="nav-list">
+<li class="nav-list-item"><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/" class="nav-list-link">Home</a></li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-representation/" class="nav-list-link">Binary representation</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-representation/binary-numbers.html" class="nav-list-link">Binary numbers</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-representation/negative-quantities.html" class="nav-list-link">Negative quantities</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-representation/number-bases.html" class="nav-list-link">Number bases</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-representation/encoding-information.html" class="nav-list-link">Encoding information</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-representation/discrete-quantities.html" class="nav-list-link">Discrete quantities</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/" class="nav-list-link">Binary algebra</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/addition.html" class="nav-list-link">Addition</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/subtraction.html" class="nav-list-link">Subtraction</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/multiplication.html" class="nav-list-link">Multiplication</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/division.html" class="nav-list-link">Division</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/boolean-algebra.html" class="nav-list-link">Boolean algebra</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/boolean-functions.html" class="nav-list-link">Boolean functions</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/shannon.html" class="nav-list-link">Shannon decomposition</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/binary-algebra/ieee-std-754.html" class="nav-list-link">IEEE Std 754</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-ssi/" class="nav-list-link">Combinational SSI</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-ssi/logic-gates.html" class="nav-list-link">Logic gates</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-ssi/logic-families.html" class="nav-list-link">Logic families</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-ssi/universal-gates.html" class="nav-list-link">Universal gates</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/" class="nav-list-link">Logic Design</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/functional-description.html" class="nav-list-link">Functional description</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/implementation.html" class="nav-list-link">Implementation</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/canonical.html" class="nav-list-link">Canonical functions</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/kmaps.html" class="nav-list-link">K-Maps</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/mev.html" class="nav-list-link">Map-entered variables</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/qmc.html" class="nav-list-link">Quine McCluskey</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/logic-design/binary-cubes.html" class="nav-list-link">Binary cubes</a></li>
+</ul>
+</li>
+<li class="nav-list-item active">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-msi/" class="nav-list-link">Combinational MSI</a><ul class="nav-list ">
+<li class="nav-list-item  active"><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-msi/mux-demux.html" class="nav-list-link active">MUX/DEMUX</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-msi/encoders-decoders.html" class="nav-list-link">Encoders/Decoders</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-msi/adders.html" class="nav-list-link">Adders</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-msi/mux-functions.html" class="nav-list-link">MUX-based functions</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-lsi/" class="nav-list-link">Combinational LSI</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-lsi/rom.html" class="nav-list-link">ROM</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-lsi/alu.html" class="nav-list-link">ALU</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-ssi/" class="nav-list-link">Sequential SSI</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-ssi/latches.html" class="nav-list-link">Latches</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-ssi/flip-flops.html" class="nav-list-link">Flip-flops</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-ssi/clock-signals.html" class="nav-list-link">Clock signals</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-design/" class="nav-list-link">Sequential Design</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-design/fsm.html" class="nav-list-link">FSM</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-design/seq-synth.html" class="nav-list-link">Sequential synthesis</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-design/race-conditions.html" class="nav-list-link">Race conditions</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-design/flow-diagrams.html" class="nav-list-link">Flowchart diagrams</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-design/mds.html" class="nav-list-link">MDS Diagrams</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-msi/" class="nav-list-link">Sequential MSI</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-msi/registers.html" class="nav-list-link">Registers</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-msi/counters.html" class="nav-list-link">Counters</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-msi/msi-seq-design.html" class="nav-list-link">MSI based design</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-msi/mult-div.html" class="nav-list-link">Multipliers/Dividers</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-lsi/" class="nav-list-link">Sequential LSI</a><ul class="nav-list ">
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-lsi/rom-microcontrollers.html" class="nav-list-link">ROM-based µcontrollers</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-lsi/fpga.html" class="nav-list-link">FPGA</a></li>
+<li class="nav-list-item "><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/seq-lsi/microprocessors.html" class="nav-list-link">Microprocessors</a></li>
+</ul>
+</li>
+<li class="nav-list-item"><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/contributing_guidelines.html" class="nav-list-link">Guidelines</a></li>
+</ul>
+
+      
+    </nav>
+    <footer class="site-footer">
+      This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
+    </footer>
+  </div>
+  <div class="main" id="top">
+    <div id="main-header" class="main-header">
+      
+        <div class="search">
+          <div class="search-input-wrap">
+            <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search CircuitVerse" aria-label="Search CircuitVerse" autocomplete="off">
+            <label for="search-input" class="search-label"><svg viewbox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
+          </div>
+          <div id="search-results" class="search-results"></div>
+        </div>
+      
+      
+        <nav aria-label="Auxiliary" class="aux-nav">
+          <ul class="aux-nav-list">
+            
+              <li class="aux-nav-list-item">
+                <a href="#" class="site-button">
+                  Dark mode
+                </a>
+              </li>
+            
+              <li class="aux-nav-list-item">
+                <a href="//github.com/CircuitVerse" class="site-button">
+                  CircuitVerse on GitHub
+                </a>
+              </li>
+            
+          </ul>
+        </nav>
+      
+    </div>
+    <div id="main-content-wrap" class="main-content-wrap">
+      
+        
+          <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+            <ol class="breadcrumb-nav-list">
+              
+                <li class="breadcrumb-nav-list-item"><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-msi/">Combinational MSI</a></li>
+              
+              <li class="breadcrumb-nav-list-item"><span>MUX/DEMUX</span></li>
+            </ol>
+          </nav>
+        
+      
+      <div id="main-content" class="main-content" role="main">
+        
+          <script type="text/javascript">
+ 
+ // Wait for the page to load first
+ window.onload = function() {
+     
+     // sidebar collapse code
+     // TODO: correct style and add media size checking(is it needed?)
+     var sidebar = document.querySelector("div.side-bar");
+     var sidebarButton = document.getElementById("sidebarCollapse");
+     var breadcrumbs = document.getElementById("breadcrumb-nav");
+     sidebarButton.onclick = function() {
+	 sidebar.classList.toggle("active");
+	 document.getElementById("main-content").classList.toggle("moved");
+	 document.getElementById("main-header").classList.toggle("moved");
+	 if (breadcrumbs) {
+	     breadcrumbs.classList.toggle("moved");
+	 }
+	 sidebarButton.classList.toggle("moved");
+	 sidebarButton.classList.toggle("colored");
+     }
+ }
+ 
+</script>
+
+<!-- -*- engine:django -*- -->	
+<div id="content">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
+        <button type="button" id="sidebarCollapse" class="btn btn-info new mr-3">
+            <i class="fas fa-align-left"></i>
+            <span>Sidebar</span>
+        </button>
+        <div class="prev-next-controls">
+            <div><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-msi/" class="btn btn-info">Previous</a></div>
+            <div><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-msi/encoders-decoders.html" class="btn btn-info">Next</a></div>
+        </div>
+    </nav>
+</div>
+      <h1 class="no_toc" id="multiplexers-and-demultiplexers">
+        
+        
+          <a href="#multiplexers-and-demultiplexers" class="anchor-heading" aria-labelledby="multiplexers-and-demultiplexers"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Multiplexers and Demultiplexers
+        
+        
+      </h1>
+    
+      <h2 class="no_toc text-delta" id="table-of-contents">
+        
+        
+          <a href="#table-of-contents" class="anchor-heading" aria-labelledby="table-of-contents"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Table of contents
+        
+        
+      </h2>
+    
+
+<ol id="markdown-toc">
+  <li><a href="#multiplexers" id="markdown-toc-multiplexers">Multiplexers</a></li>
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#block-diagram" id="markdown-toc-block-diagram">Block diagram</a></li>
+  <li>
+<a href="#multiplexers-come-in-multiple-variations" id="markdown-toc-multiplexers-come-in-multiple-variations">Multiplexers come in multiple variations</a>    <ol>
+      <li><a href="#2--1-multiplexer" id="markdown-toc-2--1-multiplexer">2 : 1 multiplexer</a></li>
+      <li><a href="#4--1-multiplexer" id="markdown-toc-4--1-multiplexer">4 : 1 multiplexer</a></li>
+      <li><a href="#8--1-multiplexer" id="markdown-toc-8--1-multiplexer">8 : 1 multiplexer</a></li>
+      <li><a href="#16--1-multiplexer" id="markdown-toc-16--1-multiplexer">16 : 1 multiplexer</a></li>
+    </ol>
+  </li>
+  <li><a href="#demultiplexers" id="markdown-toc-demultiplexers">Demultiplexers</a></li>
+  <li><a href="#introduction-1" id="markdown-toc-introduction-1">Introduction</a></li>
+  <li>
+<a href="#demultiplexers-in-multiple-variations" id="markdown-toc-demultiplexers-in-multiple-variations">Demultiplexers in multiple variations.</a>    <ol>
+      <li>
+<a href="#1--2--demultiplexer" id="markdown-toc-1--2--demultiplexer">1 : 2  demultiplexer</a>        <ol>
+          <li><a href="#block-diagram-1" id="markdown-toc-block-diagram-1">Block diagram</a></li>
+          <li><a href="#truth-table-4" id="markdown-toc-truth-table-4">Truth table</a></li>
+        </ol>
+      </li>
+      <li><a href="#1--4--demultiplexer" id="markdown-toc-1--4--demultiplexer">1 : 4  demultiplexer</a></li>
+      <li><a href="#1--8--demultiplexer" id="markdown-toc-1--8--demultiplexer">1 : 8  demultiplexer</a></li>
+      <li><a href="#1--16-demultiplexer" id="markdown-toc-1--16-demultiplexer">1 : 16 demultiplexer</a></li>
+    </ol>
+  </li>
+</ol>
+      <h2 id="multiplexers">
+        
+        
+          <a href="#multiplexers" class="anchor-heading" aria-labelledby="multiplexers"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Multiplexers
+        
+        
+      </h2>
+    
+      <h2 id="introduction">
+        
+        
+          <a href="#introduction" class="anchor-heading" aria-labelledby="introduction"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Introduction
+        
+        
+      </h2>
+    
+
+<p>Multiplexer is a special type of combinational circuit. 
+There are n-data inputs, one output and m select inputs with 2<sup>m</sup> = n. 
+It is a digital circuit which selects one of the n data inputs and routes it to the output. 
+The selection of one of the n inputs is done by the selected inputs. Depending on the digital code applied at the selected inputs, one out of n data sources is selected and transmitted to the single output Y. 
+E is called the strobe or enable input which is useful for the cascading. It is generally an active low terminal that means it will perform the required operation when it is low.</p>
+      <h2 id="block-diagram">
+        
+        
+          <a href="#block-diagram" class="anchor-heading" aria-labelledby="block-diagram"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Block diagram
+        
+        
+      </h2>
+    
+
+<div style="text-align:center"><img src="/assets/images/n_onemultiplexer_blockdiagram.jpg"></div>
+      <h2 id="multiplexers-come-in-multiple-variations">
+        
+        
+          <a href="#multiplexers-come-in-multiple-variations" class="anchor-heading" aria-labelledby="multiplexers-come-in-multiple-variations"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Multiplexers come in multiple variations
+        
+        
+      </h2>
+    
+      <h3 id="2--1-multiplexer">
+        
+        
+          <a href="#2--1-multiplexer" class="anchor-heading" aria-labelledby="2--1-multiplexer"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 2 : 1 multiplexer
+        
+        
+      </h3>
+    
+      <h4 class="no_toc" id="truth-table">
+        
+        
+          <a href="#truth-table" class="anchor-heading" aria-labelledby="truth-table"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Truth Table
+        
+        
+      </h4>
+    
+
+<p><code class="language-plaintext highlighter-rouge">Enable(E) = 1</code></p>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: center">S1</th>
+      <th style="text-align: center">Y(Output)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">T1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">T2</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/746" id="mux_01" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+      <h3 id="4--1-multiplexer">
+        
+        
+          <a href="#4--1-multiplexer" class="anchor-heading" aria-labelledby="4--1-multiplexer"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 4 : 1 multiplexer
+        
+        
+      </h3>
+    
+<p>The 4 : 1 multiplexer has 4 inputs and 2 control signals.</p>
+      <h4 class="no_toc" id="truth-table-1">
+        
+        
+          <a href="#truth-table-1" class="anchor-heading" aria-labelledby="truth-table-1"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Truth Table
+        
+        
+      </h4>
+    
+
+<p><code class="language-plaintext highlighter-rouge">Enable(E) = 1</code></p>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: center">S1</th>
+      <th style="text-align: center">S2</th>
+      <th style="text-align: center">Y(Output)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">T1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">T2</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">T3</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">T4</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/44747" id="mux_02" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+      <h3 id="8--1-multiplexer">
+        
+        
+          <a href="#8--1-multiplexer" class="anchor-heading" aria-labelledby="8--1-multiplexer"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 8 : 1 multiplexer
+        
+        
+      </h3>
+    
+<p>The 8 : 1 multiplexer has 8 inputs and 3 control signals.</p>
+      <h4 class="no_toc" id="truth-table-2">
+        
+        
+          <a href="#truth-table-2" class="anchor-heading" aria-labelledby="truth-table-2"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Truth Table
+        
+        
+      </h4>
+    
+
+<p><code class="language-plaintext highlighter-rouge">Enable(E) = 1</code></p>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: center">S1</th>
+      <th style="text-align: center">S2</th>
+      <th style="text-align: center">S3</th>
+      <th style="text-align: center">Y(Output)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">T1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">T2</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">T3</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">T4</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">T5</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">T6</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">T7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">T8</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/44766" id="mux_03" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+
+<p>You can implement a 8 : 1 multiplexer by chaining <strong>two</strong> 4 : 1 multiplexers, like this:</p>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/44784" id="mux_04" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+      <h3 id="16--1-multiplexer">
+        
+        
+          <a href="#16--1-multiplexer" class="anchor-heading" aria-labelledby="16--1-multiplexer"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 16 : 1 multiplexer
+        
+        
+      </h3>
+    
+<p>The 16 : 1 multiplexer has 16 inputs and 4 control signals.</p>
+
+<p>It can be implemented with <strong>two</strong> 8 : 1 multiplexers:</p>
+      <h4 class="no_toc" id="truth-table-3">
+        
+        
+          <a href="#truth-table-3" class="anchor-heading" aria-labelledby="truth-table-3"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Truth Table
+        
+        
+      </h4>
+    
+
+<p><code class="language-plaintext highlighter-rouge">Enable(E) = 1</code></p>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: center">A</th>
+      <th style="text-align: center">B</th>
+      <th style="text-align: center">C</th>
+      <th style="text-align: center">D</th>
+      <th style="text-align: center">Y(Output)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">T1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">T2</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">T3</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">T4</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">T5</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">T6</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">T7</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">T8</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">T9</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">T10</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">T11</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">T12</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">T13</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">T14</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">T15</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">T16</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/44795" id="mux_05" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+
+<p>It can also be implemented with <strong>five</strong> 4 : 1 multiplexers:</p>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/44804" id="mux_06" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+      <h2 id="demultiplexers">
+        
+        
+          <a href="#demultiplexers" class="anchor-heading" aria-labelledby="demultiplexers"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Demultiplexers
+        
+        
+      </h2>
+    
+      <h2 id="introduction-1">
+        
+        
+          <a href="#introduction-1" class="anchor-heading" aria-labelledby="introduction-1"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Introduction
+        
+        
+      </h2>
+    
+
+<p>A demultiplexer performs the reverse operation of a multiplexer i.e. it receives one input and distributes it over several outputs. 
+It has only one input, n outputs, m select input. 
+At a time only one output line is selected by the select lines and the input is transmitted to the selected output line. 
+A de-multiplexer is equivalent to a single pole multiple way switch as shown in fig.</p>
+      <h2 id="demultiplexers-in-multiple-variations">
+        
+        
+          <a href="#demultiplexers-in-multiple-variations" class="anchor-heading" aria-labelledby="demultiplexers-in-multiple-variations"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Demultiplexers in multiple variations.
+        
+        
+      </h2>
+    
+      <h3 id="1--2--demultiplexer">
+        
+        
+          <a href="#1--2--demultiplexer" class="anchor-heading" aria-labelledby="1--2--demultiplexer"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 1 : 2  demultiplexer
+        
+        
+      </h3>
+    
+      <h4 id="block-diagram-1">
+        
+        
+          <a href="#block-diagram-1" class="anchor-heading" aria-labelledby="block-diagram-1"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Block diagram
+        
+        
+      </h4>
+    
+
+<div style="text-align:center"><img src="../../assets/images/one_twodemultiplexer_blockdiagram.jpg"></div>
+      <h4 id="truth-table-4">
+        
+        
+          <a href="#truth-table-4" class="anchor-heading" aria-labelledby="truth-table-4"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Truth table
+        
+        
+      </h4>
+    
+
+<div style="text-align:center"><img src="../../assets/images/one_twodemultiplexer_truthtable.jpg"></div>
+
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/756" id="demux_01" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+      <h3 id="1--4--demultiplexer">
+        
+        
+          <a href="#1--4--demultiplexer" class="anchor-heading" aria-labelledby="1--4--demultiplexer"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 1 : 4  demultiplexer
+        
+        
+      </h3>
+    
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/44768" id="demux_02" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+      <h3 id="1--8--demultiplexer">
+        
+        
+          <a href="#1--8--demultiplexer" class="anchor-heading" aria-labelledby="1--8--demultiplexer"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 1 : 8  demultiplexer
+        
+        
+      </h3>
+    
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/44769" id="demux_03" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+      <h3 id="1--16-demultiplexer">
+        
+        
+          <a href="#1--16-demultiplexer" class="anchor-heading" aria-labelledby="1--16-demultiplexer"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 1 : 16 demultiplexer
+        
+        
+      </h3>
+    
+<p>A 1 : 16 demultiplexer can be implemented using <strong>two</strong> 1 : 8 demultiplexers.</p>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/44796" id="demux_04" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+
+<ol class="quiz">
+  <li>Which of the following directs data from input to a selected output line ?
+    <ol>
+      <li>Demultiplexer
+        <ul>
+          <li>Multiplexer</li>
+          <li>Coder</li>
+          <li>Both MUX &amp; DEMUX</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p>Which of the following logic block has a number of input lines and one signle output line ?</p>
+
+    <ul>
+      <li>Decoder
+        <ol>
+          <li>Multiplexer</li>
+        </ol>
+      </li>
+      <li>Demultiplexer</li>
+      <li>Encoder</li>
+    </ul>
+  </li>
+  <li>
+    <p>How many selection line will be there if a multiplexer has 8 input lines ?</p>
+
+    <ul>
+      <li>1</li>
+      <li>2
+        <ol>
+          <li>3</li>
+        </ol>
+      </li>
+      <li>4</li>
+    </ul>
+  </li>
+  <li>
+    <p>How many output lines will be there in a demultiplexer if it has 3 selection lines ?</p>
+
+    <ol>
+      <li>1
+        <ul>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+
+<div class="prev-next-controls mt-3">
+  <div><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-msi/" class="btn btn-info">Previous</a></div>
+  <div><a href="https://betalearn.circuitverse.org/pages/CircuitVerse/Interactive-Book/docs/comb-msi/encoders-decoders.html" class="btn btn-info">Next</a></div>
+</div>
+
+<!-- -*- engine:django -*- -->
+
+<div id="disqus_thread" style="margin-top:75px"></div>
+<script>
+     
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  /*
+  var disqus_config = function () {
+  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
+  */
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://interactive-book.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
+        
+
+        
+
+        
+          <hr>
+          <footer>
+            
+            
+              <p class="text-small text-grey-dk-000 mb-0">Copyright © 2021 Contributors to CircuitVerse. Distributed under a [CC-by-sa] license.</p>
+            
+
+            
+              <div class="d-flex mt-2">
+                
+                
+                  <p class="text-small text-grey-dk-000 mb-0">
+                    <a href="https://github.com/CircuitVerse/Interactive-Book/tree/master/docs/comb-msi/mux-demux.md" id="edit-this-page">Edit this page on GitHub.</a>
+                  </p>
+                
+              </div>
+            
+          </footer>
+        
+
+      </div>
+    </div>
+
+    
+      
+
+      <div class="search-overlay"></div>
+    
+  </div>
+</body>
+</html>
