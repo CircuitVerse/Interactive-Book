@@ -21,7 +21,7 @@ has_children: false
 
 ## Introduction
 
-In 1985, a new programmable hardware architecture evolved from the [PLDs]({% link docs/comb-lsi/plds.md %}), the *Field Programmable Gate Array* (FPGA) developed by Xilix Inc. See the IEEE Chip Hall of Fame entry on the [Xilinx XC2064 FPGA](https://spectrum.ieee.org/tech-history/silicon-revolution/chip-hall-of-fame-xilinx-xc2064-fpga) for some history about it.
+In 1985, a new programmable hardware architecture evolved from the PLDs {% comment %}[PLDs]({% link docs/comb-lsi/plds.md %}){% endcomment %}, the *Field Programmable Gate Array* (FPGA) developed by Xilix Inc. See the IEEE Chip Hall of Fame entry on the [Xilinx XC2064 FPGA](https://spectrum.ieee.org/tech-history/silicon-revolution/chip-hall-of-fame-xilinx-xc2064-fpga) for some history about it.
 
 An FPGA chip contains several *logic cells* which can be arbitrarily interconnected according to the programmed configuration.
 
