@@ -1,23 +1,16 @@
 <script type="text/javascript">
  
- // Wait for the page to load first
- window.onload = function() {
+// Wait for the page to load first
+window.onload = function() {
      
-     // sidebar collapse code
-     // TODO: correct style and add media size checking(is it needed?)
-     var sidebar = document.querySelector("div.side-bar");
-     var sidebarButton = document.getElementById("sidebarCollapse");
-     var breadcrumbs = document.getElementById("breadcrumb-nav");
-     sidebarButton.onclick = function() {
-	 sidebar.classList.toggle("active");
-	 document.getElementById("main-content").classList.toggle("moved");
-	 document.getElementById("main-header").classList.toggle("moved");
-	 if (breadcrumbs) {
-	     breadcrumbs.classList.toggle("moved");
-	 }
-	 sidebarButton.classList.toggle("moved");
-	 sidebarButton.classList.toggle("colored");
-     }
- }
- 
+	// sidebar collapse code
+	var sidebar = document.querySelector("div.side-bar");
+	var sidebarButton = document.getElementById("sidebarCollapse");
+	var mainContent = document.getElementById("top");
+		
+	sidebarButton.onclick = function() {
+		sidebar.classList.toggle("active");
+		mainContent.classList.toggle("sidebar-toggle");
+	}
+}
 </script>
