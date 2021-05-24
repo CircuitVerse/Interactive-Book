@@ -6,29 +6,7 @@
 
 $black: #000000 !default;
 $box-shadow: rgba(0, 0, 0, 0.12);
-
 $base-svg-path: $black !default;
-
-//
-// Spacing
-//
-
-$spacers: (
-  sp: $spacing-unit * -1,
-  sp-0: 0,
-  sp-1: $spacing-unit * 0.25,
-  sp-2: $spacing-unit * 0.5,
-  sp-3: $spacing-unit * 0.75,
-  sp-4: $spacing-unit,
-  sp-5: $spacing-unit * 1.5,
-  sp-6: $spacing-unit * 2,
-  sp-7: $spacing-unit * 2.5,
-  sp-8: $spacing-unit * 3,
-  sp-9: $spacing-unit * 3.5,
-  sp-10: $spacing-unit * 4,
-) !default;
-
-$sp: map-get($spacers, sp) !default;
 
 //
 // Base element style overrides
@@ -38,91 +16,48 @@ input {
   color: $black;
 }
 
-//
-// Styles for rendered markdown in the .main-content container
-//
-
 #sidebar.active {
   display: none;
 }
 
-@media only screen and (min-width: 739px) {
-  #main-content.moved {
-    margin-left: calc((100% - 739px) / 2 + -80px);
-  }
-
-  #headerid.moved {
-    margin-left: calc((100% - 739px) / 2 + 65px);
-  }
-
-  #breadcrumb-nav.moved {
-    margin-left: calc((100% - 739px) / 2 + -80px);
-  }
-
-  #sidebarCollapse.moved {
-    margin-left: calc((100% - 739px) / 2 + -80px);
-  }
-}
-
-@media only screen and (max-width: 739px) {
-  #sidebarCollapse {
-    display: none;
-  }
-}
-
-#sidebarCollapse.new.colored {
-  background-color: $base-button-color;
-  color: $link-color;
-}
-
-#sidebarCollapse.new {
-  background-color: $link-color;
-  color: $white;
-}
-
-//
-// The basic two column layout
-//
-
 .side-bar {
-  background-color: $sidebar-color;
-  display: flex;
-  flex-wrap: wrap;
-  z-index: 0;
-
   @include mq(md) {
-    align-items: flex-end;
-    border-right: $border $border-color;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    height: 100%;
-    position: fixed;
-    width: $nav-width-md;
-  }
-
-  @include mq(lg) {
-    min-width: $nav-width;
-    width: calc((100% - #{$nav-width + $content-width}) / 4 + #{$nav-width});
-  }
-
-  &.active {
-    display: none;
+    &.active {
+      display: none;
+    }
   }
 }
 
-.main {
+.main.sidebar-toggle {
+
   @include mq(md) {
-    margin-left: $nav-width-md;
-    max-width: $content-width;
-    position: relative;
+    max-width: 800px;
+    margin-left: calc((100% - 800px) / 2);
   }
 
   @include mq(lg) {
-    margin-left: calc((100% - #{$nav-width + $content-width}) / 4 + #{$nav-width});
+    max-width: 900px;
+    margin-left: calc((100% - 900px) / 2);
   }
 }
 
-// .main-content -> main-content-header (?)
+#sidebarCollapse {
+  display: none;
+
+  @include mq(md) {
+    display: block;
+  }
+
+  &.new.colored {
+    background-color: $base-button-color;
+    color: $link-color;
+  }
+
+  &.new {
+    background-color: $link-color;
+    color: $white;
+  }
+}
 
 //
 //  navigation.css
@@ -139,10 +74,6 @@ input {
   margin-right: 5%;
   width: 12px;
 }
-
-// .sub_heading {
-
-// }
 
 .breadcrumb-nav {
   @include mq(md) {
