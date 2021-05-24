@@ -31,13 +31,13 @@ input {
 .main.sidebar-toggle {
 
   @include mq(md) {
-    max-width: 800px;
     margin-left: calc((100% - 800px) / 2);
+    max-width: 800px;
   }
 
   @include mq(lg) {
-    max-width: 900px;
     margin-left: calc((100% - 900px) / 2);
+    max-width: 900px;
   }
 }
 
@@ -48,14 +48,14 @@ input {
     display: block;
   }
 
-  &.new.colored {
-    background-color: $base-button-color;
-    color: $link-color;
-  }
-
   &.new {
     background-color: $link-color;
     color: $white;
+
+    &.colored {
+      background-color: $base-button-color;
+      color: $link-color;
+    }
   }
 }
 
