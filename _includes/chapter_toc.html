@@ -2,41 +2,50 @@
 {% assign pages_list = site.pages %}
 {% if page.has_children == true %}
 <ul>
-    {%- assign children_list = pages_list | where: "parent", page.title  | where: "grand_parent", page.parent | where: "cvib_level", "basic" -%}
-    {% assign children_list_size = children_list | size %}
-    {% if children_list_size > 0 %}
-	<li><ul>Basic level
-	{% for child in children_list %}
-	    <li>
-		<a href="{{child.url | absolute_url }}">{{ child.title }}</a>
-		{% if child.summary %} - {{ child.summary }}{% endif %}
-	    </li>
-	{% endfor %}
-	</ul></li>
-    {% endif %}
-    {%- assign children_list = pages_list | where: "parent", page.title | where: "grand_parent", page.parent | where: "cvib_level", "medium" -%}
-    {% assign children_list_size = children_list | size %}
-    {% if children_list_size > 0 %}
-	<li><ul>Medium level
-	{% for child in children_list %}
-	    <li>
-		<a href="{{child.url | absolute_url }}">{{ child.title }}</a>
-		{% if child.summary %} - {{ child.summary }}{% endif %}
-	    </li>
-	{% endfor %}
-	</ul></li>
-    {% endif %}
-    {%- assign children_list = pages_list | where: "parent", page.title | where: "grand_parent", page.parent | where: "cvib_level", "advanced" -%}
-    {% assign children_list_size = children_list | size %}
-    {% if children_list_size > 0 %}
-	<li><ul>Advanced level
-	{% for child in children_list %}
-	    <li>
-		<a href="{{child.url | absolute_url }}">{{ child.title }}</a>
-		{% if child.summary %} - {{ child.summary }}{% endif %}
-	    </li>
-	{% endfor %}
-	</ul></li>
-    {% endif %}
+	{%- assign children_list = pages_list | where: "parent", page.title | where: "grand_parent", page.parent | where:
+	"cvib_level", "basic" -%}
+	{% assign children_list_size = children_list | size %}
+	{% if children_list_size > 0 %}
+	<li>Basic level
+		<ul>
+			{% for child in children_list %}
+			<li>
+				<a href="{{child.url | absolute_url }}">{{ child.title }}</a>
+				{% if child.summary %} - {{ child.summary }}{% endif %}
+			</li>
+			{% endfor %}
+		</ul>
+	</li>
+	{% endif %}
+	{%- assign children_list = pages_list | where: "parent", page.title | where: "grand_parent", page.parent | where:
+	"cvib_level", "medium" -%}
+	{% assign children_list_size = children_list | size %}
+	{% if children_list_size > 0 %}
+	<li>Medium level
+		<ul>
+			{% for child in children_list %}
+			<li>
+				<a href="{{child.url | absolute_url }}">{{ child.title }}</a>
+				{% if child.summary %} - {{ child.summary }}{% endif %}
+			</li>
+			{% endfor %}
+		</ul>
+	</li>
+	{% endif %}
+	{%- assign children_list = pages_list | where: "parent", page.title | where: "grand_parent", page.parent | where:
+	"cvib_level", "advanced" -%}
+	{% assign children_list_size = children_list | size %}
+	{% if children_list_size > 0 %}
+	<li>Advanced level
+		<ul>
+			{% for child in children_list %}
+			<li>
+				<a href="{{child.url | absolute_url }}">{{ child.title }}</a>
+				{% if child.summary %} - {{ child.summary }}{% endif %}
+			</li>
+			{% endfor %}
+		</ul>
+	</li>
+	{% endif %}
 </ul>
 {% endif %}
