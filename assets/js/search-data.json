@@ -1243,7 +1243,7 @@
   },"207": {
     "doc": "Combinational LSI",
     "title": "Chapter contents",
-    "content": ". | . Basic level | ALU | ROM | . | . ",
+    "content": ". | Basic level . | ALU | ROM | . | . ",
     "url": "https://betalearn.circuitverse.org/docs/comb-lsi/#chapter-contents",
     "relUrl": "/docs/comb-lsi/#chapter-contents"
   },"208": {
@@ -1261,7 +1261,7 @@
   },"210": {
     "doc": "Binary algebra",
     "title": "Chapter contents",
-    "content": ". | . Basic level | Addition | Division | Multiplication | Subtraction | . | . Medium level | Boolean algebra | Boolean functions | . | . Advanced level | IEEE Std 754 | Shannon decomposition | . | . ",
+    "content": ". | Basic level . | Addition | Division | Multiplication | Subtraction | . | Medium level . | Boolean algebra | Boolean functions | . | Advanced level . | IEEE Std 754 | Shannon decomposition | . | . ",
     "url": "https://betalearn.circuitverse.org/docs/binary-algebra/#chapter-contents",
     "relUrl": "/docs/binary-algebra/#chapter-contents"
   },"211": {
@@ -1297,7 +1297,7 @@
   },"216": {
     "doc": "Logic Design",
     "title": "Table of contents",
-    "content": ". | . Basic level | Functional description | Implementation | . | . Medium level | Canonical functions | K-Maps | . | . Advanced level | Binary cubes | Map-entered variables | Quine McCluskey | . | . ",
+    "content": ". | Basic level . | Functional description | Implementation | . | Medium level . | Canonical functions | K-Maps | . | Advanced level . | Binary cubes | Map-entered variables | Quine McCluskey | . | . ",
     "url": "https://betalearn.circuitverse.org/docs/logic-design/#table-of-contents",
     "relUrl": "/docs/logic-design/#table-of-contents"
   },"217": {
@@ -1315,7 +1315,7 @@
   },"219": {
     "doc": "Sequential LSI",
     "title": "Chapter contents",
-    "content": ". | . Basic level | FPGA | Microprocessors | ROM-based µcontrollers | . | . ",
+    "content": ". | Basic level . | FPGA | Microprocessors | ROM-based µcontrollers | . | . ",
     "url": "https://betalearn.circuitverse.org/docs/seq-lsi/#chapter-contents",
     "relUrl": "/docs/seq-lsi/#chapter-contents"
   },"220": {
@@ -1333,7 +1333,7 @@
   },"222": {
     "doc": "Binary representation",
     "title": "Chapter contents",
-    "content": ". | . Basic level | Binary numbers | Encoding information | Negative quantities | Number bases | . | . Medium level | Discrete quantities | . | . ",
+    "content": ". | Basic level . | Binary numbers | Encoding information | Negative quantities | Number bases | . | Medium level . | Discrete quantities | . | . ",
     "url": "https://betalearn.circuitverse.org/docs/binary-representation/#chapter-contents",
     "relUrl": "/docs/binary-representation/#chapter-contents"
   },"223": {
@@ -1363,7 +1363,7 @@
   },"227": {
     "doc": "Sequential SSI",
     "title": "Chapter contents",
-    "content": ". | . Basic level | Clock signals | Flip-flops | Latches | . | . ",
+    "content": ". | Basic level . | Clock signals | Flip-flops | Latches | . | . ",
     "url": "https://betalearn.circuitverse.org/docs/seq-ssi/#chapter-contents",
     "relUrl": "/docs/seq-ssi/#chapter-contents"
   },"228": {
@@ -1381,7 +1381,7 @@
   },"230": {
     "doc": "Sequential MSI",
     "title": "Chapter contents",
-    "content": ". | . Basic level | Counters | Registers | . | . Medium level | MSI based design | Multipliers/Dividers | . | . ",
+    "content": ". | Basic level . | Counters | Registers | . | Medium level . | MSI based design | Multipliers/Dividers | . | . ",
     "url": "https://betalearn.circuitverse.org/docs/seq-msi/#chapter-contents",
     "relUrl": "/docs/seq-msi/#chapter-contents"
   },"231": {
@@ -1405,7 +1405,7 @@
   },"234": {
     "doc": "Combinational MSI",
     "title": "Chapter contents",
-    "content": ". | . Basic level | Adders | Encoders/Decoders | MUX/DEMUX | . | . Medium level | MUX-based functions | . | . ",
+    "content": ". | Basic level . | Adders | Encoders/Decoders | MUX/DEMUX | . | Medium level . | MUX-based functions | . | . ",
     "url": "https://betalearn.circuitverse.org/docs/comb-msi/#chapter-contents",
     "relUrl": "/docs/comb-msi/#chapter-contents"
   },"235": {
@@ -1423,7 +1423,7 @@
   },"237": {
     "doc": "Combinational SSI",
     "title": "Chapter contents",
-    "content": ". | . Basic level | Logic gates | . | . Medium level | Logic families | Universal gates | . | . ",
+    "content": ". | Basic level . | Logic gates | . | Medium level . | Logic families | Universal gates | . | . ",
     "url": "https://betalearn.circuitverse.org/docs/comb-ssi/#chapter-contents",
     "relUrl": "/docs/comb-ssi/#chapter-contents"
   },"238": {
@@ -1441,7 +1441,7 @@
   },"240": {
     "doc": "Sequential Design",
     "title": "Chapter contents",
-    "content": ". | . Basic level | FSM | Sequential synthesis | . | . Medium level | Race conditions | . | . Advanced level | Flowchart diagrams | MDS Diagrams | . | . ",
+    "content": ". | Basic level . | FSM | Sequential synthesis | . | Medium level . | Race conditions | . | Advanced level . | Flowchart diagrams | MDS Diagrams | . | . ",
     "url": "https://betalearn.circuitverse.org/docs/seq-design/#chapter-contents",
     "relUrl": "/docs/seq-design/#chapter-contents"
   },"241": {
