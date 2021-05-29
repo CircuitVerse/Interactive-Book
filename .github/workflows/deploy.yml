@@ -3,7 +3,7 @@ name: Interactive Book Deployment
 on:
   push:
     branches:
-      - GSoD2020
+      - master
 
 jobs:
   github-pages:
