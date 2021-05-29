@@ -1,0 +1,27 @@
+#+OPTIONS: toc:nil todo:nil title:nil author:nil date:nil
+
+#+BEGIN_EXPORT html
+---
+layout: circuitverse
+title: FPGA
+nav_order: l0s001
+cvib_level: basic
+parent: Sequential LSI
+has_children: false
+---
+#+END_EXPORT
+
+* Field-Programmable Gate Arrays
+  :PROPERTIES:
+  :JTD:      {: .no_toc}
+  :END:
+  
+** Table of contents
+   :PROPERTIES:
+   :JTD:      {: .no_toc .text-delta}
+   :END:
+
+#+BEGIN_EXPORT html
+1. TOC
+{:toc}
+#+END_EXPORT

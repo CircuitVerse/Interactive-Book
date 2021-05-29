@@ -1,0 +1,27 @@
+#+OPTIONS: toc:nil todo:nil title:nil author:nil date:nil
+
+#+BEGIN_EXPORT html
+---
+layout: circuitverse
+title: ROM-based µcontrollers
+nav_order: l0s000
+cvib_level: basic
+parent: Sequential LSI
+has_children: false
+---
+#+END_EXPORT
+
+* ROM-based µcontrollers
+  :PROPERTIES:
+  :JTD:      {: .no_toc}
+  :END:
+  
+** Table of contents
+   :PROPERTIES:
+   :JTD:      {: .no_toc .text-delta}
+   :END:
+
+#+BEGIN_EXPORT html
+1. TOC
+{:toc}
+#+END_EXPORT

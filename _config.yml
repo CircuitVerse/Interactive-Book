@@ -1,48 +1,135 @@
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your whole site, values
+# This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely edit after that. If you find
-# yourself editing these this file very often, consider using Jekyll's data files
+# yourself editing this file very often, consider using Jekyll's data files
 # feature for the data you need to update frequently.
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: CircuitVerse
-description: A Book to learn Digital Logic Design.
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://learn.circuitverse.org" # the base hostname & protocol for your site, e.g. http://example.com
 
-permalink:
-exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile", "vendor"]
+title: CircuitVerse
+email: support@circuitverse.org
+# description: >- # this means to ignore newlines until "baseurl:"
+#   Write an awesome description for your new site here. You can edit this
+#   line in _config.yml. It will appear in your document head meta (for
+#   Google search results) and in your feed.xml site description.
+description: A Book to learn Digital Logic Design.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://learn.circuitverse.org" # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: jekyllrb
+#github_username:  jekyll
+
+# Build settings
+# theme: minima
+theme: "just-the-docs"
+plugins:
+  - jekyll-seo-tag
+  - jekyll-github-metadata
+  - jekyll/tagging
+  - jekyll-spaceship
+  - jekyll/scholar
+  #- jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile", "vendor", "utils/"]
+
+#JTD config
+
+# Set a path/url to a logo that will be displayed instead of the title
+# logo: "/assets/images/just-the-docs.png"
 
 # Enable or disable the site search
+# Supports true (default) or false
 search_enabled: true
 
 # Aux links for the upper right navigation
 aux_links:
-  "Circuitverse on GitHub":
+  "Dark mode":
+    - "#"
+  "CircuitVerse on GitHub":
     - "//github.com/CircuitVerse"
-# Repository name for Setting up Netlify
-repository: CircuitVerse/Interactive-Book
-# Color scheme currently only supports "dark" or nil (default)
-color_scheme: nil
+
+# Footer content 
+# appears at the bottom of every page's main content
+footer_content: "Copyright &copy; 2021 Contributors to CircuitVerse. Distributed under a [CC-by-sa] license."
+
+# Footer last edited timestamp
+last_edit_timestamp: false # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
+
+# Footer "Edit this page on GitHub" link text
+gh_edit_link: true # show or hide edit this page link
+gh_edit_link_text: "Edit this page on GitHub."
+gh_edit_repository: "https://github.com/CircuitVerse/Interactive-Book" # the github URL for your repo
+gh_edit_branch: "master" # the branch that your docs is served from
+# gh_edit_source: docs # the source that your files originate from
+gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
+
+
+# Color scheme supports "light" (default) and "dark"
+color_scheme: circuitverse
 
 # Google Analytics Tracking (optional)
 # e.g, UA-1234567-89
 ga_tracking: UA-112678513-3
 
-tag_page_layout: tag_page
-tag_page_dir: tag
+jekyll-spaceship:
+  # default enabled processors
+  processors:
+    - table-processor
+    - mathjax-processor
+    - plantuml-processor
+    - mermaid-processor
+    - polyfill-processor
+    - media-processor
+    - emoji-processor
+    - element-processor
+  mathjax-processor:
+    src:
+      - https://polyfill.io/v3/polyfill.min.js?features=es6
+      - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+    config:
+      tex:
+        inlineMath:
+          - ['$','$']
+          - ['\(','\)']
+        tags: 'ams'
+      svg:
+        fontCache: 'global'
 
+scholar:
+  style: ieee-with-url
+  bibliography_list_tag: ul
 
-plugins:
-  - jekyll-seo-tag
-  - jekyll-github-metadata
-  - jekyll/tagging
+# Repository name for Setting up Netlify
+repository: CircuitVerse/Interactive-Book
 

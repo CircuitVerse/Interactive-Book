@@ -1,0 +1,27 @@
+#+OPTIONS: toc:nil todo:nil title:nil author:nil date:nil
+
+#+BEGIN_EXPORT html
+---
+layout: circuitverse
+title: IEEE Std 754
+nav_order: l2s002
+cvib_level: advanced
+parent: Binary algebra
+has_children: false
+---
+#+END_EXPORT
+
+* IEEE Standar 754
+  :PROPERTIES:
+  :JTD:      {: .no_toc}
+  :END:
+  
+** Table of contents
+   :PROPERTIES:
+   :JTD:      {: .no_toc .text-delta}
+   :END:
+
+#+BEGIN_EXPORT html
+1. TOC
+{:toc}
+#+END_EXPORT

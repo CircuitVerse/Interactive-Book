@@ -1,0 +1,18 @@
+title: Combinational LSI components
+toc_title: Combinational LSI
+dir_name: comb-lsi
+export_mode: 'md'
+order: 60
+
+sections:
+  basic:
+    - title: Read-Only Memory
+      toc_title: ROM
+      filename: rom
+    - title: Arithmetic Logic Unit
+      toc_title: ALU
+      filename: alu
+  medium:
+    - title: Programmable Logic Devices
+      toc_title: PLDs
+      filename: plds

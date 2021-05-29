@@ -387,7 +387,7 @@ soda_machine_graphics.create10Coin = function (x0,y0) {
 };
 
 soda_machine_graphics.createSoda = function (x0,y0) {
-  return soda_machine_graphics.paper.image("../assets/images/SodaCan.jpg",x0,y0,50,30);
+  return soda_machine_graphics.paper.image("/assets/images/SodaCan.jpg",x0,y0,50,30);
 };
 
 soda_machine_graphics.dropChange = function () {

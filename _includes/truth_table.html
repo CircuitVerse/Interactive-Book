@@ -8,7 +8,7 @@
             NOT = <span class="example">A'</span><br>
             NAND = <span class="example">(AB)'</span>
             NOR = <span class="example">(A+B)'</span></p>
-        <input class="truth_table_input" autofocus id="expression" oninput="build()" placeholder="Example: (AB)'C+D" type="text">
+        <input class="truth_table_input" id="expression" oninput="build()" placeholder="Example: (AB)'C+D" type="text">
         <noscript>
             <p>This app requires JavaScript to run. Please enable JavaScript and refresh this page.</p>
         </noscript>
@@ -18,6 +18,7 @@
     <div class="align-center container" id="table-area">
         <div id="table-placeholder"></div>
     </div>
+
 </main>
 
 <style>
@@ -28,10 +29,6 @@
         text-transform: none;
         font-weight: normal;
         font-variant: normal;
-    }
-
-    body {
-        padding: 50px;
     }
 
     .truth-table h1 {
@@ -82,12 +79,6 @@
         color: black;
         font-family: 'Source Code Pro', monospace;
         padding: 0 0.3em;
-    }
-
-    @media screen and (max-width: 768px) {
-        body {
-            padding: 10px;
-        }
     }
 
     #truth_generator thead th{

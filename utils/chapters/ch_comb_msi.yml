@@ -1,0 +1,21 @@
+title: Combinational MSI components
+toc_title: Combinational MSI
+dir_name: comb-msi
+export_mode: 'md'
+order: 50
+
+sections:
+  basic:
+    - title: Multiplexers and Demultiplexers
+      toc_title: MUX/DEMUX
+      filename: mux-demux
+    - title: Encoders and Decoders
+      toc_title: Encoders/Decoders
+      filename: encoders-decoders
+    - title: Adders
+      toc_title: Adders
+      filename: adders
+  medium:
+    - title: MUX-based functions 
+      toc_title: MUX-based functions
+      filename: mux-functions

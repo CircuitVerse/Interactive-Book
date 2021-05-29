@@ -1,0 +1,26 @@
+#+OPTIONS: toc:nil todo:nil title:nil author:nil date:nil
+
+#+BEGIN_EXPORT html
+---
+layout: circuitverse
+title: Combinational MSI
+nav_order: 50
+has_children: true
+has_toc: false
+---
+#+END_EXPORT
+
+* Combinational MSI components
+  :PROPERTIES:
+  :JTD:      {: .no_toc}
+  :END:
+  
+** Table of contents
+   :PROPERTIES:
+   :JTD:      {: .no_toc .text-delta}
+   :END:
+
+#+BEGIN_EXPORT html
+{% include chapter_toc.html %}
+#+END_EXPORT
+

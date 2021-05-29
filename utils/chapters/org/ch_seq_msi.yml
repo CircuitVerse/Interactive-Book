@@ -1,0 +1,21 @@
+title: Sequential MSI components
+toc_title: Sequential MSI
+dir_name: seq-msi
+export_mode: 'org'
+order: 90
+
+sections:
+  basic:
+    - title: Registers
+      toc_title: Registers
+      filename: registers
+    - title: Counters
+      toc_title: Counters
+      filename: counters
+  medium:
+    - title: MSI based design
+      toc_title: MSI based design
+      filename: msi-seq-design
+    - title: Multipliers and Dividers
+      toc_title: Multipliers/Dividers
+      filename: mult-div

@@ -1,0 +1,30 @@
+title: Sequential SSI components
+toc_title: Sequential SSI
+dir_name: seq-ssi
+export_mode: 'md'
+order: 70
+
+sections:
+  basic:
+    - title: Latches
+      toc_title: Latches
+      filename: latches
+    - title: Flip-flops
+      toc_title: Flip-flops
+      filename: flip-flops
+    - title: Clock signals
+      toc_title: Clock signals
+      filename: clock-signals
+    - title: Time diagrams
+      toc_title: Time diagrams
+      filename: time-diagrams
+  medium:
+    - title: Memory Feedback
+      toc_title: Memory Feedback
+      filename: memory-feedback
+    - title: Synchronous systems
+      toc_title: Synchronous systems
+      filename: synchronous-systems
+    - title: Asynchronous systems
+      toc_title: Asynchronous systems
+      filename: asynchronous-systems

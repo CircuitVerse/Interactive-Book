@@ -1,0 +1,16 @@
+<script type="text/javascript">
+ 
+// Wait for the page to load first
+window.onload = function() {
+     
+	// sidebar collapse code
+	var sidebar = document.querySelector("div.side-bar");
+	var sidebarButton = document.getElementById("sidebarCollapse");
+	var mainContent = document.getElementById("top");
+		
+	sidebarButton.onclick = function() {
+		sidebar.classList.toggle("active");
+		mainContent.classList.toggle("sidebar-toggle");
+	}
+}
+</script>

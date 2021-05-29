@@ -1,120 +1,271 @@
-// //
-// // Typography
-// //
-//
-// $body-font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
-// $mono-font-family: "SFMono-Regular", Menlo, Consolas, Monospace;
-// $root-font-size: 16px;         // Base font-size for rems
-// $body-line-height: 1.4;
-// $body-heading-line-height: 1.15;
-//
-// //
-// // Colors
-// //
-//
-// $white: #fff;
-//
-// $grey-dk-000: #959396;
-// $grey-dk-100: #5c5962;
-// $grey-dk-200: #44434d;
-// $grey-dk-250: #302d36 !default;
-// $grey-dk-300: #27262b;
-//
-// $grey-lt-000: #f5f6fa;
-// $grey-lt-100: #eeebee;
-// $grey-lt-200: #ecebed;
-// $grey-lt-300: #e6e1e8;
-//
-// $purple-000: #7253ed;
-// $purple-100: #5e41d0;
-// $purple-200: #4e26af;
-// $purple-300: #381885;
-//
-// $blue-000: #2c84fa;
-// $blue-100: #2869e6;
-// $blue-200: #264caf;
-// $blue-300: #183385;
-//
-// $green-000: #41d693;
-// $green-100: #11b584;
-// $green-200: #009c7b;
-// $green-300: #026e57;
-//
-// $body-background-color: $white !default;
-// $sidebar-color: $grey-lt-000 !default;
-// $code-background-color: $grey-lt-000 !default;
+// Custom overrides
 
-// $body-text-color: $grey-dk-100 !default;
-// $body-heading-color: $grey-dk-300 !default;
-// $nav-child-link-color: $grey-dk-100 !default;
-$link-color: $green-300;
-$btn-primary-color: $green-200;
-// $base-button-color: #f7f7f7 !default;
 //
-// //
-// // Media queries in pixels
-// //
+// Colors
 //
-// $media-queries: (
-//   xs: 320px,
-//   sm: 500px,
-//   md: 740px,
-//   lg: 1120px,
-//   xl: 1400px
-// );
+
+$black: #000000 !default;
+$box-shadow: rgba(0, 0, 0, 0.12);
+$base-svg-path: $black !default;
+
 //
-// //
-// // Spacing
-// //
+// Base element style overrides
 //
-// $spacing-unit: 1rem; // 1rem == 16px
+
+input {
+  color: $black;
+}
+
+#sidebar.active {
+  display: none;
+}
+
+.side-bar {
+  @include mq(md) {
+    &.active {
+      display: none;
+    }
+  }
+}
+
+.main.sidebar-toggle {
+
+  @include mq(md) {
+    margin-left: calc((100% - 800px) / 2);
+    max-width: 800px;
+  }
+
+  @include mq(lg) {
+    margin-left: calc((100% - 900px) / 2);
+    max-width: 900px;
+  }
+}
+
+#sidebarCollapse {
+  display: none;
+
+  @include mq(md) {
+    display: block;
+  }
+
+  &.new {
+    background-color: $link-color;
+    color: $white;
+
+    &.colored {
+      background-color: $base-button-color;
+      color: $link-color;
+    }
+  }
+}
+
 //
-// $spacers: (
-//   sp-0: 0,
-//   sp-1: $spacing-unit * 0.25,
-//   sp-2: $spacing-unit * 0.5,
-//   sp-3: $spacing-unit * 0.75,
-//   sp-4: $spacing-unit,
-//   sp-5: $spacing-unit * 1.5,
-//   sp-6: $spacing-unit * 2,
-//   sp-7: $spacing-unit * 2.5,
-//   sp-8: $spacing-unit * 3,
-//   sp-9: $spacing-unit * 3.5,
-//   sp-10: $spacing-unit * 4
-// );
+//  navigation.css
 //
-// $sp-1: map-get($spacers, sp-1); // 0.25 rem == 4px
-// $sp-2: map-get($spacers, sp-2); // 0.5  rem == 8px
-// $sp-3: map-get($spacers, sp-3); // 0.75 rem == 12px
-// $sp-4: map-get($spacers, sp-4); // 1    rem == 16px
-// $sp-5: map-get($spacers, sp-5); // 1.5  rem == 24px
-// $sp-6: map-get($spacers, sp-6); // 2    rem == 32px
-// $sp-7: map-get($spacers, sp-7); // 2.5  rem == 40px
-// $sp-8: map-get($spacers, sp-8); // 3    rem == 48px
-// $sp-9: map-get($spacers, sp-9); // 4    rem == 48px
-// $sp-10: map-get($spacers, sp-10); // 4.5  rem == 48px
+
+.flex-container {
+  align-items: baseline;
+  display: flex;
+  flex-direction: row;
+}
+
+.connector {
+  height: 12px;
+  margin-right: 5%;
+  width: 12px;
+}
+
+.breadcrumb-nav {
+  @include mq(md) {
+    margin-top: $sp-4;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev-next-controls {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+
+  // Workaround for buttons bar overflow issues.
+  a {
+    overflow: inherit;
+  }
+}
+
 //
-// //
-// // Borders
-// //
+// from selects.scss
 //
-// $border: 1px solid;
-// $border-radius: 4px;
-// $border-color: $grey-lt-100;
+select {
+  background-color: $base-button-color;
+  border: 0;
+
+  option {
+    color: $body-heading-color;
+  }
+}
+
 //
-// //
-// // Grid system
-// //
+// from scg_paths.scss
 //
-// $gutter-spacing: $sp-6;
-// $gutter-spacing-sm: $sp-4;
-// $nav-width: 232px;
-// $content-width: 800px;
+svg path {
+  stroke: $base-svg-path;
+}
+
+defs path {
+  stroke: none;
+}
+
 //
-// $media-queries: (
-//   xs: 320px,
-//   sm: 500px,
-//   md: 740px,
-//   lg: 800px,
-//   xl: 1316px
-// );
+// from quiz.scss
+//
+$correct-color: #5cd65c;
+$incorrect-color: #ff6666;
+$default-color: #f1f1f1;
+$border-color: #eeebee;
+$shadow-color: #eeeeee;
+$text-color: #111111;
+
+.quiz {
+  display: none;
+}
+
+.pop-quiz {
+  display: block;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.quiz-question {
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+
+  em {
+    font-size: 0.9em;
+  }
+
+  p {
+    font-size: 1.2em;
+    margin-bottom: 0.5rem;
+  }
+
+  code {
+    font-size: 0.9em;
+  }
+}
+
+.quiz-answers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .quiz-answer {
+    background-color: $default-color;
+    border: 1px solid $border-color;
+    border-radius: 0.2rem;
+    box-shadow: 1px 1px $shadow-color;
+    color: $text-color;
+    cursor: pointer;
+    line-height: 2rem;
+    margin: 0.2rem;
+    min-width: 10rem;
+  }
+}
+
+.quiz-show-answer {
+  &.quiz-true {
+    background-color: $correct-color;
+  }
+
+  &.quiz-false {
+    background-color: $incorrect-color;
+  }
+}
+
+//
+// from search.scss (not included since its too different from upstream)
+//
+
+//
+// DVLS new styles
+// CV flavored side nav
+//
+.nav-list {
+  list-style: circle url("/assets/images/nav-marker-inactive.svg") inside;
+
+  .nav-list-item {
+    // scss-lint:disable SelectorDepth
+    .nav-list-link {
+      display: inline;
+    }
+
+    &.active {
+      list-style: disc url("/assets/images/nav-marker-active.svg") inside;
+    }
+  }
+
+  .nav-list-item .nav-list-link {
+    display: inline;
+    padding-left: 0;
+  }
+
+  .nav-list-item.active {
+    list-style: disc url("/assets/images/nav-marker-active.svg") inside;
+  }
+}
+
+// Nested nav lists
+.nav-list .nav-list-item > .nav-list .nav-list-item .nav-list-link {
+  padding-left: 1rem;
+
+  &.active {
+    padding-left: 0;
+  }
+}
+
+// table caption style
+//.tblcap {
+// to be defined
+//}
+
+.site-nav {
+  padding-left: 1rem;
+}
+
+@media (min-width: 50rem) {
+  // Sidebar Navigation
+  .site-nav {
+    padding-left: 2rem;
+  }
+
+  // Auxiliary Nav Styles for tablet and above
+  .aux-nav {
+    .aux-nav-list-item {
+      align-items: center;
+      display: flex;
+    }
+
+    .aux-nav-list {
+      padding-left: 10px;
+    }
+  }
+
+  .aux-nav-list-item .site-button {
+    background-color: $base-button-color;
+    border-radius: 3px;
+    border-width: 0;
+    box-shadow: 0 1px 2px $box-shadow, 0 3px 10px $box-shadow;
+    height: 50%;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+  }
+}
+
+// Disqus Recommendations
+#disqus_recommendations {
+  margin-top: 20px;
+}

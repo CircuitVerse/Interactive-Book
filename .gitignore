@@ -1,10 +1,6 @@
-*.gem
-.bundle
-.sass-cache/
-_site/
-Gemfile.lock
-node_modules
-.idea
-.idea/workspace.xml
-node_modules/
-**/.DS_Store
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+*~

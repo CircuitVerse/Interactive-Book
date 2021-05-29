@@ -3,10 +3,10 @@
 <style>
 .container		{width: 450px; margin: auto; margin-top: -10px;}
 .circuit		{display: inline-block; float: left; width: 100%; min-width: 450px; border: 2px solid Grey; padding: 0px 5px 0px 5px; height: 460px; margin: 2px}
-.bulb			{float: left; background-image:url(../assets/images/bulb_off.png); width: 60px; height: 100px; margin: 80px 0px 0px 5px}
-.dark			{background-image:url(../assets/images/dark_off.png); background-repeat: no-repeat; width: 100px; height: 115px; margin: 10px; padding: 1px}
-.burglar		{background-image:url(../assets/images/burglar_off.png); background-repeat: no-repeat; width: 100px; height: 115px; margin: 10px; padding: 1px}
-.switch			{background-image:url(../assets/images/switch_off.png); background-repeat: no-repeat; width: 87px; height: 105px; margin: 25px 5px 15px 5px; padding: 1px}
+.bulb			{float: left; background-image:url(/assets/images/bulb_off.png); width: 60px; height: 100px; margin: 80px 0px 0px 5px}
+.dark			{background-image:url(/assets/images/dark_off.png); background-repeat: no-repeat; width: 100px; height: 115px; margin: 10px; padding: 1px}
+.burglar		{background-image:url(/assets/images/burglar_off.png); background-repeat: no-repeat; width: 100px; height: 115px; margin: 10px; padding: 1px}
+.switch			{background-image:url(/assets/images/switch_off.png); background-repeat: no-repeat; width: 87px; height: 105px; margin: 25px 5px 15px 5px; padding: 1px}
 .label			{margin-top: 100px; text-align: center; font-style:italic}
 .drop 			{height: 110px; width: 110px; padding: 5px; border: 1px dashed black; float: left; margin: 75px -9px 0 -22px}
 .tile			{margin-left: 5px; float:left; max-width: 70px; max-height: 70px; height: 15%; width: 15%}
@@ -40,27 +40,27 @@ bit[3] = false;
 var bit_display = new Array(2);
 var switch_display = new Array(4);
 var image_cache1 = new Image();
-image_cache1.src = "../assets/images/bulb_on.png";
+image_cache1.src = "/assets/images/bulb_on.png";
 var image_cache2 = new Image();
-image_cache2.src = "../assets/images/dark_on.png";
+image_cache2.src = "/assets/images/dark_on.png";
 var image_cache3 = new Image();
-image_cache3.src = "../assets/images/burglar_on.png";
+image_cache3.src = "/assets/images/burglar_on.png";
 var image_cache4 = new Image();
-image_cache4.src = "../assets/images/switch_on.png";
+image_cache4.src = "/assets/images/switch_on.png";
 switch_display[0] = new Array(2);
 switch_display[1] = new Array(2);
 switch_display[2] = new Array(2);
 switch_display[3] = new Array(2);
-bit_display[false] = "url(../assets/images/bulb_off.png)";
-bit_display[true] = "url(../assets/images/bulb_on.png)";
-switch_display[0][false] = "url(../assets/images/dark_off.png)";
-switch_display[0][true] = "url(../assets/images/dark_on.png)";
-switch_display[1][false] = "url(../assets/images/burglar_off.png)";
-switch_display[1][true] = "url(../assets/images/burglar_on.png)";
-switch_display[2][false] = "url(../assets/images/switch_off.png)";
-switch_display[2][true] = "url(../assets/images/switch_on.png)";
-switch_display[3][false] = "url(../assets/images/switch_off.png)";
-switch_display[3][true] = "url(../assets/images/switch_on.png)";
+bit_display[false] = "url(/assets/images/bulb_off.png)";
+bit_display[true] = "url(/assets/images/bulb_on.png)";
+switch_display[0][false] = "url(/assets/images/dark_off.png)";
+switch_display[0][true] = "url(/assets/images/dark_on.png)";
+switch_display[1][false] = "url(/assets/images/burglar_off.png)";
+switch_display[1][true] = "url(/assets/images/burglar_on.png)";
+switch_display[2][false] = "url(/assets/images/switch_off.png)";
+switch_display[2][true] = "url(/assets/images/switch_on.png)";
+switch_display[3][false] = "url(/assets/images/switch_off.png)";
+switch_display[3][true] = "url(/assets/images/switch_on.png)";
 
 function toggle_switch(switch_no)
 {
@@ -111,12 +111,12 @@ function disableSelection(target)
 
 
 
-<img src="../assets/images/AND_gate.png" alt="AND" class="tile">
-<img src="../assets/images/OR_gate.png" alt="OR" class="tile">
-<img src="../assets/images/NAND_gate.png" alt="NAND" class="tile">
-<img src="../assets/images/NOR_gate.png" alt="NOR" class="tile">
-<img src="../assets/images/EOR_gate.png" alt="EOR" class="tile">
-<img src="../assets/images/XNOR_gate.png" alt="NXOR" class="tile">
+<img src="/assets/images/AND_gate.png" alt="AND" class="tile">
+<img src="/assets/images/OR_gate.png" alt="OR" class="tile">
+<img src="/assets/images/NAND_gate.png" alt="NAND" class="tile">
+<img src="/assets/images/NOR_gate.png" alt="NOR" class="tile">
+<img src="/assets/images/EOR_gate.png" alt="EOR" class="tile">
+<img src="/assets/images/XNOR_gate.png" alt="NXOR" class="tile">
 <div class="clipboard_div"><div id="clipboard"></div></div>
 <p style="clear:left">You can also click/tap a symbol to copy it and then click/tap to paste it into the box. </p>
 <div style="display: inline-block">
@@ -130,9 +130,9 @@ function disableSelection(target)
                 </div>
                 <div id="3" class="switch" onClick="toggle_switch(3);"><div class="label">Downstairs</div></div>
             </div>
-            <div style="margin: 30px 0px 0px 10px; float: left"><img src="../assets/images/input.png" width="91" height="201" alt="Upstairs"></div>
+            <div style="margin: 30px 0px 0px 10px; float: left"><img src="/assets/images/input.png" width="91" height="201" alt="Upstairs"></div>
             <div id="Q2" class="drop"></div><input id="R2" onChange="show_result(2);" type="hidden">
-            <div style="margin: 28px 5px 0px 0px; float: left"><img src="../assets/images/output.png" width="91" height="201" alt="Downstairs"></div>
+            <div style="margin: 28px 5px 0px 0px; float: left"><img src="/assets/images/output.png" width="91" height="201" alt="Downstairs"></div>
             <div id="result2" class="bulb"></div>
         </div></div>
     <div class="circuit">
@@ -143,9 +143,9 @@ function disableSelection(target)
                 <div id="0" class="dark" onClick="toggle_switch(0);"><div class="label">Darkness</div></div>
                 <div id="1" class="burglar" onClick="toggle_switch(1);"><div class="label">Movement</div></div>
             </div>
-            <div style="margin: 30px 0px 0px 10px; float: left"><img src="../assets/images/input.png" width="91" height="201" alt="Darkness"></div>
+            <div style="margin: 30px 0px 0px 10px; float: left"><img src="/assets/images/input.png" width="91" height="201" alt="Darkness"></div>
             <div id="Q1" class="drop"></div><input id="R1" onChange="show_result(1);" type="hidden">
-            <div style="margin: 28px 5px 0px 0px; float: left"><img src="../assets/images/output.png" width="91" height="201" alt="Movement"></div>
+            <div style="margin: 28px 5px 0px 0px; float: left"><img src="/assets/images/output.png" width="91" height="201" alt="Movement"></div>
             <div id="result1" class="bulb"></div></div>
     </div></div>
 <div id="too_small">Unfortunately your screen is too small to display this page correctly.  If you are using a tablet or phone you could try turning it round to landscape orientation.</div>
