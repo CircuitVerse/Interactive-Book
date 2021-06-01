@@ -1,0 +1,61 @@
+[
+  {
+    "name": "fpga.md",
+    "path": "docs/seq-lsi/fpga.md",
+    "relative_path": "docs/seq-lsi/fpga.md",
+    "layout": "circuitverse",
+    "title": "FPGA",
+    "nav_order": "l0s001",
+    "cvib_level": "basic",
+    "parent": "Sequential LSI",
+    "has_children": false,
+    "dir": "/docs/seq-lsi/",
+    "url": "/docs/seq-lsi/fpga.html",
+    "http_url": "https://learn.circuitverse.org/docs/seq-lsi/fpga.html",
+    "api_url": "https://learn.circuitverse.org/_api/pages/docs/seq-lsi/fpga.md"
+  },
+  {
+    "name": "index.md",
+    "path": "docs/seq-lsi/index.md",
+    "relative_path": "docs/seq-lsi/index.md",
+    "layout": "circuitverse",
+    "title": "Sequential LSI",
+    "nav_order": 100,
+    "has_children": true,
+    "has_toc": false,
+    "dir": "/docs/seq-lsi/",
+    "url": "/docs/seq-lsi/",
+    "http_url": "https://learn.circuitverse.org/docs/seq-lsi/",
+    "api_url": "https://learn.circuitverse.org/_api/pages/docs/seq-lsi/index.md"
+  },
+  {
+    "name": "microprocessors.md",
+    "path": "docs/seq-lsi/microprocessors.md",
+    "relative_path": "docs/seq-lsi/microprocessors.md",
+    "layout": "circuitverse",
+    "title": "Microprocessors",
+    "nav_order": "l0s002",
+    "cvib_level": "basic",
+    "parent": "Sequential LSI",
+    "has_children": false,
+    "dir": "/docs/seq-lsi/",
+    "url": "/docs/seq-lsi/microprocessors.html",
+    "http_url": "https://learn.circuitverse.org/docs/seq-lsi/microprocessors.html",
+    "api_url": "https://learn.circuitverse.org/_api/pages/docs/seq-lsi/microprocessors.md"
+  },
+  {
+    "name": "rom-microcontrollers.md",
+    "path": "docs/seq-lsi/rom-microcontrollers.md",
+    "relative_path": "docs/seq-lsi/rom-microcontrollers.md",
+    "layout": "circuitverse",
+    "title": "ROM-based µcontrollers",
+    "nav_order": "l0s000",
+    "cvib_level": "basic",
+    "parent": "Sequential LSI",
+    "has_children": false,
+    "dir": "/docs/seq-lsi/",
+    "url": "/docs/seq-lsi/rom-microcontrollers.html",
+    "http_url": "https://learn.circuitverse.org/docs/seq-lsi/rom-microcontrollers.html",
+    "api_url": "https://learn.circuitverse.org/_api/pages/docs/seq-lsi/rom-microcontrollers.md"
+  }
+]

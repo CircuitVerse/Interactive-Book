@@ -1,0 +1,46 @@
+[
+  {
+    "name": "alu.md",
+    "path": "docs/comb-lsi/alu.md",
+    "relative_path": "docs/comb-lsi/alu.md",
+    "layout": "circuitverse",
+    "title": "ALU",
+    "nav_order": "l0s001",
+    "cvib_level": "basic",
+    "parent": "Combinational LSI",
+    "has_children": false,
+    "dir": "/docs/comb-lsi/",
+    "url": "/docs/comb-lsi/alu.html",
+    "http_url": "https://learn.circuitverse.org/docs/comb-lsi/alu.html",
+    "api_url": "https://learn.circuitverse.org/_api/pages/docs/comb-lsi/alu.md"
+  },
+  {
+    "name": "index.md",
+    "path": "docs/comb-lsi/index.md",
+    "relative_path": "docs/comb-lsi/index.md",
+    "layout": "circuitverse",
+    "title": "Combinational LSI",
+    "nav_order": 60,
+    "has_children": true,
+    "has_toc": false,
+    "dir": "/docs/comb-lsi/",
+    "url": "/docs/comb-lsi/",
+    "http_url": "https://learn.circuitverse.org/docs/comb-lsi/",
+    "api_url": "https://learn.circuitverse.org/_api/pages/docs/comb-lsi/index.md"
+  },
+  {
+    "name": "rom.md",
+    "path": "docs/comb-lsi/rom.md",
+    "relative_path": "docs/comb-lsi/rom.md",
+    "layout": "circuitverse",
+    "title": "ROM",
+    "nav_order": "l0s000",
+    "cvib_level": "basic",
+    "parent": "Combinational LSI",
+    "has_children": false,
+    "dir": "/docs/comb-lsi/",
+    "url": "/docs/comb-lsi/rom.html",
+    "http_url": "https://learn.circuitverse.org/docs/comb-lsi/rom.html",
+    "api_url": "https://learn.circuitverse.org/_api/pages/docs/comb-lsi/rom.md"
+  }
+]

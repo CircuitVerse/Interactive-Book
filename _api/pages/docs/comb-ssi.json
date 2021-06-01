@@ -1,0 +1,61 @@
+[
+  {
+    "name": "index.md",
+    "path": "docs/comb-ssi/index.md",
+    "relative_path": "docs/comb-ssi/index.md",
+    "layout": "circuitverse",
+    "title": "Combinational SSI",
+    "nav_order": 30,
+    "has_children": true,
+    "has_toc": false,
+    "dir": "/docs/comb-ssi/",
+    "url": "/docs/comb-ssi/",
+    "http_url": "https://learn.circuitverse.org/docs/comb-ssi/",
+    "api_url": "https://learn.circuitverse.org/_api/pages/docs/comb-ssi/index.md"
+  },
+  {
+    "name": "logic-families.md",
+    "path": "docs/comb-ssi/logic-families.md",
+    "relative_path": "docs/comb-ssi/logic-families.md",
+    "layout": "circuitverse",
+    "title": "Logic families",
+    "nav_order": "l1s000",
+    "cvib_level": "medium",
+    "parent": "Combinational SSI",
+    "has_children": false,
+    "dir": "/docs/comb-ssi/",
+    "url": "/docs/comb-ssi/logic-families.html",
+    "http_url": "https://learn.circuitverse.org/docs/comb-ssi/logic-families.html",
+    "api_url": "https://learn.circuitverse.org/_api/pages/docs/comb-ssi/logic-families.md"
+  },
+  {
+    "name": "logic-gates.md",
+    "path": "docs/comb-ssi/logic-gates.md",
+    "relative_path": "docs/comb-ssi/logic-gates.md",
+    "layout": "circuitverse",
+    "title": "Logic gates",
+    "nav_order": "l0s001",
+    "cvib_level": "basic",
+    "parent": "Combinational SSI",
+    "has_children": false,
+    "dir": "/docs/comb-ssi/",
+    "url": "/docs/comb-ssi/logic-gates.html",
+    "http_url": "https://learn.circuitverse.org/docs/comb-ssi/logic-gates.html",
+    "api_url": "https://learn.circuitverse.org/_api/pages/docs/comb-ssi/logic-gates.md"
+  },
+  {
+    "name": "universal-gates.md",
+    "path": "docs/comb-ssi/universal-gates.md",
+    "relative_path": "docs/comb-ssi/universal-gates.md",
+    "layout": "circuitverse",
+    "title": "Universal gates",
+    "nav_order": "l1s001",
+    "cvib_level": "medium",
+    "parent": "Combinational SSI",
+    "has_children": false,
+    "dir": "/docs/comb-ssi/",
+    "url": "/docs/comb-ssi/universal-gates.html",
+    "http_url": "https://learn.circuitverse.org/docs/comb-ssi/universal-gates.html",
+    "api_url": "https://learn.circuitverse.org/_api/pages/docs/comb-ssi/universal-gates.md"
+  }
+]
