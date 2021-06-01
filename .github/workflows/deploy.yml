@@ -11,21 +11,23 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      
-      # Use GitHub Actions' cache to shorten build times and decrease load on servers
-      - uses: actions/cache@v2
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
 
-      - name: Build
-        uses: helaili/jekyll-action@v2
+      - uses: ruby/setup-ruby@v1
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          build_only: true
-          jekyll_build_options: -d out
+          ruby-version: 2.6 # Not needed with a .ruby-version file
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+      
+      - name: Build
+        run: bundle exec jekyll build -d out
+      
+      - name: Run temp server
+        run: bundle exec jekyll serve --port=4000 --detach
+
+      - name: API Generation
+        run: sudo python utils/api_generator.py
+
+      - name: Kill Temporary Server
+        run: pkill -f jekyll
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
