@@ -19,8 +19,6 @@ has_children: false
 {:toc}
 
 
-<!-- ## Registers -->
-
 ## Introduction
 
 
@@ -33,8 +31,6 @@ The binary-data, in a register, can be transfered within itself from one flip-fl
 A shift register is a type of register that allows such data transfers.
 Shift register has 4 modes of operations.
 
-<!-- ## Sub-modules -->
-
 Next, let us have a look at each register operation one by one.
 
 1. [Serial-in serial-out](#serial-in-serial-out)
@@ -45,7 +41,6 @@ Next, let us have a look at each register operation one by one.
 
 ## Serial-in serial-out
 
-<!-- ## Introduction -->
  
 Let all the flip-flops be initially in the reset condition i.e. Q3 = Q2 = Q1 = Q0 = 0. If an entry of a four-bit binary number 1 1 1 1 is made into the register, this number should be applied to Din bit with the LSB bit applied first. The D input of FF-3 i.e. D3 is connected to serial data input Din. The output of FF-3 i.e. Q3 is connected to the input of the next flip-flop i.e. D2, and so on.
 
@@ -83,7 +78,6 @@ Similarly with Din = 1 and with the fourth negative clock edge arriving, the sto
 
 ## Serial-in parallel-out
 
-<!-- ## Introduction -->
 
 - In such types of operations, the data is entered serially and taken out in parallel fashion.
 
@@ -103,7 +97,6 @@ Similarly with Din = 1 and with the fourth negative clock edge arriving, the sto
 
 ## Parallel-in serial-out
 
-<!-- ## Introduction -->
 
  
 - Data bits enter in a parallel fashion.
@@ -139,7 +132,6 @@ Thus, the parallel-in serial-out operation takes place.
 
 ## Parallel-in parallel-out
 
-<!-- ## Introduction -->
  
 Here, the 4-bit binary datda inputs B0, B1, B2, B3 are applied to the data inputs D0, D1, D2, D3, respectively, of the four flip-flops. 
 When a negative edge of the clock is triggered, then the flip-flops get loaded with the input binary bits simultaneously. 
