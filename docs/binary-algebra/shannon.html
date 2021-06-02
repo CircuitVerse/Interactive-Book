@@ -30,7 +30,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Begin Jekyll SEO tag v2.6.1 -->
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
 <title>Shannon decomposition | CircuitVerse</title>
 <meta name="generator" content="Jekyll v3.9.0">
 <meta property="og:title" content="Shannon decomposition">
@@ -40,8 +40,10 @@
 <link rel="canonical" href="https://learn.circuitverse.org/docs/binary-algebra/shannon.html">
 <meta property="og:url" content="https://learn.circuitverse.org/docs/binary-algebra/shannon.html">
 <meta property="og:site_name" content="CircuitVerse">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Shannon decomposition">
 <script type="application/ld+json">
-{"description":"A Book to learn Digital Logic Design.","headline":"Shannon decomposition","@type":"WebPage","url":"https://learn.circuitverse.org/docs/binary-algebra/shannon.html","@context":"https://schema.org"}</script>
+{"description":"A Book to learn Digital Logic Design.","@type":"WebPage","url":"https://learn.circuitverse.org/docs/binary-algebra/shannon.html","headline":"Shannon decomposition","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -52,7 +54,7 @@
 <script src="/assets/js/quiz.js"></script>
 <script src="/assets/js/global_scripts.js"></script>
 
-<script>MathJax={"tex":{"inlineMath":[["$","$"],["\\(","\\)"]],"tags":"ams"},"svg":{"fontCache":"global"},"svg":{"fontCache":"global"}}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>MathJax={"tex":{"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]],"tags":"ams"},"svg":{"fontCache":"global"},"svg":{"fontCache":"global"}}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 <body>
@@ -209,6 +211,7 @@
         </div>
       
       
+      
         <nav aria-label="Auxiliary" class="aux-nav">
           <ul class="aux-nav-list">
             
@@ -230,8 +233,7 @@
     </div>
     <div id="main-content-wrap" class="main-content-wrap">
       
-        
-          <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+        <nav aria-label="Breadcrumb" class="breadcrumb-nav">
             <ol class="breadcrumb-nav-list">
               
                 <li class="breadcrumb-nav-list-item"><a href="https://learn.circuitverse.org/docs/binary-algebra/">Binary algebra</a></li>
@@ -307,7 +309,7 @@ window.onload = function() {
 
 <p>The expansion can take any of these three variations:</p>
 
-<p>$\begin{align} f(x_1,x_2,\ldots,x_n)&amp;= x_1 \cdot f(1,x_2,\ldots,x_n) + \overline{x_1}\cdot f(0,x_2,\ldots,x_n) \\\ &amp;= \bigl(x_1+f(0,x_2,\ldots,x_n)\bigr)\cdot \bigl(\overline{x_1}+f(1,x_2,\ldots,x_n)\bigr) \\\ &amp;= x_1 \cdot f(1,x_2,\ldots,x_n) \oplus \overline{x_1}\cdot f(0,x_2,\ldots,x_n)  \end{align}$</p>
+<p>$\begin{align} f(x_1,x_2,\ldots,x_n)&amp;= x_1 \cdot f(1,x_2,\ldots,x_n) + \overline{x_1}\cdot f(0,x_2,\ldots,x_n) \\\\ &amp;= \bigl(x_1+f(0,x_2,\ldots,x_n)\bigr)\cdot \bigl(\overline{x_1}+f(1,x_2,\ldots,x_n)\bigr) \\\\ &amp;= x_1 \cdot f(1,x_2,\ldots,x_n) \oplus \overline{x_1}\cdot f(0,x_2,\ldots,x_n)  \end{align}$</p>
 
 <p>More details can be found in Section 1.9 “Shannon’s Expansion Theorem” in <a class="citation" href="#donzellini2018introduction">[1]</a> and in Section 3.2 “Switching functions” in <a class="citation" href="#kohavi2010switching">[2]</a>.</p>
       <h2 id="references">
@@ -359,12 +361,12 @@ window.onload = function() {
         
 
         
+        
           <hr>
           <footer>
             
-            
-              <p class="text-small text-grey-dk-000 mb-0">Copyright © 2021 Contributors to CircuitVerse. Distributed under a [CC-by-sa] license.</p>
-            
+
+            <p class="text-small text-grey-dk-100 mb-0">Copyright © 2021 Contributors to CircuitVerse. Distributed under a [CC-by-sa] license.</p>
 
             
               <div class="d-flex mt-2">
