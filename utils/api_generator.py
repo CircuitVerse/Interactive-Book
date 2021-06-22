@@ -38,7 +38,7 @@ deployed_host = args.dest_host
 
 
 def get_response(url):
-    return urllib.request.urlopen(url).read().decode()
+    return urllib.request.urlopen(url).read().decode('utf-8')
 
 
 def get_json(response):
@@ -48,7 +48,7 @@ def get_json(response):
 def save_content(content, file_path):
     print(f'Saving to {file_path}')
     os.makedirs(os.path.dirname(file_path), exist_ok=True)
-    f = open(file_path, "w")
+    f = open(file_path, "w", encoding='utf-8')
     f.write(content)
     f.close()
 
