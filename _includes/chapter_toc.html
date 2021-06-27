@@ -1,7 +1,7 @@
 <!-- -*- engine:django -*- -->
 {% assign pages_list = site.pages %}
 {% if page.has_children == true %}
-<ul>
+<ul id="chapter-contents">
 	{%- assign children_list = pages_list | where: "parent", page.title | where: "grand_parent", page.parent | where:
 	"cvib_level", "basic" -%}
 	{% assign children_list_size = children_list | size %}
