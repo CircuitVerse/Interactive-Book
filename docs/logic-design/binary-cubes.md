@@ -60,3 +60,17 @@ The adjacency is key to group cubes in Karnaugh maps and in the Quine McCluskey 
 ## References
 
 {% bibliography --cited  --file books %}
+
+{:.quiz}
+1. Which shape is represented by an object having exactly 1 variable?
+   1. Line
+   * Circle
+   * Triangle
+2. Which shape is represented by an object having exactly 2 variables?
+   1. Square
+   * Circle
+   * Triangle
+3. Which shape is represented by an object having exactly 3 variables?
+      1. Cube
+      * Parallelogram
+      * Sphere
