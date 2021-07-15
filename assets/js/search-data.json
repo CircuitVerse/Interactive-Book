@@ -295,7 +295,7 @@
   },"49": {
     "doc": "Binary cubes",
     "title": "References",
-    "content": ". | [1]G. Donzellini, L. Oneto, D. Ponta, and D. Anguita, Introduction to Digital Systems Design. Springer International Publishing, 2018 [Online]. Available at: https://books.google.cl/books?id=va1qDwAAQBAJ | . ",
+    "content": ". | [1]G. Donzellini, L. Oneto, D. Ponta, and D. Anguita, Introduction to Digital Systems Design. Springer International Publishing, 2018 [Online]. Available at: https://books.google.cl/books?id=va1qDwAAQBAJ | . | Which shape is represented by an object having exactly 1 variable? . | Line . | Circle | Triangle | . | . | Which shape is represented by an object having exactly 2 variables? . | Square . | Circle | Triangle | . | . | Which shape is represented by an object having exactly 3 variables? . | Cube . | Parallelogram | Sphere | . | . | . ",
     "url": "https://learn.circuitverse.org/docs/logic-design/binary-cubes.html#references",
     "relUrl": "/docs/logic-design/binary-cubes.html#references"
   },"50": {
@@ -1235,197 +1235,197 @@
     "url": "https://learn.circuitverse.org/docs/logic-design/implementation.html#optimizing-a-circuit",
     "relUrl": "/docs/logic-design/implementation.html#optimizing-a-circuit"
   },"206": {
-    "doc": "Binary representation",
-    "title": "Representation using binary numbers",
-    "content": "This chapter explain the basics of representing quantities and information using binary numbers. ",
-    "url": "https://learn.circuitverse.org/docs/binary-representation/#representation-using-binary-numbers",
-    "relUrl": "/docs/binary-representation/#representation-using-binary-numbers"
-  },"207": {
-    "doc": "Binary representation",
-    "title": "Chapter contents",
-    "content": ". | Basic level . | Binary numbers | Encoding information | Negative quantities | Number bases | . | Medium level . | Discrete quantities | . | . ",
-    "url": "https://learn.circuitverse.org/docs/binary-representation/#chapter-contents",
-    "relUrl": "/docs/binary-representation/#chapter-contents"
-  },"208": {
-    "doc": "Binary representation",
-    "title": "Binary representation",
-    "content": " ",
-    "url": "https://learn.circuitverse.org/docs/binary-representation/",
-    "relUrl": "/docs/binary-representation/"
-  },"209": {
-    "doc": "Sequential SSI",
-    "title": "Sequential SSI components",
-    "content": " ",
-    "url": "https://learn.circuitverse.org/docs/seq-ssi/#sequential-ssi-components",
-    "relUrl": "/docs/seq-ssi/#sequential-ssi-components"
-  },"210": {
-    "doc": "Sequential SSI",
-    "title": "Introduction",
-    "content": "Unlike Combinational Circuits, most systems that one will encounter in practice will include Memory element thus being described in terms of sequential logic. The memory elements are devices capable of storing binary information within them. The binary information stored in the memory elements at a given time defines the state of the circuit. Thus a sequential circuit is specified by time sequence of inputs, outputs and internal states. | This sequential circuit contains a set of inputs and output(s). | The output(s) of sequential circuit depends not only on the combination of present inputs but also on the previous output(s). | Previous output is nothing but the present state. | Therefore, sequential circuits contain combinational circuits along with memory (storage) elements. | Some sequential circuits may not contain combinational circuits, but only memory elements. | . Following table shows the differences between combinational circuits and sequential circuits. | Combinational Circuits | Sequential Circuits | . | Outputs depend only on present inputs. | Outputs depend on both present inputs and present state. | . | Feedback path is not present. | Feedback path is present. | . | Memory elements are not required. | Memory elements are required. | . | Clock signal is not required. | Clock signal is required. | . | Easy to design. | Difficult to design. | . ",
-    "url": "https://learn.circuitverse.org/docs/seq-ssi/#introduction",
-    "relUrl": "/docs/seq-ssi/#introduction"
-  },"211": {
-    "doc": "Sequential SSI",
-    "title": "Types of sequential circuits",
-    "content": "Following are the two types of sequential circuits − . | Asynchronous sequential circuits | Synchronous sequential circuits | . Asynchronous sequential circuits . If some or all the outputs of a sequential circuit do not change (affect) with respect to active transition of clock signal, then that sequential circuit is called as Asynchronous sequential circuit. That means, all the outputs of asynchronous sequential circuits do not change (affect) at the same time. Therefore, most of the outputs of asynchronous sequential circuits are not in synchronous with either only positive edges or only negative edges of clock signal. Synchronous sequential circuits . If all the outputs of a sequential circuit change (affect) with respect to active transition of clock signal, then that sequential circuit is called as Synchronous sequential circuit. That means, all the outputs of synchronous sequential circuits change (affect) at the same time. Therefore, the outputs of synchronous sequential circuits are in synchronous with either only positive edges or only negative edges of clock signal. ",
-    "url": "https://learn.circuitverse.org/docs/seq-ssi/#types-of-sequential-circuits",
-    "relUrl": "/docs/seq-ssi/#types-of-sequential-circuits"
-  },"212": {
-    "doc": "Sequential SSI",
-    "title": "Chapter contents",
-    "content": ". | Basic level . | Clock signals | Flip-flops | Latches | . | . ",
-    "url": "https://learn.circuitverse.org/docs/seq-ssi/#chapter-contents",
-    "relUrl": "/docs/seq-ssi/#chapter-contents"
-  },"213": {
-    "doc": "Sequential SSI",
-    "title": "Sequential SSI",
-    "content": " ",
-    "url": "https://learn.circuitverse.org/docs/seq-ssi/",
-    "relUrl": "/docs/seq-ssi/"
-  },"214": {
-    "doc": "Sequential MSI",
-    "title": "Sequential MSI components",
-    "content": "This chapter presents medium scale integration (MSI) sequential components as well as design methods based on these components. ",
-    "url": "https://learn.circuitverse.org/docs/seq-msi/#sequential-msi-components",
-    "relUrl": "/docs/seq-msi/#sequential-msi-components"
-  },"215": {
-    "doc": "Sequential MSI",
-    "title": "Chapter contents",
-    "content": ". | Basic level . | Counters | Registers | . | Medium level . | MSI based design | Multipliers/Dividers | . | . ",
-    "url": "https://learn.circuitverse.org/docs/seq-msi/#chapter-contents",
-    "relUrl": "/docs/seq-msi/#chapter-contents"
-  },"216": {
-    "doc": "Sequential MSI",
-    "title": "Sequential MSI",
-    "content": " ",
-    "url": "https://learn.circuitverse.org/docs/seq-msi/",
-    "relUrl": "/docs/seq-msi/"
-  },"217": {
-    "doc": "Sequential LSI",
-    "title": "Sequential LSI components",
-    "content": "Large scale integration (LSI) technology can also be used to implement sequential systems. One approach consists in using ROM circuits for the combinational logic block and latches or a counter as memory elements. This simple ROM-based µcontrollers, later evolved into what we know today as µprocessors, by integrating different complementary circuits. Another approach, derived from programmable logic devices (PLDs), is based on Field Programmable Gate Arrays (FPGA). These LSI circuits include several logic cells with each cell containing simple combinational and sequential elements the cells can be interconnected in different ways to implement very complex designs in a single chip, which can also be reconfigured at any time. ",
-    "url": "https://learn.circuitverse.org/docs/seq-lsi/#sequential-lsi-components",
-    "relUrl": "/docs/seq-lsi/#sequential-lsi-components"
-  },"218": {
-    "doc": "Sequential LSI",
-    "title": "Chapter contents",
-    "content": ". | Basic level . | FPGA | Microprocessors | ROM-based µcontrollers | . | . ",
-    "url": "https://learn.circuitverse.org/docs/seq-lsi/#chapter-contents",
-    "relUrl": "/docs/seq-lsi/#chapter-contents"
-  },"219": {
-    "doc": "Sequential LSI",
-    "title": "Sequential LSI",
-    "content": " ",
-    "url": "https://learn.circuitverse.org/docs/seq-lsi/",
-    "relUrl": "/docs/seq-lsi/"
-  },"220": {
-    "doc": "Logic Design",
-    "title": "Combinational logic design",
-    "content": "This chapter explains how to obtain a circuit from a functional definition. It also describes some optimisation methods to reduce the design before implementing it and explains the concepts which are required to understand those procedures. ",
-    "url": "https://learn.circuitverse.org/docs/logic-design/#combinational-logic-design",
-    "relUrl": "/docs/logic-design/#combinational-logic-design"
-  },"221": {
-    "doc": "Logic Design",
-    "title": "Table of contents",
-    "content": ". | Basic level . | Functional description | Implementation | . | Medium level . | Canonical functions | K-Maps | . | Advanced level . | Binary cubes | Map-entered variables | Quine McCluskey | . | . ",
-    "url": "https://learn.circuitverse.org/docs/logic-design/#table-of-contents",
-    "relUrl": "/docs/logic-design/#table-of-contents"
-  },"222": {
-    "doc": "Logic Design",
-    "title": "Logic Design",
-    "content": " ",
-    "url": "https://learn.circuitverse.org/docs/logic-design/",
-    "relUrl": "/docs/logic-design/"
-  },"223": {
-    "doc": "Combinational LSI",
-    "title": "Combinational LSI components",
-    "content": "Large scale integration combinational components such as Read-only Memories (ROMs), Arithmetic Logic Units (ALUs) and Programmable Logic Devices (PLDs) are described in chapter. ",
-    "url": "https://learn.circuitverse.org/docs/comb-lsi/#combinational-lsi-components",
-    "relUrl": "/docs/comb-lsi/#combinational-lsi-components"
-  },"224": {
-    "doc": "Combinational LSI",
-    "title": "Chapter contents",
-    "content": ". | Basic level . | ALU | ROM | . | . ",
-    "url": "https://learn.circuitverse.org/docs/comb-lsi/#chapter-contents",
-    "relUrl": "/docs/comb-lsi/#chapter-contents"
-  },"225": {
-    "doc": "Combinational LSI",
-    "title": "Combinational LSI",
-    "content": " ",
-    "url": "https://learn.circuitverse.org/docs/comb-lsi/",
-    "relUrl": "/docs/comb-lsi/"
-  },"226": {
-    "doc": "Sequential Design",
-    "title": "Sequential Design",
-    "content": "The previous chapter about SSI sequential components presented application examples using basic sequential building blocks such as latches and flip-flops. This chapter will describe tools and methods to design and synthesise optimal sequential circuits. ",
-    "url": "https://learn.circuitverse.org/docs/seq-design/",
-    "relUrl": "/docs/seq-design/"
-  },"227": {
-    "doc": "Sequential Design",
-    "title": "Chapter contents",
-    "content": ". | Basic level . | FSM | Sequential synthesis | . | Medium level . | Race conditions | . | Advanced level . | Flowchart diagrams | MDS Diagrams | . | . ",
-    "url": "https://learn.circuitverse.org/docs/seq-design/#chapter-contents",
-    "relUrl": "/docs/seq-design/#chapter-contents"
-  },"228": {
     "doc": "Combinational SSI",
     "title": "Combinational SSI components",
     "content": "Small scale integration combinational components (i.e. logic gates) and some of their features are presented in this chapter. ",
     "url": "https://learn.circuitverse.org/docs/comb-ssi/#combinational-ssi-components",
     "relUrl": "/docs/comb-ssi/#combinational-ssi-components"
-  },"229": {
+  },"207": {
     "doc": "Combinational SSI",
     "title": "Chapter contents",
     "content": ". | Basic level . | Logic gates | . | Medium level . | Logic families | Universal gates | . | . ",
     "url": "https://learn.circuitverse.org/docs/comb-ssi/#chapter-contents",
     "relUrl": "/docs/comb-ssi/#chapter-contents"
-  },"230": {
+  },"208": {
     "doc": "Combinational SSI",
     "title": "Combinational SSI",
     "content": " ",
     "url": "https://learn.circuitverse.org/docs/comb-ssi/",
     "relUrl": "/docs/comb-ssi/"
-  },"231": {
+  },"209": {
+    "doc": "Sequential Design",
+    "title": "Sequential Design",
+    "content": "The previous chapter about SSI sequential components presented application examples using basic sequential building blocks such as latches and flip-flops. This chapter will describe tools and methods to design and synthesise optimal sequential circuits. ",
+    "url": "https://learn.circuitverse.org/docs/seq-design/",
+    "relUrl": "/docs/seq-design/"
+  },"210": {
+    "doc": "Sequential Design",
+    "title": "Chapter contents",
+    "content": ". | Basic level . | FSM | Sequential synthesis | . | Medium level . | Race conditions | . | Advanced level . | Flowchart diagrams | MDS Diagrams | . | . ",
+    "url": "https://learn.circuitverse.org/docs/seq-design/#chapter-contents",
+    "relUrl": "/docs/seq-design/#chapter-contents"
+  },"211": {
+    "doc": "Sequential MSI",
+    "title": "Sequential MSI components",
+    "content": "This chapter presents medium scale integration (MSI) sequential components as well as design methods based on these components. ",
+    "url": "https://learn.circuitverse.org/docs/seq-msi/#sequential-msi-components",
+    "relUrl": "/docs/seq-msi/#sequential-msi-components"
+  },"212": {
+    "doc": "Sequential MSI",
+    "title": "Chapter contents",
+    "content": ". | Basic level . | Counters | Registers | . | Medium level . | MSI based design | Multipliers/Dividers | . | . ",
+    "url": "https://learn.circuitverse.org/docs/seq-msi/#chapter-contents",
+    "relUrl": "/docs/seq-msi/#chapter-contents"
+  },"213": {
+    "doc": "Sequential MSI",
+    "title": "Sequential MSI",
+    "content": " ",
+    "url": "https://learn.circuitverse.org/docs/seq-msi/",
+    "relUrl": "/docs/seq-msi/"
+  },"214": {
     "doc": "Binary algebra",
     "title": "Mathematical operations with binary numbers",
     "content": "This chapter introduce the basic arithmetic operations using binary numbers as well as the Boolean algebra. ",
     "url": "https://learn.circuitverse.org/docs/binary-algebra/#mathematical-operations-with-binary-numbers",
     "relUrl": "/docs/binary-algebra/#mathematical-operations-with-binary-numbers"
-  },"232": {
+  },"215": {
     "doc": "Binary algebra",
     "title": "Chapter contents",
     "content": ". | Basic level . | Addition | Division | Multiplication | Subtraction | . | Medium level . | Boolean algebra | Boolean functions | . | Advanced level . | IEEE Std 754 | Shannon decomposition | . | . ",
     "url": "https://learn.circuitverse.org/docs/binary-algebra/#chapter-contents",
     "relUrl": "/docs/binary-algebra/#chapter-contents"
-  },"233": {
+  },"216": {
     "doc": "Binary algebra",
     "title": "Binary algebra",
     "content": " ",
     "url": "https://learn.circuitverse.org/docs/binary-algebra/",
     "relUrl": "/docs/binary-algebra/"
-  },"234": {
+  },"217": {
     "doc": "Combinational MSI",
     "title": "Combinational MSI components",
     "content": " ",
     "url": "https://learn.circuitverse.org/docs/comb-msi/#combinational-msi-components",
     "relUrl": "/docs/comb-msi/#combinational-msi-components"
-  },"235": {
+  },"218": {
     "doc": "Combinational MSI",
     "title": "Introduction",
     "content": "MSI or Medium scale integrated circuits are a set of basic, elementary logic circuits. They are available as ICs (integrated chips) and implement specific,commonly used digital functions such as: . | Multiplexing and Demultiplexing | Encoding and Decoding | . MSIs can be used as a stand-alone IC or in combination with other ICs in order to implement combinational circuits in various applications. In this module, you will study many of the common types of MSI devices. For each type, you will start with a brief discussion of its basic operating principle and then introduce specific ICs. Now let’s see how they can be used alone or in combination with other ICs in various applications. ",
     "url": "https://learn.circuitverse.org/docs/comb-msi/#introduction",
     "relUrl": "/docs/comb-msi/#introduction"
-  },"236": {
+  },"219": {
     "doc": "Combinational MSI",
     "title": "Chapter contents",
     "content": ". | Basic level . | Adders | Encoders/Decoders | MUX/DEMUX | . | Medium level . | MUX-based functions | . | . ",
     "url": "https://learn.circuitverse.org/docs/comb-msi/#chapter-contents",
     "relUrl": "/docs/comb-msi/#chapter-contents"
-  },"237": {
+  },"220": {
     "doc": "Combinational MSI",
     "title": "Combinational MSI",
     "content": " ",
     "url": "https://learn.circuitverse.org/docs/comb-msi/",
     "relUrl": "/docs/comb-msi/"
+  },"221": {
+    "doc": "Binary representation",
+    "title": "Representation using binary numbers",
+    "content": "This chapter explain the basics of representing quantities and information using binary numbers. ",
+    "url": "https://learn.circuitverse.org/docs/binary-representation/#representation-using-binary-numbers",
+    "relUrl": "/docs/binary-representation/#representation-using-binary-numbers"
+  },"222": {
+    "doc": "Binary representation",
+    "title": "Chapter contents",
+    "content": ". | Basic level . | Binary numbers | Encoding information | Negative quantities | Number bases | . | Medium level . | Discrete quantities | . | . ",
+    "url": "https://learn.circuitverse.org/docs/binary-representation/#chapter-contents",
+    "relUrl": "/docs/binary-representation/#chapter-contents"
+  },"223": {
+    "doc": "Binary representation",
+    "title": "Binary representation",
+    "content": " ",
+    "url": "https://learn.circuitverse.org/docs/binary-representation/",
+    "relUrl": "/docs/binary-representation/"
+  },"224": {
+    "doc": "Combinational LSI",
+    "title": "Combinational LSI components",
+    "content": "Large scale integration combinational components such as Read-only Memories (ROMs), Arithmetic Logic Units (ALUs) and Programmable Logic Devices (PLDs) are described in chapter. ",
+    "url": "https://learn.circuitverse.org/docs/comb-lsi/#combinational-lsi-components",
+    "relUrl": "/docs/comb-lsi/#combinational-lsi-components"
+  },"225": {
+    "doc": "Combinational LSI",
+    "title": "Chapter contents",
+    "content": ". | Basic level . | ALU | ROM | . | . ",
+    "url": "https://learn.circuitverse.org/docs/comb-lsi/#chapter-contents",
+    "relUrl": "/docs/comb-lsi/#chapter-contents"
+  },"226": {
+    "doc": "Combinational LSI",
+    "title": "Combinational LSI",
+    "content": " ",
+    "url": "https://learn.circuitverse.org/docs/comb-lsi/",
+    "relUrl": "/docs/comb-lsi/"
+  },"227": {
+    "doc": "Logic Design",
+    "title": "Combinational logic design",
+    "content": "This chapter explains how to obtain a circuit from a functional definition. It also describes some optimisation methods to reduce the design before implementing it and explains the concepts which are required to understand those procedures. ",
+    "url": "https://learn.circuitverse.org/docs/logic-design/#combinational-logic-design",
+    "relUrl": "/docs/logic-design/#combinational-logic-design"
+  },"228": {
+    "doc": "Logic Design",
+    "title": "Table of contents",
+    "content": ". | Basic level . | Functional description | Implementation | . | Medium level . | Canonical functions | K-Maps | . | Advanced level . | Binary cubes | Map-entered variables | Quine McCluskey | . | . ",
+    "url": "https://learn.circuitverse.org/docs/logic-design/#table-of-contents",
+    "relUrl": "/docs/logic-design/#table-of-contents"
+  },"229": {
+    "doc": "Logic Design",
+    "title": "Logic Design",
+    "content": " ",
+    "url": "https://learn.circuitverse.org/docs/logic-design/",
+    "relUrl": "/docs/logic-design/"
+  },"230": {
+    "doc": "Sequential LSI",
+    "title": "Sequential LSI components",
+    "content": "Large scale integration (LSI) technology can also be used to implement sequential systems. One approach consists in using ROM circuits for the combinational logic block and latches or a counter as memory elements. This simple ROM-based µcontrollers, later evolved into what we know today as µprocessors, by integrating different complementary circuits. Another approach, derived from programmable logic devices (PLDs), is based on Field Programmable Gate Arrays (FPGA). These LSI circuits include several logic cells with each cell containing simple combinational and sequential elements the cells can be interconnected in different ways to implement very complex designs in a single chip, which can also be reconfigured at any time. ",
+    "url": "https://learn.circuitverse.org/docs/seq-lsi/#sequential-lsi-components",
+    "relUrl": "/docs/seq-lsi/#sequential-lsi-components"
+  },"231": {
+    "doc": "Sequential LSI",
+    "title": "Chapter contents",
+    "content": ". | Basic level . | FPGA | Microprocessors | ROM-based µcontrollers | . | . ",
+    "url": "https://learn.circuitverse.org/docs/seq-lsi/#chapter-contents",
+    "relUrl": "/docs/seq-lsi/#chapter-contents"
+  },"232": {
+    "doc": "Sequential LSI",
+    "title": "Sequential LSI",
+    "content": " ",
+    "url": "https://learn.circuitverse.org/docs/seq-lsi/",
+    "relUrl": "/docs/seq-lsi/"
+  },"233": {
+    "doc": "Sequential SSI",
+    "title": "Sequential SSI components",
+    "content": " ",
+    "url": "https://learn.circuitverse.org/docs/seq-ssi/#sequential-ssi-components",
+    "relUrl": "/docs/seq-ssi/#sequential-ssi-components"
+  },"234": {
+    "doc": "Sequential SSI",
+    "title": "Introduction",
+    "content": "Unlike Combinational Circuits, most systems that one will encounter in practice will include Memory element thus being described in terms of sequential logic. The memory elements are devices capable of storing binary information within them. The binary information stored in the memory elements at a given time defines the state of the circuit. Thus a sequential circuit is specified by time sequence of inputs, outputs and internal states. | This sequential circuit contains a set of inputs and output(s). | The output(s) of sequential circuit depends not only on the combination of present inputs but also on the previous output(s). | Previous output is nothing but the present state. | Therefore, sequential circuits contain combinational circuits along with memory (storage) elements. | Some sequential circuits may not contain combinational circuits, but only memory elements. | . Following table shows the differences between combinational circuits and sequential circuits. | Combinational Circuits | Sequential Circuits | . | Outputs depend only on present inputs. | Outputs depend on both present inputs and present state. | . | Feedback path is not present. | Feedback path is present. | . | Memory elements are not required. | Memory elements are required. | . | Clock signal is not required. | Clock signal is required. | . | Easy to design. | Difficult to design. | . ",
+    "url": "https://learn.circuitverse.org/docs/seq-ssi/#introduction",
+    "relUrl": "/docs/seq-ssi/#introduction"
+  },"235": {
+    "doc": "Sequential SSI",
+    "title": "Types of sequential circuits",
+    "content": "Following are the two types of sequential circuits − . | Asynchronous sequential circuits | Synchronous sequential circuits | . Asynchronous sequential circuits . If some or all the outputs of a sequential circuit do not change (affect) with respect to active transition of clock signal, then that sequential circuit is called as Asynchronous sequential circuit. That means, all the outputs of asynchronous sequential circuits do not change (affect) at the same time. Therefore, most of the outputs of asynchronous sequential circuits are not in synchronous with either only positive edges or only negative edges of clock signal. Synchronous sequential circuits . If all the outputs of a sequential circuit change (affect) with respect to active transition of clock signal, then that sequential circuit is called as Synchronous sequential circuit. That means, all the outputs of synchronous sequential circuits change (affect) at the same time. Therefore, the outputs of synchronous sequential circuits are in synchronous with either only positive edges or only negative edges of clock signal. ",
+    "url": "https://learn.circuitverse.org/docs/seq-ssi/#types-of-sequential-circuits",
+    "relUrl": "/docs/seq-ssi/#types-of-sequential-circuits"
+  },"236": {
+    "doc": "Sequential SSI",
+    "title": "Chapter contents",
+    "content": ". | Basic level . | Clock signals | Flip-flops | Latches | . | . ",
+    "url": "https://learn.circuitverse.org/docs/seq-ssi/#chapter-contents",
+    "relUrl": "/docs/seq-ssi/#chapter-contents"
+  },"237": {
+    "doc": "Sequential SSI",
+    "title": "Sequential SSI",
+    "content": " ",
+    "url": "https://learn.circuitverse.org/docs/seq-ssi/",
+    "relUrl": "/docs/seq-ssi/"
   },"238": {
     "doc": "Home",
     "title": "Interactive-Book",
