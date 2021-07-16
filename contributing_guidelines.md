@@ -22,7 +22,7 @@ description: ""
 
 ## About this guidelines
 
-This guidelines documentation was started on September 2020 as part of the Goggle Season of Docs 2020 initiative.
+This guidelines documentation was started on September 2020 as part of the Google Season of Docs 2020 initiative.
 
 
 ### Revision history
