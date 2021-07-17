@@ -59,3 +59,16 @@ img{
     max-width:50%;
 }
 </style>
+
+{:.quiz}
+1. An ALU having `n` selection lines can provide upto _____ operations.
+	* 2n
+	* n / 2
+	1. 2^n
+2. Input data can flow in parallel to multiple units inside the ALU.
+	1. True
+	* False
+3. The data is stored in which of the following before ALU accesses it for operation ?
+	* ROM memory
+	1. Internal registers
+	* RAM memory
