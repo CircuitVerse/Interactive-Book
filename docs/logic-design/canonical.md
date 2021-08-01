@@ -45,11 +45,12 @@ F(A,B) = A + B
 ```
 Truth Table::
 
-|A|B|F(A,B)|
-|0|0|0|
-|0|1|1|
-|1|0|1|
-|1|1|1|
+| A | B | F(A,B) |
+| - | - | - |
+| 0 | 0 | 0 |a
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1 | 1 |
 
 ```yaml
 Here you have 4 combinations for 2 variables, try to grasp the next example where variables are 3 which 

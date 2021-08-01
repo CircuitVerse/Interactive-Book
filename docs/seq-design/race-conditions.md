@@ -22,72 +22,21 @@ has_children: false
 
 Before getting into the _race around condition_, let us have a look at the JK flip-flop's truth table.
 
-<table>
-    <thead>
-        <tr>
-            <th rowspan="6"> Clock Input </th>
-            <th colspan="2"> Inputs </th>
-            <th colspan="2"> Outputs </th>
-            <th rowspan="6"> Comments </th>
-        </tr>
-        <tr>
-            <th style="border-left: 1px solid #eeebee"> J </th>
-            <th> K </th>
-            <th> Q </th>
-            <th> Q' </th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td> 0 </td>
-            <td> X </td>
-            <td> X </td>
-            <td> Same as previous </td>
-            <td> Same as previous </td>
-            <td> No change </td>
-        </tr>
-        <tr>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 0 </td>
-            <td> Same as previous </td>
-            <td> Same as previous </td>
-            <td> No change </td>
-       </tr>
-        <tr>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> Reset </td>
-       </tr>
-        <tr>
-            <td> 1 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> 1 </td>
-            <td> 0 </td>
-            <td> Set </td>
-       </tr>
-        <tr>
-            <td> 1 </td>
-            <td> 1 </td>
-            <td> 1 </td>
-            <td> Opposite of previous </td>
-            <td> Opposite of previous </td>
-            <td> Toggle </td>
-       </tr>
-    </tbody>
-</table>
-
+| Clock Input | Inputs || Outputs || Comments |
+| | J | K | Q | Q' | |
+|---|---|---|------------------|------------------|-----------|
+| 0 | X | X | Same as previous | Same as previous | No change |
+| 1 | 0 | 0 | Same as previous | Same as previous | No change |
+| 1 | 0 | 1 | 0 | 1 | Reset |
+| 1 | 1 | 0 | 1 | 0 | Set |
+| 1 | 1 | 1 | Opposite of previous | Opposite of previous | Toggle |
 
 Here, Q is the present state and Q' is the next state. 
 As you can see, when J, K and Clock are equal to 1, toggling takes place, i.e. The next state will be equal to the complement of the present state.
 
 Now, let us look at the timing diagram of JK flip-flop.
 
-<div style="text-align:center"><img src="/assets/images/JK_timingdiagram.png" /></div>
+{% include image.html url="/assets/images/JK_timingdiagram.png" description="" %}
 
 Here, T is the time period of the clock whereas delta t is the propagation delay. The delay between input and output is called a propagation delay.
 
@@ -95,7 +44,7 @@ This is what was expected, but the output may not be like this all the time. Thi
 
 Let us look at the timing diagram of JK flip-flop when the race around condition is considered.
 
-<div style="text-align:center"><img src="/assets/images/JK_timingdiagram_race.png" /></div>
+{% include image.html url="/assets/images/JK_timingdiagram_race.png" description="" %}
 
 As you already know, when J, K and Clock are equal to 1, toggling takes place. Here, propagation delay has also been reduced, so the output will be given out at the instant input is given. So there is a toggling again.
 Therefore, whenever Clock is equal to 1 there are consecutive toggling.

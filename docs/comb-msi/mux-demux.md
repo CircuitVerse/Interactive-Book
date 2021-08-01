@@ -32,7 +32,7 @@ E is called the strobe or enable input which is useful for the cascading. It is 
 
 ## Block diagram
 
-<div style="text-align:center"><img src="/assets/images/n_onemultiplexer_blockdiagram.jpg" /></div>
+{% include image.html url='/assets/images/n_onemultiplexer_blockdiagram.jpg' description='n : 1 Multiplexer' %}
 
 ## Multiplexers come in multiple variations
    
@@ -139,12 +139,12 @@ A de-multiplexer is equivalent to a single pole multiple way switch as shown in 
 ### 1 : 2  demultiplexer
 #### Block diagram
 
-<div style="text-align:center"><img src="../../assets/images/one_twodemultiplexer_blockdiagram.jpg" /></div>
+{% include image.html url='/assets/images/one_twodemultiplexer_blockdiagram.jpg' description='1:2 Demultiplexer' %}
 
 
 #### Truth table
 
-<div style="text-align:center"><img src="../../assets/images/one_twodemultiplexer_truthtable.jpg" /></div>
+{% include image.html url='/assets/images/one_twodemultiplexer_truthtable.jpg' description='1:2 Demultiplexer Truth Table' %}
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/756" id="demux_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 

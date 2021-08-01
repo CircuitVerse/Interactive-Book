@@ -62,7 +62,7 @@ Now, let us discuss about SR Latch, D Latch, JK Latch & T Latch one by one.
 
 SR Latch is also called as Set Reset Latch. This latch affects the outputs as long as the enable, E is maintained at ‘1’. The circuit diagram of SR Latch is shown in the following figure.
 
-<div style="text-align:center"><img src="/assets/images/sr_latch.jpg" /></div>
+{% include image.html url="/assets/images/sr_latch.jpg" description="" %}
 
 This circuit has two inputs S & R and two outputs Q(t) & Q(t)’. The **upper NOR gate** has two inputs R & complement of present state, Q(t)’ and produces next state, Q(t+1) when enable, E is ‘1’.
 Similarly, the **lower NOR gate** has two inputs S & present state, Q(t) and produces complement of next state, Q(t+1)’ when enable, E is ‘1’.
@@ -98,7 +98,7 @@ Therefore, SR latch performs three types of functions such as Hold, Set & Reset 
 
 There is one drawback of SR Latch. That is the next state value can’t be predicted when both the inputs S & R are one. So, you can overcome this difficulty by D Latch. It is also called as Data Latch. The circuit diagram of D Latch is shown in the following figure.
 
-<div style="text-align:center"><img src="/assets/images/d_latch.jpg" /></div>
+{% include image.html url="/assets/images/d_latch.jpg" description="" %}
 
 This circuit has single input D and two outputs Q(t) & Q(t)’. D Latch is obtained from SR Latch by placing an inverter between S amp;& R inputs and connect D input to S. That means the combinations, having same values, of S & R are eliminated. 
 
@@ -128,7 +128,7 @@ In this module, you implemented various Latches by providing the cross coupling 
 
 JK latch is similar to RS latch. This latch consists of 2 inputs J and K as shown in the below figure. The ambiguous state has been eliminated here: when the inputs of Jk latch are high, then output toggles. The output feedback to inputs is the only difference that can be seen here, which is not there in the RS latch.
 
-<div style="text-align:center"><img src="/assets/images/jk_latch.png" /></div>
+{% include image.html url="/assets/images/jk_latch.png" description="" %}
 
 ## State table
 

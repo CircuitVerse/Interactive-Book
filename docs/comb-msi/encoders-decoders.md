@@ -29,7 +29,7 @@ The encoder accepts an n input digital word and converts it into an m bit anothe
 
 ## Block diagram
 
-<div style="text-align:center"><img src="/assets/images/encoder_blockdiagram.jpg" /></div>
+{% include image.html url="/assets/images/encoder_blockdiagram.jpg" description="" %}
 
 ### Examples of encoders ::
    
@@ -49,15 +49,15 @@ That means if D3 = 1 then Y1 Y1 = 11 irrespective of the other inputs. Similarly
 
 ## Block diagram
 
-<div style="text-align:center"><img src="/assets/images/priorityencoder_blockdiagram.jpg" /></div>
+{% include image.html url="/assets/images/priorityencoder_blockdiagram.jpg" description="" %}
 
 ### Truth table
 
-<div style="text-align:center"><img src="/assets/images/priorityencoder_truthtable.jpg" /></div>
+{% include image.html url="/assets/images/priorityencoder_truthtable.jpg" description="" %}
 
 ### Logic circuit
 
-<div style="text-align:center"><img src="/assets/images/priorityencoder_logiccircuit.jpg" /></div>
+{% include image.html url="/assets/images/priorityencoder_logiccircuit.jpg" description="" %}
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/762" id="encoder_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
@@ -86,7 +86,7 @@ It performs operations which are exactly opposite to those of an encoder.
 
 ## Block diagram
 
-<div style="text-align:center"><img src="/assets/images/decoder_blockdiagram.jpg" /></div>
+{% include image.html url="/assets/images/decoder_blockdiagram.jpg" description="" %}
 
 ### Examples of decoders ::
    
@@ -104,15 +104,15 @@ It shows that each output is 1 for only a specific combination of inputs.
 
 ## Block diagram
 
-<div style="text-align:center"><img src="/assets/images/two_fourdecoder_blockdiagram.jpg" /></div>
+{% include image.html url="/assets/images/two_fourdecoder_blockdiagram.jpg" description="" %}
 
 ## Truth table
 
-<div style="text-align:center"><img src="/assets/images/two_fourdecoder_truthtable.jpg" /></div>
+{% include image.html url="/assets/images/two_fourdecoder_truthtable.jpg" description="" %}
 
 ## Logic circuit
 
-<div style="text-align:center"><img src="/assets/images/two_fourdecoder_logiccircuit.jpg" /></div>
+{% include image.html url="/assets/images/two_fourdecoder_logiccircuit.jpg" description="" %}
 
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/763" id="decoder_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
