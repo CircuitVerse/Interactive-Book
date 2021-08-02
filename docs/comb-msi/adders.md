@@ -30,12 +30,12 @@ This circuit has two outputs **carry** and **sum**.
 
 ## Block diagram
 
-<div style="text-align:center"><img src="/assets/images/halfadder_blockdiagram.jpg" /></div>
+{% include image.html url="/assets/images/halfadder_blockdiagram.jpg" description="" %}
 
 
 ## Truth table
 
-<div style="text-align:center"><img src="/assets/images/halfadder_truthtable.jpg" /></div>
+{% include image.html url="/assets/images/halfadder_truthtable.jpg" description="" %}
 
 ## Circuit diagram
 
@@ -56,16 +56,16 @@ The full adder is a three-input and two output combinational circuit.
 
 ## Block diagram
 
-<div style="text-align:center"><img src="/assets/images/fulladder_blockdiagram.jpg" /></div>
+{% include image.html url="/assets/images/fulladder_blockdiagram.jpg" description="" %}
 
 
 ## Truth table
 
-<div style="text-align:center"><img src="/assets/images/fulladder_truthtable.jpg" /></div>
+{% include image.html url="/assets/images/fulladder_truthtable.jpg" description="" %}
 
 ## Circuit diagram
 
-<div style="text-align:center"><img src="/assets/images/fulladder_circuitdiagram.jpg" /></div>
+{% include image.html url="/assets/images/fulladder_circuitdiagram.jpg" description="" %}
 
 ## Full adder from 2 half adder
 
@@ -90,11 +90,11 @@ In the subtraction (A-B), A is called a Minuend bit and B is called a Subtrahend
 
 ## Truth table
 
-<div style="text-align:center"><img src="/assets/images/halfsubstrator_truthtable.jpg" /></div>
+{% include image.html url="/assets/images/halfsubstrator_truthtable.jpg" description="" %}
 
 ## Circuit diagram
 
-<div style="text-align:center"><img src="/assets/images/halfsubstrator_circuitdiagram.jpg" /></div>
+{% include image.html url="/assets/images/halfsubstrator_circuitdiagram.jpg" description="" %}
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/12120" id="half_sub_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
@@ -113,11 +113,11 @@ A is the 'minuend', B is 'subtrahend', C is the 'borrow' produced by the previou
 
 ## Truth table
 
-<div style="text-align:center"><img src="/assets/images/fullsubstrator_truthtable.jpg" /></div>
+{% include image.html url="/assets/images/fullsubstrator_truthtable.jpg" description="" %}
 
 ## Circuit diagram
 
-<div style="text-align:center"><img src="/assets/images/fullsubstrator_circuitdiagram.jpg" /></div>
+{% include image.html url="/assets/images/fullsubstrator_circuitdiagram.jpg" description="" %}
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/12119" id="full_sub_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
@@ -144,7 +144,7 @@ The rest of the connections are the same as those of n-bit parallel adder is sho
 
 ## Block diagram
 
-<div style="text-align:center"><img src="/assets/images/fourbitadder_blockdiagram.jpg" /></div>
+{% include image.html url="/assets/images/fourbitadder_blockdiagram.jpg" description="" %}
 
 # N-bit parallel subtractor
 
@@ -163,7 +163,7 @@ If A > B Cout = 0 and the result of binary form (A-B) then Cout = 1 and the resu
 
 ## Block diagram
 
-<div style="text-align:center"><img src="/assets/images/fourbitsubstractor_blockdiagram.jpg" /></div>
+{% include image.html url="/assets/images/fourbitsubstractor_blockdiagram.jpg" description="" %}
 
 
 ## 8-bit full adder and subtractor   

@@ -78,12 +78,12 @@ CircuitVerse's Interactive Book may also include quotations, images, or other me
 
 More information about "Fair use"
 
--   <https://www.baylor.edu/copyright/index.php?id=56543>
--   <https://www.baylor.edu/copyright/doc.php/240714.pdf>
--   <https://librarycopyright.net/resources/fairuse/index.php>
--   <https://www.baylor.edu/content/services/document.php/68621.pdf>
--   <https://www.copylaw.com/new_articles/copy_myths.html>
--   <https://blogs.library.duke.edu/scholcomm/2007/11/30/citation-infringement/>
+- <https://www.baylor.edu/copyright/index.php?id=56543>
+- <https://www.baylor.edu/copyright/doc.php/240714.pdf>
+- <https://librarycopyright.net/resources/fairuse/index.php>
+- <https://www.baylor.edu/content/services/document.php/68621.pdf>
+- <https://www.copylaw.com/new_articles/copy_myths.html>
+- <https://blogs.library.duke.edu/scholcomm/2007/11/30/citation-infringement/>
 
 
 ### Linking to copyrighted works

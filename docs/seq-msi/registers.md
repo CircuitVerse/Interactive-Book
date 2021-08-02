@@ -47,31 +47,31 @@ Let all the flip-flops be initially in the reset condition i.e. Q3 = Q2 = Q1 = Q
 ### Block diagram
 
 
-<div style="text-align:center"><img src="/assets/images/siso_blockdiagram.jpg" /></div>
+{% include image.html url="/assets/images/siso_blockdiagram.jpg" description="" %}
 
 ### Operation
 
 Before application of the clock signal, let Q3 Q2 Q1 Q0 = 0000 and apply the LSB bit of the number to Din. So Din = D3 = 1. Now, apply the clock. On the first falling edge of the clock, the FF-3 is set, and stored word in the register is Q3 Q2 Q1 Q0 = 1000.
 
-<div style="text-align:center"><img src="/assets/images/siso_operation1.jpg" /></div>
+{% include image.html url="/assets/images/siso_operation1.jpg" description="" %}
 
 Apply the next bit to Din. So Din = 1. As soon as the next negative edge of the clock gets triggered, FF-2 will set and the stored word change to Q3 Q2 Q1 Q0 = 1100.
 
-<div style="text-align:center"><img src="/assets/images/siso_operation2.jpg" /></div>
+{% include image.html url="/assets/images/siso_operation2.jpg" description="" %}
 
 Apply the next bit to be stored i.e. 1 to Din. Apply the clock pulse. As soon as the third negative clock edge gets triggered, FF-1 will be set and output will get modified to Q3 Q2 Q1 Q0 = 1110.
 
-<div style="text-align:center"><img src="/assets/images/siso_operation3.jpg" /></div>
+{% include image.html url="/assets/images/siso_operation3.jpg" description="" %}
 
 Similarly with Din = 1 and with the fourth negative clock edge arriving, the stored word in the register is Q3 Q2 Q1 Q0 = 1111.
 
-<div style="text-align:center"><img src="/assets/images/siso_operation4.jpg" /></div>
+{% include image.html url="/assets/images/siso_operation4.jpg" description="" %}
 
 ### Truth table
-<div style="text-align:center"><img src="/assets/images/siso_truthtable.jpg" /></div>
+{% include image.html url="/assets/images/siso_truthtable.jpg" description="" %}
 
 ### Waveforms
-<div style="text-align:center"><img src="/assets/images/siso_waveform.jpg" /></div>
+{% include image.html url="/assets/images/siso_waveform.jpg" description="" %}
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/93866" id="ss_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
@@ -90,7 +90,7 @@ Similarly with Din = 1 and with the fourth negative clock edge arriving, the sto
 ### Block diagram
 
 
-<div style="text-align:center"><img src="/assets/images/sipo_blockdiagram.jpg" /></div>
+{% include image.html url="/assets/images/sipo_blockdiagram.jpg" description="" %}
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/93880" id="sp_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
@@ -125,7 +125,7 @@ Thus, the parallel-in serial-out operation takes place.
 ### Block diagram
 
 
-<div style="text-align:center"><img src="/assets/images/piso_blockdiagram.jpg" /></div>
+{% include image.html url="/assets/images/piso_blockdiagram.jpg" description="" %}
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/93910" id="ps_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
@@ -143,7 +143,7 @@ Only the clock pulse is essential to load all the binary bits.
 ### Block diagram
 
 
-<div style="text-align:center"><img src="/assets/images/pipo_blockdiagram.jpg" /></div>
+{% include image.html url="/assets/images/pipo_blockdiagram.jpg" description="" %}
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/93890" id="pp_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
@@ -178,7 +178,7 @@ The number of states in a Ring Counter are directly proportional to the number o
 
 The block diagram of the 3-bit Ring counter is shown in the following figure.
 
-<div style="text-align:center"><img src="/assets/images/ring_counter.jpg" /></div>
+{% include image.html url="/assets/images/ring_counter.jpg" description="" %}
 
 A 3-bit Ring Counter will contain only a 3-bit SIPO shift register.
 
@@ -204,7 +204,7 @@ The Johnson ring counter functions similarly to the Ring counter. The difference
 
 Johnson ring counter is also called the *Twisted ring counter* and *Switch tail ring counter*. The block diagram of 3-bit Johnson Ring counter is shown in the following figure.
 
-<div style="text-align:center"><img src="/assets/images/twisted_ring_counter.jpg" /></div>
+{% include image.html url="/assets/images/twisted_ring_counter.jpg" description="" %}
 
 The 3-bit Johnson Ring counter also contains only a 3-bit SIPO shift register.
 

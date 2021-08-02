@@ -21,17 +21,17 @@ has_children: false
 
 ## Signed and unsigned numbers
 
-Currently, we have just looked at **unsigned** numbers - they can only be positive, as there is no sign. However, sometimes we need to work with **negative numbers** too. To do this, we add a **sign bit** on the far left of the binary number, which indicates whether the number is positive (\`0\`) or negative(\`1\`).
+Currently, we have just looked at **unsigned** numbers - they can only be positive, as there is no sign. However, sometimes we need to work with **negative numbers** too. To do this, we add a **sign bit** on the far left of the binary number, which indicates whether the number is positive (`0`) or negative(`1`).
 
-For example, the number \`10000011\` would be \`131\` if the number is **unsigned**, but if the number is **signed**, the actual representation would be \`-3\`
+For example, the number `10000011` would be `131` if the number is **unsigned**, but if the number is **signed**, the actual representation would be `-3`
 
--   The first bit \`1\` represents that the number is negative
--   The remaining bits \`0000011\` represent the actual number, \`3\`
+-   The first bit `1` represents that the number is negative
+-   The remaining bits `0000011` represent the actual number, `3`
 
 The downside to using a signed number is that it removes one bit from the actual number representation, halving the maximum value.
 
--   The minimum and maximum values for an \`unsigned 8-bit\` number would be \`0\` to \`2<sup>8</sup>-1\` (\`0\` to \`255\`)
--   The minimum and maximum values for a \`signed 8-bit\` number would be \`-2<sup>7</sup>-1\` to \`2<sup>7</sup>-1\` (\`-127\` to \`127\`)
+-   The minimum and maximum values for an `unsigned 8-bit` number would be `0` to `2<sup>8</sup>-1` (`0` to `255`)
+-   The minimum and maximum values for a `signed 8-bit` number would be `-2<sup>7</sup>-1` to `2<sup>7</sup>-1` (`-127` to `127`)
 
 
 ## Complements in binary system
@@ -68,13 +68,13 @@ add 1               +           1
 
 {:.quiz}
 
-1. Using signed two's complement notation,what is the decimal value of 00010001 ?
+1. Using signed two's complement notation, what is the decimal value of 00010001 ?
 	* -47
 	* +37
 	* -149
 	1. +17
 
-2. Using signed two's complement notation,what is the decimal value of 00010001 ?
+2. Using signed two's complement notation, what is the decimal value of 00010001 ?
 	*  positive
 	* incorrect
 	1. negative

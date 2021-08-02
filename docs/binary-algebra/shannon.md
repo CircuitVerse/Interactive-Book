@@ -25,7 +25,7 @@ The *Shannon expansion* or *decomposition* theorem, also known as *Boole's expan
 
 The expansion can take any of these three variations:
 
-$\begin{align} f(x_1,x_2,\ldots,x_n)&= x_1 \cdot f(1,x_2,\ldots,x_n) + \overline{x_1}\cdot f(0,x_2,\ldots,x_n) \\\\\\ &= \bigl(x_1+f(0,x_2,\ldots,x_n)\bigr)\cdot \bigl(\overline{x_1}+f(1,x_2,\ldots,x_n)\bigr) \\\\\\ &= x_1 \cdot f(1,x_2,\ldots,x_n) \oplus \overline{x_1}\cdot f(0,x_2,\ldots,x_n)  \end{align}$
+$\begin{aligned} f(x_1,x_2,\ldots,x_n)&= x_1 \cdot f(1,x_2,\ldots,x_n) + \overline{x_1}\cdot f(0,x_2,\ldots,x_n) \\\\\\ &= \bigl(x_1+f(0,x_2,\ldots,x_n)\bigr)\cdot \bigl(\overline{x_1}+f(1,x_2,\ldots,x_n)\bigr) \\\\\\ &= x_1 \cdot f(1,x_2,\ldots,x_n) \oplus \overline{x_1}\cdot f(0,x_2,\ldots,x_n)  \end{aligned}$
 
 More details can be found in Section 1.9 "Shannon's Expansion Theorem" in {% cite donzellini2018introduction --file books %} and in Section 3.2 "Switching functions" in {% cite kohavi2010switching --file books %}.
 

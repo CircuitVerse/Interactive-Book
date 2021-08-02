@@ -14,7 +14,7 @@ has_toc: false
 
 Unlike Combinational Circuits, most systems that one will encounter in practice will include Memory element thus being described in terms of sequential logic. The memory elements are devices capable of storing binary information within them. The binary information stored in the memory elements at a given time defines the **state** of the circuit. Thus a sequential circuit is specified by time sequence of *inputs, outputs and internal states*.
 
-<div style="text-align:center"><img src="/assets/images/sequential_circuit_blockdiagram.jpg" /></div>
+{% include image.html url="/assets/images/sequential_circuit_blockdiagram.jpg" description="" %}
 
 - This sequential circuit contains a set of inputs and output(s). 
 - The output(s) of sequential circuit depends not only on the combination of present inputs but also on the previous output(s). 
@@ -44,13 +44,13 @@ Following are the two types of sequential circuits −
 
 If some or all the outputs of a sequential circuit do not change (affect) with respect to active transition of clock signal, then that sequential circuit is called as Asynchronous sequential circuit. That means, all the outputs of asynchronous sequential circuits do not change (affect) at the same time. Therefore, most of the outputs of asynchronous sequential circuits are not in synchronous with either only positive edges or only negative edges of clock signal.
 
-<div style="text-align:center"><img src="/assets/images/sequential_asynchronous_circuit.jpg" /></div>
+{% include image.html url="/assets/images/sequential_asynchronous_circuit.jpg" description="" %}
 
 ### Synchronous sequential circuits
 
 If all the outputs of a sequential circuit change (affect) with respect to active transition of clock signal, then that sequential circuit is called as Synchronous sequential circuit. That means, all the outputs of synchronous sequential circuits change (affect) at the same time. Therefore, the outputs of synchronous sequential circuits are in synchronous with either only positive edges or only negative edges of clock signal.
 
-<div style="text-align:center"><img src="/assets/images/sequential_synchronous_circuit.jpg" /></div>
+{% include image.html url="/assets/images/sequential_synchronous_circuit.jpg" description="" %}
 
 
 ## Chapter contents

@@ -15,4 +15,4 @@ Interactive-Book is &copy; 2020 by [CircuitVerse](https://circuitverse.org/).
 
 ## Contributors
 Thanks to everyone who has contributed to the Interactive Book.
-<a href="https://github.com/CircuitVerse/Interactive-Book/graphs/contributors"><img src="https://contributors-img.firebaseapp.com/image?repo=CircuitVerse/Interactive-Book" alt="Image of contributors"></a>
+[![Image of contributors](https://contributors-img.firebaseapp.com/image?repo=CircuitVerse/Interactive-Book)](https://github.com/CircuitVerse/Interactive-Book/graphs/contributors)

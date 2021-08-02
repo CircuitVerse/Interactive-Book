@@ -41,7 +41,7 @@ Output = Operation**
 
 Now you can take up the 1 bit ALU as block and construct a 4 bit ALU, which performs all the functions of the 1 bit ALU on the 4 bit inputs. Thus a single building block can be constructed and used recursively. The inputs A and B are four bits and the output is 4 bit as well. Figure below illustrates it:
 
-<div style="text-align:center" ><img src="/assets/images/360px-4BITALU.jpg" /></div>
+{% include image.html url='/assets/images/360px-4BITALU.jpg' description='4 bit ALU' %}
 
 There are a few important takeaways here:
 - The selection lines MO and M1 select the function ALU performs. These selection lines combined with the input arguments and desired functions, an Instruction Set can be formed.

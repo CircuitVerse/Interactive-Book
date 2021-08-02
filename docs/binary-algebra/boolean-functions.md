@@ -26,7 +26,7 @@ A mathematical expression consisting of Boolean variables combined using the Boo
 
 ## Mathematical definition
 
-If $k$ is the number of Boolean variables of the function, then the function $f(x_1,\ldots,x_k)$ and its domain and codomain are defined as $f:\\{0,1\\}^k\rightarrow\\{0,1\\}$
+If $k$ is the number of Boolean variables of the function, then the function $f(x_1,\ldots,x_k)$ and its domain and codomain are defined as $f:\{0,1\}^k\rightarrow\{0,1\}$
 
 
 ## Important concepts

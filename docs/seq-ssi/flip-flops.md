@@ -59,7 +59,7 @@ Now let us implement various flip-flops by providing the cross coupling between 
 
 SR flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, SR latch operates with enable signal. The circuit diagram of SR flip-flop is shown in the following figure.
 
-<div style="text-align:center"><img src="/assets/images/sr_flipflop.jpg" /></div>
+{% include image.html url="/assets/images/sr_flipflop.jpg" description="" %}
 
 his circuit has two inputs S & R and two outputs Q(t) & Q(t)’. The operation of SR flipflop is similar to SR Latch. But, this flip-flop affects the outputs only when positive transition of the clock signal is applied instead of active enable.
 
@@ -91,7 +91,7 @@ Therefore, SR Latch performs three types of functions such as Hold, Set & Reset 
 
 By using three **variable K-Map**, you can get the simplified expression for next state, Q(t + 1). The three variable K-Map for next state, Q(t + 1) is shown in the following figure.
 
-<div style="text-align:center"><img src="/assets/images/3_variable_k_map_next_state.jpg" /></div>
+{% include image.html url="/assets/images/3_variable_k_map_next_state.jpg" description="" %}
 
 The maximum possible groupings of adjacent ones are already shown in the figure. Therefore, the simplified expression for next state Q(t + 1) is
 ```yaml
@@ -107,7 +107,7 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 D flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, D latch operates with enable signal. That means, the output of D flip-flop is insensitive to the changes in the input, D except for active transition of the clock signal. The circuit diagram of D flip-flop is shown in the following figure.
 
-<div style="text-align:center"><img src="/assets/images/d_flipflop.jpg" /></div>
+{% include image.html url="/assets/images/d_flipflop.jpg" description="" %}
 
 This circuit has single input D and two outputs Q(t) & Q(t)’. The operation of D flip-flop is similar to D Latch. But, this flip-flop affects the outputs only when positive transition of the clock signal is applied instead of active enable.
 
@@ -135,7 +135,7 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
 
 JK flip-flop is the modified version of SR flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of JK flip-flop is shown in the following figure.
 
-<div style="text-align:center"><img src="/assets/images/jk_flipflop.jpg" /></div>
+{% include image.html url="/assets/images/jk_flipflop.jpg" description="" %}
 
 This circuit has two inputs J & K and two outputs Q(t) & Q(t)’. The operation of JK flip-flop is similar to SR flip-flop. Here, the inputs of SR flip-flop are considered as **S = J Q(t)’** and **R = KQ(t)** in order to utilize the modified SR flip-flop for 4 combinations of inputs.
 
@@ -166,7 +166,7 @@ Here, Q(t) & Q(t + 1) are present state & next state respectively. So, JK flip-f
 
 By using three variable K-Map, you can get the simplified expression for next state, Q(t + 1). The **three variable K-Map** for next state, Q(t + 1) is shown in the following figure.
 
-<div style="text-align:center"><img src="/assets/images/jk_3_variable_kmap.jpg" /></div>
+{% include image.html url="/assets/images/jk_3_variable_kmap.jpg" description="" %}
 
 The maximum possible groupings of adjacent ones are already shown in the figure. Therefore, the simplified expression for next state Q(t+1) is
 ```yaml
@@ -182,7 +182,7 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 T flip-flop is the simplified version of JK flip-flop. It is obtained by connecting the same input ‘T’ to both inputs of JK flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of T flip-flop is shown in the following figure.
 
-<div style="text-align:center"><img src="/assets/images/t_flipflop.jpg" /></div>
+{% include image.html url="/assets/images/t_flipflop.jpg" description="" %}
 
 This circuit has single input T and two outputs Q(t) & Q(t)’. The operation of T flip-flop is same as that of JK flip-flop. Here, the inputs of JK flip-flop are considered as J = T and K = T in order to utilize the modified JK flip-flop for 2 combinations of inputs. So, the other two combinations of J & K are eliminated, for which those two values are complement to each other in T flip-flop.
 
@@ -227,7 +227,7 @@ The output of T flip-flop always toggles for every positive transition of the cl
 
 Master-slave JK flip-flop is designed to eliminate the race around condition in JK flip-flop and it is constructed by using two JK flip-flops as shown in the circuit diagram below.
 
-<div style="text-align:center"><img src="/assets/images/masterslave_jk_flipflop.png" /></div>
+{% include image.html url="/assets/images/masterslave_jk_flipflop.png" description="" %}
 
 The first flip-flop is called the _master_, and it is driven by the positive clock cycle.
 The second flip-flop is called the _slave_, and it is driven by the negative clock cycle.
@@ -236,7 +236,7 @@ During the negative clock cycle, slave flip-flop gets activated and copies the p
 
 ## Master-slave JK flip-flop constructed by using NAND gates
 
-<div style="text-align:center"><img src="/assets/images/masterslave_jk_flipflop_nand.png" /></div>
+{% include image.html url="/assets/images/masterslave_jk_flipflop_nand.png" description="" %}
 
 ## State table
 
