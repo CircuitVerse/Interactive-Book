@@ -425,7 +425,10 @@ window.onload = function() {
 
 <p>SR flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, SR latch operates with enable signal. The circuit diagram of SR flip-flop is shown in the following figure.</p>
 
-<div style="text-align:center"><img src="/assets/images/sr_flipflop.jpg"></div>
+<figure class="image">
+  <img src="/assets/images/sr_flipflop.jpg" alt="">
+  <figcaption></figcaption>
+</figure>
 
 <p>his circuit has two inputs S &amp; R and two outputs Q(t) &amp; Q(t)’. The operation of SR flipflop is similar to SR Latch. But, this flip-flop affects the outputs only when positive transition of the clock signal is applied instead of active enable.</p>
       <h2 id="state-table">
@@ -544,7 +547,10 @@ window.onload = function() {
 
 <p>By using three <strong>variable K-Map</strong>, you can get the simplified expression for next state, Q(t + 1). The three variable K-Map for next state, Q(t + 1) is shown in the following figure.</p>
 
-<div style="text-align:center"><img src="/assets/images/3_variable_k_map_next_state.jpg"></div>
+<figure class="image">
+  <img src="/assets/images/3_variable_k_map_next_state.jpg" alt="">
+  <figcaption></figcaption>
+</figure>
 
 <p>The maximum possible groupings of adjacent ones are already shown in the figure. Therefore, the simplified expression for next state Q(t + 1) is</p>
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>          <span class="s">Q(t + 1) = S + R'.Q(t)</span>
@@ -570,7 +576,10 @@ window.onload = function() {
 
 <p>D flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, D latch operates with enable signal. That means, the output of D flip-flop is insensitive to the changes in the input, D except for active transition of the clock signal. The circuit diagram of D flip-flop is shown in the following figure.</p>
 
-<div style="text-align:center"><img src="/assets/images/d_flipflop.jpg"></div>
+<figure class="image">
+  <img src="/assets/images/d_flipflop.jpg" alt="">
+  <figcaption></figcaption>
+</figure>
 
 <p>This circuit has single input D and two outputs Q(t) &amp; Q(t)’. The operation of D flip-flop is similar to D Latch. But, this flip-flop affects the outputs only when positive transition of the clock signal is applied instead of active enable.</p>
       <h2 id="state-table-1">
@@ -626,7 +635,10 @@ window.onload = function() {
 
 <p>JK flip-flop is the modified version of SR flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of JK flip-flop is shown in the following figure.</p>
 
-<div style="text-align:center"><img src="/assets/images/jk_flipflop.jpg"></div>
+<figure class="image">
+  <img src="/assets/images/jk_flipflop.jpg" alt="">
+  <figcaption></figcaption>
+</figure>
 
 <p>This circuit has two inputs J &amp; K and two outputs Q(t) &amp; Q(t)’. The operation of JK flip-flop is similar to SR flip-flop. Here, the inputs of SR flip-flop are considered as <strong>S = J Q(t)’</strong> and <strong>R = KQ(t)</strong> in order to utilize the modified SR flip-flop for 4 combinations of inputs.</p>
       <h2 id="state-table-2">
@@ -743,7 +755,10 @@ window.onload = function() {
 
 <p>By using three variable K-Map, you can get the simplified expression for next state, Q(t + 1). The <strong>three variable K-Map</strong> for next state, Q(t + 1) is shown in the following figure.</p>
 
-<div style="text-align:center"><img src="/assets/images/jk_3_variable_kmap.jpg"></div>
+<figure class="image">
+  <img src="/assets/images/jk_3_variable_kmap.jpg" alt="">
+  <figcaption></figcaption>
+</figure>
 
 <p>The maximum possible groupings of adjacent ones are already shown in the figure. Therefore, the simplified expression for next state Q(t+1) is</p>
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>          <span class="s">Q(t + 1) = J.Q(t)' + K'.Q(t)</span>
@@ -769,7 +784,10 @@ window.onload = function() {
 
 <p>T flip-flop is the simplified version of JK flip-flop. It is obtained by connecting the same input ‘T’ to both inputs of JK flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of T flip-flop is shown in the following figure.</p>
 
-<div style="text-align:center"><img src="/assets/images/t_flipflop.jpg"></div>
+<figure class="image">
+  <img src="/assets/images/t_flipflop.jpg" alt="">
+  <figcaption></figcaption>
+</figure>
 
 <p>This circuit has single input T and two outputs Q(t) &amp; Q(t)’. The operation of T flip-flop is same as that of JK flip-flop. Here, the inputs of JK flip-flop are considered as J = T and K = T in order to utilize the modified JK flip-flop for 2 combinations of inputs. So, the other two combinations of J &amp; K are eliminated, for which those two values are complement to each other in T flip-flop.</p>
       <h2 id="state-table-3">
@@ -870,7 +888,10 @@ window.onload = function() {
 
 <p>Master-slave JK flip-flop is designed to eliminate the race around condition in JK flip-flop and it is constructed by using two JK flip-flops as shown in the circuit diagram below.</p>
 
-<div style="text-align:center"><img src="/assets/images/masterslave_jk_flipflop.png"></div>
+<figure class="image">
+  <img src="/assets/images/masterslave_jk_flipflop.png" alt="">
+  <figcaption></figcaption>
+</figure>
 
 <p>The first flip-flop is called the <em>master</em>, and it is driven by the positive clock cycle.
 The second flip-flop is called the <em>slave</em>, and it is driven by the negative clock cycle.
@@ -885,7 +906,10 @@ During the negative clock cycle, slave flip-flop gets activated and copies the p
       </h2>
     
 
-<div style="text-align:center"><img src="/assets/images/masterslave_jk_flipflop_nand.png"></div>
+<figure class="image">
+  <img src="/assets/images/masterslave_jk_flipflop_nand.png" alt="">
+  <figcaption></figcaption>
+</figure>
       <h2 id="state-table-4">
         
         

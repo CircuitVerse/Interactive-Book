@@ -265,7 +265,7 @@
   },"44": {
     "doc": "ALU",
     "title": "In detail",
-    "content": "So with the above building blocks i.e. half adder and full adder discussed in Combinational Analysis, lets construct a simple ALU that performs a arithmetic operation (1 bit addition) and does 3 logical operations namely AND, NOR and XOR as shown below. The multiplexer selects only one operation at a time. The operation selected depends on the selection lines of the multiplexer as shown in the truth table. Input = M0,M1 &amp; Output = Operation . | M0 | M1 | Operation | . | 0 | 0 | SUM | . | 0 | 1 | AND | . | 1 | 0 | OR | . | 1 | 1 | XOR | . Now you can take up the 1 bit ALU as block and construct a 4 bit ALU, which performs all the functions of the 1 bit ALU on the 4 bit inputs. Thus a single building block can be constructed and used recursively. The inputs A and B are four bits and the output is 4 bit as well. Figure below illustrates it: . There are a few important takeaways here: . | The selection lines MO and M1 select the function ALU performs. These selection lines combined with the input arguments and desired functions, an Instruction Set can be formed. | These Instructions can used to create meaningful programs. Since these are required to be easily available, they can be stored on ROM unit. | The input arguments A and B are often stored in Internal Registers. These along with other special purpose register form the registers of the microcontroller. | ROM memories are slower in speed, hence an intermediate high speed RAM is often used. | All the critical timings, decoding of the instructions are often grouped together in seperate control and timings unit. | If a Micro controller would be constructed only from ALU, RAM and ROM, there would not be any external interface. Hence, you now have Input/Output (I/O) ports. | Additional features such as Interrupts, communication protocols, EEPROM, Timers/Counters, Debug interfaces etc. are incorporated to make a controller complete. | . In above discussion you might have left out intricate details involved in an ALU, CPU design. But the aim was to understand ALU/CPU at a deeper level. | An ALU having n selection lines can provide upto _____ operations. | 2n | n / 2 . | 2^n | . | . | Input data can flow in parallel to multiple units inside the ALU. | True . | False | . | . | The data is stored in which of the following before ALU accesses it for operation ? . | ROM memory . | Internal registers | . | RAM memory | . | . ",
+    "content": "So with the above building blocks i.e. half adder and full adder discussed in Combinational Analysis, lets construct a simple ALU that performs a arithmetic operation (1 bit addition) and does 3 logical operations namely AND, NOR and XOR as shown below. The multiplexer selects only one operation at a time. The operation selected depends on the selection lines of the multiplexer as shown in the truth table. Input = M0,M1 &amp; Output = Operation . | M0 | M1 | Operation | . | 0 | 0 | SUM | . | 0 | 1 | AND | . | 1 | 0 | OR | . | 1 | 1 | XOR | . Now you can take up the 1 bit ALU as block and construct a 4 bit ALU, which performs all the functions of the 1 bit ALU on the 4 bit inputs. Thus a single building block can be constructed and used recursively. The inputs A and B are four bits and the output is 4 bit as well. Figure below illustrates it: . 4 bit ALU There are a few important takeaways here: . | The selection lines MO and M1 select the function ALU performs. These selection lines combined with the input arguments and desired functions, an Instruction Set can be formed. | These Instructions can used to create meaningful programs. Since these are required to be easily available, they can be stored on ROM unit. | The input arguments A and B are often stored in Internal Registers. These along with other special purpose register form the registers of the microcontroller. | ROM memories are slower in speed, hence an intermediate high speed RAM is often used. | All the critical timings, decoding of the instructions are often grouped together in seperate control and timings unit. | If a Micro controller would be constructed only from ALU, RAM and ROM, there would not be any external interface. Hence, you now have Input/Output (I/O) ports. | Additional features such as Interrupts, communication protocols, EEPROM, Timers/Counters, Debug interfaces etc. are incorporated to make a controller complete. | . In above discussion you might have left out intricate details involved in an ALU, CPU design. But the aim was to understand ALU/CPU at a deeper level. | An ALU having n selection lines can provide upto _____ operations. | 2n | n / 2 . | 2^n | . | . | Input data can flow in parallel to multiple units inside the ALU. | True . | False | . | . | The data is stored in which of the following before ALU accesses it for operation ? . | ROM memory . | Internal registers | . | RAM memory | . | . ",
     "url": "https://learn.circuitverse.org/docs/comb-lsi/alu.html#in-detail",
     "relUrl": "/docs/comb-lsi/alu.html#in-detail"
   },"45": {
@@ -397,7 +397,7 @@
   },"66": {
     "doc": "Boolean functions",
     "title": "Mathematical definition",
-    "content": "If $k$ is the number of Boolean variables of the function, then the function $f(x_1,\\ldots,x_k)$ and its domain and codomain are defined as $f:\\{0,1\\}^k\\rightarrow\\{0,1\\}$ . ",
+    "content": "If $k$ is the number of Boolean variables of the function, then the function $f(x_1,\\ldots,x_k)$ and its domain and codomain are defined as $f:{0,1}^k\\rightarrow{0,1}$ . ",
     "url": "https://learn.circuitverse.org/docs/binary-algebra/boolean-functions.html#mathematical-definition",
     "relUrl": "/docs/binary-algebra/boolean-functions.html#mathematical-definition"
   },"67": {
@@ -439,7 +439,7 @@
   },"73": {
     "doc": "Canonical functions",
     "title": "Truth table formation",
-    "content": "Truth Table is formed by evaluating the Boolean expression for each and every truth value of a variable. Now truth values of a variable are either ‘true’ or ‘false’. The main point is to evaluate the value of Boolean expression for each and every combination of the Truth values of variables present. Suppose there is only one variable, it implies that it can hold either ‘true’ or ‘false’ but, when there are two variables then you can have a combination of {TT, TF, FT, FF}(T -&gt; True, F -&gt; False). Implies you need to evaluate the value of expression for each and every Truth value of a variable. The above implications bring us to a conclusion that there can be 2^(number of variables) number of combination for a single boolean expression. Follow up the examples below to learn how to map those values. Example: F(A,B) = A + B . Truth Table:: . | A | B | F(A,B) | . | 0 | 0 | 0 | . | 0 | 1 | 1 | . | 1 | 0 | 1 | . | 1 | 1 | 1 | . Here you have 4 combinations for 2 variables, try to grasp the next example where variables are 3 which implies 8 combinations. Make a note of how Truth values of a variable are written under each column for every variable. Example: F(A,B,C) = A + B.C . ",
+    "content": "Truth Table is formed by evaluating the Boolean expression for each and every truth value of a variable. Now truth values of a variable are either ‘true’ or ‘false’. The main point is to evaluate the value of Boolean expression for each and every combination of the Truth values of variables present. Suppose there is only one variable, it implies that it can hold either ‘true’ or ‘false’ but, when there are two variables then you can have a combination of {TT, TF, FT, FF}(T -&gt; True, F -&gt; False). Implies you need to evaluate the value of expression for each and every Truth value of a variable. The above implications bring us to a conclusion that there can be 2^(number of variables) number of combination for a single boolean expression. Follow up the examples below to learn how to map those values. Example: F(A,B) = A + B . Truth Table:: . | A | B | F(A,B) |   | . | 0 | 0 | 0 | a | . | 0 | 1 | 1 |   | . | 1 | 0 | 1 |   | . | 1 | 1 | 1 |   | . Here you have 4 combinations for 2 variables, try to grasp the next example where variables are 3 which implies 8 combinations. Make a note of how Truth values of a variable are written under each column for every variable. Example: F(A,B,C) = A + B.C . ",
     "url": "https://learn.circuitverse.org/docs/logic-design/canonical.html#truth-table-formation",
     "relUrl": "/docs/logic-design/canonical.html#truth-table-formation"
   },"74": {
@@ -1165,7 +1165,7 @@
   },"194": {
     "doc": "Functional description",
     "title": "Introduction",
-    "content": "Combinational circuits consist of Logic gates. These circuits operate with binary values. The output(s) of combinational circuit depends on the combination of present inputs. The following figure shows the block diagram of combinational circuit. This combinational circuit has ‘n’ input variables and ‘m’ outputs. Each combination of input variables will affect the output(s). ",
+    "content": "Combinational circuits consist of Logic gates. These circuits operate with binary values. The output(s) of combinational circuit depends on the combination of present inputs. The following figure shows the block diagram of combinational circuit. Combinational Circuit This combinational circuit has ‘n’ input variables and ‘m’ outputs. Each combination of input variables will affect the output(s). ",
     "url": "https://learn.circuitverse.org/docs/logic-design/functional-description.html#introduction",
     "relUrl": "/docs/logic-design/functional-description.html#introduction"
   },"195": {
@@ -1235,197 +1235,197 @@
     "url": "https://learn.circuitverse.org/docs/logic-design/implementation.html#optimizing-a-circuit",
     "relUrl": "/docs/logic-design/implementation.html#optimizing-a-circuit"
   },"206": {
-    "doc": "Combinational SSI",
-    "title": "Combinational SSI components",
-    "content": "Small scale integration combinational components (i.e. logic gates) and some of their features are presented in this chapter. ",
-    "url": "https://learn.circuitverse.org/docs/comb-ssi/#combinational-ssi-components",
-    "relUrl": "/docs/comb-ssi/#combinational-ssi-components"
-  },"207": {
-    "doc": "Combinational SSI",
-    "title": "Chapter contents",
-    "content": ". | Basic level . | Logic gates | . | Medium level . | Logic families | Universal gates | . | . ",
-    "url": "https://learn.circuitverse.org/docs/comb-ssi/#chapter-contents",
-    "relUrl": "/docs/comb-ssi/#chapter-contents"
-  },"208": {
-    "doc": "Combinational SSI",
-    "title": "Combinational SSI",
-    "content": " ",
-    "url": "https://learn.circuitverse.org/docs/comb-ssi/",
-    "relUrl": "/docs/comb-ssi/"
-  },"209": {
-    "doc": "Sequential Design",
-    "title": "Sequential Design",
-    "content": "The previous chapter about SSI sequential components presented application examples using basic sequential building blocks such as latches and flip-flops. This chapter will describe tools and methods to design and synthesise optimal sequential circuits. ",
-    "url": "https://learn.circuitverse.org/docs/seq-design/",
-    "relUrl": "/docs/seq-design/"
-  },"210": {
-    "doc": "Sequential Design",
-    "title": "Chapter contents",
-    "content": ". | Basic level . | FSM | Sequential synthesis | . | Medium level . | Race conditions | . | Advanced level . | Flowchart diagrams | MDS Diagrams | . | . ",
-    "url": "https://learn.circuitverse.org/docs/seq-design/#chapter-contents",
-    "relUrl": "/docs/seq-design/#chapter-contents"
-  },"211": {
-    "doc": "Sequential MSI",
-    "title": "Sequential MSI components",
-    "content": "This chapter presents medium scale integration (MSI) sequential components as well as design methods based on these components. ",
-    "url": "https://learn.circuitverse.org/docs/seq-msi/#sequential-msi-components",
-    "relUrl": "/docs/seq-msi/#sequential-msi-components"
-  },"212": {
-    "doc": "Sequential MSI",
-    "title": "Chapter contents",
-    "content": ". | Basic level . | Counters | Registers | . | Medium level . | MSI based design | Multipliers/Dividers | . | . ",
-    "url": "https://learn.circuitverse.org/docs/seq-msi/#chapter-contents",
-    "relUrl": "/docs/seq-msi/#chapter-contents"
-  },"213": {
-    "doc": "Sequential MSI",
-    "title": "Sequential MSI",
-    "content": " ",
-    "url": "https://learn.circuitverse.org/docs/seq-msi/",
-    "relUrl": "/docs/seq-msi/"
-  },"214": {
-    "doc": "Binary algebra",
-    "title": "Mathematical operations with binary numbers",
-    "content": "This chapter introduce the basic arithmetic operations using binary numbers as well as the Boolean algebra. ",
-    "url": "https://learn.circuitverse.org/docs/binary-algebra/#mathematical-operations-with-binary-numbers",
-    "relUrl": "/docs/binary-algebra/#mathematical-operations-with-binary-numbers"
-  },"215": {
-    "doc": "Binary algebra",
-    "title": "Chapter contents",
-    "content": ". | Basic level . | Addition | Division | Multiplication | Subtraction | . | Medium level . | Boolean algebra | Boolean functions | . | Advanced level . | IEEE Std 754 | Shannon decomposition | . | . ",
-    "url": "https://learn.circuitverse.org/docs/binary-algebra/#chapter-contents",
-    "relUrl": "/docs/binary-algebra/#chapter-contents"
-  },"216": {
-    "doc": "Binary algebra",
-    "title": "Binary algebra",
-    "content": " ",
-    "url": "https://learn.circuitverse.org/docs/binary-algebra/",
-    "relUrl": "/docs/binary-algebra/"
-  },"217": {
-    "doc": "Combinational MSI",
-    "title": "Combinational MSI components",
-    "content": " ",
-    "url": "https://learn.circuitverse.org/docs/comb-msi/#combinational-msi-components",
-    "relUrl": "/docs/comb-msi/#combinational-msi-components"
-  },"218": {
-    "doc": "Combinational MSI",
-    "title": "Introduction",
-    "content": "MSI or Medium scale integrated circuits are a set of basic, elementary logic circuits. They are available as ICs (integrated chips) and implement specific,commonly used digital functions such as: . | Multiplexing and Demultiplexing | Encoding and Decoding | . MSIs can be used as a stand-alone IC or in combination with other ICs in order to implement combinational circuits in various applications. In this module, you will study many of the common types of MSI devices. For each type, you will start with a brief discussion of its basic operating principle and then introduce specific ICs. Now let’s see how they can be used alone or in combination with other ICs in various applications. ",
-    "url": "https://learn.circuitverse.org/docs/comb-msi/#introduction",
-    "relUrl": "/docs/comb-msi/#introduction"
-  },"219": {
-    "doc": "Combinational MSI",
-    "title": "Chapter contents",
-    "content": ". | Basic level . | Adders | Encoders/Decoders | MUX/DEMUX | . | Medium level . | MUX-based functions | . | . ",
-    "url": "https://learn.circuitverse.org/docs/comb-msi/#chapter-contents",
-    "relUrl": "/docs/comb-msi/#chapter-contents"
-  },"220": {
-    "doc": "Combinational MSI",
-    "title": "Combinational MSI",
-    "content": " ",
-    "url": "https://learn.circuitverse.org/docs/comb-msi/",
-    "relUrl": "/docs/comb-msi/"
-  },"221": {
-    "doc": "Binary representation",
-    "title": "Representation using binary numbers",
-    "content": "This chapter explain the basics of representing quantities and information using binary numbers. ",
-    "url": "https://learn.circuitverse.org/docs/binary-representation/#representation-using-binary-numbers",
-    "relUrl": "/docs/binary-representation/#representation-using-binary-numbers"
-  },"222": {
-    "doc": "Binary representation",
-    "title": "Chapter contents",
-    "content": ". | Basic level . | Binary numbers | Encoding information | Negative quantities | Number bases | . | Medium level . | Discrete quantities | . | . ",
-    "url": "https://learn.circuitverse.org/docs/binary-representation/#chapter-contents",
-    "relUrl": "/docs/binary-representation/#chapter-contents"
-  },"223": {
-    "doc": "Binary representation",
-    "title": "Binary representation",
-    "content": " ",
-    "url": "https://learn.circuitverse.org/docs/binary-representation/",
-    "relUrl": "/docs/binary-representation/"
-  },"224": {
-    "doc": "Combinational LSI",
-    "title": "Combinational LSI components",
-    "content": "Large scale integration combinational components such as Read-only Memories (ROMs), Arithmetic Logic Units (ALUs) and Programmable Logic Devices (PLDs) are described in chapter. ",
-    "url": "https://learn.circuitverse.org/docs/comb-lsi/#combinational-lsi-components",
-    "relUrl": "/docs/comb-lsi/#combinational-lsi-components"
-  },"225": {
-    "doc": "Combinational LSI",
-    "title": "Chapter contents",
-    "content": ". | Basic level . | ALU | ROM | . | . ",
-    "url": "https://learn.circuitverse.org/docs/comb-lsi/#chapter-contents",
-    "relUrl": "/docs/comb-lsi/#chapter-contents"
-  },"226": {
-    "doc": "Combinational LSI",
-    "title": "Combinational LSI",
-    "content": " ",
-    "url": "https://learn.circuitverse.org/docs/comb-lsi/",
-    "relUrl": "/docs/comb-lsi/"
-  },"227": {
-    "doc": "Logic Design",
-    "title": "Combinational logic design",
-    "content": "This chapter explains how to obtain a circuit from a functional definition. It also describes some optimisation methods to reduce the design before implementing it and explains the concepts which are required to understand those procedures. ",
-    "url": "https://learn.circuitverse.org/docs/logic-design/#combinational-logic-design",
-    "relUrl": "/docs/logic-design/#combinational-logic-design"
-  },"228": {
-    "doc": "Logic Design",
-    "title": "Table of contents",
-    "content": ". | Basic level . | Functional description | Implementation | . | Medium level . | Canonical functions | K-Maps | . | Advanced level . | Binary cubes | Map-entered variables | Quine McCluskey | . | . ",
-    "url": "https://learn.circuitverse.org/docs/logic-design/#table-of-contents",
-    "relUrl": "/docs/logic-design/#table-of-contents"
-  },"229": {
-    "doc": "Logic Design",
-    "title": "Logic Design",
-    "content": " ",
-    "url": "https://learn.circuitverse.org/docs/logic-design/",
-    "relUrl": "/docs/logic-design/"
-  },"230": {
-    "doc": "Sequential LSI",
-    "title": "Sequential LSI components",
-    "content": "Large scale integration (LSI) technology can also be used to implement sequential systems. One approach consists in using ROM circuits for the combinational logic block and latches or a counter as memory elements. This simple ROM-based µcontrollers, later evolved into what we know today as µprocessors, by integrating different complementary circuits. Another approach, derived from programmable logic devices (PLDs), is based on Field Programmable Gate Arrays (FPGA). These LSI circuits include several logic cells with each cell containing simple combinational and sequential elements the cells can be interconnected in different ways to implement very complex designs in a single chip, which can also be reconfigured at any time. ",
-    "url": "https://learn.circuitverse.org/docs/seq-lsi/#sequential-lsi-components",
-    "relUrl": "/docs/seq-lsi/#sequential-lsi-components"
-  },"231": {
-    "doc": "Sequential LSI",
-    "title": "Chapter contents",
-    "content": ". | Basic level . | FPGA | Microprocessors | ROM-based µcontrollers | . | . ",
-    "url": "https://learn.circuitverse.org/docs/seq-lsi/#chapter-contents",
-    "relUrl": "/docs/seq-lsi/#chapter-contents"
-  },"232": {
-    "doc": "Sequential LSI",
-    "title": "Sequential LSI",
-    "content": " ",
-    "url": "https://learn.circuitverse.org/docs/seq-lsi/",
-    "relUrl": "/docs/seq-lsi/"
-  },"233": {
     "doc": "Sequential SSI",
     "title": "Sequential SSI components",
     "content": " ",
     "url": "https://learn.circuitverse.org/docs/seq-ssi/#sequential-ssi-components",
     "relUrl": "/docs/seq-ssi/#sequential-ssi-components"
-  },"234": {
+  },"207": {
     "doc": "Sequential SSI",
     "title": "Introduction",
     "content": "Unlike Combinational Circuits, most systems that one will encounter in practice will include Memory element thus being described in terms of sequential logic. The memory elements are devices capable of storing binary information within them. The binary information stored in the memory elements at a given time defines the state of the circuit. Thus a sequential circuit is specified by time sequence of inputs, outputs and internal states. | This sequential circuit contains a set of inputs and output(s). | The output(s) of sequential circuit depends not only on the combination of present inputs but also on the previous output(s). | Previous output is nothing but the present state. | Therefore, sequential circuits contain combinational circuits along with memory (storage) elements. | Some sequential circuits may not contain combinational circuits, but only memory elements. | . Following table shows the differences between combinational circuits and sequential circuits. | Combinational Circuits | Sequential Circuits | . | Outputs depend only on present inputs. | Outputs depend on both present inputs and present state. | . | Feedback path is not present. | Feedback path is present. | . | Memory elements are not required. | Memory elements are required. | . | Clock signal is not required. | Clock signal is required. | . | Easy to design. | Difficult to design. | . ",
     "url": "https://learn.circuitverse.org/docs/seq-ssi/#introduction",
     "relUrl": "/docs/seq-ssi/#introduction"
-  },"235": {
+  },"208": {
     "doc": "Sequential SSI",
     "title": "Types of sequential circuits",
     "content": "Following are the two types of sequential circuits − . | Asynchronous sequential circuits | Synchronous sequential circuits | . Asynchronous sequential circuits . If some or all the outputs of a sequential circuit do not change (affect) with respect to active transition of clock signal, then that sequential circuit is called as Asynchronous sequential circuit. That means, all the outputs of asynchronous sequential circuits do not change (affect) at the same time. Therefore, most of the outputs of asynchronous sequential circuits are not in synchronous with either only positive edges or only negative edges of clock signal. Synchronous sequential circuits . If all the outputs of a sequential circuit change (affect) with respect to active transition of clock signal, then that sequential circuit is called as Synchronous sequential circuit. That means, all the outputs of synchronous sequential circuits change (affect) at the same time. Therefore, the outputs of synchronous sequential circuits are in synchronous with either only positive edges or only negative edges of clock signal. ",
     "url": "https://learn.circuitverse.org/docs/seq-ssi/#types-of-sequential-circuits",
     "relUrl": "/docs/seq-ssi/#types-of-sequential-circuits"
-  },"236": {
+  },"209": {
     "doc": "Sequential SSI",
     "title": "Chapter contents",
     "content": ". | Basic level . | Clock signals | Flip-flops | Latches | . | . ",
     "url": "https://learn.circuitverse.org/docs/seq-ssi/#chapter-contents",
     "relUrl": "/docs/seq-ssi/#chapter-contents"
-  },"237": {
+  },"210": {
     "doc": "Sequential SSI",
     "title": "Sequential SSI",
     "content": " ",
     "url": "https://learn.circuitverse.org/docs/seq-ssi/",
     "relUrl": "/docs/seq-ssi/"
+  },"211": {
+    "doc": "Combinational SSI",
+    "title": "Combinational SSI components",
+    "content": "Small scale integration combinational components (i.e. logic gates) and some of their features are presented in this chapter. ",
+    "url": "https://learn.circuitverse.org/docs/comb-ssi/#combinational-ssi-components",
+    "relUrl": "/docs/comb-ssi/#combinational-ssi-components"
+  },"212": {
+    "doc": "Combinational SSI",
+    "title": "Chapter contents",
+    "content": ". | Basic level . | Logic gates | . | Medium level . | Logic families | Universal gates | . | . ",
+    "url": "https://learn.circuitverse.org/docs/comb-ssi/#chapter-contents",
+    "relUrl": "/docs/comb-ssi/#chapter-contents"
+  },"213": {
+    "doc": "Combinational SSI",
+    "title": "Combinational SSI",
+    "content": " ",
+    "url": "https://learn.circuitverse.org/docs/comb-ssi/",
+    "relUrl": "/docs/comb-ssi/"
+  },"214": {
+    "doc": "Sequential MSI",
+    "title": "Sequential MSI components",
+    "content": "This chapter presents medium scale integration (MSI) sequential components as well as design methods based on these components. ",
+    "url": "https://learn.circuitverse.org/docs/seq-msi/#sequential-msi-components",
+    "relUrl": "/docs/seq-msi/#sequential-msi-components"
+  },"215": {
+    "doc": "Sequential MSI",
+    "title": "Chapter contents",
+    "content": ". | Basic level . | Counters | Registers | . | Medium level . | MSI based design | Multipliers/Dividers | . | . ",
+    "url": "https://learn.circuitverse.org/docs/seq-msi/#chapter-contents",
+    "relUrl": "/docs/seq-msi/#chapter-contents"
+  },"216": {
+    "doc": "Sequential MSI",
+    "title": "Sequential MSI",
+    "content": " ",
+    "url": "https://learn.circuitverse.org/docs/seq-msi/",
+    "relUrl": "/docs/seq-msi/"
+  },"217": {
+    "doc": "Binary algebra",
+    "title": "Mathematical operations with binary numbers",
+    "content": "This chapter introduce the basic arithmetic operations using binary numbers as well as the Boolean algebra. ",
+    "url": "https://learn.circuitverse.org/docs/binary-algebra/#mathematical-operations-with-binary-numbers",
+    "relUrl": "/docs/binary-algebra/#mathematical-operations-with-binary-numbers"
+  },"218": {
+    "doc": "Binary algebra",
+    "title": "Chapter contents",
+    "content": ". | Basic level . | Addition | Division | Multiplication | Subtraction | . | Medium level . | Boolean algebra | Boolean functions | . | Advanced level . | IEEE Std 754 | Shannon decomposition | . | . ",
+    "url": "https://learn.circuitverse.org/docs/binary-algebra/#chapter-contents",
+    "relUrl": "/docs/binary-algebra/#chapter-contents"
+  },"219": {
+    "doc": "Binary algebra",
+    "title": "Binary algebra",
+    "content": " ",
+    "url": "https://learn.circuitverse.org/docs/binary-algebra/",
+    "relUrl": "/docs/binary-algebra/"
+  },"220": {
+    "doc": "Combinational MSI",
+    "title": "Combinational MSI components",
+    "content": " ",
+    "url": "https://learn.circuitverse.org/docs/comb-msi/#combinational-msi-components",
+    "relUrl": "/docs/comb-msi/#combinational-msi-components"
+  },"221": {
+    "doc": "Combinational MSI",
+    "title": "Introduction",
+    "content": "MSI or Medium scale integrated circuits are a set of basic, elementary logic circuits. They are available as ICs (integrated chips) and implement specific,commonly used digital functions such as: . | Multiplexing and Demultiplexing | Encoding and Decoding | . MSIs can be used as a stand-alone IC or in combination with other ICs in order to implement combinational circuits in various applications. In this module, you will study many of the common types of MSI devices. For each type, you will start with a brief discussion of its basic operating principle and then introduce specific ICs. Now let’s see how they can be used alone or in combination with other ICs in various applications. ",
+    "url": "https://learn.circuitverse.org/docs/comb-msi/#introduction",
+    "relUrl": "/docs/comb-msi/#introduction"
+  },"222": {
+    "doc": "Combinational MSI",
+    "title": "Chapter contents",
+    "content": ". | Basic level . | Adders | Encoders/Decoders | MUX/DEMUX | . | Medium level . | MUX-based functions | . | . ",
+    "url": "https://learn.circuitverse.org/docs/comb-msi/#chapter-contents",
+    "relUrl": "/docs/comb-msi/#chapter-contents"
+  },"223": {
+    "doc": "Combinational MSI",
+    "title": "Combinational MSI",
+    "content": " ",
+    "url": "https://learn.circuitverse.org/docs/comb-msi/",
+    "relUrl": "/docs/comb-msi/"
+  },"224": {
+    "doc": "Logic Design",
+    "title": "Combinational logic design",
+    "content": "This chapter explains how to obtain a circuit from a functional definition. It also describes some optimisation methods to reduce the design before implementing it and explains the concepts which are required to understand those procedures. ",
+    "url": "https://learn.circuitverse.org/docs/logic-design/#combinational-logic-design",
+    "relUrl": "/docs/logic-design/#combinational-logic-design"
+  },"225": {
+    "doc": "Logic Design",
+    "title": "Table of contents",
+    "content": ". | Basic level . | Functional description | Implementation | . | Medium level . | Canonical functions | K-Maps | . | Advanced level . | Binary cubes | Map-entered variables | Quine McCluskey | . | . ",
+    "url": "https://learn.circuitverse.org/docs/logic-design/#table-of-contents",
+    "relUrl": "/docs/logic-design/#table-of-contents"
+  },"226": {
+    "doc": "Logic Design",
+    "title": "Logic Design",
+    "content": " ",
+    "url": "https://learn.circuitverse.org/docs/logic-design/",
+    "relUrl": "/docs/logic-design/"
+  },"227": {
+    "doc": "Sequential Design",
+    "title": "Sequential Design",
+    "content": "The previous chapter about SSI sequential components presented application examples using basic sequential building blocks such as latches and flip-flops. This chapter will describe tools and methods to design and synthesise optimal sequential circuits. ",
+    "url": "https://learn.circuitverse.org/docs/seq-design/",
+    "relUrl": "/docs/seq-design/"
+  },"228": {
+    "doc": "Sequential Design",
+    "title": "Chapter contents",
+    "content": ". | Basic level . | FSM | Sequential synthesis | . | Medium level . | Race conditions | . | Advanced level . | Flowchart diagrams | MDS Diagrams | . | . ",
+    "url": "https://learn.circuitverse.org/docs/seq-design/#chapter-contents",
+    "relUrl": "/docs/seq-design/#chapter-contents"
+  },"229": {
+    "doc": "Sequential LSI",
+    "title": "Sequential LSI components",
+    "content": "Large scale integration (LSI) technology can also be used to implement sequential systems. One approach consists in using ROM circuits for the combinational logic block and latches or a counter as memory elements. This simple ROM-based µcontrollers, later evolved into what we know today as µprocessors, by integrating different complementary circuits. Another approach, derived from programmable logic devices (PLDs), is based on Field Programmable Gate Arrays (FPGA). These LSI circuits include several logic cells with each cell containing simple combinational and sequential elements the cells can be interconnected in different ways to implement very complex designs in a single chip, which can also be reconfigured at any time. ",
+    "url": "https://learn.circuitverse.org/docs/seq-lsi/#sequential-lsi-components",
+    "relUrl": "/docs/seq-lsi/#sequential-lsi-components"
+  },"230": {
+    "doc": "Sequential LSI",
+    "title": "Chapter contents",
+    "content": ". | Basic level . | FPGA | Microprocessors | ROM-based µcontrollers | . | . ",
+    "url": "https://learn.circuitverse.org/docs/seq-lsi/#chapter-contents",
+    "relUrl": "/docs/seq-lsi/#chapter-contents"
+  },"231": {
+    "doc": "Sequential LSI",
+    "title": "Sequential LSI",
+    "content": " ",
+    "url": "https://learn.circuitverse.org/docs/seq-lsi/",
+    "relUrl": "/docs/seq-lsi/"
+  },"232": {
+    "doc": "Binary representation",
+    "title": "Representation using binary numbers",
+    "content": "This chapter explain the basics of representing quantities and information using binary numbers. ",
+    "url": "https://learn.circuitverse.org/docs/binary-representation/#representation-using-binary-numbers",
+    "relUrl": "/docs/binary-representation/#representation-using-binary-numbers"
+  },"233": {
+    "doc": "Binary representation",
+    "title": "Chapter contents",
+    "content": ". | Basic level . | Binary numbers | Encoding information | Negative quantities | Number bases | . | Medium level . | Discrete quantities | . | . ",
+    "url": "https://learn.circuitverse.org/docs/binary-representation/#chapter-contents",
+    "relUrl": "/docs/binary-representation/#chapter-contents"
+  },"234": {
+    "doc": "Binary representation",
+    "title": "Binary representation",
+    "content": " ",
+    "url": "https://learn.circuitverse.org/docs/binary-representation/",
+    "relUrl": "/docs/binary-representation/"
+  },"235": {
+    "doc": "Combinational LSI",
+    "title": "Combinational LSI components",
+    "content": "Large scale integration combinational components such as Read-only Memories (ROMs), Arithmetic Logic Units (ALUs) and Programmable Logic Devices (PLDs) are described in chapter. ",
+    "url": "https://learn.circuitverse.org/docs/comb-lsi/#combinational-lsi-components",
+    "relUrl": "/docs/comb-lsi/#combinational-lsi-components"
+  },"236": {
+    "doc": "Combinational LSI",
+    "title": "Chapter contents",
+    "content": ". | Basic level . | ALU | ROM | . | . ",
+    "url": "https://learn.circuitverse.org/docs/comb-lsi/#chapter-contents",
+    "relUrl": "/docs/comb-lsi/#chapter-contents"
+  },"237": {
+    "doc": "Combinational LSI",
+    "title": "Combinational LSI",
+    "content": " ",
+    "url": "https://learn.circuitverse.org/docs/comb-lsi/",
+    "relUrl": "/docs/comb-lsi/"
   },"238": {
     "doc": "Home",
     "title": "Interactive-Book",
@@ -1639,7 +1639,7 @@
   },"273": {
     "doc": "Logic gates",
     "title": "Table of contents",
-    "content": ". | Introduction | NOT gate . | Verilog code for NOT gate | . | AND gate . | Verilog code for AND gate | . | OR gate . | Verilog code for OR gate | . | NAND gate . | Verilog code for NAND gate | . | NOR gate . | Verilog code for NOR gate | . | XOR gate . | Verilog code for XOR gate | . | XNOR gate . | Verilog code for XNOR gate | . | . ",
+    "content": ". | Introduction | Truth Table | NOT gate . | Verilog code for NOT gate | . | AND gate . | Verilog code for AND gate | . | OR gate . | Verilog code for OR gate | . | NAND gate . | Verilog code for NAND gate | . | NOR gate . | Verilog code for NOR gate | . | XOR gate . | Verilog code for XOR gate | . | XNOR gate . | Verilog code for XNOR gate | . | . ",
     "url": "https://learn.circuitverse.org/docs/comb-ssi/logic-gates.html#table-of-contents",
     "relUrl": "/docs/comb-ssi/logic-gates.html#table-of-contents"
   },"274": {
@@ -1652,48 +1652,48 @@
     "doc": "Logic gates",
     "title": "Truth Table",
     "content": "The Table which contains all logical possibilities is known as truth table. ",
-    "url": "https://learn.circuitverse.org/docs/comb-ssi/logic-gates.html",
-    "relUrl": "/docs/comb-ssi/logic-gates.html"
+    "url": "https://learn.circuitverse.org/docs/comb-ssi/logic-gates.html#truth-table",
+    "relUrl": "/docs/comb-ssi/logic-gates.html#truth-table"
   },"276": {
     "doc": "Logic gates",
     "title": "NOT gate",
-    "content": "The NOT gate is also known as an inverter because it produces the exact opposite of the input as output. It has one input and one output. The Truth table for NOT gate is given below . | Input | Output | . | 0 | 1 | . | 1 | 0 | . Verilog code for NOT gate . module not_gate( input a, output c ); assign c=~a; endmodule . ",
+    "content": "The NOT gate is also known as an inverter because it produces the exact opposite of the input as output. It has one input and one output. The Truth table for NOT gate is given below . | Input | Output | . | 0 | 1 | . | 1 | 0 | . Not Gate Verilog code for NOT gate . module not_gate( input a, output c ); assign c=~a; endmodule . ",
     "url": "https://learn.circuitverse.org/docs/comb-ssi/logic-gates.html#not-gate",
     "relUrl": "/docs/comb-ssi/logic-gates.html#not-gate"
   },"277": {
     "doc": "Logic gates",
     "title": "AND gate",
-    "content": "The AND gate’s operation is similar to that of multiplication. It has two inputs and one output. The output is high (1) if both inputs are 1, and for all other cases, the output is low (0). The Truth table for AND gate which consists of two inputs is given below . | Input 1 | Input 2 | Output | . | 0 | 0 | 0 | . | 0 | 1 | 0 | . | 1 | 0 | 0 | . | 1 | 1 | 1 | . Verilog code for AND gate . module and_gate( input a, input b, output c ); assign c=a &amp; b; endmodule . ",
+    "content": "The AND gate’s operation is similar to that of multiplication. It has two inputs and one output. The output is high (1) if both inputs are 1, and for all other cases, the output is low (0). The Truth table for AND gate which consists of two inputs is given below . | Input 1 | Input 2 | Output | . | 0 | 0 | 0 | . | 0 | 1 | 0 | . | 1 | 0 | 0 | . | 1 | 1 | 1 | . AND Gate Verilog code for AND gate . module and_gate( input a, input b, output c ); assign c=a &amp; b; endmodule . ",
     "url": "https://learn.circuitverse.org/docs/comb-ssi/logic-gates.html#and-gate",
     "relUrl": "/docs/comb-ssi/logic-gates.html#and-gate"
   },"278": {
     "doc": "Logic gates",
     "title": "OR gate",
-    "content": "The OR gate has two inputs and one output. If at least one of the inputs is 1, then the output will be high (1). If neither of the inputs is 1, then the output will be low (0). The Truth table of OR gate which consists of two inputs is given below . | Input 1 | Input 2 | Output | . | 0 | 0 | 0 | . | 0 | 1 | 1 | . | 1 | 0 | 1 | . | 1 | 1 | 1 | . Verilog code for OR gate . module or_gate( input a, input b, output c ); assign c=a | b; endmodule . ",
+    "content": "The OR gate has two inputs and one output. If at least one of the inputs is 1, then the output will be high (1). If neither of the inputs is 1, then the output will be low (0). The Truth table of OR gate which consists of two inputs is given below . | Input 1 | Input 2 | Output | . | 0 | 0 | 0 | . | 0 | 1 | 1 | . | 1 | 0 | 1 | . | 1 | 1 | 1 | . AND Gate Verilog code for OR gate . module or_gate( input a, input b, output c ); assign c=a | b; endmodule . ",
     "url": "https://learn.circuitverse.org/docs/comb-ssi/logic-gates.html#or-gate",
     "relUrl": "/docs/comb-ssi/logic-gates.html#or-gate"
   },"279": {
     "doc": "Logic gates",
     "title": "NAND gate",
-    "content": "The NAND gate is the complement of the AND gate. You can think of it as an AND gate followed immediately by a NOT gate. Its output is low (0) when both the inputs are 1, and for all other cases, its output is high (1). The symbol of NAND gate consists of AND gate followed by a small circle. The Truth table of NAND gate which consists of two inputs is given below . | Input 1 | Input 2 | Output | . | 0 | 0 | 1 | . | 0 | 1 | 1 | . | 1 | 0 | 1 | . | 1 | 1 | 0 | . Verilog code for NAND gate . module nand_gate( input a, input b, output c ); assign c=~(a &amp; b); endmodule . ",
+    "content": "The NAND gate is the complement of the AND gate. You can think of it as an AND gate followed immediately by a NOT gate. Its output is low (0) when both the inputs are 1, and for all other cases, its output is high (1). The symbol of NAND gate consists of AND gate followed by a small circle. The Truth table of NAND gate which consists of two inputs is given below . | Input 1 | Input 2 | Output | . | 0 | 0 | 1 | . | 0 | 1 | 1 | . | 1 | 0 | 1 | . | 1 | 1 | 0 | . NAND Gate Verilog code for NAND gate . module nand_gate( input a, input b, output c ); assign c=~(a &amp; b); endmodule . ",
     "url": "https://learn.circuitverse.org/docs/comb-ssi/logic-gates.html#nand-gate",
     "relUrl": "/docs/comb-ssi/logic-gates.html#nand-gate"
   },"280": {
     "doc": "Logic gates",
     "title": "NOR gate",
-    "content": "The NOR gate is the complement of the OR gate. You can think of it as an OR gate followed immediately by a NOT gate. Its output is low (0) when one or both of the inputs are 1, and for all other cases, its output is high (1). The symbol of NOR gate consists of OR gate followed by a small circle. The Truth table of NOR gate which consists of two inputs is given below . | Input 1 | Input 2 | Output | . | 0 | 0 | 1 | . | 0 | 1 | 0 | . | 1 | 0 | 0 | . | 1 | 1 | 0 | . Verilog code for NOR gate . module nor_gate( input a, input b, output c ); assign c=~(a | b); endmodule . ",
+    "content": "The NOR gate is the complement of the OR gate. You can think of it as an OR gate followed immediately by a NOT gate. Its output is low (0) when one or both of the inputs are 1, and for all other cases, its output is high (1). The symbol of NOR gate consists of OR gate followed by a small circle. The Truth table of NOR gate which consists of two inputs is given below . | Input 1 | Input 2 | Output | . | 0 | 0 | 1 | . | 0 | 1 | 0 | . | 1 | 0 | 0 | . | 1 | 1 | 0 | . NOR Gate Verilog code for NOR gate . module nor_gate( input a, input b, output c ); assign c=~(a | b); endmodule . ",
     "url": "https://learn.circuitverse.org/docs/comb-ssi/logic-gates.html#nor-gate",
     "relUrl": "/docs/comb-ssi/logic-gates.html#nor-gate"
   },"281": {
     "doc": "Logic gates",
     "title": "XOR gate",
-    "content": "The XOR (or) Exclusive-OR is a digital Logic gate that gives the output as high (1) if and only if one of the input is 1. The Truth table of XOR gate which consists of two inputs is given below . | Input 1 | Input 2 | Output | . | 0 | 0 | 0 | . | 0 | 1 | 1 | . | 1 | 0 | 1 | . | 1 | 1 | 0 | . Verilog code for XOR gate . module xor_gate( input a, input b, output c ); assign c=a ^ b; endmodule . ",
+    "content": "The XOR (or) Exclusive-OR is a digital Logic gate that gives the output as high (1) if and only if one of the input is 1. The Truth table of XOR gate which consists of two inputs is given below . | Input 1 | Input 2 | Output | . | 0 | 0 | 0 | . | 0 | 1 | 1 | . | 1 | 0 | 1 | . | 1 | 1 | 0 | . XOR Gate Verilog code for XOR gate . module xor_gate( input a, input b, output c ); assign c=a ^ b; endmodule . ",
     "url": "https://learn.circuitverse.org/docs/comb-ssi/logic-gates.html#xor-gate",
     "relUrl": "/docs/comb-ssi/logic-gates.html#xor-gate"
   },"282": {
     "doc": "Logic gates",
     "title": "XNOR gate",
-    "content": "The XNOR (or) Exclusive-NOR is a digital Logic gate that gives the output as high (1) when both the inputs are same. The Truth table of XNOR gate which consists of two inputs is given below . | Input 1 | Input 2 | Output | . | 0 | 0 | 1 | . | 0 | 1 | 0 | . | 1 | 0 | 0 | . | 1 | 1 | 1 | . Verilog code for XNOR gate . module xnor_gate( input a, input b, output c ); assign c=~(a ^ b); endmodule . You can also click/tap a symbol to copy it and then click/tap to paste it into the box. ",
+    "content": "The XNOR (or) Exclusive-NOR is a digital Logic gate that gives the output as high (1) when both the inputs are same. The Truth table of XNOR gate which consists of two inputs is given below . | Input 1 | Input 2 | Output | . | 0 | 0 | 1 | . | 0 | 1 | 0 | . | 1 | 0 | 0 | . | 1 | 1 | 1 | . XNOR Gate Verilog code for XNOR gate . module xnor_gate( input a, input b, output c ); assign c=~(a ^ b); endmodule . You can also click/tap a symbol to copy it and then click/tap to paste it into the box. ",
     "url": "https://learn.circuitverse.org/docs/comb-ssi/logic-gates.html#xnor-gate",
     "relUrl": "/docs/comb-ssi/logic-gates.html#xnor-gate"
   },"283": {
@@ -1885,7 +1885,7 @@
   },"314": {
     "doc": "MUX/DEMUX",
     "title": "Block diagram",
-    "content": " ",
+    "content": "n : 1 Multiplexer ",
     "url": "https://learn.circuitverse.org/docs/comb-msi/mux-demux.html#block-diagram",
     "relUrl": "/docs/comb-msi/mux-demux.html#block-diagram"
   },"315": {
@@ -1909,7 +1909,7 @@
   },"318": {
     "doc": "MUX/DEMUX",
     "title": "Demultiplexers in multiple variations.",
-    "content": "1 : 2 demultiplexer . Block diagram . Truth table . 1 : 4 demultiplexer . 1 : 8 demultiplexer . 1 : 16 demultiplexer . A 1 : 16 demultiplexer can be implemented using two 1 : 8 demultiplexers. | Which of the following directs data from input to a selected output line ? . | Demultiplexer . | Multiplexer | Coder | Both MUX &amp; DEMUX | . | . | Which of the following logic block has a number of input lines and one signle output line ? . | Decoder . | Multiplexer | . | Demultiplexer | Encoder | . | How many selection line will be there if a multiplexer has 8 input lines ? . | 1 | 2 . | 3 | . | 4 | . | How many output lines will be there in a demultiplexer if it has 3 selection lines ? . | 1 . | 2 | 3 | 4 | . | . | . ",
+    "content": "1 : 2 demultiplexer . Block diagram . 1:2 Demultiplexer Truth table . 1:2 Demultiplexer Truth Table 1 : 4 demultiplexer . 1 : 8 demultiplexer . 1 : 16 demultiplexer . A 1 : 16 demultiplexer can be implemented using two 1 : 8 demultiplexers. | Which of the following directs data from input to a selected output line ? . | Demultiplexer . | Multiplexer | Coder | Both MUX &amp; DEMUX | . | . | Which of the following logic block has a number of input lines and one signle output line ? . | Decoder . | Multiplexer | . | Demultiplexer | Encoder | . | How many selection line will be there if a multiplexer has 8 input lines ? . | 1 | 2 . | 3 | . | 4 | . | How many output lines will be there in a demultiplexer if it has 3 selection lines ? . | 1 . | 2 | 3 | 4 | . | . | . ",
     "url": "https://learn.circuitverse.org/docs/comb-msi/mux-demux.html#demultiplexers-in-multiple-variations",
     "relUrl": "/docs/comb-msi/mux-demux.html#demultiplexers-in-multiple-variations"
   },"319": {
@@ -1969,13 +1969,13 @@
   },"328": {
     "doc": "Negative quantities",
     "title": "Signed and unsigned numbers",
-    "content": "Currently, we have just looked at unsigned numbers - they can only be positive, as there is no sign. However, sometimes we need to work with negative numbers too. To do this, we add a sign bit on the far left of the binary number, which indicates whether the number is positive (`0`) or negative(`1`). For example, the number `10000011` would be `131` if the number is unsigned, but if the number is signed, the actual representation would be `-3` . | The first bit `1` represents that the number is negative | The remaining bits `0000011` represent the actual number, `3` | . The downside to using a signed number is that it removes one bit from the actual number representation, halving the maximum value. | The minimum and maximum values for an `unsigned 8-bit` number would be `0` to `28-1` (`0` to `255`) | The minimum and maximum values for a `signed 8-bit` number would be `-27-1` to `27-1` (`-127` to `127`) | . ",
+    "content": "Currently, we have just looked at unsigned numbers - they can only be positive, as there is no sign. However, sometimes we need to work with negative numbers too. To do this, we add a sign bit on the far left of the binary number, which indicates whether the number is positive (0) or negative(1). For example, the number 10000011 would be 131 if the number is unsigned, but if the number is signed, the actual representation would be -3 . | The first bit 1 represents that the number is negative | The remaining bits 0000011 represent the actual number, 3 | . The downside to using a signed number is that it removes one bit from the actual number representation, halving the maximum value. | The minimum and maximum values for an unsigned 8-bit number would be 0 to 2&lt;sup&gt;8&lt;/sup&gt;-1 (0 to 255) | The minimum and maximum values for a signed 8-bit number would be -2&lt;sup&gt;7&lt;/sup&gt;-1 to 2&lt;sup&gt;7&lt;/sup&gt;-1 (-127 to 127) | . ",
     "url": "https://learn.circuitverse.org/docs/binary-representation/negative-quantities.html#signed-and-unsigned-numbers",
     "relUrl": "/docs/binary-representation/negative-quantities.html#signed-and-unsigned-numbers"
   },"329": {
     "doc": "Negative quantities",
     "title": "Complements in binary system",
-    "content": "The Binary system has a base of r = 2. The base has r = 2 so the Binary system two types of complements. They are: . | 1’s complement | 2’s complement. | . 1’s complement . To find the 1’s complement of a given number, you should change all the 0’s to 1’s and then all the 1’s to 0’s. This process is called as 1’s complement. Simply negate each digit present in the binary number. An Example for 1’s complement is as follows: . Given number 1 0 1 0 1 1's complement 0 1 0 1 0 . 2’s complement . In order to find 2’s complement firstly, evaluate 1’s complement of the number, and further add 1 to it. 2’s complement = 1’s complement + 1. An Example of 2’s complement is as follows: . Given number 1 0 1 0 1 1's complement 0 1 0 1 0 add 1 + 1 --------------- 2's complement 0 1 0 1 1 --------------- . | Using signed two’s complement notation,what is the decimal value of 00010001 ? . | -47 | +37 | -149 . | +17 | . | . | Using signed two’s complement notation,what is the decimal value of 00010001 ? . | positive | incorrect . | negative | . | an octal value | . | The two’s complement of the signed decimal number -78 is ? . | 11001110 | 01001110 . | 10110010 | . | 10110001 | . | The range of positive numbers possible in an eight-bit two’s complement system is ? . | 0 to 64 . | 0 to 127 | . | 0 to 256 | 0 to 100. | . | . ",
+    "content": "The Binary system has a base of r = 2. The base has r = 2 so the Binary system two types of complements. They are: . | 1’s complement | 2’s complement. | . 1’s complement . To find the 1’s complement of a given number, you should change all the 0’s to 1’s and then all the 1’s to 0’s. This process is called as 1’s complement. Simply negate each digit present in the binary number. An Example for 1’s complement is as follows: . Given number 1 0 1 0 1 1's complement 0 1 0 1 0 . 2’s complement . In order to find 2’s complement firstly, evaluate 1’s complement of the number, and further add 1 to it. 2’s complement = 1’s complement + 1. An Example of 2’s complement is as follows: . Given number 1 0 1 0 1 1's complement 0 1 0 1 0 add 1 + 1 --------------- 2's complement 0 1 0 1 1 --------------- . | Using signed two’s complement notation, what is the decimal value of 00010001 ? . | -47 | +37 | -149 . | +17 | . | . | Using signed two’s complement notation, what is the decimal value of 00010001 ? . | positive | incorrect . | negative | . | an octal value | . | The two’s complement of the signed decimal number -78 is ? . | 11001110 | 01001110 . | 10110010 | . | 10110001 | . | The range of positive numbers possible in an eight-bit two’s complement system is ? . | 0 to 64 . | 0 to 127 | . | 0 to 256 | 0 to 100. | . | . ",
     "url": "https://learn.circuitverse.org/docs/binary-representation/negative-quantities.html#complements-in-binary-system",
     "relUrl": "/docs/binary-representation/negative-quantities.html#complements-in-binary-system"
   },"330": {
@@ -2071,7 +2071,7 @@
   },"345": {
     "doc": "Race conditions",
     "title": "Introduction",
-    "content": "Before getting into the race around condition, let us have a look at the JK flip-flop’s truth table. | Clock Input | Inputs | Outputs | Comments | . | J | K | Q | Q' | . | 0 | X | X | Same as previous | Same as previous | No change | . | 1 | 0 | 0 | Same as previous | Same as previous | No change | . | 1 | 0 | 1 | 0 | 1 | Reset | . | 1 | 1 | 0 | 1 | 0 | Set | . | 1 | 1 | 1 | Opposite of previous | Opposite of previous | Toggle | . Here, Q is the present state and Q’ is the next state. As you can see, when J, K and Clock are equal to 1, toggling takes place, i.e. The next state will be equal to the complement of the present state. Now, let us look at the timing diagram of JK flip-flop. Here, T is the time period of the clock whereas delta t is the propagation delay. The delay between input and output is called a propagation delay. This is what was expected, but the output may not be like this all the time. This is where Race around condition comes into the play. Let us look at the timing diagram of JK flip-flop when the race around condition is considered. As you already know, when J, K and Clock are equal to 1, toggling takes place. Here, propagation delay has also been reduced, so the output will be given out at the instant input is given. So there is a toggling again. Therefore, whenever Clock is equal to 1 there are consecutive toggling. This condition is called as Race around condition. To put it in words, “ For JK flip-flop if J, K and Clock are equal to 1 the state of flip-flop keeps on toggling which leads to uncertainty in determining the output of the flip-flop. This problem is called Race around the condition. “’ This condition also exists in T flip-flop since T flip-flop also has toggling options. ",
+    "content": "Before getting into the race around condition, let us have a look at the JK flip-flop’s truth table. | Clock Input | Inputs | | Outputs | | Comments |   |   | . |   | J | K | Q | Q’ |   | . | 0 | X | X | Same as previous | Same as previous | No change | . | 1 | 0 | 0 | Same as previous | Same as previous | No change | . | 1 | 0 | 1 | 0 | 1 | Reset | . | 1 | 1 | 0 | 1 | 0 | Set | . | 1 | 1 | 1 | Opposite of previous | Opposite of previous | Toggle | . Here, Q is the present state and Q’ is the next state. As you can see, when J, K and Clock are equal to 1, toggling takes place, i.e. The next state will be equal to the complement of the present state. Now, let us look at the timing diagram of JK flip-flop. Here, T is the time period of the clock whereas delta t is the propagation delay. The delay between input and output is called a propagation delay. This is what was expected, but the output may not be like this all the time. This is where Race around condition comes into the play. Let us look at the timing diagram of JK flip-flop when the race around condition is considered. As you already know, when J, K and Clock are equal to 1, toggling takes place. Here, propagation delay has also been reduced, so the output will be given out at the instant input is given. So there is a toggling again. Therefore, whenever Clock is equal to 1 there are consecutive toggling. This condition is called as Race around condition. To put it in words, “ For JK flip-flop if J, K and Clock are equal to 1 the state of flip-flop keeps on toggling which leads to uncertainty in determining the output of the flip-flop. This problem is called Race around the condition. “’ This condition also exists in T flip-flop since T flip-flop also has toggling options. ",
     "url": "https://learn.circuitverse.org/docs/seq-design/race-conditions.html#introduction",
     "relUrl": "/docs/seq-design/race-conditions.html#introduction"
   },"346": {
@@ -2257,7 +2257,7 @@
   },"376": {
     "doc": "Shannon decomposition",
     "title": "Boole’s expansion theorem",
-    "content": "The Shannon expansion or decomposition theorem, also known as Boole’s expansion theorem is an identity which allow the expansion of any logic function to broken down in parts. One consequence of this theorem is the possibility to implement any logic function using multiplexers. The expansion can take any of these three variations: . $\\begin{align} f(x_1,x_2,\\ldots,x_n)&amp;= x_1 \\cdot f(1,x_2,\\ldots,x_n) + \\overline{x_1}\\cdot f(0,x_2,\\ldots,x_n) \\\\\\\\ &amp;= \\bigl(x_1+f(0,x_2,\\ldots,x_n)\\bigr)\\cdot \\bigl(\\overline{x_1}+f(1,x_2,\\ldots,x_n)\\bigr) \\\\\\\\ &amp;= x_1 \\cdot f(1,x_2,\\ldots,x_n) \\oplus \\overline{x_1}\\cdot f(0,x_2,\\ldots,x_n) \\end{align}$ . More details can be found in Section 1.9 “Shannon’s Expansion Theorem” in [1] and in Section 3.2 “Switching functions” in [2]. ",
+    "content": "The Shannon expansion or decomposition theorem, also known as Boole’s expansion theorem is an identity which allow the expansion of any logic function to broken down in parts. One consequence of this theorem is the possibility to implement any logic function using multiplexers. The expansion can take any of these three variations: . $\\begin{aligned} f(x_1,x_2,\\ldots,x_n)&amp;= x_1 \\cdot f(1,x_2,\\ldots,x_n) + \\overline{x_1}\\cdot f(0,x_2,\\ldots,x_n) \\\\\\\\ &amp;= \\bigl(x_1+f(0,x_2,\\ldots,x_n)\\bigr)\\cdot \\bigl(\\overline{x_1}+f(1,x_2,\\ldots,x_n)\\bigr) \\\\\\\\ &amp;= x_1 \\cdot f(1,x_2,\\ldots,x_n) \\oplus \\overline{x_1}\\cdot f(0,x_2,\\ldots,x_n) \\end{aligned}$ . More details can be found in Section 1.9 “Shannon’s Expansion Theorem” in [1] and in Section 3.2 “Switching functions” in [2]. ",
     "url": "https://learn.circuitverse.org/docs/binary-algebra/shannon.html#booles-expansion-theorem",
     "relUrl": "/docs/binary-algebra/shannon.html#booles-expansion-theorem"
   },"377": {

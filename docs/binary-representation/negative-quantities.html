@@ -309,20 +309,21 @@ window.onload = function() {
       </h2>
     
 
-<p>Currently, we have just looked at <strong>unsigned</strong> numbers - they can only be positive, as there is no sign. However, sometimes we need to work with <strong>negative numbers</strong> too. To do this, we add a <strong>sign bit</strong> on the far left of the binary number, which indicates whether the number is positive (`0`) or negative(`1`).</p>
+<p>Currently, we have just looked at <strong>unsigned</strong> numbers - they can only be positive, as there is no sign. However, sometimes we need to work with <strong>negative numbers</strong> too. To do this, we add a <strong>sign bit</strong> on the far left of the binary number, which indicates whether the number is positive (<code class="language-plaintext highlighter-rouge">0</code>) or negative(<code class="language-plaintext highlighter-rouge">1</code>).</p>
 
-<p>For example, the number `10000011` would be `131` if the number is <strong>unsigned</strong>, but if the number is <strong>signed</strong>, the actual representation would be `-3`</p>
+<p>For example, the number <code class="language-plaintext highlighter-rouge">10000011</code> would be <code class="language-plaintext highlighter-rouge">131</code> if the number is <strong>unsigned</strong>, but if the number is <strong>signed</strong>, the actual representation would be <code class="language-plaintext highlighter-rouge">-3</code></p>
 
 <ul>
-  <li>The first bit `1` represents that the number is negative</li>
-  <li>The remaining bits `0000011` represent the actual number, `3`</li>
+  <li>The first bit <code class="language-plaintext highlighter-rouge">1</code> represents that the number is negative</li>
+  <li>The remaining bits <code class="language-plaintext highlighter-rouge">0000011</code> represent the actual number, <code class="language-plaintext highlighter-rouge">3</code>
+</li>
 </ul>
 
 <p>The downside to using a signed number is that it removes one bit from the actual number representation, halving the maximum value.</p>
 
 <ul>
-  <li>The minimum and maximum values for an `unsigned 8-bit` number would be `0` to `2<sup>8</sup>-1` (`0` to `255`)</li>
-  <li>The minimum and maximum values for a `signed 8-bit` number would be `-2<sup>7</sup>-1` to `2<sup>7</sup>-1` (`-127` to `127`)</li>
+  <li>The minimum and maximum values for an <code class="language-plaintext highlighter-rouge">unsigned 8-bit</code> number would be <code class="language-plaintext highlighter-rouge">0</code> to <code class="language-plaintext highlighter-rouge">2&lt;sup&gt;8&lt;/sup&gt;-1</code> (<code class="language-plaintext highlighter-rouge">0</code> to <code class="language-plaintext highlighter-rouge">255</code>)</li>
+  <li>The minimum and maximum values for a <code class="language-plaintext highlighter-rouge">signed 8-bit</code> number would be <code class="language-plaintext highlighter-rouge">-2&lt;sup&gt;7&lt;/sup&gt;-1</code> to <code class="language-plaintext highlighter-rouge">2&lt;sup&gt;7&lt;/sup&gt;-1</code> (<code class="language-plaintext highlighter-rouge">-127</code> to <code class="language-plaintext highlighter-rouge">127</code>)</li>
 </ul>
       <h2 id="complements-in-binary-system">
         
@@ -374,7 +375,7 @@ window.onload = function() {
 </code></pre></div></div>
 
 <ol class="quiz">
-  <li>Using signed two’s complement notation,what is the decimal value of 00010001 ?
+  <li>Using signed two’s complement notation, what is the decimal value of 00010001 ?
     <ul>
       <li>-47</li>
       <li>+37</li>
@@ -385,7 +386,7 @@ window.onload = function() {
       </li>
     </ul>
   </li>
-  <li>Using signed two’s complement notation,what is the decimal value of 00010001 ?
+  <li>Using signed two’s complement notation, what is the decimal value of 00010001 ?
     <ul>
       <li>positive</li>
       <li>incorrect

@@ -370,7 +370,10 @@ Shift register has 4 modes of operations.</p>
       </h3>
     
 
-<div style="text-align:center"><img src="/assets/images/siso_blockdiagram.jpg"></div>
+<figure class="image">
+  <img src="/assets/images/siso_blockdiagram.jpg" alt="">
+  <figcaption></figcaption>
+</figure>
       <h3 id="operation">
         
         
@@ -382,19 +385,31 @@ Shift register has 4 modes of operations.</p>
 
 <p>Before application of the clock signal, let Q3 Q2 Q1 Q0 = 0000 and apply the LSB bit of the number to Din. So Din = D3 = 1. Now, apply the clock. On the first falling edge of the clock, the FF-3 is set, and stored word in the register is Q3 Q2 Q1 Q0 = 1000.</p>
 
-<div style="text-align:center"><img src="/assets/images/siso_operation1.jpg"></div>
+<figure class="image">
+  <img src="/assets/images/siso_operation1.jpg" alt="">
+  <figcaption></figcaption>
+</figure>
 
 <p>Apply the next bit to Din. So Din = 1. As soon as the next negative edge of the clock gets triggered, FF-2 will set and the stored word change to Q3 Q2 Q1 Q0 = 1100.</p>
 
-<div style="text-align:center"><img src="/assets/images/siso_operation2.jpg"></div>
+<figure class="image">
+  <img src="/assets/images/siso_operation2.jpg" alt="">
+  <figcaption></figcaption>
+</figure>
 
 <p>Apply the next bit to be stored i.e. 1 to Din. Apply the clock pulse. As soon as the third negative clock edge gets triggered, FF-1 will be set and output will get modified to Q3 Q2 Q1 Q0 = 1110.</p>
 
-<div style="text-align:center"><img src="/assets/images/siso_operation3.jpg"></div>
+<figure class="image">
+  <img src="/assets/images/siso_operation3.jpg" alt="">
+  <figcaption></figcaption>
+</figure>
 
 <p>Similarly with Din = 1 and with the fourth negative clock edge arriving, the stored word in the register is Q3 Q2 Q1 Q0 = 1111.</p>
 
-<div style="text-align:center"><img src="/assets/images/siso_operation4.jpg"></div>
+<figure class="image">
+  <img src="/assets/images/siso_operation4.jpg" alt="">
+  <figcaption></figcaption>
+</figure>
       <h3 id="truth-table">
         
         
@@ -403,7 +418,10 @@ Shift register has 4 modes of operations.</p>
         
       </h3>
     
-<div style="text-align:center"><img src="/assets/images/siso_truthtable.jpg"></div>
+<figure class="image">
+  <img src="/assets/images/siso_truthtable.jpg" alt="">
+  <figcaption></figcaption>
+</figure>
       <h3 id="waveforms">
         
         
@@ -412,7 +430,10 @@ Shift register has 4 modes of operations.</p>
         
       </h3>
     
-<div style="text-align:center"><img src="/assets/images/siso_waveform.jpg"></div>
+<figure class="image">
+  <img src="/assets/images/siso_waveform.jpg" alt="">
+  <figcaption></figcaption>
+</figure>
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/93866" id="ss_01" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
       <h2 id="serial-in-parallel-out">
@@ -447,7 +468,10 @@ Shift register has 4 modes of operations.</p>
       </h3>
     
 
-<div style="text-align:center"><img src="/assets/images/sipo_blockdiagram.jpg"></div>
+<figure class="image">
+  <img src="/assets/images/sipo_blockdiagram.jpg" alt="">
+  <figcaption></figcaption>
+</figure>
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/93880" id="sp_01" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
       <h2 id="parallel-in-serial-out">
@@ -510,7 +534,10 @@ Thus, the parallel-in serial-out operation takes place.</p>
       </h3>
     
 
-<div style="text-align:center"><img src="/assets/images/piso_blockdiagram.jpg"></div>
+<figure class="image">
+  <img src="/assets/images/piso_blockdiagram.jpg" alt="">
+  <figcaption></figcaption>
+</figure>
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/93910" id="ps_01" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
       <h2 id="parallel-in-parallel-out">
@@ -535,7 +562,10 @@ Only the clock pulse is essential to load all the binary bits.</p>
       </h3>
     
 
-<div style="text-align:center"><img src="/assets/images/pipo_blockdiagram.jpg"></div>
+<figure class="image">
+  <img src="/assets/images/pipo_blockdiagram.jpg" alt="">
+  <figcaption></figcaption>
+</figure>
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/93890" id="pp_01" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
       <h2 id="applications-of-shift-registers">
@@ -596,7 +626,10 @@ Only the clock pulse is essential to load all the binary bits.</p>
 
 <p>The block diagram of the 3-bit Ring counter is shown in the following figure.</p>
 
-<div style="text-align:center"><img src="/assets/images/ring_counter.jpg"></div>
+<figure class="image">
+  <img src="/assets/images/ring_counter.jpg" alt="">
+  <figcaption></figcaption>
+</figure>
 
 <p>A 3-bit Ring Counter will contain only a 3-bit SIPO shift register.</p>
 
@@ -667,7 +700,10 @@ Only the clock pulse is essential to load all the binary bits.</p>
 
 <p>Johnson ring counter is also called the <em>Twisted ring counter</em> and <em>Switch tail ring counter</em>. The block diagram of 3-bit Johnson Ring counter is shown in the following figure.</p>
 
-<div style="text-align:center"><img src="/assets/images/twisted_ring_counter.jpg"></div>
+<figure class="image">
+  <img src="/assets/images/twisted_ring_counter.jpg" alt="">
+  <figcaption></figcaption>
+</figure>
 
 <p>The 3-bit Johnson Ring counter also contains only a 3-bit SIPO shift register.</p>
 

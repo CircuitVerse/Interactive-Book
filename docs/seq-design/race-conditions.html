@@ -313,62 +313,66 @@ window.onload = function() {
 <p>Before getting into the <em>race around condition</em>, let us have a look at the JK flip-flop’s truth table.</p>
 
 <div class="table-wrapper"><table>
-    <thead>
-        <tr>
-            <th rowspan="6">Clock Input</th>
-            <th colspan="2">Inputs</th>
-            <th colspan="2">Outputs</th>
-            <th rowspan="6">Comments</th>
-        </tr>
-        <tr>
-            <th style="border-left: 1px solid #eeebee">J</th>
-            <th>K</th>
-            <th>Q</th>
-            <th>Q’</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>0</td>
-            <td>X</td>
-            <td>X</td>
-            <td>Same as previous</td>
-            <td>Same as previous</td>
-            <td>No change</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>0</td>
-            <td>0</td>
-            <td>Same as previous</td>
-            <td>Same as previous</td>
-            <td>No change</td>
-       </tr>
-        <tr>
-            <td>1</td>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-            <td>1</td>
-            <td>Reset</td>
-       </tr>
-        <tr>
-            <td>1</td>
-            <td>1</td>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-            <td>Set</td>
-       </tr>
-        <tr>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>Opposite of previous</td>
-            <td>Opposite of previous</td>
-            <td>Toggle</td>
-       </tr>
-    </tbody>
+  <thead>
+    <tr>
+      <th>Clock Input</th>
+      <th colspan="2">Inputs</th>
+      <th colspan="2">Outputs</th>
+      <th>Comments</th>
+      
+      
+    </tr>
+    <tr>
+      <th> </th>
+      <th>J</th>
+      <th>K</th>
+      <th>Q</th>
+      <th>Q’</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>X</td>
+      <td>X</td>
+      <td>Same as previous</td>
+      <td>Same as previous</td>
+      <td>No change</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Same as previous</td>
+      <td>Same as previous</td>
+      <td>No change</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Reset</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>Set</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Opposite of previous</td>
+      <td>Opposite of previous</td>
+      <td>Toggle</td>
+    </tr>
+  </tbody>
 </table></div>
 
 <p>Here, Q is the present state and Q’ is the next state. 
@@ -376,7 +380,10 @@ As you can see, when J, K and Clock are equal to 1, toggling takes place, i.e. T
 
 <p>Now, let us look at the timing diagram of JK flip-flop.</p>
 
-<div style="text-align:center"><img src="/assets/images/JK_timingdiagram.png"></div>
+<figure class="image">
+  <img src="/assets/images/JK_timingdiagram.png" alt="">
+  <figcaption></figcaption>
+</figure>
 
 <p>Here, T is the time period of the clock whereas delta t is the propagation delay. The delay between input and output is called a propagation delay.</p>
 
@@ -384,7 +391,10 @@ As you can see, when J, K and Clock are equal to 1, toggling takes place, i.e. T
 
 <p>Let us look at the timing diagram of JK flip-flop when the race around condition is considered.</p>
 
-<div style="text-align:center"><img src="/assets/images/JK_timingdiagram_race.png"></div>
+<figure class="image">
+  <img src="/assets/images/JK_timingdiagram_race.png" alt="">
+  <figcaption></figcaption>
+</figure>
 
 <p>As you already know, when J, K and Clock are equal to 1, toggling takes place. Here, propagation delay has also been reduced, so the output will be given out at the instant input is given. So there is a toggling again.
 Therefore, whenever Clock is equal to 1 there are consecutive toggling.
