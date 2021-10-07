@@ -271,10 +271,10 @@ $text-color: #111111;
 }
 
 // Scroll Back to Top Button
-.backtoTop{
+.back-to-top {
   background-color: $link-color;
   color: $white;
-  position: fixed;
   left: 95%;
+  position: fixed;
   top: 93%;
 }
