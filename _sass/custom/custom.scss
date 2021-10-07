@@ -269,3 +269,12 @@ $text-color: #111111;
 #disqus_recommendations {
   margin-top: 20px;
 }
+
+// Scroll Back to Top Button
+.backtoTop{
+  background-color: $link-color;
+  color: $white;
+  position: fixed;
+  left: 95%;
+  top: 93%;
+}
