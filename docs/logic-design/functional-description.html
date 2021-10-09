@@ -359,6 +359,28 @@ window.onload = function() {
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
 </noscript>
 
+
+
+<div>
+    <button type="button" id="back-to-top" class="btn btn-info new back-to-top">
+        <i class="fas fa-angle-up"></i>
+    </button>
+</div>
+<script>
+    backToTop_Button = document.getElementById("back-to-top");
+    window.onscroll = () =>{
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTop_Button.style.display = "block";
+        } else {
+            backToTop_Button.style.display = "none";
+        }
+    }
+    backToTop_Button.addEventListener("click", ()=>{
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    })
+</script>
+
         
 
         

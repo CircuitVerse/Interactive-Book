@@ -303,6 +303,27 @@ After completing this book, you will be able to implement the type of digital ci
 <p>Before you start learning from this Book, I hope that you have some basic knowledge about computers and how they work.
 A basic idea regarding the initial concepts of Digital Electronics is enough to understand the topics covered in this tutorial.</p>
 
+
+<div>
+    <button type="button" id="back-to-top" class="btn btn-info new back-to-top">
+        <i class="fas fa-angle-up"></i>
+    </button>
+</div>
+<script>
+    backToTop_Button = document.getElementById("back-to-top");
+    window.onscroll = () =>{
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTop_Button.style.display = "block";
+        } else {
+            backToTop_Button.style.display = "none";
+        }
+    }
+    backToTop_Button.addEventListener("click", ()=>{
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    })
+</script>
+
         
 
         

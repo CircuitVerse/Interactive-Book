@@ -1,9 +1,45 @@
 [
   {
+    "name": "seq-design",
+    "path": "docs/seq-design",
+    "relative_path": "docs/seq-design",
+    "modified_time": "2021-10-09 05:38:09 +0000",
+    "type": "directory",
+    "http_url": null,
+    "api_url": "https://learn.circuitverse.org/_api/pages/docs/seq-design"
+  },
+  {
+    "name": "binary-representation",
+    "path": "docs/binary-representation",
+    "relative_path": "docs/binary-representation",
+    "modified_time": "2021-10-09 05:38:09 +0000",
+    "type": "directory",
+    "http_url": null,
+    "api_url": "https://learn.circuitverse.org/_api/pages/docs/binary-representation"
+  },
+  {
+    "name": "seq-msi",
+    "path": "docs/seq-msi",
+    "relative_path": "docs/seq-msi",
+    "modified_time": "2021-10-09 05:38:09 +0000",
+    "type": "directory",
+    "http_url": null,
+    "api_url": "https://learn.circuitverse.org/_api/pages/docs/seq-msi"
+  },
+  {
+    "name": "logic-design",
+    "path": "docs/logic-design",
+    "relative_path": "docs/logic-design",
+    "modified_time": "2021-10-09 05:38:09 +0000",
+    "type": "directory",
+    "http_url": null,
+    "api_url": "https://learn.circuitverse.org/_api/pages/docs/logic-design"
+  },
+  {
     "name": "seq-ssi",
     "path": "docs/seq-ssi",
     "relative_path": "docs/seq-ssi",
-    "modified_time": "2021-08-02 03:56:55 +0000",
+    "modified_time": "2021-10-09 05:38:09 +0000",
     "type": "directory",
     "http_url": null,
     "api_url": "https://learn.circuitverse.org/_api/pages/docs/seq-ssi"
@@ -12,81 +48,45 @@
     "name": "comb-ssi",
     "path": "docs/comb-ssi",
     "relative_path": "docs/comb-ssi",
-    "modified_time": "2021-08-02 03:56:55 +0000",
+    "modified_time": "2021-10-09 05:38:09 +0000",
     "type": "directory",
     "http_url": null,
     "api_url": "https://learn.circuitverse.org/_api/pages/docs/comb-ssi"
   },
   {
-    "name": "seq-msi",
-    "path": "docs/seq-msi",
-    "relative_path": "docs/seq-msi",
-    "modified_time": "2021-08-02 03:56:55 +0000",
-    "type": "directory",
-    "http_url": null,
-    "api_url": "https://learn.circuitverse.org/_api/pages/docs/seq-msi"
-  },
-  {
     "name": "binary-algebra",
     "path": "docs/binary-algebra",
     "relative_path": "docs/binary-algebra",
-    "modified_time": "2021-08-02 03:56:55 +0000",
+    "modified_time": "2021-10-09 05:38:09 +0000",
     "type": "directory",
     "http_url": null,
     "api_url": "https://learn.circuitverse.org/_api/pages/docs/binary-algebra"
   },
   {
-    "name": "comb-msi",
-    "path": "docs/comb-msi",
-    "relative_path": "docs/comb-msi",
-    "modified_time": "2021-08-02 03:56:55 +0000",
-    "type": "directory",
-    "http_url": null,
-    "api_url": "https://learn.circuitverse.org/_api/pages/docs/comb-msi"
-  },
-  {
-    "name": "logic-design",
-    "path": "docs/logic-design",
-    "relative_path": "docs/logic-design",
-    "modified_time": "2021-08-02 03:56:55 +0000",
-    "type": "directory",
-    "http_url": null,
-    "api_url": "https://learn.circuitverse.org/_api/pages/docs/logic-design"
-  },
-  {
-    "name": "seq-design",
-    "path": "docs/seq-design",
-    "relative_path": "docs/seq-design",
-    "modified_time": "2021-08-02 03:56:55 +0000",
-    "type": "directory",
-    "http_url": null,
-    "api_url": "https://learn.circuitverse.org/_api/pages/docs/seq-design"
-  },
-  {
     "name": "seq-lsi",
     "path": "docs/seq-lsi",
     "relative_path": "docs/seq-lsi",
-    "modified_time": "2021-08-02 03:56:55 +0000",
+    "modified_time": "2021-10-09 05:38:09 +0000",
     "type": "directory",
     "http_url": null,
     "api_url": "https://learn.circuitverse.org/_api/pages/docs/seq-lsi"
   },
   {
-    "name": "binary-representation",
-    "path": "docs/binary-representation",
-    "relative_path": "docs/binary-representation",
-    "modified_time": "2021-08-02 03:56:55 +0000",
-    "type": "directory",
-    "http_url": null,
-    "api_url": "https://learn.circuitverse.org/_api/pages/docs/binary-representation"
-  },
-  {
     "name": "comb-lsi",
     "path": "docs/comb-lsi",
     "relative_path": "docs/comb-lsi",
-    "modified_time": "2021-08-02 03:56:55 +0000",
+    "modified_time": "2021-10-09 05:38:09 +0000",
     "type": "directory",
     "http_url": null,
     "api_url": "https://learn.circuitverse.org/_api/pages/docs/comb-lsi"
+  },
+  {
+    "name": "comb-msi",
+    "path": "docs/comb-msi",
+    "relative_path": "docs/comb-msi",
+    "modified_time": "2021-10-09 05:38:09 +0000",
+    "type": "directory",
+    "http_url": null,
+    "api_url": "https://learn.circuitverse.org/_api/pages/docs/comb-msi"
   }
 ]

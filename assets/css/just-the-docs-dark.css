@@ -6402,3 +6402,10 @@ defs path {
     padding: 0.5rem; } }
 #disqus_recommendations {
   margin-top: 20px; }
+
+.back-to-top {
+  background-color: #2c84fa;
+  color: #fff;
+  left: 95%;
+  position: fixed;
+  top: 93%; }
