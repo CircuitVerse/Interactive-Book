@@ -278,3 +278,8 @@ $text-color: #111111;
   position: fixed;
   top: 93%;
 }
+
+// Added transitions
+.main-content,a,h1,h2,h3,h4,h5,button,.side-bar,.site-nav,.search{
+  transition: linear .3s;
+}
