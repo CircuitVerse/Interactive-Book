@@ -6406,6 +6406,6 @@ defs path {
 .back-to-top {
   background-color: #7253ed;
   color: #fff;
-  left: 95%;
+  right: 15px;
   position: fixed;
-  top: 93%; }
+  bottom: 15px; }
