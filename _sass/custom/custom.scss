@@ -280,6 +280,16 @@ $text-color: #111111;
 }
 
 // Added transitions
-.main-content,a,h1,h2,h3,h4,h5,button,.side-bar,.site-nav,.search{
-  transition: linear .3s;
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+button,
+.main-content,
+.side-bar,
+.site-nav,
+.search {
+  transition: linear 0.3s;
 }
