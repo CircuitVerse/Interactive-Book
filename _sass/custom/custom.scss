@@ -274,21 +274,7 @@ $text-color: #111111;
 .back-to-top {
   background-color: $link-color;
   color: $white;
-  left: 94%;
+  right: 15px;
   position: fixed;
-  top: 93%;
-}
-
-// Responsive style for back to top button
-@media (max-width: 800px) {
-  .back-to-top {
-    left: 91%;
-  }
-}
-
-@media (max-width: 600px) {
-  .back-to-top {
-    left: 87%;
-    top: 94%;
-  }
+  bottom: 15px;
 }
