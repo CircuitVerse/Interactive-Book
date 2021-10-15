@@ -6409,3 +6409,16 @@ defs path {
   right: 15px;
   position: fixed;
   bottom: 15px; }
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+button,
+.main-content,
+.side-bar,
+.site-nav,
+.search {
+  transition: linear 0.3s; }
