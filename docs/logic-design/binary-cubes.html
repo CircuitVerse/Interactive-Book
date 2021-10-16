@@ -246,22 +246,42 @@
       <div id="main-content" class="main-content" role="main">
         
           <script type="text/javascript">
- 
-// Wait for the page to load first
-window.onload = function() {
-     
-	// sidebar collapse code
-	var sidebar = document.querySelector("div.side-bar");
-	var sidebarButton = document.getElementById("sidebarCollapse");
-	var mainContent = document.getElementById("top");
-		
-	sidebarButton.onclick = function() {
-		sidebar.classList.toggle("active");
-		mainContent.classList.toggle("sidebar-toggle");
-	}
-}
-</script>
 
+	// [Critical Content]
+	// Load State for Sidebar Functionality
+	var sidebar = document.querySelector("div.side-bar");
+	var mainContent = document.getElementById("top");
+	var isSidebar = localStorage.getItem('Sidebar');
+	if (isSidebar == 0 || isSidebar == null) {
+		isSidebar = 0;
+		localStorage.setItem('Sidebar', isSidebar);
+		sidebar.classList.add('active');
+		mainContent.classList.add('sidebar-toggle');
+	}
+	else {
+		sidebar.classList.remove('active');
+		mainContent.classList.remove('sidebar-toggle');
+	}
+
+	// Wait for the page to load first
+	$(document).ready(function () {
+		var sidebarButton = document.getElementById("sidebarCollapse");
+		sidebarButton.onclick = function () {
+			if (isSidebar == 0) {
+				isSidebar = 1;
+				localStorage.setItem('Sidebar', isSidebar);
+				sidebar.classList.toggle("active");
+				mainContent.classList.toggle("sidebar-toggle");
+			}
+			else {
+				isSidebar = 0;
+				localStorage.setItem('Sidebar', isSidebar);
+				sidebar.classList.toggle("active");
+				mainContent.classList.toggle("sidebar-toggle");
+			}
+		}
+	})
+</script>
 <!-- -*- engine:django -*- -->	
 <div id="content">
     <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
