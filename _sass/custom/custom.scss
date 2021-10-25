@@ -29,7 +29,6 @@ input {
 }
 
 .main.sidebar-toggle {
-
   @include mq(md) {
     margin-left: calc((100% - 800px) / 2);
     max-width: 800px;
@@ -292,4 +291,9 @@ button,
 .site-nav,
 .search {
   transition: linear 0.3s;
+}
+
+.search-active .search-input,
+.search-active .search-results {
+  background-color: $body-background-color;
 }
