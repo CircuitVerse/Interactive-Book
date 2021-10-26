@@ -6256,7 +6256,7 @@ figure.highlight {
     max-width: none;
     margin-left: 0; } }
 input {
-  color: #000000; }
+  color: #ffffff; }
 
 #sidebar.active {
   display: none; }
@@ -6422,3 +6422,7 @@ button,
 .site-nav,
 .search {
   transition: linear 0.3s; }
+
+.search-active .search-input,
+.search-active .search-results {
+  background-color: #13101f; }
