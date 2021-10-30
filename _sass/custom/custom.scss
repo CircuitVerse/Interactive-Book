@@ -297,3 +297,14 @@ button,
 .search-active .search-results {
   background-color: $body-background-color;
 }
+
+// progress-bar 
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: $link-color;
+  width: 0%;
+  z-index: 10000;
+}
