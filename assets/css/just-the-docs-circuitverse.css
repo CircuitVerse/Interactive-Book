@@ -6426,3 +6426,12 @@ button,
 .search-active .search-input,
 .search-active .search-results {
   background-color: #fff; }
+
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #026e57;
+  width: 0%;
+  z-index: 10000; }

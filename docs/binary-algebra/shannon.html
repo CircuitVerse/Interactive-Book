@@ -245,7 +245,8 @@
       
       <div id="main-content" class="main-content" role="main">
         
-          <script type="text/javascript">
+          <div id="progress-bar"></div>
+<script type="text/javascript">
 
 	// [Critical Content]
 	// Load State for Sidebar Functionality
@@ -281,6 +282,22 @@
 			}
 		}
 	})
+
+	// Progress-bar 
+	const progress_bar = document.querySelector('#progress-bar')
+	const main_content= document.querySelector('#main-content-wrap')
+
+	const animateProgressBar = () => {
+		let scrollDistance = -main_content.getBoundingClientRect().top;
+		let progressWidth = (scrollDistance / (main_content.getBoundingClientRect().height - document.documentElement.clientHeight ) )*100;
+		if(progressWidth<6){
+			progress_bar.style.width = 0 + '%';
+		}
+		else{
+			progress_bar.style.width = progressWidth + '%';
+		}
+	}
+	window.addEventListener('scroll',animateProgressBar);
 </script>
 <!-- -*- engine:django -*- -->	
 <div id="content">
