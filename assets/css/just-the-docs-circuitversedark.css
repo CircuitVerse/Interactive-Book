@@ -6435,3 +6435,6 @@ button,
   background: #00e8b3;
   width: 0%;
   z-index: 10000; }
+
+.text-grey-dk-100 {
+  color: white !important; }
