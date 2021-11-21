@@ -5,7 +5,11 @@
 	var sidebar = document.querySelector("div.side-bar");
 	var mainContent = document.getElementById("top");
 	var isSidebar = localStorage.getItem('Sidebar');
-	if (isSidebar == 0 || isSidebar == null) {
+	if (isSidebar == null) {
+		sidebar.classList.remove('active');
+		mainContent.classList.remove('sidebar-toggle');
+	}
+	else if (isSidebar == 0) {
 		isSidebar = 0;
 		localStorage.setItem('Sidebar', isSidebar);
 		sidebar.classList.add('active');
