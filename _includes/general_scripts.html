@@ -5,6 +5,7 @@
 	var sidebar = document.querySelector("div.side-bar");
 	var mainContent = document.getElementById("top");
 	var isSidebar = localStorage.getItem('Sidebar');
+	
 	if (isSidebar == null) {
 		sidebar.classList.remove('active');
 		mainContent.classList.remove('sidebar-toggle');
