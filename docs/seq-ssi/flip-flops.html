@@ -361,6 +361,8 @@
   <li><a href="#characteristic-table-3" id="markdown-toc-characteristic-table-3">Characteristic table</a></li>
   <li><a href="#excitation-table" id="markdown-toc-excitation-table">Excitation table</a></li>
   <li><a href="#characteristic-equation" id="markdown-toc-characteristic-equation">Characteristic equation</a></li>
+  <li><a href="#differences-between-sr-and-jk-flip-flop" id="markdown-toc-differences-between-sr-and-jk-flip-flop">Differences between SR and JK flip-flop</a></li>
+  <li><a href="#differences-between-t-and-d-flip-flop" id="markdown-toc-differences-between-t-and-d-flip-flop">Differences between T and D flip-flop</a></li>
   <li><a href="#flip-flops-interaction" id="markdown-toc-flip-flops-interaction">Flip-flops interaction</a></li>
 </ol>
       <h2 id="flip-flops-1">
@@ -1138,6 +1140,72 @@ During the negative clock cycle, slave flip-flop gets activated and copies the p
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Q(n+1) = Q(n)'J + Q(n)K'
 </code></pre></div></div>
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/47630" id="masterslave_jk_flipflop_01" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+      <h2 id="differences-between-sr-and-jk-flip-flop">
+        
+        
+          <a href="#differences-between-sr-and-jk-flip-flop" class="anchor-heading" aria-labelledby="differences-between-sr-and-jk-flip-flop"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Differences between SR and JK flip-flop
+        
+        
+      </h2>
+    
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: left">JK Flip-flop</th>
+      <th style="text-align: left">SR Flip-flop</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">When J input is 1 and K input is 0 on the triggering edge of clock pulse,then output is in set state</td>
+      <td style="text-align: left">When S input is 1 and R input is 0,output is in set state</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">When J input is 0 and K input is 1 on the triggering edge of clock pulse,then the output is in reset state</td>
+      <td style="text-align: left">When S input is 0 and R input is 1,output is in reset state</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">When J and K input both are 1 on the triggering edge of clock pulse,then the output toggle wrt what was the state in the previous clock cycle</td>
+      <td style="text-align: left">When both S and R input are 0,there is no change in output and it holds the previous state</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">There are no invalid states even if both ‘J’ and ‘K’ flip flops are set to 1</td>
+      <td style="text-align: left">When both inputs  are set to 1, the circuit produces the invalid states as outputs</td>
+    </tr>
+  </tbody>
+</table></div>
+      <h2 id="differences-between-t-and-d-flip-flop">
+        
+        
+          <a href="#differences-between-t-and-d-flip-flop" class="anchor-heading" aria-labelledby="differences-between-t-and-d-flip-flop"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Differences between T and D flip-flop
+        
+        
+      </h2>
+    
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: left">T Flip-flop</th>
+      <th style="text-align: left">D Flip-flop</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Single input version of JK flip-flops</td>
+      <td style="text-align: left">Single input version of SR flip-flops</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">When the clock rises from 0 to 1, the value remembered by the flip-flop either toggles or remains the same depending on whether the T input (Toggle) is 1 or 0</td>
+      <td style="text-align: left">When the clock rises from 0 to 1, the value remembered by the flip-flop becomes the value of the D input (Data) at that instant</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">It has an input and an output and will toggle no matter what</td>
+      <td style="text-align: left">It has an input, an output, and a clock , and will only change its output when the clock is on</td>
+    </tr>
+  </tbody>
+</table></div>
       <h2 id="flip-flops-interaction">
         
         
