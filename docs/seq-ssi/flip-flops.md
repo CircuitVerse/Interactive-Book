@@ -283,7 +283,7 @@ Q(n+1) = Q(n)'J + Q(n)K'
 
 ## Differences between SR and JK flip-flop
 
-| SR Flip-flop      |  JK Flip-flop     |
+| JK Flip-flop     |  SR Flip-flop    |
 |:------------|:--------------|
 | When J input is 1 and K input is 0 on the triggering edge of clock pulse,then output is in set state | When S input is 1 and R input is 0,output is in set state |
 | When J input is 0 and K input is 1 on the triggering edge of clock pulse,then the output is in reset state | When S input is 0 and R input is 1,output is in reset state |
