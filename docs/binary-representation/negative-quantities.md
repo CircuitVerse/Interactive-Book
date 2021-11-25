@@ -74,11 +74,11 @@ add 1               +           1
 	* -149
 	1. +17
 
-2. Using signed two's complement notation, what is the decimal value of 00010001 ?
-	*  positive
-	* incorrect
-	1. negative
-	* an octal value
+2.  The greatest negative number which can be stored in a 8-bit register using 2's complement arithemtic is ?
+	* -256
+	* -255
+	1. -128
+	* -127
 
 3. The two's complement of the signed decimal number -78 is ?
     * 11001110
