@@ -124,6 +124,13 @@ It can be implemented with **two** 8 : 1 multiplexers:
 It can also be implemented with **five** 4 : 1 multiplexers:
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/44804" id="mux_06" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
+## Applications of Multiplexers
+- Transmission from the Computer System of a Satellite - Multiplexer is used to transmit the data signals from the computer system of a spacecraft or a satellite to the ground system by using a GSM satellite.
+
+- Computer Memory - Multiplexers are used in computer memory to maintain a huge amount of memory in the computers, and also to reduce the number of copper lines required to connect the memory to other parts of the computer.
+
+- Telephone Network - In telephone networks, multiple audio signals are integrated on a single line of transmission with the help of a multiplexer.
+
 
 ## Demultiplexers
 
@@ -158,6 +165,11 @@ A de-multiplexer is equivalent to a single pole multiple way switch as shown in 
 ### 1 : 16 demultiplexer
 A 1 : 16 demultiplexer can be implemented using **two** 1 : 8 demultiplexers.
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/44796" id="demux_04" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+
+## Applications of Demultiplexers
+- Arithmetic Logic Unit - The output of the ALU is fed as an input to the De-multiplexer, and the output of the demultiplexer is connected to a multiple register. The output of the ALU can be stored in multiple registers.
+
+- Serial to Parallel Converter - In this technique, serial data is given as an input to the De-multiplexer at a regular interval, and a counter is attached to the demultiplexer at the control input to detect the data signal at the output of the demultiplexer. When all data signals are stored, the output of the demux can be read out in parallel.
 
 {:.quiz}
 
