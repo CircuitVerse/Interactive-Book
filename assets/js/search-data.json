@@ -1867,7 +1867,7 @@
   },"311": {
     "doc": "MUX/DEMUX",
     "title": "Table of contents",
-    "content": ". | Multiplexers | Introduction | Block diagram | Multiplexers come in multiple variations . | 2 : 1 multiplexer | 4 : 1 multiplexer | 8 : 1 multiplexer | 16 : 1 multiplexer | . | Demultiplexers | Introduction | Demultiplexers in multiple variations. | 1 : 2 demultiplexer . | Block diagram | Truth table | . | 1 : 4 demultiplexer | 1 : 8 demultiplexer | 1 : 16 demultiplexer | . | . ",
+    "content": ". | Multiplexers | Introduction | Block diagram | Multiplexers come in multiple variations . | 2 : 1 multiplexer | 4 : 1 multiplexer | 8 : 1 multiplexer | 16 : 1 multiplexer | . | Applications of Multiplexers | Demultiplexers | Introduction | Demultiplexers in multiple variations. | 1 : 2 demultiplexer . | Block diagram | Truth table | . | 1 : 4 demultiplexer | 1 : 8 demultiplexer | 1 : 16 demultiplexer | . | Applications of Demultiplexers | . ",
     "url": "https://learn.circuitverse.org/docs/comb-msi/mux-demux.html#table-of-contents",
     "relUrl": "/docs/comb-msi/mux-demux.html#table-of-contents"
   },"312": {
@@ -1896,455 +1896,467 @@
     "relUrl": "/docs/comb-msi/mux-demux.html#multiplexers-come-in-multiple-variations"
   },"316": {
     "doc": "MUX/DEMUX",
+    "title": "Applications of Multiplexers",
+    "content": ". | Transmission from the Computer System of a Satellite - Multiplexer is used to transmit the data signals from the computer system of a spacecraft or a satellite to the ground system by using a GSM satellite. | Computer Memory - Multiplexers are used in computer memory to maintain a huge amount of memory in the computers, and also to reduce the number of copper lines required to connect the memory to other parts of the computer. | Telephone Network - In telephone networks, multiple audio signals are integrated on a single line of transmission with the help of a multiplexer. | . ",
+    "url": "https://learn.circuitverse.org/docs/comb-msi/mux-demux.html#applications-of-multiplexers",
+    "relUrl": "/docs/comb-msi/mux-demux.html#applications-of-multiplexers"
+  },"317": {
+    "doc": "MUX/DEMUX",
     "title": "Demultiplexers",
     "content": " ",
     "url": "https://learn.circuitverse.org/docs/comb-msi/mux-demux.html#demultiplexers",
     "relUrl": "/docs/comb-msi/mux-demux.html#demultiplexers"
-  },"317": {
+  },"318": {
     "doc": "MUX/DEMUX",
     "title": "Introduction",
     "content": "A demultiplexer performs the reverse operation of a multiplexer i.e. it receives one input and distributes it over several outputs. It has only one input, n outputs, m select input. At a time only one output line is selected by the select lines and the input is transmitted to the selected output line. A de-multiplexer is equivalent to a single pole multiple way switch as shown in fig. ",
     "url": "https://learn.circuitverse.org/docs/comb-msi/mux-demux.html#introduction-1",
     "relUrl": "/docs/comb-msi/mux-demux.html#introduction-1"
-  },"318": {
+  },"319": {
     "doc": "MUX/DEMUX",
     "title": "Demultiplexers in multiple variations.",
-    "content": "1 : 2 demultiplexer . Block diagram . 1:2 Demultiplexer Truth table . 1:2 Demultiplexer Truth Table 1 : 4 demultiplexer . 1 : 8 demultiplexer . 1 : 16 demultiplexer . A 1 : 16 demultiplexer can be implemented using two 1 : 8 demultiplexers. | Which of the following directs data from input to a selected output line ? . | Demultiplexer . | Multiplexer | Coder | Both MUX &amp; DEMUX | . | . | Which of the following logic block has a number of input lines and one signle output line ? . | Decoder . | Multiplexer | . | Demultiplexer | Encoder | . | How many selection line will be there if a multiplexer has 8 input lines ? . | 1 | 2 . | 3 | . | 4 | . | How many output lines will be there in a demultiplexer if it has 3 selection lines ? . | 1 . | 2 | 3 | 4 | . | . | . ",
+    "content": "1 : 2 demultiplexer . Block diagram . 1:2 Demultiplexer Truth table . 1:2 Demultiplexer Truth Table 1 : 4 demultiplexer . 1 : 8 demultiplexer . 1 : 16 demultiplexer . A 1 : 16 demultiplexer can be implemented using two 1 : 8 demultiplexers. ",
     "url": "https://learn.circuitverse.org/docs/comb-msi/mux-demux.html#demultiplexers-in-multiple-variations",
     "relUrl": "/docs/comb-msi/mux-demux.html#demultiplexers-in-multiple-variations"
-  },"319": {
+  },"320": {
+    "doc": "MUX/DEMUX",
+    "title": "Applications of Demultiplexers",
+    "content": ". | Arithmetic Logic Unit - The output of the ALU is fed as an input to the De-multiplexer, and the output of the demultiplexer is connected to a multiple register. The output of the ALU can be stored in multiple registers. | Serial to Parallel Converter - In this technique, serial data is given as an input to the De-multiplexer at a regular interval, and a counter is attached to the demultiplexer at the control input to detect the data signal at the output of the demultiplexer. When all data signals are stored, the output of the demux can be read out in parallel. | . | Which of the following directs data from input to a selected output line ? . | Demultiplexer . | Multiplexer | Coder | Both MUX &amp; DEMUX | . | . | Which of the following logic block has a number of input lines and one signle output line ? . | Decoder . | Multiplexer | . | Demultiplexer | Encoder | . | How many selection line will be there if a multiplexer has 8 input lines ? . | 1 | 2 . | 3 | . | 4 | . | How many output lines will be there in a demultiplexer if it has 3 selection lines ? . | 1 . | 2 | 3 | 4 | . | . | . ",
+    "url": "https://learn.circuitverse.org/docs/comb-msi/mux-demux.html#applications-of-demultiplexers",
+    "relUrl": "/docs/comb-msi/mux-demux.html#applications-of-demultiplexers"
+  },"321": {
     "doc": "MUX/DEMUX",
     "title": "MUX/DEMUX",
     "content": " ",
     "url": "https://learn.circuitverse.org/docs/comb-msi/mux-demux.html",
     "relUrl": "/docs/comb-msi/mux-demux.html"
-  },"320": {
+  },"322": {
     "doc": "MUX-based functions",
     "title": "MUX-based functions",
     "content": " ",
     "url": "https://learn.circuitverse.org/docs/comb-msi/mux-functions.html",
     "relUrl": "/docs/comb-msi/mux-functions.html"
-  },"321": {
+  },"323": {
     "doc": "MUX-based functions",
     "title": "Table of contents",
     "content": ". | Mathematical formulation of the Multiplexer | Shannon theorem with MUX | Interactive MUX based logic gates | References | . ",
     "url": "https://learn.circuitverse.org/docs/comb-msi/mux-functions.html#table-of-contents",
     "relUrl": "/docs/comb-msi/mux-functions.html#table-of-contents"
-  },"322": {
+  },"324": {
     "doc": "MUX-based functions",
     "title": "Mathematical formulation of the Multiplexer",
     "content": "An MUX of order $p$, $M(p)$ is formulated as: . $ \\begin{equation}F(\\underbrace{x_1,\\ldots,x_p}_{\\text{inputs}}, \\underbrace{y_0,\\ldots,y_k}_{\\text{control}})= \\sum_{i=0}^{2^p-1}\\underbrace{\\left(\\dot{x_1}\\dot{x_2}\\cdots\\dot{x_p}\\right)_i}_{i^{th}\\text{ Miniterm of }F}\\cdot y_i \\end{equation}$ . where $k=2^p-1$ and $\\dot{x_j} \\in \\{x_j, \\overline{x_j}\\}$ . More examples can be found in [1] (Section on Data Selectors). ",
     "url": "https://learn.circuitverse.org/docs/comb-msi/mux-functions.html#mathematical-formulation-of-the-multiplexer",
     "relUrl": "/docs/comb-msi/mux-functions.html#mathematical-formulation-of-the-multiplexer"
-  },"323": {
+  },"325": {
     "doc": "MUX-based functions",
     "title": "Shannon theorem with MUX",
     "content": "Shannon decomposition theorem can also be implemented using MUXs: . $ f(x_1,x_2,x_3,\\ldots, x_n) = x_1 \\cdot f_1(1,x_2,x_3,\\ldots,x_n) + \\overline{x_1} \\cdot f_0(0,x_2,x_3,\\ldots,x_n) $ . MUX based implementation of Shannon decomposition theorem. See [2] for a more general description. ",
     "url": "https://learn.circuitverse.org/docs/comb-msi/mux-functions.html#shannon-theorem-with-mux",
     "relUrl": "/docs/comb-msi/mux-functions.html#shannon-theorem-with-mux"
-  },"324": {
+  },"326": {
     "doc": "MUX-based functions",
     "title": "Interactive MUX based logic gates",
     "content": "The set $\\{M(1),0,1\\}$ is functionally complete (See section Functionally Complete *Operation Sets in [3] or Wikipedia:Functional completeness). Therefore, any logic function can be implemented using multiplexers, check the interactive circuit below, which implements the basic logic gates using MUXs: . | MUX-based AND gate | MUX-based OR gate | MUX-based NAND gate | MUX-based NOR gate | MUX-based NOT gate | . ",
     "url": "https://learn.circuitverse.org/docs/comb-msi/mux-functions.html#interactive-mux-based-logic-gates",
     "relUrl": "/docs/comb-msi/mux-functions.html#interactive-mux-based-logic-gates"
-  },"325": {
+  },"327": {
     "doc": "MUX-based functions",
     "title": "References",
     "content": ". | [1]Z. Kohavi and N. K. Jha, Switching and Finite Automata Theory. Cambridge University Press, 2010 [Online]. Available at: https://books.google.cl/books?id=jZIxam8Rb9AC | [2]Cerny, Mange, and Sanchez, “Synthesis of Minimal Binary Decision Trees,” IEEE Transactions on Computers, vol. C-28, no. 7, pp. 472–482, 1979, doi: 10.1109/TC.1979.1675391. | [3]B. J. LaMeres, Introduction to Logic Circuits &amp; Logic Design with Verilog. Springer International Publishing, 2019 [Online]. Available at: https://books.google.cl/books?id=1OORDwAAQBAJ | . | Can one MUX block be said an universal logic block ? . | Yes . | No | . | . | Can one DEMUX block be said an universal logic block ? . | Yes . | No | . | . | Select the MUX-based gates which is/are possible ? . | MUX-based XOR gate | MUX-based XNOR gate . | XOR and XNOR both gates | . | . | . ",
     "url": "https://learn.circuitverse.org/docs/comb-msi/mux-functions.html#references",
     "relUrl": "/docs/comb-msi/mux-functions.html#references"
-  },"326": {
+  },"328": {
     "doc": "Negative quantities",
     "title": "Negative quantities",
     "content": " ",
     "url": "https://learn.circuitverse.org/docs/binary-representation/negative-quantities.html",
     "relUrl": "/docs/binary-representation/negative-quantities.html"
-  },"327": {
+  },"329": {
     "doc": "Negative quantities",
     "title": "Table of contents",
     "content": ". | Signed and unsigned numbers | Complements in binary system . | 1’s complement | 2’s complement | . | . ",
     "url": "https://learn.circuitverse.org/docs/binary-representation/negative-quantities.html#table-of-contents",
     "relUrl": "/docs/binary-representation/negative-quantities.html#table-of-contents"
-  },"328": {
+  },"330": {
     "doc": "Negative quantities",
     "title": "Signed and unsigned numbers",
     "content": "Currently, we have just looked at unsigned numbers - they can only be positive, as there is no sign. However, sometimes we need to work with negative numbers too. To do this, we add a sign bit on the far left of the binary number, which indicates whether the number is positive (0) or negative(1). For example, the number 10000011 would be 131 if the number is unsigned, but if the number is signed, the actual representation would be -3 . | The first bit 1 represents that the number is negative | The remaining bits 0000011 represent the actual number, 3 | . The downside to using a signed number is that it removes one bit from the actual number representation, halving the maximum value. | The minimum and maximum values for an unsigned 8-bit number would be 0 to 2&lt;sup&gt;8&lt;/sup&gt;-1 (0 to 255) | The minimum and maximum values for a signed 8-bit number would be -2&lt;sup&gt;7&lt;/sup&gt;-1 to 2&lt;sup&gt;7&lt;/sup&gt;-1 (-127 to 127) | . ",
     "url": "https://learn.circuitverse.org/docs/binary-representation/negative-quantities.html#signed-and-unsigned-numbers",
     "relUrl": "/docs/binary-representation/negative-quantities.html#signed-and-unsigned-numbers"
-  },"329": {
+  },"331": {
     "doc": "Negative quantities",
     "title": "Complements in binary system",
     "content": "The Binary system has a base of r = 2. The base has r = 2 so the Binary system two types of complements. They are: . | 1’s complement | 2’s complement. | . 1’s complement . To find the 1’s complement of a given number, you should change all the 0’s to 1’s and then all the 1’s to 0’s. This process is called as 1’s complement. Simply negate each digit present in the binary number. An Example for 1’s complement is as follows: . Given number 1 0 1 0 1 1's complement 0 1 0 1 0 . 2’s complement . In order to find 2’s complement firstly, evaluate 1’s complement of the number, and further add 1 to it. 2’s complement = 1’s complement + 1. An Example of 2’s complement is as follows: . Given number 1 0 1 0 1 1's complement 0 1 0 1 0 add 1 + 1 --------------- 2's complement 0 1 0 1 1 --------------- . | Using signed two’s complement notation, what is the decimal value of 00010001 ? . | -47 | +37 | -149 . | +17 | . | . | The greatest negative number which can be stored in a 8-bit register using 2’s complement arithemtic is ? . | -256 | -255 . | -128 | . | -127 | . | The two’s complement of the signed decimal number -78 is ? . | 11001110 | 01001110 . | 10110010 | . | 10110001 | . | The range of positive numbers possible in an eight-bit two’s complement system is ? . | 0 to 64 . | 0 to 127 | . | 0 to 256 | 0 to 100. | . | . ",
     "url": "https://learn.circuitverse.org/docs/binary-representation/negative-quantities.html#complements-in-binary-system",
     "relUrl": "/docs/binary-representation/negative-quantities.html#complements-in-binary-system"
-  },"330": {
+  },"332": {
     "doc": "Number bases",
     "title": "Other number bases",
     "content": " ",
     "url": "https://learn.circuitverse.org/docs/binary-representation/number-bases.html#other-number-bases",
     "relUrl": "/docs/binary-representation/number-bases.html#other-number-bases"
-  },"331": {
+  },"333": {
     "doc": "Number bases",
     "title": "Table of contents",
     "content": ". | Introduction | Octal number system | Hexadecimal | Converting between bases | References | . ",
     "url": "https://learn.circuitverse.org/docs/binary-representation/number-bases.html#table-of-contents",
     "relUrl": "/docs/binary-representation/number-bases.html#table-of-contents"
-  },"332": {
+  },"334": {
     "doc": "Number bases",
     "title": "Introduction",
     "content": ". | Section “Number Systems” (Chapter 1) in @@html:(missing reference) | Section 1.1 “Number Systems” in @@html:(missing reference) | Section 2.2 “Bases and number systems” in @@html:(missing reference) | Section 2.1 “Positional number systems” in @@html:(missing reference) | . ",
     "url": "https://learn.circuitverse.org/docs/binary-representation/number-bases.html#introduction",
     "relUrl": "/docs/binary-representation/number-bases.html#introduction"
-  },"333": {
+  },"335": {
     "doc": "Number bases",
     "title": "Octal number system",
     "content": " ",
     "url": "https://learn.circuitverse.org/docs/binary-representation/number-bases.html#octal-number-system",
     "relUrl": "/docs/binary-representation/number-bases.html#octal-number-system"
-  },"334": {
+  },"336": {
     "doc": "Number bases",
     "title": "Hexadecimal",
     "content": " ",
     "url": "https://learn.circuitverse.org/docs/binary-representation/number-bases.html#hexadecimal",
     "relUrl": "/docs/binary-representation/number-bases.html#hexadecimal"
-  },"335": {
+  },"337": {
     "doc": "Number bases",
     "title": "Converting between bases",
     "content": ". | Section 1.1 “Number Systems” in @@html:(missing reference) | Section 2.3 “Number Conversions” in @@html:(missing reference) | Section 2.2 “Base Conversion” in @@html:(missing reference) | . ",
     "url": "https://learn.circuitverse.org/docs/binary-representation/number-bases.html#converting-between-bases",
     "relUrl": "/docs/binary-representation/number-bases.html#converting-between-bases"
-  },"336": {
+  },"338": {
     "doc": "Number bases",
     "title": "References",
     "content": ". ",
     "url": "https://learn.circuitverse.org/docs/binary-representation/number-bases.html#references",
     "relUrl": "/docs/binary-representation/number-bases.html#references"
-  },"337": {
+  },"339": {
     "doc": "Number bases",
     "title": "Number bases",
     "content": " ",
     "url": "https://learn.circuitverse.org/docs/binary-representation/number-bases.html",
     "relUrl": "/docs/binary-representation/number-bases.html"
-  },"338": {
+  },"340": {
     "doc": "Quine McCluskey",
     "title": "Quine McCluskey",
     "content": " ",
     "url": "https://learn.circuitverse.org/docs/logic-design/qmc.html",
     "relUrl": "/docs/logic-design/qmc.html"
-  },"339": {
+  },"341": {
     "doc": "Quine McCluskey",
     "title": "Table of contents",
     "content": ". | Introduction | Further reading | References | . ",
     "url": "https://learn.circuitverse.org/docs/logic-design/qmc.html#table-of-contents",
     "relUrl": "/docs/logic-design/qmc.html#table-of-contents"
-  },"340": {
+  },"342": {
     "doc": "Quine McCluskey",
     "title": "Introduction",
     "content": "Karnaugh Maps for functions with a large number of literals are difficult to minimise. Usually, a K-map is manageable up to 5 or 6 input literals. MEV can help for functions with a couple more variables. If we look at computer data buses, the information is 8, 16, 32, 64 bits wide or more. Additionally, to do a joint optimisation of functions with multiple output variables, the K-maps for all the combinations of the output variables must be analysed. Also, the visual minimisation using K-maps cannot be programmed to be performed by a computer program. The Quine-McCluskey method is a tabular recursive algorithm, which can be programmed in software. It has no limitations regarding the number of input or output literals. However, it will take longer and more recursions to process functions with more variables (the complexity grows exponentially). ",
     "url": "https://learn.circuitverse.org/docs/logic-design/qmc.html#introduction",
     "relUrl": "/docs/logic-design/qmc.html#introduction"
-  },"341": {
+  },"343": {
     "doc": "Quine McCluskey",
     "title": "Further reading",
     "content": "Details of the Quine McCluskey Algorithm can be found in the following references: . | Chapter 4 “Complements in Combinational Network Design” in [1] | Section “Tabular method of minimization” in [2] | Section 4.4 “The tabulation procedure for the determination of prime implicants” in [3] | Section 6.10 “Quine–McCluskey Minimization” in [4] | Wikipedia:Quine–McCluskey algorithm | . ",
     "url": "https://learn.circuitverse.org/docs/logic-design/qmc.html#further-reading",
     "relUrl": "/docs/logic-design/qmc.html#further-reading"
-  },"342": {
+  },"344": {
     "doc": "Quine McCluskey",
     "title": "References",
     "content": ". | [1]G. Donzellini, L. Oneto, D. Ponta, and D. Anguita, Introduction to Digital Systems Design. Springer International Publishing, 2018 [Online]. Available at: https://books.google.cl/books?id=va1qDwAAQBAJ | [2]J. Stonham, Digital Logic Techniques. CRC Press, 2017 [Online]. Available at: https://books.google.cl/books?id=a-5HDwAAQBAJ | [3]Z. Kohavi and N. K. Jha, Switching and Finite Automata Theory. Cambridge University Press, 2010 [Online]. Available at: https://books.google.cl/books?id=jZIxam8Rb9AC | [4]M. Ferdjallah, Introduction to Digital Systems: Modeling, Synthesis, and Simulation Using VHDL. Wiley, 2011 [Online]. Available at: https://books.google.cl/books?id=kJRoR8AAu1AC | . ",
     "url": "https://learn.circuitverse.org/docs/logic-design/qmc.html#references",
     "relUrl": "/docs/logic-design/qmc.html#references"
-  },"343": {
+  },"345": {
     "doc": "Race conditions",
     "title": "Race conditions",
     "content": " ",
     "url": "https://learn.circuitverse.org/docs/seq-design/race-conditions.html",
     "relUrl": "/docs/seq-design/race-conditions.html"
-  },"344": {
+  },"346": {
     "doc": "Race conditions",
     "title": "Table of contents",
     "content": ". | Introduction | Methods to eliminate race around condition . | Increasing the delay of flip-flop | Use of edge-triggered flip-flop | Use of master-slave JK flip-flop | . | . ",
     "url": "https://learn.circuitverse.org/docs/seq-design/race-conditions.html#table-of-contents",
     "relUrl": "/docs/seq-design/race-conditions.html#table-of-contents"
-  },"345": {
+  },"347": {
     "doc": "Race conditions",
     "title": "Introduction",
     "content": "Before getting into the race around condition, let us have a look at the JK flip-flop’s truth table. | Clock Input | Inputs | | Outputs | | Comments |   |   | . |   | J | K | Q | Q’ |   | . | 0 | X | X | Same as previous | Same as previous | No change | . | 1 | 0 | 0 | Same as previous | Same as previous | No change | . | 1 | 0 | 1 | 0 | 1 | Reset | . | 1 | 1 | 0 | 1 | 0 | Set | . | 1 | 1 | 1 | Opposite of previous | Opposite of previous | Toggle | . Here, Q is the present state and Q’ is the next state. As you can see, when J, K and Clock are equal to 1, toggling takes place, i.e. The next state will be equal to the complement of the present state. Now, let us look at the timing diagram of JK flip-flop. Here, T is the time period of the clock whereas delta t is the propagation delay. The delay between input and output is called a propagation delay. This is what was expected, but the output may not be like this all the time. This is where Race around condition comes into the play. Let us look at the timing diagram of JK flip-flop when the race around condition is considered. As you already know, when J, K and Clock are equal to 1, toggling takes place. Here, propagation delay has also been reduced, so the output will be given out at the instant input is given. So there is a toggling again. Therefore, whenever Clock is equal to 1 there are consecutive toggling. This condition is called as Race around condition. To put it in words, “ For JK flip-flop if J, K and Clock are equal to 1 the state of flip-flop keeps on toggling which leads to uncertainty in determining the output of the flip-flop. This problem is called Race around the condition. “’ This condition also exists in T flip-flop since T flip-flop also has toggling options. ",
     "url": "https://learn.circuitverse.org/docs/seq-design/race-conditions.html#introduction",
     "relUrl": "/docs/seq-design/race-conditions.html#introduction"
-  },"346": {
+  },"348": {
     "doc": "Race conditions",
     "title": "Methods to eliminate race around condition",
     "content": "There are three methods to eliminate race around condition as described below: . Increasing the delay of flip-flop . The propagation delay (delta t) should be made greater than the duration of the clock pulse (T). But it is not a good solution as increasing the delay will decrease the speed of the system. Use of edge-triggered flip-flop . If the clock is High for a time interval less than the propagation delay of the flip flop then racing around condition can be eliminated. This is done by using the edge-triggered flip flop rather than using the level-triggered flip-flop. Use of master-slave JK flip-flop . If the flip flop is made to toggle over one clock period then racing around condition can be eliminated. This is done by using Master-Slave JK flip-flop. | The delay between input and output is called ______. | Propagation delay . | Contamination delay | Rise time | Edge rate | . | . | What are the methods to eliminate race around condition ? . | All of these . | Edge-triggered flip-flop | Master-slave JK flip-flop | Increase flip-flop delay | . | . | Which among the following is the race around condition ? . | J=1,K=1,Clock=1 . | S=1,R=1,Clock=1 | J=0,K=0,Clock=0 | All of these | . | . | . ",
     "url": "https://learn.circuitverse.org/docs/seq-design/race-conditions.html#methods-to-eliminate-race-around-condition",
     "relUrl": "/docs/seq-design/race-conditions.html#methods-to-eliminate-race-around-condition"
-  },"347": {
+  },"349": {
     "doc": "Registers",
     "title": "Registers",
     "content": " ",
     "url": "https://learn.circuitverse.org/docs/seq-msi/registers.html",
     "relUrl": "/docs/seq-msi/registers.html"
-  },"348": {
+  },"350": {
     "doc": "Registers",
     "title": "Table of contents",
     "content": ". | Introduction | Serial-in serial-out . | Block diagram | Operation | Truth table | Waveforms | . | Serial-in parallel-out . | Block diagram | . | Parallel-in serial-out . | Load mode | Shift mode | Block diagram | . | Parallel-in parallel-out . | Block diagram | . | Applications of shift registers . | Overview | Ring counter | Johnson ring counter | . | . ",
     "url": "https://learn.circuitverse.org/docs/seq-msi/registers.html#table-of-contents",
     "relUrl": "/docs/seq-msi/registers.html#table-of-contents"
-  },"349": {
+  },"351": {
     "doc": "Registers",
     "title": "Introduction",
     "content": "A Flip-flop is a 1 bit memory cell which can be used for storing the digital data. To increase the storage capacity in terms of number of bits, you can use a group of flip-flops. Such a group of flip-flops is known as a Register. The n-bit register will consist of n number of flip-flop(s) and it is capable of storing an n-bit word. The binary-data, in a register, can be transfered within itself from one flip-flop to another. A shift register is a type of register that allows such data transfers. Shift register has 4 modes of operations. Next, let us have a look at each register operation one by one. | Serial-in serial-out | Serial-in parallel-out | Parallel-in serial-out | Parallel-in parallel-out | . ",
     "url": "https://learn.circuitverse.org/docs/seq-msi/registers.html#introduction",
     "relUrl": "/docs/seq-msi/registers.html#introduction"
-  },"350": {
+  },"352": {
     "doc": "Registers",
     "title": "Serial-in serial-out",
     "content": "Let all the flip-flops be initially in the reset condition i.e. Q3 = Q2 = Q1 = Q0 = 0. If an entry of a four-bit binary number 1 1 1 1 is made into the register, this number should be applied to Din bit with the LSB bit applied first. The D input of FF-3 i.e. D3 is connected to serial data input Din. The output of FF-3 i.e. Q3 is connected to the input of the next flip-flop i.e. D2, and so on. Block diagram . Operation . Before application of the clock signal, let Q3 Q2 Q1 Q0 = 0000 and apply the LSB bit of the number to Din. So Din = D3 = 1. Now, apply the clock. On the first falling edge of the clock, the FF-3 is set, and stored word in the register is Q3 Q2 Q1 Q0 = 1000. Apply the next bit to Din. So Din = 1. As soon as the next negative edge of the clock gets triggered, FF-2 will set and the stored word change to Q3 Q2 Q1 Q0 = 1100. Apply the next bit to be stored i.e. 1 to Din. Apply the clock pulse. As soon as the third negative clock edge gets triggered, FF-1 will be set and output will get modified to Q3 Q2 Q1 Q0 = 1110. Similarly with Din = 1 and with the fourth negative clock edge arriving, the stored word in the register is Q3 Q2 Q1 Q0 = 1111. Truth table . Waveforms . ",
     "url": "https://learn.circuitverse.org/docs/seq-msi/registers.html#serial-in-serial-out",
     "relUrl": "/docs/seq-msi/registers.html#serial-in-serial-out"
-  },"351": {
+  },"353": {
     "doc": "Registers",
     "title": "Serial-in parallel-out",
     "content": ". | In such types of operations, the data is entered serially and taken out in parallel fashion. | Data is loaded bit-by-bit. The output(s) are disabled as long as the data is loading. | As soon as the data loading gets completed, all the flip-flops contain their required data. The output(s) are enabled so that all the loaded data is made available over all the output lines at the same time. | 4 clock cycles are required to load a four-bit word. Hence the speed of operation of SIPO mode is the same as that of the SISO mode. | . Block diagram . ",
     "url": "https://learn.circuitverse.org/docs/seq-msi/registers.html#serial-in-parallel-out",
     "relUrl": "/docs/seq-msi/registers.html#serial-in-parallel-out"
-  },"352": {
+  },"354": {
     "doc": "Registers",
     "title": "Parallel-in serial-out",
     "content": ". | Data bits enter in a parallel fashion. | The circuit, shown below, is a four-bit parallel-in serial-out register. | Output of the previous flip Flop is connected to the input of the next one via a combinational circuit. | The binary input data bits B0, B1, B2, B3 are applied through the same combinational logic circuit. | There are two modes in which this circuit can work, namely - shift mode and load mode. | . Load mode . When the shift/load bar line is low (0), the AND gates 2, 4 and 6 become active, and they will pass B1, B2, B3 bits to the corresponding flip-flops. On the low going edge of the clock, the binary inputs B0, B1, B2, B3 will get loaded into the corresponding flip-flops. Thus, the parallel loading takes place. Shift mode . When the shift/load bar line is low (1), the AND gates 2, 4 and 6 become inactive. Hence, the parallel loading of the data becomes impossible. But the AND gates 1,3 and 5 become active. Therefore the shifting of data takes place from left-to-right bit-by-bit on the application of clock pulses. Thus, the parallel-in serial-out operation takes place. Block diagram . ",
     "url": "https://learn.circuitverse.org/docs/seq-msi/registers.html#parallel-in-serial-out",
     "relUrl": "/docs/seq-msi/registers.html#parallel-in-serial-out"
-  },"353": {
+  },"355": {
     "doc": "Registers",
     "title": "Parallel-in parallel-out",
     "content": "Here, the 4-bit binary datda inputs B0, B1, B2, B3 are applied to the data inputs D0, D1, D2, D3, respectively, of the four flip-flops. When a negative edge of the clock is triggered, then the flip-flops get loaded with the input binary bits simultaneously. The loaded bits appear at the output side, simultaneously, as well. Only the clock pulse is essential to load all the binary bits. Block diagram . ",
     "url": "https://learn.circuitverse.org/docs/seq-msi/registers.html#parallel-in-parallel-out",
     "relUrl": "/docs/seq-msi/registers.html#parallel-in-parallel-out"
-  },"354": {
+  },"356": {
     "doc": "Registers",
     "title": "Applications of shift registers",
     "content": "Overview . Shift registers are sequential circuits used primarily used for: . | Storage of Data | Data transfer through movement of binary data | Data manipulation | Counter implementation | . They are called shift registers as it moves or shifts binary input data to its output per clock cycle. Shift registers are commonly used to store data inside calculators. Even in computer systems, operations like addition, subtraction, division and multiplication are performed by registers. Shift registers can be applied in the following ways: . | Parallel to Serial conversion: Used in transmitters after analog to digital conversion in order to convert parallel input data into serial data . | Serial to Parallel conversion: Used in receivers before digital to anlogous conversion takes place in order to convert serial input data into parallel data . | Sequence Generator: Generate a sequence of 0s and 1s when combined with some additional gates . | Counters: Shift registers can be implemented as counters based on the output of the rightmost D flip-flop that is connected to the serial input, namely the Ring Counter and the Johnson Ring Counter . | Serial-in Serial-out registers are used for time delays . | . Ring counter . Similar to how the Serial-in Serial-out register requires ‘N’ clock pulses to shift N bit data, the ‘N’ Ring Counter produces a sequence of 0s and 1s, by having the rightmost D flip-flop as input to the leftmost D flip-flop as opposed to applying data externally. That is, the output of the last flip-flop is connected to the output of the first flip-flop in the ring. These patterns of states (0s and 1s) are repeated every ‘N’ clock cycles. The number of states in a Ring Counter are directly proportional to the number of flip-flops used. The block diagram of the 3-bit Ring counter is shown in the following figure. A 3-bit Ring Counter will contain only a 3-bit SIPO shift register. Assume, the initial status of the D flip-flops from leftmost to rightmost is Q2Q1Q0=001. Here, Q2 &amp; Q0 are MSB &amp; LSB respectively. You can understand the working of Ring counter from the following table. | No of positive edge of Clock | Serial Input = Q0 | Q2(MSB) | Q1 | Q0(LSB) | . | 0 | - | 0 | 0 | 1 | . | 1 | 1 | 1 | 0 | 0 | . | 2 | 0 | 0 | 1 | 0 | . | 3 | 0 | 0 | 0 | 1 | . Due to the absence of the clock signal, the initial status of the D flip-flops is Q2Q1Q0=001. This state will repeat every third positive edge transition of the clock signal. Similarly, the following operations take place every positive edge of the clock cycle: . | Serial input of the first D flip-flop gets the previous output of the third flip-flop. Thus, the present output of the first D flip-flop is equal to the previous output of the third flip-flop. | The previous outputs of first and second D flip-flops are right-shifted by one bit. That implies that the present outputs of second and third D flip-flops are equal to the previous outputs of first and second D flip-flops. | . Johnson ring counter . The Johnson ring counter functions similarly to the Ring counter. The difference being that the complemented output of rightmost D flip-flop is given as input of leftmost D flip-flop instead of normal output. Thus, ‘N’ bit Johnson Ring counter produces a sequence of states (pattern of zeros and ones) and it repeats for every ‘2N’ clock cycles. Johnson ring counter is also called the Twisted ring counter and Switch tail ring counter. The block diagram of 3-bit Johnson Ring counter is shown in the following figure. The 3-bit Johnson Ring counter also contains only a 3-bit SIPO shift register. Assume, initially, all the D flip-flops are cleared. So, Q2Q1Q0=000. Here, Q2 is the MSB &amp; Q0 is the LSB. | No of positive edge of Clock | Serial Input = Q0 | Q2(MSB) | Q1 | cQ0(LSB) | . | 0 | - | 0 | 0 | 0 | . | 1 | 1 | 1 | 0 | 0 | . | 2 | 1 | 1 | 1 | 0 | . | 3 | 1 | 1 | 1 | 1 | . | 4 | 0 | 0 | 1 | 1 | . | 5 | 0 | 0 | 0 | 1 | . | 6 | 0 | 0 | 0 | 0 | . The initial status of the D flip-flops in the absence of the clock signal is Q2Q1Q0=000. This status repeats for every six positive edge transitions of the clock signal. Similarly, the following operations take place for every positive edge of the clock signal. | Serial input of first D flip-flop gets the previous complemented output of the third flip-flop. So, the present output of the first D flip-flop is equal to the previous complemented output of the third flip-flop. | The previous outputs of first and second D flip-flops are right shifted by one bit. That means, the present outputs of second and third D flip-flops are equal to the previous outputs of first and second D flip-flops. | . ",
     "url": "https://learn.circuitverse.org/docs/seq-msi/registers.html#applications-of-shift-registers",
     "relUrl": "/docs/seq-msi/registers.html#applications-of-shift-registers"
-  },"355": {
+  },"357": {
     "doc": "ROM-based µcontrollers",
     "title": "ROM-based µcontrollers",
     "content": " ",
     "url": "https://learn.circuitverse.org/docs/seq-lsi/rom-microcontrollers.html",
     "relUrl": "/docs/seq-lsi/rom-microcontrollers.html"
-  },"356": {
+  },"358": {
     "doc": "ROM-based µcontrollers",
     "title": "Table of contents",
     "content": ". | Introduction | General purpose ROM-based µcontroller | Counter based µcontroller | Preset counter based µcontroller | MUX based µcontroller | . ",
     "url": "https://learn.circuitverse.org/docs/seq-lsi/rom-microcontrollers.html#table-of-contents",
     "relUrl": "/docs/seq-lsi/rom-microcontrollers.html#table-of-contents"
-  },"357": {
+  },"359": {
     "doc": "ROM-based µcontrollers",
     "title": "Introduction",
     "content": "ROM-based µcontrollers take the simple approach of implementing the combinational logic block of any sequential circuit (both the next state decoder and the output decoder) in a ROM circuit, while latches and counters can be used to make a more efficient use of the ROM capacity. In some cases, additional combinational MUX components are used for the same reason. The following are examples of different ROM-based µcontrollers . ",
     "url": "https://learn.circuitverse.org/docs/seq-lsi/rom-microcontrollers.html#introduction",
     "relUrl": "/docs/seq-lsi/rom-microcontrollers.html#introduction"
-  },"358": {
+  },"360": {
     "doc": "ROM-based µcontrollers",
     "title": "General purpose ROM-based µcontroller",
     "content": "A general purpose ROM-based µcontroller can be implemented as depicted in the block diagram below: . Both, the output decoder and the next-state decoder are implemented in the ROM. The number of address bits for the ROM must be greater than or equal to the sum of the number of input bits $M$ and the number of state variables $N$s. The size of the output word must be greater than or equal to the sum of the number of outputs html:(K)@@ and the number of state variables. ROM capacity: $2^{(M+N)}\\times (K+N)$ . ",
     "url": "https://learn.circuitverse.org/docs/seq-lsi/rom-microcontrollers.html#general-purpose-rom-based-%CE%BCcontroller",
     "relUrl": "/docs/seq-lsi/rom-microcontrollers.html#general-purpose-rom-based-µcontroller"
-  },"359": {
+  },"361": {
     "doc": "ROM-based µcontrollers",
     "title": "Counter based µcontroller",
     "content": "When the FSM corresponds to a simple sequence of states (without branches), a counter can be used to represent the state. The counter output (or state code) selects the corresponding output word from the ROM (A in the figure below). At the same time, part of the bits stored in the ROM (B in the figure) are used to select (via the MUX) the input associated which can produce the state transition for the current state. ROM capacity: $2^N \\times (K+\\log_2 M)$ . ",
     "url": "https://learn.circuitverse.org/docs/seq-lsi/rom-microcontrollers.html#counter-based-%CE%BCcontroller",
     "relUrl": "/docs/seq-lsi/rom-microcontrollers.html#counter-based-µcontroller"
-  },"360": {
+  },"362": {
     "doc": "ROM-based µcontrollers",
     "title": "Preset counter based µcontroller",
     "content": "If the FSM is mostly a simple sequence of state, but there are a few “jumps” to states out of the sequence, the previous circuit can be extended to store the address of the state which is out of the sequence and load it through the preset lines of the counter. ROM capacity: $2^N \\times (N+K+\\log_2 M)$ . ",
     "url": "https://learn.circuitverse.org/docs/seq-lsi/rom-microcontrollers.html#preset-counter-based-%CE%BCcontroller",
     "relUrl": "/docs/seq-lsi/rom-microcontrollers.html#preset-counter-based-µcontroller"
-  },"361": {
+  },"363": {
     "doc": "ROM-based µcontrollers",
     "title": "MUX based µcontroller",
     "content": "For FSM which do not exhibit a simple sequence of states, the counter can be replaced by a MUX and the next state addresses must be stored in the ROM. ROM capacity: $2^N \\times (2N+K+\\log_2 M)$ . | What is the ROM capacity of Counter based µcontroller ? . | 2^N\\times(K+\\log_2 M) . | 2^N\\times(N+K+\\log_2 M) | 2^{(M+N)}\\times(K+N) | 2^M\\times(M+N) | . | . | Which among the following is not micro-controller ? . | DMUX based µcontroller . | MUX based µcontroller | ROM-based µcontroller | None | . | . | What is the ROM capacity of Preset counter based µcontroller ? . | 2^N\\times(N+K+\\log_2 M) . | 2^N\\times(K+\\log_2 M) | 2^{(M+N)}\\times(K+N) | 2^M\\times(M+N) | . | . | . ",
     "url": "https://learn.circuitverse.org/docs/seq-lsi/rom-microcontrollers.html#mux-based-%CE%BCcontroller",
     "relUrl": "/docs/seq-lsi/rom-microcontrollers.html#mux-based-µcontroller"
-  },"362": {
+  },"364": {
     "doc": "ROM",
     "title": "Read-Only Memory",
     "content": " ",
     "url": "https://learn.circuitverse.org/docs/comb-lsi/rom.html#read-only-memory",
     "relUrl": "/docs/comb-lsi/rom.html#read-only-memory"
-  },"363": {
+  },"365": {
     "doc": "ROM",
     "title": "Table of contents",
     "content": ". | Introduction | Types of ROM . | Mask ROM | PROM | Flash memory | . | Implementing a combinational circuit using a ROM . | Advantages and disadvantages | . | Interactive example | . ",
     "url": "https://learn.circuitverse.org/docs/comb-lsi/rom.html#table-of-contents",
     "relUrl": "/docs/comb-lsi/rom.html#table-of-contents"
-  },"364": {
+  },"366": {
     "doc": "ROM",
     "title": "Introduction",
     "content": "A Read-Only-Memory (ROM) is a large scale integration (LSI) combinational circuit. ROM circuits can store binary words of a fixed length in each “cell”. Each cell has an associated binary number usually referred to as “address”. The number of cells is determined by the address’ number of bits. The storage is “non-volatile”, meaning that when the data remains in the circuit even when the power is removed. In contrast, “volatile” storage, such as most Random Access Memory (RAM) circuits, cannot retain the stored binary information when the circuit is disconnected from power. Let $m$ be the address’ number of bits and $n$ the number of bits in each cell (output bits), then the ROM’s size (in bits) can be calculated as $2^m\\times n$. In fact, ROM circuits can be seen as combinational circuits capable of storing large truth-tables whose inputs correspond to the address. ",
     "url": "https://learn.circuitverse.org/docs/comb-lsi/rom.html#introduction",
     "relUrl": "/docs/comb-lsi/rom.html#introduction"
-  },"365": {
+  },"367": {
     "doc": "ROM",
     "title": "Types of ROM",
     "content": "The first ROM circuits produced had the data stored at the moment of fabrication and it was not possible to modify the contents afterwards. That is the main reason why they are called “Read-Only”. The process of storing data into a ROM chip is usually referred to as programming. Technological advances allowed the creation of ROM circuits which could be rewritten after fabrication with or without external. Usually, ROM circuits are classified based on their (re)programming technology. Mask ROM . This type of circuit is programmed at manufacturing time. It cannot be re-programmed afterwards. This process is usually the cheapest when manufacturing large quantities of identical ROM circuits. PROM . In Programmable read-only memory (PROM), the data can be stored after the manufacturing process or in the field. The method of programming as well as the number of times it can be programmed gives way to a number of subtypes. | OTP . One-time-programmable (OTP) ROM can only be programmed once. | EPROM . Erasable programmable read-only memory (EPROM) can be erased using ultraviolet (UV) light and then rewritten, a limited number of times. | EEPROM . Electrically erasable programmable read-only memory (EEPROM) can be erased electrically instead of using UV-light. | . Flash memory . Flash memory is a more modern version of the EEPROM. The erasing and rewriting phases are faster. ",
     "url": "https://learn.circuitverse.org/docs/comb-lsi/rom.html#types-of-rom",
     "relUrl": "/docs/comb-lsi/rom.html#types-of-rom"
-  },"366": {
+  },"368": {
     "doc": "ROM",
     "title": "Implementing a combinational circuit using a ROM",
     "content": "The process of implementation of a binary function(s) using ROM circuits mainly consists in estimating the optimal size of the memory, restricted to the required number of inputs and outputs. Then, the equivalent truth-table has to be stored or “programmed” into the circuit. Advantages and disadvantages . | Single discrete component: . | Use less space than equivalent AND/OR network | Simple implementation (just copy the truth table into the memory. | . | If there are unused memory cells, then more functionality can be added to the same circuit. If the ROM is erasable/re-programmable the truth table can be rewritten into the memory, or the IC can be replaced if it is an OTP memory or Mask ROM. | Depending on the type of ROM the power consumption might be larger than the equivalent AND/OR network power consumption. | In general, ROM access takes a longer time than the propagation time of the equivalent AND/OR network. For instance, 150ns access time for the AT28C64B ROM vs 4.2ns (2×2.1ns) of a 74LVC quad gate. | For very simple or small logic functions, available COTS ROM might be too large, so choosing a ROM would be inefficient in terms of costs and power consumption, considering that most of the ROM circuit will never be used. | . ",
     "url": "https://learn.circuitverse.org/docs/comb-lsi/rom.html#implementing-a-combinational-circuit-using-a-rom",
     "relUrl": "/docs/comb-lsi/rom.html#implementing-a-combinational-circuit-using-a-rom"
-  },"367": {
+  },"369": {
     "doc": "ROM",
     "title": "Interactive example",
     "content": "Let’s suppose we have a ROM circuit with 4 bit addresses and 8 bit words. The ROM capacity can be calculated as $2^4\\times 8 = 64 \\text{bits} = 16 \\text{bytes}$ . Such a ROM can be used to implement 8 single bit binary functions. Let’s say the binary functions have 3 input literals $A,B,C$ which will be connected to the 3 LSB of the ROM address inputs $x_1,x_2,x_3$, respectively. The MSB of the ROM address ($x_0$) will be used to either select the non-inverted value of the functions ($x_0=0$) or the inverted value of the functions ($x_0=1$). If the functions are . \\[\\begin{align} z_0 &amp;= A+B+C \\\\ z_1 &amp;= A+B \\\\ z_2 &amp;= A+C \\\\ z_3 &amp;= B+C \\\\ z_4 &amp;= A\\cdot B\\cdot C \\\\ z_5 &amp;= A\\cdot B \\\\ z_6 &amp;= A\\cdot C\\\\ z_7 &amp;= B\\cdot C \\end{align}\\] then the corresponding truth table is . | : Input word : |||| | :Output word: |||||||| |   |   |   |   |   |   |   |   |   |   |   |   | . | Address ($i$) | $x_0$ | $x_1$ | $x_2$ | $x_3$ | $z_0$ | $z_1$ | $z_2$ | $z_3$ | $z_4$ | $z_5$ | $z_6$ | $z_7$ | (hex) | . | ^^ | Inverted output | $A$ | $B$ | $C$ | $A+B+C$ | $A+B$ | $A+C$ | $B+C$ | $ABC$ | $AB$ | $AC$ | $BC$ | ^^ | . | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | . | 1 | 0 | 0 | 0 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | B0 | . | 2 | 0 | 0 | 1 | 0 | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | D0 | . | 3 | 0 | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 1 | F1 | . | 4 | 0 | 1 | 0 | 0 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | E0 | . | 5 | 0 | 1 | 0 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 1 | 0 | F2 | . | 6 | 0 | 1 | 1 | 0 | 1 | 1 | 1 | 1 | 0 | 1 | 0 | 0 | F4 | . | 7 | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | FF | . | 8 | 1 | 0 | 0 | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | FF | . | 9 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | 1 | 1 | 1 | 4F | . | 10 | 1 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 1 | 1 | 1 | 1 | 2F | . | 11 | 1 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 1 | 1 | 0 | 0E | . | 12 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 1 | 1 | 1 | 1F | . | 13 | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 1 | 0D | . | 14 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 1 | 1 | 0B | . | 15 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 00 | . The interactive circuit below implements the table: . ",
     "url": "https://learn.circuitverse.org/docs/comb-lsi/rom.html#interactive-example",
     "relUrl": "/docs/comb-lsi/rom.html#interactive-example"
-  },"368": {
+  },"370": {
     "doc": "ROM",
     "title": "ROM",
     "content": " ",
     "url": "https://learn.circuitverse.org/docs/comb-lsi/rom.html",
     "relUrl": "/docs/comb-lsi/rom.html"
-  },"369": {
+  },"371": {
     "doc": "Sequential synthesis",
     "title": "Sequential synthesis",
     "content": " ",
     "url": "https://learn.circuitverse.org/docs/seq-design/seq-synth.html",
     "relUrl": "/docs/seq-design/seq-synth.html"
-  },"370": {
+  },"372": {
     "doc": "Sequential synthesis",
     "title": "Table of contents",
     "content": ". | Introduction | Sequential synthesis process | Interactive example . | Functional description | State assignment | Combinational synthesis | . | . ",
     "url": "https://learn.circuitverse.org/docs/seq-design/seq-synth.html#table-of-contents",
     "relUrl": "/docs/seq-design/seq-synth.html#table-of-contents"
-  },"371": {
+  },"373": {
     "doc": "Sequential synthesis",
     "title": "Introduction",
     "content": "As presented in section FSM any sequential circuit can be modelled using Finite State Machines (FSM) or, viceversa, any FSM can be implemented in a sequential circuit. The process to obtain such a circuit from its functional description or model is referred to as sequential synthesis. ",
     "url": "https://learn.circuitverse.org/docs/seq-design/seq-synth.html#introduction",
     "relUrl": "/docs/seq-design/seq-synth.html#introduction"
-  },"372": {
+  },"374": {
     "doc": "Sequential synthesis",
     "title": "Sequential synthesis process",
     "content": "Every sequential circuit can also be represented by the following general model: . The first step in the synthesis process is to state the functional description of the system in terms of a FSM. The state machine can be formally represented by state diagrams or state tables. The number of state variables $(r)$ is directly related to the number of states which can represented by those state variables $(2^r)$. Also, the number of components or their size is related to the number of state variables. On the other hand, the devised FSM might contain redundant states. Therefore, in order to obtain an optimal circuit (in terms of the number of components and number of feedback connections) it is desirable to reduce the number of states by eliminating unnecesary ones. This is the second step in the process. To represent the state with the binary state variables, a binary code must be assigned to each state. A careful selection of the state codes can help in a later stage to minimise the number of components in the combinational logic block. The memory block can be implemented using any of the basic sequential building blocks (latches or flip-flops) or even simple delay lines. Once the type of memory components is decided, it is possible to declare the truth table for the combinational logic block whose inputs are the (external) inputs of the system and the state variables (or internal inputs), while the outputs correspond to the (external) outputs as well as the excitation variables, which will produce the next state by means of the memory block. Finding the optimal combinational logic circuit is the final step in the process. ",
     "url": "https://learn.circuitverse.org/docs/seq-design/seq-synth.html#sequential-synthesis-process",
     "relUrl": "/docs/seq-design/seq-synth.html#sequential-synthesis-process"
-  },"373": {
+  },"375": {
     "doc": "Sequential synthesis",
     "title": "Interactive example",
     "content": "A typical example of a complex synchronous sequential system is the system controller of a vending machine. Functional description . Let’s consider the following simplified block diagram representing the vending machine: . The digital system controller has to interact with the three devices: . | Coin Receiver | Coin Return | Pop Drop | . The coin receiver has four (4) output signals which will be inputs for the system controller and two (2) signals in the other direction: . | CP: (Coin Present) output signal becomes high (or true) when a coin is inserted and being processed and goes back to low value when it finishes processing the coin. | S&lt;: (Total amount is less than product’s price) output signal becomes high if the amount of deposited coins is less than the product’s price. | S=: (Total amount is equal to the product’s price) output signal becomes high if the deposited amount is equal to the product’s price. | S&gt;: (Total amount is greater than product’s price) output signal becomes high if the amount exceeds the product’s price. | DA: (Decrement Accumulator) signal from the controller instructs the coin receiver to subtract the amount returned by the coin return device from the total sum and update the Sx signals. | CA: (Clear Accumulator) signal from the controller tells the coin receiver to clear the total amount. | . The coin return device has two (2) signal connected to the system controller one on each direction: . | RN: (Return Nickel) signal to the device triggers the return of a change (as long as S&gt; is high). | CR: (Changer Ready) signal from the device indicates the controller that the it has finished returning a coin. | . The pop drop device has also two (2) signals connected to the system controller one on each direction: . | DP: (Drop Pop) signal from the controller instructs the device to start the process of delivering the product. | PDR: (Pop Drop Ready) signal to the controller informs when the product has been delivered. | . The Finite State Machine (FSM) which models the process can be described by the following state diagram (note that the state codes have already been assigned, see the explanation in State assignment: . The initial state (a) waits a for a coin to be inserted, when that happens the machine transitions to state (b) and waits until the coin is processed by the coin receiver and then moves to state (c). In state (c) the total amount is checked: if it is still not enough it goes back to state (a) to wait for more coins to be inserted. If it is equal to the price of the product the machine gets to state (d) which triggers signal DP to release the product and waits until de pop drop device informs the process is finished by asserting the PDR signal. At this moment, the machine state becomes (e) which sends the CA signal to clear the total sum in the coin receiver and then goes back to the initial state (a). On the other hand, while at state (c), if total amount is greater than the price then the machine enters state (f) which sets signal RN to high in order to tell the coin return to return a fixed amount. When it is done, the coin return responds by sending a true value back to the controller using signal CR. When this happens the machine moves on to state (g) which activates signal DA to the coin receiver to update the total amount and changes back to state (c) to check the new amount. State assignment . Given the FSM state diagram the following conditions regarding state codes should be considered: . | (a) should be adjacent to (b) | (b) should be adjacent to (c) | (d) should be adjacent to (e) | (f) should be adjacent to (g) | . The following state map takes all considerations into account: . |   | :AB: ||| |   |   |   | . | C | 00 | 01 | 11 | 10 | . | 0 | a | $\\phi$ | d | f | . | 1 | b | c | e | g | . Combinational synthesis . Given the state codes the output decoder can be represented by the following map: . |   | :AB: ||| |   |   |   | . | C | 00 | 01 | 11 | 10 | . | 0 |   |   | DP | RN | . | 1 |   |   | CA | DA | . By selecting JK Flip-flops as the memory elements the following maps represent the next state decoder: . | $J_A$ | :AB: ||| |   |   |   | . | C | 00 | 01 | 11 | 10 | . | 0 | 0 | $\\phi$ | $\\phi$ | $\\phi$ | . | 1 | 0 | S=+S&gt; | $\\phi$ | $\\phi$ | . $J_A = B(\\text{S= + S&gt;})$ . | $K_A$ | :AB: ||| |   |   |   | . | C | 00 | 01 | 11 | 10 | . | 0 | $\\phi$ | $\\phi$ | 0 | 0 | . | 1 | $\\phi$ | $\\phi$ | 1 | 1 | . $K_A = C$ . | $J_B$ | :AB: ||| |   |   |   | . | c | 00 | 01 | 11 | 10 | . | 0 | 0 | $\\phi$ | $\\phi$ | 0 | . | 1 | $\\overline{CP}$ | $\\phi$ | $\\phi$ | 1 | . $J_B = C(\\overline{CP})+ AC$ . | $K_B$ | :AB: ||| |   |   |   | . | C | 00 | 01 | 11 | 10 | . | 0 | $\\phi$ | $\\phi$ | 0 | $\\phi$ | . | 1 | $\\phi$ | $\\overline{\\text{S=}}$ | 1 | $\\phi$ | . $K_B = C(\\overline{\\text{S=}}) + AC$ . | $J_C$ | :AB: ||| |   |   |   | . | C | 00 | 01 | 11 | 10 | . | 0 | CP | $\\phi$ | PDR | CR | . | 1 | $\\phi$ | $\\phi$ | $\\phi$ | $\\phi$ | . $J_C = A(CP) + B(PDR) + A\\overline{B}(CR)$ . | $K_C$ | :AB: ||| |   |   |   | . | C | 00 | 01 | 11 | 10 | . | 0 | $\\phi$ | $\\phi$ | $\\phi$ | $\\phi$ | . | 1 | 0 | 1 | 1 | 0 | . $K_C = B$ . The circuit which implements such a machine is the following: . ",
     "url": "https://learn.circuitverse.org/docs/seq-design/seq-synth.html#interactive-example",
     "relUrl": "/docs/seq-design/seq-synth.html#interactive-example"
-  },"374": {
+  },"376": {
     "doc": "Shannon decomposition",
     "title": "Shannon decomposition",
     "content": " ",
     "url": "https://learn.circuitverse.org/docs/binary-algebra/shannon.html",
     "relUrl": "/docs/binary-algebra/shannon.html"
-  },"375": {
+  },"377": {
     "doc": "Shannon decomposition",
     "title": "Table of contents",
     "content": ". | Boole’s expansion theorem | References | . ",
     "url": "https://learn.circuitverse.org/docs/binary-algebra/shannon.html#table-of-contents",
     "relUrl": "/docs/binary-algebra/shannon.html#table-of-contents"
-  },"376": {
+  },"378": {
     "doc": "Shannon decomposition",
     "title": "Boole’s expansion theorem",
     "content": "The Shannon expansion or decomposition theorem, also known as Boole’s expansion theorem is an identity which allow the expansion of any logic function to broken down in parts. One consequence of this theorem is the possibility to implement any logic function using multiplexers. The expansion can take any of these three variations: . $\\begin{aligned} f(x_1,x_2,\\ldots,x_n)&amp;= x_1 \\cdot f(1,x_2,\\ldots,x_n) + \\overline{x_1}\\cdot f(0,x_2,\\ldots,x_n) \\\\\\\\ &amp;= \\bigl(x_1+f(0,x_2,\\ldots,x_n)\\bigr)\\cdot \\bigl(\\overline{x_1}+f(1,x_2,\\ldots,x_n)\\bigr) \\\\\\\\ &amp;= x_1 \\cdot f(1,x_2,\\ldots,x_n) \\oplus \\overline{x_1}\\cdot f(0,x_2,\\ldots,x_n) \\end{aligned}$ . More details can be found in Section 1.9 “Shannon’s Expansion Theorem” in [1] and in Section 3.2 “Switching functions” in [2]. ",
     "url": "https://learn.circuitverse.org/docs/binary-algebra/shannon.html#booles-expansion-theorem",
     "relUrl": "/docs/binary-algebra/shannon.html#booles-expansion-theorem"
-  },"377": {
+  },"379": {
     "doc": "Shannon decomposition",
     "title": "References",
     "content": ". | [1]G. Donzellini, L. Oneto, D. Ponta, and D. Anguita, Introduction to Digital Systems Design. Springer International Publishing, 2018 [Online]. Available at: https://books.google.cl/books?id=va1qDwAAQBAJ | [2]Z. Kohavi and N. K. Jha, Switching and Finite Automata Theory. Cambridge University Press, 2010 [Online]. Available at: https://books.google.cl/books?id=jZIxam8Rb9AC | . ",
     "url": "https://learn.circuitverse.org/docs/binary-algebra/shannon.html#references",
     "relUrl": "/docs/binary-algebra/shannon.html#references"
-  },"378": {
+  },"380": {
     "doc": "Subtraction",
     "title": "Binary subtraction",
     "content": " ",
     "url": "https://learn.circuitverse.org/docs/binary-algebra/subtraction.html#binary-subtraction",
     "relUrl": "/docs/binary-algebra/subtraction.html#binary-subtraction"
-  },"379": {
+  },"381": {
     "doc": "Subtraction",
     "title": "Table of contents",
     "content": ". | Subtraction | . ",
     "url": "https://learn.circuitverse.org/docs/binary-algebra/subtraction.html#table-of-contents",
     "relUrl": "/docs/binary-algebra/subtraction.html#table-of-contents"
-  },"380": {
+  },"382": {
     "doc": "Subtraction",
     "title": "Subtraction",
     "content": "Binary subtraction is also a simple task. You just need to keep in mind i.e., whenever 0 takes borrow, it becomes 10 i.e., 2 in decimal. In case number to the left is zero then look for the number more left to that until you find 1. In case nothing is present to borrow then that number becomes negative. Also, the number which gives borrow is reduced by 1. Note: 10 becomes 1 after giving borrow. Examples : 0 - 0 = 0 1 - 0 = 1 1 - 1 = 0 1 0 (2)This is something which will always happen in binary subtraction. Keep in mind i.e., 10-1=1 - 0 1 (1)Reason being 10 is 2 in decimal which on subtraction with 1 gives 1. ----- Implies that 10 - 1 = 1 0 1 (1) ----- This 0 increases to 10 after taking the carry and reduces to 1 after giving the borrow. / 1 0 0 (4) - 0 0 1 (1) ------- 0 1 1 (3) ------- . | Binary subtraction of 10100111–00011000= ? . | 010001111 . | 110001111 | 010101111 | 011001111 | . | . | Binary subtraction of 101001–010110= ? . | 010011 . | 011011 | 110011 | 010111 | . | . | Binary subtraction of 101101–101011= ? . | 000010 . | 001010 | 101010 | 100000 | . | . | . ",
     "url": "https://learn.circuitverse.org/docs/binary-algebra/subtraction.html",
     "relUrl": "/docs/binary-algebra/subtraction.html"
-  },"381": {
+  },"383": {
     "doc": "Universal gates",
     "title": "Universal gates",
     "content": " ",
     "url": "https://learn.circuitverse.org/docs/comb-ssi/universal-gates.html",
     "relUrl": "/docs/comb-ssi/universal-gates.html"
-  },"382": {
+  },"384": {
     "doc": "Universal gates",
     "title": "Table of contents",
     "content": ". | Introduction | NOR gate . | Implementing NOT gate | Implementing OR gate | Implementing AND gate | . | NAND gate . | Implementing NOT gate | Implementing OR gate | Implementing AND gate | . | Introduction | Functional completeness | Simplification . | Step 1: Double negation | Step 2: Applying De Morgan’s law | Step 3: Construct the NAND circuit | . | Introduction | Functional completeness | Simplification . | Step 1: Double negation | Step 2: Applying De Morgan’s law | Step 3: Construct the NOR circuit | . | . ",
     "url": "https://learn.circuitverse.org/docs/comb-ssi/universal-gates.html#table-of-contents",
     "relUrl": "/docs/comb-ssi/universal-gates.html#table-of-contents"
-  },"383": {
+  },"385": {
     "doc": "Universal gates",
     "title": "Introduction",
     "content": "Universal gates are gates which can be used to implement all other gates. This is useful as manufacturers only need to produce 1 type of universal gate to be able to use all other gates. The universal gates are NOR and NAND. This page will show you how to implement AND, OR and NOT gates using universal gates. The AND, OR and NOT gates are basic gates that are commonly used and are very important. ",
     "url": "https://learn.circuitverse.org/docs/comb-ssi/universal-gates.html#introduction",
     "relUrl": "/docs/comb-ssi/universal-gates.html#introduction"
-  },"384": {
+  },"386": {
     "doc": "Universal gates",
     "title": "NOR gate",
     "content": "The NOR gate is the opposite of the OR gate. It is like an OR gate followed by a NOT gate. Implementing NOT gate . A NOT gate can be implemented by passing the same input into both inputs of the NOR gate. Implementing OR gate . An OR gate can be implemented by passing the output of NOR to the NOT gate implemented earlier. Implementing AND gate . Since the NOR gate outputs true only when both inputs are 0, an AND gate can be implemented by inverting the inputs to a NOR gate. ",
     "url": "https://learn.circuitverse.org/docs/comb-ssi/universal-gates.html#nor-gate",
     "relUrl": "/docs/comb-ssi/universal-gates.html#nor-gate"
-  },"385": {
+  },"387": {
     "doc": "Universal gates",
     "title": "NAND gate",
     "content": "The NAND gate is the opposite of the AND gate. It is like an AND gate followed by a NOT gate. Implementing NOT gate . Similarly to NOR, a NOT gate can also be implemented by joining the inputs of a NAND gate. Implementing OR gate . The only time the NAND gate output is 0 is when both inputs are 1. Therefore, by inverting the inputs of a NAND gate, an OR gate can be implemented. Implementing AND gate . The AND gate is simply the output of a NAND gate inverted. ",
     "url": "https://learn.circuitverse.org/docs/comb-ssi/universal-gates.html#nand-gate",
     "relUrl": "/docs/comb-ssi/universal-gates.html#nand-gate"
-  },"386": {
+  },"388": {
     "doc": "Universal gates",
     "title": "Introduction",
     "content": "NAND Gates are universal gates. By the virtue of functional completeness, NAND Gates can be used to fully represent a given boolean expression. This simplifies the expression such that only one standard gate is used throughout. ",
     "url": "https://learn.circuitverse.org/docs/comb-ssi/universal-gates.html#introduction-1",
     "relUrl": "/docs/comb-ssi/universal-gates.html#introduction-1"
-  },"387": {
+  },"389": {
     "doc": "Universal gates",
     "title": "Functional completeness",
     "content": "Functional completeness is a property pertaining to boolean logic, which states that a functionally complete boolean operator can express all possible truth tables by representing itself in a boolean expression. That is, any given boolean expression can be completely represented by using the a functionally complete boolean operator. For example, NAND gates can be used to implement the NOT gate, the OR gate and the AND gate. ",
     "url": "https://learn.circuitverse.org/docs/comb-ssi/universal-gates.html#functional-completeness",
     "relUrl": "/docs/comb-ssi/universal-gates.html#functional-completeness"
-  },"388": {
+  },"390": {
     "doc": "Universal gates",
     "title": "Simplification",
     "content": "To simplify any given boolean expression, first find the minimum number of NAND gates required. To do this, carry out the following steps. Let’s find the minimum number of NAND gates required to simplify the logical expression: . F(A, B, C, D) = AB' + C'D . Step 1: Double negation . Since the NAND gate is a combination of a NOT gate and an AND gate, we first apply a double negation to the entire expression so that we are able to standardize it later on. Adding a double negation does not alter the inherent value of the expression as a double negation always nullifies itself. F = (F')' = ((AB' + C'D)')' . Step 2: Applying De Morgan’s law . We first apply De Morgan’s Law to the innermost bracket, such that we preserve the outermost negation at the time of expressing the F as a NAND expression. Thus, by applying De Morgan’s Law: . F = ((AB' + C'D)')' = ((AB')' . (C'D)')' . The boolean expression is now standardized such that it can completely be represented by a NAND gate at every input level. Step 3: Construct the NAND circuit . Now that you have gotten the boolean expression to the required standard, you can implement it as a NAND circuit. F = (A NAND B') NAND (C' NAND D) F = (A NAND (B NAND B)) NAND ((C NAND C) NAND D) . Notice that there are input elements that are present in the negative form, namely B' and C'. You can represent them by using the NAND gate in order to realise the NOT gate. ",
     "url": "https://learn.circuitverse.org/docs/comb-ssi/universal-gates.html#simplification",
     "relUrl": "/docs/comb-ssi/universal-gates.html#simplification"
-  },"389": {
+  },"391": {
     "doc": "Universal gates",
     "title": "Introduction",
     "content": "NOR Gates are universal gates. By the virtue of functional completeness, NOR Gates can be used to fully represent a given boolean expression. This simplifies the expression such that only one standard gate is used throughout. ",
     "url": "https://learn.circuitverse.org/docs/comb-ssi/universal-gates.html#introduction-2",
     "relUrl": "/docs/comb-ssi/universal-gates.html#introduction-2"
-  },"390": {
+  },"392": {
     "doc": "Universal gates",
     "title": "Functional completeness",
     "content": "Functional completeness is a property pertaining to boolean logic, which states that a functionally complete boolean operator can express all possible truth tables by representing itself in a boolean expression. That is, any given boolean expression can be completely represented by using the a functionally complete boolean operator. For example, NOR gates can be used to implement the NOT gate, the OR gate and the AND gate. ",
     "url": "https://learn.circuitverse.org/docs/comb-ssi/universal-gates.html#functional-completeness-1",
     "relUrl": "/docs/comb-ssi/universal-gates.html#functional-completeness-1"
-  },"391": {
+  },"393": {
     "doc": "Universal gates",
     "title": "Simplification",
     "content": "To simplify any given boolean expression, first find the minimum number of NOR gates required. To do this, carry out the following steps. Let’s find the minimum number of NOR gates required to simplify the logical expression: . F(A, B, C, D) = (A + B').(C' + D) . Step 1: Double negation . Since the NOR gate is a combination of a NOT gate and an OR gate, we first apply a double negation to the entire expression so that we are able to standardize it later on. Adding a double negation does not alter the inherent value of the expression as a double negation always nullifies itself. F = (F')' = (((A + B').(C' + D))')' . Step 2: Applying De Morgan’s law . We first apply De Morgan’s Law to the innermost bracket, such that we preserve the outermost negation at the time of expressing the F as a NOR expression. Thus, by applying De Morgan’s Law: . F = (((A + B').(C' + D))')' = ((A + B')' + (C' + D)')' . The boolean expression is now standardized such that it can completely be represented by a NOR gate at every input level. Step 3: Construct the NOR circuit . Now that you have gotten the boolean expression to the required standard, you can implement it as a NOR circuit. F = (A NOR B') NOR (C' NOR D) F = (A NOR (B NOR B)) NOR ((C NOR C) NOR D) . Notice that there are input elements that are present in the negative form, namely B' and C'. You can represent them by using the NOR gate in order to realise the NOT gate. ",
