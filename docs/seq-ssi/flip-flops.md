@@ -281,6 +281,23 @@ Q(n+1) = Q(n)'J + Q(n)K'
 ````
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/47630" id="masterslave_jk_flipflop_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
+## Differences between SR and JK flip-flop
+
+| JK Flip-flop     |  SR Flip-flop    |
+|:------------|:--------------|
+| When J input is 1 and K input is 0 on the triggering edge of clock pulse,then output is in set state | When S input is 1 and R input is 0,output is in set state |
+| When J input is 0 and K input is 1 on the triggering edge of clock pulse,then the output is in reset state | When S input is 0 and R input is 1,output is in reset state |
+| When J and K input both are 1 on the triggering edge of clock pulse,then the output toggle wrt what was the state in the previous clock cycle | When both S and R input are 0,there is no change in output and it holds the previous state |
+| There are no invalid states even if both 'J' and 'K' flip flops are set to 1 |  When both inputs  are set to 1, the circuit produces the invalid states as outputs |
+
+## Differences between T and D flip-flop
+
+| T Flip-flop      |  D Flip-flop    |
+|:------------|:--------------|
+| Single input version of JK flip-flops | Single input version of SR flip-flops |
+| When the clock rises from 0 to 1, the value remembered by the flip-flop either toggles or remains the same depending on whether the T input (Toggle) is 1 or 0 | When the clock rises from 0 to 1, the value remembered by the flip-flop becomes the value of the D input (Data) at that instant|
+| It has an input and an output and will toggle no matter what | It has an input, an output, and a clock , and will only change its output when the clock is on  |
+
 
 ## Flip-flops interaction
 
