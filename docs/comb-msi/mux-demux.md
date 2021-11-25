@@ -125,7 +125,7 @@ It can also be implemented with **five** 4 : 1 multiplexers:
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/44804" id="mux_06" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ## Applications of Multiplexers
-• Transmission from the Computer System of a Satellite - Multiplexer is used to transmit the data signals from the computer system of a spacecraft or a satellite to the ground system by using a GSM satellite.
+- Transmission from the Computer System of a Satellite - Multiplexer is used to transmit the data signals from the computer system of a spacecraft or a satellite to the ground system by using a GSM satellite.
 
 • Computer Memory - Multiplexers are used in computer memory to maintain a huge amount of memory in the computers, and also to reduce the number of copper lines required to connect the memory to other parts of the computer.
 
