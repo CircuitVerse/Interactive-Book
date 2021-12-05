@@ -53,10 +53,7 @@ The registers which will shift the bits to the left are called Shift left regist
 
 The following image shows an n-bit bidirectional shift register with serial data loading and retrieval capacity. Initially, all the flip flops in the register are reset by driving their clear pins high.
 
-### Block diagram
-
-
-{% include image.html url="assets\images\4-bit-Bidirectional-Shift-Register (1).png" description="" %}
+<iframe width="600px" height="400px" src="https://circuitverse.org/simulator/embed/bidirectional-shift-register-c147aae0-9cb6-49ec-a41d-d9ecaa45d8a4" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
 
 ## Serial-in serial-out
 
@@ -180,10 +177,8 @@ Universal shift registers are capable of performing 3 operations as listed below
 
 3. Shift right operation – stores the data and transfers the data by shifting towards right in the serial path.
 
-### Block diagram
 
-
-{% include image.html url="assets\images\universal.png" description="" %}
+<iframe width="600px" height="400px" src="https://circuitverse.org/simulator/embed/universal-shift-register-aba5d2c5-d6b7-4172-adef-90be221da924" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
 
 
 Now, the parameters which should have in a Universal Shift Register are discussed below :-
