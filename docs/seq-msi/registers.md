@@ -33,27 +33,13 @@ Shift register has 4 modes of operations.
 
 Next, let us have a look at each register operation one by one.
 
-1. [Bidirectional Shift Register](#Bidirectional-Shift-Register)
-2. [Serial-in serial-out](#serial-in-serial-out)
-3. [Serial-in parallel-out](#serial-in-parallel-out)
-4. [Parallel-in serial-out](#parallel-in-serial-out)
-5. [Parallel-in parallel-out](#parallel-in-parallel-out)
+
+1. [Serial-in serial-out](#serial-in-serial-out)
+2. [Serial-in parallel-out](#serial-in-parallel-out)
+3. [Parallel-in serial-out](#parallel-in-serial-out)
+4. [Parallel-in parallel-out](#parallel-in-parallel-out)
+5. [Bidirectional Shift Register](#Bidirectional-Shift-Register)
 6. [Universal Shift Register](#Universal-Shift-Register)
-
-
-## Bidirectional Shift Register
-
-
-Bidirectional shift registers are the storage devices capable of shifting the data either right or left, depending on the mode selected.
-In this, R/L control line is made either low or high to opt for either left-shift or right-shift of the data bits, respectively.An n-bit shift register can be formed by connecting n flip-flops where each flip flop stores a single bit of data.
-
-
-The registers which will shift the bits to the left are called Shift left registers. The registers which will shift the bits to the right are called Shift right registers.
-
-
-The following image shows an n-bit bidirectional shift register with serial data loading and retrieval capacity. Initially, all the flip flops in the register are reset by driving their clear pins high.
-
-<iframe width="600px" height="400px" src="https://circuitverse.org/simulator/embed/bidirectional-shift-register-c147aae0-9cb6-49ec-a41d-d9ecaa45d8a4" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
 
 ## Serial-in serial-out
 
@@ -163,38 +149,30 @@ Only the clock pulse is essential to load all the binary bits.
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/93890" id="pp_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
+## Bidirectional Shift Register
+
+The registers discussed so far involved only right shift operations.  Each right shift operation has the effect of successively dividing the binary number by two.  If the operation is reversed (left shift), this has the effect of multiplying the number by two.  With suitable gating arrangement a serial shift register can perform both operations. A bidirectional, or reversible, shift register is one in which the data can be shift either left or right. In a four-bit bidirectional shift register using D flip-flops, a set of NAND gates are configured as OR gates to select data inputs from the right or left adjacent bi-stables, as selected by the  SHLSHR / control line. When the control line is high data is moved or shifted to the right side, and if it is low data will be moved  to  the  left  side.  Hence  this  shift  register  is  also  called  as  Left  Right  or Bidirectional shift register.
+
+ The operation of the circuit may be explained as follows :- In the beginning  CLR  signal is made low which clear all the flip-flops. When  SHLSHR / control line is high, one can understand from the logic of the gates connected in this circuit that the output Q of all the flip-flops gets connected to the D input of the following flip-flop. The data bit gets connected to D input of first flip-flop. Now after the application clock pulse to the CLK terminal, data bits are shifted one place to the right. Further occurrence of the nest pulses will shift data in right. However, when the  SHLSHR/ control line is  low, the configuration of logic gates makes the data bit to connect to D input of 4th flip-flop also the output of each flip-flop is passed through to the D input of the preceding flip-flop. After the application clock pulse to the CLK terminal, data bits are shifted one place to the left. In this mode the circuit works as the left shift register.
+
+
+<iframe width="600px" height="400px" src="https://circuitverse.org/simulator/embed/bidirectional-shift-register-c147aae0-9cb6-49ec-a41d-d9ecaa45d8a4" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
+
+
 ## Universal Shift Register
 
-A register that can store the data and shifts the data towards the right and left along with the parallel load capability is known as a universal shift register
-It can be used to perform input/output operations in both serial and parallel modes.
-Unidirectional shift registers and bidirectional shift registers are combined together to get the design of the universal shift register. It is also known as a parallel-in-parallel-out shift register or shift register with the parallel load.
+It has facilities for serial loading (serial in) and serial output and parallel loading (parallel in) and parallel output, and, additionally, it has shift-left and shift-right facilities. Therefore, this kind of shift register, which can operate in all the four different modes discussed in preceding sections and also has the facility of bi-directional shifting of data, is called a universal shift register. In the logic diagram of 4-bit universal shift register, there are four D flip-flops and the associated NAND gates, which makes it possible to shift the data to the right or left direction. The mode control inputs S0 and S1 enable the required operating mode of the register. From the table below it is clear that when both these mode control inputs are 00 or 11, no shifting occurs. When both are 00, the content of the register will have its previous value (i.e. no change) and when both are 11, the input data D3 D2 D1 D0 are loaded in parallel fashion in the register. When control inputs S1 S0 are 01 or 10, the data is shifted right or left respectively after the application of clock pulse. The asynchronous input CLR is used to
+clear or reset the register. This is an active low input. 
 
-Universal shift registers are capable of performing 3 operations as listed below :-
-
-1. Parallel load operation – stores the data in parallel as well as the data in parallel
-
-2. Shift left operation – stores the data and transfers the data shifting towards left in the serial path
-
-3. Shift right operation – stores the data and transfers the data by shifting towards right in the serial path.
+|  S1| S0 | Operating Mode|
+|:------------|:--------------|:--------------|
+|  0| 0 | No change|
+|  0| 1 | Shift right|
+|  1| 0 | Shift left|
+|  1| 1 | Parallel load|
 
 
 <iframe width="600px" height="400px" src="https://circuitverse.org/simulator/embed/universal-shift-register-aba5d2c5-d6b7-4172-adef-90be221da924" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
-
-
-Now, the parameters which should have in a Universal Shift Register are discussed below :-
-- A shift-right control to enable the shift-right operation and the serial input and output lines associated with the shift-right.
-
-- A shift-left control to enable the shift-left operation and the serial input and output lines associated with the shift-left.
-
-- A parallel-load control to enable a parallel transfer and the n input lines associated with the parallel transfer.
-
-- n parallel output lines.
-
-- A clear control to clear the register to 0.
-
-- A CLK input for clock pulses to synchronize all operations.
-
-- A control state that leaves the information in the register unchanged even though clock pulses are continuously applied.
 
 
 ## Applications of shift registers
