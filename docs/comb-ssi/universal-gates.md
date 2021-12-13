@@ -32,30 +32,30 @@ The NOR gate is the opposite of the OR gate. It is like an OR gate followed by a
 
 ### Implementing NOT gate
 A NOT gate can be implemented by passing the same input into both inputs of the NOR gate.
-<iframe width="600px" height="400px" src="https://circuitverse.org/simulator/embed/45175" id="universal_gates_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/45175" id="universal_gates_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ### Implementing OR gate
 An OR gate can be implemented by passing the output of NOR to the NOT gate implemented earlier.
-<iframe width="600px" height="400px" src="https://circuitverse.org/simulator/embed/45176" id="universal_gates_02" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/45176" id="universal_gates_02" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ### Implementing AND gate
 Since the NOR gate outputs true only when both inputs are 0, an AND gate can be implemented by inverting the inputs to a NOR gate.
-<iframe width="600px" height="400px" src="https://circuitverse.org/simulator/embed/45177" id="universal_gates_03" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/45177" id="universal_gates_03" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ## NAND gate
 The NAND gate is the opposite of the AND gate. It is like an AND gate followed by a NOT gate.
 
 ### Implementing NOT gate
 Similarly to NOR, a NOT gate can also be implemented by joining the inputs of a NAND gate.
-<iframe width="600px" height="400px" src="https://circuitverse.org/simulator/embed/45178" id="universal_gates_04" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/45178" id="universal_gates_04" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ### Implementing OR gate
 The only time the NAND gate output is 0 is when both inputs are 1. Therefore, by inverting the inputs of a NAND gate, an OR gate can be implemented.
-<iframe width="600px" height="400px" src="https://circuitverse.org/simulator/embed/45179" id="universal_gates_05" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/45179" id="universal_gates_05" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ### Implementing AND gate
 The AND gate is simply the output of a NAND gate inverted.
-<iframe width="600px" height="400px" src="https://circuitverse.org/simulator/embed/45180" id="universal_gates_06" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/45180" id="universal_gates_06" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ## Introduction
 [NAND Gates](https://learn.circuitverse.org/docs/universal_gates.html#nand-gate) are universal gates. By the virtue of functional completeness, NAND Gates can be used to fully represent a given boolean expression. This simplifies the expression such that only one standard gate is used throughout.  
@@ -101,7 +101,7 @@ F = (A NAND (B NAND B)) NAND ((C NAND C) NAND D)
 ```
 Notice that there are input elements that are present in the negative form, namely `B'` and `C'`. You can represent them by using the NAND gate in order to realise the [NOT gate](https://learn.circuitverse.org/docs/universal_gates.html#implementing-not-gate-1).
 
-<iframe width="600px" height="300px" src="https://circuitverse.org/simulator/embed/93441" id="nand_gate_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
+<iframe width="100%" height="300px" src="https://circuitverse.org/simulator/embed/93441" id="nand_gate_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
 
 ## Introduction
 [NOR Gates](https://learn.circuitverse.org/docs/universal_gates.html#nor-gate) are universal gates. By the virtue of functional completeness, NOR Gates can be used to fully represent a given boolean expression. This simplifies the expression such that only one standard gate is used throughout.  
@@ -147,7 +147,7 @@ F = (A NOR (B NOR B)) NOR ((C NOR C) NOR D)
 ```
 Notice that there are input elements that are present in the negative form, namely `B'` and `C'`. You can represent them by using the NOR gate in order to realise the [NOT gate](https://learn.circuitverse.org/docs/universal_gates.html#implementing-not-gate).
 
-<iframe width="600px" height="300px" src="https://circuitverse.org/simulator/embed/97663" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
+<iframe width="100%" height="300px" src="https://circuitverse.org/simulator/embed/97663" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
 
 
 

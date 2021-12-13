@@ -57,7 +57,7 @@ F(x,y,z) &= \overline{x}\overline{y}z + xy
 
 By replacing the negations by NOT gates, the sum by an OR gate and the products by AND gates, the following circuit is implemented:
 
-<iframe width="600px" height="400px"
+<iframe width="100%" height="400px"
 	src="https://circuitverse.org/simulator/embed/boolean-implementation-example"
 	id="projectPreview" scrolling="no"
 	title="Boolean implementation example"

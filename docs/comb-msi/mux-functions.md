@@ -51,7 +51,7 @@ The set $\\{M(1),0,1\\}$ is functionally complete (See section **Functionally Co
 -   MUX-based NOR gate
 -   MUX-based NOT gate
 
-<iframe width="600px" height="400px"
+<iframe width="100%" height="400px"
 	src="https://circuitverse.org/simulator/embed/mux-based-not-gate"
 	id="projectPreview" scrolling="no"
 	title="MUX-based NOT gate"

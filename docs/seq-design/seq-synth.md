@@ -168,4 +168,4 @@ $K_C = B$
 
 The circuit which implements such a machine is the following:
 
-<iframe width="600px" height="400px" src="https://circuitverse.org/simulator/embed/vending_machine_ssi" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
+<iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/vending_machine_ssi" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>

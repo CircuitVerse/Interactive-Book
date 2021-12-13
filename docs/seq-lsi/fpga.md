@@ -46,7 +46,7 @@ FPGA are so versatile than even full microprocessors can be implemented in them,
 
 ## Interactive FPGA example
 
-<iframe width="600px" height="400px" 
+<iframe width="100%" height="400px" 
 	src="https://circuitverse.org/simulator/embed/fpga" 
 	id="projectPreview" scrolling="no"
 	webkitAllowFullScreen mozAllowFullScreen allowFullScreen>

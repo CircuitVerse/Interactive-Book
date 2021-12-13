@@ -132,7 +132,7 @@ then the corresponding truth table is
 
 The interactive circuit below implements the table:
 
-<iframe width="600px" height="400px"
+<iframe width="100%" height="400px"
 	src="https://circuitverse.org/simulator/embed/rom_example"
 	id="projectPreview" scrolling="no"
 	webkitAllowFullScreen mozAllowFullScreen allowFullScreen>
