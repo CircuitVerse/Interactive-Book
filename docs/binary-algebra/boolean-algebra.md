@@ -172,3 +172,9 @@ Try to implement any gate you wish to with the help of the simulator present bel
    * (A'B')
    * (A'B')
    *  A'
+5. `(A')' = A` is known as `_________` ?
+   1. Involution rule
+   * Distributive rule
+   * Associative rule 
+   * Redundance rule
+
