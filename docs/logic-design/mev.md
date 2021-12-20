@@ -59,7 +59,7 @@ A MEV can be directly implemented in a MUX, where the function of each cell must
 
 For instance, the example from Table 2 is implemented in the interactive circuit below:
 
-<iframe width="600px" height="400px"
+<iframe width="100%" height="400px"
 	src="https://circuitverse.org/simulator/embed/simple-mev"
 	id="projectPreview" scrolling="no"
 	title="Simple MEV"
