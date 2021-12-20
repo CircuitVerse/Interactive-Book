@@ -4,6 +4,7 @@
 // Colors
 //
 
+$inputcolor: #000000 !default;
 $black: #000000 !default;
 $box-shadow: rgba(0, 0, 0, 0.12);
 $base-svg-path: $black !default;
@@ -13,7 +14,7 @@ $base-svg-path: $black !default;
 //
 
 input {
-  color: $black;
+  color: $inputcolor;
 }
 
 #sidebar.active {
