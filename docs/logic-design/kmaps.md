@@ -189,11 +189,11 @@ This illustrates the idea that this is a greedy algorithm, and does not always r
 
 {:.quiz}
 
-1. _________ are known as diagonal mapping ?
+1. ___  are known as diagonal mapping ?
 	* POS
 	* SOP
 	1. Entries
-  * Latches
+        * Latches
 
 2. K-map can be used to minimize functions of up to ___ variables ?
 	* 5
@@ -202,7 +202,7 @@ This illustrates the idea that this is a greedy algorithm, and does not always r
 	*  3
 
 3. In which K-map 16 cells are there ?
-    * 2-variable
+        * 2-variable
 	* 3-variable
 	1. 4-variable
 	* 5-variable
