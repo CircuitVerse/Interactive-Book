@@ -23,9 +23,9 @@ has_children: false
 
 The easiest path to go from a logic design to an actual logic circuit is to obtain its Boolean function and replace the logical addition, multiplication and negation operators by the logical OR, AND and NOT gates.
 
-If the design is expressed as a truth table or a map (such as the ones described in [K-Maps]({% link docs/logic-design/kmaps.md %})) it is better to transform them to the equivalent Boolean function.
+If the design is expressed as an truth table or a maps (such as the ones described in [K-Maps]({% link docs/logic-design/kmaps.md %})) it is better to transform them to the equivalent Boolean function.
 
-Another representation presented in the section [Map-entered Variables]({% link docs/logic-design/mev.md %}) can be directly implemented with *multiplexers*, a medium scale integration (MSI) component described in section [MUX/DEMUX]({% link docs/comb-msi/mux-demux.md %}).
+Another representation presen ted in the section [Map-entered Variables]({% link docs/logic-design/mev.md %}) can be directly implemented with *multiplexers*, a medium scale integration (MSI) component described in section [MUX/DEMUX]({% link docs/comb-msi/mux-demux.md %}).
 
 
 ### Example
