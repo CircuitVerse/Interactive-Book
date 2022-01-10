@@ -32,24 +32,24 @@ According to Decimal System `123` can be represented as `1*100 + 2*10 + 3*1`. It
 
 ## Converting between bases
 
--   **Octal to Decimal conversion**
+### Octal to Decimal conversion
 -   **STEP 1:** Write the decimal value of each digit on top of them respectively. The value which you seek to write is 8<sup>(place value from right)</sup> beginning from 0 i.e., 8<sup>0</sup>, 8<sup>1</sup>, 8<sup>8</sup> &#x2026;. continuing up to 8<sup>7</sup>.
 -   **STEP 2:** Now, multiply each digit of octal number with its value.
 -   **STEP 3:** Add 'em all.
 -   **STEP 4:** Result is ready :)
 
--   **Decimal to Octal conversion**
+### Decimal to Octal conversion
 -   **STEP 1:** Divide the decimal number by 8
 -   **STEP 2:** At each step store the value of remainder in reverse order.
 -   **STEP 3:** Result is ready :)
 
--   **Hexadecimal to Decimal conversion**
+### Hexadecimal to Decimal conversion
 -   **STEP 1:** Write the decimal value of each digit on top of them respectively. The value which you seek to write is 16<sup>(place value from right)</sup> beginning from 0 i.e., 16<sup>0</sup>, 16<sup>1</sup>, 16<sup>8</sup> &#x2026;. continuing up to 16<sup>7</sup>.
 -   **STEP 2:** Now, multiply each digit of octal number with its value.
 -   **STEP 3:** Add 'em all.
 -   **STEP 4:** Result is ready :)
 
--   **Decimal to Hexadecimal conversion**
+### Decimal to Hexadecimal conversion
 -   **STEP 1:** Divide the decimal number by 16
 -   **STEP 2:** At each step store the value of remainder in reverse order (If the remainder is greater than 9 represent it using alphabet from the hex table For e.g., Use A if the remainder is 10).
 -   **STEP 3:** Result is ready :)
