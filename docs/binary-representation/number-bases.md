@@ -18,8 +18,8 @@ has_children: false
 
 ## Introduction
 
-- Before, learning about other number bases let first understand what is **Number Systems**. It is a writing system used for expressing numbers. We can express number in various ways but most commonly used systems are Binary Number System, Decimal Number System, Octal Number System and Hexadecimal Number System. 
-- Now let's have a brief information about **Number Bases**. A number Base represents how many number of different digits or combination of digits and alphabets are used to represent a number in a particular Number System. 
+- Before, learning about other number bases let first understand what is **Number Systems**. It is a writing system used for expressing numbers. We can express number in various ways, but most commonly used systems are Binary Number System, Decimal Number System, Octal Number System and Hexadecimal Number System. 
+- Now let's have brief information about **Number Bases**. A number Base represents how many number of different digits or combination of digits and alphabets are used to represent a number in a particular Number System. 
 -  **Positional number systems** uses the position of a digit to know the contribution of that particular digit in the number. I guess it might look little difficult to understand, so let's discuss it using an example of a most popular Positional Number System called as **Decimal System**.
 
 According to Decimal System `123` can be represented as `1*100 + 2*10 + 3*1`. It shows that as `1` is on hundredth place so its contribution in the number will be `1*100=100` and so on. 
