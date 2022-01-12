@@ -121,7 +121,7 @@ function show_result()
 {
     if(document.getElementById("operator").value == "NOT")
     {
-        document.getElementById("0_bool").style.backgroundImage = "none";
+        document.getElementById("1_bool").style.display = "none";
     }
     else
     {
@@ -144,7 +144,7 @@ function show_result()
             break;
         default:
             document.getElementById("operator").style.backgroundImage = "url('/assets/images/NOT_gate.png')";
-            document.getElementById("result").style.backgroundImage = bit_display_bool[!bit_bool[1]];
+            document.getElementById("result").style.backgroundImage = bit_display_bool[!bit_bool[0]];
     }
 }
 
