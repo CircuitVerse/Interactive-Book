@@ -319,53 +319,48 @@ button,
   bottom: 15px;
 }  
 
-.note
-{
-    display: flex; 
-    width: fit-content;
-    display: inline-block; 
-    margin: 2%; 
-    width: 46%;
-    height: 34vh; 
-    background-color: #026e57;
-    color: white;
+.note {
+  display: flex; 
+  width: fit-content;
+  display: inline-block; 
+  margin: 2%; 
+  width: 46%;
+  height: 34vh; 
+  background-color: #026e57;
+  color: white;
 } 
  
-#operation 
-{ 
-    margin: 2%;
-    display: block;  
+#operation { 
+  margin: 2%;
+  display: block;  
 }
 
 #operation button {
-    float: right; 
-    background-color: $link-color;
-    color: $white;
-    margin-right: 2%;
-    font-size: unset;
+  float: right; 
+  background-color: $link-color;
+  color: $white;
+  margin-right: 2%;
+  font-size: unset;
 }
 
-#notearea
-{
-    margin: 2%;
-    width: 96%;
-    height: 68%;
-    overflow-y: auto;
-    font-size: small;
-    margin-top: 14%;
+#notearea {
+  margin: 2%;
+  width: 96%;
+  height: 68%;
+  overflow-y: auto;
+  font-size: small;
+  margin-top: 14%;
 } 
 
-textarea
-{
-    margin: 2%;
-    width: 96%;
-    height: 66%;
-    overflow-y: auto;
-    font-size: small;
-    margin-top: 4%;
+textarea {
+  margin: 2%;
+  width: 96%;
+  height: 66%;
+  overflow-y: auto;
+  font-size: small;
+  margin-top: 4%;
 } 
 
-.hidden
-{
-    display: none;
+.hidden {
+  display: none;
 }
