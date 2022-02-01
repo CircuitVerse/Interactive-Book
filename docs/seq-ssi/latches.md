@@ -154,3 +154,29 @@ T latch is formed when the inputs of the JK latch are shorted. When the input is
 |  0     |    1    |    1     |
 |  1     |    0    |    1     |
 |  1     |    1    |    0     |
+
+{:.quiz}
+
+1. The inputs of an SR latch includes ?
+	*  1 input & 3 outputs
+	*  4 inputs only
+	*  3 inputs & 1 output
+	1. 2 inputs & 2 outputs
+
+2.  From which latch does D latch is obtained ?
+	*  JK latch
+	*  T latch
+	1. SR latch
+	*  None of the above 
+
+3.  JK latch is similar to ?
+    *  T latch
+	*  D latch
+	1. RS latch
+	*  None of the above
+
+4. When the T latch output will toggle ?
+    *  Input is low
+	1. Input is high
+	*  Output is high
+	*  Output is low
