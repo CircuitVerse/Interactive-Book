@@ -1603,7 +1603,7 @@
   },"267": {
     "doc": "Latches",
     "title": "State table",
-    "content": "| T | Q(t) | Q(t+1) | . | 0 | 0 | 0 | . | 0 | 1 | 1 | . | 1 | 0 | 1 | . | 1 | 1 | 0 | . ",
+    "content": "| T | Q(t) | Q(t+1) | . | 0 | 0 | 0 | . | 0 | 1 | 1 | . | 1 | 0 | 1 | . | 1 | 1 | 0 | . | The inputs of an SR latch includes ? . | 1 input &amp; 3 outputs | 4 inputs only | 3 inputs &amp; 1 output . | 2 inputs &amp; 2 outputs | . | . | From which latch does D latch is obtained ? . | JK latch | T latch . | SR latch | . | None of the above | . | JK latch is similar to ? . | T latch | D latch . | RS latch | . | None of the above | . | When the T latch output will toggle ? . | Input is low . | Input is high | . | Output is high | Output is low | . | . ",
     "url": "https://learn.circuitverse.org/docs/seq-ssi/latches.html#state-table-3",
     "relUrl": "/docs/seq-ssi/latches.html#state-table-3"
   },"268": {
