@@ -76,7 +76,7 @@ If the sequential circuit is operated with the clock signal that is transitionin
 
 {:.quiz}
 
-1. What must be used along with synchronous control inputs to trigger a change in the flip flop?
+1. What must be used along with synchronous control inputs to trigger a change in the flip-flop?
     * 0
     * 1
     1. clock
