@@ -229,30 +229,30 @@ Similarly, the following operations take place for every positive edge of the cl
 
 {:.quiz}
 
-1.  The register is a type of ___________
-	1. Sequential circuit
-	* Combinational circui
-	* CPU
-	* Latches
+1. The register is a type of ___________
+     1. Sequential circuit
+     * Combinational circui
+     * CPU
+     * Latches
 
-2.  In serial shifting method, data shifting occurs ____________
-    * simultaneously
-	* Two bit at a time
-	* Four bit at a time
-    1. One bit at a time
+2. In serial shifting method, data shifting occurs ____________
+     * simultaneously
+     * Two bits at a time
+     * Four bits at a time
+     1. One bit at a time
 
 3. A register that is used to store binary information is called ___________
-	* Data register
-	* Shift register
-	1.  Binary register
-	* D – Register
+     * Data register
+     * Shift register
+     1. Binary register
+     * D – Register
 
-4. How many flip flops are used in the register when storage bit capacity is 6?
-	* 3
-	* 4
-	* 2
-	1. 6
+4. How many flip-flops are used in the register when storage bit capacity is 6?
+     * 3
+     * 4
+     * 2
+     1. 6
 
-5. When the flip flops are connected in such a way that the output of every flip flop is connected with the input of another flip flop is called Cascade.
-	1. True
-    * False
+5. When the flip-flops are connected in such a way that the output of every flip-flop is connected with the input of another flip-flop is called Cascade.
+     1. True
+     * False
