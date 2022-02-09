@@ -77,25 +77,25 @@ If the sequential circuit is operated with the clock signal that is transitionin
 {:.quiz}
 
 1. What must be used along with synchronous control inputs to trigger a change in the flip flop?
-	* 0
-	* 1
-	1. clock
-	* previous output
+    * 0
+    * 1
+    1. clock
+    * previous output
 
 2. What gate is placed between clock input and the input of AND gate to convert a positive level triggered flip – flop to a negative level triggered flip – flop?
-	* NOT gate
+    * NOT gate
     1. NOR gate
-	* Buffer
-	* NAND gate
+    * Buffer
+    * NAND gate
 
 3. The flip-flop is only activated by _____________
-	* +ve edge trigger
-	* -ve edge trigger
-	1. both +ve and -ve
-	* None of the above
+    * +ve edge trigger
+    * -ve edge trigger
+    1. both +ve and -ve
+    * None of the above
 
 4. How many stable states combinational circuits have?
-	* 3
-	* 4
-	* 5
-	1. 2
+    * 3
+    * 4
+    * 5
+    1. 2
