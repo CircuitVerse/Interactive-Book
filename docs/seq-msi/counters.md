@@ -142,31 +142,31 @@ The JA and KA inputs of FF-A are tied to logic 1. So FF-A will work as a toggle 
 {:.quiz}
 
 1. What is the maximum possible range of bit-count specifically in n-bit binary counter consisting of ‘n’ number of flip-flops?
-	* 0 to 2n
-	* 0 to 2n + 1
-	* 0 to 2n+1/2
+    * 0 to 2n
+    * 0 to 2n + 1
+    * 0 to 2n+1/2
     1. 0 to 2n – 1
 
 2. A decimal counter has ______ states.
-	* 5
-	1. 10
-	* 18
-	* 20
+    * 5
+    1. 10
+    * 18
+    * 20
 
 3. Three decade counter would have _____BCD counter.
-	* 2
-	* 4
-	1. 3
-	* 5
+    * 2
+    * 4
+    1. 3
+    * 5
 
 4. The expression for MOD number for a ripple counter with N flip-flops is
-	1. 2^N
+    1. 2^N
     * N^2
-	* 2^(N-1)
-	* 2^N -1
+    * 2^(N-1)
+    * 2^N -1
 
 5. A ripple counter with n flip-flops can function as a
-	* n: 1 counter
+    * n: 1 counter
     * n/2: 1 counter
-	* 2n: 1 counter
-	1. 2^N: 1 counter
+    * 2n: 1 counter
+    1. 2^N: 1 counter
