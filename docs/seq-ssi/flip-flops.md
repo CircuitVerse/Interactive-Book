@@ -289,31 +289,31 @@ Q(n+1) = Q(n)'J + Q(n)K'
 {:.quiz}
 
 1. How many flip-flops are required to build a binary counter circuit to count from 0 to 1023?
-	* 1
-	* 6
-	1. 10
-	* 23
+    * 1
+    * 6
+    1. 10
+    * 23
 
 2. We want to design a synchronous counter that counts the sequence 0-1-0-2-0-3 and then repeats. The minimum number of J-K flip-flops required to implement this counter is _______.
-	1. 4
-	* 2
-	* 5
-	* 1
+    1. 4
+    * 2
+    * 5
+    * 1
 
 3. What is the required flip flop in T to D flip flop conversion?
-	* T flip flop
-	* S-R flip flop
-	1. D flip flop
-	* None of the above
+    * T flip flop
+    * S-R flip flop
+    1. D flip flop
+    * None of the above
 
 4. The outputs Q and Q̅ of the master-slave SR flip-flop are connected to its R and S inputs respectively. The output Q when clock pulses are applied will be:
-	* Permanently 0
-	* Permanently 1
-	* fixed 0 or 1
-	1. None of the above
+    * Permanently 0
+    * Permanently 1
+    * fixed 0 or 1
+    1. None of the above
 
 5. If input to T flip flop is 200 Hz signal, then what will be the output signal frequency if four T flip flops are connected in cascade
-	* 50 Hz
-	* 800 Hz
-	1. None of the above
-	* 200 Hz
+    * 50 Hz
+    * 800 Hz
+    1. None of the above
+    * 200 Hz
