@@ -138,3 +138,35 @@ The JA and KA inputs of FF-A are tied to logic 1. So FF-A will work as a toggle 
 |**After 2nd negative clock edge**|On the arrival of second negative clock edge, FF-A toggles again and QA changes from 1 to 0.But at this instant QA was 1. So JB = KB= 1 and FF-B will toggle. Hence QB changes from 0 to 1.QBQA = 10 after the second clock pulse.|
 |**After 3rd negative clock edge**|On application of the third falling clock edge, FF-A will toggle from 0 to 1 but there is no change of state for FF-B.QBQA = 11 after the third clock pulse.|
 |**After 4th negative clock edge**|On application of the next clock pulse, QA will change from 1 to 0 as QB will also change from 1 to 0.QBQA = 00 after the fourth clock pulse.|
+
+{:.quiz}
+
+1. What is the maximum possible range of bit-count specifically in n-bit binary counter consisting of ‘n’ number of flip-flops?
+	* 0 to 2n
+	* 0 to 2n + 1
+	* 0 to 2n+1/2
+    1. 0 to 2n – 1
+
+2. A decimal counter has ______ states.
+	* 5
+	1. 10
+	* 18
+	* 20
+
+3. Three decade counter would have _____BCD counter.
+	* 2
+	* 4
+	1. 3
+	* 5
+
+4. The expression for MOD number for a ripple counter with N flip-flops is
+	1. 2^N
+    * N^2
+	* 2^(N-1)
+	* 2^N -1
+
+5. A ripple counter with n flip-flops can function as a
+	* n: 1 counter
+    * n/2: 1 counter
+	* 2n: 1 counter
+	1. 2^N: 1 counter

@@ -226,3 +226,33 @@ The initial status of the D flip-flops in the absence of the clock signal is Q2Q
 Similarly, the following operations take place for every positive edge of the clock signal.
 - Serial input of first D flip-flop gets the previous complemented output of the third flip-flop. So, the present output of the first D flip-flop is equal to the previous complemented output of the third flip-flop.
 - The previous outputs of first and second D flip-flops are right shifted by one bit. That means, the present outputs of second and third D flip-flops are equal to the previous outputs of first and second D flip-flops.
+
+{:.quiz}
+
+1.  The register is a type of ___________
+	1. Sequential circuit
+	* Combinational circui
+	* CPU
+	* Latches
+
+2.  In serial shifting method, data shifting occurs ____________
+    * simultaneously
+	* Two bit at a time
+	* Four bit at a time
+    1. One bit at a time
+
+3. A register that is used to store binary information is called ___________
+	* Data register
+	* Shift register
+	1.  Binary register
+	* D – Register
+
+4. How many flip flops are used in the register when storage bit capacity is 6?
+	* 3
+	* 4
+	* 2
+	1. 6
+
+5. When the flip flops are connected in such a way that the output of every flip flop is connected with the input of another flip flop is called Cascade.
+	1. True
+    * False

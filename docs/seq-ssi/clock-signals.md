@@ -73,3 +73,29 @@ If the sequential circuit is operated with the clock signal that is transitionin
 If the sequential circuit is operated with the clock signal that is transitioning from Logic High to Logic Low, then that type of triggering is known as **Negative edge triggering**. It is also called as **falling edge triggering**. It is shown in the following figure.
 
 {% include image.html url="/assets/images/negative_edge_triggering.jpg" description="" %}
+
+{:.quiz}
+
+1. What must be used along with synchronous control inputs to trigger a change in the flip flop?
+	* 0
+	* 1
+	1. clock
+	* previous output
+
+2. What gate is placed between clock input and the input of AND gate to convert a positive level triggered flip – flop to a negative level triggered flip – flop?
+	* NOT gate
+    1. NOR gate
+	* Buffer
+	* NAND gate
+
+3. The flip-flop is only activated by _____________
+	* +ve edge trigger
+	* -ve edge trigger
+	1. both +ve and -ve
+	* None of the above
+
+4. How many stable states combinational circuits have?
+	* 3
+	* 4
+	* 5
+	1. 2
