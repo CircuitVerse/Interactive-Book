@@ -3,7 +3,7 @@
 - We expect contributors to abide by our underlying [Code of Conduct](https://github.com/CircuitVerse/Interactive-Book/blob/master/CODE_OF_CONDUCT.md) . All discussions about this project must be respectful and harassment-free.
 - Remember that communication is the lifeblood of any Open Source project. We are all working on this together, and we are all benefiting from this software.
 - It's very easy to misunderstand one another in asynchronous, text-based conversations. When in doubt, assume everyone has the best intentions.
-- If you feel anyone has violated our Code of Conduct, you should anonymously contact the team with our abuse report form via [Slack](https://circuitverse.org/slack), necessary action will be take by the team.
+- If you feel anyone has violated our Code of Conduct, you should anonymously contact the team with our abuse report form via [Slack](https://circuitverse.org/slack), necessary action will be taken by the team.
 
 ## Issue label
 
@@ -20,7 +20,7 @@ Please note if someone is already assigned or working on the issue, do not try t
 - [duplicate](https://github.com/CircuitVerse/Interactive-Book/labels/duplicate) labeled issues are meant to be already existing issue in the repository.
 - [priority: less](https://github.com/CircuitVerse/Interactive-Book/labels/priority%3Aless) labeled issues are meant to have priority comparatavily lesser than other issues.
 - [priority: medium](https://github.com/CircuitVerse/Interactive-Book/labels/priority%3Amedium) labeled issues are meant to have priority comparatively intermediate than other issues.
-- [priority: high](https://github.com/CircuitVerse/Interactive-Book/labels/priority%3Ahigh) labeled issues are meant to have highest priority and need to fix as soon as possible.
+- [priority: high](https://github.com/CircuitVerse/Interactive-Book/labels/priority%3Ahigh) labeled issues are meant to have the highest priority and need to fix as soon as possible.
 - [help wanted](https://github.com/CircuitVerse/Interactive-Book/labels/help%20wanted) labeled issues signify that the contributor requires help with something specific in the issue and your help is very much appreciated.
 
 ## Creating an issue.
@@ -72,12 +72,12 @@ Please note if someone is already assigned or working on the issue, do not try t
 - [waiting for contributor](https://github.com/CircuitVerse/Interactive-Book/labels/waiting-for-contributor) labeled PR are meant to waiting for contributor to respond.
 - [waiting for design](https://github.com/CircuitVerse/Interactive-Book/labels/waiting-for-design) labeled PR are meant to waiting for review from UI/UX core team.
 - [no activity](https://github.com/CircuitVerse/Interactive-Book/labels/no%20activity) labeled PR are meant to have no activity in the PR from since a while.
-- [blocked](https://github.com/CircuitVerse/Interactive-Book/labels/blocked) labeled PR are meant to not to go ahead for review.
+- [blocked](https://github.com/CircuitVerse/Interactive-Book/labels/blocked) labeled PR are meant not to go ahead for review.
 - [do not merge](https://github.com/CircuitVerse/Interactive-Book/labels/do%20not%20merge) labeled PR are meant to not to merge the PR right now(may be later).
 - [awaiting-approval](https://github.com/CircuitVerse/CircuitVerse/labels/awaiting-approval) labeled PR are meant to be waiting for other communtiy members.
 
 ## Community
-Discussions about Interactive Book issues and features take place on the repository's [Discussions](https://github.com/CircuitVerse/CircuitVerse/discussions) sections. Anybody is welcome to join these conversations. See the [README](README.md) for more information on communication channels.
+Discussions about Interactive Book issues and features take place on the repository's [Slack](https://circuitverse.org/slack) sections. Anybody is welcome to join these conversations. See the [README](README.md) for more information on communication channels.
 
 ### Code Contributors
 
