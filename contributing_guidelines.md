@@ -73,7 +73,7 @@ Please note if someone is already assigned or working on the issue, do not try t
 - [waiting for design](https://github.com/CircuitVerse/Interactive-Book/labels/waiting-for-design) labeled PR are meant to waiting for review from UI/UX core team.
 - [no activity](https://github.com/CircuitVerse/Interactive-Book/labels/no%20activity) labeled PR are meant to have no activity in the PR from since a while.
 - [blocked](https://github.com/CircuitVerse/Interactive-Book/labels/blocked) labeled PR are meant not to go ahead for review.
-- [do not merge](https://github.com/CircuitVerse/Interactive-Book/labels/do%20not%20merge) labeled PR are meant to not to merge the PR right now(may be later).
+- [do not merge](https://github.com/CircuitVerse/Interactive-Book/labels/do%20not%20merge) labeled PR are meant not to merge the PR right now(may be later).
 - [awaiting-approval](https://github.com/CircuitVerse/CircuitVerse/labels/awaiting-approval) labeled PR are meant to be waiting for other communtiy members.
 
 ## Community
