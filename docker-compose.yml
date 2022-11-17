@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    expose:
+      - 4000
+    ports:
+      - "4000:4000"
