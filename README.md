@@ -40,9 +40,9 @@ cd Interactive-Book
 **Note**: Please follow [these](https://docs.docker.com/docker-for-windows/install-windows-home/) instructions for installing Docker on Windows 10 Home
 
 #### Usage
-* Run `docker-compose up` to run the instance
-* Run `docker-compose down` to stop the instance
-* Run `docker-compose build --no-cache` to rebuild the instance (make sure the instance is not running first)
+* Run `docker compose up` to run the instance
+* Run `docker compose down` to stop the instance
+* Run `docker compose build --no-cache` to rebuild the instance (make sure the instance is not running first)
 
 ### Local Environment
 This website was built using [Jekyll](https://jekyllrb.com/). So if you are familiar with this and already have Jekyll installed, you can scroll past the instructions we have below.
