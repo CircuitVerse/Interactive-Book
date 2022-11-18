@@ -35,7 +35,7 @@ cd Interactive-Book
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/CircuitVerse/Interactive-Book)
 
 ### Docker Local Environment
-[Docker](https://www.docker.com/) can be used to create virtual machines on your PC so you don't have to setup dependencies manually.
+[Docker](https://www.docker.com/) can create virtual machines on your PC, so you don't have to manually set up dependencies.
 
 **Note**: Please follow [these](https://docs.docker.com/docker-for-windows/install-windows-home/) instructions for installing Docker on Windows 10 Home
 
