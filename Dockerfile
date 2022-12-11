@@ -1,11 +1,15 @@
-FROM ruby:2.7.6
+FROM ruby:3.1-alpine
+
+# Add Jekyll dependencies to Alpine
+RUN apk update
+RUN apk add --no-cache build-base gcc cmake git
 
 # set up workdir
 RUN mkdir /interactive-book
 WORKDIR /interactive-book
 
-# install dependencies
-RUN gem install jekyll bundle
+# Update the Ruby bundler and install Jekyll
+RUN gem update bundler && gem install bundler jekyll
 
 # copy source
 COPY . /interactive-book
