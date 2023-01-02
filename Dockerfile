@@ -2,7 +2,7 @@ FROM ruby:3.2-alpine
 
 # Add Jekyll dependencies to Alpine
 RUN apk update
-RUN apk add --no-cache build-base gcc cmake git
+RUN apk add --no-cache build-base gcc cmake git libxml2-dev libxslt-dev
 
 # set up workdir
 RUN mkdir /interactive-book
