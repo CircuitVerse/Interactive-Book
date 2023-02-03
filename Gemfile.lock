@@ -262,6 +262,8 @@ GEM
       racc (~> 1.4)
     nokogiri (1.13.10-x64-mingw32)
       racc (~> 1.4)
+    nokogiri (1.13.10-x64-unknown)
+      racc (~> 1.4)
     nuggets (1.6.0)
     octokit (4.21.0)
       faraday (>= 0.9)
@@ -324,11 +326,13 @@ GEM
     unf_ext (0.0.7.7-x64-mingw32)
     unicode-display_width (1.7.0)
     wdm (0.1.1)
+    webrick (1.8.1)
     zeitwerk (2.4.2)
 
 PLATFORMS
   ruby
   x64-mingw32
+  x64-unknown
 
 DEPENDENCIES
   github-pages
@@ -341,6 +345,7 @@ DEPENDENCIES
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
+  webrick (~> 1.8)
 
 BUNDLED WITH
-   2.2.19
+   2.4.5
