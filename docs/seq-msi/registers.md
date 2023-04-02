@@ -226,3 +226,30 @@ The initial status of the D flip-flops in the absence of the clock signal is Q2Q
 Similarly, the following operations take place for every positive edge of the clock signal.
 - Serial input of first D flip-flop gets the previous complemented output of the third flip-flop. So, the present output of the first D flip-flop is equal to the previous complemented output of the third flip-flop.
 - The previous outputs of first and second D flip-flops are right shifted by one bit. That means, the present outputs of second and third D flip-flops are equal to the previous outputs of first and second D flip-flops.
+{:.quiz}
+
+What is the primary function of a flip-flop within a register?
+
+To provide temporary storage of a single bit
+To convert analog signals to digital signals
+To perform arithmetic operations on data
+Which type of register is used for performing arithmetic and logic operations in a processor?
+
+Accumulator register
+Data register
+Address register
+Which register is responsible for holding the memory address of the next instruction to be executed in a CPU?
+
+Program Counter (PC)
+Stack Pointer (SP)
+Instruction Register (IR)
+What is the primary difference between a shift register and a counter?
+
+A shift register moves data within a fixed number of stages, while a counter accumulates a count value
+A shift register calculates the sum of all individual resistances, while a counter calculates the product of individual resistances
+A shift register stores data temporarily, while a counter amplifies signals
+In a microcontroller, which register is used to store the result of an input/output operation?
+
+Input-Output Data Register (IODR)
+General-Purpose Register (GPR)
+Status Register (SR)

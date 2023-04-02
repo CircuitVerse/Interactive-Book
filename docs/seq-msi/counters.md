@@ -138,3 +138,30 @@ The JA and KA inputs of FF-A are tied to logic 1. So FF-A will work as a toggle 
 |**After 2nd negative clock edge**|On the arrival of second negative clock edge, FF-A toggles again and QA changes from 1 to 0.But at this instant QA was 1. So JB = KB= 1 and FF-B will toggle. Hence QB changes from 0 to 1.QBQA = 10 after the second clock pulse.|
 |**After 3rd negative clock edge**|On application of the third falling clock edge, FF-A will toggle from 0 to 1 but there is no change of state for FF-B.QBQA = 11 after the third clock pulse.|
 |**After 4th negative clock edge**|On application of the next clock pulse, QA will change from 1 to 0 as QB will also change from 1 to 0.QBQA = 00 after the fourth clock pulse.|
+{:.quiz}
+
+What is the primary function of an up-counter?
+
+To increment a binary number with each clock cycle
+To decrement a binary number with each clock cycle
+To store a binary number
+What is the primary function of a down-counter?
+
+To decrement a binary number with each clock cycle
+To increment a binary number with each clock cycle
+To store a binary number
+What type of counter changes its output state on the falling edge of the clock signal?
+
+Negative edge-triggered counter
+Positive edge-triggered counter
+Asynchronous counter
+In a synchronous counter, which type of flip-flops are used?
+
+D flip-flops
+SR flip-flops
+JK flip-flops
+What type of counter has its output state change asynchronously with the input clock signal?
+
+Asynchronous (Ripple) counter
+Synchronous counter
+Decade counter

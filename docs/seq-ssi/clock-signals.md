@@ -73,3 +73,30 @@ If the sequential circuit is operated with the clock signal that is transitionin
 If the sequential circuit is operated with the clock signal that is transitioning from Logic High to Logic Low, then that type of triggering is known as **Negative edge triggering**. It is also called as **falling edge triggering**. It is shown in the following figure.
 
 {% include image.html url="/assets/images/negative_edge_triggering.jpg" description="" %}
+{:.quiz}
+
+What is the unit of frequency for a clock signal?
+
+Hertz (Hz)
+Seconds
+Ohms
+What is the term used to describe the time between two consecutive rising edges of a clock signal?
+
+Period
+Frequency
+Duty cycle
+What is the term used to describe the ratio of the time the clock signal is high to the total time of one cycle?
+
+Duty cycle
+Frequency
+Period
+What type of oscillator circuit generates a stable clock signal in digital circuits?
+
+Crystal oscillator
+RC oscillator
+LC oscillator
+What is the term used to describe the maximum rate at which a clock signal can change from one state to another?
+
+Clock speed
+Frequency
+Duty cycle
