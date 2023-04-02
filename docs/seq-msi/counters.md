@@ -140,28 +140,32 @@ The JA and KA inputs of FF-A are tied to logic 1. So FF-A will work as a toggle 
 |**After 4th negative clock edge**|On application of the next clock pulse, QA will change from 1 to 0 as QB will also change from 1 to 0.QBQA = 00 after the fourth clock pulse.|
 {:.quiz}
 
-What is the primary function of an up-counter?
+1.  What is the primary function of an up-counter?
 
-To increment a binary number with each clock cycle
-To decrement a binary number with each clock cycle
-To store a binary number
-What is the primary function of a down-counter?
+1. To increment a binary number with each clock cycle
+* To decrement a binary number with each clock cycle
+* To store a binary number
 
-To decrement a binary number with each clock cycle
-To increment a binary number with each clock cycle
-To store a binary number
-What type of counter changes its output state on the falling edge of the clock signal?
+2.  What is the primary function of a down-counter?
 
-Negative edge-triggered counter
-Positive edge-triggered counter
-Asynchronous counter
-In a synchronous counter, which type of flip-flops are used?
+1. To decrement a binary number with each clock cycle
+* To increment a binary number with each clock cycle
+* To store a binary number
 
-D flip-flops
-SR flip-flops
-JK flip-flops
-What type of counter has its output state change asynchronously with the input clock signal?
+3.  What type of counter changes its output state on the falling edge of the clock signal?
 
-Asynchronous (Ripple) counter
-Synchronous counter
-Decade counter
+1. Negative edge-triggered counter
+* Positive edge-triggered counter
+* Asynchronous counter
+
+4.  In a synchronous counter, which type of flip-flops are used?
+
+1. D flip-flops
+* SR flip-flops
+1. JK flip-flops
+
+5.  What type of counter has its output state change asynchronously with the input clock signal?
+
+1. Asynchronous (Ripple) counter
+* Synchronous counter
+* Decade counter

@@ -75,28 +75,32 @@ If the sequential circuit is operated with the clock signal that is transitionin
 {% include image.html url="/assets/images/negative_edge_triggering.jpg" description="" %}
 {:.quiz}
 
-What is the unit of frequency for a clock signal?
+1.  What is the unit of frequency for a clock signal?
 
-Hertz (Hz)
-Seconds
-Ohms
-What is the term used to describe the time between two consecutive rising edges of a clock signal?
+1. Hertz (Hz)
+* Seconds
+* Ohms
 
-Period
-Frequency
-Duty cycle
-What is the term used to describe the ratio of the time the clock signal is high to the total time of one cycle?
+2.   What is the term used to describe the time between two consecutive rising edges of a clock signal?
 
-Duty cycle
-Frequency
-Period
-What type of oscillator circuit generates a stable clock signal in digital circuits?
+1. Period
+* Frequency
+* Duty cycle
 
-Crystal oscillator
-RC oscillator
-LC oscillator
-What is the term used to describe the maximum rate at which a clock signal can change from one state to another?
+3.  What is the term used to describe the ratio of the time the clock signal is high to the total time of one cycle?
 
-Clock speed
-Frequency
-Duty cycle
+* Frequency
+* Period
+1. Duty cycle
+
+4.  What type of oscillator circuit generates a stable clock signal in digital circuits?
+
+* RC oscillator
+1. Crystal oscillator
+* LC oscillator
+
+5.  What is the term used to describe the maximum rate at which a clock signal can change from one state to another?
+
+1. Clock speed
+* Frequency
+* Duty cycle

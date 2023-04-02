@@ -287,30 +287,34 @@ Q(n+1) = Q(n)'J + Q(n)K'
 {% include flipflop2.html %}
 {:.quiz}
 
-What type of flip-flop can be used to eliminate the race-around condition in JK flip-flops?
+1.  What type of flip-flop can be used to eliminate the race-around condition in JK flip-flops?
 
-Master-slave flip-flop
-Edge-triggered flip-flop
-D flip-flop
-Which type of flip-flop stores a single bit of data and has a clock input?
+1. Master-slave flip-flop
+* Edge-triggered flip-flop
+* D flip-flop
 
-D flip-flop
-SR flip-flop
-JK flip-flop
-In an SR flip-flop, what happens when both S and R inputs are set to 1?
+2.  Which type of flip-flop stores a single bit of data and has a clock input?
 
-Invalid state or undefined behavior
-The output remains unchanged
-The output is set to 1
-Which type of flip-flop has two stable states and can be toggled between them with a single input?
+1. D flip-flop
+* SR flip-flop
+* JK flip-flop
 
-T flip-flop
-D flip-flop
-SR flip-flop
-What type of flip-flop is commonly used in shift registers and counters?
+3.  In an SR flip-flop, what happens when both S and R inputs are set to 1?
 
-D flip-flop
-SR flip-flop
-T flip-flop
+1. Invalid state or undefined behavior
+* The output remains unchanged
+* The output is set to 1
+
+4.  Which type of flip-flop has two stable states and can be toggled between them with a single input?
+
+1. T flip-flop
+* D flip-flop
+* SR flip-flop
+
+5.  What type of flip-flop is commonly used in shift registers and counters?
+
+1. D flip-flop
+* SR flip-flop
+* T flip-flop
 
 
