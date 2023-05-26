@@ -17,18 +17,18 @@ const assignOrComment = async () => {
       owner: owner,
       repo: repo,
       issue_number: issue_number
-    })
+    });
     const hasPendingTriagLabel = issue.labels.some((label) => {
       return (label.name === "pending triage")
-    })
+    });
     const assignees = issue.assignees;
     if (hasPendingTriagLabel) {
       await octokit.issues.createComment({
         owner: owner,
         repo: repo,
         issue_number: issue_number,
-        body: "This issue is awaiting triage from @CircuitVerse/circuitverse-core-team. You can work on this issue once the label `pending triage` is removed."
-      })
+        body: "This issue is awaiting triage from @CircuitVerse/issues-team. You can work on this issue once the label `pending triage` is removed."
+      });
     }
     else if (assignees.length !== 0) {
       await octokit.issues.createComment({
@@ -36,7 +36,7 @@ const assignOrComment = async () => {
         repo: repo,
         issue_number: issue_number,
         body: `This issue is assigned to @${assignees[0].login}. You can have a look on other open issues.`
-      })
+      });
     }
     else {
       await octokit.issues.update({
@@ -44,7 +44,7 @@ const assignOrComment = async () => {
         repo: repo,
         issue_number: issue_number,
         assignees: [github_actor]
-      })
+      });
     }
   } catch (e) {
     console.log(e);
