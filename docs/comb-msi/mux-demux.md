@@ -193,7 +193,7 @@ A 1 : 16 demultiplexer can be implemented using **two** 1 : 8 demultiplexers.
    1. 3
    * 4
 
-4. How many output lines will be there in a demultiplexer if it has 3 selection lines ?
+4. How many output lines will be there in a multiplexer if it has 3 selection lines ?
 
    1. 1
    * 2
