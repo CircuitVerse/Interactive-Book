@@ -21,7 +21,7 @@ jobs:
         run: npm i @octokit/rest -f
 
       - name: run the script
-        run: node ./.github/workflows/scripts/assign-issue-to-contributor.js
+        run: node ./.github/workflows/scripts/assign-or-comment.js
         env:
           OWNER: "${{ github.repository_owner }}"
           REPO_NAME: Interactive-Book
