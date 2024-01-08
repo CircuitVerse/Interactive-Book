@@ -1,6 +1,7 @@
 ---
 name: Feature request
 about: Suggest an idea for this project
+labels: ["🌟 feature", "pending triage"]
 ---
 
 ## Is your feature request related to a problem? Please describe.

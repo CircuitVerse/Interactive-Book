@@ -1,0 +1,30 @@
+name: Validate and assign issue to the contributor
+run-name: "${{ github.actor }} want to work on the issue"
+on:
+  issue_comment:
+    types:
+      - created
+jobs:
+  assign:
+    runs-on: ubuntu-latest
+    if: github.event.comment.user.login == github.actor && github.event.comment.body == '/assign'
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+      
+      - name: Install node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: setup octokit
+        run: npm i @octokit/rest -f
+
+      - name: run the script
+        run: node ./.github/workflows/scripts/assign-or-comment.js
+        env:
+          OWNER: "${{ github.repository_owner }}"
+          REPO_NAME: Interactive-Book
+          ISSUE_NUMBER: "${{ github.event.issue.number }}"
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          GITHUB_ACTOR: "${{ github.actor }}"

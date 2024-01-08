@@ -34,6 +34,16 @@ cd Interactive-Book
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/CircuitVerse/Interactive-Book)
 
+### Docker Local Environment
+[Docker](https://www.docker.com/) can create virtual machines on your PC, so you don't have to manually set up dependencies.
+
+**Note**: Please follow [these](https://docs.docker.com/docker-for-windows/install-windows-home/) instructions for installing Docker on Windows 10 Home
+
+#### Usage
+* Run `docker compose up` to run the instance
+* Run `docker compose down` to stop the instance
+* Run `docker compose build --no-cache` to rebuild the instance (make sure the instance is not running first)
+
 ### Local Environment
 This website was built using [Jekyll](https://jekyllrb.com/). So if you are familiar with this and already have Jekyll installed, you can scroll past the instructions we have below.
 
@@ -43,16 +53,7 @@ To do this, you are going to need a computer capable of running Ruby - while Mac
 
 **Install Gems and Serving the Website**
 
-The required gems for this project are [Bundler](http://bundler.io/) and [Jekyll](https://jekyllrb.com/). Once you have Ruby installed, open your terminal, `cd` to the local repo directory, and run the following commands:
-
-```
-gem install jekyll
-gem install bundle
-```
-
-This will install Bundler and Jekyll. If you have any errors, check to be sure you have installed Ruby correctly.
-
-Next, install the projects dependencies and serve:
+Once you have Ruby installed, open your terminal, `cd` to the local repo directory, and run the following commands:
 
 ```
 bundle install
