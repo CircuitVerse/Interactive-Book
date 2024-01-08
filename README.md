@@ -34,6 +34,16 @@ cd Interactive-Book
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/CircuitVerse/Interactive-Book)
 
+### Docker Local Environment
+[Docker](https://www.docker.com/) can create virtual machines on your PC, so you don't have to manually set up dependencies.
+
+**Note**: Please follow [these](https://docs.docker.com/docker-for-windows/install-windows-home/) instructions for installing Docker on Windows 10 Home
+
+#### Usage
+* Run `docker compose up` to run the instance
+* Run `docker compose down` to stop the instance
+* Run `docker compose build --no-cache` to rebuild the instance (make sure the instance is not running first)
+
 ### Local Environment
 This website was built using [Jekyll](https://jekyllrb.com/). So if you are familiar with this and already have Jekyll installed, you can scroll past the instructions we have below.
 
