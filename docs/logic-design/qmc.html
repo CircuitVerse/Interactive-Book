@@ -5,34 +5,67 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  
-
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-
   <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
 
+  <link rel="stylesheet" href="/assets/css/just-the-docs-head-nav.css" id="jtd-head-nav-stylesheet">
+
+  <style id="jtd-nav-activation">
   
+
+.site-nav > ul.nav-list:first-child > li > a,
+.site-nav > ul.nav-list:first-child > li > ul > li:not(:nth-child(6)) > a,
+.site-nav > ul.nav-list:first-child > li > ul > li > ul > li > a {
+  background-image: none;
+}
+
+.site-nav > ul.nav-list:not(:first-child) a,
+.site-nav li.external a {
+  background-image: none;
+}
+
+.site-nav > ul.nav-list:first-child > li:nth-child(5) > ul > li:nth-child(6) > a {
+  font-weight: 600;
+  text-decoration: none;
+}.site-nav > ul.nav-list:first-child > li:nth-child(5) > button svg,
+.site-nav > ul.nav-list:first-child > li:nth-child(5) > ul > li:nth-child(6) > button svg {
+  transform: rotate(-90deg);
+}.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(5) > ul.nav-list,
+.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(5) > ul.nav-list > li.nav-list-item:nth-child(6) > ul.nav-list {
+  display: block;
+}
+  </style>
+
+  
+    
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112678513-3"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'UA-112678513-3');
+      
+        gtag('config', 'UA-112678513-3');
+      
     </script>
-
   
 
   
-    <script type="text/javascript" src="/assets/js/vendor/lunr.min.js"></script>
+    <script src="/assets/js/vendor/lunr.min.js"></script>
   
-  <script type="text/javascript" src="/assets/js/just-the-docs.js"></script>
+
+  <script src="/assets/js/just-the-docs.js"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Begin Jekyll SEO tag v2.7.1 -->
+  
+
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Quine McCluskey | CircuitVerse</title>
-<meta name="generator" content="Jekyll v3.9.0">
+<meta name="generator" content="Jekyll v4.3.3">
 <meta property="og:title" content="Quine McCluskey">
 <meta property="og:locale" content="en_US">
 <meta name="description" content="A Book to learn Digital Logic Design.">
@@ -40,10 +73,11 @@
 <link rel="canonical" href="https://learn.circuitverse.org/docs/logic-design/qmc.html">
 <meta property="og:url" content="https://learn.circuitverse.org/docs/logic-design/qmc.html">
 <meta property="og:site_name" content="CircuitVerse">
+<meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
 <meta property="twitter:title" content="Quine McCluskey">
 <script type="application/ld+json">
-{"description":"A Book to learn Digital Logic Design.","@type":"WebPage","headline":"Quine McCluskey","url":"https://learn.circuitverse.org/docs/logic-design/qmc.html","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"A Book to learn Digital Logic Design.","headline":"Quine McCluskey","url":"https://learn.circuitverse.org/docs/logic-design/qmc.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -57,194 +91,256 @@
 </head>
 
 <body>
-  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-    <symbol id="svg-link" viewbox="0 0 24 24">
-      <title>Link</title>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
-        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
-      </svg>
-    </symbol>
-    <symbol id="svg-search" viewbox="0 0 24 24">
-      <title>Search</title>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
-        <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-      </svg>
-    </symbol>
-    <symbol id="svg-menu" viewbox="0 0 24 24">
-      <title>Menu</title>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
-        <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
-      </svg>
-    </symbol>
-    <symbol id="svg-arrow-right" viewbox="0 0 24 24">
-      <title>Expand</title>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
-        <polyline points="9 18 15 12 9 6"></polyline>
-      </svg>
-    </symbol>
-    <symbol id="svg-doc" viewbox="0 0 24 24">
-      <title>Document</title>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
-        <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
-      </svg>
-    </symbol>
+  <a class="skip-to-main" href="#main-content">Skip to main content</a>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="svg-link" viewbox="0 0 24 24">
+  <title>Link</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
   </svg>
+</symbol>
+
+  <symbol id="svg-menu" viewbox="0 0 24 24">
+  <title>Menu</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+    <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+  </svg>
+</symbol>
+
+  <symbol id="svg-arrow-right" viewbox="0 0 24 24">
+  <title>Expand</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+    <polyline points="9 18 15 12 9 6"></polyline>
+  </svg>
+</symbol>
+
+  <!-- Feather. MIT License: https://github.com/feathericons/feather/blob/master/LICENSE -->
+<symbol id="svg-external-link" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+  <title id="svg-external-link-title">(external link)</title>
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+</symbol>
+
+  
+    <symbol id="svg-doc" viewbox="0 0 24 24">
+  <title>Document</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+  </svg>
+</symbol>
+
+    <symbol id="svg-search" viewbox="0 0 24 24">
+  <title>Search</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+    <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+  </svg>
+</symbol>
+
+  
+  
+    <!-- Bootstrap Icons. MIT License: https://github.com/twbs/icons/blob/main/LICENSE.md -->
+<symbol id="svg-copy" viewbox="0 0 16 16">
+  <title>Copy</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewbox="0 0 16 16">
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"></path>
+    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"></path>
+  </svg>
+</symbol>
+<symbol id="svg-copied" viewbox="0 0 16 16">
+  <title>Copied</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check-fill" viewbox="0 0 16 16">
+    <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"></path>
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708Z"></path>
+  </svg>
+</symbol>
+
+  
+</svg>
 
   <div class="side-bar">
-    <div class="site-header">
-      <a href="https://learn.circuitverse.org/" class="site-title lh-tight">
+  <div class="site-header" role="banner">
+    <a href="/" class="site-title lh-tight">
   CircuitVerse
 
 </a>
-      <a href="#" id="menu-button" class="site-button">
-        <svg viewbox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
-      </a>
-    </div>
-    <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
-      
-        <ul class="nav-list">
-<li class="nav-list-item"><a href="https://learn.circuitverse.org/" class="nav-list-link">Home</a></li>
+    <button id="menu-button" class="site-button btn-reset" aria-label="Toggle menu" aria-pressed="false">
+      <svg viewbox="0 0 24 24" class="icon" aria-hidden="true"><use xlink:href="#svg-menu"></use></svg>
+    </button>
+  </div>
+
+  <nav aria-label="Main" id="site-nav" class="site-nav">
+  
+  
+    <ul class="nav-list">
+<li class="nav-list-item"><a href="/" class="nav-list-link">Home</a></li>
 <li class="nav-list-item">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/binary-representation/" class="nav-list-link">Binary representation</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-representation/binary-numbers.html" class="nav-list-link">Binary numbers</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-representation/negative-quantities.html" class="nav-list-link">Negative quantities</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-representation/number-bases.html" class="nav-list-link">Number bases</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-representation/encoding-information.html" class="nav-list-link">Encoding information</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-representation/discrete-quantities.html" class="nav-list-link">Discrete quantities</a></li>
-</ul>
-</li>
-<li class="nav-list-item">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/binary-algebra/" class="nav-list-link">Binary algebra</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-algebra/addition.html" class="nav-list-link">Addition</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-algebra/subtraction.html" class="nav-list-link">Subtraction</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-algebra/multiplication.html" class="nav-list-link">Multiplication</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-algebra/division.html" class="nav-list-link">Division</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-algebra/boolean-algebra.html" class="nav-list-link">Boolean algebra</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-algebra/boolean-functions.html" class="nav-list-link">Boolean functions</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-algebra/shannon.html" class="nav-list-link">Shannon decomposition</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-algebra/ieee-std-754.html" class="nav-list-link">IEEE Std 754</a></li>
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Binary representation category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/binary-representation/" class="nav-list-link">Binary representation</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/binary-representation/binary-numbers.html" class="nav-list-link">Binary numbers</a></li>
+<li class="nav-list-item"><a href="/docs/binary-representation/negative-quantities.html" class="nav-list-link">Negative quantities</a></li>
+<li class="nav-list-item"><a href="/docs/binary-representation/number-bases.html" class="nav-list-link">Number bases</a></li>
+<li class="nav-list-item"><a href="/docs/binary-representation/encoding-information.html" class="nav-list-link">Encoding information</a></li>
+<li class="nav-list-item"><a href="/docs/binary-representation/discrete-quantities.html" class="nav-list-link">Discrete quantities</a></li>
 </ul>
 </li>
 <li class="nav-list-item">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/comb-ssi/" class="nav-list-link">Combinational SSI</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/comb-ssi/logic-gates.html" class="nav-list-link">Logic gates</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/comb-ssi/logic-families.html" class="nav-list-link">Logic families</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/comb-ssi/universal-gates.html" class="nav-list-link">Universal gates</a></li>
-</ul>
-</li>
-<li class="nav-list-item active">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/logic-design/" class="nav-list-link">Logic Design</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/logic-design/functional-description.html" class="nav-list-link">Functional description</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/logic-design/implementation.html" class="nav-list-link">Implementation</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/logic-design/canonical.html" class="nav-list-link">Canonical functions</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/logic-design/kmaps.html" class="nav-list-link">K-Maps</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/logic-design/mev.html" class="nav-list-link">Map-entered variables</a></li>
-<li class="nav-list-item  active"><a href="https://learn.circuitverse.org/docs/logic-design/qmc.html" class="nav-list-link active">Quine McCluskey</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/logic-design/binary-cubes.html" class="nav-list-link">Binary cubes</a></li>
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Binary algebra category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/binary-algebra/" class="nav-list-link">Binary algebra</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/binary-algebra/addition.html" class="nav-list-link">Addition</a></li>
+<li class="nav-list-item"><a href="/docs/binary-algebra/subtraction.html" class="nav-list-link">Subtraction</a></li>
+<li class="nav-list-item"><a href="/docs/binary-algebra/multiplication.html" class="nav-list-link">Multiplication</a></li>
+<li class="nav-list-item"><a href="/docs/binary-algebra/division.html" class="nav-list-link">Division</a></li>
+<li class="nav-list-item"><a href="/docs/binary-algebra/boolean-algebra.html" class="nav-list-link">Boolean algebra</a></li>
+<li class="nav-list-item"><a href="/docs/binary-algebra/boolean-functions.html" class="nav-list-link">Boolean functions</a></li>
+<li class="nav-list-item"><a href="/docs/binary-algebra/shannon.html" class="nav-list-link">Shannon decomposition</a></li>
+<li class="nav-list-item"><a href="/docs/binary-algebra/ieee-std-754.html" class="nav-list-link">IEEE Std 754</a></li>
 </ul>
 </li>
 <li class="nav-list-item">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/comb-msi/" class="nav-list-link">Combinational MSI</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/comb-msi/mux-demux.html" class="nav-list-link">MUX/DEMUX</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/comb-msi/encoders-decoders.html" class="nav-list-link">Encoders/Decoders</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/comb-msi/adders.html" class="nav-list-link">Adders</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/comb-msi/mux-functions.html" class="nav-list-link">MUX-based functions</a></li>
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Combinational SSI category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/comb-ssi/" class="nav-list-link">Combinational SSI</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/comb-ssi/logic-gates.html" class="nav-list-link">Logic gates</a></li>
+<li class="nav-list-item"><a href="/docs/comb-ssi/logic-families.html" class="nav-list-link">Logic families</a></li>
+<li class="nav-list-item"><a href="/docs/comb-ssi/universal-gates.html" class="nav-list-link">Universal gates</a></li>
 </ul>
 </li>
 <li class="nav-list-item">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/comb-lsi/" class="nav-list-link">Combinational LSI</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/comb-lsi/rom.html" class="nav-list-link">ROM</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/comb-lsi/alu.html" class="nav-list-link">ALU</a></li>
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Logic Design category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/logic-design/" class="nav-list-link">Logic Design</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/logic-design/functional-description.html" class="nav-list-link">Functional description</a></li>
+<li class="nav-list-item"><a href="/docs/logic-design/implementation.html" class="nav-list-link">Implementation</a></li>
+<li class="nav-list-item"><a href="/docs/logic-design/canonical.html" class="nav-list-link">Canonical functions</a></li>
+<li class="nav-list-item"><a href="/docs/logic-design/kmaps.html" class="nav-list-link">K-Maps</a></li>
+<li class="nav-list-item"><a href="/docs/logic-design/mev.html" class="nav-list-link">Map-entered variables</a></li>
+<li class="nav-list-item"><a href="/docs/logic-design/qmc.html" class="nav-list-link">Quine McCluskey</a></li>
+<li class="nav-list-item"><a href="/docs/logic-design/binary-cubes.html" class="nav-list-link">Binary cubes</a></li>
 </ul>
 </li>
 <li class="nav-list-item">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/seq-ssi/" class="nav-list-link">Sequential SSI</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-ssi/latches.html" class="nav-list-link">Latches</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-ssi/flip-flops.html" class="nav-list-link">Flip-flops</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-ssi/clock-signals.html" class="nav-list-link">Clock signals</a></li>
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Combinational MSI category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/comb-msi/" class="nav-list-link">Combinational MSI</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/comb-msi/mux-demux.html" class="nav-list-link">MUX/DEMUX</a></li>
+<li class="nav-list-item"><a href="/docs/comb-msi/encoders-decoders.html" class="nav-list-link">Encoders/Decoders</a></li>
+<li class="nav-list-item"><a href="/docs/comb-msi/adders.html" class="nav-list-link">Adders</a></li>
+<li class="nav-list-item"><a href="/docs/comb-msi/mux-functions.html" class="nav-list-link">MUX-based functions</a></li>
 </ul>
 </li>
 <li class="nav-list-item">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/seq-design/" class="nav-list-link">Sequential Design</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-design/fsm.html" class="nav-list-link">FSM</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-design/seq-synth.html" class="nav-list-link">Sequential synthesis</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-design/race-conditions.html" class="nav-list-link">Race conditions</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-design/flow-diagrams.html" class="nav-list-link">Flowchart diagrams</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-design/mds.html" class="nav-list-link">MDS Diagrams</a></li>
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Combinational LSI category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/comb-lsi/" class="nav-list-link">Combinational LSI</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/comb-lsi/rom.html" class="nav-list-link">ROM</a></li>
+<li class="nav-list-item"><a href="/docs/comb-lsi/alu.html" class="nav-list-link">ALU</a></li>
 </ul>
 </li>
 <li class="nav-list-item">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/seq-msi/" class="nav-list-link">Sequential MSI</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-msi/registers.html" class="nav-list-link">Registers</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-msi/counters.html" class="nav-list-link">Counters</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-msi/msi-seq-design.html" class="nav-list-link">MSI based design</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-msi/mult-div.html" class="nav-list-link">Multipliers/Dividers</a></li>
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Sequential SSI category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/seq-ssi/" class="nav-list-link">Sequential SSI</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/seq-ssi/latches.html" class="nav-list-link">Latches</a></li>
+<li class="nav-list-item"><a href="/docs/seq-ssi/flip-flops.html" class="nav-list-link">Flip-flops</a></li>
+<li class="nav-list-item"><a href="/docs/seq-ssi/clock-signals.html" class="nav-list-link">Clock signals</a></li>
 </ul>
 </li>
 <li class="nav-list-item">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/seq-lsi/" class="nav-list-link">Sequential LSI</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-lsi/rom-microcontrollers.html" class="nav-list-link">ROM-based µcontrollers</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-lsi/fpga.html" class="nav-list-link">FPGA</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-lsi/microprocessors.html" class="nav-list-link">Microprocessors</a></li>
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Sequential Design category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/seq-design/" class="nav-list-link">Sequential Design</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/seq-design/fsm.html" class="nav-list-link">FSM</a></li>
+<li class="nav-list-item"><a href="/docs/seq-design/seq-synth.html" class="nav-list-link">Sequential synthesis</a></li>
+<li class="nav-list-item"><a href="/docs/seq-design/race-conditions.html" class="nav-list-link">Race conditions</a></li>
+<li class="nav-list-item"><a href="/docs/seq-design/flow-diagrams.html" class="nav-list-link">Flowchart diagrams</a></li>
+<li class="nav-list-item"><a href="/docs/seq-design/mds.html" class="nav-list-link">MDS Diagrams</a></li>
 </ul>
 </li>
-<li class="nav-list-item"><a href="https://learn.circuitverse.org/contributing_guidelines.html" class="nav-list-link">Guidelines</a></li>
-<li class="nav-list-item"><a href="https://learn.circuitverse.org/about.html" class="nav-list-link">About</a></li>
+<li class="nav-list-item">
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Sequential MSI category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/seq-msi/" class="nav-list-link">Sequential MSI</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/seq-msi/registers.html" class="nav-list-link">Registers</a></li>
+<li class="nav-list-item"><a href="/docs/seq-msi/counters.html" class="nav-list-link">Counters</a></li>
+<li class="nav-list-item"><a href="/docs/seq-msi/msi-seq-design.html" class="nav-list-link">MSI based design</a></li>
+<li class="nav-list-item"><a href="/docs/seq-msi/mult-div.html" class="nav-list-link">Multipliers/Dividers</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Sequential LSI category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/seq-lsi/" class="nav-list-link">Sequential LSI</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/seq-lsi/rom-microcontrollers.html" class="nav-list-link">ROM-based µcontrollers</a></li>
+<li class="nav-list-item"><a href="/docs/seq-lsi/fpga.html" class="nav-list-link">FPGA</a></li>
+<li class="nav-list-item"><a href="/docs/seq-lsi/microprocessors.html" class="nav-list-link">Microprocessors</a></li>
+</ul>
+</li>
+<li class="nav-list-item"><a href="/contributing_guidelines.html" class="nav-list-link">Guidelines</a></li>
+<li class="nav-list-item"><a href="/about.html" class="nav-list-link">About</a></li>
 </ul>
 
-      
-    </nav>
+  
+</nav>
+
+
+  
+  
     <footer class="site-footer">
-      This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
+      This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
     </footer>
-  </div>
+  
+</div>
+
   <div class="main" id="top">
     <div id="main-header" class="main-header">
-      
-        <div class="search">
-          <div class="search-input-wrap">
-            <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search CircuitVerse" aria-label="Search CircuitVerse" autocomplete="off">
-            <label for="search-input" class="search-label"><svg viewbox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
-          </div>
-          <div id="search-results" class="search-results"></div>
-        </div>
-      
-      
-      
-        <nav aria-label="Auxiliary" class="aux-nav">
-          <ul class="aux-nav-list">
-            
-              <li class="aux-nav-list-item">
-                <a href="#" class="site-button">
-                  Dark mode
-                </a>
-              </li>
-            
-              <li class="aux-nav-list-item">
-                <a href="//github.com/CircuitVerse" class="site-button">
-                  CircuitVerse on GitHub
-                </a>
-              </li>
-            
-          </ul>
-        </nav>
-      
-    </div>
-    <div id="main-content-wrap" class="main-content-wrap">
-      
-        <nav aria-label="Breadcrumb" class="breadcrumb-nav">
-            <ol class="breadcrumb-nav-list">
-              
-                <li class="breadcrumb-nav-list-item"><a href="https://learn.circuitverse.org/docs/logic-design/">Logic Design</a></li>
-              
-              <li class="breadcrumb-nav-list-item"><span>Quine McCluskey</span></li>
-            </ol>
-          </nav>
-        
-      
-      <div id="main-content" class="main-content" role="main">
-        
-          <div id="progress-bar"></div>
+  
+    
+
+<div class="search" role="search">
+  <div class="search-input-wrap">
+    <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search CircuitVerse" aria-label="Search CircuitVerse" autocomplete="off">
+    <label for="search-input" class="search-label"><svg viewbox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
+  </div>
+  <div id="search-results" class="search-results"></div>
+</div>
+
+  
+  
+  
+    <nav aria-label="Auxiliary" class="aux-nav">
+  <ul class="aux-nav-list">
+    
+      <li class="aux-nav-list-item">
+        <a href="#" class="site-button">
+          Dark mode
+        </a>
+      </li>
+    
+      <li class="aux-nav-list-item">
+        <a href="//github.com/CircuitVerse" class="site-button">
+          CircuitVerse on GitHub
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
+  
+</div>
+
+    <div class="main-content-wrap">
+      <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+  <ol class="breadcrumb-nav-list">
+  
+    <li class="breadcrumb-nav-list-item"><a href="/docs/logic-design/">Logic Design</a></li>
+  <li class="breadcrumb-nav-list-item"><span>Quine McCluskey</span></li>
+  </ol>
+</nav>
+      <div id="main-content" class="main-content">
+        <main>
+          
+            <div id="progress-bar"></div>
 <script type="text/javascript">
 
 	// [Critical Content]
@@ -317,21 +413,21 @@
         </div>
     </nav>
 </div>
-      <h1 class="no_toc" id="quine-mccluskey">
-        
-        
-          <a href="#quine-mccluskey" class="anchor-heading" aria-labelledby="quine-mccluskey"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Quine McCluskey
-        
-        
-      </h1>
+<h1 class="no_toc" id="quine-mccluskey">
+  
+  
+    <a href="#quine-mccluskey" class="anchor-heading" aria-labelledby="quine-mccluskey"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Quine McCluskey
+  
+  
+</h1>
     
-      <h2 class="no_toc text-delta" id="table-of-contents">
-        
-        
-          <a href="#table-of-contents" class="anchor-heading" aria-labelledby="table-of-contents"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Table of contents
-        
-        
-      </h2>
+<h2 class="no_toc text-delta" id="table-of-contents">
+  
+  
+    <a href="#table-of-contents" class="anchor-heading" aria-labelledby="table-of-contents"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Table of contents
+  
+  
+</h2>
     
 
 <ol id="markdown-toc">
@@ -339,25 +435,25 @@
   <li><a href="#further-reading" id="markdown-toc-further-reading">Further reading</a></li>
   <li><a href="#references" id="markdown-toc-references">References</a></li>
 </ol>
-      <h2 id="introduction">
-        
-        
-          <a href="#introduction" class="anchor-heading" aria-labelledby="introduction"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Introduction
-        
-        
-      </h2>
+<h2 id="introduction">
+  
+  
+    <a href="#introduction" class="anchor-heading" aria-labelledby="introduction"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Introduction
+  
+  
+</h2>
     
 
 <p>Karnaugh Maps for functions with a large number of literals are difficult to minimise. Usually, a K-map is manageable up to 5 or 6 input literals. MEV can help for functions with a couple more variables. If we look at computer data buses, the information is 8, 16, 32, 64 bits wide or more. Additionally, to do a joint optimisation of functions with multiple output variables, the K-maps for all the combinations of the output variables must be analysed. Also, the visual minimisation using K-maps cannot be programmed to be performed by a computer program.</p>
 
 <p>The Quine-McCluskey method is a tabular recursive algorithm, which can be programmed in software. It has no limitations regarding the number of input or output literals. However, it will take longer and more recursions to process functions with more variables (the complexity grows exponentially).</p>
-      <h2 id="further-reading">
-        
-        
-          <a href="#further-reading" class="anchor-heading" aria-labelledby="further-reading"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Further reading
-        
-        
-      </h2>
+<h2 id="further-reading">
+  
+  
+    <a href="#further-reading" class="anchor-heading" aria-labelledby="further-reading"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Further reading
+  
+  
+</h2>
     
 
 <p>Details of the Quine McCluskey Algorithm can be found in the following references:</p>
@@ -373,13 +469,13 @@
 </li>
   <li><a href="https://en.wikipedia.org/w/index.php?title=Quine%E2%80%93McCluskey_algorithm&oldid=990843883">Wikipedia:Quine–McCluskey algorithm</a></li>
 </ul>
-      <h2 id="references">
-        
-        
-          <a href="#references" class="anchor-heading" aria-labelledby="references"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> References
-        
-        
-      </h2>
+<h2 id="references">
+  
+  
+    <a href="#references" class="anchor-heading" aria-labelledby="references"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> References
+  
+  
+</h2>
     
 
 <ul class="bibliography">
@@ -441,39 +537,41 @@
     })
 </script>
 
+          
+
+          
+        </main>
         
 
-        
+  <hr>
+  <footer>
+    
 
-        
-        
-          <hr>
-          <footer>
-            
+    <p class="text-small text-grey-dk-100 mb-0">Copyright © 2023 Contributors to CircuitVerse. Distributed under a [CC-by-sa] license.</p>
 
-            <p class="text-small text-grey-dk-100 mb-0">Copyright © 2023 Contributors to CircuitVerse. Distributed under a [CC-by-sa] license.</p>
-
-            
-              <div class="d-flex mt-2">
-                
-                
-                  <p class="text-small text-grey-dk-000 mb-0">
-                    <a href="https://github.com/CircuitVerse/Interactive-Book/tree/master/docs/logic-design/qmc.md" id="edit-this-page">Edit this page on GitHub.</a>
-                  </p>
-                
-              </div>
-            
-          </footer>
+    
+      <div class="d-flex mt-2">
         
+        
+          <p class="text-small text-grey-dk-000 mb-0">
+            <a href="https://github.com/CircuitVerse/Interactive-Book/tree/master/docs/logic-design/qmc.md" id="edit-this-page">Edit this page on GitHub.</a>
+          </p>
+        
+      </div>
+    
+  </footer>
+
 
       </div>
     </div>
-
     
       
 
-      <div class="search-overlay"></div>
+<div class="search-overlay"></div>
+
     
   </div>
+
+  
 </body>
 </html>

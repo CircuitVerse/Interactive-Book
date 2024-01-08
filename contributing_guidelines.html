@@ -5,34 +5,65 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  
-
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-
   <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
 
+  <link rel="stylesheet" href="/assets/css/just-the-docs-head-nav.css" id="jtd-head-nav-stylesheet">
+
+  <style id="jtd-nav-activation">
   
+
+.site-nav > ul.nav-list:first-child > li:not(:nth-child(12)) > a,
+.site-nav > ul.nav-list:first-child > li > ul > li > a,
+.site-nav > ul.nav-list:first-child > li > ul > li > ul > li > a {
+  background-image: none;
+}
+
+.site-nav > ul.nav-list:not(:first-child) a,
+.site-nav li.external a {
+  background-image: none;
+}
+
+.site-nav > ul.nav-list:first-child > li:nth-child(12) > a {
+  font-weight: 600;
+  text-decoration: none;
+}.site-nav > ul.nav-list:first-child > li:nth-child(12) > button svg {
+  transform: rotate(-90deg);
+}.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(12) > ul.nav-list {
+  display: block;
+}
+  </style>
+
+  
+    
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112678513-3"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'UA-112678513-3');
+      
+        gtag('config', 'UA-112678513-3');
+      
     </script>
-
   
 
   
-    <script type="text/javascript" src="/assets/js/vendor/lunr.min.js"></script>
+    <script src="/assets/js/vendor/lunr.min.js"></script>
   
-  <script type="text/javascript" src="/assets/js/just-the-docs.js"></script>
+
+  <script src="/assets/js/just-the-docs.js"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Begin Jekyll SEO tag v2.7.1 -->
+  
+
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Guidelines | CircuitVerse</title>
-<meta name="generator" content="Jekyll v3.9.0">
+<meta name="generator" content="Jekyll v4.3.3">
 <meta property="og:title" content="Guidelines">
 <meta property="og:locale" content="en_US">
 <meta name="description" content="A Book to learn Digital Logic Design.">
@@ -40,10 +71,11 @@
 <link rel="canonical" href="https://learn.circuitverse.org/contributing_guidelines.html">
 <meta property="og:url" content="https://learn.circuitverse.org/contributing_guidelines.html">
 <meta property="og:site_name" content="CircuitVerse">
+<meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
 <meta property="twitter:title" content="Guidelines">
 <script type="application/ld+json">
-{"description":"A Book to learn Digital Logic Design.","@type":"WebPage","headline":"Guidelines","url":"https://learn.circuitverse.org/contributing_guidelines.html","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"A Book to learn Digital Logic Design.","headline":"Guidelines","url":"https://learn.circuitverse.org/contributing_guidelines.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -58,200 +90,264 @@
 </head>
 
 <body>
-  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-    <symbol id="svg-link" viewbox="0 0 24 24">
-      <title>Link</title>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
-        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
-      </svg>
-    </symbol>
-    <symbol id="svg-search" viewbox="0 0 24 24">
-      <title>Search</title>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
-        <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-      </svg>
-    </symbol>
-    <symbol id="svg-menu" viewbox="0 0 24 24">
-      <title>Menu</title>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
-        <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
-      </svg>
-    </symbol>
-    <symbol id="svg-arrow-right" viewbox="0 0 24 24">
-      <title>Expand</title>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
-        <polyline points="9 18 15 12 9 6"></polyline>
-      </svg>
-    </symbol>
-    <symbol id="svg-doc" viewbox="0 0 24 24">
-      <title>Document</title>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
-        <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
-      </svg>
-    </symbol>
+  <a class="skip-to-main" href="#main-content">Skip to main content</a>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="svg-link" viewbox="0 0 24 24">
+  <title>Link</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
   </svg>
+</symbol>
+
+  <symbol id="svg-menu" viewbox="0 0 24 24">
+  <title>Menu</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+    <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+  </svg>
+</symbol>
+
+  <symbol id="svg-arrow-right" viewbox="0 0 24 24">
+  <title>Expand</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+    <polyline points="9 18 15 12 9 6"></polyline>
+  </svg>
+</symbol>
+
+  <!-- Feather. MIT License: https://github.com/feathericons/feather/blob/master/LICENSE -->
+<symbol id="svg-external-link" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+  <title id="svg-external-link-title">(external link)</title>
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+</symbol>
+
+  
+    <symbol id="svg-doc" viewbox="0 0 24 24">
+  <title>Document</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+  </svg>
+</symbol>
+
+    <symbol id="svg-search" viewbox="0 0 24 24">
+  <title>Search</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+    <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+  </svg>
+</symbol>
+
+  
+  
+    <!-- Bootstrap Icons. MIT License: https://github.com/twbs/icons/blob/main/LICENSE.md -->
+<symbol id="svg-copy" viewbox="0 0 16 16">
+  <title>Copy</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewbox="0 0 16 16">
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"></path>
+    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"></path>
+  </svg>
+</symbol>
+<symbol id="svg-copied" viewbox="0 0 16 16">
+  <title>Copied</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check-fill" viewbox="0 0 16 16">
+    <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"></path>
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708Z"></path>
+  </svg>
+</symbol>
+
+  
+</svg>
 
   <div class="side-bar">
-    <div class="site-header">
-      <a href="https://learn.circuitverse.org/" class="site-title lh-tight">
+  <div class="site-header" role="banner">
+    <a href="/" class="site-title lh-tight">
   CircuitVerse
 
 </a>
-      <a href="#" id="menu-button" class="site-button">
-        <svg viewbox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
-      </a>
-    </div>
-    <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
-      
-        <ul class="nav-list">
-<li class="nav-list-item"><a href="https://learn.circuitverse.org/" class="nav-list-link">Home</a></li>
+    <button id="menu-button" class="site-button btn-reset" aria-label="Toggle menu" aria-pressed="false">
+      <svg viewbox="0 0 24 24" class="icon" aria-hidden="true"><use xlink:href="#svg-menu"></use></svg>
+    </button>
+  </div>
+
+  <nav aria-label="Main" id="site-nav" class="site-nav">
+  
+  
+    <ul class="nav-list">
+<li class="nav-list-item"><a href="/" class="nav-list-link">Home</a></li>
 <li class="nav-list-item">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/binary-representation/" class="nav-list-link">Binary representation</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-representation/binary-numbers.html" class="nav-list-link">Binary numbers</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-representation/negative-quantities.html" class="nav-list-link">Negative quantities</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-representation/number-bases.html" class="nav-list-link">Number bases</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-representation/encoding-information.html" class="nav-list-link">Encoding information</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-representation/discrete-quantities.html" class="nav-list-link">Discrete quantities</a></li>
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Binary representation category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/binary-representation/" class="nav-list-link">Binary representation</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/binary-representation/binary-numbers.html" class="nav-list-link">Binary numbers</a></li>
+<li class="nav-list-item"><a href="/docs/binary-representation/negative-quantities.html" class="nav-list-link">Negative quantities</a></li>
+<li class="nav-list-item"><a href="/docs/binary-representation/number-bases.html" class="nav-list-link">Number bases</a></li>
+<li class="nav-list-item"><a href="/docs/binary-representation/encoding-information.html" class="nav-list-link">Encoding information</a></li>
+<li class="nav-list-item"><a href="/docs/binary-representation/discrete-quantities.html" class="nav-list-link">Discrete quantities</a></li>
 </ul>
 </li>
 <li class="nav-list-item">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/binary-algebra/" class="nav-list-link">Binary algebra</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-algebra/addition.html" class="nav-list-link">Addition</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-algebra/subtraction.html" class="nav-list-link">Subtraction</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-algebra/multiplication.html" class="nav-list-link">Multiplication</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-algebra/division.html" class="nav-list-link">Division</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-algebra/boolean-algebra.html" class="nav-list-link">Boolean algebra</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-algebra/boolean-functions.html" class="nav-list-link">Boolean functions</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-algebra/shannon.html" class="nav-list-link">Shannon decomposition</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-algebra/ieee-std-754.html" class="nav-list-link">IEEE Std 754</a></li>
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Binary algebra category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/binary-algebra/" class="nav-list-link">Binary algebra</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/binary-algebra/addition.html" class="nav-list-link">Addition</a></li>
+<li class="nav-list-item"><a href="/docs/binary-algebra/subtraction.html" class="nav-list-link">Subtraction</a></li>
+<li class="nav-list-item"><a href="/docs/binary-algebra/multiplication.html" class="nav-list-link">Multiplication</a></li>
+<li class="nav-list-item"><a href="/docs/binary-algebra/division.html" class="nav-list-link">Division</a></li>
+<li class="nav-list-item"><a href="/docs/binary-algebra/boolean-algebra.html" class="nav-list-link">Boolean algebra</a></li>
+<li class="nav-list-item"><a href="/docs/binary-algebra/boolean-functions.html" class="nav-list-link">Boolean functions</a></li>
+<li class="nav-list-item"><a href="/docs/binary-algebra/shannon.html" class="nav-list-link">Shannon decomposition</a></li>
+<li class="nav-list-item"><a href="/docs/binary-algebra/ieee-std-754.html" class="nav-list-link">IEEE Std 754</a></li>
 </ul>
 </li>
 <li class="nav-list-item">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/comb-ssi/" class="nav-list-link">Combinational SSI</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/comb-ssi/logic-gates.html" class="nav-list-link">Logic gates</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/comb-ssi/logic-families.html" class="nav-list-link">Logic families</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/comb-ssi/universal-gates.html" class="nav-list-link">Universal gates</a></li>
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Combinational SSI category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/comb-ssi/" class="nav-list-link">Combinational SSI</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/comb-ssi/logic-gates.html" class="nav-list-link">Logic gates</a></li>
+<li class="nav-list-item"><a href="/docs/comb-ssi/logic-families.html" class="nav-list-link">Logic families</a></li>
+<li class="nav-list-item"><a href="/docs/comb-ssi/universal-gates.html" class="nav-list-link">Universal gates</a></li>
 </ul>
 </li>
 <li class="nav-list-item">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/logic-design/" class="nav-list-link">Logic Design</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/logic-design/functional-description.html" class="nav-list-link">Functional description</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/logic-design/implementation.html" class="nav-list-link">Implementation</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/logic-design/canonical.html" class="nav-list-link">Canonical functions</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/logic-design/kmaps.html" class="nav-list-link">K-Maps</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/logic-design/mev.html" class="nav-list-link">Map-entered variables</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/logic-design/qmc.html" class="nav-list-link">Quine McCluskey</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/logic-design/binary-cubes.html" class="nav-list-link">Binary cubes</a></li>
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Logic Design category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/logic-design/" class="nav-list-link">Logic Design</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/logic-design/functional-description.html" class="nav-list-link">Functional description</a></li>
+<li class="nav-list-item"><a href="/docs/logic-design/implementation.html" class="nav-list-link">Implementation</a></li>
+<li class="nav-list-item"><a href="/docs/logic-design/canonical.html" class="nav-list-link">Canonical functions</a></li>
+<li class="nav-list-item"><a href="/docs/logic-design/kmaps.html" class="nav-list-link">K-Maps</a></li>
+<li class="nav-list-item"><a href="/docs/logic-design/mev.html" class="nav-list-link">Map-entered variables</a></li>
+<li class="nav-list-item"><a href="/docs/logic-design/qmc.html" class="nav-list-link">Quine McCluskey</a></li>
+<li class="nav-list-item"><a href="/docs/logic-design/binary-cubes.html" class="nav-list-link">Binary cubes</a></li>
 </ul>
 </li>
 <li class="nav-list-item">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/comb-msi/" class="nav-list-link">Combinational MSI</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/comb-msi/mux-demux.html" class="nav-list-link">MUX/DEMUX</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/comb-msi/encoders-decoders.html" class="nav-list-link">Encoders/Decoders</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/comb-msi/adders.html" class="nav-list-link">Adders</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/comb-msi/mux-functions.html" class="nav-list-link">MUX-based functions</a></li>
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Combinational MSI category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/comb-msi/" class="nav-list-link">Combinational MSI</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/comb-msi/mux-demux.html" class="nav-list-link">MUX/DEMUX</a></li>
+<li class="nav-list-item"><a href="/docs/comb-msi/encoders-decoders.html" class="nav-list-link">Encoders/Decoders</a></li>
+<li class="nav-list-item"><a href="/docs/comb-msi/adders.html" class="nav-list-link">Adders</a></li>
+<li class="nav-list-item"><a href="/docs/comb-msi/mux-functions.html" class="nav-list-link">MUX-based functions</a></li>
 </ul>
 </li>
 <li class="nav-list-item">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/comb-lsi/" class="nav-list-link">Combinational LSI</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/comb-lsi/rom.html" class="nav-list-link">ROM</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/comb-lsi/alu.html" class="nav-list-link">ALU</a></li>
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Combinational LSI category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/comb-lsi/" class="nav-list-link">Combinational LSI</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/comb-lsi/rom.html" class="nav-list-link">ROM</a></li>
+<li class="nav-list-item"><a href="/docs/comb-lsi/alu.html" class="nav-list-link">ALU</a></li>
 </ul>
 </li>
 <li class="nav-list-item">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/seq-ssi/" class="nav-list-link">Sequential SSI</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-ssi/latches.html" class="nav-list-link">Latches</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-ssi/flip-flops.html" class="nav-list-link">Flip-flops</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-ssi/clock-signals.html" class="nav-list-link">Clock signals</a></li>
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Sequential SSI category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/seq-ssi/" class="nav-list-link">Sequential SSI</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/seq-ssi/latches.html" class="nav-list-link">Latches</a></li>
+<li class="nav-list-item"><a href="/docs/seq-ssi/flip-flops.html" class="nav-list-link">Flip-flops</a></li>
+<li class="nav-list-item"><a href="/docs/seq-ssi/clock-signals.html" class="nav-list-link">Clock signals</a></li>
 </ul>
 </li>
 <li class="nav-list-item">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/seq-design/" class="nav-list-link">Sequential Design</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-design/fsm.html" class="nav-list-link">FSM</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-design/seq-synth.html" class="nav-list-link">Sequential synthesis</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-design/race-conditions.html" class="nav-list-link">Race conditions</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-design/flow-diagrams.html" class="nav-list-link">Flowchart diagrams</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-design/mds.html" class="nav-list-link">MDS Diagrams</a></li>
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Sequential Design category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/seq-design/" class="nav-list-link">Sequential Design</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/seq-design/fsm.html" class="nav-list-link">FSM</a></li>
+<li class="nav-list-item"><a href="/docs/seq-design/seq-synth.html" class="nav-list-link">Sequential synthesis</a></li>
+<li class="nav-list-item"><a href="/docs/seq-design/race-conditions.html" class="nav-list-link">Race conditions</a></li>
+<li class="nav-list-item"><a href="/docs/seq-design/flow-diagrams.html" class="nav-list-link">Flowchart diagrams</a></li>
+<li class="nav-list-item"><a href="/docs/seq-design/mds.html" class="nav-list-link">MDS Diagrams</a></li>
 </ul>
 </li>
 <li class="nav-list-item">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/seq-msi/" class="nav-list-link">Sequential MSI</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-msi/registers.html" class="nav-list-link">Registers</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-msi/counters.html" class="nav-list-link">Counters</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-msi/msi-seq-design.html" class="nav-list-link">MSI based design</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-msi/mult-div.html" class="nav-list-link">Multipliers/Dividers</a></li>
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Sequential MSI category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/seq-msi/" class="nav-list-link">Sequential MSI</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/seq-msi/registers.html" class="nav-list-link">Registers</a></li>
+<li class="nav-list-item"><a href="/docs/seq-msi/counters.html" class="nav-list-link">Counters</a></li>
+<li class="nav-list-item"><a href="/docs/seq-msi/msi-seq-design.html" class="nav-list-link">MSI based design</a></li>
+<li class="nav-list-item"><a href="/docs/seq-msi/mult-div.html" class="nav-list-link">Multipliers/Dividers</a></li>
 </ul>
 </li>
 <li class="nav-list-item">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/seq-lsi/" class="nav-list-link">Sequential LSI</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-lsi/rom-microcontrollers.html" class="nav-list-link">ROM-based µcontrollers</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-lsi/fpga.html" class="nav-list-link">FPGA</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-lsi/microprocessors.html" class="nav-list-link">Microprocessors</a></li>
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Sequential LSI category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/seq-lsi/" class="nav-list-link">Sequential LSI</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/seq-lsi/rom-microcontrollers.html" class="nav-list-link">ROM-based µcontrollers</a></li>
+<li class="nav-list-item"><a href="/docs/seq-lsi/fpga.html" class="nav-list-link">FPGA</a></li>
+<li class="nav-list-item"><a href="/docs/seq-lsi/microprocessors.html" class="nav-list-link">Microprocessors</a></li>
 </ul>
 </li>
-<li class="nav-list-item active"><a href="https://learn.circuitverse.org/contributing_guidelines.html" class="nav-list-link active">Guidelines</a></li>
-<li class="nav-list-item"><a href="https://learn.circuitverse.org/about.html" class="nav-list-link">About</a></li>
+<li class="nav-list-item"><a href="/contributing_guidelines.html" class="nav-list-link">Guidelines</a></li>
+<li class="nav-list-item"><a href="/about.html" class="nav-list-link">About</a></li>
 </ul>
 
-      
-    </nav>
+  
+</nav>
+
+
+  
+  
     <footer class="site-footer">
-      This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
+      This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
     </footer>
-  </div>
+  
+</div>
+
   <div class="main" id="top">
     <div id="main-header" class="main-header">
-      
-        <div class="search">
-          <div class="search-input-wrap">
-            <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search CircuitVerse" aria-label="Search CircuitVerse" autocomplete="off">
-            <label for="search-input" class="search-label"><svg viewbox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
-          </div>
-          <div id="search-results" class="search-results"></div>
-        </div>
-      
-      
-      
-        <nav aria-label="Auxiliary" class="aux-nav">
-          <ul class="aux-nav-list">
-            
-              <li class="aux-nav-list-item">
-                <a href="#" class="site-button">
-                  Dark mode
-                </a>
-              </li>
-            
-              <li class="aux-nav-list-item">
-                <a href="//github.com/CircuitVerse" class="site-button">
-                  CircuitVerse on GitHub
-                </a>
-              </li>
-            
-          </ul>
-        </nav>
-      
-    </div>
-    <div id="main-content-wrap" class="main-content-wrap">
-      
-        
-      
-      <div id="main-content" class="main-content" role="main">
-        
-          <h1 class="no_toc" id="contributing-guidelines">
-        
-        
-          <a href="#contributing-guidelines" class="anchor-heading" aria-labelledby="contributing-guidelines"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Contributing Guidelines
-        
-        
-      </h1>
+  
     
-      <h2 class="no_toc text-delta" id="table-of-contents">
-        
-        
-          <a href="#table-of-contents" class="anchor-heading" aria-labelledby="table-of-contents"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Table of contents
-        
-        
-      </h2>
+
+<div class="search" role="search">
+  <div class="search-input-wrap">
+    <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search CircuitVerse" aria-label="Search CircuitVerse" autocomplete="off">
+    <label for="search-input" class="search-label"><svg viewbox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
+  </div>
+  <div id="search-results" class="search-results"></div>
+</div>
+
+  
+  
+  
+    <nav aria-label="Auxiliary" class="aux-nav">
+  <ul class="aux-nav-list">
+    
+      <li class="aux-nav-list-item">
+        <a href="#" class="site-button">
+          Dark mode
+        </a>
+      </li>
+    
+      <li class="aux-nav-list-item">
+        <a href="//github.com/CircuitVerse" class="site-button">
+          CircuitVerse on GitHub
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
+  
+</div>
+
+    <div class="main-content-wrap">
+      
+      <div id="main-content" class="main-content">
+        <main>
+          
+            <h1 class="no_toc" id="contributing-guidelines">
+  
+  
+    <a href="#contributing-guidelines" class="anchor-heading" aria-labelledby="contributing-guidelines"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Contributing Guidelines
+  
+  
+</h1>
+    
+<h2 class="no_toc text-delta" id="table-of-contents">
+  
+  
+    <a href="#table-of-contents" class="anchor-heading" aria-labelledby="table-of-contents"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Table of contents
+  
+  
+</h2>
     
 
 <ol id="markdown-toc">
@@ -302,23 +398,23 @@
   </li>
 </ol>
 <hr>
-      <h2 id="about-this-guidelines">
-        
-        
-          <a href="#about-this-guidelines" class="anchor-heading" aria-labelledby="about-this-guidelines"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> About this guidelines
-        
-        
-      </h2>
+<h2 id="about-this-guidelines">
+  
+  
+    <a href="#about-this-guidelines" class="anchor-heading" aria-labelledby="about-this-guidelines"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> About this guidelines
+  
+  
+</h2>
     
 
 <p>This guidelines documentation was started on September 2020 as part of the Google Season of Docs 2020 initiative.</p>
-      <h3 id="revision-history">
-        
-        
-          <a href="#revision-history" class="anchor-heading" aria-labelledby="revision-history"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Revision history
-        
-        
-      </h3>
+<h3 id="revision-history">
+  
+  
+    <a href="#revision-history" class="anchor-heading" aria-labelledby="revision-history"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Revision history
+  
+  
+</h3>
     
 
 <p>The revision history is presented in the following table</p>
@@ -339,23 +435,23 @@
     </tr>
   </tbody>
 </table></div>
-      <h3 id="purpose-of-the-guidelines">
-        
-        
-          <a href="#purpose-of-the-guidelines" class="anchor-heading" aria-labelledby="purpose-of-the-guidelines"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Purpose of the guidelines
-        
-        
-      </h3>
+<h3 id="purpose-of-the-guidelines">
+  
+  
+    <a href="#purpose-of-the-guidelines" class="anchor-heading" aria-labelledby="purpose-of-the-guidelines"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Purpose of the guidelines
+  
+  
+</h3>
     
 
 <p>These guidelines are inteded to guide those who wish to contribute to this Interactive Book. It (tries) to cover most aspects such as the process workflow, license, style, quality, templates and tools.</p>
-      <h3 id="acknowledgements">
-        
-        
-          <a href="#acknowledgements" class="anchor-heading" aria-labelledby="acknowledgements"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Acknowledgements
-        
-        
-      </h3>
+<h3 id="acknowledgements">
+  
+  
+    <a href="#acknowledgements" class="anchor-heading" aria-labelledby="acknowledgements"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Acknowledgements
+  
+  
+</h3>
     
 
 <p>These guidlines are heavily based on the <a href="https://tldp.org/LDP/LDP-Author-Guide/html/index.html">Linux Document Project Author Guide</a> and the Wikibooks <a href="https://en.wikibooks.org/wiki/Help:Contributing">Contributing help</a> and <a href="https://en.wikibooks.org/wiki/Wikibooks:Policies_and_guidelines">Policies and guidelines</a>.</p>
@@ -365,13 +461,13 @@
   <li>Wikibooks documents are licensed under the <a href="https://en.wikibooks.org/wiki/Wikibooks:Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">CC-by-sa</a> License and copyrighted by contributors to Wikibooks</li>
 </ul>
 <hr>
-      <h2 id="workflow">
-        
-        
-          <a href="#workflow" class="anchor-heading" aria-labelledby="workflow"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Workflow
-        
-        
-      </h2>
+<h2 id="workflow">
+  
+  
+    <a href="#workflow" class="anchor-heading" aria-labelledby="workflow"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Workflow
+  
+  
+</h2>
     
 
 <p>Usually, the contribution process will include the following steps:</p>
@@ -392,23 +488,23 @@
   <li>create a pull-request to start the reviewing process of your contribution</li>
 </ol>
 <hr>
-      <h2 id="licensing">
-        
-        
-          <a href="#licensing" class="anchor-heading" aria-labelledby="licensing"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Licensing
-        
-        
-      </h2>
+<h2 id="licensing">
+  
+  
+    <a href="#licensing" class="anchor-heading" aria-labelledby="licensing"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Licensing
+  
+  
+</h2>
     
 
 <p>The book is licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> and copyrighted by contributors to CircuitVerse unless otherwise noted. The author has to make sure that the all content contributed can be licensed under the specified license. Never submit copyrighted material without permission from copyright owner. If you contribute to the book, you irrevocably agree to license it to the public under <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>.</p>
-      <h3 id="non-free-materials-and-special-requirements">
-        
-        
-          <a href="#non-free-materials-and-special-requirements" class="anchor-heading" aria-labelledby="non-free-materials-and-special-requirements"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Non-free materials and special requirements
-        
-        
-      </h3>
+<h3 id="non-free-materials-and-special-requirements">
+  
+  
+    <a href="#non-free-materials-and-special-requirements" class="anchor-heading" aria-labelledby="non-free-materials-and-special-requirements"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Non-free materials and special requirements
+  
+  
+</h3>
     
 
 <p>CircuitVerse’s Interactive Book may also include quotations, images, or other media under the U.S. Copyright law “fair use” doctrine. In CircuitVerse, such “fair use” material should be identified as from an external source by an appropriate method (on the figure or table description, as appropriate; quotations should be denoted as a quotation block. This leads to possible restrictions on the use, outside of the Interactive Book, of such “fair use” content retrieved from the book: this “fair use” content does not fall under the <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> license as such, but under the “fair use” (or similar/different) regulations in the country where the media are retrieved.</p>
@@ -423,24 +519,24 @@
   <li><a href="https://www.copylaw.com/new_articles/copy_myths.html">https://www.copylaw.com/new_articles/copy_myths.html</a></li>
   <li><a href="https://blogs.library.duke.edu/scholcomm/2007/11/30/citation-infringement/">https://blogs.library.duke.edu/scholcomm/2007/11/30/citation-infringement/</a></li>
 </ul>
-      <h3 id="linking-to-copyrighted-works">
-        
-        
-          <a href="#linking-to-copyrighted-works" class="anchor-heading" aria-labelledby="linking-to-copyrighted-works"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Linking to copyrighted works
-        
-        
-      </h3>
+<h3 id="linking-to-copyrighted-works">
+  
+  
+    <a href="#linking-to-copyrighted-works" class="anchor-heading" aria-labelledby="linking-to-copyrighted-works"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Linking to copyrighted works
+  
+  
+</h3>
     
 
 <p>Since most recently-created works are copyrighted, almost all cites sources will link to copyrighted material. It is usually not necessary to obtain the permission of a copyright holder before linking to copyrighted material, just as an author of a dead-tree book does not need permission to cite someone else’s work in their bibliography. Likewise, CircuitVerse’s Interactive Book is not restricted to linking only to CC-BY-SA or open-source content.</p>
 <hr>
-      <h2 id="proposing-a-contribution">
-        
-        
-          <a href="#proposing-a-contribution" class="anchor-heading" aria-labelledby="proposing-a-contribution"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Proposing a contribution
-        
-        
-      </h2>
+<h2 id="proposing-a-contribution">
+  
+  
+    <a href="#proposing-a-contribution" class="anchor-heading" aria-labelledby="proposing-a-contribution"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Proposing a contribution
+  
+  
+</h2>
     
 
 <p>If you have in mind new content to be added, it is important that the CircuitVerse community understand why your contribution should be included in the book. You may have already discussed your idea in some of CircuitVerse social channels, in that case, please include the discussion in your proposal.</p>
@@ -451,26 +547,26 @@
 
 <p>Finaly, submit your proposal to the CircuitVerse Interactive Book coordination team, and discuss the proposal with them in order to refine it. The coordination team will either approve or reject the proposal. In case of rejection, comments will be included explaining why it was rejected, and how could it be improved when the proposed content is useful, but the proposed “format” whas not adequate enough.</p>
 <hr>
-      <h2 id="editing-existing-content">
-        
-        
-          <a href="#editing-existing-content" class="anchor-heading" aria-labelledby="editing-existing-content"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Editing existing content
-        
-        
-      </h2>
+<h2 id="editing-existing-content">
+  
+  
+    <a href="#editing-existing-content" class="anchor-heading" aria-labelledby="editing-existing-content"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Editing existing content
+  
+  
+</h2>
     
 
 <p>When editing existing content, try to contact the original author first in order to discuss your idea.</p>
 
 <p>If the original author cannot be contacted after a “good-faith” effort, fall back to discuss the topic with the CircuiVerse community through any of the social channels.</p>
 <hr>
-      <h2 id="writing-content">
-        
-        
-          <a href="#writing-content" class="anchor-heading" aria-labelledby="writing-content"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Writing content
-        
-        
-      </h2>
+<h2 id="writing-content">
+  
+  
+    <a href="#writing-content" class="anchor-heading" aria-labelledby="writing-content"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Writing content
+  
+  
+</h2>
     
 
 <p>All content should be supported by valid sources. Please, research carefuly and validate all your references. Check that there are no copyright or license issues regarding the use of each of your sources.</p>
@@ -480,24 +576,24 @@
 <p>The Interactive Book is not intended as a thorough textbook, but its main focus is on interactive content. Try to keep the content to the amount necessary to understand the topic and cite appropriate references for further study on the subject.</p>
 
 <p>To keep the consistency of the book, please follow the style indicated in these guidelines, also use the templates and existing content as example.</p>
-      <h3 id="quality-assurance">
-        
-        
-          <a href="#quality-assurance" class="anchor-heading" aria-labelledby="quality-assurance"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Quality assurance
-        
-        
-      </h3>
+<h3 id="quality-assurance">
+  
+  
+    <a href="#quality-assurance" class="anchor-heading" aria-labelledby="quality-assurance"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Quality assurance
+  
+  
+</h3>
     
 
 <p>Besides researching and validating your sources and adhering to the Interactive Book style, please also edit (remove unnecesary content) and check for spelling and grammar errors. Then, forward your contribution to a third party for proofreading. When you are satisfied with the quality and accuracy of your contribution ask for peer reviewers from the CircuitVerse community. Finally, submit your work to the “formal” review by creating a pull-request of your forked repository</p>
 <hr>
-      <h2 id="style-manual">
-        
-        
-          <a href="#style-manual" class="anchor-heading" aria-labelledby="style-manual"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Style manual
-        
-        
-      </h2>
+<h2 id="style-manual">
+  
+  
+    <a href="#style-manual" class="anchor-heading" aria-labelledby="style-manual"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Style manual
+  
+  
+</h2>
     
 
 <p>[Work in Progress]</p>
@@ -505,25 +601,25 @@
 <p>While most of the formatting style is carried out automatically by the layout, templates and stylesheets in the SSG (jekyll) pipeline, it is important to also adhere to a common writing style in order to assure consistency of the book.</p>
 
 <p>Please use a neutral and simple language. Avoid slang. Also, technical jargon should be explained.</p>
-      <h3 id="figures-and-tables">
-        
-        
-          <a href="#figures-and-tables" class="anchor-heading" aria-labelledby="figures-and-tables"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Figures and tables
-        
-        
-      </h3>
+<h3 id="figures-and-tables">
+  
+  
+    <a href="#figures-and-tables" class="anchor-heading" aria-labelledby="figures-and-tables"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Figures and tables
+  
+  
+</h3>
     
 
 <p>Figures and tables should include a description or caption, and they should be commented in text. If a figure or table is not part of the description, probably it is not needed and can be removed from the book.</p>
 
 <p>See an example in section <a href="#templates-and-examples">Templates and examples</a>.</p>
-      <h3 id="equations">
-        
-        
-          <a href="#equations" class="anchor-heading" aria-labelledby="equations"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Equations
-        
-        
-      </h3>
+<h3 id="equations">
+  
+  
+    <a href="#equations" class="anchor-heading" aria-labelledby="equations"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Equations
+  
+  
+</h3>
     
 
 <p>Equations can be typesetted in LaTeX to be rendered by <a href="https://www.mathjax.org/">MathJax</a>. A few examples can be found in the <a href="#templates-and-examples">Templates and examples</a> section. If equations need to be referenced in the text, use numbered or labelled equations. General useful guidelines:</p>
@@ -532,26 +628,26 @@
   <li>There are many variants for the notation of negated variables, prefer the bar over the variable or the <em>prime</em> (complement) symbol.</li>
   <li>For binary words with many literals (high number of bits) prefer a single letter with subscript numbers for each bit. For instance a four bit word can be written as $(x_3,x_2,x_1,x_0)$ instead of a different letter for each literal $(A,B,C,D)$. The least significant bit should be subscripted with 0. In case of ambiguity or if the opposite arrangement is necessary, use a superscript mark to identify the MSB and LSB: $(x_0^{\text{MSB}},x_1,x_2,x_3^{\text{LSB}})$</li>
 </ul>
-      <h3 id="references">
-        
-        
-          <a href="#references" class="anchor-heading" aria-labelledby="references"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> References
-        
-        
-      </h3>
+<h3 id="references">
+  
+  
+    <a href="#references" class="anchor-heading" aria-labelledby="references"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> References
+  
+  
+</h3>
     
 
 <p>Information obtained from other sources should be properly cited and referenced. Check the <a href="#templates-and-examples">Templates and examples</a> section for examples.</p>
 
 <p>Currently, references are formatted according to the <code class="language-plaintext highlighter-rouge">ieee-with-url</code> style defined <a href="https://github.com/inukshuk/citeproc-ruby">CiteProc-Ruby</a>.</p>
 <hr>
-      <h2 id="templates-and-examples">
-        
-        
-          <a href="#templates-and-examples" class="anchor-heading" aria-labelledby="templates-and-examples"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Templates and examples
-        
-        
-      </h2>
+<h2 id="templates-and-examples">
+  
+  
+    <a href="#templates-and-examples" class="anchor-heading" aria-labelledby="templates-and-examples"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Templates and examples
+  
+  
+</h2>
     
 
 <p>To help you with getting started with writing your contribution, please use the following templates and examples, accordingly:</p>
@@ -566,13 +662,13 @@
 </ul>
 
 <p>The structure of the book, as well as the navigation menu is handled by Jekyll’s Just-the-docs plugin. A two-level structure has been chosen. The top-level is for chapters and the second level is for sections in a chapter</p>
-      <h3 id="new-chapter-template">
-        
-        
-          <a href="#new-chapter-template" class="anchor-heading" aria-labelledby="new-chapter-template"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> New chapter template
-        
-        
-      </h3>
+<h3 id="new-chapter-template">
+  
+  
+    <a href="#new-chapter-template" class="anchor-heading" aria-labelledby="new-chapter-template"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> New chapter template
+  
+  
+</h3>
     
 
 <p>Each chapter should be a directory under the <code class="language-plaintext highlighter-rouge">docs</code> directory. The <code class="language-plaintext highlighter-rouge">index.md</code> in the chapter directory is used for the Chapter text and table of contents.</p>
@@ -583,8 +679,8 @@
 <span class="na">layout</span><span class="pi">:</span> <span class="s">circuitverse</span>
 <span class="na">title</span><span class="pi">:</span> <span class="s">Chapter title</span>
 <span class="na">nav_order</span><span class="pi">:</span> <span class="m">10</span>
-<span class="na">has_children</span><span class="pi">:</span> <span class="no">true</span>
-<span class="na">has_toc</span><span class="pi">:</span> <span class="no">false</span>
+<span class="na">has_children</span><span class="pi">:</span> <span class="kc">true</span>
+<span class="na">has_toc</span><span class="pi">:</span> <span class="kc">false</span>
 <span class="nn">---</span>
 
 <span class="gh"># Long chapter title</span>
@@ -603,13 +699,13 @@ Introductory chapter text
 <p>The <code class="language-plaintext highlighter-rouge">title</code> and <code class="language-plaintext highlighter-rouge">nav_order</code> elements in the front matter should be filled-in accordingly. The other elements in the front matter block should be left as in the template above.</p>
 
 <p>After the “Long” chapter title an introductory text for the chapter can be added. It is followed by the Table of contents’ title and the include directive which create a list of links to the sections of the chapter according to their level and navigation order.</p>
-      <h3 id="new-section-template">
-        
-        
-          <a href="#new-section-template" class="anchor-heading" aria-labelledby="new-section-template"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> New section template
-        
-        
-      </h3>
+<h3 id="new-section-template">
+  
+  
+    <a href="#new-section-template" class="anchor-heading" aria-labelledby="new-section-template"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> New section template
+  
+  
+</h3>
     
 
 <p>Files for sections within a chapter must be placed in the chapter’s directory. Currently, the contents of the book are organised in three levels of difficulty:</p>
@@ -628,7 +724,7 @@ Introductory chapter text
 <span class="na">nav_order</span><span class="pi">:</span> <span class="s">l0s000</span>
 <span class="na">cvib_level</span><span class="pi">:</span> <span class="s">advanced</span>
 <span class="na">parent</span><span class="pi">:</span> <span class="s">Parent Chapter</span>
-<span class="na">has_children</span><span class="pi">:</span> <span class="no">false</span>
+<span class="na">has_children</span><span class="pi">:</span> <span class="kc">false</span>
 <span class="nn">---</span>
 
 <span class="gh"># Long section title</span>
@@ -658,13 +754,13 @@ Text
 <p>After the front matter block comes the section’s title followed by the table of contents title and code to generate it automatically.</p>
 
 <p>After that, parts within the section can be added.</p>
-      <h3 id="equations-examples">
-        
-        
-          <a href="#equations-examples" class="anchor-heading" aria-labelledby="equations-examples"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Equations examples
-        
-        
-      </h3>
+<h3 id="equations-examples">
+  
+  
+    <a href="#equations-examples" class="anchor-heading" aria-labelledby="equations-examples"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Equations examples
+  
+  
+</h3>
     
 
 <p>Equations are processed using MathJax provided by the <a href="https://github.com/jeffreytse/jekyll-spaceship#2-mathjax-usage">jekyll-spaceship</a> plugin.</p>
@@ -700,19 +796,19 @@ Text
     <p>Manually numbered equations</p>
 
     <div class="language-latex highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code><span class="p">\[</span><span class="nb"> F</span><span class="o">(</span><span class="nb">A,B,C</span><span class="o">)</span><span class="nb"> </span><span class="o">=</span><span class="nb"> A </span><span class="o">+</span><span class="nb"> B </span><span class="nv">\cdot</span><span class="nb"> C </span><span class="nv">\tag</span><span class="p">{</span><span class="m">1</span><span class="p">}\]</span>
+<div class="highlight"><pre class="highlight"><code><span class="k">\\</span><span class="na">[ F(A,B,C) = A + B \cdot C \tag{1}\\]</span>
 </code></pre></div>    </div>
 
     <p>\[ F(A,B,C) = A + B \cdot C \tag{1}\]</p>
   </li>
 </ol>
-      <h3 id="figure-examples">
-        
-        
-          <a href="#figure-examples" class="anchor-heading" aria-labelledby="figure-examples"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Figure examples
-        
-        
-      </h3>
+<h3 id="figure-examples">
+  
+  
+    <a href="#figure-examples" class="anchor-heading" aria-labelledby="figure-examples"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Figure examples
+  
+  
+</h3>
     
 
 <p>Neither Jekyll nor Markdown provide facilities to add captions to images. Therefore, instead of using direct inclusion of images in MD syntax, the Jekyll include mechanism is used to generate properly captioned figures in the HTML rendering. To use it, include a figure like this:</p>
@@ -735,20 +831,20 @@ Text
   <img src="/assets/images/XnorGate.svg" alt="XNOR Gate">
   <figcaption>XNOR Gate</figcaption>
 </figure>
-      <h3 id="table-examples">
-        
-        
-          <a href="#table-examples" class="anchor-heading" aria-labelledby="table-examples"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Table examples
-        
-        
-      </h3>
+<h3 id="table-examples">
+  
+  
+    <a href="#table-examples" class="anchor-heading" aria-labelledby="table-examples"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Table examples
+  
+  
+</h3>
     
 
 <p>Complex tables can be handled by the <a href="https://github.com/jeffreytse/jekyll-spaceship#1-table-usage">jekyll-spaceship</a> plugin. However, there is no support for table captions. As a workaround, the Table caption can be included in the first row and styled with the table caption CSS <code class="language-plaintext highlighter-rouge">tblcap</code>.</p>
 
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|: Table: Sample data     {: .tblcap}  :|||
 | col 1       | col 2       | col 3       |
-|\:-----------\:|:------------|------------:|
+|:-----------:|:------------|------------:|
 | row1 col2   | row1 col2   | row1 col3   |
 | row2 col1   | row2 col2   | row2 col3   |
 </code></pre></div></div>
@@ -758,7 +854,7 @@ Text
 <div class="table-wrapper"><table>
   <thead>
     <tr>
-      <th style="text-align: center" colspan="3" class="tblcap">Table: Sample data</th>
+      <th style="text-align: center" colspan="3" class="tblcap">Table: Sample data     </th>
       
       
     </tr>
@@ -781,13 +877,13 @@ Text
     </tr>
   </tbody>
 </table></div>
-      <h3 id="bibliography-example">
-        
-        
-          <a href="#bibliography-example" class="anchor-heading" aria-labelledby="bibliography-example"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Bibliography example
-        
-        
-      </h3>
+<h3 id="bibliography-example">
+  
+  
+    <a href="#bibliography-example" class="anchor-heading" aria-labelledby="bibliography-example"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Bibliography example
+  
+  
+</h3>
     
 
 <p>Bibliographic references are processed by the <code class="language-plaintext highlighter-rouge">jekyll-scholar</code> plugin. It uses BibTeX files as the source for the references. To use it, the following must be done:</p>
@@ -823,34 +919,34 @@ Text
 
 <p>Check the <a href="https://github.com/inukshuk/jekyll-scholar">plugin page</a> for more complex uses.</p>
 <hr>
-      <h2 id="code-of-conduct-interacting-with-the-community--etiquette">
-        
-        
-          <a href="#code-of-conduct-interacting-with-the-community--etiquette" class="anchor-heading" aria-labelledby="code-of-conduct-interacting-with-the-community--etiquette"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Code of conduct, interacting with the community / etiquette
-        
-        
-      </h2>
+<h2 id="code-of-conduct-interacting-with-the-community--etiquette">
+  
+  
+    <a href="#code-of-conduct-interacting-with-the-community--etiquette" class="anchor-heading" aria-labelledby="code-of-conduct-interacting-with-the-community--etiquette"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Code of conduct, interacting with the community / etiquette
+  
+  
+</h2>
     
 
 <p>Refer to the Contributor Covenant Code of Conduct</p>
 <hr>
-      <h2 id="tools">
-        
-        
-          <a href="#tools" class="anchor-heading" aria-labelledby="tools"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Tools
-        
-        
-      </h2>
+<h2 id="tools">
+  
+  
+    <a href="#tools" class="anchor-heading" aria-labelledby="tools"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Tools
+  
+  
+</h2>
     
 
 <p>The following tools will be useful to work in your contribution.</p>
-      <h3 id="git">
-        
-        
-          <a href="#git" class="anchor-heading" aria-labelledby="git"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Git
-        
-        
-      </h3>
+<h3 id="git">
+  
+  
+    <a href="#git" class="anchor-heading" aria-labelledby="git"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Git
+  
+  
+</h3>
     
 
 <p>The CircuitVerse Interactive Book’s sources are hosted in a GitHub repository. Besides the web interface provided by GitHub, other tools to manipulate git repositories can be used:</p>
@@ -858,13 +954,13 @@ Text
 <ul>
   <li><a href="https://git-scm.com/">Git</a></li>
 </ul>
-      <h3 id="jekyll">
-        
-        
-          <a href="#jekyll" class="anchor-heading" aria-labelledby="jekyll"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Jekyll
-        
-        
-      </h3>
+<h3 id="jekyll">
+  
+  
+    <a href="#jekyll" class="anchor-heading" aria-labelledby="jekyll"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Jekyll
+  
+  
+</h3>
     
 
 <p>The Interactive Book is rendered using the Jekyll Static Site Generator (SSG). The GitHub repository is able to create a live version of the book using the continuous integration (CI) / continuous deployment (CD) workflows.</p>
@@ -904,39 +1000,41 @@ Text
   </li>
 </ol>
 
+          
+
+          
+        </main>
         
 
-        
+  <hr>
+  <footer>
+    
 
-        
-        
-          <hr>
-          <footer>
-            
+    <p class="text-small text-grey-dk-100 mb-0">Copyright © 2023 Contributors to CircuitVerse. Distributed under a [CC-by-sa] license.</p>
 
-            <p class="text-small text-grey-dk-100 mb-0">Copyright © 2023 Contributors to CircuitVerse. Distributed under a [CC-by-sa] license.</p>
-
-            
-              <div class="d-flex mt-2">
-                
-                
-                  <p class="text-small text-grey-dk-000 mb-0">
-                    <a href="https://github.com/CircuitVerse/Interactive-Book/tree/master/contributing_guidelines.md" id="edit-this-page">Edit this page on GitHub.</a>
-                  </p>
-                
-              </div>
-            
-          </footer>
+    
+      <div class="d-flex mt-2">
         
+        
+          <p class="text-small text-grey-dk-000 mb-0">
+            <a href="https://github.com/CircuitVerse/Interactive-Book/tree/master/contributing_guidelines.md" id="edit-this-page">Edit this page on GitHub.</a>
+          </p>
+        
+      </div>
+    
+  </footer>
+
 
       </div>
     </div>
-
     
       
 
-      <div class="search-overlay"></div>
+<div class="search-overlay"></div>
+
     
   </div>
+
+  
 </body>
 </html>

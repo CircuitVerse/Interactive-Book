@@ -5,34 +5,67 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  
-
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-
   <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
 
+  <link rel="stylesheet" href="/assets/css/just-the-docs-head-nav.css" id="jtd-head-nav-stylesheet">
+
+  <style id="jtd-nav-activation">
   
+
+.site-nav > ul.nav-list:first-child > li > a,
+.site-nav > ul.nav-list:first-child > li > ul > li:not(:nth-child(3)) > a,
+.site-nav > ul.nav-list:first-child > li > ul > li > ul > li > a {
+  background-image: none;
+}
+
+.site-nav > ul.nav-list:not(:first-child) a,
+.site-nav li.external a {
+  background-image: none;
+}
+
+.site-nav > ul.nav-list:first-child > li:nth-child(5) > ul > li:nth-child(3) > a {
+  font-weight: 600;
+  text-decoration: none;
+}.site-nav > ul.nav-list:first-child > li:nth-child(5) > button svg,
+.site-nav > ul.nav-list:first-child > li:nth-child(5) > ul > li:nth-child(3) > button svg {
+  transform: rotate(-90deg);
+}.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(5) > ul.nav-list,
+.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(5) > ul.nav-list > li.nav-list-item:nth-child(3) > ul.nav-list {
+  display: block;
+}
+  </style>
+
+  
+    
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112678513-3"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'UA-112678513-3');
+      
+        gtag('config', 'UA-112678513-3');
+      
     </script>
-
   
 
   
-    <script type="text/javascript" src="/assets/js/vendor/lunr.min.js"></script>
+    <script src="/assets/js/vendor/lunr.min.js"></script>
   
-  <script type="text/javascript" src="/assets/js/just-the-docs.js"></script>
+
+  <script src="/assets/js/just-the-docs.js"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Begin Jekyll SEO tag v2.7.1 -->
+  
+
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Canonical functions | CircuitVerse</title>
-<meta name="generator" content="Jekyll v3.9.0">
+<meta name="generator" content="Jekyll v4.3.3">
 <meta property="og:title" content="Canonical functions">
 <meta property="og:locale" content="en_US">
 <meta name="description" content="A Book to learn Digital Logic Design.">
@@ -40,10 +73,11 @@
 <link rel="canonical" href="https://learn.circuitverse.org/docs/logic-design/canonical.html">
 <meta property="og:url" content="https://learn.circuitverse.org/docs/logic-design/canonical.html">
 <meta property="og:site_name" content="CircuitVerse">
+<meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
 <meta property="twitter:title" content="Canonical functions">
 <script type="application/ld+json">
-{"description":"A Book to learn Digital Logic Design.","@type":"WebPage","headline":"Canonical functions","url":"https://learn.circuitverse.org/docs/logic-design/canonical.html","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"A Book to learn Digital Logic Design.","headline":"Canonical functions","url":"https://learn.circuitverse.org/docs/logic-design/canonical.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -57,194 +91,256 @@
 </head>
 
 <body>
-  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-    <symbol id="svg-link" viewbox="0 0 24 24">
-      <title>Link</title>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
-        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
-      </svg>
-    </symbol>
-    <symbol id="svg-search" viewbox="0 0 24 24">
-      <title>Search</title>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
-        <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-      </svg>
-    </symbol>
-    <symbol id="svg-menu" viewbox="0 0 24 24">
-      <title>Menu</title>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
-        <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
-      </svg>
-    </symbol>
-    <symbol id="svg-arrow-right" viewbox="0 0 24 24">
-      <title>Expand</title>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
-        <polyline points="9 18 15 12 9 6"></polyline>
-      </svg>
-    </symbol>
-    <symbol id="svg-doc" viewbox="0 0 24 24">
-      <title>Document</title>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
-        <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
-      </svg>
-    </symbol>
+  <a class="skip-to-main" href="#main-content">Skip to main content</a>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="svg-link" viewbox="0 0 24 24">
+  <title>Link</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
   </svg>
+</symbol>
+
+  <symbol id="svg-menu" viewbox="0 0 24 24">
+  <title>Menu</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+    <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+  </svg>
+</symbol>
+
+  <symbol id="svg-arrow-right" viewbox="0 0 24 24">
+  <title>Expand</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+    <polyline points="9 18 15 12 9 6"></polyline>
+  </svg>
+</symbol>
+
+  <!-- Feather. MIT License: https://github.com/feathericons/feather/blob/master/LICENSE -->
+<symbol id="svg-external-link" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+  <title id="svg-external-link-title">(external link)</title>
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+</symbol>
+
+  
+    <symbol id="svg-doc" viewbox="0 0 24 24">
+  <title>Document</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+  </svg>
+</symbol>
+
+    <symbol id="svg-search" viewbox="0 0 24 24">
+  <title>Search</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+    <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+  </svg>
+</symbol>
+
+  
+  
+    <!-- Bootstrap Icons. MIT License: https://github.com/twbs/icons/blob/main/LICENSE.md -->
+<symbol id="svg-copy" viewbox="0 0 16 16">
+  <title>Copy</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewbox="0 0 16 16">
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"></path>
+    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"></path>
+  </svg>
+</symbol>
+<symbol id="svg-copied" viewbox="0 0 16 16">
+  <title>Copied</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check-fill" viewbox="0 0 16 16">
+    <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"></path>
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708Z"></path>
+  </svg>
+</symbol>
+
+  
+</svg>
 
   <div class="side-bar">
-    <div class="site-header">
-      <a href="https://learn.circuitverse.org/" class="site-title lh-tight">
+  <div class="site-header" role="banner">
+    <a href="/" class="site-title lh-tight">
   CircuitVerse
 
 </a>
-      <a href="#" id="menu-button" class="site-button">
-        <svg viewbox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
-      </a>
-    </div>
-    <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
-      
-        <ul class="nav-list">
-<li class="nav-list-item"><a href="https://learn.circuitverse.org/" class="nav-list-link">Home</a></li>
+    <button id="menu-button" class="site-button btn-reset" aria-label="Toggle menu" aria-pressed="false">
+      <svg viewbox="0 0 24 24" class="icon" aria-hidden="true"><use xlink:href="#svg-menu"></use></svg>
+    </button>
+  </div>
+
+  <nav aria-label="Main" id="site-nav" class="site-nav">
+  
+  
+    <ul class="nav-list">
+<li class="nav-list-item"><a href="/" class="nav-list-link">Home</a></li>
 <li class="nav-list-item">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/binary-representation/" class="nav-list-link">Binary representation</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-representation/binary-numbers.html" class="nav-list-link">Binary numbers</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-representation/negative-quantities.html" class="nav-list-link">Negative quantities</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-representation/number-bases.html" class="nav-list-link">Number bases</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-representation/encoding-information.html" class="nav-list-link">Encoding information</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-representation/discrete-quantities.html" class="nav-list-link">Discrete quantities</a></li>
-</ul>
-</li>
-<li class="nav-list-item">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/binary-algebra/" class="nav-list-link">Binary algebra</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-algebra/addition.html" class="nav-list-link">Addition</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-algebra/subtraction.html" class="nav-list-link">Subtraction</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-algebra/multiplication.html" class="nav-list-link">Multiplication</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-algebra/division.html" class="nav-list-link">Division</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-algebra/boolean-algebra.html" class="nav-list-link">Boolean algebra</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-algebra/boolean-functions.html" class="nav-list-link">Boolean functions</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-algebra/shannon.html" class="nav-list-link">Shannon decomposition</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/binary-algebra/ieee-std-754.html" class="nav-list-link">IEEE Std 754</a></li>
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Binary representation category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/binary-representation/" class="nav-list-link">Binary representation</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/binary-representation/binary-numbers.html" class="nav-list-link">Binary numbers</a></li>
+<li class="nav-list-item"><a href="/docs/binary-representation/negative-quantities.html" class="nav-list-link">Negative quantities</a></li>
+<li class="nav-list-item"><a href="/docs/binary-representation/number-bases.html" class="nav-list-link">Number bases</a></li>
+<li class="nav-list-item"><a href="/docs/binary-representation/encoding-information.html" class="nav-list-link">Encoding information</a></li>
+<li class="nav-list-item"><a href="/docs/binary-representation/discrete-quantities.html" class="nav-list-link">Discrete quantities</a></li>
 </ul>
 </li>
 <li class="nav-list-item">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/comb-ssi/" class="nav-list-link">Combinational SSI</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/comb-ssi/logic-gates.html" class="nav-list-link">Logic gates</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/comb-ssi/logic-families.html" class="nav-list-link">Logic families</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/comb-ssi/universal-gates.html" class="nav-list-link">Universal gates</a></li>
-</ul>
-</li>
-<li class="nav-list-item active">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/logic-design/" class="nav-list-link">Logic Design</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/logic-design/functional-description.html" class="nav-list-link">Functional description</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/logic-design/implementation.html" class="nav-list-link">Implementation</a></li>
-<li class="nav-list-item  active"><a href="https://learn.circuitverse.org/docs/logic-design/canonical.html" class="nav-list-link active">Canonical functions</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/logic-design/kmaps.html" class="nav-list-link">K-Maps</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/logic-design/mev.html" class="nav-list-link">Map-entered variables</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/logic-design/qmc.html" class="nav-list-link">Quine McCluskey</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/logic-design/binary-cubes.html" class="nav-list-link">Binary cubes</a></li>
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Binary algebra category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/binary-algebra/" class="nav-list-link">Binary algebra</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/binary-algebra/addition.html" class="nav-list-link">Addition</a></li>
+<li class="nav-list-item"><a href="/docs/binary-algebra/subtraction.html" class="nav-list-link">Subtraction</a></li>
+<li class="nav-list-item"><a href="/docs/binary-algebra/multiplication.html" class="nav-list-link">Multiplication</a></li>
+<li class="nav-list-item"><a href="/docs/binary-algebra/division.html" class="nav-list-link">Division</a></li>
+<li class="nav-list-item"><a href="/docs/binary-algebra/boolean-algebra.html" class="nav-list-link">Boolean algebra</a></li>
+<li class="nav-list-item"><a href="/docs/binary-algebra/boolean-functions.html" class="nav-list-link">Boolean functions</a></li>
+<li class="nav-list-item"><a href="/docs/binary-algebra/shannon.html" class="nav-list-link">Shannon decomposition</a></li>
+<li class="nav-list-item"><a href="/docs/binary-algebra/ieee-std-754.html" class="nav-list-link">IEEE Std 754</a></li>
 </ul>
 </li>
 <li class="nav-list-item">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/comb-msi/" class="nav-list-link">Combinational MSI</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/comb-msi/mux-demux.html" class="nav-list-link">MUX/DEMUX</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/comb-msi/encoders-decoders.html" class="nav-list-link">Encoders/Decoders</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/comb-msi/adders.html" class="nav-list-link">Adders</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/comb-msi/mux-functions.html" class="nav-list-link">MUX-based functions</a></li>
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Combinational SSI category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/comb-ssi/" class="nav-list-link">Combinational SSI</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/comb-ssi/logic-gates.html" class="nav-list-link">Logic gates</a></li>
+<li class="nav-list-item"><a href="/docs/comb-ssi/logic-families.html" class="nav-list-link">Logic families</a></li>
+<li class="nav-list-item"><a href="/docs/comb-ssi/universal-gates.html" class="nav-list-link">Universal gates</a></li>
 </ul>
 </li>
 <li class="nav-list-item">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/comb-lsi/" class="nav-list-link">Combinational LSI</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/comb-lsi/rom.html" class="nav-list-link">ROM</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/comb-lsi/alu.html" class="nav-list-link">ALU</a></li>
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Logic Design category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/logic-design/" class="nav-list-link">Logic Design</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/logic-design/functional-description.html" class="nav-list-link">Functional description</a></li>
+<li class="nav-list-item"><a href="/docs/logic-design/implementation.html" class="nav-list-link">Implementation</a></li>
+<li class="nav-list-item"><a href="/docs/logic-design/canonical.html" class="nav-list-link">Canonical functions</a></li>
+<li class="nav-list-item"><a href="/docs/logic-design/kmaps.html" class="nav-list-link">K-Maps</a></li>
+<li class="nav-list-item"><a href="/docs/logic-design/mev.html" class="nav-list-link">Map-entered variables</a></li>
+<li class="nav-list-item"><a href="/docs/logic-design/qmc.html" class="nav-list-link">Quine McCluskey</a></li>
+<li class="nav-list-item"><a href="/docs/logic-design/binary-cubes.html" class="nav-list-link">Binary cubes</a></li>
 </ul>
 </li>
 <li class="nav-list-item">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/seq-ssi/" class="nav-list-link">Sequential SSI</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-ssi/latches.html" class="nav-list-link">Latches</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-ssi/flip-flops.html" class="nav-list-link">Flip-flops</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-ssi/clock-signals.html" class="nav-list-link">Clock signals</a></li>
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Combinational MSI category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/comb-msi/" class="nav-list-link">Combinational MSI</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/comb-msi/mux-demux.html" class="nav-list-link">MUX/DEMUX</a></li>
+<li class="nav-list-item"><a href="/docs/comb-msi/encoders-decoders.html" class="nav-list-link">Encoders/Decoders</a></li>
+<li class="nav-list-item"><a href="/docs/comb-msi/adders.html" class="nav-list-link">Adders</a></li>
+<li class="nav-list-item"><a href="/docs/comb-msi/mux-functions.html" class="nav-list-link">MUX-based functions</a></li>
 </ul>
 </li>
 <li class="nav-list-item">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/seq-design/" class="nav-list-link">Sequential Design</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-design/fsm.html" class="nav-list-link">FSM</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-design/seq-synth.html" class="nav-list-link">Sequential synthesis</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-design/race-conditions.html" class="nav-list-link">Race conditions</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-design/flow-diagrams.html" class="nav-list-link">Flowchart diagrams</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-design/mds.html" class="nav-list-link">MDS Diagrams</a></li>
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Combinational LSI category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/comb-lsi/" class="nav-list-link">Combinational LSI</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/comb-lsi/rom.html" class="nav-list-link">ROM</a></li>
+<li class="nav-list-item"><a href="/docs/comb-lsi/alu.html" class="nav-list-link">ALU</a></li>
 </ul>
 </li>
 <li class="nav-list-item">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/seq-msi/" class="nav-list-link">Sequential MSI</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-msi/registers.html" class="nav-list-link">Registers</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-msi/counters.html" class="nav-list-link">Counters</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-msi/msi-seq-design.html" class="nav-list-link">MSI based design</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-msi/mult-div.html" class="nav-list-link">Multipliers/Dividers</a></li>
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Sequential SSI category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/seq-ssi/" class="nav-list-link">Sequential SSI</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/seq-ssi/latches.html" class="nav-list-link">Latches</a></li>
+<li class="nav-list-item"><a href="/docs/seq-ssi/flip-flops.html" class="nav-list-link">Flip-flops</a></li>
+<li class="nav-list-item"><a href="/docs/seq-ssi/clock-signals.html" class="nav-list-link">Clock signals</a></li>
 </ul>
 </li>
 <li class="nav-list-item">
-<a href="#" class="nav-list-expander"><svg viewbox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://learn.circuitverse.org/docs/seq-lsi/" class="nav-list-link">Sequential LSI</a><ul class="nav-list ">
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-lsi/rom-microcontrollers.html" class="nav-list-link">ROM-based µcontrollers</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-lsi/fpga.html" class="nav-list-link">FPGA</a></li>
-<li class="nav-list-item "><a href="https://learn.circuitverse.org/docs/seq-lsi/microprocessors.html" class="nav-list-link">Microprocessors</a></li>
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Sequential Design category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/seq-design/" class="nav-list-link">Sequential Design</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/seq-design/fsm.html" class="nav-list-link">FSM</a></li>
+<li class="nav-list-item"><a href="/docs/seq-design/seq-synth.html" class="nav-list-link">Sequential synthesis</a></li>
+<li class="nav-list-item"><a href="/docs/seq-design/race-conditions.html" class="nav-list-link">Race conditions</a></li>
+<li class="nav-list-item"><a href="/docs/seq-design/flow-diagrams.html" class="nav-list-link">Flowchart diagrams</a></li>
+<li class="nav-list-item"><a href="/docs/seq-design/mds.html" class="nav-list-link">MDS Diagrams</a></li>
 </ul>
 </li>
-<li class="nav-list-item"><a href="https://learn.circuitverse.org/contributing_guidelines.html" class="nav-list-link">Guidelines</a></li>
-<li class="nav-list-item"><a href="https://learn.circuitverse.org/about.html" class="nav-list-link">About</a></li>
+<li class="nav-list-item">
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Sequential MSI category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/seq-msi/" class="nav-list-link">Sequential MSI</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/seq-msi/registers.html" class="nav-list-link">Registers</a></li>
+<li class="nav-list-item"><a href="/docs/seq-msi/counters.html" class="nav-list-link">Counters</a></li>
+<li class="nav-list-item"><a href="/docs/seq-msi/msi-seq-design.html" class="nav-list-link">MSI based design</a></li>
+<li class="nav-list-item"><a href="/docs/seq-msi/mult-div.html" class="nav-list-link">Multipliers/Dividers</a></li>
+</ul>
+</li>
+<li class="nav-list-item">
+<button class="nav-list-expander btn-reset" aria-label="toggle items in Sequential LSI category" aria-pressed="false">
+      <svg viewbox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/docs/seq-lsi/" class="nav-list-link">Sequential LSI</a><ul class="nav-list">
+<li class="nav-list-item"><a href="/docs/seq-lsi/rom-microcontrollers.html" class="nav-list-link">ROM-based µcontrollers</a></li>
+<li class="nav-list-item"><a href="/docs/seq-lsi/fpga.html" class="nav-list-link">FPGA</a></li>
+<li class="nav-list-item"><a href="/docs/seq-lsi/microprocessors.html" class="nav-list-link">Microprocessors</a></li>
+</ul>
+</li>
+<li class="nav-list-item"><a href="/contributing_guidelines.html" class="nav-list-link">Guidelines</a></li>
+<li class="nav-list-item"><a href="/about.html" class="nav-list-link">About</a></li>
 </ul>
 
-      
-    </nav>
+  
+</nav>
+
+
+  
+  
     <footer class="site-footer">
-      This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
+      This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
     </footer>
-  </div>
+  
+</div>
+
   <div class="main" id="top">
     <div id="main-header" class="main-header">
-      
-        <div class="search">
-          <div class="search-input-wrap">
-            <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search CircuitVerse" aria-label="Search CircuitVerse" autocomplete="off">
-            <label for="search-input" class="search-label"><svg viewbox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
-          </div>
-          <div id="search-results" class="search-results"></div>
-        </div>
-      
-      
-      
-        <nav aria-label="Auxiliary" class="aux-nav">
-          <ul class="aux-nav-list">
-            
-              <li class="aux-nav-list-item">
-                <a href="#" class="site-button">
-                  Dark mode
-                </a>
-              </li>
-            
-              <li class="aux-nav-list-item">
-                <a href="//github.com/CircuitVerse" class="site-button">
-                  CircuitVerse on GitHub
-                </a>
-              </li>
-            
-          </ul>
-        </nav>
-      
-    </div>
-    <div id="main-content-wrap" class="main-content-wrap">
-      
-        <nav aria-label="Breadcrumb" class="breadcrumb-nav">
-            <ol class="breadcrumb-nav-list">
-              
-                <li class="breadcrumb-nav-list-item"><a href="https://learn.circuitverse.org/docs/logic-design/">Logic Design</a></li>
-              
-              <li class="breadcrumb-nav-list-item"><span>Canonical functions</span></li>
-            </ol>
-          </nav>
-        
-      
-      <div id="main-content" class="main-content" role="main">
-        
-          <div id="progress-bar"></div>
+  
+    
+
+<div class="search" role="search">
+  <div class="search-input-wrap">
+    <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search CircuitVerse" aria-label="Search CircuitVerse" autocomplete="off">
+    <label for="search-input" class="search-label"><svg viewbox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
+  </div>
+  <div id="search-results" class="search-results"></div>
+</div>
+
+  
+  
+  
+    <nav aria-label="Auxiliary" class="aux-nav">
+  <ul class="aux-nav-list">
+    
+      <li class="aux-nav-list-item">
+        <a href="#" class="site-button">
+          Dark mode
+        </a>
+      </li>
+    
+      <li class="aux-nav-list-item">
+        <a href="//github.com/CircuitVerse" class="site-button">
+          CircuitVerse on GitHub
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
+  
+</div>
+
+    <div class="main-content-wrap">
+      <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+  <ol class="breadcrumb-nav-list">
+  
+    <li class="breadcrumb-nav-list-item"><a href="/docs/logic-design/">Logic Design</a></li>
+  <li class="breadcrumb-nav-list-item"><span>Canonical functions</span></li>
+  </ol>
+</nav>
+      <div id="main-content" class="main-content">
+        <main>
+          
+            <div id="progress-bar"></div>
 <script type="text/javascript">
 
 	// [Critical Content]
@@ -317,21 +413,21 @@
         </div>
     </nav>
 </div>
-      <h1 class="no_toc" id="canonical-functions">
-        
-        
-          <a href="#canonical-functions" class="anchor-heading" aria-labelledby="canonical-functions"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Canonical functions
-        
-        
-      </h1>
+<h1 class="no_toc" id="canonical-functions">
+  
+  
+    <a href="#canonical-functions" class="anchor-heading" aria-labelledby="canonical-functions"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Canonical functions
+  
+  
+</h1>
     
-      <h2 class="no_toc text-delta" id="table-of-contents">
-        
-        
-          <a href="#table-of-contents" class="anchor-heading" aria-labelledby="table-of-contents"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Table of contents
-        
-        
-      </h2>
+<h2 class="no_toc text-delta" id="table-of-contents">
+  
+  
+    <a href="#table-of-contents" class="anchor-heading" aria-labelledby="table-of-contents"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Table of contents
+  
+  
+</h2>
     
 
 <ol id="markdown-toc">
@@ -358,13 +454,13 @@
   <li><a href="#try-the-interactive-truth-table-generator" id="markdown-toc-try-the-interactive-truth-table-generator">Try the interactive truth table generator</a></li>
   <li><a href="#methods-to-simplify-the-boolean-function" id="markdown-toc-methods-to-simplify-the-boolean-function">Methods to simplify the boolean function</a></li>
 </ol>
-      <h2 id="introduction">
-        
-        
-          <a href="#introduction" class="anchor-heading" aria-labelledby="introduction"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Introduction
-        
-        
-      </h2>
+<h2 id="introduction">
+  
+  
+    <a href="#introduction" class="anchor-heading" aria-labelledby="introduction"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Introduction
+  
+  
+</h2>
     
 
 <p>Boolean Functions are comprised of two components i.e., Variables and Logic operations(AND, OR, NOT…etc). Any equation with the mixture of these two components forms a Boolean function. The value of variables may or may not be pre-defined. The shorthand notation for a boolean function is that it is represented with a capital F followed by parenthesis comprising of all variables of that equation separated by comma(‘,’). You can represent any boolean expression in form of a Truth Table. Follow up to know How?
@@ -378,13 +474,13 @@ Consider the following example:</p>
 <span class="err">					</span>   <span class="s">\</span>
 <span class="err">					</span>   <span class="err">	</span><span class="s">Boolean Expression</span>
 </code></pre></div></div>
-      <h2 id="truth-table-formation">
-        
-        
-          <a href="#truth-table-formation" class="anchor-heading" aria-labelledby="truth-table-formation"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Truth table formation
-        
-        
-      </h2>
+<h2 id="truth-table-formation">
+  
+  
+    <a href="#truth-table-formation" class="anchor-heading" aria-labelledby="truth-table-formation"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Truth table formation
+  
+  
+</h2>
     
 
 <p>Truth Table is formed by evaluating the Boolean expression for each and every truth value of a variable. Now truth values of a variable are either ‘true’ or ‘false’. The main point is to evaluate the value of Boolean expression for each and every combination of the Truth values of 
@@ -439,13 +535,13 @@ The above implications bring us to a conclusion that there can be 2^(number of v
 <span class="na">Example</span><span class="pi">:</span>
 <span class="s">F(A,B,C) = A + B.C</span>
 </code></pre></div></div>
-      <h2 id="truth-table-formation-1">
-        
-        
-          <a href="#truth-table-formation-1" class="anchor-heading" aria-labelledby="truth-table-formation-1"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Truth table formation
-        
-        
-      </h2>
+<h2 id="truth-table-formation-1">
+  
+  
+    <a href="#truth-table-formation-1" class="anchor-heading" aria-labelledby="truth-table-formation-1"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Truth table formation
+  
+  
+</h2>
     
 <p>A truth table shows a table having all the combinations of the inputs and their corresponding results.</p>
 
@@ -511,13 +607,13 @@ The above implications bring us to a conclusion that there can be 2^(number of v
     </tr>
   </tbody>
 </table></div>
-      <h2 id="sum-of-product-expressions-sop">
-        
-        
-          <a href="#sum-of-product-expressions-sop" class="anchor-heading" aria-labelledby="sum-of-product-expressions-sop"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Sum of product expressions (SOP)
-        
-        
-      </h2>
+<h2 id="sum-of-product-expressions-sop">
+  
+  
+    <a href="#sum-of-product-expressions-sop" class="anchor-heading" aria-labelledby="sum-of-product-expressions-sop"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Sum of product expressions (SOP)
+  
+  
+</h2>
     
 <p>Let’s take a look at an more complex expression <code class="language-plaintext highlighter-rouge">F(A, B, C, D) = AB'C + BD + CD + D</code>. Let’s generate the truth table:</p>
 
@@ -650,13 +746,13 @@ The above implications bring us to a conclusion that there can be 2^(number of v
 <p>In this example an interesting observation is that, you are doing a sum of product evaluation, that is, <code class="language-plaintext highlighter-rouge">AB'C + BD + CD + D</code> is a sum of products. The significance of sum of product is that when you are doing <code class="language-plaintext highlighter-rouge">+</code>, you are in fact invoking the <code class="language-plaintext highlighter-rouge">OR</code> operator.</p>
 
 <p>Moreover, the <code class="language-plaintext highlighter-rouge">OR</code> operator returns <code class="language-plaintext highlighter-rouge">true</code> so long as any one of its arguments returns <code class="language-plaintext highlighter-rouge">true</code>. Therefore, if <em>any</em> of the terms in the sum of product (SOP) expressions is <code class="language-plaintext highlighter-rouge">true</code>, then you know that the final expression is <code class="language-plaintext highlighter-rouge">true</code> for certain.</p>
-      <h2 id="product-of-sum-expressions-pos">
-        
-        
-          <a href="#product-of-sum-expressions-pos" class="anchor-heading" aria-labelledby="product-of-sum-expressions-pos"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Product of sum expressions (POS)
-        
-        
-      </h2>
+<h2 id="product-of-sum-expressions-pos">
+  
+  
+    <a href="#product-of-sum-expressions-pos" class="anchor-heading" aria-labelledby="product-of-sum-expressions-pos"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Product of sum expressions (POS)
+  
+  
+</h2>
     
 <p>Let’s take a look at another expression <code class="language-plaintext highlighter-rouge">F(A, B, C, D) = (A + B + C + D')(A + B' + C' + D)(A' + B' + C + D')</code>. Let’s generate the truth table:</p>
 
@@ -791,24 +887,24 @@ The above implications bring us to a conclusion that there can be 2^(number of v
 <p>Here the sum terms are defined by using the <strong>OR</strong> operation and the product term is defined by using <strong>AND</strong> operation. When two or more sum terms are multiplied by a Boolean <strong>OR</strong> operation, the resultant output expression will be in the form of product-of-sums form or <strong>POS</strong> form.</p>
 
 <p>The product-of-sums form is also called as <u>Conjunctive Normal Form</u> as the sum terms are <em>AND</em>ed together and Conjunction operation is logical AND. Product-of-sums form is also called as Standard POS.</p>
-      <h2 id="canonical-expressions">
-        
-        
-          <a href="#canonical-expressions" class="anchor-heading" aria-labelledby="canonical-expressions"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Canonical expressions
-        
-        
-      </h2>
+<h2 id="canonical-expressions">
+  
+  
+    <a href="#canonical-expressions" class="anchor-heading" aria-labelledby="canonical-expressions"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Canonical expressions
+  
+  
+</h2>
     
 
 <p>Before understanding Canonical Expressions, let us understand <strong>Minterms</strong> and <strong>Maxterms</strong> first.</p>
 <hr>
-      <h3 id="minterms">
-        
-        
-          <a href="#minterms" class="anchor-heading" aria-labelledby="minterms"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Minterms
-        
-        
-      </h3>
+<h3 id="minterms">
+  
+  
+    <a href="#minterms" class="anchor-heading" aria-labelledby="minterms"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Minterms
+  
+  
+</h3>
     
 
 <p>A minterm is defined as the product term of n variables, in which each of the n variables will appear once either in its complemented or un-complemented form. The min term is denoted as mi where i is in the range of 0 ≤ i &lt; 2<sup>n</sup>.</p>
@@ -846,13 +942,13 @@ Ex: <code class="language-plaintext highlighter-rouge">F’(x, y, z) = Σ(0, 1, 
 </ol>
 
 <p>In standard SOP form, the maximum possible product terms for n number of variables are given by 2<sup>n</sup>. So, for 2 variable equations, the product terms are 2<sup>2</sup> = 4. Similarly, for 3 variable equations, the product terms are 2<sup>3</sup> = 8.</p>
-      <h3 id="maxterms">
-        
-        
-          <a href="#maxterms" class="anchor-heading" aria-labelledby="maxterms"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Maxterms
-        
-        
-      </h3>
+<h3 id="maxterms">
+  
+  
+    <a href="#maxterms" class="anchor-heading" aria-labelledby="maxterms"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Maxterms
+  
+  
+</h3>
     
 
 <p>A max term is defined as the product of n variables, within the range of 0 ≤ i &lt; 2<sup>n</sup>. The max term is denoted as Mi. In max term, each variable is <strong>complemented</strong>, if its value is assigned to 1, and each variable is <strong>un-complemented</strong> if its value is assigned to 0.</p>
@@ -894,13 +990,13 @@ Ex: <code class="language-plaintext highlighter-rouge">F’(x, y, z) = Σ(0, 1, 
 <p>When the SOP form of a Boolean expression is in canonical form, then each of its product term is called <strong>minterm</strong>. So, the canonical form of sum of products function is also known as <strong>minterm canonical form</strong> or Sum-of-minterms or standard canonical SOP form.</p>
 
 <p>Similarly, when the POS form of a Boolean expression is in canonical form, then each of its sum term is called <strong>maxterm</strong>. So, the canonical form of product of sums function is also known as <strong>maxterm canonical form</strong> or Product-of sum or standard canonical POS form.</p>
-      <h2 id="conversion-of-canonical-forms">
-        
-        
-          <a href="#conversion-of-canonical-forms" class="anchor-heading" aria-labelledby="conversion-of-canonical-forms"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Conversion of canonical forms
-        
-        
-      </h2>
+<h2 id="conversion-of-canonical-forms">
+  
+  
+    <a href="#conversion-of-canonical-forms" class="anchor-heading" aria-labelledby="conversion-of-canonical-forms"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Conversion of canonical forms
+  
+  
+</h2>
     
 
 <p>You can represent the one canonical formed equation in other canonical form i.e. you can represent the SOP form of equation in POS form and POS form equation in SOP form. To convert the canonical equations, you interchange the Σ and Π symbols after listing out the index numbers of the equations, which are excluded from the original form of equation.</p>
@@ -951,21 +1047,21 @@ Ex: <code class="language-plaintext highlighter-rouge">F’(x, y, z) = Σ(0, 1, 
 <p>Writing down the new equation in the form of SOP form,</p>
 
 <p><code class="language-plaintext highlighter-rouge">F(A, B, C) = Σ(0, 1, 4, 6, 7) = (A’B'C’) + (A’B’C) + (AB’C’) + (ABC’) + (ABC)</code></p>
-      <h2 id="conversion-from-minimal-to-canonical-forms">
-        
-        
-          <a href="#conversion-from-minimal-to-canonical-forms" class="anchor-heading" aria-labelledby="conversion-from-minimal-to-canonical-forms"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Conversion from minimal to canonical forms
-        
-        
-      </h2>
+<h2 id="conversion-from-minimal-to-canonical-forms">
+  
+  
+    <a href="#conversion-from-minimal-to-canonical-forms" class="anchor-heading" aria-labelledby="conversion-from-minimal-to-canonical-forms"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Conversion from minimal to canonical forms
+  
+  
+</h2>
     
-      <h3 id="minimal-pos-to-canonical-pos">
-        
-        
-          <a href="#minimal-pos-to-canonical-pos" class="anchor-heading" aria-labelledby="minimal-pos-to-canonical-pos"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Minimal POS to canonical POS
-        
-        
-      </h3>
+<h3 id="minimal-pos-to-canonical-pos">
+  
+  
+    <a href="#minimal-pos-to-canonical-pos" class="anchor-heading" aria-labelledby="minimal-pos-to-canonical-pos"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Minimal POS to canonical POS
+  
+  
+</h3>
     
 
 <p>You can include all the variables in each product term of the POS form equation, which doesn’t have all the variables by converting into standard POS form. The normal POS form function can be converted to standard POS form by using the Boolean algebraic law, <strong>(A * A’ = 0)</strong> and by following the below steps.</p>
@@ -998,13 +1094,13 @@ Ex: <code class="language-plaintext highlighter-rouge">F’(x, y, z) = Σ(0, 1, 
 <p>The third term is already in the standard form, as it has all the variables. Now the standard POS form equation of the function is</p>
 
 <p><code class="language-plaintext highlighter-rouge">F = (A’ + B + C + D) * (A’ + B + C + D’) * (A + B’ + C + D’) * (A’ + B’ + C + D’) * (A + B’ + C’ + D)</code></p>
-      <h3 id="minimal-sop-to-canonical-sop">
-        
-        
-          <a href="#minimal-sop-to-canonical-sop" class="anchor-heading" aria-labelledby="minimal-sop-to-canonical-sop"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Minimal SOP to canonical SOP
-        
-        
-      </h3>
+<h3 id="minimal-sop-to-canonical-sop">
+  
+  
+    <a href="#minimal-sop-to-canonical-sop" class="anchor-heading" aria-labelledby="minimal-sop-to-canonical-sop"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Minimal SOP to canonical SOP
+  
+  
+</h3>
     
 
 <p>You can include all the variables in each product term of the SOP form equation, which doesn’t have all the variables by converting into standard SOP form. The normal SOP form function can be converted to standard SOP form by using the Boolean algebraic law, <strong>(A + A’ = 1)</strong> and by following the below steps.</p>
@@ -1034,13 +1130,13 @@ Convert the non standard SOP function <code class="language-plaintext highlighte
 <span class="s">= x y z + x y z’ + x y’ z + x’ y z</span>
 </code></pre></div></div>
 <p>The standard SOP form is <code class="language-plaintext highlighter-rouge">F = x y z + x y z’ + x y’ z + x’ y z</code></p>
-      <h2 id="example-algebraic-simplification">
-        
-        
-          <a href="#example-algebraic-simplification" class="anchor-heading" aria-labelledby="example-algebraic-simplification"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Example algebraic simplification
-        
-        
-      </h2>
+<h2 id="example-algebraic-simplification">
+  
+  
+    <a href="#example-algebraic-simplification" class="anchor-heading" aria-labelledby="example-algebraic-simplification"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Example algebraic simplification
+  
+  
+</h2>
     
 
 <p>Let’s simplify our expression from the previous truth table example. you can apply ordinary algebra tricks such as factoring. Remember that the <code class="language-plaintext highlighter-rouge">+</code> operator invokes the <code class="language-plaintext highlighter-rouge">OR</code> gate, and that <code class="language-plaintext highlighter-rouge">true or x</code> always returns <code class="language-plaintext highlighter-rouge">true</code> regardless of <code class="language-plaintext highlighter-rouge">x</code> (as shown in our first truth table).</p>
@@ -1051,13 +1147,13 @@ Convert the non standard SOP function <code class="language-plaintext highlighte
 </code></pre></div></div>
 
 <p>As an exercise to the reader, complete the truth table to show that they are logically equivalent.</p>
-      <h2 id="undefined-input--dont-cares">
-        
-        
-          <a href="#undefined-input--dont-cares" class="anchor-heading" aria-labelledby="undefined-input--dont-cares"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Undefined input &amp; don’t-cares
-        
-        
-      </h2>
+<h2 id="undefined-input--dont-cares">
+  
+  
+    <a href="#undefined-input--dont-cares" class="anchor-heading" aria-labelledby="undefined-input--dont-cares"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Undefined input &amp; don’t-cares
+  
+  
+</h2>
     
 
 <p>The definition of a “don’t-care” is a combination of input values that is not known, and could be either <code class="language-plaintext highlighter-rouge">0</code> or <code class="language-plaintext highlighter-rouge">1</code>. For the purposes of variable simplification, we would choose the greedy approach of picking between {<code class="language-plaintext highlighter-rouge">0</code>, <code class="language-plaintext highlighter-rouge">1</code>} such that the simplified expression has less terms.</p>
@@ -1113,25 +1209,25 @@ Convert the non standard SOP function <code class="language-plaintext highlighte
 </code></pre></div></div>
 
 <p>You can clearly see, if you set <code class="language-plaintext highlighter-rouge">F(1, 0) = 1</code>, you get a true value for any input. Therefore, for the purposes of variable simplification, you can simply let <code class="language-plaintext highlighter-rouge">F(1, 0) = 1</code> thus implying <code class="language-plaintext highlighter-rouge">F(A, B) = 1</code>.</p>
-      <h2 id="try-the-interactive-truth-table-generator">
-        
-        
-          <a href="#try-the-interactive-truth-table-generator" class="anchor-heading" aria-labelledby="try-the-interactive-truth-table-generator"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Try the interactive truth table generator
-        
-        
-      </h2>
+<h2 id="try-the-interactive-truth-table-generator">
+  
+  
+    <a href="#try-the-interactive-truth-table-generator" class="anchor-heading" aria-labelledby="try-the-interactive-truth-table-generator"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Try the interactive truth table generator
+  
+  
+</h2>
     <hr>
 
 <main id="main">
     <!-- Input -->
     <div class="align-center container">
-      <h1 class="truth-table">
-        
-        
-          Truth Table Generator
-        
-        
-      </h1>
+<h1 class="truth-table">
+  
+  
+    <a href="#try-the-interactive-truth-table-generator" class="anchor-heading" aria-labelledby="try-the-interactive-truth-table-generator"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Truth Table Generator
+  
+  
+</h1>
     
         <p class="truth-table">Enter your boolean logic expression in the following format<br>
             AND = <span class="example">AB</span> 
@@ -1238,13 +1334,13 @@ Convert the non standard SOP function <code class="language-plaintext highlighte
     }
 </style>
 <hr>
-      <h2 id="methods-to-simplify-the-boolean-function">
-        
-        
-          <a href="#methods-to-simplify-the-boolean-function" class="anchor-heading" aria-labelledby="methods-to-simplify-the-boolean-function"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Methods to simplify the boolean function
-        
-        
-      </h2>
+<h2 id="methods-to-simplify-the-boolean-function">
+  
+  
+    <a href="#methods-to-simplify-the-boolean-function" class="anchor-heading" aria-labelledby="methods-to-simplify-the-boolean-function"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Methods to simplify the boolean function
+  
+  
+</h2>
     
 
 <p>The following methods can be used to simplify the the Boolean function:</p>
@@ -1307,39 +1403,41 @@ Convert the non standard SOP function <code class="language-plaintext highlighte
     })
 </script>
 
+          
+
+          
+        </main>
         
 
-        
+  <hr>
+  <footer>
+    
 
-        
-        
-          <hr>
-          <footer>
-            
+    <p class="text-small text-grey-dk-100 mb-0">Copyright © 2023 Contributors to CircuitVerse. Distributed under a [CC-by-sa] license.</p>
 
-            <p class="text-small text-grey-dk-100 mb-0">Copyright © 2023 Contributors to CircuitVerse. Distributed under a [CC-by-sa] license.</p>
-
-            
-              <div class="d-flex mt-2">
-                
-                
-                  <p class="text-small text-grey-dk-000 mb-0">
-                    <a href="https://github.com/CircuitVerse/Interactive-Book/tree/master/docs/logic-design/canonical.md" id="edit-this-page">Edit this page on GitHub.</a>
-                  </p>
-                
-              </div>
-            
-          </footer>
+    
+      <div class="d-flex mt-2">
         
+        
+          <p class="text-small text-grey-dk-000 mb-0">
+            <a href="https://github.com/CircuitVerse/Interactive-Book/tree/master/docs/logic-design/canonical.md" id="edit-this-page">Edit this page on GitHub.</a>
+          </p>
+        
+      </div>
+    
+  </footer>
+
 
       </div>
     </div>
-
     
       
 
-      <div class="search-overlay"></div>
+<div class="search-overlay"></div>
+
     
   </div>
+
+  
 </body>
 </html>
