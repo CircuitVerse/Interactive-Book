@@ -43,16 +43,7 @@ To do this, you are going to need a computer capable of running Ruby - while Mac
 
 **Install Gems and Serving the Website**
 
-The required gems for this project are [Bundler](http://bundler.io/) and [Jekyll](https://jekyllrb.com/). Once you have Ruby installed, open your terminal, `cd` to the local repo directory, and run the following commands:
-
-```
-gem install jekyll
-gem install bundle
-```
-
-This will install Bundler and Jekyll. If you have any errors, check to be sure you have installed Ruby correctly.
-
-Next, install the projects dependencies and serve:
+Once you have Ruby installed, open your terminal, `cd` to the local repo directory, and run the following commands:
 
 ```
 bundle install
