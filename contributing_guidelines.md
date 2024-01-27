@@ -57,7 +57,7 @@ Usually, the contribution process will include the following steps:
     1.  add new content (new chapters, new sections, extend a section, add example circuits),
     2.  correct existing content,
     3.  translate content,
-    4.  &#x2026;
+    <!-- 4.  &#x2026; -->
 2.  contact the interactive book development coordination team and share/discuss your idea
 3.  further discuss the idea with the community
 4.  fork the book repository
