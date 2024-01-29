@@ -80,7 +80,7 @@ aux_links:
 
 # Footer content 
 # appears at the bottom of every page's main content
-footer_content: "Copyright &copy; 2024 Contributors to CircuitVerse. Distributed under a [CC-by-sa] license."
+footer_content: "Copyright &copy; 2023 Contributors to CircuitVerse. Distributed under a [CC-by-sa] license."
 
 # Footer last edited timestamp
 last_edit_timestamp: false # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
