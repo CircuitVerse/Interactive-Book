@@ -217,7 +217,7 @@ Similarly, when the POS form of a Boolean expression is in canonical form, then 
 
 ## Conversion of canonical forms
 
-You can represent the one canonical formed equation in other canonical form i.e. you can represent the SOP form of equation in POS form and POS form equation in SOP form. To convert the canonical equations, you interchange the Σ and Π symbols after listing out the index numbers of the equations, which are excluded from the original form of equation.
+You can represent the one canonical formed equation in another canonical form i.e. you can represent the SOP form of equation in POS form and POS form equation in SOP form. To convert the canonical equations, you interchange the Σ and Π symbols after listing out the index numbers of the equations, which are excluded from the original form of equation.
 
 The important thing to remember about Boolean functions is that, **the SOP and POS forms are Duals to each other**. There are 2 steps to follow to convert the canonical form of the equations. They are:- 
 
