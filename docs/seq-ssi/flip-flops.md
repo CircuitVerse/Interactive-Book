@@ -46,14 +46,15 @@ In second module, you can directly implement the flip-flop, which is edge sensit
 ## Sub-modules
 Now let us implement various flip-flops by providing the cross coupling between NOR gates. You can also implement these flip-flops by using NAND gates, as well.
 
-1. [SR flip-flop](https://learn.circuitverse.org/docs/flipflop/sr_flipflop.html)
-2. [D flip-flop](https://learn.circuitverse.org/docs/flipflop/d_flipflop.html)
-3. [JK flip-flop](https://learn.circuitverse.org/docs/flipflop/jk_flipflop.html)
-4. [T flip-flop](https://learn.circuitverse.org/docs/flipflop/t_flipflop.html)
-5. [Master-slave JK flip-flop](https://learn.circuitverse.org/docs/flipflop/masterslave_jk_flipflop.html)
+1. [SR flip-flop](#sr_flipflop)
+2. [D flip-flop](#d_flipflop)
+3. [JK flip-flop](#jk_flipflop)
+4. [T flip-flop](#t_flipflop)
+5. [Master-slave JK flip-flop](#m_flipflop)
 
 
 ## SR flip-flop
+{: .no_toc #sr_flipflop}
 
 ## Introduction
 
@@ -102,6 +103,7 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 
 ## D flip-flop
+{: .no_toc #d_flipflop}
 
 ## Introduction
 
@@ -130,6 +132,7 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
 
 
 ## JK flip-flop
+{: .no_toc #jk_flipflop}
 
 ## Introduction
 
@@ -177,6 +180,7 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 
 ## T flip-flop
+{: .no_toc #t_flipflop}
 
 ## Introduction
 
@@ -222,6 +226,7 @@ The output of T flip-flop always toggles for every positive transition of the cl
 
 
 ## Master-slave JK flip-Flop
+{: .no_toc #m_flipflop}
 
 ## Introduction
 
