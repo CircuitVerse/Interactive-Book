@@ -50,13 +50,14 @@ Latches are basic storage elements that operate with signal levels (rather than 
 
 Now, let us discuss about SR Latch, D Latch, JK Latch & T Latch one by one.
 
-1. [SR latch](https://learn.circuitverse.org/docs/Latches/sr_latch.html)
-2. [D latch](https://learn.circuitverse.org/docs/Latches/d_latch.html)
-3. [JK latch](https://learn.circuitverse.org/docs/Latches/jk_latch.html)
-4. [T latch](https://learn.circuitverse.org/docs/Latches/t_latch.html) 
+1. [SR latch](#sr_latch)
+2. [D latch](#d_latch)
+3. [JK latch](#jk_latch)
+4. [T latch](#t_latch) 
 
 
 ## SR latch
+{: .no_toc #sr_latch}
 
 ## Introduction
 
@@ -93,6 +94,7 @@ Therefore, SR latch performs three types of functions such as Hold, Set & Reset 
 
 
 ## D latch
+{: .no_toc #d_latch}
 
 ## Introduction
 
@@ -123,6 +125,7 @@ In this module, you implemented various Latches by providing the cross coupling 
 
 
 ## JK latch
+{: .no_toc #jk_latch}
 
 ## Introduction
 
@@ -141,6 +144,7 @@ JK latch is similar to RS latch. This latch consists of 2 inputs J and K as show
 
 
 ## T latch
+{: .no_toc #t_latch}
 
 ## Introduction
 
