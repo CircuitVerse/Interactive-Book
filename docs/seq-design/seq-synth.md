@@ -23,7 +23,7 @@ has_children: false
 
 ## Introduction
 
-As presented in section [FSM]({% link docs/seq-design/fsm.md %}) any sequential circuit can be modelled using Finite State Machines (FSM) or, viceversa, any FSM can be implemented in a sequential circuit.
+As presented in section [FSM]({% link docs/seq-design/fsm.md %}) any sequential circuit can be modelled using Finite State Machines (FSM) or, vice versa, any FSM can be implemented in a sequential circuit.
 
 The process to obtain such a circuit from its functional description or model is referred to as *sequential synthesis*.
 
@@ -36,9 +36,9 @@ Every sequential circuit can also be represented by the following general model:
 
 The first step in the synthesis process is to state the *functional description* of the system in terms of a FSM. The state machine can be formally represented by state diagrams or state tables.
 
-The number of state variables $(r)$ is directly related to the number of states which can represented by those state variables $(2^r)$. Also, the number of components or their size is related to the number of state variables. On the other hand, the devised FSM might contain redundant states. Therefore, in order to obtain an optimal circuit (in terms of the number of components and number of feedback connections) it is desirable to reduce the number of states by eliminating unnecesary ones. This is the second step in the process.
+The number of state variables $(r)$ is directly related to the number of states which can represented by those state variables $(2^r)$. Also, the number of components or their size is related to the number of state variables. On the other hand, the devised FSM might contain redundant states. Therefore, in order to obtain an optimal circuit (in terms of the number of components and number of feedback connections) it is desirable to reduce the number of states by eliminating unnecessary ones. This is the second step in the process.
 
-To represent the state with the binary state variables, a binary code must be assigned to each state. A careful selection of the state codes can help in a later stage to minimise the number of components in the combinational logic block.
+To represent the state with the binary state variables, a binary code must be assigned to each state. A careful selection of the state codes can help in a later stage to minimize the number of components in the combinational logic block.
 
 The memory block can be implemented using any of the basic sequential building blocks (latches or flip-flops) or even simple delay lines. Once the type of memory components is decided, it is possible to declare the truth table for the combinational logic block whose inputs are the (external) inputs of the system and the state variables (or internal inputs), while the outputs correspond to the (external) outputs as well as the excitation variables, which will produce the next state by means of the memory block.
 
@@ -85,7 +85,7 @@ The Finite State Machine (FSM) which models the process can be described by the 
 
 ![Vending Machine FSM](/assets/images/seq/vm_fsm.svg)
 
-The initial state (a) waits a for a coin to be inserted, when that happens the machine transitions to state (b) and waits until the coin is processed by the *coin receiver* and then moves to state (c). In state (c) the total amount is checked: if it is still not enough it goes back to state (a) to wait for more coins to be inserted. If it is equal to the price of the product the machine gets to state (d) which triggers signal **DP** to release the product and waits until de *pop drop* device informs the process is finished by asserting the **PDR** signal. At this moment, the machine state becomes (e) which sends the **CA** signal to clear the total sum in the *coin receiver* and then goes back to the initial state (a). On the other hand, while at state (c), if total amount is greater than the price then the machine enters state (f) which sets signal **RN** to high in order to tell the *coin return* to return a fixed amount. When it is done, the *coin return* responds by sending a true value back to the controller using signal **CR**. When this happens the machine moves on to state (g) which activates signal **DA** to the *coin receiver* to update the total amount and changes back to state (c) to check the new amount.
+The initial state (a) waits for a coin to be inserted, when that happens the machine transitions to state (b) and waits until the coin is processed by the *coin receiver* and then moves to state (c). In state (c) the total amount is checked: if it is still not enough it goes back to state (a) to wait for more coins to be inserted. If it is equal to the price of the product the machine gets to state (d) which triggers signal **DP** to release the product and waits until de *pop drop* device informs the process is finished by asserting the **PDR** signal. At this moment, the machine state becomes (e) which sends the **CA** signal to clear the total sum in the *coin receiver* and then goes back to the initial state (a). On the other hand, while at state (c), if total amount is greater than the price then the machine enters state (f) which sets signal **RN** to high in order to tell the *coin return* to return a fixed amount. When it is done, the *coin return* responds by sending a true value back to the controller using signal **CR**. When this happens the machine moves on to state (g) which activates signal **DA** to the *coin receiver* to update the total amount and changes back to state (c) to check the new amount.
 
 
 ### State assignment

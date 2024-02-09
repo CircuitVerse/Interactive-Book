@@ -23,11 +23,11 @@ has_children: false
 
 
 A Flip-flop is a 1 bit memory cell which can be used for storing the digital data. 
-To increase the storage capacity in terms of number of bits, you can use a group of flip-flops. Such a group of flip-flops is known as a Register. 
+To increase the storage capacity in terms of a number of bits, you can use a group of flip-flops. Such a group of flip-flops is known as a Register. 
 The n-bit register will consist of n number of flip-flop(s) and it is capable of storing an n-bit word.
 
 
-The binary-data, in a register, can be transfered within itself from one flip-flop to another. 
+The binary-data, in a register, can be transferred within itself from one flip-flop to another. 
 A shift register is a type of register that allows such data transfers.
 Shift register has 4 modes of operations.
 
@@ -79,7 +79,7 @@ Similarly with Din = 1 and with the fourth negative clock edge arriving, the sto
 ## Serial-in parallel-out
 
 
-- In such types of operations, the data is entered serially and taken out in parallel fashion.
+- In such types of operations, the data is entered serially and taken out in a parallel fashion.
 
 - Data is loaded bit-by-bit. The output(s) are disabled as long as the data is loading.
 
@@ -103,7 +103,7 @@ Similarly with Din = 1 and with the fourth negative clock edge arriving, the sto
 
 - The circuit, shown below, is a four-bit parallel-in serial-out register.
 
-- Output of the previous flip Flop is connected to the input of the next one via a combinational circuit.
+- The Output of the previous flip Flop is connected to the input of the next one via a combinational circuit.
 
 - The binary input data bits B0, B1, B2, B3 are applied through the same combinational logic circuit.
 
@@ -111,7 +111,7 @@ Similarly with Din = 1 and with the fourth negative clock edge arriving, the sto
 
 ### Load mode
 
-When the shift/load bar line is low (0), the AND gates 2, 4 and 6 become active, and they will pass B1, B2, B3 bits to the corresponding flip-flops. 
+When the shift/load bar line is low (0), the AND gates 2, 4, and 6 become active, and they will pass B1, B2, B3 bits to the corresponding flip-flops. 
 On the low going edge of the clock, the binary inputs B0, B1, B2, B3 will get loaded into the corresponding flip-flops. 
 Thus, the parallel loading takes place.
 

@@ -22,7 +22,7 @@ has_children: false
 The new Interactive Book  for digital logic design requires you to study [binary ](https://learn.circuitverse.org/docs/binary.html) and its uses.
 In computing, a <em>flag</em> is a type of signal usually used to indicate whether something is true or false. To save time and make your program less complicated, you might want to combine these flags and send several pieces of information in one go.
 
-Imagine you wanted to send a message to your friend to indicate which subjects had set homework on a particular day. If it was only one subject, you can just send the name of the subect - e.g. English - but if there is more than one, it gets more complicated. One way to do it is to give each subject a number:
+Imagine you wanted to send a message to your friend to indicate which subjects had set homework on a particular day. If it was only one subject, you can just send the name of the subject - e.g. English - but if there is more than one, it gets more complicated. One way to do it is to give each subject a number:
 
 | Serial no.      | Subject     |
 |:------------:|:------------:|
