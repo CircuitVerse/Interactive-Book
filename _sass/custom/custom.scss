@@ -30,6 +30,8 @@ input {
 }
 
 .main.sidebar-toggle {
+  transition: linear 0.3s;
+  
   @include mq(md) {
     margin-left: calc((100% - 800px) / 2);
     max-width: 800px;
