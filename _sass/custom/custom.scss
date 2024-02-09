@@ -17,6 +17,10 @@ input {
   color: $inputcolor;
 }
 
+.nav-list-expander:hover {
+  cursor: pointer;
+}
+
 #sidebar.active {
   display: none;
 }
@@ -196,6 +200,7 @@ $text-color: #111111;
 //
 .nav-list {
   list-style: circle url("/assets/images/nav-marker-inactive.svg") inside;
+  
 
   .nav-list-item {
     // scss-lint:disable SelectorDepth
@@ -205,6 +210,7 @@ $text-color: #111111;
 
     &.active {
       list-style: disc url("/assets/images/nav-marker-active.svg") inside;
+      cursor: pointer;
     }
   }
 
