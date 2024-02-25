@@ -51,6 +51,12 @@ This website was built using [Jekyll](https://jekyllrb.com/). So if you are fami
 
 To do this, you are going to need a computer capable of running Ruby - while Mac OSX or Linux tends to be easiest, plenty of people do Ruby development on Windows as well. If you're not on Mac OSX, you will likely need to install Ruby yourself.
 
+**Setting up Ruby**
+
+Windows(https://docs.google.com/document/d/14yFhLBi7Il1MFmPxWZgNSglbe3SdO0mjujH7MayYK5A/edit?usp=sharing)
+MacOS(https://docs.google.com/document/d/1Y6VpVh8K4Y-lvbStLcRNwZ68pFyvT_Kk3KpsyhOo0rc/edit?usp=sharing)
+Linux(https://docs.google.com/document/d/1hEnF2tlenorKgAcaQPGTdyOufvtYpBY6FWyUeUBEhh4/edit?usp=sharing)
+
 **Install Gems and Serving the Website**
 
 Once you have Ruby installed, open your terminal, `cd` to the local repo directory, and run the following commands:
