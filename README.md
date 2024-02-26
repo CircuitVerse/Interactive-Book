@@ -53,9 +53,69 @@ To do this, you are going to need a computer capable of running Ruby - while Mac
 
 **Setting up Ruby**
 
-Windows(https://docs.google.com/document/d/14yFhLBi7Il1MFmPxWZgNSglbe3SdO0mjujH7MayYK5A/edit?usp=sharing)
-MacOS(https://docs.google.com/document/d/1Y6VpVh8K4Y-lvbStLcRNwZ68pFyvT_Kk3KpsyhOo0rc/edit?usp=sharing)
-Linux(https://docs.google.com/document/d/1hEnF2tlenorKgAcaQPGTdyOufvtYpBY6FWyUeUBEhh4/edit?usp=sharing)
+**Windows**
+
+Downloading and Installing Ruby
+All the versions of Ruby for Windows can be downloaded from rubyinstaller.org. Download the bold version and follow the further instructions for its Installation.
+![image](https://github.com/Harsh-1Byte/Interactive-Book/assets/160573405/0a702c17-7aa1-42ef-8306-85e3d5732dac)
+
+Complete the installation 
+![image](https://github.com/CircuitVerse/Interactive-Book/assets/160573405/0c99801f-cf2b-4176-99ec-41cb8e9a4cdc)
+
+Press enter to install the modules  
+![image](https://github.com/Harsh-1Byte/Interactive-Book/assets/160573405/cb75d913-ec47-412f-a94a-b55975d163b8)
+
+Installation is complete 
+![image](https://github.com/Harsh-1Byte/Interactive-Book/assets/160573405/41f57839-bdf6-4cb0-9856-a2cc0c3a1590)
+
+Check via cmd
+![image](https://github.com/Harsh-1Byte/Interactive-Book/assets/160573405/4537974e-581c-4f3e-9220-67851c10c40b)
+Code:
+ruby -v
+
+**Linux**
+
+Downloading and Installing Ruby:
+Ruby for Linux can be downloaded and installed with the use of the following command on the terminal(Ctrl+Alt+T):
+$ sudo apt install ruby-full
+
+Beginning with the installation:
+
+Getting Started with command:
+Agreeing to Installation:
+Getting Files:
+Unpacking Files:
+Setting up resources:
+Finished Installation:
+![image](https://github.com/Harsh-1Byte/Interactive-Book/assets/160573405/33c678ef-e2f5-493c-b8a7-6fc44e1ceb96)
+
+Installation is complete.
+To check if Ruby installed correctly, perform a version check for the same using the following command on the terminal:
+ruby --version
+
+**MacOS**
+
+To install Ruby on macOS, you can use a package manager called Homebrew. Follow these steps:
+Installing Homebrew
+If you don't have Homebrew installed, open Terminal and run the following command:
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+Install Ruby   
+Once Homebrew is installed, you can use it to install Ruby. In the Terminal, run:
+brew install ruby
+
+This command installs the latest version of Ruby available through Homebrew
+
+Update your Shell Profile:
+Homebrew will provide instructions on how to update your shell profile. Follow those instructions, or you can manually add the Ruby binaries to your PATH by adding the following line to your shell profile file (e.g., ~/.zshrc for Zsh or ~/.bash_profile for Bash):
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+
+After making changes, remember to source your shell profile or restart your terminal.
+
+Verify your Installation:
+To check if Ruby is installed successfully, run:
+ruby --version
+This command should display the Ruby version that you installed. That's it! Ruby should now be installed on your macOS system.
 
 **Install Gems and Serving the Website**
 
