@@ -60,6 +60,7 @@ Downloading and Installing Ruby
 All the versions of Ruby for Windows can be downloaded from rubyinstaller.org. Download the bold version and follow the further instructions for its Installation.
 
 Complete the installation
+
 ![image](https://github.com/CircuitVerse/Interactive-Book/assets/160573405/0c99801f-cf2b-4176-99ec-41cb8e9a4cdc)
 
 Press enter to install the modules  
