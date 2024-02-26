@@ -64,13 +64,17 @@ Complete the installation
 ![image](https://github.com/CircuitVerse/Interactive-Book/assets/160573405/0c99801f-cf2b-4176-99ec-41cb8e9a4cdc)
 
 Press enter to install the modules  
+
 ![image](https://github.com/Harsh-1Byte/Interactive-Book/assets/160573405/cb75d913-ec47-412f-a94a-b55975d163b8)
 
 Installation is complete 
+
 ![image](https://github.com/Harsh-1Byte/Interactive-Book/assets/160573405/41f57839-bdf6-4cb0-9856-a2cc0c3a1590)
 
 Check via cmd
+
 ![image](https://github.com/Harsh-1Byte/Interactive-Book/assets/160573405/4537974e-581c-4f3e-9220-67851c10c40b)
+
 Code:
 ruby -v
 
