@@ -55,11 +55,11 @@ To do this, you are going to need a computer capable of running Ruby - while Mac
 
 **Windows**
 
+![image](https://github.com/Harsh-1Byte/Interactive-Book/assets/160573405/0a702c17-7aa1-42ef-8306-85e3d5732dac)
 Downloading and Installing Ruby
 All the versions of Ruby for Windows can be downloaded from rubyinstaller.org. Download the bold version and follow the further instructions for its Installation.
-![image](https://github.com/Harsh-1Byte/Interactive-Book/assets/160573405/0a702c17-7aa1-42ef-8306-85e3d5732dac)
 
-Complete the installation 
+Complete the installation
 ![image](https://github.com/CircuitVerse/Interactive-Book/assets/160573405/0c99801f-cf2b-4176-99ec-41cb8e9a4cdc)
 
 Press enter to install the modules  
