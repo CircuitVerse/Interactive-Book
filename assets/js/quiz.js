@@ -58,11 +58,12 @@ $(function() {
 });
 
 function ShowQuizAnswer(element) {
-    if (!$(element).hasClass('quiz-show-answer')) {
+    if ($(element).hasClass('quiz-show-answer')) {
+        $(element).removeClass('quiz-show-answer');
+    } else {
         $(element).addClass('quiz-show-answer');
     }
 }
-
 function FilterHtml(contents) {
     contents = contents.filter(function(index, content) {
         // Remove lists
