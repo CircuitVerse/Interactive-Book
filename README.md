@@ -72,7 +72,7 @@ Here are links to our:
 [![Slack](https://img.shields.io/badge/chat-on_slack-purple.svg?style=for-the-badge&logo=slack)](https://www.circuitverse.org/slack)
 
 
-## Contributors
+## Our Contributors
 Thanks to everyone who has contributed to the Interactive Book so far!
 <a href="https://github.com/CircuitVerse/Interactive-Book/graphs/contributors"><img src="https://contributors-img.firebaseapp.com/image?repo=CircuitVerse/Interactive-Book" alt="Image of contributors"></a>
 
