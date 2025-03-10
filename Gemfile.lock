@@ -109,7 +109,7 @@ GEM
       forwardable-extended (~> 2.6)
     public_suffix (5.0.4)
     racc (1.7.3)
-    rack (3.0.13)
+    rack (3.0.14)
     rack-protection (4.0.0)
       base64 (>= 0.1.0)
       rack (>= 3.0.0, < 4)
