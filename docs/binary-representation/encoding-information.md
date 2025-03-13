@@ -19,7 +19,7 @@ has_children: false
 {:toc}
 
 ## Binary flags
-The new Interactive Book  for digital logic design requires you to study [binary ](https://learn.circuitverse.org/docs/binary.html) and its uses.
+The new Interactive Book  for digital logic design requires you to study [binary ]({% link docs/binary-representation/binary-numbers.md %}) and its uses.
 In computing, a <em>flag</em> is a type of signal usually used to indicate whether something is true or false. To save time and make your program less complicated, you might want to combine these flags and send several pieces of information in one go.
 
 Imagine you wanted to send a message to your friend to indicate which subjects had set homework on a particular day. If it was only one subject, you can just send the name of the subect - e.g. English - but if there is more than one, it gets more complicated. One way to do it is to give each subject a number:
@@ -42,11 +42,11 @@ You can send combinations of subjects by adding together the numbers and sending
 {% include application1.html %}
 
 
-This only works because of the numbers I've chosen - it's a [binary ](https://learn.circuitverse.org/docs/binary.html) sequence, with each number being one of the [binary ](https://learn.circuitverse.org/docs/binary.html)column headings. 
+This only works because of the numbers I've chosen - it's a [binary ]({% link docs/binary-representation/binary-numbers.md %}) sequence, with each number being one of the [binary ]({% link docs/binary-representation/binary-numbers.md %}) column headings. 
 This means that each total can only be made up from one combination of subjects.
 
 If they'd been numbered as 1 = **English**, 2 = **Maths**, 3 = **Science**, 4 = **Computing**, etc., then it wouldn't work, because a code of 3 could represent English and Maths, or it could be Science on its own. 
-To use this technique in your programming, you need to be familiar with [bitwise logic ](https://learn.circuitverse.org/docs/binary2.html)
+To use this technique in your programming, you need to be familiar with [bitwise logic ]({% link docs/comb-ssi/logic-gates.md %})
 
 
 ## Representing a character
