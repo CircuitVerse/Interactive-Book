@@ -21,7 +21,7 @@ has_children: false
 
 ## Introduction
 
-Binary number system was invented by **Gottfried Leibniz**. As the word is prefixed with 'Bi' which is a Latin word and means 'two' in English. This brings us to the first two digits i.e., 0 and 1 which means that while counting in binary you cannot exceed 1. Infact all the numbers which you represent are made up of only two digits i.e., 0 and 1 which is quite interesting. Check out the binary representation of a decimal number (the numbers used for counting i.e., from 0-9) in binary.
+Binary number system was invented by **Gottfried Wilhelm Leibniz**. As the word is prefixed with 'Bi' which is a Latin word and means 'two' in English. This brings us to the first two digits i.e., 0 and 1 which means that while counting in binary you cannot exceed 1. Infact all the numbers which you represent are made up of only two digits i.e., 0 and 1 which is quite interesting. Check out the binary representation of a decimal number (the numbers used for counting i.e., from 0-9) in binary.
 
 ```yaml
 Example:
