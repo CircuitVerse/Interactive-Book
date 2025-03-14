@@ -173,18 +173,19 @@ $text-color: #111111;
     line-height: 2rem;
     margin: 0.2rem;
     min-width: 10rem;
+
+    &.quiz-show-answer {
+      &.quiz-true {
+        background-color: $correct-color;
+      }
+
+      &.quiz-false {
+        background-color: $incorrect-color;
+      }
+    }
   }
 }
 
-.quiz-show-answer {
-  &.quiz-true {
-    background-color: $correct-color;
-  }
-
-  &.quiz-false {
-    background-color: $incorrect-color;
-  }
-}
 
 //
 // from search.scss (not included since its too different from upstream)
