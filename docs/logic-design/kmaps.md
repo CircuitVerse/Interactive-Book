@@ -25,7 +25,7 @@ For example, display the following 2 variable Karnaugh Map:
 
 ![](/assets/images/map11.png)
 
-You have bounded to the vertical axis, the variable `A`, and enumerate through the possible values for `A` (being `{0, 1}`). Similarly, perform a similar operation for the `B` variable. Since you are using a 2 variable expression, you can bound one variable to each axis and the visualization works fine in a `2x2` matrix.
+You have bounded to the vertical axis, the variable `A`, and enumerate through the possible values for `A` (being `{0, 1}`). Similarly, perform a similar operation for the `B` variable. Since you are using a 2 variable expression, you can bind one variable to each axis and the visualization works fine in a `2x2` matrix.
 
 Let's instead look at a more involved example with 4 variables:
 

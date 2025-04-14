@@ -21,7 +21,7 @@ has_children: false
 
 ## Subtraction
 
-Binary subtraction is also a simple task. You just need to keep in mind i.e., whenever 0 takes borrow, it becomes 10 i.e., 2 in decimal. In case number to the left is zero then look for the number more left to that until you find 1. In case nothing is present to borrow then that number becomes negative. Also, the number which gives borrow is reduced by 1.
+Binary subtraction is also a simple task. You just need to keep in mind i.e., whenever 0 takes borrow, it becomes 10 i.e., 2 in decimal. In case the number to the left is zero then look for the number further left until you find 1. In case nothing is present to borrow then that number becomes negative. Also, the number which gives borrow is reduced by 1.
 
 ***Note: 10 becomes 1 after giving borrow.***
 

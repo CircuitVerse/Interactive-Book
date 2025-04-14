@@ -103,7 +103,7 @@ Let's tell you something more about conversion. Conversion from Binary to Decima
 -   **STEP 3:** Add 'em all.
 -   **STEP 4:** Result is ready :)
 
-***Note: If the number is large, increase bits of the binary number on the left. Keep in mind that it's value will increase subsequently.***
+***Note: If the number is large, increase bits of the binary number on the left. Keep in mind that its value will increase subsequently.***
 
 ```yaml
 Example ::
