@@ -171,7 +171,7 @@ In standard SOP form, the maximum possible product terms for n number of variabl
 
 ### Maxterms
 
-A max term is defined as the product of n variables, within the range of 0 ≤ i < 2<sup>n</sup>. The max term is denoted as Mi. In max term, each variable is **complemented**, if its value is assigned to 1, and each variable is **un-complemented** if its value is assigned to 0.
+A max term is defined as the sum of n variables, within the range of 0 ≤ i < 2<sup>n</sup>. The max term is denoted as Mi. In max term, each variable is **complemented**, if its value is assigned to 1, and each variable is **un-complemented** if its value is assigned to 0.
 
 For a 2-variable (x and y) Boolean function, the possible max terms are:
 ```yml
