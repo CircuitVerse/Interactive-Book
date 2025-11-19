@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: circuitverse
 nav_order: 1001
 title: About
 disable_comments: true
