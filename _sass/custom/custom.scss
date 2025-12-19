@@ -236,32 +236,32 @@ $text-color: #111111;
   padding-left: 1rem;
 }
 
+// Auxiliary Nav Styles for all screen sizes
+.aux-nav {
+  .aux-nav-list-item {
+    align-items: center;
+    display: flex;
+  }
+
+  .aux-nav-list {
+    padding-left: 10px;
+  }
+}
+
+.aux-nav-list-item .site-button {
+  background-color: $base-button-color;
+  border-radius: 3px;
+  border-width: 0;
+  box-shadow: 0 1px 2px $box-shadow, 0 3px 10px $box-shadow;
+  height: 50%;
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+}
+
 @media (min-width: 50rem) {
   // Sidebar Navigation
   .site-nav {
     padding-left: 2rem;
-  }
-
-  // Auxiliary Nav Styles for tablet and above
-  .aux-nav {
-    .aux-nav-list-item {
-      align-items: center;
-      display: flex;
-    }
-
-    .aux-nav-list {
-      padding-left: 10px;
-    }
-  }
-
-  .aux-nav-list-item .site-button {
-    background-color: $base-button-color;
-    border-radius: 3px;
-    border-width: 0;
-    box-shadow: 0 1px 2px $box-shadow, 0 3px 10px $box-shadow;
-    height: 50%;
-    margin-right: 0.5rem;
-    padding: 0.5rem;
   }
 }
 
