@@ -1,11 +1,12 @@
 ## How to Contribute?
 
-> To get started...
+> To get started with contributing to circuitverse:
 
-1.  🍴 [Fork this repo](https://github.com/CircuitVerse/Interactive-Book)
-2.  🔨 Hack away
-3.  🔧 [Open a new pull request](https://github.com/CircuitVerse/Interactive-Book/compare)
-4.  🎉 Get your pull request approved - success!
+1.  Fork the repository to your GitHub account.
+2.  Clone the fork locally and create a new branch for your changes.
+3.  Make your changes following the project guidelines.
+4.  Commit your changes with clear and descriptive commit messages.
+5.  Open a pull request explaining what you changed and why.
 
 > Or just [create an issue](https://github.com/CircuitVerse/Interactive-Book/issues) - any little bit of help counts! 😊
 ***
