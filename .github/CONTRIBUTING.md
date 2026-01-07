@@ -1,6 +1,6 @@
 ## How to Contribute?
 
-> To get started with contributing to circuitverse:
+> To get started with contributing to CircuitVerse:
 
 1.  Fork the repository to your GitHub account.
 2.  Clone the fork locally and create a new branch for your changes.
