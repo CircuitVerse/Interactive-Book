@@ -41,7 +41,7 @@ Binary multiplication requires two concepts i.e., binary addition and decimal mu
 
 {:.quiz}
 1. Perform multiplication of the binary numbers: `01001`×`01011`= ?
-   1. 010000010
+   1. 01100011
    * 010110010
    * 010100010
    * 010010010
