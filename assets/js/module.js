@@ -1561,43 +1561,57 @@ function KarnaughMapDataCtrl(qmcRef) {
             }
         }
 
-        var mapped = 0;
-        this.fields[0].truthmapID = 0;
-        this.fields[1].truthmapID = 1;
-        var mirrorDirection = 0;
-        var mirrorXCount = 2;
-        var mirrorYCount = 1;
-        var mapped = 2;
-        var x = 0;
-        var y = 1;
-        var loop = 0;
-        var direction = 0;
-        while (loop < this.noOfVars - 1) {
-            for (var xx = 0; xx < mirrorXCount; xx++) {
-                for (var yy = 0; yy < mirrorYCount; yy++) {
-                    var loc = xx + yy * this.fieldPerLine;
+        var k1 = [0,1];
+        var k2 = [0, 1, 2, 3];
+        var k3 = [0, 1, 3, 2, 4, 5, 7, 6];
+        var k4 = [0, 1, 3, 2, 4, 5, 7, 6, 12, 13, 15, 14, 8, 9, 11, 10];
+        var k5 = [0, 1, 3, 2, 16, 17, 19, 18, 4, 5, 7, 6, 20, 21, 23, 22, 12, 13, 15, 14, 28, 29, 31, 30, 8, 9, 11, 10, 24, 25, 27, 26];
+        var k6 = [0, 1, 3, 2, 16, 17, 19, 18, 4, 5, 7, 6, 20, 21, 23, 22, 12, 13, 15, 14, 28, 29, 31, 30, 8, 9, 11, 10, 24, 25, 27, 26, 32, 33, 35, 34, 48, 49, 51, 50, 36, 37, 39, 38, 52, 53, 55, 54, 44, 45, 47, 46, 60, 61, 63, 62, 40, 41, 43, 42, 56, 57, 59, 58];
 
-                    if (direction === 0) {
-                        var mirrorLoc = (x + xx) + (y + (mirrorYCount - 1) - yy) * this.fieldPerLine;
-                        this.fields[mirrorLoc].truthmapID = this.fields[loc].truthmapID + mirrorXCount * mirrorYCount;
-                    } else {
-                        var mirrorLoc = (x + (mirrorXCount - 1) - xx) + (y + yy) * this.fieldPerLine;
-                        this.fields[mirrorLoc].truthmapID = this.fields[loc].truthmapID + mirrorYCount * mirrorYCount;
-                    }
-                }
-            }
-            if (direction === 0) {
-                mirrorYCount = mirrorYCount * 2;
-                x = mirrorXCount;
-                y = 0;
-                direction = 1;
-            } else {
-                mirrorXCount = mirrorXCount * 2;
-                y = mirrorYCount;
-                x = 0;
-                direction = 0;
-            }
-            loop++;
+        var k7 = [0, 1, 5, 4, 20, 21, 17, 16, 80, 81, 85, 84, 68, 69, 65, 64,
+                  2, 3, 7, 6, 22, 23, 19, 18, 82, 83, 87, 86, 70, 71, 67, 66,
+                  10, 11, 15, 14, 30, 31, 27, 26, 90, 91, 95, 94, 78, 79, 75, 74,
+                  8, 9, 13, 12, 28, 29, 25, 24, 88, 89, 93, 92, 76, 77, 73, 72,
+                  40, 41, 45, 44, 60, 61, 57, 56, 120, 121, 125, 124, 108, 109, 105, 104,
+                  42, 43, 47, 46, 62, 63, 59, 58, 122, 123, 127, 126, 110, 111, 107, 106,
+                  34, 35, 39, 38, 54, 55, 51, 50, 114, 115, 119, 118, 102, 103, 99, 98,
+                  32, 33, 37, 36, 52, 53, 49, 48, 112, 113, 117, 116, 100, 101, 97, 96];
+
+        var k8 = [0, 1, 5, 4, 20, 21, 17, 16, 80, 81, 85, 84, 68, 69, 65, 64,
+                  2, 3, 7, 6, 22, 23, 19, 18, 82, 83, 87, 86, 70, 71, 67, 66,
+                  10, 11, 15, 14, 30, 31, 27, 26, 90, 91, 95, 94, 78, 79, 75, 74,
+                  8, 9, 13, 12, 28, 29, 25, 24, 88, 89, 93, 92, 76, 77, 73, 72,
+                  40, 41, 45, 44, 60, 61, 57, 56, 120, 121, 125, 124, 108, 109, 105, 104,
+                  42, 43, 47, 48, 62, 63, 59, 58, 122, 123, 127, 126, 110, 111, 107, 106,
+                  34, 35, 39, 38, 54, 55, 51, 50, 114, 115, 119, 118, 102, 103, 99, 98,
+                  32, 33, 37, 36, 52, 53, 49, 48, 112, 113, 117, 116, 100, 101, 97, 96,
+                  160, 161, 165, 164, 180, 181, 177, 176, 240, 241, 245, 244, 228, 229, 225, 224,
+                  162, 163, 167, 166, 182, 183, 179, 178, 242, 243, 247, 246, 230, 231, 227, 226,
+                  170, 171, 175, 174, 190, 191, 187, 186, 250, 251, 255, 254, 238, 239, 235, 234,
+                  168, 169, 173, 172, 188, 189, 185, 184, 248, 249, 253, 252, 236, 237, 233, 232,
+                  136, 137, 141, 140, 156, 157, 153, 152, 216, 217, 221, 220, 204, 205, 201, 200,
+                  138, 139, 143, 142, 158, 159, 155, 154, 218, 219, 223, 222, 206, 207, 203, 202,
+                  130, 131, 135, 134, 150, 151, 147, 146, 210, 211, 215, 214, 198, 199, 195, 194,
+                  128, 129, 133, 132, 148, 149, 145, 144, 208, 209, 213, 212, 196, 197, 193, 192
+                  ];
+
+        for (var i = 0; i < Math.pow(2, no); i++) {
+            if(no == 1)
+                this.fields[i].truthmapID = k1[i];
+            if (no === 2)
+                this.fields[i].truthmapID = k2[i];
+            else if (no === 3)
+                this.fields[i].truthmapID = k3[i];
+            else if (no === 4)
+                this.fields[i].truthmapID = k4[i];
+            else if (no === 5)
+                this.fields[i].truthmapID = k5[i];
+            else if (no === 6)
+                this.fields[i].truthmapID = k6[i];
+            else if (no === 7)
+                this.fields[i].truthmapID = k7[i];
+            else if (no === 8)
+                this.fields[i].truthmapID = k8[i];
         }
 
     };
