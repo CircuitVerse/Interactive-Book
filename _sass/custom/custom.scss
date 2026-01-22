@@ -309,3 +309,56 @@ button,
   width: 0%;
   z-index: 10000;
 }
+
+//takenote
+#takenote {
+  background-color: $link-color;
+  color: $white;
+  right: 60px;
+  position: fixed;
+  bottom: 15px;
+}
+
+.note {
+  display: inline-block;
+  margin: 2%;
+  width: 46%;
+  height: 34vh;
+  background-color: $link-color;
+  color: $white;
+} 
+
+#operation {
+  display: block;
+  margin: 2%;
+}
+
+#operation button {
+  float: right;
+  background-color: $link-color;
+  color: $white;
+  margin-right: 2%;
+  font-size: unset;
+}
+
+#notearea {
+  font-size: small;
+  height: 68%;
+  margin: 2%;
+  margin-top: 14%;
+  overflow-y: auto;
+  width: 96%;
+}
+
+textarea {
+  font-size: small;
+  height: 66%;
+  margin: 2%;
+  margin-top: 4%;
+  overflow-y: auto;
+  width: 96%;
+}
+
+.hidden {
+  display: none;
+}
