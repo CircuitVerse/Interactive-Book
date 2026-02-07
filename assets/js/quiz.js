@@ -58,9 +58,26 @@ $(function() {
 });
 
 function ShowQuizAnswer(element) {
-    if (!$(element).hasClass('quiz-show-answer')) {
-        $(element).addClass('quiz-show-answer');
+    var $element = $(element);
+    var $question = $element.closest('.quiz-question');
+
+    // Prevent multiple selections
+    if ($question.data('locked')) return;
+    $question.data('locked', true);
+
+    // Show selected answer
+    $element.addClass('quiz-show-answer');
+
+    // If wrong, show correct one
+    if ($element.hasClass('quiz-false')) {
+        $question.find('.quiz-true').addClass('quiz-show-answer');
     }
+
+    // Disable all answers
+    $question.find('.quiz-answer').each(function () {
+        this.onclick = null;
+        $(this).css('pointer-events', 'none');
+    });
 }
 
 function FilterHtml(contents) {
