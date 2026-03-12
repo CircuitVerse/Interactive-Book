@@ -1,0 +1,8 @@
+{
+  "id": "addition",
+  "title": "Addition",
+  "heading": "This is Addition for Flutter",
+  "api_endpoints": {
+    "self": "/api-mobile/pages/docs/binary-algebra/addition.json"
+  }
+}
