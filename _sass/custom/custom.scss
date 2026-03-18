@@ -60,7 +60,7 @@ input {
 }
 
 //
-//  navigation.css
+// navigation.css
 //
 
 .flex-container {
@@ -91,7 +91,6 @@ input {
   flex-grow: 1;
   justify-content: space-between;
 
-  // Workaround for buttons bar overflow issues.
   a {
     overflow: inherit;
   }
@@ -100,6 +99,7 @@ input {
 //
 // from selects.scss
 //
+
 select {
   background-color: $base-button-color;
   border: 0;
@@ -112,6 +112,7 @@ select {
 //
 // from scg_paths.scss
 //
+
 svg path {
   stroke: $base-svg-path;
 }
@@ -123,6 +124,7 @@ defs path {
 //
 // from quiz.scss
 //
+
 $correct-color: #5cd65c;
 $incorrect-color: #ff6666;
 $default-color: #f1f1f1;
@@ -187,18 +189,13 @@ $text-color: #111111;
 }
 
 //
-// from search.scss (not included since its too different from upstream)
+// DVLS new styles
 //
 
-//
-// DVLS new styles
-// CV flavored side nav
-//
 .nav-list {
   list-style: circle url("/assets/images/nav-marker-inactive.svg") inside;
 
   .nav-list-item {
-    // scss-lint:disable SelectorDepth
     .nav-list-link {
       display: inline;
     }
@@ -218,7 +215,6 @@ $text-color: #111111;
   }
 }
 
-// Nested nav lists
 .nav-list .nav-list-item > .nav-list .nav-list-item .nav-list-link {
   padding-left: 1rem;
 
@@ -227,16 +223,12 @@ $text-color: #111111;
   }
 }
 
-// table caption style
-//.tblcap {
-// to be defined
-//}
-
 .site-nav {
   padding-left: 1rem;
 }
 
-// Auxiliary Nav Styles for all screen sizes
+
+
 .aux-nav {
   .aux-nav-list-item {
     align-items: center;
@@ -258,19 +250,23 @@ $text-color: #111111;
   padding: 0.5rem;
 }
 
+//
+// Only desktop-specific tweaks here
+//
 @media (min-width: 50rem) {
-  // Sidebar Navigation
   .site-nav {
     padding-left: 2rem;
   }
 }
 
-// Disqus Recommendations
+//
+// Other styles
+//
+
 #disqus_recommendations {
   margin-top: 20px;
 }
 
-// Scroll Back to Top Button
 .back-to-top {
   background-color: $link-color;
   color: $white;
@@ -279,7 +275,6 @@ $text-color: #111111;
   bottom: 15px;
 }
 
-// Added transitions
 a,
 h1,
 h2,
@@ -299,7 +294,6 @@ button,
   background-color: $body-background-color;
 }
 
-// progress-bar 
 #progress-bar {
   position: fixed;
   top: 0;
