@@ -71,18 +71,30 @@ soda_machine_fsm.update = function() {
   }
   setTimeout(function() {
     switch (soda_machine_fsm.state) {
-	case 0:
-      soda_machine_graphics.clearCoins();
-	  break;
+    case 0:
+        soda_machine_graphics.clearCoins();
+        soda_machine_graphics.statusText.attr('text', 
+            'Insert a coin to start');
+        break;
     case 2: case 4:
-	  break;
-	case 7:
-      soda_machine_graphics.dropChange();
-	  break;
-	case 8:
-      soda_machine_graphics.dropSoda();
-	  break;
-	}
+        soda_machine_graphics.statusText.attr('text', 
+            'Coin accepted! Insert more coins');
+        break;
+    case 5: case 6:
+        soda_machine_graphics.statusText.attr('text', 
+            'Processing...');
+        break;
+    case 7:
+        soda_machine_graphics.dropChange();
+        soda_machine_graphics.statusText.attr('text', 
+            'Returning change!');
+        break;
+    case 8:
+        soda_machine_graphics.dropSoda();
+        soda_machine_graphics.statusText.attr('text', 
+            'Enjoy your soda!');
+        break;
+}
 
     with(soda_machine_fsm) {
       flashState(output[state][1]);
@@ -280,7 +292,7 @@ soda_machine_graphics.initialize = function () {
 	paper.path("M330,80 l0,170 ").attr({'stroke-width': '2'});
 	paper.text(505,140,'Sensor:').attr({'font-size': '20'});
 	sensorText = paper.text(550,140,'00').attr({'font-size': '20'});
-
+    soda_machine_graphics.statusText = paper.text(487.5,95,'Insert a coin to start').attr({'font-size': '14', 'fill': '#333'});
 	//lids
 	lids[0] = paper.path("M123,253 , l60,0 ").attr({'stroke-width': '2'});
 	lids[1] = paper.path("M273,253 , l60,0 ").attr({'stroke-width': '2'});
@@ -321,6 +333,7 @@ soda_machine_graphics.enableButtons = function(input) {
 	}
   }
   soda_machine_graphics.button_status = 0;
+  soda_machine_graphics.statusText.attr('text', 'Insert a coin to start');
 }
 
 soda_machine_graphics.dropCoin = function(input) {
@@ -328,6 +341,7 @@ soda_machine_graphics.dropCoin = function(input) {
     return;
   }
   soda_machine_graphics.button_status = 1;
+  soda_machine_graphics.statusText.attr('text', 'Processing coin...');
   for (i=0;i<2;i++) {
     for (j=0;j<2;j++) {
 	  soda_machine_graphics.buttons[i][j].animate({opacity:'0'},0);
@@ -361,10 +375,12 @@ soda_machine_graphics.dropCoin = function(input) {
     soda_machine_graphics.lids[2].animate({transform: "t0,0"},300);
   }, 3000);
   setTimeout (function () {
-	if (soda_machine_fsm.state <= 4) {
+    if (soda_machine_fsm.state === 0 ||
+        soda_machine_fsm.state === 2 ||
+        soda_machine_fsm.state === 4) {
       soda_machine_graphics.enableButtons();
     }
-  }, 3300);
+}, 4000);
 
 }
 
