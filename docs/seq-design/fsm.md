@@ -73,9 +73,9 @@ In general, the number of states required in Moore state machine is more than or
 | Feature | Moore Machine | Mealy Machine |
 |---------|--------------|---------------|
 | Output depends on | Present state only | Present state + Input |
-| Output labeled on | Inside state circles | On transition arrows |
+| Output labelled on | Inside state circles | On transition arrows |
 | Number of states | More or equal | Less or equal |
-| Output changes | Only on clock edge | Immediately with input |
+| Output changes | Only on clock edge | Depends on current input (combinational path) |
 | Complexity | Simpler to design | More complex |
 
 ### Simple way to remember
@@ -140,7 +140,7 @@ Now translate the options which are listed above into an FSM diagram/flow-chart:
 
 ## Understanding the state labels
 
-Each state in the diagram is labeled with a symbol.
+Each state in the diagram is labelled with a symbol.
 Here is what each symbol means:
 
 | Symbol | Meaning |
@@ -170,7 +170,7 @@ The actual price is 15¢ as stated in the problem.
 
 ## Experiment
 
-Lets try the soda can vending machine and look for 
+Let's try the soda can vending machine and look for 
 the corresponding state changes in the FSM diagram 
 for each of the above mentioned possibilities.
 

@@ -73,8 +73,13 @@ soda_machine_fsm.update = function() {
     switch (soda_machine_fsm.state) {
     case 0:
         soda_machine_graphics.clearCoins();
-        soda_machine_graphics.statusText.attr('text', 
-            'Insert a coin to start');
+        if (soda_machine_fsm.state === 0) {
+    soda_machine_graphics.statusText.attr('text', 
+        'Insert a coin to start');
+} else {
+    soda_machine_graphics.statusText.attr('text', 
+        'Coin accepted! Insert more coins');
+}
         break;
     case 2: case 4:
         soda_machine_graphics.statusText.attr('text', 
