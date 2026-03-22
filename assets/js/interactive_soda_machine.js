@@ -72,15 +72,10 @@ soda_machine_fsm.update = function() {
   setTimeout(function() {
     switch (soda_machine_fsm.state) {
     case 0:
-        soda_machine_graphics.clearCoins();
-        if (soda_machine_fsm.state === 0) {
+    soda_machine_graphics.clearCoins();
     soda_machine_graphics.statusText.attr('text', 
         'Insert a coin to start');
-} else {
-    soda_machine_graphics.statusText.attr('text', 
-        'Coin accepted! Insert more coins');
-}
-        break;
+    break;
     case 2: case 4:
         soda_machine_graphics.statusText.attr('text', 
             'Coin accepted! Insert more coins');
@@ -338,9 +333,12 @@ soda_machine_graphics.enableButtons = function(input) {
 	}
   }
   soda_machine_graphics.button_status = 0;
-  soda_machine_graphics.statusText.attr('text', 'Insert a coin to start');
+  if (soda_machine_fsm.state === 0) {
+    soda_machine_graphics.statusText.attr('text', 'Insert a coin to start');
+  } else {
+    soda_machine_graphics.statusText.attr('text', 'Coin accepted! Insert more coins');
+  }
 }
-
 soda_machine_graphics.dropCoin = function(input) {
   if (soda_machine_graphics.button_status != 0) {
     return;
