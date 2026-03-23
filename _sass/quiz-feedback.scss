@@ -8,6 +8,7 @@ $color-incorrect-border: #dc3545;
 $color-incorrect-text: #721c24;
 $color-reset-bg: #6c757d;
 $color-reset-hover: #5a6268;
+$color-reset-text: #ffffff;
 $color-dark-correct-bg: #1e3a28;
 $color-dark-correct-border: #28a745;
 $color-dark-correct-text: #7fdb9f;
@@ -18,42 +19,42 @@ $color-dark-shadow: rgba(255, 255, 255, 0.1);
 
 // Correct answer styling
 .feedback-correct {
+  animation: correct-pulse 0.5s ease;
   background-color: $color-correct-bg;
   border: 1px solid $color-correct-border;
-  color: $color-correct-text;
-  padding: 0.75rem;
   border-radius: 4px;
+  color: $color-correct-text;
   margin-top: 0.5rem;
-  animation: correctPulse 0.5s ease;
+  padding: 0.75rem;
 }
 
 // Incorrect answer styling
 .feedback-incorrect {
+  animation: incorrect-shake 0.5s ease;
   background-color: $color-incorrect-bg;
   border: 1px solid $color-incorrect-border;
-  color: $color-incorrect-text;
-  padding: 0.75rem;
   border-radius: 4px;
+  color: $color-incorrect-text;
   margin-top: 0.5rem;
-  animation: incorrectShake 0.5s ease;
+  padding: 0.75rem;
 }
 
 // Feedback message
 .feedback-message {
-  line-height: 1.6;
   font-size: 0.95rem;
+  line-height: 1.6;
   margin-bottom: 1rem;
 }
 
 // Reset button
 .quiz-reset-btn {
-  padding: 0.5rem 1rem;
   background-color: $color-reset-bg;
-  color: white;
-  border: none;
+  border: 0;
   border-radius: 4px;
+  color: $color-reset-text;
   cursor: pointer;
   font-size: 0.9rem;
+  padding: 0.5rem 1rem;
   transition: background-color 0.2s ease;
 
   &:hover {
@@ -85,13 +86,13 @@ $color-dark-shadow: rgba(255, 255, 255, 0.1);
 }
 
 // Animations
-@keyframes correctPulse {
+@keyframes correct-pulse {
   0% { transform: scale(1); }
   50% { transform: scale(1.02); }
   100% { transform: scale(1); }
 }
 
-@keyframes incorrectShake {
+@keyframes incorrect-shake {
   0% { transform: translateX(0); }
   25% { transform: translateX(-5px); }
   75% { transform: translateX(5px); }
