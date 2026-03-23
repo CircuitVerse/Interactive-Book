@@ -114,11 +114,11 @@ The vending machine FSM can be represented as a
 state transition table. Each row shows what happens 
 in a given state when a coin is inserted:
 
-| Current State | Coin Input | Next State | Output |
+| Current State | Input / Condition | Next State | Output |
 |--------------|-----------|------------|--------|
 | M0  (0¢)  | 5¢  (01) | W5         | None   |
 | M0  (0¢)  | 10¢ (10) | W10        | None   |
-| W5        | auto     | M5         | None   |
+| W0        | auto     | M5         | None   |
 | W10       | auto     | M10        | None   |
 | M5  (5¢)  | 5¢  (01) | W10        | None   |
 | M5  (5¢)  | 10¢ (10) | W15        | None   |
@@ -150,7 +150,7 @@ Here is what each symbol means:
 | M10 | 10¢ collected |
 | M15 | 15¢ collected — dispense soda |
 | M20 | 20¢ collected — give change |
-| W5  | Wait state after 5¢ inserted |
+| W0  | Wait state after 5¢ inserted |
 | W10 | Wait state after 10¢ inserted |
 | W15 | Wait state at 15¢ |
 | W20 | Wait state at 20¢ |
@@ -191,7 +191,7 @@ for each of the above mentioned possibilities.
    3. 3
    4. 4
 
-3. A Mealy machine has 3 states and 2 inputs.
+3.  A Mealy machine has 3 states and one binary input.
    The minimum number of rows in its state
    transition table will be:
    1. 3

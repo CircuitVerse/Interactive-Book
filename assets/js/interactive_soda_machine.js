@@ -77,6 +77,7 @@ soda_machine_fsm.update = function() {
         'Insert a coin to start');
     break;
     case 2: case 4:
+        soda_machine_graphics.enableButtons();
         soda_machine_graphics.statusText.attr('text', 
             'Coin accepted! Insert more coins');
         break;
@@ -377,13 +378,6 @@ soda_machine_graphics.dropCoin = function(input) {
   setTimeout (function () {
     soda_machine_graphics.lids[2].animate({transform: "t0,0"},300);
   }, 3000);
-  setTimeout (function () {
-    if (soda_machine_fsm.state === 0 ||
-        soda_machine_fsm.state === 2 ||
-        soda_machine_fsm.state === 4) {
-      soda_machine_graphics.enableButtons();
-    }
-}, 4000);
 
 }
 
