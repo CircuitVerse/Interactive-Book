@@ -31,7 +31,6 @@ function set_bits()
         if (errorEl) {
             errorEl.style.display = "block";
 }
-        set_bits();
     }
     else
 {
