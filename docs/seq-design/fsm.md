@@ -172,7 +172,7 @@ The actual price is 15¢ as stated in the problem.
 
 Let's try the soda can vending machine and look for 
 the corresponding state changes in the FSM diagram 
-for each of the above mentioned possibilities.
+for each of the above-mentioned possibilities.
 
 ## Quiz
 
@@ -191,7 +191,7 @@ for each of the above mentioned possibilities.
    3. 3
    4. 4
 
-3.  A Mealy machine has 3 states and one binary input.
+3. A Mealy machine has 3 states and one binary input.
    The minimum number of rows in its state
    transition table will be:
    1. 3
