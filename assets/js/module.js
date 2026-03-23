@@ -2349,10 +2349,10 @@ function KarnaughMap(parentDivId, qmcRef) {
 
         mx = e.pageX - offsetX;
         var scrollEl = document.getElementById("scrollcount");
-        var scrollTop = scrollEl
-            ? scrollEl.scrollTop
-            : (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0);
-        my = e.pageY - offsetY + scrollTop;
+        var windowScrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var pageY = (typeof e.pageY === "number") ? e.pageY : (e.clientY + windowScrollTop);
+        var containerScrollTop = scrollEl ? scrollEl.scrollTop : 0;
+        my = pageY - offsetY + containerScrollTop;
         return {x: mx, y: my};
     }
 }
