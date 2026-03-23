@@ -23,30 +23,53 @@ bit.fill(false);
 
 function set_bits()
 {
-    if(isNaN(document.getElementById("value_A").value) || document.getElementById("value_A").value > 255 || document.getElementById("value_A").value < 0 || isNaN(document.getElementById("value_B").value) || document.getElementById("value_B").value < 0 || document.getElementById("value_B").value > 255)
+    var errorEl = document.getElementById("input-error");
+    var bit_value;
+
+    if (
+        isNaN(document.getElementById("value_A").value) ||
+        document.getElementById("value_A").value > 255 ||
+        document.getElementById("value_A").value < 0 ||
+        isNaN(document.getElementById("value_B").value) ||
+        document.getElementById("value_B").value < 0 ||
+        document.getElementById("value_B").value > 255
+    )
     {
         document.getElementById("value_A").value = 0;
         document.getElementById("value_B").value = 0;
-        var errorEl = document.getElementById("input-error");
+
         if (errorEl) {
             errorEl.style.display = "block";
-}
+        }
     }
     else
-{
-    var errorEl = document.getElementById("input-error");
-    if (errorEl) {
-        errorEl.style.display = "none";
-    }
-
-    for(var i=0; i < 8; i++)
     {
-        if((document.getElementById("value_A").value&Math.pow(2,i))>0) { bit_value = true; } else { bit_value = false; }
-        document.getElementById(i).innerHTML = bit_display[bit[i] = bit_value];
-        if((document.getElementById("value_B").value&Math.pow(2,i))>0) { bit_value = true; } else { bit_value = false; }
-        document.getElementById(i+8).innerHTML = bit_display[bit[i+8] = bit_value];
+        if (errorEl) {
+            errorEl.style.display = "none";
+        }
+
+        for (var i = 0; i < 8; i++)
+        {
+            if ((document.getElementById("value_A").value & Math.pow(2, i)) > 0) {
+                bit_value = true;
+            } else {
+                bit_value = false;
+            }
+
+            document.getElementById(i).innerHTML = bit_display[bit[i] = bit_value];
+
+            if ((document.getElementById("value_B").value & Math.pow(2, i)) > 0) {
+                bit_value = true;
+            } else {
+                bit_value = false;
+            }
+
+            document.getElementById(i + 8).innerHTML = bit_display[bit[i + 8] = bit_value];
+        }
+
+        do_bitwise(operator);
     }
-    do_bitwise(operator);
+}
 }
 
 function toggle_bit(column)
