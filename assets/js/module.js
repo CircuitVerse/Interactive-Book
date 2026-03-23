@@ -27,20 +27,27 @@ function set_bits()
     {
         document.getElementById("value_A").value = 0;
         document.getElementById("value_B").value = 0;
-        alert("Only numbers between 0 and 255 can be entered.");
+        const errorEl = document.getElementById("input-error");
+        if (errorEl) {
+            errorEl.style.display = "block";
+}
         set_bits();
     }
     else
-    {
-        for(var i=0; i < 8; i++)
-        {
-            if((document.getElementById("value_A").value&Math.pow(2,i))>0) { bit_value = true; } else { bit_value = false; }
-            document.getElementById(i).innerHTML = bit_display[bit[i] = bit_value];
-            if((document.getElementById("value_B").value&Math.pow(2,i))>0) { bit_value = true; } else { bit_value = false; }
-            document.getElementById(i+8).innerHTML = bit_display[bit[i+8] = bit_value];
-        }
-        do_bitwise();
+{
+    const errorEl = document.getElementById("input-error");
+    if (errorEl) {
+        errorEl.style.display = "none";
     }
+
+    for(var i=0; i < 8; i++)
+    {
+        if((document.getElementById("value_A").value&Math.pow(2,i))>0) { bit_value = true; } else { bit_value = false; }
+        document.getElementById(i).innerHTML = bit_display[bit[i] = bit_value];
+        if((document.getElementById("value_B").value&Math.pow(2,i))>0) { bit_value = true; } else { bit_value = false; }
+        document.getElementById(i+8).innerHTML = bit_display[bit[i+8] = bit_value];
+    }
+    do_bitwise();
 }
 
 function toggle_bit(column)
