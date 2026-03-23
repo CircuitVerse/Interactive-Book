@@ -46,7 +46,7 @@ function set_bits()
         if((document.getElementById("value_B").value&Math.pow(2,i))>0) { bit_value = true; } else { bit_value = false; }
         document.getElementById(i+8).innerHTML = bit_display[bit[i+8] = bit_value];
     }
-    do_bitwise();
+    do_bitwise(operator);
 }
 
 function toggle_bit(column)
