@@ -36,7 +36,7 @@ The revision history is presented in the following table
 
 ### Purpose of the guidelines
 
-These guidelines are inteded to guide those who wish to contribute to this Interactive Book. It (tries) to cover most aspects such as the process workflow, license, style, quality, templates and tools.
+These guidelines are intended to guide those who wish to contribute to this Interactive Book. It (tries) to cover most aspects such as the process workflow, license, style, quality, templates and tools.
 
 
 ### Acknowledgements
@@ -101,7 +101,7 @@ The proposal should clearly indicate what kind of contribution are you planning 
 
 Then, include a brief summary of the contribution content followed by the justification why it is needed.
 
-Finaly, submit your proposal to the CircuitVerse Interactive Book coordination team, and discuss the proposal with them in order to refine it. The coordination team will either approve or reject the proposal. In case of rejection, comments will be included explaining why it was rejected, and how could it be improved when the proposed content is useful, but the proposed "format" whas not adequate enough.
+Finally, submit your proposal to the CircuitVerse Interactive Book coordination team, and discuss the proposal with them in order to refine it. The coordination team will either approve or reject the proposal. In case of rejection, comments will be included explaining why it was rejected, and how could it be improved when the proposed content is useful, but the proposed "format" was not adequate enough.
 
 ---
 
@@ -117,7 +117,7 @@ If the original author cannot be contacted after a "good-faith" effort, fall bac
 
 ## Writing content
 
-All content should be supported by valid sources. Please, research carefuly and validate all your references. Check that there are no copyright or license issues regarding the use of each of your sources.
+All content should be supported by valid sources. Please, research carefully and validate all your references. Check that there are no copyright or license issues regarding the use of each of your sources.
 
 When using online resources, make a "hard-copy" (screen-capture, pdf-printed version) of them to avoid missing resources in the future (Error 404)
 
@@ -128,7 +128,7 @@ To keep the consistency of the book, please follow the style indicated in these 
 
 ### Quality assurance
 
-Besides researching and validating your sources and adhering to the Interactive Book style, please also edit (remove unnecesary content) and check for spelling and grammar errors. Then, forward your contribution to a third party for proofreading. When you are satisfied with the quality and accuracy of your contribution ask for peer reviewers from the CircuitVerse community. Finally, submit your work to the "formal" review by creating a pull-request of your forked repository
+Besides researching and validating your sources and adhering to the Interactive Book style, please also edit (remove unnecessary content) and check for spelling and grammar errors. Then, forward your contribution to a third party for proofreading. When you are satisfied with the quality and accuracy of your contribution ask for peer reviewers from the CircuitVerse community. Finally, submit your work to the "formal" review by creating a pull-request of your forked repository
 
 ---
 
@@ -395,7 +395,7 @@ The CircuitVerse Interactive Book's sources are hosted in a GitHub repository. B
 
 The Interactive Book is rendered using the Jekyll Static Site Generator (SSG). The GitHub repository is able to create a live version of the book using the continuous integration (CI) / continuous deployment (CD) workflows.
 
-To work locally, you will need to setup a Jekyll development environment. It is posible to setup Jekyll natively for your OS or run it in a docker container.
+To work locally, you will need to setup a Jekyll development environment. It is possible to setup Jekyll natively for your OS or run it in a docker container.
 
 1.  Workflow with native Jekyll
 
