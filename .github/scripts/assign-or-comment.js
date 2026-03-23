@@ -1,5 +1,3 @@
-#!/bin/bash
-
 const { Octokit } = require("@octokit/rest");
 
 const octokit = new Octokit({

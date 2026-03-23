@@ -1,7 +1,7 @@
 $(function() {
     var quizSettings = $('.quiz');
 
-    if (quizSettings != null) {
+    if (quizSettings.length > 0) {
         var quiz = $('<div class="pop-quiz">' +
         '<h2>Pop Quiz</h2>' +
         '</div>');
@@ -28,8 +28,13 @@ $(function() {
                 });
             });
 
-            // Shuffle answers
-            answers.sort(function() { return 0.5 - Math.random(); });
+            // Shuffle answers (Fisher-Yates)
+            for (var i = answers.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                var temp = answers[i];
+                answers[i] = answers[j];
+                answers[j] = temp;
+            }
 
             // Show answers
             var questionAnswers = $('<div class="quiz-answers"></div>');

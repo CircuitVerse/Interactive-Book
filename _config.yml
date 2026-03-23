@@ -80,7 +80,7 @@ aux_links:
 
 # Footer content 
 # appears at the bottom of every page's main content
-footer_content: "Copyright &copy; 2026 Contributors to CircuitVerse. Distributed under a [CC-by-sa] license."
+footer_content: "Copyright &copy; {% assign current_year = 'now' | date: '%Y' %}{{ current_year }} Contributors to CircuitVerse. Distributed under a [CC-by-sa] license."
 
 # Footer last edited timestamp
 last_edit_timestamp: false # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
@@ -99,8 +99,8 @@ gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into t
 color_scheme: circuitverse
 
 # Google Analytics Tracking (optional)
-# e.g, UA-1234567-89
-ga_tracking: UA-112678513-3
+# e.g, G-XXXXXXXXXX (GA4 format)
+# ga_tracking: G-XXXXXXXXXX
 
 jekyll-spaceship:
   # default enabled processors

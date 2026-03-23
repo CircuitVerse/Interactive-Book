@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - uses: ruby/setup-ruby@v1
         with:
@@ -24,7 +24,7 @@ jobs:
         run: bundle exec jekyll serve --port=4000 --detach
 
       - name: API Generation
-        run: sudo python utils/api_generator.py
+        run: python utils/api_generator.py
 
       - name: Kill Temporary Server
         run: pkill -f jekyll

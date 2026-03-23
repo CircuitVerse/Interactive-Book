@@ -2326,7 +2326,6 @@ function KarnaughMap(parentDivId, qmcRef) {
         hooveredKVField = -1;
         var oldHooveredElement = hooveredElement;
         hooveredElement = mouseOverElement(pos);
-        console.log(hooveredElement);
         if (hooveredElement !== -1) {
             hooveredKVField = uiElements[hooveredElement].ref;
         }
@@ -2349,8 +2348,9 @@ function KarnaughMap(parentDivId, qmcRef) {
         }
 
         mx = e.pageX - offsetX;
-        my = e.pageY - offsetY + document.getElementById("scrollcount").scrollTop;
-        console.log(mx + " " + my + " " + document.getElementById("scrollcount").scrollTop );
+        var scrollEl = document.getElementById("scrollcount");
+        var scrollTop = scrollEl ? scrollEl.scrollTop : 0;
+        my = e.pageY - offsetY + scrollTop;
         return {x: mx, y: my};
     }
 }
