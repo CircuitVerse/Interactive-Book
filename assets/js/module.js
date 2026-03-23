@@ -27,14 +27,14 @@ function set_bits()
     {
         document.getElementById("value_A").value = 0;
         document.getElementById("value_B").value = 0;
-        const errorEl = document.getElementById("input-error");
+        var errorEl = document.getElementById("input-error");
         if (errorEl) {
             errorEl.style.display = "block";
 }
     }
     else
 {
-    const errorEl = document.getElementById("input-error");
+    var errorEl = document.getElementById("input-error");
     if (errorEl) {
         errorEl.style.display = "none";
     }
