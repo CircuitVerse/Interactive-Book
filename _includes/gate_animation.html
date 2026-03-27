@@ -1,0 +1,198 @@
+{% comment %}
+  Usage: {% include gate_animation.html gate="AND" %}
+  Supported: AND, OR, NOT, NAND, NOR, XOR, XNOR
+{% endcomment %}
+
+<div class="gate-anim-wrapper" id="gate-anim-{{ include.gate }}">
+  <canvas class="gate-anim-canvas" id="canvas-{{ include.gate }}" width="340" height="120" aria-label="{{ include.gate }} gate animation"></canvas>
+  <div class="gate-anim-controls">
+    {% if include.gate == "NOT" %}
+      <label>A: <input type="checkbox" class="gate-anim-input" data-gate="{{ include.gate }}" data-input="0"> <span class="bit-label">0</span></label>
+    {% else %}
+      <label>A: <input type="checkbox" class="gate-anim-input" data-gate="{{ include.gate }}" data-input="0"> <span class="bit-label">0</span></label>
+      <label>B: <input type="checkbox" class="gate-anim-input" data-gate="{{ include.gate }}" data-input="1"> <span class="bit-label">0</span></label>
+    {% endif %}
+    <span class="gate-anim-output">Output: <strong class="output-val">—</strong></span>
+  </div>
+</div>
+
+<script>
+(function() {
+  var gateId = "{{ include.gate }}";
+  var canvas = document.getElementById("canvas-" + gateId);
+  var ctx = canvas.getContext("2d");
+  var wrapper = document.getElementById("gate-anim-" + gateId);
+  var inputs = [false, false];
+  var animProgress = 0;
+  var animFrame = null;
+
+  function computeOutput(gate, a, b) {
+    switch(gate) {
+      case "AND":  return a && b;
+      case "OR":   return a || b;
+      case "NOT":  return !a;
+      case "NAND": return !(a && b);
+      case "NOR":  return !(a || b);
+      case "XOR":  return a !== b;
+      case "XNOR": return a === b;
+    }
+  }
+
+  function drawGateShape(gate, cx, cy, active) {
+    ctx.strokeStyle = "#333";
+    ctx.lineWidth = 2.5;
+    ctx.fillStyle = active ? "#d4edda" : "#f8f9fa";
+
+    if (gate === "NOT") {
+      // Triangle
+      ctx.beginPath();
+      ctx.moveTo(cx - 22, cy - 20);
+      ctx.lineTo(cx + 18, cy);
+      ctx.lineTo(cx - 22, cy + 20);
+      ctx.closePath();
+      ctx.fill(); ctx.stroke();
+      // Bubble
+      ctx.beginPath();
+      ctx.arc(cx + 24, cy, 6, 0, Math.PI * 2);
+      ctx.fillStyle = active ? "#28a745" : "#fff";
+      ctx.fill(); ctx.stroke();
+    } else if (gate === "AND" || gate === "NAND") {
+      ctx.beginPath();
+      ctx.moveTo(cx - 22, cy - 22);
+      ctx.lineTo(cx, cy - 22);
+      ctx.arc(cx, cy, 22, -Math.PI / 2, Math.PI / 2);
+      ctx.lineTo(cx - 22, cy + 22);
+      ctx.closePath();
+      ctx.fill(); ctx.stroke();
+      if (gate === "NAND") {
+        ctx.beginPath();
+        ctx.arc(cx + 28, cy, 6, 0, Math.PI * 2);
+        ctx.fillStyle = active ? "#28a745" : "#fff";
+        ctx.fill(); ctx.stroke();
+      }
+    } else {
+      // OR / NOR / XOR / XNOR — curved body
+      ctx.beginPath();
+      ctx.moveTo(cx - 22, cy - 22);
+      ctx.quadraticCurveTo(cx - 5, cy, cx - 22, cy + 22);
+      ctx.quadraticCurveTo(cx + 5, cy + 22, cx + 22, cy);
+      ctx.quadraticCurveTo(cx + 5, cy - 22, cx - 22, cy - 22);
+      ctx.fill(); ctx.stroke();
+      if (gate === "XOR" || gate === "XNOR") {
+        ctx.beginPath();
+        ctx.moveTo(cx - 28, cy - 22);
+        ctx.quadraticCurveTo(cx - 11, cy, cx - 28, cy + 22);
+        ctx.stroke();
+      }
+      if (gate === "NOR" || gate === "XNOR") {
+        ctx.beginPath();
+        ctx.arc(cx + 28, cy, 6, 0, Math.PI * 2);
+        ctx.fillStyle = active ? "#28a745" : "#fff";
+        ctx.fill(); ctx.stroke();
+      }
+    }
+  }
+
+  function signalColor(on, alpha) {
+    return on
+      ? "rgba(40,167,69," + alpha + ")"
+      : "rgba(180,180,180," + alpha + ")";
+  }
+
+  function drawWire(x1, y1, x2, y2, on, progress) {
+    var len = Math.sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1));
+    var ex = x1 + (x2 - x1) * progress;
+    var ey = y1 + (y2 - y1) * progress;
+
+    // Base wire (grey)
+    ctx.beginPath();
+    ctx.moveTo(x1, y1); ctx.lineTo(x2, y2);
+    ctx.strokeStyle = "#ccc"; ctx.lineWidth = 3;
+    ctx.stroke();
+
+    // Animated signal
+    ctx.beginPath();
+    ctx.moveTo(x1, y1); ctx.lineTo(ex, ey);
+    ctx.strokeStyle = signalColor(on, 1);
+    ctx.lineWidth = 3;
+    ctx.stroke();
+
+    // Signal dot
+    ctx.beginPath();
+    ctx.arc(ex, ey, 5, 0, Math.PI * 2);
+    ctx.fillStyle = signalColor(on, 0.9);
+    ctx.fill();
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    var isNot = (gateId === "NOT");
+    var a = inputs[0], b = inputs[1];
+    var out = computeOutput(gateId, a, b);
+    var cx = 185, cy = 60;
+    var p = animProgress;
+
+    // Input wires
+    if (isNot) {
+      drawWire(30, cy, cx - 22, cy, a, Math.min(p * 2, 1));
+    } else {
+      drawWire(30, 35, cx - 22, cy - 14, a, Math.min(p * 2, 1));
+      drawWire(30, 85, cx - 22, cy + 14, b, Math.min(p * 2, 1));
+    }
+
+    // Gate body
+    var bodyAlpha = Math.max(0, p * 2 - 1);
+    ctx.globalAlpha = 0.3 + bodyAlpha * 0.7;
+    drawGateShape(gateId, cx, cy, out);
+    ctx.globalAlpha = 1;
+
+    // Output wire
+    var outX = (gateId === "NOT" || gateId === "NAND" || gateId === "NOR" || gateId === "XNOR") ? cx + 30 : cx + 22;
+    var outProgress = Math.max(0, p * 2 - 1);
+    drawWire(outX, cy, 310, cy, out, outProgress);
+
+    // Labels
+    ctx.fillStyle = "#333";
+    ctx.font = "bold 13px monospace";
+    ctx.fillText("A=" + (a ? "1" : "0"), 5, 39);
+    if (!isNot) ctx.fillText("B=" + (b ? "1" : "0"), 5, 89);
+    ctx.fillText("Out=" + (out ? "1" : "0"), 315, 64);
+
+    // Update output display
+    var outEl = wrapper.querySelector(".output-val");
+    if (outEl) outEl.textContent = out ? "1 (HIGH)" : "0 (LOW)";
+    outEl.style.color = out ? "#28a745" : "#dc3545";
+  }
+
+  function animate() {
+    animProgress += 0.03;
+    draw();
+    if (animProgress < 1) {
+      animFrame = requestAnimationFrame(animate);
+    } else {
+      animProgress = 1;
+      draw();
+    }
+  }
+
+  function startAnim() {
+    if (animFrame) cancelAnimationFrame(animFrame);
+    animProgress = 0;
+    animate();
+  }
+
+  // Init
+  animProgress = 1;
+  draw();
+
+  // Wire up checkboxes
+  wrapper.querySelectorAll(".gate-anim-input").forEach(function(cb) {
+    cb.addEventListener("change", function() {
+      var idx = parseInt(this.dataset.input);
+      inputs[idx] = this.checked;
+      this.nextElementSibling.textContent = this.checked ? "1" : "0";
+      startAnim();
+    });
+  });
+})();
+</script>

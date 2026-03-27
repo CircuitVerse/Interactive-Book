@@ -309,3 +309,47 @@ button,
   width: 0%;
   z-index: 10000;
 }
+
+// Gate animation widget
+.gate-anim-wrapper {
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  background: #fff;
+  display: inline-block;
+  width: 100%;
+  max-width: 420px;
+
+  .gate-anim-canvas {
+    display: block;
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .gate-anim-controls {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      cursor: pointer;
+    }
+
+    .bit-label {
+      font-family: monospace;
+      font-weight: bold;
+      min-width: 0.8rem;
+    }
+
+    .gate-anim-output {
+      margin-left: auto;
+    }
+  }
+}

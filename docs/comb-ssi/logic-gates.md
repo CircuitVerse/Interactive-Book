@@ -44,6 +44,8 @@ The NOT gate is also known as an inverter because it produces the exact opposite
 
 {% include image.html url='/assets/images/NotGate.svg' description='Not Gate' %}
 
+{% include gate_animation.html gate="NOT" %}
+
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46600" id="gates_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ### Verilog code for NOT gate
@@ -69,6 +71,8 @@ The Truth table for AND gate which consists of two inputs is given below
 | 1            | 1            | 1      |
 
 {% include image.html url='/assets/images/AndGate.svg' description='AND Gate' %}
+
+{% include gate_animation.html gate="AND" %}
 
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46601" id="gates_02" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
@@ -97,6 +101,8 @@ The Truth table of OR gate which consists of two inputs is given below
 
 {% include image.html url='/assets/images/OrGate.svg' description='AND Gate' %}
 
+{% include gate_animation.html gate="OR" %}
+
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46603" id="gates_03" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ### Verilog code for OR gate
@@ -124,6 +130,8 @@ The Truth table of NAND gate which consists of two inputs is given below
 | 1             | 1            | 0      |
 
 {% include image.html url='/assets/images/NandGate.svg' description='NAND Gate' %}
+
+{% include gate_animation.html gate="NAND" %}
 
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46604" id="gates_04" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
@@ -154,6 +162,8 @@ The Truth table of NOR gate which consists of two inputs is given below
 
 {% include image.html url='/assets/images/NorGate.svg' description='NOR Gate' %}
 
+{% include gate_animation.html gate="NOR" %}
+
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46606" id="gates_05" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ### Verilog code for NOR gate
@@ -181,6 +191,8 @@ The Truth table of XOR gate which consists of two inputs is given below
 
 {% include image.html url='/assets/images/XorGate.svg' description='XOR Gate' %}
 
+{% include gate_animation.html gate="XOR" %}
+
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46609" id="gates_06" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
 ### Verilog code for XOR gate
@@ -207,6 +219,8 @@ The Truth table of XNOR gate which consists of two inputs is given below
 | 1             | 1            | 1      |
 
 {% include image.html url='/assets/images/XnorGate.svg' description='XNOR Gate' %}
+
+{% include gate_animation.html gate="XNOR" %}
 
 <iframe width="100%" height="220px" src="https://circuitverse.org/simulator/embed/46613" id="gates_07" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
