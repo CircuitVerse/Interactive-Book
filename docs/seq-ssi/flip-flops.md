@@ -153,7 +153,6 @@ end
 > `always @(posedge clk)` blocks. Using `=` (blocking assignment)
 > in clocked flip-flop logic is a common mistake that causes
 > simulation mismatches.
-```
 
 ## JK flip-flop
 {: .no_toc #jk_flipflop}
