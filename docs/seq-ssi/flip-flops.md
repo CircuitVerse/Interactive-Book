@@ -62,7 +62,7 @@ SR flip-flop operates with only positive clock transitions or negative clock tra
 
 {% include image.html url="/assets/images/sr_flipflop.jpg" description="" %}
 
-his circuit has two inputs S & R and two outputs Q(t) & Q(t)’. The operation of SR flipflop is similar to SR Latch. But, this flip-flop affects the outputs only when positive transition of the clock signal is applied instead of active enable.
+This circuit has two inputs S & R and two outputs Q(t) & Q(t)’. Unlike the SR latch which responds to enable levels, the SR flip-flop is edge-triggered — outputs change only on the positive clock transition.
 
 ## State table 
 
@@ -77,7 +77,7 @@ Here, Q(t) & Q(t + 1) are present state & next state respectively. So, SR flip-f
 
 ## Characteristic table 
 
-Therefore, SR Latch performs three types of functions such as Hold, Set & Reset based on the input conditions.
+Therefore, SR Flip Flop performs three types of functions such as Hold, Set & Reset based on the input conditions.
 
 | S      |    R    |   Q(t) |   Q(t+1) |
 |:-------|:--------|:-------|:---------|
@@ -111,7 +111,7 @@ D flip-flop operates with only positive clock transitions or negative clock tran
 
 {% include image.html url="/assets/images/d_flipflop.jpg" description="" %}
 
-This circuit has single input D and two outputs Q(t) & Q(t)’. The operation of D flip-flop is similar to D Latch. But, this flip-flop affects the outputs only when positive transition of the clock signal is applied instead of active enable.
+This circuit has single input D and two outputs Q(t) & Q(t)’. Unlike the D latch which is level-sensitive (output follows input whenever enable is HIGH), the D flip-flop is edge-triggered — it updates output Q only on the rising edge of the clock signal, ignoring changes to D at all other times.
 
 
 ## State table
@@ -130,6 +130,30 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/12254" id="d_flipflop_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
+## Mapping to Verilog
+
+CircuitVerse implements the D flip-flop as **edge-triggered**.
+The exported Verilog reflects this correctly:
+```verilog
+// D Flip-Flop — edge-triggered (what CircuitVerse implements)
+always @(posedge clk) begin
+    Q <= D;
+end
+```
+
+This is fundamentally different from a D latch, which would use:
+```verilog
+// D Latch — level-sensitive (NOT what CircuitVerse implements)
+always @(D or en) begin
+    if (en) Q = D;
+end
+```
+
+> **Note:** Always use `<=` (non-blocking assignment) inside
+> `always @(posedge clk)` blocks. Using `=` (blocking assignment)
+> in clocked flip-flop logic is a common mistake that causes
+> simulation mismatches.
+```
 
 ## JK flip-flop
 {: .no_toc #jk_flipflop}
@@ -193,7 +217,7 @@ This circuit has single input T and two outputs Q(t) & Q(t)’. The operation of
 ## State table 
 
 
-| D    |    Q(t+1) | 
+| T    |    Q(t+1) | 
 |:-------|:--------|
 |  0     |    Q(t)    | 
 |  1     |    Q(t)'    |
@@ -285,6 +309,17 @@ Here, Q(n) is the present state and Q(n+1) is the next state.
 Q(n+1) = Q(n)'J + Q(n)K'
 ````
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/47630" id="masterslave_jk_flipflop_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
+
+### Race Around Condition
+In a standard JK flip-flop with J=1, K=1, the output 
+toggles as long as the clock is HIGH. If the clock pulse 
+is wide enough, the output feeds back and toggles multiple 
+times in one clock cycle — this is the race around condition. 
+Master-slave solves this by separating the capture (master, 
+positive edge) from the output (slave, negative edge).
+
+
+---
 
 
 ## Flip-flops interaction
