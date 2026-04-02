@@ -309,7 +309,7 @@ Q(n+1) = Q(n)'J + Q(n)K'
 ````
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/47630" id="masterslave_jk_flipflop_01" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
 
-### Race Around Condition
+### Race-Around Condition
 In a standard JK flip-flop with J=1, K=1, the output 
 toggles as long as the clock is HIGH. If the clock pulse 
 is wide enough, the output feeds back and toggles multiple 
