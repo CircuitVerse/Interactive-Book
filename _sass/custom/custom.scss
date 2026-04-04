@@ -306,7 +306,7 @@ $text-color: #111111;
 
 // Gate animation widget
 .gate-anim-wrapper {
-  background: $white;
+  background: $body-background-color;
   border: 1px solid $border-color;
   border-radius: 6px;
   display: inline-block;
@@ -328,13 +328,13 @@ $text-color: #111111;
   flex-wrap: wrap;
   font-size: 0.9rem;
   margin-top: 0.5rem;
-}
 
-.gate-anim-controls label {
-  align-items: center;
-  cursor: pointer;
-  display: flex;
-  margin-right: 1.2rem;
+  label {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    margin-right: 1.2rem;
+  }
 }
 
 .bit-label {

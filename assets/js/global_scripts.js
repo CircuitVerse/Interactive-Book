@@ -3,16 +3,16 @@
  */
 
 var storageItem = "colorMode";
-var isDarkMode = localStorage.getItem(storageItem);
+var isDarkMode = localStorage.getItem(storageItem) === "1";
 
-if (isDarkMode == null) {
-	isDarkMode = 0;
-	localStorage.setItem(storageItem, isDarkMode);
+if (localStorage.getItem(storageItem) === null) {
+	isDarkMode = false;
+	localStorage.setItem(storageItem, "0");
 }
 
 // Apply saved theme only after jtd is ready to avoid race condition
 document.addEventListener('DOMContentLoaded', function () {
-	if (isDarkMode == 1) {
+	if (isDarkMode) {
 		jtd.setTheme('circuitversedark');
 	}
 });
@@ -22,21 +22,21 @@ $(document).ready(function () {
 	//dark mode functionality
 	var a = $('a.site-button:contains("mode")');
 
-	if (isDarkMode == 1) {
+	if (isDarkMode) {
 		a.text("Light mode");
 	}
 
 	a.click(function () {
-		if (isDarkMode == 0) {
+		if (!isDarkMode) {
 			jtd.setTheme('circuitversedark');
 			a.text("Light mode");
-			isDarkMode = 1;
+			isDarkMode = true;
 		} else {
 			jtd.setTheme('circuitverse');
 			a.text("Dark mode");
-			isDarkMode = 0;
+			isDarkMode = false;
 		}
-		localStorage.setItem(storageItem, isDarkMode);
+		localStorage.setItem(storageItem, isDarkMode ? "1" : "0");
 
 		// Reset Disqus thread to reload with matching color scheme
 		if (typeof DISQUS !== 'undefined') {

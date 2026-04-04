@@ -160,8 +160,10 @@
 
     // Update output display
     var outEl = wrapper.querySelector(".output-val");
-    if (outEl) outEl.textContent = out ? "1 (HIGH)" : "0 (LOW)";
-    outEl.style.color = out ? "#28a745" : "#dc3545";
+    if (outEl) {
+      outEl.textContent = out ? "1 (HIGH)" : "0 (LOW)";
+      outEl.style.color = out ? "#28a745" : "#dc3545";
+    }
   }
 
   function animate() {

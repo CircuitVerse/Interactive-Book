@@ -145,6 +145,7 @@ function show_result()
         default:
             document.getElementById("operator").style.backgroundImage = "url('/assets/images/NOT_gate.png')";
             document.getElementById("result").style.backgroundImage = bit_display_bool[!bit_bool[0]];
+            return false;
     }
 }
 
@@ -2347,11 +2348,14 @@ function KarnaughMap(parentDivId, qmcRef) {
             } while ((element = element.offsetParent));
         }
 
-        mx = e.pageX - offsetX;
         var scrollEl = document.getElementById("scrollcount");
-        var windowScrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var windowScrollTop = window.scrollY || window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var windowScrollLeft = window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft || 0;
+        var pageX = (typeof e.pageX === "number") ? e.pageX : (e.clientX + windowScrollLeft);
         var pageY = (typeof e.pageY === "number") ? e.pageY : (e.clientY + windowScrollTop);
+        var containerScrollLeft = scrollEl ? scrollEl.scrollLeft : 0;
         var containerScrollTop = scrollEl ? scrollEl.scrollTop : 0;
+        mx = pageX - offsetX + containerScrollLeft;
         my = pageY - offsetY + containerScrollTop;
         return {x: mx, y: my};
     }
