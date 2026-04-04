@@ -2348,15 +2348,10 @@ function KarnaughMap(parentDivId, qmcRef) {
             } while ((element = element.offsetParent));
         }
 
-        var scrollEl = document.getElementById("scrollcount");
-        var windowScrollTop = window.scrollY || window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-        var windowScrollLeft = window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft || 0;
-        var pageX = (typeof e.pageX === "number") ? e.pageX : (e.clientX + windowScrollLeft);
+        var windowScrollTop = window.scrollY || window.pageYOffset || 0;
         var pageY = (typeof e.pageY === "number") ? e.pageY : (e.clientY + windowScrollTop);
-        var containerScrollLeft = scrollEl ? scrollEl.scrollLeft : 0;
-        var containerScrollTop = scrollEl ? scrollEl.scrollTop : 0;
-        mx = pageX - offsetX + containerScrollLeft;
-        my = pageY - offsetY + containerScrollTop;
+        mx = e.pageX - offsetX;
+        my = pageY - offsetY;
         return {x: mx, y: my};
     }
 }
