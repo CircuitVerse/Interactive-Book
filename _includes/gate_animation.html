@@ -3,8 +3,8 @@
   Supported: AND, OR, NOT, NAND, NOR, XOR, XNOR
 {% endcomment %}
 
-<div class="gate-anim-wrapper" id="gate-anim-{{ include.gate }}">
-  <canvas class="gate-anim-canvas" id="canvas-{{ include.gate }}" width="340" height="120" aria-label="{{ include.gate }} gate animation"></canvas>
+<div class="gate-anim-wrapper" data-gate="{{ include.gate }}">
+  <canvas class="gate-anim-canvas" width="340" height="120" aria-label="{{ include.gate }} gate animation"></canvas>
   <div class="gate-anim-controls">
     {% if include.gate == "NOT" %}
       <label>A: <input type="checkbox" class="gate-anim-input" data-gate="{{ include.gate }}" data-input="0"> <span class="bit-label">0</span></label>
@@ -18,10 +18,14 @@
 
 <script>
 (function() {
-  var gateId = "{{ include.gate }}";
-  var canvas = document.getElementById("canvas-" + gateId);
+  var wrapper = document.currentScript && document.currentScript.previousElementSibling;
+  if (!wrapper || !wrapper.classList.contains("gate-anim-wrapper")) return;
+
+  var gateId = wrapper.dataset.gate;
+  var canvas = wrapper.querySelector(".gate-anim-canvas");
+  if (!canvas) return;
+
   var ctx = canvas.getContext("2d");
-  var wrapper = document.getElementById("gate-anim-" + gateId);
   var inputs = [false, false];
   var animProgress = 0;
   var animFrame = null;

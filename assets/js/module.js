@@ -145,7 +145,7 @@ function show_result()
         default:
             document.getElementById("operator").style.backgroundImage = "url('/assets/images/NOT_gate.png')";
             document.getElementById("result").style.backgroundImage = bit_display_bool[!bit_bool[0]];
-            return false;
+            return;
     }
 }
 
