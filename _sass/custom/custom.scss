@@ -279,19 +279,13 @@ $text-color: #111111;
   bottom: 15px;
 }
 
-// Added transitions
-a,
-h1,
-h2,
-h3,
-h4,
-h5,
-button,
+// Added transitions — only structural layout elements, not links/buttons
+// (animating a/button causes a blue color flash during theme switches)
 .main-content,
 .side-bar,
 .site-nav,
 .search {
-  transition: linear 0.3s;
+  transition: background-color 0.3s linear, color 0.3s linear;
 }
 
 .search-active .search-input,

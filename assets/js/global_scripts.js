@@ -2,18 +2,20 @@
  * Global Scripts for Interactive Book
  */
 
-// Switch Color Scheme as soon as possible
-var searchText = "mode";
 var storageItem = "colorMode";
 var isDarkMode = localStorage.getItem(storageItem);
 
-if (isDarkMode == 0 || isDarkMode == null) {
+if (isDarkMode == null) {
 	isDarkMode = 0;
 	localStorage.setItem(storageItem, isDarkMode);
-} else if (isDarkMode == 1) {
-	jtd.setTheme('circuitversedark');
-	
 }
+
+// Apply saved theme only after jtd is ready to avoid race condition
+document.addEventListener('DOMContentLoaded', function () {
+	if (isDarkMode == 1) {
+		jtd.setTheme('circuitversedark');
+	}
+});
 
 $(document).ready(function () {
 
@@ -25,21 +27,21 @@ $(document).ready(function () {
 	}
 
 	a.click(function () {
-		
-		if (isDarkMode == 0 || isDarkMode == null) {
+		if (isDarkMode == 0) {
 			jtd.setTheme('circuitversedark');
 			a.text("Light mode");
 			isDarkMode = 1;
-			localStorage.setItem(storageItem, isDarkMode);
 		} else {
 			jtd.setTheme('circuitverse');
 			a.text("Dark mode");
 			isDarkMode = 0;
-			localStorage.setItem(storageItem, isDarkMode);
 		}
+		localStorage.setItem(storageItem, isDarkMode);
 
 		// Reset Disqus thread to reload with matching color scheme
-		setTimeout(function(){ DISQUS.reset({reload: true}); }, 500);
+		if (typeof DISQUS !== 'undefined') {
+			setTimeout(function () { DISQUS.reset({ reload: true }); }, 500);
+		}
 		return false;
 	});
 
