@@ -1,8 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.8.6)
-      public_suffix (>= 2.0.2, < 6.0)
+    addressable (2.9.0)
+      public_suffix (>= 2.0.2, < 8.0)
     base64 (0.3.0)
     bibtex-ruby (6.0.0)
       latex-decode (~> 0.0)
@@ -108,7 +108,7 @@ GEM
       sawyer (~> 0.9)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    public_suffix (5.0.4)
+    public_suffix (7.0.5)
     racc (1.8.1)
     rack (3.2.4)
     rack-protection (4.2.0)
