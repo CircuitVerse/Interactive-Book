@@ -62,7 +62,7 @@ Another method which can achieve Division in binary is by using Binary Multiplic
    * 1101
    * 0011
 3. Division of the binary numbers: `011010000` by `0101` will give quotient as ?
-   1. 0101010
+   1. 0101001
    * 0000010
    * 0110010
    * 0101110 
