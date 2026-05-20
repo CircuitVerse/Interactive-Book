@@ -71,6 +71,6 @@ The adjacency is key to group cubes in Karnaugh maps and in the Quine McCluskey 
    * Circle
    * Triangle
 3. Which shape is represented by an object having exactly 3 variables?
-      1. Cube
-      * Parallelogram
-      * Sphere
+   1. Cube
+   * Parallelogram
+   * Sphere
