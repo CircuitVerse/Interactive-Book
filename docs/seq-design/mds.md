@@ -42,5 +42,5 @@ For complex digital logic system with a large number of inputs, the following de
     3.  Draw detailed block diagram
 5.  Draw MDS diagram
 6.  Choose the controller architecture: SSI (logic gates and flip-flops), MSI (based on MUXs, &#x2026;) or LSI (ROM based, &#x2026;)
-7.  Asign state codes
+7.  Assign state codes
 8.  Implement the circuit based on the design

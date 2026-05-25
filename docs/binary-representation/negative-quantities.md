@@ -74,7 +74,7 @@ add 1               +           1
 	* -149
 	1. +17
 
-2.  The greatest negative number which can be stored in a 8-bit register using 2's complement arithemtic is ?
+2.  The greatest negative number which can be stored in an 8-bit register using 2's complement arithmetic is ?
 	* -256
 	* -255
 	1. -128

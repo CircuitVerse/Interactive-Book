@@ -75,7 +75,7 @@ A method of MEV minimization based on partial variables is described in:
 -   Section "Minimizing MEV maps" in {% cite stonham2017digital --file books %}
 -   Section "Map-entered variables" in {% cite kohavi2010switching --file books %}
 
-Another recursive method which can be used when the MEV only has expessions of one variable (or its complement) is described next.
+Another recursive method which can be used when the MEV only has expressions of one variable (or its complement) is described next.
 
 The expressions found in the map's cells can have these forms:
 

@@ -21,7 +21,7 @@ has_children: false
 
 ## Representing real numbers
 
-While the representation of integer quantities using binary numbers is straightforward, representation of real numbers and its arithmetics require special care. See Section 3.11 in {% cite donzellini2018introduction --file books %}
+While the representation of integer quantities using binary numbers is straightforward, representation of real numbers and its arithmetic require special care. See Section 3.11 in {% cite donzellini2018introduction --file books %}
 
 
 ### Fixed point
@@ -40,7 +40,7 @@ A part of the binary number is used to store the *significand* (including a sign
 
 ## The IEEE 754 Standard
 
-There are multiple ways of implementenig floating point numbers and arithmetics. However, since 1985 the IEEE Standard for Floating-Point Arithmetic (IEEE 754) has been available addressing many issues and providing a reliable and portable definition.
+There are multiple ways of implementing floating point numbers and arithmetic. However, since 1985 the IEEE Standard for Floating-Point Arithmetic (IEEE 754) has been available addressing many issues and providing a reliable and portable definition.
 
 The latest version of the standard was published in 2019 {% cite ieee754std2019 --file books %} and the latest ISO version (identical to the IEEE Std 754) was published in 2020 {% cite iso60559 --file books %}
 

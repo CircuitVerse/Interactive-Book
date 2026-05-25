@@ -48,7 +48,7 @@ There are a few important takeaways here:
 - These Instructions can used to create meaningful programs. Since these are required to be easily available, they can be stored on ROM unit.
 - The input arguments A and B are often stored in Internal Registers. These along with other special purpose register form the registers of the microcontroller.
 - ROM memories are slower in speed, hence an intermediate high speed RAM is often used.
-- All the critical timings, decoding of the instructions are often grouped together in seperate control and timings unit.
+- All the critical timings, decoding of the instructions are often grouped together in separate control and timings unit.
 - If a Micro controller would be constructed only from ALU, RAM and ROM, there would not be any external interface. Hence, you now have Input/Output (I/O) ports.
 - Additional features such as Interrupts, communication protocols, EEPROM, Timers/Counters, Debug interfaces etc. are incorporated to make a controller complete.
 
