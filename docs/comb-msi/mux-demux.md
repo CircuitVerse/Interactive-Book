@@ -76,13 +76,13 @@ The 8 : 1 multiplexer has 8 inputs and 3 control signals.
 
 | S1      | S2      | S3     | Y(Output)|
 |:-------:|:-------:|:------:|:------:|
-| 0       | 0       | 1      |T1       |
-| 0       | 1       | 0      |T2       |
-| 0       | 1       | 1      |T3      |
+| 0       | 0       | 0      |T1       |
+| 0       | 0       | 1      |T2       |
+| 0       | 1       | 0      |T3      |
 | 0       | 1       | 1      |T4      |
-| 1       | 0       | 1      |T5      |
-| 1       | 1       | 0      |T6      |
-| 1       | 1       | 1      |T7      |
+| 1       | 0       | 0      |T5      |
+| 1       | 0       | 1      |T6      |
+| 1       | 1       | 0      |T7      |
 | 1       | 1       | 1      |T8      |
 
 <iframe width="100%"  height="400px" src="https://circuitverse.org/simulator/embed/44766" id="mux_03" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen> </iframe>
