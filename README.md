@@ -195,4 +195,3 @@ In addition to these plugins, Interactive book also inherit's all the plugins us
 ### Create, Contribute, Learn, and succeed with CircuitVerse!!!
 
 Interactive-Book is &copy; 2026 by [CircuitVerse](https://circuitverse.org/)
-
