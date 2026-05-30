@@ -309,3 +309,9 @@ button,
   width: 0%;
   z-index: 10000;
 }
+// Fix: Sticky main header (Issue #696)
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 500;
+}
