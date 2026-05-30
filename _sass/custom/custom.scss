@@ -195,7 +195,7 @@ $text-color: #111111;
 // CV flavored side nav
 //
 .nav-list {
-  list-style: circle url("/assets/images/nav-marker-inactive.svg") inside;
+  list-style: none;
 
   .nav-list-item {
     // scss-lint:disable SelectorDepth
@@ -204,7 +204,7 @@ $text-color: #111111;
     }
 
     &.active {
-      list-style: disc url("/assets/images/nav-marker-active.svg") inside;
+      list-style: none;
     }
   }
 
@@ -214,7 +214,14 @@ $text-color: #111111;
   }
 
   .nav-list-item.active {
-    list-style: disc url("/assets/images/nav-marker-active.svg") inside;
+    list-style: none;
+  }
+
+  .nav-bullet {
+    font-size: 0.5rem;
+    margin-right: 0.3rem;
+    vertical-align: middle;
+    cursor: pointer;
   }
 }
 
@@ -299,7 +306,7 @@ button,
   background-color: $body-background-color;
 }
 
-// progress-bar 
+// progress-bar
 #progress-bar {
   position: fixed;
   top: 0;
