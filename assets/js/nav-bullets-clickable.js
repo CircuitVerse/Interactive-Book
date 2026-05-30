@@ -7,6 +7,5 @@ document.addEventListener("DOMContentLoaded", function () {
         link.click();
       }
     });
-    item.style.cursor = "pointer";
   });
 });
