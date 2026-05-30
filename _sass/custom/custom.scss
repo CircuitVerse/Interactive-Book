@@ -270,6 +270,15 @@ $text-color: #111111;
     margin-right: 0.5rem;
     padding: 0.5rem;
   }
+
+  // Fix: reduce sidebar width and fix alignment (Issue #709)
+  .side-bar {
+    width: 11rem;
+  }
+
+  .main {
+    margin-left: 11rem;
+  }
 }
 
 // Disqus Recommendations
@@ -315,17 +324,6 @@ button,
   background: $link-color;
   width: 0%;
   z-index: 10000;
-}
-
-// Fix: reduce sidebar width and fix alignment (Issue #709)
-@media (min-width: 50rem) {
-  .side-bar {
-    width: 11rem;
-  }
-
-  .main {
-    margin-left: 11rem;
-  }
 }
 
 @media (min-width: 66.5rem) {
