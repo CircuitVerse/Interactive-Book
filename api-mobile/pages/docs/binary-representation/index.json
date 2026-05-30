@@ -1,0 +1,64 @@
+{
+  "id": "binary-representation-index",
+  "title": "Binary Representation",
+  "description": "This chapter explains the basics of representing quantities and information using binary numbers.",
+  "nav_order": 10,
+  "has_children": true,
+  "parent": null,
+  "level": "chapter",
+  "path": "docs/binary-representation",
+  "metadata": {
+    "layout": "circuitverse",
+    "has_toc": false
+  },
+  "content": {
+    "sections": [
+      {
+        "type": "heading",
+        "level": 1,
+        "text": "Representation using binary numbers",
+        "id": "representation-using-binary-numbers"
+      },
+      {
+        "type": "paragraph",
+        "text": "This chapter explains the basics of representing quantities and information using binary numbers."
+      }
+    ]
+  },
+  "children": [
+    {
+      "title": "Binary numbers",
+      "path": "docs/binary-representation/binary-numbers",
+      "nav_order": "l0s000",
+      "level": "basic"
+    },
+    {
+      "title": "Negative quantities",
+      "path": "docs/binary-representation/negative-quantities",
+      "nav_order": "l0s001",
+      "level": "basic"
+    },
+    {
+      "title": "Number bases",
+      "path": "docs/binary-representation/number-bases",
+      "nav_order": "l0s002",
+      "level": "basic"
+    },
+    {
+      "title": "Encoding information",
+      "path": "docs/binary-representation/encoding-information",
+      "nav_order": "l0s003",
+      "level": "basic"
+    },
+    {
+      "title": "Discrete quantities",
+      "path": "docs/binary-representation/discrete-quantities",
+      "nav_order": "l1s000",
+      "level": "medium"
+    }
+  ],
+  "api_endpoints": {
+    "self": "/api-mobile/pages/docs/binary-representation/index.json",
+    "children": "/api-mobile/pages/docs/binary-representation/"
+  }
+}

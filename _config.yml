@@ -62,6 +62,9 @@ plugins:
 #   - vendor/ruby/
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile", "vendor", "utils/"]
 
+# Include custom Mobile API folder
+include: ["api-mobile"]
+
 #JTD config
 
 # Set a path/url to a logo that will be displayed instead of the title

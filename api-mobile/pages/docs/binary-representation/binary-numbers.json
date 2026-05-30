@@ -1,0 +1,237 @@
+{
+  "id": "binary-numbers",
+  "title": "Binary Numbers",
+  "nav_order": "l0s000",
+  "level": "basic",
+  "parent": "Binary representation",
+  "has_children": false,
+  "path": "docs/binary-representation/binary-numbers",
+  "metadata": {
+    "layout": "circuitverse",
+    "author": "Gottfried Leibniz (inventor of binary system)"
+  },
+  "content": {
+    "sections": [
+      {
+        "type": "heading",
+        "level": 1,
+        "text": "Binary Numbers",
+        "id": "binary-numbers"
+      },
+      {
+        "type": "section",
+        "heading": {
+          "level": 2,
+          "text": "Introduction",
+          "id": "introduction"
+        },
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Binary number system was invented by Gottfried Leibniz. As the word is prefixed with 'Bi' which is a Latin word and means 'two' in English. This brings us to the first two digits i.e., 0 and 1 which means that while counting in binary you cannot exceed 1. In fact all the numbers which you represent are made up of only two digits i.e., 0 and 1 which is quite interesting."
+          },
+          {
+            "type": "example",
+            "title": "Decimal to Binary Example",
+            "data": {
+              "decimal": 25,
+              "binary": "11001"
+            }
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "heading": {
+          "level": 2,
+          "text": "Binary Counting",
+          "id": "binary-counting"
+        },
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "It is just like counting in decimal except we reach 10 much sooner."
+          },
+          {
+            "type": "subsection",
+            "heading": "How Binary Counting Works",
+            "tables": [
+              {
+                "title": "Binary Counting Basics",
+                "headers": ["Binary", "Explanation"],
+                "rows": [
+                  ["0", "Start at 0"],
+                  ["1", "Then 1"],
+                  ["???", "But then there is no symbol for 2... what to do?"]
+                ]
+              },
+              {
+                "title": "Decimal Counting Reference",
+                "headers": ["Decimal", "Explanation"],
+                "rows": [
+                  ["0", "Start at 0"],
+                  ["1", "Then 1"],
+                  ["2-8", "Count 1,2,3,4,5,6,7,8"],
+                  ["9", "This is the last digit in Decimal"],
+                  ["10", "Start from back at 0 again, but carry 1 on the left"]
+                ]
+              },
+              {
+                "title": "Binary Counting Pattern",
+                "headers": ["Binary", "Explanation"],
+                "rows": [
+                  ["0", "Start at 0"],
+                  ["1", "Then 1"],
+                  ["10", "Now start back at 0 again, but carry 1 on the left"],
+                  ["11", "1 more"],
+                  ["100", "Start back at 0 again, and carry one to the number on the left but that number is already at 1 so it also goes back to 0 and 1 is carried to the next position on the left"],
+                  ["101", "Continue counting"],
+                  ["110", "Continue counting"],
+                  ["111", "Continue counting"],
+                  ["1000", "Start back at 0 again (for all 3 digits), add 1 on the left"]
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "heading": {
+          "level": 2,
+          "text": "Binary to Decimal Conversion",
+          "id": "binary-to-decimal-demonstration"
+        },
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Conversion from Binary to Decimal is quite a simple task. All you need to do is begin from the right."
+          },
+          {
+            "type": "steps",
+            "title": "Conversion Steps",
+            "steps": [
+              {
+                "step": 1,
+                "description": "Write the decimal value of each digit on top of them respectively. The value which you seek to write is 2^(place value from right) beginning from 0 i.e., 2^0, 2^1, 2^2... continuing up to 2^7."
+              },
+              {
+                "step": 2,
+                "description": "Now, multiply each digit of binary number with its value."
+              },
+              {
+                "step": 3,
+                "description": "Add them all."
+              },
+              {
+                "step": 4,
+                "description": "Result is ready :)"
+              }
+            ],
+            "note": "If the number is large, increase bits of the binary number on the left. Keep in mind that its value will increase subsequently."
+          },
+          {
+            "type": "example",
+            "title": "Binary to Decimal Conversion Example",
+            "data": {
+              "decimal": 25,
+              "binary": "11001",
+              "calculation": "1×16 + 1×8 + 0×4 + 0×2 + 1×1 = 25",
+              "breakdown": [
+                { "position": 0, "binary_digit": 1, "power": 0, "value": 1, "result": 1 },
+                { "position": 1, "binary_digit": 0, "power": 1, "value": 2, "result": 0 },
+                { "position": 2, "binary_digit": 0, "power": 2, "value": 4, "result": 0 },
+                { "position": 3, "binary_digit": 1, "power": 3, "value": 8, "result": 8 },
+                { "position": 4, "binary_digit": 1, "power": 4, "value": 16, "result": 16 }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "heading": {
+          "level": 2,
+          "text": "Interactive Simulator",
+          "id": "interactive-simulator"
+        },
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Use the simulator to get the decimal equivalent of a binary number. Click on the '0' to change it to '1' and vice-versa."
+          },
+          {
+            "type": "widget",
+            "widget_type": "binary_simulator",
+            "description": "Interactive binary to decimal converter"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "heading": {
+          "level": 2,
+          "text": "Quiz",
+          "id": "quiz"
+        },
+        "content": [
+          {
+            "type": "quiz",
+            "questions": [
+              {
+                "id": "q1",
+                "question": "Is `0110103` a binary number?",
+                "type": "multiple_choice",
+                "options": [
+                  { "id": "a", "text": "No", "correct": true },
+                  { "id": "b", "text": "Yes", "correct": false }
+                ],
+                "explanation": "Binary numbers can only contain digits 0 and 1. The digit '3' makes this invalid."
+              },
+              {
+                "id": "q2",
+                "question": "What is `10101` as a decimal number?",
+                "type": "multiple_choice",
+                "options": [
+                  { "id": "a", "text": "21", "correct": true },
+                  { "id": "b", "text": "10101", "correct": false },
+                  { "id": "c", "text": "25", "correct": false },
+                  { "id": "d", "text": "1000", "correct": false }
+                ],
+                "explanation": "10101 in binary = 1×16 + 0×8 + 1×4 + 0×2 + 1×1 = 16 + 4 + 1 = 21"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "key_concepts": [
+    {
+      "concept": "Binary System",
+      "description": "A number system using only two digits: 0 and 1"
+    },
+    {
+      "concept": "Place Value",
+      "description": "Each position represents a power of 2 (2^0, 2^1, 2^2, etc.)"
+    },
+    {
+      "concept": "Conversion",
+      "description": "Binary to decimal conversion involves multiplying each digit by its place value and summing"
+    }
+  ],
+  "related_topics": [
+    {
+      "title": "Negative quantities",
+      "path": "docs/binary-representation/negative-quantities"
+    },
+    {
+      "title": "Number bases",
+      "path": "docs/binary-representation/number-bases"
+    }
+  ],
+  "api_endpoints": {
+    "self": "/api-mobile/pages/docs/binary-representation/binary-numbers.json",
+    "parent": "/api-mobile/pages/docs/binary-representation/index.json"
+  }
+}
