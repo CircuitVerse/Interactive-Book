@@ -218,10 +218,10 @@ $text-color: #111111;
   }
 
   .nav-bullet {
+    cursor: pointer;
     font-size: 0.5rem;
     margin-right: 0.3rem;
     vertical-align: middle;
-    cursor: pointer;
   }
 }
 
@@ -315,4 +315,26 @@ button,
   background: $link-color;
   width: 0%;
   z-index: 10000;
+}
+
+// Fix: reduce sidebar width and fix alignment (Issue #709)
+@media (min-width: 50rem) {
+  .side-bar {
+    width: 11rem;
+  }
+
+  .main {
+    margin-left: 11rem;
+  }
+}
+
+@media (min-width: 66.5rem) {
+  .side-bar {
+    min-width: 11rem;
+    width: calc((100% - 66.5rem) / 2 + 11rem);
+  }
+
+  .main {
+    margin-left: max(11rem, (100% - 66.5rem) / 2 + 11rem);
+  }
 }
