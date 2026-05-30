@@ -299,7 +299,7 @@ button,
   background-color: $body-background-color;
 }
 
-// progress-bar 
+// progress-bar
 #progress-bar {
   position: fixed;
   top: 0;
@@ -308,4 +308,9 @@ button,
   background: $link-color;
   width: 0%;
   z-index: 10000;
+}
+
+// Fix: make sidebar bullet markers clickable (Issue #667)
+.nav-list-item {
+  cursor: pointer;
 }
