@@ -299,7 +299,7 @@ button,
   background-color: $body-background-color;
 }
 
-// progress-bar 
+// progress-bar
 #progress-bar {
   position: fixed;
   top: 0;
@@ -308,4 +308,13 @@ button,
   background: $link-color;
   width: 0%;
   z-index: 10000;
+}
+
+// Fix: hover effect on sidebar nav items (Issue #681)
+.nav-list-link {
+  &:hover {
+    color: $link-color;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+  }
 }
