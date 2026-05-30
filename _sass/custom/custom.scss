@@ -310,11 +310,7 @@ button,
   z-index: 10000;
 }
 
-// Fix: hover effect on sidebar nav items (Issue #681)
-.nav-list-link {
-  &:hover {
-    color: $link-color;
-    text-decoration: underline;
-    transition: color 0.2s ease;
-  }
+// Fix: make sidebar bullet markers clickable (Issue #667)
+.nav-list-item {
+  cursor: pointer;
 }
