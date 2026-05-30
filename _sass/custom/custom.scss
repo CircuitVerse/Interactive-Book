@@ -195,7 +195,7 @@ $text-color: #111111;
 // CV flavored side nav
 //
 .nav-list {
-  list-style: circle url("/assets/images/nav-marker-inactive.svg") inside;
+  list-style: none;
 
   .nav-list-item {
     // scss-lint:disable SelectorDepth
@@ -204,7 +204,7 @@ $text-color: #111111;
     }
 
     &.active {
-      list-style: disc url("/assets/images/nav-marker-active.svg") inside;
+      list-style: none;
     }
   }
 
@@ -214,7 +214,14 @@ $text-color: #111111;
   }
 
   .nav-list-item.active {
-    list-style: disc url("/assets/images/nav-marker-active.svg") inside;
+    list-style: none;
+  }
+
+  .nav-bullet {
+    cursor: pointer;
+    font-size: 0.5rem;
+    margin-right: 0.3rem;
+    vertical-align: middle;
   }
 }
 
@@ -263,6 +270,15 @@ $text-color: #111111;
     margin-right: 0.5rem;
     padding: 0.5rem;
   }
+
+  // Fix: reduce sidebar width and fix alignment (Issue #709)
+  .side-bar {
+    width: 11rem;
+  }
+
+  .main {
+    margin-left: 11rem;
+  }
 }
 
 // Disqus Recommendations
@@ -299,7 +315,7 @@ button,
   background-color: $body-background-color;
 }
 
-// progress-bar 
+// progress-bar
 #progress-bar {
   position: fixed;
   top: 0;
@@ -308,4 +324,15 @@ button,
   background: $link-color;
   width: 0%;
   z-index: 10000;
+}
+
+@media (min-width: 66.5rem) {
+  .side-bar {
+    min-width: 11rem;
+    width: calc((100% - 66.5rem) / 2 + 11rem);
+  }
+
+  .main {
+    margin-left: max(11rem, (100% - 66.5rem) / 2 + 11rem);
+  }
 }
