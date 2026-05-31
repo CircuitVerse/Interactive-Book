@@ -316,6 +316,12 @@ button,
   z-index: 500;
 }
 
+
+// Fix: sidebar expander arrow should be cursor pointer
+.nav-list-expander {
+  cursor: pointer;
+}
+
 // hover effect on sidebar nav items
 .nav-list-link {
   transition: color 0.2s ease;
