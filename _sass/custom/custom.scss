@@ -315,3 +315,9 @@ button,
   top: 0;
   z-index: 500;
 }
+
+
+// Fix: sidebar expander arrow should be cursor pointer
+.nav-list-expander {
+  cursor: pointer;
+}
