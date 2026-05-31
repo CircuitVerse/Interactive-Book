@@ -315,3 +315,13 @@ button,
   top: 0;
   z-index: 500;
 }
+
+// Fix: hover effect on sidebar nav items
+.nav-list-link {
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $link-color;
+    text-decoration: underline;
+  }
+}
