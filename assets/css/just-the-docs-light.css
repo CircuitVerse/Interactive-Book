@@ -7556,4 +7556,11 @@ button,
   cursor: pointer;
 }
 
+.nav-list-link {
+  transition: color 0.2s ease;
+}
+.nav-list-link:hover {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=just-the-docs-light.css.map */
