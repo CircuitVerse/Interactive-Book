@@ -3,7 +3,7 @@
     "name": "docs",
     "path": "docs",
     "relative_path": "docs",
-    "modified_time": "2025-03-09 08:10:31 +0000",
+    "modified_time": "2026-05-31 06:36:04 +0000",
     "type": "directory",
     "http_url": null,
     "api_url": "https://learn.circuitverse.org/_api/pages/docs"
@@ -20,6 +20,20 @@
     "api_url": "https://learn.circuitverse.org/_api/pages/404.html"
   },
   {
+    "name": "CONTRIBUTING.md",
+    "path": "CONTRIBUTING.md",
+    "relative_path": "CONTRIBUTING.md",
+    "layout": "default",
+    "nav_order": 1000,
+    "title": "Guidelines",
+    "disable_comments": true,
+    "description": "",
+    "dir": "/",
+    "url": "/CONTRIBUTING.html",
+    "http_url": "https://learn.circuitverse.org/CONTRIBUTING.html",
+    "api_url": "https://learn.circuitverse.org/_api/pages/CONTRIBUTING.md"
+  },
+  {
     "name": "about.md",
     "path": "about.md",
     "relative_path": "about.md",
@@ -32,20 +46,6 @@
     "url": "/about.html",
     "http_url": "https://learn.circuitverse.org/about.html",
     "api_url": "https://learn.circuitverse.org/_api/pages/about.md"
-  },
-  {
-    "name": "contributing_guidelines.md",
-    "path": "contributing_guidelines.md",
-    "relative_path": "contributing_guidelines.md",
-    "layout": "default",
-    "nav_order": 1000,
-    "title": "Guidelines",
-    "disable_comments": true,
-    "description": "",
-    "dir": "/",
-    "url": "/contributing_guidelines.html",
-    "http_url": "https://learn.circuitverse.org/contributing_guidelines.html",
-    "api_url": "https://learn.circuitverse.org/_api/pages/contributing_guidelines.md"
   },
   {
     "name": "index.md",

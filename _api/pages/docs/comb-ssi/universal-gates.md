@@ -21,8 +21,7 @@
     "parent": "Combinational SSI",
     "has_children": false
   },
-  "front_matter_defaults": {
-  },
+  "front_matter_defaults": {},
   "http_url": "https://learn.circuitverse.org/docs/comb-ssi/universal-gates.html",
   "api_url": "https://learn.circuitverse.org/_api/pages/docs/comb-ssi/universal-gates.md"
 }

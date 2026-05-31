@@ -19,8 +19,7 @@
     "has_children": true,
     "has_toc": false
   },
-  "front_matter_defaults": {
-  },
+  "front_matter_defaults": {},
   "http_url": "https://learn.circuitverse.org/docs/comb-ssi/",
   "api_url": "https://learn.circuitverse.org/_api/pages/docs/comb-ssi/index.md"
 }

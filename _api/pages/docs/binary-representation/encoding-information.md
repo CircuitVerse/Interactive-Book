@@ -21,8 +21,7 @@
     "parent": "Binary representation",
     "has_children": false
   },
-  "front_matter_defaults": {
-  },
+  "front_matter_defaults": {},
   "http_url": "https://learn.circuitverse.org/docs/binary-representation/encoding-information.html",
   "api_url": "https://learn.circuitverse.org/_api/pages/docs/binary-representation/encoding-information.md"
 }

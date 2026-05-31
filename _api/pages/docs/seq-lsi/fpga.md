@@ -21,8 +21,7 @@
     "parent": "Sequential LSI",
     "has_children": false
   },
-  "front_matter_defaults": {
-  },
+  "front_matter_defaults": {},
   "http_url": "https://learn.circuitverse.org/docs/seq-lsi/fpga.html",
   "api_url": "https://learn.circuitverse.org/_api/pages/docs/seq-lsi/fpga.md"
 }

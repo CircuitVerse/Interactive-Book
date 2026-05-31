@@ -21,8 +21,7 @@
     "parent": "Combinational MSI",
     "has_children": false
   },
-  "front_matter_defaults": {
-  },
+  "front_matter_defaults": {},
   "http_url": "https://learn.circuitverse.org/docs/comb-msi/encoders-decoders.html",
   "api_url": "https://learn.circuitverse.org/_api/pages/docs/comb-msi/encoders-decoders.md"
 }

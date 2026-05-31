@@ -19,8 +19,7 @@
     "description": "",
     "permalink": "/"
   },
-  "front_matter_defaults": {
-  },
+  "front_matter_defaults": {},
   "http_url": "https://learn.circuitverse.org/",
   "api_url": "https://learn.circuitverse.org/_api/pages/index.md"
 }

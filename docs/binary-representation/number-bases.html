@@ -65,7 +65,7 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Number bases | CircuitVerse</title>
-<meta name="generator" content="Jekyll v4.3.3">
+<meta name="generator" content="Jekyll v4.4.1">
 <meta property="og:title" content="Number bases">
 <meta property="og:locale" content="en_US">
 <meta name="description" content="A Book to learn Digital Logic Design.">
@@ -276,7 +276,7 @@
 <li class="nav-list-item"><a href="/docs/seq-lsi/microprocessors.html" class="nav-list-link">Microprocessors</a></li>
 </ul>
 </li>
-<li class="nav-list-item"><a href="/contributing_guidelines.html" class="nav-list-link">Guidelines</a></li>
+<li class="nav-list-item"><a href="/CONTRIBUTING.html" class="nav-list-link">Guidelines</a></li>
 <li class="nav-list-item"><a href="/about.html" class="nav-list-link">About</a></li>
 </ul>
 
@@ -432,6 +432,8 @@
 
 <ol id="markdown-toc">
   <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#examples-of-number-bases-ordered-by-proximity-to-eulers-number-e--2718" id="markdown-toc-examples-of-number-bases-ordered-by-proximity-to-eulers-number-e--2718">Examples of number bases ordered by proximity to Euler’s number (e ≈ 2.718)</a></li>
+  <li><a href="#balanced-ternary-base-3-with-digits--1-0-1" id="markdown-toc-balanced-ternary-base-3-with-digits--1-0-1">Balanced ternary (base 3 with digits -1, 0, +1)</a></li>
   <li><a href="#octal-number-system" id="markdown-toc-octal-number-system">Octal Number System</a></li>
   <li><a href="#hexadecimal-number-system" id="markdown-toc-hexadecimal-number-system">Hexadecimal Number System</a></li>
   <li>
@@ -442,6 +444,7 @@
       <li><a href="#decimal-to-hexadecimal-conversion" id="markdown-toc-decimal-to-hexadecimal-conversion">Decimal to Hexadecimal conversion</a></li>
     </ol>
   </li>
+  <li><a href="#radix-economy-what-it-is-and-why-it-matters" id="markdown-toc-radix-economy-what-it-is-and-why-it-matters">Radix Economy: what it is and why it matters</a></li>
 </ol>
 <h2 id="introduction">
   
@@ -460,6 +463,70 @@
 </ul>
 
 <p>According to Decimal System <code class="language-plaintext highlighter-rouge">123</code> can be represented as <code class="language-plaintext highlighter-rouge">1*100 + 2*10 + 3*1</code>. It shows that as <code class="language-plaintext highlighter-rouge">1</code> is on hundredth place so its contribution in the number will be <code class="language-plaintext highlighter-rouge">1*100=100</code> and so on.</p>
+<h2 id="examples-of-number-bases-ordered-by-proximity-to-eulers-number-e--2718">
+  
+  
+    <a href="#examples-of-number-bases-ordered-by-proximity-to-eulers-number-e--2718" class="anchor-heading" aria-labelledby="examples-of-number-bases-ordered-by-proximity-to-eulers-number-e--2718"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Examples of number bases ordered by proximity to Euler’s number (e ≈ 2.718)
+  
+  
+</h2>
+    
+
+<p>The choice of base (also called radix) affects how compactly numbers are written. A useful heuristic is that the most “economical” base is near e. Among integer bases, 3 is closest to e, then 2, then 4, then 8, 10, 16, etc. Here are common bases in that order, with quick notes:</p>
+
+<ol>
+  <li>Base 3 — Ternary and Balanced Ternary (closest to e)
+    <ul>
+      <li>Ternary digits: 0, 1, 2</li>
+      <li>Balanced ternary digits: -1, 0, +1 (often written as −, 0, +). See the dedicated section below for worked examples.</li>
+    </ul>
+  </li>
+  <li>Base 2 — Binary (widely used in digital hardware)</li>
+  <li>Base 4 — Quaternary (sometimes used in storage/communications groupings)</li>
+  <li>Base 8 — Octal (historically used, especially with 3-bit groupings)</li>
+  <li>Base 10 — Decimal (human-centric, everyday arithmetic)</li>
+  <li>Base 16 — Hexadecimal (compact representation of binary, 4-bit groupings)</li>
+</ol>
+<h2 id="balanced-ternary-base-3-with-digits--1-0-1">
+  
+  
+    <a href="#balanced-ternary-base-3-with-digits--1-0-1" class="anchor-heading" aria-labelledby="balanced-ternary-base-3-with-digits--1-0-1"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Balanced ternary (base 3 with digits -1, 0, +1)
+  
+  
+</h2>
+    
+
+<p>Balanced ternary is a radix-3 positional system where each digit can be -1, 0, or +1. Using signed digits makes carry/borrow operations symmetrical and can simplify certain arithmetic and hardware designs.</p>
+
+<p>Notation used here:</p>
+<ul>
+  <li>We write the three digit values explicitly as -1, 0, +1 (some texts use the symbols −, 0, + or T, 0, 1 where T = -1).</li>
+  <li>We list digits most significant to least significant, separated by commas for clarity, e.g., <code class="language-plaintext highlighter-rouge">⟨1, -1⟩_3(bal)</code> means 1×3¹ + (−1)×3⁰.</li>
+</ul>
+
+<p>Small examples (verify by evaluating the weighted sum of powers of 3):</p>
+<ul>
+  <li>0 = <code class="language-plaintext highlighter-rouge">⟨0⟩_3(bal)</code>
+</li>
+  <li>1 = <code class="language-plaintext highlighter-rouge">⟨+1⟩_3(bal)</code>
+</li>
+  <li>2 = <code class="language-plaintext highlighter-rouge">⟨+1, -1⟩_3(bal)</code> because 1×3¹ + (−1)×3⁰ = 3 − 1 = 2</li>
+  <li>3 = <code class="language-plaintext highlighter-rouge">⟨+1, 0⟩_3(bal)</code>
+</li>
+  <li>4 = <code class="language-plaintext highlighter-rouge">⟨+1, +1⟩_3(bal)</code>
+</li>
+  <li>5 = <code class="language-plaintext highlighter-rouge">⟨+1, -1, -1⟩_3(bal)</code> because 1×3² + (−1)×3¹ + (−1)×3⁰ = 9 − 3 − 1 = 5</li>
+  <li>6 = <code class="language-plaintext highlighter-rouge">⟨+1, -1, 0⟩_3(bal)</code> = 9 − 3 + 0 = 6</li>
+  <li>7 = <code class="language-plaintext highlighter-rouge">⟨+1, -1, +1⟩_3(bal)</code> = 9 − 3 + 1 = 7</li>
+  <li>8 = <code class="language-plaintext highlighter-rouge">⟨+1, 0, -1⟩_3(bal)</code> = 9 + 0 − 1 = 8</li>
+  <li>9 = <code class="language-plaintext highlighter-rouge">⟨+1, 0, 0⟩_3(bal)</code> = 9</li>
+</ul>
+
+<p>Why it’s interesting</p>
+<ul>
+  <li>Symmetric carries can make addition/subtraction algorithms elegant.</li>
+  <li>Among integer bases, 3 (including balanced ternary) is closest to e, connecting it to radix economy (see the section at the end).</li>
+</ul>
 <h2 id="octal-number-system">
   
   
@@ -556,6 +623,16 @@
 </ul>
 
 <p><strong><em>Note: Once you get the number in decimal form, you can convert decimal format into binary as shown before.</em></strong></p>
+<h2 id="radix-economy-what-it-is-and-why-it-matters">
+  
+  
+    <a href="#radix-economy-what-it-is-and-why-it-matters" class="anchor-heading" aria-labelledby="radix-economy-what-it-is-and-why-it-matters"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Radix Economy: what it is and why it matters
+  
+  
+</h2>
+    
+
+<p>Radix economy is a simple model of the “cost” of writing numbers in a given base b. Roughly speaking, representing values up to some size X takes about log_b(X) digits; if each digit has b possible symbols, a cost proxy is b × log_b(X) = (b/ln b) ln X. This expression is minimized at base e, so among integer bases the most economical choice is b = 3. That’s why ternary — and in particular balanced ternary with digits -1, 0, +1 — is often discussed as theoretically efficient. In practice, other factors (hardware simplicity, standards, human familiarity) make bases like 2, 10, and 16 dominant, but radix economy helps explain the trade‑offs.</p>
 
 
 <div class="prev-next-controls mt-3">
@@ -619,7 +696,7 @@
   <footer>
     
 
-    <p class="text-small text-grey-dk-100 mb-0">Copyright © 2024 Contributors to CircuitVerse. Distributed under a [CC-by-sa] license.</p>
+    <p class="text-small text-grey-dk-100 mb-0">Copyright © 2026 Contributors to CircuitVerse. Distributed under a [CC-by-sa] license.</p>
 
     
       <div class="d-flex mt-2">

@@ -21,8 +21,7 @@
     "parent": "Binary algebra",
     "has_children": false
   },
-  "front_matter_defaults": {
-  },
+  "front_matter_defaults": {},
   "http_url": "https://learn.circuitverse.org/docs/binary-algebra/addition.html",
   "api_url": "https://learn.circuitverse.org/_api/pages/docs/binary-algebra/addition.md"
 }

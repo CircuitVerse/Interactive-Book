@@ -19,8 +19,7 @@
     "has_children": true,
     "has_toc": false
   },
-  "front_matter_defaults": {
-  },
+  "front_matter_defaults": {},
   "http_url": "https://learn.circuitverse.org/docs/seq-ssi/",
   "api_url": "https://learn.circuitverse.org/_api/pages/docs/seq-ssi/index.md"
 }

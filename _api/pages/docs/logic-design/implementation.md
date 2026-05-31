@@ -21,8 +21,7 @@
     "parent": "Logic Design",
     "has_children": false
   },
-  "front_matter_defaults": {
-  },
+  "front_matter_defaults": {},
   "http_url": "https://learn.circuitverse.org/docs/logic-design/implementation.html",
   "api_url": "https://learn.circuitverse.org/_api/pages/docs/logic-design/implementation.md"
 }

@@ -21,8 +21,7 @@
     "parent": "Sequential MSI",
     "has_children": false
   },
-  "front_matter_defaults": {
-  },
+  "front_matter_defaults": {},
   "http_url": "https://learn.circuitverse.org/docs/seq-msi/mult-div.html",
   "api_url": "https://learn.circuitverse.org/_api/pages/docs/seq-msi/mult-div.md"
 }
