@@ -12,7 +12,7 @@ if (isDarkMode == 0 || isDarkMode == null) {
 	localStorage.setItem(storageItem, isDarkMode);
 } else if (isDarkMode == 1) {
 	jtd.setTheme('circuitversedark');
-	
+
 }
 
 $(document).ready(function () {
@@ -21,25 +21,26 @@ $(document).ready(function () {
 	var a = $('a.site-button:contains("mode")');
 
 	if (isDarkMode == 1) {
-		a.text("Light mode");
+
+		a.html('<i class="fas fa-sun"></i> Light mode');
 	}
 
 	a.click(function () {
-		
+
 		if (isDarkMode == 0 || isDarkMode == null) {
 			jtd.setTheme('circuitversedark');
-			a.text("Light mode");
+			a.html('<i class="fas fa-sun"></i> Light mode');
 			isDarkMode = 1;
 			localStorage.setItem(storageItem, isDarkMode);
 		} else {
 			jtd.setTheme('circuitverse');
-			a.text("Dark mode");
+			a.html('<i class="fas fa-moon"></i> Dark mode');
 			isDarkMode = 0;
 			localStorage.setItem(storageItem, isDarkMode);
 		}
 
 		// Reset Disqus thread to reload with matching color scheme
-		setTimeout(function(){ DISQUS.reset({reload: true}); }, 500);
+		setTimeout(function () { DISQUS.reset({ reload: true }); }, 500);
 		return false;
 	});
 
