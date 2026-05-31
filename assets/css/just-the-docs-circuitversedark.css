@@ -7552,6 +7552,10 @@ button,
   z-index: 500;
 }
 
+.nav-list-expander {
+  cursor: pointer;
+}
+
 .text-grey-dk-100 {
   color: white !important;
 }

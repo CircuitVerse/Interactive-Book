@@ -7552,4 +7552,8 @@ button,
   z-index: 500;
 }
 
+.nav-list-expander {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=just-the-docs-light.css.map */
