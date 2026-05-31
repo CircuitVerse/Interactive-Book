@@ -31,11 +31,12 @@ Rules:
 1 + 0 = 1
 1 + 1 = 10 (0 with carry 1)
 
-| A | B | Carry | Sum |Result |
-| 0 | 0 |   0   |  0  |   0   |
-| 0 | 1 |   0   |  1  |   1   |
-| 1 | 0 |   0   |  1  |   1   |
-| 1 | 1 |   1   |  0  |   10  |
+| A | B | Carry Out | Sum | Result |
+|---|---|-----------|-----|--------|
+| 0 | 0 |     0     |  0  |   0    |
+| 0 | 1 |     0     |  1  |   1    |
+| 1 | 0 |     0     |  1  |   1    |
+| 1 | 1 |     1     |  0  |   10   |
 
 Example 1:
   1 1 (3)
@@ -55,6 +56,8 @@ Example 2:
 1 0 1 1  (11)
 -------
 ```
+
+In the example above, we add the numbers from right to left. First, 0 + 1 = 1, so we write 1 in the rightmost column. Next, 1 + 0 = 1, so we write 1 in the next column. Then, 1 + 1 = 10, so we write 0 and carry 1 to the next column. Finally, we bring down the carried 1, giving the result 1011. Therefore, 110₂ + 101₂ = 1011₂, which is equal to 6 + 5 = 11 in decimal.
 
 
 {:.quiz}
