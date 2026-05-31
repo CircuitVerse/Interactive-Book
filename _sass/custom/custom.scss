@@ -330,3 +330,14 @@ button,
     text-decoration: underline;
   }
 }
+
+@media (min-width: 66.5rem) {
+  .side-bar {
+    min-width: 11rem;
+    width: calc((100% - 66.5rem) / 2 + 11rem);
+  }
+
+  .main {
+    margin-left: max(11rem, (100% - 66.5rem) / 2 + 11rem);
+  }
+}
