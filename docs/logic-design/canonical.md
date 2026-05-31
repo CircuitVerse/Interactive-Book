@@ -47,7 +47,7 @@ Truth Table::
 
 | A | B | F(A,B) |
 | - | - | - |
-| 0 | 0 | 0 |a
+| 0 | 0 | 0 |
 | 0 | 1 | 1 |
 | 1 | 0 | 1 |
 | 1 | 1 | 1 |
@@ -364,6 +364,6 @@ You can clearly see, if you set `F(1, 0) = 1`, you get a true value for any inpu
 
 The following methods can be used to simplify the the Boolean function:
 
-1. The [Karnaugh-map](https://learn.circuitverse.org/docs/maps.html) or K-map method.
+1. The [Karnaugh-map](https://learn.circuitverse.org/docs/logic-design/kmaps) or K-map method.
 1. The [NAND gate method](https://learn.circuitverse.org/docs/nand_gate_method.html).
 

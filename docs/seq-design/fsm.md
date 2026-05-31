@@ -76,7 +76,7 @@ In this module, you will learn how to use a Final-State-Machine(FSM) which descr
 ## Problem
 Assume, you have a soda vending machine which sells soda cans of cost 15¢ each, and you have only 2 types of coins: 10¢ and 5¢.
 
-In this problem, our goal is to make a state machine which can determine, how much change should be returned, and when a can is dispenced.
+In this problem, our goal is to make a state machine which can determine, how much change should be returned, and when a can is dispensed.
 ```
 Note: In this design, ignore the capacity of the stock, which means, we’ll assume that there will always be can in the vending machine.
 Also, you can assume that only one action could be made in every “clock cycle” or state.

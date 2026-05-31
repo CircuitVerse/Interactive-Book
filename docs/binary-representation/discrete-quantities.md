@@ -23,7 +23,7 @@ has_children: false
 
 -   Section 1.1 "Analog and Discrete Variables" in {% cite donzellini2018introduction --file books %}
 -   Section "Analogue and digital data" (Chapter 1) in {% cite stonham2017digital --file books %}
--   Secion "Digital and analogue signals" (Chapter 1) in {% cite morris2013digital --file books %}
+-   Section "Digital and analogue signals" (Chapter 1) in {% cite morris2013digital --file books %}
 -   Chapter 1 "Introduction: Analog Versus Digital" in {% cite lameres2019introduction --file books %}
 
 

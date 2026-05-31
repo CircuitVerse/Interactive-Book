@@ -198,7 +198,7 @@ If A > B Cout = 0 and the result of binary form (A-B) then Cout = 1 and the resu
 	* Full Adder
 
 5. In which of the following cases Adders can be used as a primary element ?
-	1. Arithmatic Logic Unit (ALU)
+	1. Arithmetic Logic Unit (ALU)
 	1. Digital Calculator
 	* Memory Block
 	* Loop Operation
