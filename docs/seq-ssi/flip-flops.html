@@ -440,6 +440,7 @@
   <li><a href="#characteristic-table" id="markdown-toc-characteristic-table">Characteristic table</a></li>
   <li><a href="#introduction-2" id="markdown-toc-introduction-2">Introduction</a></li>
   <li><a href="#state-table-1" id="markdown-toc-state-table-1">State table</a></li>
+  <li><a href="#mapping-to-verilog" id="markdown-toc-mapping-to-verilog">Mapping to Verilog</a></li>
   <li><a href="#introduction-3" id="markdown-toc-introduction-3">Introduction</a></li>
   <li><a href="#state-table-2" id="markdown-toc-state-table-2">State table</a></li>
   <li><a href="#characteristic-table-1" id="markdown-toc-characteristic-table-1">Characteristic table</a></li>
@@ -451,7 +452,11 @@
   <li><a href="#state-table-4" id="markdown-toc-state-table-4">State table</a></li>
   <li><a href="#characteristic-table-3" id="markdown-toc-characteristic-table-3">Characteristic table</a></li>
   <li><a href="#excitation-table" id="markdown-toc-excitation-table">Excitation table</a></li>
-  <li><a href="#characteristic-equation" id="markdown-toc-characteristic-equation">Characteristic equation</a></li>
+  <li>
+<a href="#characteristic-equation" id="markdown-toc-characteristic-equation">Characteristic equation</a>    <ol>
+      <li><a href="#race-around-condition" id="markdown-toc-race-around-condition">Race-Around Condition</a></li>
+    </ol>
+  </li>
   <li><a href="#flip-flops-interaction" id="markdown-toc-flip-flops-interaction">Flip-flops interaction</a></li>
 </ol>
 <h2 id="flip-flops-1">
@@ -564,7 +569,7 @@
   <figcaption></figcaption>
 </figure>
 
-<p>his circuit has two inputs S &amp; R and two outputs Q(t) &amp; Q(t)’. The operation of SR flipflop is similar to SR Latch. But, this flip-flop affects the outputs only when positive transition of the clock signal is applied instead of active enable.</p>
+<p>This circuit has two inputs S &amp; R and two outputs Q(t) &amp; Q(t)’. Unlike the SR latch which responds to enable levels, the SR flip-flop is edge-triggered — outputs change only on the positive clock transition.</p>
 <h2 id="state-table">
   
   
@@ -616,7 +621,7 @@
 </h2>
     
 
-<p>Therefore, SR Latch performs three types of functions such as Hold, Set &amp; Reset based on the input conditions.</p>
+<p>Therefore, SR Flip Flop performs three types of functions such as Hold, Set &amp; Reset based on the input conditions.</p>
 
 <div class="table-wrapper"><table>
   <thead>
@@ -715,7 +720,7 @@
   <figcaption></figcaption>
 </figure>
 
-<p>This circuit has single input D and two outputs Q(t) &amp; Q(t)’. The operation of D flip-flop is similar to D Latch. But, this flip-flop affects the outputs only when positive transition of the clock signal is applied instead of active enable.</p>
+<p>This circuit has single input D and two outputs Q(t) &amp; Q(t)’. Unlike the D latch which is level-sensitive (output follows input whenever enable is HIGH), the D flip-flop is edge-triggered — it updates output Q only on the rising edge of the clock signal, ignoring changes to D at all other times.</p>
 <h2 id="state-table-1">
   
   
@@ -750,6 +755,36 @@
 <p>Next state of D flip-flop is always equal to data input, D for every positive transition of the clock signal. Hence, D flip-flops can be used in registers, shift registers and some of the counters.</p>
 
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/12254" id="d_flipflop_01" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+<h2 id="mapping-to-verilog">
+  
+  
+    <a href="#mapping-to-verilog" class="anchor-heading" aria-labelledby="mapping-to-verilog"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Mapping to Verilog
+  
+  
+</h2>
+    
+
+<p>CircuitVerse implements the D flip-flop as <strong>edge-triggered</strong>.
+The exported Verilog reflects this correctly:</p>
+<div class="language-verilog highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// D Flip-Flop — edge-triggered (what CircuitVerse implements)</span>
+<span class="k">always</span> <span class="o">@</span><span class="p">(</span><span class="kt">posedge</span> <span class="n">clk</span><span class="p">)</span> <span class="k">begin</span>
+    <span class="n">Q</span> <span class="o">&lt;=</span> <span class="n">D</span><span class="p">;</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>This is fundamentally different from a D latch, which would use:</p>
+<div class="language-verilog highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// D Latch — level-sensitive (NOT what CircuitVerse implements)</span>
+<span class="k">always</span> <span class="o">@</span><span class="p">(</span><span class="n">D</span> <span class="kt">or</span> <span class="n">en</span><span class="p">)</span> <span class="k">begin</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">en</span><span class="p">)</span> <span class="n">Q</span> <span class="o">=</span> <span class="n">D</span><span class="p">;</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p><strong>Note:</strong> Always use <code class="language-plaintext highlighter-rouge">&lt;=</code> (non-blocking assignment) inside
+<code class="language-plaintext highlighter-rouge">always @(posedge clk)</code> blocks. Using <code class="language-plaintext highlighter-rouge">=</code> (blocking assignment)
+in clocked flip-flop logic is a common mistake that causes
+simulation mismatches.</p>
+</blockquote>
 <h2 class="no_toc" id="jk_flipflop">
   
   
@@ -936,7 +971,7 @@
 <div class="table-wrapper"><table>
   <thead>
     <tr>
-      <th style="text-align: left">D</th>
+      <th style="text-align: left">T</th>
       <th style="text-align: left">Q(t+1)</th>
     </tr>
   </thead>
@@ -1229,6 +1264,21 @@ During the negative clock cycle, slave flip-flop gets activated and copies the p
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Q(n+1) = Q(n)'J + Q(n)K'
 </code></pre></div></div>
 <iframe width="100%" height="400px" src="https://circuitverse.org/simulator/embed/47630" id="masterslave_jk_flipflop_01" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>
+<h3 id="race-around-condition">
+  
+  
+    <a href="#race-around-condition" class="anchor-heading" aria-labelledby="race-around-condition"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Race-Around Condition
+  
+  
+</h3>
+    
+<p>In a standard JK flip-flop with J=1, K=1, the output 
+toggles as long as the clock is HIGH. If the clock pulse 
+is wide enough, the output feeds back and toggles multiple 
+times in one clock cycle — this is the race around condition. 
+Master-slave solves this by separating the capture (master, 
+positive edge) from the output (slave, negative edge).</p>
+<hr>
 <h2 id="flip-flops-interaction">
   
   
