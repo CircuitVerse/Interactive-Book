@@ -22,16 +22,13 @@ has_children: false
 
 Boolean Functions are comprised of two components i.e., Variables and Logic operations(AND, OR, NOT...etc). Any equation with the mixture of these two components forms a Boolean function. The value of variables may or may not be pre-defined. The shorthand notation for a boolean function is that it is represented with a capital F followed by parenthesis comprising of all variables of that equation separated by comma(','). You can represent any boolean expression in form of a Truth Table. Follow up to know How?
 Consider the following example:
-```yaml
-Example:
-	 Shorthand notation representing the boolean expression
-	/
-	F(A,B) = A + B	//This is a boolean function comprising of variables A and B
 
-	F(A, B, C) = A(B + C(A + B))
-					   \
-					   	Boolean Expression
+```text
+F(A, B) = A + B
+F(A, B, C) = A(B + C(A + B))
 ```
+
+Here, `F(A, B)` and `F(A, B, C)` are shorthand notations representing boolean expressions.
 
 ## Truth table formation
 
@@ -43,7 +40,8 @@ The above implications bring us to a conclusion that there can be 2^(number of v
 Example:
 F(A,B) = A + B
 ```
-Truth Table::
+
+Truth table:
 
 | A | B | F(A,B) |
 | - | - | - |
@@ -59,7 +57,8 @@ every variable.
 Example:
 F(A,B,C) = A + B.C
 ```
-## Truth table formation
+
+## Three-variable truth table example
 A truth table shows a table having all the combinations of the inputs and their corresponding results.
 
 The switching equation can also be converted into a Truth Table. For example- Consider the switching equation: F(A,B,C) = A + BC.
@@ -366,4 +365,3 @@ The following methods can be used to simplify the the Boolean function:
 
 1. The [Karnaugh-map](https://learn.circuitverse.org/docs/logic-design/kmaps) or K-map method.
 1. The [NAND gate method](https://learn.circuitverse.org/docs/nand_gate_method.html).
-
