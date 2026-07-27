@@ -105,7 +105,7 @@ GEM
       nuggets
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    json (2.19.7)
+    json (2.19.9)
     just-the-docs (0.7.0)
       jekyll (>= 3.8.5)
       jekyll-include-cache
