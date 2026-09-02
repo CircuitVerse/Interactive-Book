@@ -1,0 +1,300 @@
+{
+    "name": "Map-entered variables",
+    "views": [
+        {
+            "type": "widget",
+            "sub_type": "toc",
+            "items": [
+                "Introduction",
+                "MEV and MUXs",
+                "Minimization method"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Introduction",
+            "scrollToId": 0
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Maps with entered variables are Karnaugh Maps which can have Boolean expression in its cells, not just ones and zeros. These maps are also referred to as Variable-Entered Maps. However, in most literature the MEV acronym is used."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "These maps are useful to represent functions with large number of variables in a map of lower order. They are also used to describe flip-flop's excitation functions."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "For instance, given the three-variables Boolean function $f(x,y,z)$ described by the following truth-table:"
+        },
+        {
+            "type": "widget",
+            "sub_type": "table",
+            "content": {
+                "heading": [
+                    ": Table 1: Simple MEV example {: .tblcap} :"
+                ],
+                "rows": [
+                    [
+                        "$x$",
+                        "$y$",
+                        "$z$",
+                        "$f(x,y,z)$",
+                        "MEV"
+                    ],
+                    [
+                        "0",
+                        "0",
+                        "0",
+                        "0",
+                        "$z$"
+                    ],
+                    [
+                        "0",
+                        "0",
+                        "1",
+                        "1",
+                        "^^"
+                    ],
+                    [
+                        "0",
+                        "1",
+                        "0",
+                        "1",
+                        "$\\overline{z}$"
+                    ],
+                    [
+                        "0",
+                        "1",
+                        "1",
+                        "0",
+                        "^^"
+                    ],
+                    [
+                        "1",
+                        "0",
+                        "0",
+                        "0",
+                        "$z$"
+                    ],
+                    [
+                        "1",
+                        "0",
+                        "1",
+                        "1",
+                        "^^"
+                    ],
+                    [
+                        "1",
+                        "1",
+                        "0",
+                        "0",
+                        "0"
+                    ],
+                    [
+                        "1",
+                        "1",
+                        "1",
+                        "0",
+                        "^^"
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The column labelled MEV shows the Boolean relation between $f(x,y,z)$ and $z$ for each of the four possible combinations of $(x,y)$."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "This function is represented by the map:"
+        },
+        {
+            "type": "widget",
+            "sub_type": "table",
+            "content": {
+                "heading": [
+                    ": Table 2: MEV for function defined by Table 1 :"
+                ],
+                "rows": [
+                    [
+                        "",
+                        "$\\boldsymbol{y}$"
+                    ],
+                    [
+                        "$\\boldsymbol{x}$",
+                        "0",
+                        "1"
+                    ],
+                    [
+                        "0",
+                        "$z$",
+                        "$\\overline{z}$"
+                    ],
+                    [
+                        "1",
+                        "$z$",
+                        "0"
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The MEV can be optimized directly, just like a Karnaugh Map but the process is more complex."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "MEV and MUXs",
+            "scrollToId": 1
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "A MEV can be directly implemented in a MUX, where the function of each cell must be connected to the corresponding data line of the MUX, while the map's variables are connected to the selection lines."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "For instance, the example from Table 2 is implemented in the interactive circuit below:"
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "https://circuitverse.org/simulator/embed/simple-mev"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Minimization method",
+            "scrollToId": 2
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "A method of MEV minimization based on partial variables is described in:"
+        },
+        {
+            "type": "widget",
+            "sub_type": "bullet_list",
+            "items": [
+                "Section \"Variable-Entered Maps\" in [1]",
+                "Section \"Minimizing MEV maps\" in [2]",
+                "Section \"Map-entered variables\" in [3]"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Another recursive method which can be used when the MEV only has expressions of one variable (or its complement) is described next."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The expressions found in the map's cells can have these forms:"
+        },
+        {
+            "type": "widget",
+            "sub_type": "bullet_list",
+            "items": [
+                "0s or 1s",
+                "$z$ or $\\overline{z}$",
+                "$\\phi$ (don't care)",
+                "$z\\phi$ or $\\overline{z}\\phi$",
+                "$z+\\overline{z}\\phi$ or $\\overline{z}+z\\phi$"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The process has two phases"
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Phase 1: Coverage"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Let $D$ and $\\overline{D}$ (its complement) be the MEV variable, then ones correspond to $1\\rightarrow D+\\overline{D}$."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "In this phase, the goal is to obtain the largest grouping or coverage for both the variable and its complement, independently."
+        },
+        {
+            "type": "widget",
+            "sub_type": "numbered_list",
+            "items": [
+                {
+                    "content": "Start by covering the variables alone."
+                },
+                {
+                    "content": "Expand the coverage to identical adjacent variables."
+                },
+                {
+                    "content": "Expand the coverage by incorporating ones (1s)."
+                },
+                {
+                    "content": "Expand the coverage by incorporating cells containing don't cares."
+                },
+                {
+                    "content": "Repeat from step 2 to extend the coverage as much as possible"
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The Boolean product expressions of the groups will be part of the final sum."
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Phase 2: Transformation"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The goal of this phase is to discard the MEV variables, since they have already been covered in Phase 1:"
+        },
+        {
+            "type": "widget",
+            "sub_type": "numbered_list",
+            "items": [
+                {
+                    "content": "MEV variables $D$ and $\\overline{D}$ are replaced by 0."
+                },
+                {
+                    "content": "Cells with 0s and $\\phi$ remain the same."
+                },
+                {
+                    "content": "Cells with 1s become $\\phi$ if both parts $D$ and $\\overline{D}$ were covered. Otherwise they remain as 1s"
+                },
+                {
+                    "content": "Cells containing $z\\phi$ or $\\overline{z}\\phi$ become 0s."
+                },
+                {
+                    "content": "Cells with the expressions $z+\\overline{z}\\phi$ and $\\overline{z}+z\\phi$ become $\\phi$ if the term not multiplied by $\\phi$ has been covered. Otherwise they become 1s."
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The new map is a normal Karnaugh Map with 1s and 0s, and can be minimised accordingly. The new product terms are added to those found in Phase 1."
+        }
+    ]
+}

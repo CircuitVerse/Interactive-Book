@@ -1,0 +1,43 @@
+{
+    "name": "Combinational SSI",
+    "views": [
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Combinational SSI components"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Small scale integration combinational components (i.e. logic gates) and some of their features are presented in this chapter."
+        },
+        {
+            "type": "widget",
+            "sub_type": "chapter_contents",
+            "items": [
+                {
+                    "category": "Basic Level",
+                    "content": [
+                        {
+                            "id": 1,
+                            "name": "Logic gates"
+                        }
+                    ]
+                },
+                {
+                    "category": "Medium Level",
+                    "content": [
+                        {
+                            "id": 2,
+                            "name": "Logic families"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Universal gates"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

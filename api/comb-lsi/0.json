@@ -1,0 +1,34 @@
+{
+    "name": "Combinational LSI",
+    "views": [
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Combinational LSI components"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Large scale integration combinational components such as Read-only Memories (ROMs), Arithmetic Logic Units (ALUs) and Programmable Logic Devices (PLDs) are described in chapter."
+        },
+        {
+            "type": "widget",
+            "sub_type": "chapter_contents",
+            "items": [
+                {
+                    "category": "Basic Level",
+                    "content": [
+                        {
+                            "id": 1,
+                            "name": "ROM"
+                        },
+                        {
+                            "id": 2,
+                            "name": "ALU"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

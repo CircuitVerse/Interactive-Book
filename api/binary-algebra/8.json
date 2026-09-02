@@ -1,0 +1,92 @@
+{
+    "name": "IEEE Std 754",
+    "views": [
+        {
+            "type": "widget",
+            "sub_type": "toc",
+            "items": [
+                "Representing real numbers",
+                "The IEEE 754 Standard",
+                "References"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Representing real numbers",
+            "scrollToId": 0
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "While the representation of integer quantities using binary numbers is straightforward, representation of real numbers and its arithmetic require special care. See Section 3.11 in [1]"
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Fixed point"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "One a approach is to a use fixed point representation, in which a certain number of bits are used to encode the integer part, and the remaining bits are used to encode the fractional part."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "For instance, if our binary numbers are 8 bits wide, and the four most signigicant bits are used for the integer part and the four least significant bits for the fractional part, then the number 12.09 would be encoded as $\\underbrace{1\\7 1\\6 0\\5 0\\4}\\{\\text{integer part}}\\, \\overbrace{1\\3 0\\2 0\\1 1\\_0}^{\\text{fractional part}}$."
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Floating point"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Another approach is the floating point method. It represents a number using a mantissa or significand $s$ and an exponent $e$ considering a fixed base $b$ such that the number can be expressed by $(s\\times b^e)$"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "A part of the binary number is used to store the significand (including a sign bit) and the other part to store the exponent (also with a sign bit)."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "The IEEE 754 Standard",
+            "scrollToId": 1
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "There are multiple ways of implementing floating point numbers and arithmetic. However, since 1985 the IEEE Standard for Floating-Point Arithmetic (IEEE 754) has been available addressing many issues and providing a reliable and portable definition."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The latest version of the standard was published in 2019 [2] and the latest ISO version (identical to the IEEE Std 754) was published in 2020 [3]"
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "References",
+            "scrollToId": 2
+        },
+        {
+            "type": "widget",
+            "sub_type": "numbered_list",
+            "items": [
+                {
+                    "content": "G. Donzellini, L. Oneto, D. Ponta, and D. Anguita, Introduction to Digital Systems Design. Springer International Publishing, 2018. Available: https://books.google.cl/books?id=va1qDwAAQBAJ"
+                },
+                {
+                    "content": "\"IEEE Standard for Floating-Point Arithmetic,\" IEEE Std 754-2019 (Revision of IEEE 754-2008), pp. 1-84, 2019. doi: 10.1109/IEEESTD.2019.8766229"
+                },
+                {
+                    "content": "ISO Central Secretary, \"Information technology-- Microprocessor Systems -- Floating-Point arithmetic,\" International Organization for Standardization, ISO/IEC TR 60559:2020, 2020. Available: https://www.iso.org/standard/80985.html"
+                }
+            ]
+        }
+    ]
+}

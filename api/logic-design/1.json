@@ -1,0 +1,61 @@
+{
+    "name": "Functional description",
+    "views": [
+        {
+            "type": "widget",
+            "sub_type": "toc",
+            "items": [
+                "Introduction",
+                "Design procedure of combinational circuits"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Introduction",
+            "scrollToId": 0
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Combinational circuits consist of Logic gates. These circuits operate with binary values. The output(s) of combinational circuit depends on the combination of present inputs. The following figure shows the block diagram of combinational circuit."
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/combinational1.jpg",
+                "description": "Combinational Circuit"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "This combinational circuit has ‘n’ input variables and ‘m’ outputs. Each combination of input variables will affect the output(s)."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Design procedure of combinational circuits",
+            "scrollToId": 1
+        },
+        {
+            "type": "widget",
+            "sub_type": "numbered_list",
+            "items": [
+                {
+                    "content": "Find the required number of input variables and outputs from given specifications."
+                },
+                {
+                    "content": "Formulate the Truth table. If there are ‘n’ input variables, then there will be 2n possible combinations. For each combination of input, find the output values."
+                },
+                {
+                    "content": "Find the Boolean expressions for each output. If necessary, simplify those expressions."
+                },
+                {
+                    "content": "Implement the above Boolean expressions corresponding to each output by using Logic gates."
+                }
+            ]
+        }
+    ]
+}

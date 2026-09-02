@@ -1,0 +1,70 @@
+{
+    "name": "Combinational MSI",
+    "views": [
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Combinational MSI components"
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Introduction",
+            "scrollToId": 0
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "MSI or Medium scale integrated circuits are a set of basic, elementary logic circuits. They are available as ICs (integrated chips) and implement specific,commonly used digital functions such as:"
+        },
+        {
+            "type": "widget",
+            "sub_type": "numbered_list",
+            "items": [
+                {
+                    "content": "Multiplexing and Demultiplexing"
+                },
+                {
+                    "content": "Encoding and Decoding"
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "MSIs can be used as a stand-alone IC or in combination with other ICs in order to implement combinational circuits in various applications. In this module, you will study many of the common types of MSI devices. For each type, you will start with a brief discussion of its basic operating principle and then introduce specific ICs. Now let's see how they can be used alone or in combination with other ICs in various applications."
+        },
+        {
+            "type": "widget",
+            "sub_type": "chapter_contents",
+            "items": [
+                {
+                    "category": "Basic Level",
+                    "content": [
+                        {
+                            "id": 1,
+                            "name": "MUX/DEMUX"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Encoders/Decoders"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Adders"
+                        }
+                    ]
+                },
+                {
+                    "category": "Medium Level",
+                    "content": [
+                        {
+                            "id": 4,
+                            "name": "MUX-based functions"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

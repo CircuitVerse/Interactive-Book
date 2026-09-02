@@ -1,0 +1,368 @@
+{
+    "name": "Encoders/Decoders",
+    "views": [
+        {
+            "type": "widget",
+            "sub_type": "toc",
+            "items": [
+                "Encoder",
+                "Introduction",
+                "Block diagram",
+                "Priority encoder",
+                "Block diagram",
+                "Decimal to BCD encoder",
+                "Octal to binary encoder",
+                "Hexadecimal to binary encoder",
+                "Decoder",
+                "Introduction",
+                "Block diagram",
+                "2-to-4 line decoder",
+                "Block diagram",
+                "Truth table",
+                "Logic circuit"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Encoder",
+            "scrollToId": 0
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Introduction",
+            "scrollToId": 1
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Encoder is a combinational circuit which is designed to perform the inverse operation of the decoder. An encoder has n number of input lines and m number of output lines. An encoder produces an m bit binary code corresponding to the digital input number. The encoder accepts an n input digital word and converts it into an m bit another digital word."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Block diagram",
+            "scrollToId": 2
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/encoder_blockdiagram.jpg"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Examples of encoders ::"
+        },
+        {
+            "type": "widget",
+            "sub_type": "bullet_list",
+            "items": [
+                "Priority encoders",
+                "Decimal to BCD encoder",
+                "Octal to binary encoder",
+                "Hexadecimal to binary encoder"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Priority encoder",
+            "scrollToId": 3
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "This is a special type of encoder. Priority is given to the input lines. If two or more input line are 1 at the same time, then the input line with highest priority will be considered. There are four input D0, D1, D2, D3 and two output Y0, Y1. Out of the four input D3 has the highest priority and D0 has the lowest priority. That means if D3 = 1 then Y1 Y1 = 11 irrespective of the other inputs. Similarly if D3 = 0 and D2 = 1 then Y1 Y0 = 10 irrespective of the other inputs."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Block diagram",
+            "scrollToId": 4
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/priorityencoder_blockdiagram.jpg"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Truth table"
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/priorityencoder_truthtable.jpg"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Logic circuit"
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/priorityencoder_logiccircuit.jpg"
+            }
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "https://circuitverse.org/simulator/embed/762"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Decimal to BCD encoder",
+            "scrollToId": 5
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The Decimal to Binary Encoder usually consists of 10 input lines and 4 output lines. The input is a number written in base 10 and the output is its corresponding equivalent binary coded decimal number (of 4 bits)."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Octal to binary encoder",
+            "scrollToId": 6
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The Octal to Binary Encoder encoder usually consists of 8 inputs lines and 3 outputs lines. The input is a number written in base 8 and the output is its corresponding equivalent number in base 2."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Hexadecimal to binary encoder",
+            "scrollToId": 7
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The Hexadecimal to Binary Encoder encoder usually consists of 16 inputs lines and 3 outputs lines. The input is a number written in base 16 and the output is its corresponding equivalent number in base 2."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Decoder",
+            "scrollToId": 8
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Introduction",
+            "scrollToId": 9
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "A decoder is a combinational circuit. It has n input and to a maximum m = 2n outputs. Decoder is identical to a demultiplexer without any data input. It performs operations which are exactly opposite to those of an encoder."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Block diagram",
+            "scrollToId": 10
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/decoder_blockdiagram.jpg"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Examples of decoders ::"
+        },
+        {
+            "type": "widget",
+            "sub_type": "bullet_list",
+            "items": [
+                "Code converters",
+                "BCD to seven segment decoders",
+                "Nixie tube decoders",
+                "Relay actuator"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "2-to-4 line decoder",
+            "scrollToId": 11
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The block diagram of 2 to 4 line decoder is shown in the fig. A and B are the two inputs where D through D are the four outputs. Truth table explains the operations of a decoder. It shows that each output is 1 for only a specific combination of inputs."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Block diagram",
+            "scrollToId": 12
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/two_fourdecoder_blockdiagram.jpg"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Truth table",
+            "scrollToId": 13
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/two_fourdecoder_truthtable.jpg"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Logic circuit",
+            "scrollToId": 14
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/two_fourdecoder_logiccircuit.jpg"
+            }
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "https://circuitverse.org/simulator/embed/763"
+            }
+        },
+        {
+            "type": "widget",
+            "sub_type": "pop-quiz",
+            "content": [
+                {
+                    "question": "How many input lines exist in Decimal to BCD Encoder ?",
+                    "options": [
+                        {
+                            "option": "4",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "10",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "8",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "2",
+                            "isAnswer": false
+                        }
+                    ]
+                },
+                {
+                    "question": "How many output lines exist in Decimal to BCD Encoder ?",
+                    "options": [
+                        {
+                            "option": "1",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "4",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "3",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "2",
+                            "isAnswer": false
+                        }
+                    ]
+                },
+                {
+                    "question": "For conversion of BCD to seven segment display which of the following component will you use ?",
+                    "options": [
+                        {
+                            "option": "Encoder",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "Decoder",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "Comparator",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "Multiplexer",
+                            "isAnswer": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Identify the decoder IC ?",
+                    "options": [
+                        {
+                            "option": "7890",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "8870",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "4047",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "4041",
+                            "isAnswer": false
+                        }
+                    ]
+                },
+                {
+                    "question": "By using only which of the gates decoder can be formed ?",
+                    "options": [
+                        {
+                            "option": "AND",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "OR",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "NOT",
+                            "isAnswer": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

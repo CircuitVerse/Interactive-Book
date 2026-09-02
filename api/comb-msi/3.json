@@ -1,0 +1,538 @@
+{
+    "name": "Adders",
+    "views": [
+        {
+            "type": "widget",
+            "sub_type": "toc",
+            "items": [
+                "Half adder",
+                "Introduction",
+                "Block diagram",
+                "Truth table",
+                "Circuit diagram",
+                "Half adder from universal gates",
+                "Full adder",
+                "Introduction",
+                "Block diagram",
+                "Truth table",
+                "Circuit diagram",
+                "Full adder from 2 half adder",
+                "Full adder from universal gates",
+                "Ripple carry adder",
+                "Half subtractors",
+                "Introduction",
+                "Truth table",
+                "Circuit diagram",
+                "Half subtractor from universal gates",
+                "Full subtractors",
+                "Introduction",
+                "Truth table",
+                "Circuit diagram",
+                "Full subtractor from universal gates",
+                "N-Bit parallel adder and subtractor",
+                "Introduction",
+                "4-bit parallel adder",
+                "Block diagram",
+                "N-bit parallel subtractor",
+                "4-bit parallel subtractor",
+                "Block diagram",
+                "8-bit full adder and subtractor"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Half adder",
+            "scrollToId": 0
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Introduction",
+            "scrollToId": 1
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Half adder is a combinational logic circuit with two inputs and two outputs. The half adder circuit is designed to add two single bit binary number A and B. It is the basic building block for the addition of two single-bit numbers. This circuit has two outputs carry and sum."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Block diagram",
+            "scrollToId": 2
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/halfadder_blockdiagram.jpg"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Truth table",
+            "scrollToId": 3
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/halfadder_truthtable.jpg"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Circuit diagram",
+            "scrollToId": 4
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "https://circuitverse.org/simulator/embed/43463"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Half adder from universal gates",
+            "scrollToId": 5
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "https://circuitverse.org/simulator/embed/101813"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Full adder",
+            "scrollToId": 6
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Introduction",
+            "scrollToId": 7
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Full adder is developed to overcome the drawback of Half Adder circuit. It can add two one-bit numbers A and B, and carry c. The full adder is a three-input and two output combinational circuit."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Block diagram",
+            "scrollToId": 8
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/fulladder_blockdiagram.jpg"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Truth table",
+            "scrollToId": 9
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/fulladder_truthtable.jpg"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Circuit diagram",
+            "scrollToId": 10
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/fulladder_circuitdiagram.jpg"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Full adder from 2 half adder",
+            "scrollToId": 11
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "https://circuitverse.org/simulator/embed/247"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Full adder from universal gates",
+            "scrollToId": 12
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "https://circuitverse.org/simulator/embed/45277"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Ripple carry adder",
+            "scrollToId": 13
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "https://circuitverse.org/simulator/embed/248"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Half subtractors",
+            "scrollToId": 14
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Introduction",
+            "scrollToId": 15
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Half subtractor is a combination circuit with two inputs and two outputs (difference and borrow). It produces the difference between the two binary bits at the input and also produces an output (Borrow) to indicate if a 1 has been borrowed. In the subtraction (A-B), A is called a Minuend bit and B is called a Subtrahend bit."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Truth table",
+            "scrollToId": 16
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/halfsubstrator_truthtable.jpg"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Circuit diagram",
+            "scrollToId": 17
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/halfsubstrator_circuitdiagram.jpg"
+            }
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "https://circuitverse.org/simulator/embed/12120"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Half subtractor from universal gates",
+            "scrollToId": 18
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "https://circuitverse.org/simulator/embed/101817"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Full subtractors",
+            "scrollToId": 19
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Introduction",
+            "scrollToId": 20
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The disadvantage of a half subtractor is overcome by full subtractor. The full subtractor is a combinational circuit with three inputs A, B, C and two output D and C'. A is the 'minuend', B is 'subtrahend', C is the 'borrow' produced by the previous stage, D is the difference output and C' is the borrow output."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Truth table",
+            "scrollToId": 21
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/fullsubstrator_truthtable.jpg"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Circuit diagram",
+            "scrollToId": 22
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/fullsubstrator_circuitdiagram.jpg"
+            }
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "https://circuitverse.org/simulator/embed/12119"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Full subtractor from universal gates",
+            "scrollToId": 23
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "https://circuitverse.org/simulator/embed/45278"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "N-Bit parallel adder and subtractor",
+            "scrollToId": 24
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Introduction",
+            "scrollToId": 25
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The Full Adder is capable of adding only two single-digit binary number along with a carry input. But in practice, you need to add binary numbers which are much longer than just one bit. To add two n-bit binary numbers you need to use the n-bit parallel adder. It uses several full adders in cascade. The carry output of the previous full adder is connected to carry input of the next full adder."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "4-bit parallel adder",
+            "scrollToId": 26
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "In the block diagram, A0 and B0 represent the LSB of the four-bit words A and B."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Hence Full Adder-0 is the lowest stage. Hence its Cin has been permanently made 0. The rest of the connections are the same as those of n-bit parallel adder is shown in fig. The four-bit parallel adder is a very common logic circuit."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Block diagram",
+            "scrollToId": 27
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/fourbitadder_blockdiagram.jpg"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "N-bit parallel subtractor",
+            "scrollToId": 28
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The subtraction can be carried out by taking the 1's or 2's complement of the number to be subtracted. For example, you can perform the subtraction (A-B) by adding either 1's or 2's complement of B to A. That means you can use a binary adder to perform the binary subtraction."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "4-bit parallel subtractor",
+            "scrollToId": 29
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The number to be subtracted (B) is first passed through inverters to obtain its 1's complement. The 4-bit adder then adds A and 2's complement of B to produce the subtraction. S3 S2 S1 S0 represents the result of binary subtraction (A-B) and carry output Cout represents the polarity of the result. If A > B Cout = 0 and the result of binary form (A-B) then Cout = 1 and the result is in the 2's complement form."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Block diagram",
+            "scrollToId": 30
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/fourbitsubstractor_blockdiagram.jpg"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "8-bit full adder and subtractor",
+            "scrollToId": 31
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "https://circuitverse.org/simulator/embed/2018"
+            }
+        },
+        {
+            "type": "widget",
+            "sub_type": "pop-quiz",
+            "content": [
+                {
+                    "question": "Consider a half adder circuit - for which of the following inputs A,B the sum (S) output is same ?",
+                    "options": [
+                        {
+                            "option": "0,0",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "0,1",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "1,0",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "1,1",
+                            "isAnswer": true
+                        }
+                    ]
+                },
+                {
+                    "question": "Using only which of the following gates in minimum number Half Adder circuit can be implemented ?",
+                    "options": [
+                        {
+                            "option": "NOR",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "AND",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "OR",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "NOT",
+                            "isAnswer": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Which of the following is 4-bit Full Adder IC ?",
+                    "options": [
+                        {
+                            "option": "74LS83",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "7474",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "7408",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "7432",
+                            "isAnswer": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Which of the following circuit is called n-bit parallel adder ?",
+                    "options": [
+                        {
+                            "option": "Ripple Carry Adder",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "Half Adder",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "Half Substractor",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "Full Adder",
+                            "isAnswer": false
+                        }
+                    ]
+                },
+                {
+                    "question": "In which of the following cases Adders can be used as a primary element ?",
+                    "options": [
+                        {
+                            "option": "Arithmetic Logic Unit (ALU)",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "Digital Calculator",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "Memory Block",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "Loop Operation",
+                            "isAnswer": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

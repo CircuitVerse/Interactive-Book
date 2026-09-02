@@ -1,0 +1,180 @@
+{
+    "name": "Binary cubes",
+    "views": [
+        {
+            "type": "widget",
+            "sub_type": "toc",
+            "items": [
+                "Another abstract representation",
+                "References"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Another abstract representation",
+            "scrollToId": 0
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The simplicity in applying the absorption and logic adjacency in Karnaugh Maps is derived from another way of representing binary functions: the binary cubes."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "This representation is also key to understand the Quine McCluskey algorithm to minimize logic functions."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "More information can be found in the section on Karnaugh Maps in [1]"
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Functions of 1 variable"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Any logic function of a single variable $f(x)$ can be represented by a line:"
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/comb/binary-cube-1var.svg",
+                "description": "Cube representing a logic function with one variable."
+            }
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The points at both ends of the line indicate the values that the variable $x$ can take (0 or 1)."
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Functions of 2 variables"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "In a similar way a function of two variables can be represented by a square in a two-dimensional space:"
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/comb/binary-cube-2var.svg",
+                "description": "Cube representing a logic function with two variables."
+            }
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "In the figure it is easy to see that (1,0) and (0,1) are not adjacent, while (1,1) and (0,1) are adjacent."
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Functions of 3 variables and more"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "This representation can be further extended to higher orders. For instance, a function with three variables would be represented by the following three-dimensional cube:"
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/comb/binary-cube-3var.svg",
+                "description": "Cube representing a logic function with three variables."
+            }
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Again, the adjacencies can be identified by the lines connecting the corners of the cube. If there is not a line, those binary numbers are not adjacent."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The adjacency is key to group cubes in Karnaugh maps and in the Quine McCluskey method to obtain minimal expressions."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "References",
+            "scrollToId": 1
+        },
+        {
+            "type": "widget",
+            "sub_type": "numbered_list",
+            "items": [
+                {
+                    "content": "G. Donzellini, L. Oneto, D. Ponta, and D. Anguita, Introduction to Digital Systems Design. Springer International Publishing, 2018. Available: https://books.google.cl/books?id=va1qDwAAQBAJ"
+                }
+            ]
+        },
+        {
+            "type": "widget",
+            "sub_type": "pop-quiz",
+            "content": [
+                {
+                    "question": "Which shape is represented by an object having exactly 1 variable?",
+                    "options": [
+                        {
+                            "option": "Line",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "Circle",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "Triangle",
+                            "isAnswer": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Which shape is represented by an object having exactly 2 variables?",
+                    "options": [
+                        {
+                            "option": "Square",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "Circle",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "Triangle",
+                            "isAnswer": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Which shape is represented by an object having exactly 3 variables?",
+                    "options": [
+                        {
+                            "option": "Cube",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "Parallelogram",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "Sphere",
+                            "isAnswer": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

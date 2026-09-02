@@ -1,0 +1,68 @@
+{
+    "name": "Binary algebra",
+    "views": [
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Mathematical operations with binary numbers"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "This chapter introduce the basic arithmetic operations using binary numbers as well as the Boolean algebra."
+        },
+        {
+            "type": "widget",
+            "sub_type": "chapter_contents",
+            "items": [
+                {
+                    "category": "Basic Level",
+                    "content": [
+                        {
+                            "id": 1,
+                            "name": "Addition"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Subtraction"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Multiplication"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Division"
+                        }
+                    ]
+                },
+                {
+                    "category": "Medium Level",
+                    "content": [
+                        {
+                            "id": 5,
+                            "name": "Boolean algebra"
+                        },
+                        {
+                            "id": 6,
+                            "name": "Boolean functions"
+                        }
+                    ]
+                },
+                {
+                    "category": "Advanced Level",
+                    "content": [
+                        {
+                            "id": 7,
+                            "name": "Shannon decomposition"
+                        },
+                        {
+                            "id": 8,
+                            "name": "IEEE Std 754"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

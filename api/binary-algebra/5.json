@@ -1,0 +1,362 @@
+{
+    "name": "Boolean algebra",
+    "views": [
+        {
+            "type": "widget",
+            "sub_type": "toc",
+            "items": [
+                "Introduction",
+                "Rules of boolean algebra",
+                "Laws of boolean algebra",
+                "Bitwise operators"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Introduction",
+            "scrollToId": 0
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Boolean Algebra was invented by George Boole and described in his first book known as The Mathematical Analysis of Logic in the year 1847. Further, he made several laws which were described by him in his second book known as An investigation of the Laws of Thought in the year 1854. As the word boolean is prefixed with the word 'bool' which implies a boolean value which could either be true or false. In this case it is referred to as 0 and 1."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Rules of boolean algebra",
+            "scrollToId": 1
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "These are the building blocks of Boolean Algebra. Try not to forget these as these are the most important one's and you can solve any digital equation with the help of the described rules and Laws below."
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Null rule"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "As the rule states 'null' which means that when 1 is added i.e., 'OR' and when 0 is 'AND' with a variable it gives 1 and 0 respectively."
+        },
+        {
+            "type": "widget",
+            "sub_type": "clipboard",
+            "content": "A + 1 = 1\nA . 0 = 0"
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Identity rule"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "As the rule states 'identity' which means that when 0 is added i.e., 'OR' and when 0 is 'OR' with a variable it gives the variable back."
+        },
+        {
+            "type": "widget",
+            "sub_type": "clipboard",
+            "content": "A + 0 = A\nA . 1 = A"
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Complement rule"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Whenever 'AND' or 'OR' is used with the negation of the variable and the variable itself it gives 0 and 1 respectively."
+        },
+        {
+            "type": "widget",
+            "sub_type": "clipboard",
+            "content": "A + A' = 1\nA . A' = 0"
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Involution rule"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Any variable when double negated gives the variable back."
+        },
+        {
+            "type": "widget",
+            "sub_type": "clipboard",
+            "content": "(A')' = A"
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Laws of boolean algebra",
+            "scrollToId": 2
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "There are six Laws in Boolean Algebra. All six laws are described below in increasing order of importance."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "_Note: We can construct any digital circuit with the help of only two gates namely AND and OR along with NOT to use a respective variables in it's high or low state as required. Keep in mind that all laws are stated for us to design any digital circuit with the help of only AND and OR gate. Similarly, these laws are stated for the same._"
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Commutative law"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The word commutative is prefixed with the word 'commute' which means movement i.e., the movement of variables meaning if you switch or change the position of variables it won't affect the result."
+        },
+        {
+            "type": "widget",
+            "sub_type": "clipboard",
+            "content": "Examples:\nA + B = B + A\nA . B = B . A"
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Associative law"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The position of parenthesis does not matter. The basic idea of this law is that which set of variables you resolve first is not a matter of fact."
+        },
+        {
+            "type": "widget",
+            "sub_type": "clipboard",
+            "content": "Examples:\n(A + B) + C = A + (B + C)\n(A . B) . C = A . (B . C)"
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Idempotence law"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "As the word states 'Identity' tries to understand the importance of the term. When we apply AND gate to a single variable it will output the variable itself(*Conditions that we do not know the value of that variable). Similar will be the case when we will apply the OR gate. If you understand this then you got it ;)"
+        },
+        {
+            "type": "widget",
+            "sub_type": "clipboard",
+            "content": "Examples:\nA + A = A\nA . A = A"
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Distributive law"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Suppose it's your birthday and you want to distribute sweets to everyone in the class. What would the birthday reader do? Go to each person and distribute the sweets?. Awesome. That's what happens in the case of Distributive law. Think of the number outside the parenthesis as the birthday variable who needs to attend each and every variable inside the parenthesis. Follow up the examples to understand better."
+        },
+        {
+            "type": "widget",
+            "sub_type": "clipboard",
+            "content": "Examples:\nA (B + C) = A.B + A.C\nA + (B.C) = (A + B)(A + C)"
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Redundance law"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "What do you do when you find two identical items while going to a track inside your bag? Obviously you remove one of the two redundant items. That's what you need to do here, extract the common variable, and solve the expression inside the parenthesis."
+        },
+        {
+            "type": "widget",
+            "sub_type": "clipboard",
+            "content": "Examples:\nA + A.B = A\nA(A + B) = A   //Here initial expression is reduced to A.A + A.B(Distributive Law) \n               which can further be A + A.B(using Identity Law)"
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "De Morgan's law"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "This is the most important law of Boolean Algebra. Remember the phrase 'Break the Line, change the Sign' and 'Join the Line, change the sign' both are applicable. Meaning break the negate and change AND to OR and OR to AND within that negate sign. Do not remove the line. As the phrase speaks of breaking the line and changing the sign not removing the line. Be careful while applying this law."
+        },
+        {
+            "type": "widget",
+            "sub_type": "clipboard",
+            "content": "(A + B)' = (A'B')\n(AB)' = (A' + B')"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Try to implement any gate you wish to with the help of the simulator present below, where 'switch on' means a high state i.e., 1 and 'switch off' means a low state i.e., 0. Select the gate in between with the help of the list present."
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Click on gate to toggle between other gates"
+        },
+        {
+            "type": "widget",
+            "sub_type": "boolean-simulator"
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Bitwise operators",
+            "scrollToId": 3
+        },
+        {
+            "type": "widget",
+            "sub_type": "table",
+            "content": {
+                "heading": [
+                    "Operator",
+                    "Explanation"
+                ],
+                "rows": [
+                    [
+                        "bit1 & bit2",
+                        "The AND(*&*) operator is used to compare two bits and gives a result equal to 1 if both the bits are 1, and it returns 0, if any one bit is 0."
+                    ],
+                    [
+                        "bit1 | bit2",
+                        "The OR(*|*) operator is used to compare two bits and gives a result equal to 1 if anyone of the bit is 1 or both the bits are 1, and if both are 0 it returns 0."
+                    ],
+                    [
+                        "bit1 ^ bit2",
+                        "The EXCLUSIVE-OR(*^) also known as XOR(^*) operator is used to compare two bits and returns 1 if any one of the bit is 1 and it returns 0 if both the bits are 0 or 1."
+                    ],
+                    [
+                        "~bit1",
+                        "The COMPLEMENT(*~*) operator is similar to 1's complement and can be used to convert all the 1's to 0's and all the 1' to 0's of the operand."
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "widget",
+            "sub_type": "bitwise-simulator"
+        },
+        {
+            "type": "widget",
+            "sub_type": "pop-quiz",
+            "content": [
+                {
+                    "question": "Which among the following states DeMorgan’s theorem ?",
+                    "options": [
+                        {
+                            "option": "(AB)’ = A’ + B’",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "(A + B)’ = A’ * B",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "A’ + B’ = A’B’",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "(AB)’ = A’ + B",
+                            "isAnswer": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Idempotence law states that ___ ?",
+                    "options": [
+                        {
+                            "option": "A + A = A",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "A + B = B + A",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "A + A.B = A",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "A + B)' = (A'B')",
+                            "isAnswer": false
+                        }
+                    ]
+                },
+                {
+                    "question": "A(A + B) = A is known as ___ ?",
+                    "options": [
+                        {
+                            "option": "Redundance law",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "Distributive law",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "Associative law",
+                            "isAnswer": false
+                        }
+                    ]
+                },
+                {
+                    "question": "A(A + B) is equivalent to ___ ?",
+                    "options": [
+                        {
+                            "option": "A",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "(A'B')",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "(A'B')",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "A'",
+                            "isAnswer": false
+                        }
+                    ]
+                },
+                {
+                    "question": "(A')' = A is known as ___ ?",
+                    "options": [
+                        {
+                            "option": "Involution rule",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "Distributive rule",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "Associative rule",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "Redundance rule",
+                            "isAnswer": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

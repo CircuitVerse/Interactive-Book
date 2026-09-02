@@ -1,0 +1,76 @@
+{
+    "name": "Quine McCluskey",
+    "views": [
+        {
+            "type": "widget",
+            "sub_type": "toc",
+            "items": [
+                "Introduction",
+                "Further reading",
+                "References"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Introduction",
+            "scrollToId": 0
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Karnaugh Maps for functions with a large number of literals are difficult to minimise. Usually, a K-map is manageable up to 5 or 6 input literals. MEV can help for functions with a couple more variables. If we look at computer data buses, the information is 8, 16, 32, 64 bits wide or more. Additionally, to do a joint optimisation of functions with multiple output variables, the K-maps for all the combinations of the output variables must be analysed. Also, the visual minimisation using K-maps cannot be programmed to be performed by a computer program."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The Quine-McCluskey method is a tabular recursive algorithm, which can be programmed in software. It has no limitations regarding the number of input or output literals. However, it will take longer and more recursions to process functions with more variables (the complexity grows exponentially)."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Further reading",
+            "scrollToId": 1
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Details of the Quine McCluskey Algorithm can be found in the following references:"
+        },
+        {
+            "type": "widget",
+            "sub_type": "bullet_list",
+            "items": [
+                "Chapter 4 \"Complements in Combinational Network Design\" in [1]",
+                "Section \"Tabular method of minimization\" in [2]",
+                "Section 4.4 \"The tabulation procedure for the determination of prime implicants\" in [3]",
+                "Section 6.10 \"Quine–McCluskey Minimization\" in [4]",
+                "Wikipedia:Quine–McCluskey algorithm (https://en.wikipedia.org/w/index.php?title=Quine%E2%80%93McCluskey_algorithm&oldid=990843883)"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "References",
+            "scrollToId": 2
+        },
+        {
+            "type": "widget",
+            "sub_type": "numbered_list",
+            "items": [
+                {
+                    "content": "G. Donzellini, L. Oneto, D. Ponta, and D. Anguita, Introduction to Digital Systems Design. Springer International Publishing, 2018. Available: https://books.google.cl/books?id=va1qDwAAQBAJ"
+                },
+                {
+                    "content": "J. Stonham, Digital Logic Techniques. CRC Press, 2017. Available: https://books.google.cl/books?id=a-5HDwAAQBAJ"
+                },
+                {
+                    "content": "Z. Kohavi and N. K. Jha, Switching and Finite Automata Theory. Cambridge University Press, 2010. Available: https://books.google.cl/books?id=jZIxam8Rb9AC"
+                },
+                {
+                    "content": "M. Ferdjallah, Introduction to Digital Systems: Modeling, Synthesis, and Simulation Using VHDL. Wiley, 2011. Available: https://books.google.cl/books?id=kJRoR8AAu1AC"
+                }
+            ]
+        }
+    ]
+}

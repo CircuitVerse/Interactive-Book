@@ -1,0 +1,515 @@
+{
+    "name": "Sequential synthesis",
+    "views": [
+        {
+            "type": "widget",
+            "sub_type": "toc",
+            "items": [
+                "Introduction",
+                "Sequential synthesis process",
+                "Interactive example"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Introduction",
+            "scrollToId": 0
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "As presented in section FSM ({% link docs/seq-design/fsm.md %}) any sequential circuit can be modelled using Finite State Machines (FSM) or, vice-versa, any FSM can be implemented in a sequential circuit."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The process to obtain such a circuit from its functional description or model is referred to as sequential synthesis."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Sequential synthesis process",
+            "scrollToId": 1
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Every sequential circuit can also be represented by the following general model:"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Sequential Circuit General Model"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The first step in the synthesis process is to state the functional description of the system in terms of a FSM. The state machine can be formally represented by state diagrams or state tables."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The number of state variables $(r)$ is directly related to the number of states which can represented by those state variables $(2^r)$. Also, the number of components or their size is related to the number of state variables. On the other hand, the devised FSM might contain redundant states. Therefore, in order to obtain an optimal circuit (in terms of the number of components and number of feedback connections) it is desirable to reduce the number of states by eliminating unnecessary ones. This is the second step in the process."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "To represent the state with the binary state variables, a binary code must be assigned to each state. A careful selection of the state codes can help in a later stage to minimise the number of components in the combinational logic block."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The memory block can be implemented using any of the basic sequential building blocks (latches or flip-flops) or even simple delay lines. Once the type of memory components is decided, it is possible to declare the truth table for the combinational logic block whose inputs are the (external) inputs of the system and the state variables (or internal inputs), while the outputs correspond to the (external) outputs as well as the excitation variables, which will produce the next state by means of the memory block."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Finding the optimal combinational logic circuit is the final step in the process."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Interactive example",
+            "scrollToId": 2
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "A typical example of a complex synchronous sequential system is the system controller of a vending machine."
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Functional description"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Let's consider the following simplified block diagram representing the vending machine:"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Vending Machine Block Diagram"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The digital system controller has to interact with the three devices:"
+        },
+        {
+            "type": "widget",
+            "sub_type": "bullet_list",
+            "items": [
+                "Coin Receiver",
+                "Coin Return",
+                "Pop Drop"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The coin receiver has four (4) output signals which will be inputs for the system controller and two (2) signals in the other direction:"
+        },
+        {
+            "type": "widget",
+            "sub_type": "bullet_list",
+            "items": [
+                "CP: (Coin Present) output signal becomes high (or true) when a coin is inserted and being processed and goes back to low value when it finishes processing the coin.",
+                "S<: (Total amount is less than product's price) output signal becomes high if the amount of deposited coins is less than the product's price.",
+                "S=: (Total amount is equal to the product's price) output signal becomes high if the deposited amount is equal to the product's price.",
+                "S>: (Total amount is greater than product's price) output signal becomes high if the amount exceeds the product's price.",
+                "DA: (Decrement Accumulator) signal from the controller instructs the coin receiver to subtract the amount returned by the coin return device from the total sum and update the Sx signals.",
+                "CA: (Clear Accumulator) signal from the controller tells the coin receiver to clear the total amount."
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The coin return device has two (2) signal connected to the system controller one on each direction:"
+        },
+        {
+            "type": "widget",
+            "sub_type": "bullet_list",
+            "items": [
+                "RN: (Return Nickel) signal to the device triggers the return of a change (as long as S> is high).",
+                "CR: (Changer Ready) signal from the device indicates the controller that the it has finished returning a coin."
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The pop drop device has also two (2) signals connected to the system controller one on each direction:"
+        },
+        {
+            "type": "widget",
+            "sub_type": "bullet_list",
+            "items": [
+                "DP: (Drop Pop) signal from the controller instructs the device to start the process of delivering the product.",
+                "PDR: (Pop Drop Ready) signal to the controller informs when the product has been delivered."
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The Finite State Machine (FSM) which models the process can be described by the following state diagram (note that the state codes have already been assigned, see the explanation in State assignment:"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Vending Machine FSM"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The initial state (a) waits a for a coin to be inserted, when that happens the machine transitions to state (b) and waits until the coin is processed by the coin receiver and then moves to state (c). In state (c) the total amount is checked: if it is still not enough it goes back to state (a) to wait for more coins to be inserted. If it is equal to the price of the product the machine gets to state (d) which triggers signal DP to release the product and waits until de pop drop device informs the process is finished by asserting the PDR signal. At this moment, the machine state becomes (e) which sends the CA signal to clear the total sum in the coin receiver and then goes back to the initial state (a). On the other hand, while at state (c), if total amount is greater than the price then the machine enters state (f) which sets signal RN to high in order to tell the coin return to return a fixed amount. When it is done, the coin return responds by sending a true value back to the controller using signal CR. When this happens the machine moves on to state (g) which activates signal DA to the coin receiver to update the total amount and changes back to state (c) to check the new amount."
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "State assignment"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Given the FSM state diagram the following conditions regarding state codes should be considered:"
+        },
+        {
+            "type": "widget",
+            "sub_type": "bullet_list",
+            "items": [
+                "(a) should be adjacent to (b)",
+                "(b) should be adjacent to (c)",
+                "(d) should be adjacent to (e)",
+                "(f) should be adjacent to (g)"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The following state map takes all considerations into account:"
+        },
+        {
+            "type": "widget",
+            "sub_type": "table",
+            "content": {
+                "heading": [
+                    "",
+                    ":AB:"
+                ],
+                "rows": [
+                    [
+                        "C",
+                        "00",
+                        "01",
+                        "11",
+                        "10"
+                    ],
+                    [
+                        "0",
+                        "a",
+                        "$\\phi$",
+                        "d",
+                        "f"
+                    ],
+                    [
+                        "1",
+                        "b",
+                        "c",
+                        "e",
+                        "g"
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Combinational synthesis"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Given the state codes the output decoder can be represented by the following map:"
+        },
+        {
+            "type": "widget",
+            "sub_type": "table",
+            "content": {
+                "heading": [
+                    "",
+                    ":AB:"
+                ],
+                "rows": [
+                    [
+                        "C",
+                        "00",
+                        "01",
+                        "11",
+                        "10"
+                    ],
+                    [
+                        "0",
+                        "",
+                        "",
+                        "DP",
+                        "RN"
+                    ],
+                    [
+                        "1",
+                        "",
+                        "",
+                        "CA",
+                        "DA"
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "By selecting JK Flip-flops as the memory elements the following maps represent the next state decoder:"
+        },
+        {
+            "type": "widget",
+            "sub_type": "table",
+            "content": {
+                "heading": [
+                    "$J_A$",
+                    ":AB:"
+                ],
+                "rows": [
+                    [
+                        "C",
+                        "00",
+                        "01",
+                        "11",
+                        "10"
+                    ],
+                    [
+                        "0",
+                        "0",
+                        "$\\phi$",
+                        "$\\phi$",
+                        "$\\phi$"
+                    ],
+                    [
+                        "1",
+                        "0",
+                        "S=+S>",
+                        "$\\phi$",
+                        "$\\phi$"
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "$J_A = B(\\text{S= + S>})$"
+        },
+        {
+            "type": "widget",
+            "sub_type": "table",
+            "content": {
+                "heading": [
+                    "$K_A$",
+                    ":AB:"
+                ],
+                "rows": [
+                    [
+                        "C",
+                        "00",
+                        "01",
+                        "11",
+                        "10"
+                    ],
+                    [
+                        "0",
+                        "$\\phi$",
+                        "$\\phi$",
+                        "0",
+                        "0"
+                    ],
+                    [
+                        "1",
+                        "$\\phi$",
+                        "$\\phi$",
+                        "1",
+                        "1"
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "$K_A = C$"
+        },
+        {
+            "type": "widget",
+            "sub_type": "table",
+            "content": {
+                "heading": [
+                    "$J_B$",
+                    ":AB:"
+                ],
+                "rows": [
+                    [
+                        "c",
+                        "00",
+                        "01",
+                        "11",
+                        "10"
+                    ],
+                    [
+                        "0",
+                        "0",
+                        "$\\phi$",
+                        "$\\phi$",
+                        "0"
+                    ],
+                    [
+                        "1",
+                        "$\\overline{CP}$",
+                        "$\\phi$",
+                        "$\\phi$",
+                        "1"
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "$J_B = C(\\overline{CP})+ AC$"
+        },
+        {
+            "type": "widget",
+            "sub_type": "table",
+            "content": {
+                "heading": [
+                    "$K_B$",
+                    ":AB:"
+                ],
+                "rows": [
+                    [
+                        "C",
+                        "00",
+                        "01",
+                        "11",
+                        "10"
+                    ],
+                    [
+                        "0",
+                        "$\\phi$",
+                        "$\\phi$",
+                        "0",
+                        "$\\phi$"
+                    ],
+                    [
+                        "1",
+                        "$\\phi$",
+                        "$\\overline{\\text{S=}}$",
+                        "1",
+                        "$\\phi$"
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "$K_B = C(\\overline{\\text{S=}}) + AC$"
+        },
+        {
+            "type": "widget",
+            "sub_type": "table",
+            "content": {
+                "heading": [
+                    "$J_C$",
+                    ":AB:"
+                ],
+                "rows": [
+                    [
+                        "C",
+                        "00",
+                        "01",
+                        "11",
+                        "10"
+                    ],
+                    [
+                        "0",
+                        "CP",
+                        "$\\phi$",
+                        "PDR",
+                        "CR"
+                    ],
+                    [
+                        "1",
+                        "$\\phi$",
+                        "$\\phi$",
+                        "$\\phi$",
+                        "$\\phi$"
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "$J_C = A(CP) + B(PDR) + A\\overline{B}(CR)$"
+        },
+        {
+            "type": "widget",
+            "sub_type": "table",
+            "content": {
+                "heading": [
+                    "$K_C$",
+                    ":AB:"
+                ],
+                "rows": [
+                    [
+                        "C",
+                        "00",
+                        "01",
+                        "11",
+                        "10"
+                    ],
+                    [
+                        "0",
+                        "$\\phi$",
+                        "$\\phi$",
+                        "$\\phi$",
+                        "$\\phi$"
+                    ],
+                    [
+                        "1",
+                        "0",
+                        "1",
+                        "1",
+                        "0"
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "$K_C = B$"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The circuit which implements such a machine is the following:"
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "https://circuitverse.org/simulator/embed/vending_machine_ssi"
+            }
+        }
+    ]
+}

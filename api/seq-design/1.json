@@ -1,0 +1,243 @@
+{
+    "name": "FSM",
+    "views": [
+        {
+            "type": "widget",
+            "sub_type": "toc",
+            "items": [
+                "Introduction",
+                "Mealy state machine",
+                "Moore state machine",
+                "Interactive FSM",
+                "Problem",
+                "Rules",
+                "Understanding the possibilities",
+                "FSM diagram"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Introduction",
+            "scrollToId": 0
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "You know that synchronous sequential circuits change (affect) their states for every positive (or negative) transition of the clock signal based on the input. So, this behavior of synchronous sequential circuits can be represented in the graphical form and it is known as state diagram. A synchronous sequential circuit is also called as Finite state machine (FSM) if it has a finite number of states. There are two types of FSMs."
+        },
+        {
+            "type": "widget",
+            "sub_type": "bullet_list",
+            "items": [
+                "Mealy State Machine",
+                "Moore State Machine"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Now, let us discuss these two state machines one by one."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Mealy state machine",
+            "scrollToId": 1
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "A Finite State Machine is said to be Mealy state machine, if outputs depend on both present inputs & present states. The block diagram of Mealy state machine is shown in the following figure."
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/mealy_state_machine.jpg"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "As shown in the figure, there are two parts present in Mealy state machine. Those are combinational logic and memory. Memory is useful to provide some or part of previous outputs (present states) as inputs of combinational logic."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "So, based on the present inputs and present states, the Mealy state machine produces outputs. Therefore, the outputs will be valid only at the positive (or negative) transition of the clock signal."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The state diagram of Mealy state machine is shown in the following figure."
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/state_diagram1.jpg"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "In the above figure, there are three states, namely A, B & C. These states are labelled inside the circles & each circle corresponds to one state. Transitions between these states are represented with directed lines. Here, 0 / 0, 1 / 0 & 1 / 1 denotes input / output. In the above figure, there are two transitions from each state based on the value of an input, x."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "In general, the number of states required in Mealy state machine is less than or equal to the number of states required in the Moore state machine. There is an equivalent Moore state machine for each Mealy state machine."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Moore state machine",
+            "scrollToId": 2
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "A Finite State Machine is said to be Moore state machine, if outputs depend only on present states. The block diagram of the Moore state machine is shown in the following figure."
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/moore_state_machine.jpg"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "As shown in the figure, there are two parts present in Moore state machine. Those are combinational logic and memory. In this case, the present inputs and present states determine the next states. So, based on the next states, Moore state machine produces the outputs. Therefore, the outputs will be valid only after the transition of the state."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The state diagram of the Moore state machine is shown in the following figure."
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/state_diagram_of_moore_state_machine.jpg"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "In the above figure, there are four states, namely A, B, C & D. These states and the respective outputs are labelled inside the circles. Here, only the input value is labelled on each transition. In the above figure, there are two transitions from each state based on the value of the input, x."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "In general, the number of states required in Moore state machine is more than or equal to the number of states required in Mealy state machine. There is an equivalent Mealy state machine for each Moore state machine. So, based on the requirement you can use only one of them."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Interactive FSM",
+            "scrollToId": 3
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "In this module, you will learn how to use a Final-State-Machine(FSM) which describes the working of a Soda vending machine:"
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Problem",
+            "scrollToId": 4
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Assume, you have a soda vending machine which sells soda cans of cost 15¢ each, and you have only 2 types of coins: 10¢ and 5¢."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "In this problem, our goal is to make a state machine which can determine, how much change should be returned, and when a can is dispensed."
+        },
+        {
+            "type": "widget",
+            "sub_type": "clipboard",
+            "content": "Note: In this design, ignore the capacity of the stock, which means, we’ll assume that there will always be can in the vending machine.\nAlso, you can assume that only one action could be made in every “clock cycle” or state."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Rules",
+            "scrollToId": 5
+        },
+        {
+            "type": "widget",
+            "sub_type": "numbered_list",
+            "items": [
+                {
+                    "content": "First, give the change."
+                },
+                {
+                    "content": "Then dispense the can."
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Understanding the possibilities",
+            "scrollToId": 6
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "There are quite some options like:"
+        },
+        {
+            "type": "widget",
+            "sub_type": "numbered_list",
+            "items": [
+                {
+                    "content": "entering no money."
+                },
+                {
+                    "content": "putting 5¢ followed by another 10¢ => getting the can."
+                },
+                {
+                    "content": "putting 10¢ followed by 10¢ => receiving change => getting a can."
+                },
+                {
+                    "content": "putting 5¢ followed by 5¢ followed by 10¢=> receiving change => getting a can."
+                },
+                {
+                    "content": "putting 10¢ followed by 5¢ and getting the can."
+                },
+                {
+                    "content": "putting 5$ followed by 5¢ followed by 5¢ => getting a can."
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "FSM diagram",
+            "scrollToId": 7
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Now translate the options which are listed above into an FSM diagram/flow-chart:"
+        },
+        {
+            "type": "widget",
+            "sub_type": "fsm-simulator"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Lets try the soda can vending machine and look for the corresponding state changes FSM diagram in each of the above mentioned possibilities."
+        }
+    ]
+}

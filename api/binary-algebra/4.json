@@ -1,0 +1,102 @@
+{
+    "name": "Division",
+    "views": [
+        {
+            "type": "widget",
+            "sub_type": "toc",
+            "items": [
+                "Division"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Division",
+            "scrollToId": 0
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The division in binary is achieved by binary subtraction. The sole motive of the Binary Division is to subtract the divisor from dividends until 0 is obtained or a number that cannot be further subtracted. The number of times you subtract is known as a quotient(this can be converted to binary) and the number which cannot be reduced or 0 is obtained after some step is known as Remainder."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Another method which can achieve Division in binary is by using Binary Multiplication and subtraction. It is similar to Decimal Division. Multiply the divisor by 1 or 0 wherever needed and reduce the number further."
+        },
+        {
+            "type": "widget",
+            "sub_type": "clipboard",
+            "content": "\n  1 1 1 1 0 / 1 0 1 (Dividend/Divisor)\n\n -    1 0 1                     1st\n-------------\n  1 1 0 0 1\n -    1 0 1                     2nd\n-------------\n  1 0 1 0 0\n -    1 0 1                     3rd\n-------------\n  0 1 1 1 1\n -    1 0 1                     4th\n-------------\n    1 0 1 0\n -    1 0 1                     5th\n-------------\n      1 0 1\n -    1 0 1                     6th\n-------------                 -------\n\t  0  (Remainder)     ans = 6 (110) (Quotient)\n-------------                 -------"
+        },
+        {
+            "type": "widget",
+            "sub_type": "pop-quiz",
+            "content": [
+                {
+                    "question": "Perform division of the binary numbers: 1010101 by 101 = ?",
+                    "options": [
+                        {
+                            "option": "010001",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "110101",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "1111000",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "101",
+                            "isAnswer": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Division of the binary numbers: 101001 by 1011 will give remainder as ?",
+                    "options": [
+                        {
+                            "option": "1000",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "1010",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "1101",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "0011",
+                            "isAnswer": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Division of the binary numbers: 011010000 by 0101 will give quotient as ?",
+                    "options": [
+                        {
+                            "option": "0101001",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "0000010",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "0110010",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "0101110",
+                            "isAnswer": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,195 @@
+{
+    "name": "ROM-based µcontrollers",
+    "views": [
+        {
+            "type": "widget",
+            "sub_type": "toc",
+            "items": [
+                "Introduction",
+                "General purpose ROM-based µcontroller",
+                "Counter based µcontroller",
+                "Preset counter based µcontroller",
+                "MUX based µcontroller"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Introduction",
+            "scrollToId": 0
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "ROM-based µcontrollers take the simple approach of implementing the combinational logic block of any sequential circuit (both the next state decoder and the output decoder) in a ROM circuit, while latches and counters can be used to make a more efficient use of the ROM capacity. In some cases, additional combinational MUX components are used for the same reason."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The following are examples of different ROM-based µcontrollers"
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "General purpose ROM-based µcontroller",
+            "scrollToId": 1
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "A general purpose ROM-based µcontroller can be implemented as depicted in the block diagram below:"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "General purpose ROM-based microcontroller"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Both, the output decoder and the next-state decoder are implemented in the ROM."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The number of address bits for the ROM must be greater than or equal to the sum of the number of input bits $M$ and the number of state variables $N$s. The size of the output word must be greater than or equal to the sum of the number of outputs html:\\(K\\)@@ and the number of state variables."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "ROM capacity: $2^{(M+N)}\\times (K+N)$"
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Counter based µcontroller",
+            "scrollToId": 2
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "When the FSM corresponds to a simple sequence of states (without branches), a counter can be used to represent the state. The counter output (or state code) selects the corresponding output word from the ROM (A in the figure below). At the same time, part of the bits stored in the ROM (B in the figure) are used to select (via the MUX) the input associated which can produce the state transition for the current state."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Counter based microcontroller"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "ROM capacity: $2^N \\times (K+\\log_2 M)$"
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Preset counter based µcontroller",
+            "scrollToId": 3
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "If the FSM is mostly a simple sequence of state, but there are a few \"jumps\" to states out of the sequence, the previous circuit can be extended to store the address of the state which is out of the sequence and load it through the preset lines of the counter."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Preset counter based microcontroller"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "ROM capacity: $2^N \\times (N+K+\\log_2 M)$"
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "MUX based µcontroller",
+            "scrollToId": 4
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "For FSM which do not exhibit a simple sequence of states, the counter can be replaced by a MUX and the next state addresses must be stored in the ROM."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "MUX based microcontroller"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "ROM capacity: $2^N \\times (2N+K+\\log_2 M)$"
+        },
+        {
+            "type": "widget",
+            "sub_type": "pop-quiz",
+            "content": [
+                {
+                    "question": "What is the ROM capacity of Counter based µcontroller ?",
+                    "options": [
+                        {
+                            "option": "$2^N \\times (K+\\log_2 M)$",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "$2^N \\times (N+K+\\log_2 M)$",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "$2^{(M+N)} \\times (K+N)$",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "$2^M \\times (M+N)$",
+                            "isAnswer": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Which among the following is not micro-controller ?",
+                    "options": [
+                        {
+                            "option": "DMUX based µcontroller",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "MUX based µcontroller",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "ROM-based µcontroller",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "None",
+                            "isAnswer": false
+                        }
+                    ]
+                },
+                {
+                    "question": "What is the ROM capacity of Preset counter based µcontroller ?",
+                    "options": [
+                        {
+                            "option": "$2^N \\times (N+K+\\log_2 M)$",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "$2^N \\times (K+\\log_2 M)$",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "$2^{(M+N)} \\times (K+N)$",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "$2^M \\times (M+N)$",
+                            "isAnswer": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,250 @@
+{
+    "chapters": [
+        {
+            "id": 1,
+            "name": "Binary representation",
+            "path": "binary-representation",
+            "sub-chapters": [
+                {
+                    "id": 1,
+                    "name": "Binary numbers"
+                },
+                {
+                    "id": 2,
+                    "name": "Negative quantities"
+                },
+                {
+                    "id": 3,
+                    "name": "Number bases"
+                },
+                {
+                    "id": 4,
+                    "name": "Encoding information"
+                },
+                {
+                    "id": 5,
+                    "name": "Discrete quantities"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Binary algebra",
+            "path": "binary-algebra",
+            "sub-chapters": [
+                {
+                    "id": 1,
+                    "name": "Addition"
+                },
+                {
+                    "id": 2,
+                    "name": "Subtraction"
+                },
+                {
+                    "id": 3,
+                    "name": "Multiplication"
+                },
+                {
+                    "id": 4,
+                    "name": "Division"
+                },
+                {
+                    "id": 5,
+                    "name": "Boolean algebra"
+                },
+                {
+                    "id": 6,
+                    "name": "Boolean functions"
+                },
+                {
+                    "id": 7,
+                    "name": "Shannon decomposition"
+                },
+                {
+                    "id": 8,
+                    "name": "IEEE Std 754"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Combinational SSI",
+            "path": "comb-ssi",
+            "sub-chapters": [
+                {
+                    "id": 1,
+                    "name": "Logic gates"
+                },
+                {
+                    "id": 2,
+                    "name": "Logic families"
+                },
+                {
+                    "id": 3,
+                    "name": "Universal gates"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Logic Design",
+            "path": "logic-design",
+            "sub-chapters": [
+                {
+                    "id": 1,
+                    "name": "Functional description"
+                },
+                {
+                    "id": 2,
+                    "name": "Implementation"
+                },
+                {
+                    "id": 3,
+                    "name": "Canonical functions"
+                },
+                {
+                    "id": 4,
+                    "name": "K-Maps"
+                },
+                {
+                    "id": 5,
+                    "name": "Map-entered variables"
+                },
+                {
+                    "id": 6,
+                    "name": "Quine McCluskey"
+                },
+                {
+                    "id": 7,
+                    "name": "Binary cubes"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Combinational MSI",
+            "path": "comb-msi",
+            "sub-chapters": [
+                {
+                    "id": 1,
+                    "name": "MUX/DEMUX"
+                },
+                {
+                    "id": 2,
+                    "name": "Encoders/Decoders"
+                },
+                {
+                    "id": 3,
+                    "name": "Adders"
+                },
+                {
+                    "id": 4,
+                    "name": "MUX-based functions"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Combinational LSI",
+            "path": "comb-lsi",
+            "sub-chapters": [
+                {
+                    "id": 1,
+                    "name": "ROM"
+                },
+                {
+                    "id": 2,
+                    "name": "ALU"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Sequential SSI",
+            "path": "seq-ssi",
+            "sub-chapters": [
+                {
+                    "id": 1,
+                    "name": "Latches"
+                },
+                {
+                    "id": 2,
+                    "name": "Flip-flops"
+                },
+                {
+                    "id": 3,
+                    "name": "Clock signals"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Sequential Design",
+            "path": "seq-design",
+            "sub-chapters": [
+                {
+                    "id": 1,
+                    "name": "FSM"
+                },
+                {
+                    "id": 2,
+                    "name": "Sequential synthesis"
+                },
+                {
+                    "id": 3,
+                    "name": "Race conditions"
+                },
+                {
+                    "id": 4,
+                    "name": "Flowchart diagrams"
+                },
+                {
+                    "id": 5,
+                    "name": "MDS Diagrams"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Sequential MSI",
+            "path": "seq-msi",
+            "sub-chapters": [
+                {
+                    "id": 1,
+                    "name": "Registers"
+                },
+                {
+                    "id": 2,
+                    "name": "Counters"
+                },
+                {
+                    "id": 3,
+                    "name": "MSI based design"
+                },
+                {
+                    "id": 4,
+                    "name": "Multipliers/Dividers"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Sequential LSI",
+            "path": "seq-lsi",
+            "sub-chapters": [
+                {
+                    "id": 1,
+                    "name": "ROM-based µcontrollers"
+                },
+                {
+                    "id": 2,
+                    "name": "FPGA"
+                },
+                {
+                    "id": 3,
+                    "name": "Microprocessors"
+                }
+            ]
+        }
+    ]
+}

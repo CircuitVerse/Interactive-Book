@@ -1,0 +1,57 @@
+{
+    "name": "Shannon decomposition",
+    "views": [
+        {
+            "type": "widget",
+            "sub_type": "toc",
+            "items": [
+                "Boole's expansion theorem",
+                "References"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Boole's expansion theorem",
+            "scrollToId": 0
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The Shannon expansion or decomposition theorem, also known as Boole's expansion theorem is an identity which allow the expansion of any logic function to broken down in parts. One consequence of this theorem is the possibility to implement any logic function using multiplexers."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The expansion can take any of these three variations:"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "$\\begin{aligned} f(x1,x2,\\ldots,xn)&= x1 \\cdot f(1,x2,\\ldots,xn) + \\overline{x1}\\cdot f(0,x2,\\ldots,xn) \\\\\\\\\\\\ &= \\bigl(x1+f(0,x2,\\ldots,xn)\\bigr)\\cdot \\bigl(\\overline{x1}+f(1,x2,\\ldots,xn)\\bigr) \\\\\\\\\\\\ &= x1 \\cdot f(1,x2,\\ldots,xn) \\oplus \\overline{x1}\\cdot f(0,x2,\\ldots,x_n) \\end{aligned}$"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "More details can be found in Section 1.9 \"Shannon's Expansion Theorem\" in [1] and in Section 3.2 \"Switching functions\" in [2]."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "References",
+            "scrollToId": 1
+        },
+        {
+            "type": "widget",
+            "sub_type": "numbered_list",
+            "items": [
+                {
+                    "content": "G. Donzellini, L. Oneto, D. Ponta, and D. Anguita, Introduction to Digital Systems Design. Springer International Publishing, 2018. Available: https://books.google.cl/books?id=va1qDwAAQBAJ"
+                },
+                {
+                    "content": "Z. Kohavi and N. K. Jha, Switching and Finite Automata Theory. Cambridge University Press, 2010. Available: https://books.google.cl/books?id=jZIxam8Rb9AC"
+                }
+            ]
+        }
+    ]
+}

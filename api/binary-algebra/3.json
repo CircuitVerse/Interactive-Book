@@ -1,0 +1,86 @@
+{
+    "name": "Multiplication",
+    "views": [
+        {
+            "type": "widget",
+            "sub_type": "toc",
+            "items": [
+                "Multiplication"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Multiplication",
+            "scrollToId": 0
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Binary multiplication requires two concepts i.e., binary addition and decimal multiplication. You can refer to the example below which describes how multiplication occurs in binary. It is similar to decimal multiplication. Important points to be noted are as follows :"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "1 x 1 = 1"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "1 x 0 = 0"
+        },
+        {
+            "type": "widget",
+            "sub_type": "clipboard",
+            "content": "      1  1  0       (6)\n   x  1  0  1       (5)\n  ------------\n      1  1  0\n   0  0  0  x\n1  1  0  x  x\n--------------\n1  1  1  1  0       (30)\n--------------"
+        },
+        {
+            "type": "widget",
+            "sub_type": "pop-quiz",
+            "content": [
+                {
+                    "question": "Perform multiplication of the binary numbers: 01001×01011= ?",
+                    "options": [
+                        {
+                            "option": "01100011",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "010110010",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "010100010",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "010010010",
+                            "isAnswer": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Perform multiplication of the binary numbers: 001101×1111= ?",
+                    "options": [
+                        {
+                            "option": "011000011",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "011001111",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "010011001",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "011010101",
+                            "isAnswer": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

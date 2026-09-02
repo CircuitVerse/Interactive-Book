@@ -1,0 +1,51 @@
+{
+    "name": "Binary representation",
+    "views": [
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Representation using binary numbers"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "This chapter explain the basics of representing quantities and information using binary numbers."
+        },
+        {
+            "type": "widget",
+            "sub_type": "chapter_contents",
+            "items": [
+                {
+                    "category": "Basic Level",
+                    "content": [
+                        {
+                            "id": 1,
+                            "name": "Binary numbers"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Negative quantities"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Number bases"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Encoding information"
+                        }
+                    ]
+                },
+                {
+                    "category": "Medium Level",
+                    "content": [
+                        {
+                            "id": 5,
+                            "name": "Discrete quantities"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

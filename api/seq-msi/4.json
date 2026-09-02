@@ -1,0 +1,49 @@
+{
+    "name": "Multipliers/Dividers",
+    "views": [
+        {
+            "type": "widget",
+            "sub_type": "toc",
+            "items": [
+                "Binary multiplier",
+                "Binary divider"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Binary multiplier",
+            "scrollToId": 0
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "A simple circuit to multiply 2 binary numbers (3-bits each) can be tested below:"
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "https://circuitverse.org/simulator/embed/multiplier-3bits"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Binary divider",
+            "scrollToId": 1
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Likewise, a binary divider interactive circuit is presented next:"
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "https://circuitverse.org/simulator/embed/binary-divider"
+            }
+        }
+    ]
+}

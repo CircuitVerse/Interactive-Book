@@ -1,0 +1,82 @@
+{
+    "name": "MDS Diagrams",
+    "views": [
+        {
+            "type": "widget",
+            "sub_type": "toc",
+            "items": [
+                "Introduction",
+                "Large scale digital system design"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Introduction",
+            "scrollToId": 0
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "For very complex systems the state diagram might not be well suited. In this case a tool called the Mnemonic Documented State Diagram or MDS Diagram can incorporate in a more compact way all the complexities of a large system controller."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "More information about MDS diagrams can be found in the book An Engineering Approach to Digital Design by William I. Fletcher."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Large scale digital system design",
+            "scrollToId": 1
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "For complex digital logic system with a large number of inputs, the following design methodology, from the point of view of a system controller, can be used:"
+        },
+        {
+            "type": "widget",
+            "sub_type": "numbered_list",
+            "items": [
+                {
+                    "content": "State main definitions and specifications of the problem/system"
+                },
+                {
+                    "content": "Define basic operations, limits and restrictions.",
+                    "children": [
+                        "Draw a basic (simplified) block diagram",
+                        "Draw a simplified (general) flowchart diagram"
+                    ]
+                },
+                {
+                    "content": "Define the system timing requirement",
+                    "children": [
+                        "Draw a general time diagram"
+                    ]
+                },
+                {
+                    "content": "Detail the controller's sequential behaviour",
+                    "children": [
+                        "Draw detailed time diagram",
+                        "Draw detailed flowchart diagram",
+                        "Draw detailed block diagram"
+                    ]
+                },
+                {
+                    "content": "Draw MDS diagram"
+                },
+                {
+                    "content": "Choose the controller architecture: SSI (logic gates and flip-flops), MSI (based on MUXs, …) or LSI (ROM based, …)"
+                },
+                {
+                    "content": "Assign state codes"
+                },
+                {
+                    "content": "Implement the circuit based on the design"
+                }
+            ]
+        }
+    ]
+}

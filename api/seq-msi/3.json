@@ -1,0 +1,152 @@
+{
+    "name": "MSI based design",
+    "views": [
+        {
+            "type": "widget",
+            "sub_type": "toc",
+            "items": [
+                "Introduction",
+                "Mux based design"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Introduction",
+            "scrollToId": 0
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "It is possible, specially for large systems, to use Medium Scale Integration components (counters, MUXs, DeMUXs, etc.) to design sequential systems"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "For systems with a large number of inputs, the state diagram looses its purpose and there is no standard method to design with a greater scale of integration."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The main idea is to use fixed architectures as building blocks and adapt the problem to these architectures."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Mux based design",
+            "scrollToId": 1
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "In this architecture, each state is represented by the output of a MUX. A memory element (D type flip-flop) is added to the MUX output."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The basic building block of this architecture is depicted in Fig. 1."
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/seq/mux-buildingblock.svg",
+                "description": "Fig. 1: MUX + D flip-flop building block."
+            }
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The selection lines $x\\1,\\ldots,x\\n$ are connected to the system's inputs. The multiplexed inputs $C0,\\ldots,C{2^n-1}$ are connected to the previous states (MUXs), and the output $F$ is connected to the next states (MUXs)."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "During operation there will be only one MUX with its output activated, the one representing the current state. When an input combination triggers the transition to the next state the output of the MUX representing that next state will become active and the previously active MUX output will deactivate."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "For simplicity, we will consider a Moore FSM, however the system can be also configured for Mealy state machines adding the input conditions to the output decoder."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The following transition cases can be combined to form any Finite State Machine:"
+        },
+        {
+            "type": "widget",
+            "sub_type": "numbered_list",
+            "items": [
+                {
+                    "content": "Multiple previous states transitioning to a common next state for the same input word."
+                },
+                {
+                    "content": "No previous state for input combination $k$."
+                },
+                {
+                    "content": "Output bit associated to multiple states (Moore style machine)."
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The following are examples for each of these cases."
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Previous states for the same input word"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "States B and C will transit to next state A if the input $x=I_j$."
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/seq/mux-next-state.svg",
+                "description": "Previous states for the same input word."
+            }
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "No previous state for a given input word"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "State D has no previous state for input combination $x=I_k$."
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/seq/mux-noprev-state.svg",
+                "description": "No previous state for a given input word."
+            }
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Output bit set by multiple states"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "If output function $z$ is active for states A, B or C, then the output decoder is simply:"
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/seq/mux-output.svg",
+                "description": "Output associated to multiple states."
+            }
+        }
+    ]
+}

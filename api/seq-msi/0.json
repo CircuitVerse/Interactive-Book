@@ -1,0 +1,47 @@
+{
+    "name": "Sequential MSI",
+    "views": [
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Sequential MSI components"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "This chapter presents medium scale integration (MSI) sequential components as well as design methods based on these components."
+        },
+        {
+            "type": "widget",
+            "sub_type": "chapter_contents",
+            "items": [
+                {
+                    "category": "Basic Level",
+                    "content": [
+                        {
+                            "id": 1,
+                            "name": "Registers"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Counters"
+                        }
+                    ]
+                },
+                {
+                    "category": "Medium Level",
+                    "content": [
+                        {
+                            "id": 3,
+                            "name": "MSI based design"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Multipliers/Dividers"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

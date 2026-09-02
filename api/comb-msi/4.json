@@ -1,0 +1,169 @@
+{
+    "name": "MUX-based functions",
+    "views": [
+        {
+            "type": "widget",
+            "sub_type": "toc",
+            "items": [
+                "Mathematical formulation of the Multiplexer",
+                "Shannon theorem with MUX",
+                "Interactive MUX based logic gates",
+                "References"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Mathematical formulation of the Multiplexer",
+            "scrollToId": 0
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "An MUX of order $p$, $M(p)$ is formulated as:"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "$ \\begin{equation}F(\\underbrace{x1,\\ldots,xp}\\{\\text{inputs}}, \\underbrace{y0,\\ldots,yk}\\{\\text{control}})= \\sum\\{i=0}^{2^p-1}\\underbrace{\\left(\\dot{x1}\\dot{x2}\\cdots\\dot{xp}\\right)i}\\{i^{th}\\text{ Miniterm of }F}\\cdot y_i \\end{equation}$"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "where $k=2^p-1$ and $\\dot{xj} \\in \\\\{xj, \\overline{x_j}\\\\}$"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "More examples can be found in [1] (Section on Data Selectors)."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Shannon theorem with MUX",
+            "scrollToId": 1
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Shannon decomposition theorem can also be implemented using MUXs:"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "$ f(x1,x2,x3,\\ldots, xn) = x1 \\cdot f1(1,x2,x3,\\ldots,xn) + \\overline{x1} \\cdot f0(0,x2,x3,\\ldots,xn) $"
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/comb/mux-shannon.svg",
+                "description": "MUX based implementation of Shannon decomposition theorem."
+            }
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "See [2] for a more general description."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Interactive MUX based logic gates",
+            "scrollToId": 2
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The set $\\\\{M(1),0,1\\\\}$ is functionally complete (See section Functionally Complete \\*Operation Sets in [3] or Wikipedia:Functional completeness (https://en.wikipedia.org/w/index.php?title=Functional_completeness&oldid=986190082)). Therefore, any logic function can be implemented using multiplexers, check the interactive circuit below, which implements the basic logic gates using MUXs:"
+        },
+        {
+            "type": "widget",
+            "sub_type": "bullet_list",
+            "items": [
+                "MUX-based AND gate",
+                "MUX-based OR gate",
+                "MUX-based NAND gate",
+                "MUX-based NOR gate",
+                "MUX-based NOT gate"
+            ]
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "https://circuitverse.org/simulator/embed/mux-based-not-gate"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "References",
+            "scrollToId": 3
+        },
+        {
+            "type": "widget",
+            "sub_type": "numbered_list",
+            "items": [
+                {
+                    "content": "Z. Kohavi and N. K. Jha, Switching and Finite Automata Theory. Cambridge University Press, 2010. Available: https://books.google.cl/books?id=jZIxam8Rb9AC"
+                },
+                {
+                    "content": "Cerny, Mange, and Sanchez, \"Synthesis of Minimal Binary Decision Trees,\" IEEE Transactions on Computers, vol. C-28, no. 7, pp. 472-482, 1979. doi: 10.1109/TC.1979.1675391"
+                },
+                {
+                    "content": "B. J. LaMeres, Introduction to Logic Circuits & Logic Design with Verilog. Springer International Publishing, 2019. Available: https://books.google.cl/books?id=1OORDwAAQBAJ"
+                }
+            ]
+        },
+        {
+            "type": "widget",
+            "sub_type": "pop-quiz",
+            "content": [
+                {
+                    "question": "Can one MUX block be said an universal logic block ?",
+                    "options": [
+                        {
+                            "option": "Yes",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "No",
+                            "isAnswer": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Can one DEMUX block be said an universal logic block ?",
+                    "options": [
+                        {
+                            "option": "Yes",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "No",
+                            "isAnswer": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Select the MUX-based gates which is/are possible ?",
+                    "options": [
+                        {
+                            "option": "MUX-based XOR gate",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "MUX-based XNOR gate",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "XOR and XNOR both gates",
+                            "isAnswer": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

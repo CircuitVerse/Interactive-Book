@@ -1,0 +1,104 @@
+{
+    "name": "Addition",
+    "views": [
+        {
+            "type": "widget",
+            "sub_type": "toc",
+            "items": [
+                "Addition"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Addition",
+            "scrollToId": 0
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Binary addition is similar to Decimal addition. As this addition is binary, it implies that you cannot have a number greater than 1 i.e., when you do '1+1' it gives 0 with carry 1 i.e, 10."
+        },
+        {
+            "type": "widget",
+            "sub_type": "clipboard",
+            "content": "\nRules:\n0 + 0 = 0\n0 + 1 = 1\n1 + 0 = 1\n1 + 1 = 10 (0 with carry 1)\n\n| A | B | Carry Out | Sum | Result |\n|---|---|-----------|-----|--------|\n| 0 | 0 |     0     |  0  |   0    |\n| 0 | 1 |     0     |  1  |   1    |\n| 1 | 0 |     0     |  1  |   1    |\n| 1 | 1 |     1     |  0  |   10   |\n\nExample 1:\n  1 1 (3)\n+ 1 0 (2)\n-----\n1 0 1 (5)\n-----"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "In the example above, the units column adds 1 + 0 to get 1. In the next column, 1 + 1 equals 10 (binary for 2). We write down the 0 and carry the 1 to the next position, just like in decimal addition"
+        },
+        {
+            "type": "widget",
+            "sub_type": "clipboard",
+            "content": "Example 2:\n  1 1 0  (6)\n+ 1 0 1  (5)\n-------\n1 0 1 1  (11)\n-------"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "In the example above, we add the numbers from right to left. First, 0 + 1 = 1, so we write 1 in the rightmost column. Next, 1 + 0 = 1, so we write 1 in the next column. Then, 1 + 1 = 10, so we write 0 and carry 1 to the next column. Finally, we bring down the carried 1, giving the result 1011. Therefore, 110₂ + 101₂ = 1011₂, which is equal to 6 + 5 = 11 in decimal."
+        },
+        {
+            "type": "widget",
+            "sub_type": "pop-quiz",
+            "content": [
+                {
+                    "question": "What is the answer to 1100 + 0011= ?",
+                    "options": [
+                        {
+                            "option": "1111",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "1101",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "1110",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "1100",
+                            "isAnswer": false
+                        }
+                    ]
+                },
+                {
+                    "question": "11111111 + 00100000 = 100011111 is an example of __",
+                    "options": [
+                        {
+                            "option": "Overflow error",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "8 bit binary addition",
+                            "isAnswer": false
+                        }
+                    ]
+                },
+                {
+                    "question": "What is the answer to 01101011 + 01010100= ?",
+                    "options": [
+                        {
+                            "option": "10111111",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "01111011",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "11101111",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "11101101",
+                            "isAnswer": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "name": "Sequential Design",
+    "views": [
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Sequential Design"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The previous chapter about SSI sequential components presented application examples using basic sequential building blocks such as latches and flip-flops."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "This chapter will describe tools and methods to design and synthesise optimal sequential circuits."
+        },
+        {
+            "type": "widget",
+            "sub_type": "chapter_contents",
+            "items": [
+                {
+                    "category": "Basic Level",
+                    "content": [
+                        {
+                            "id": 1,
+                            "name": "FSM"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Sequential synthesis"
+                        }
+                    ]
+                },
+                {
+                    "category": "Medium Level",
+                    "content": [
+                        {
+                            "id": 3,
+                            "name": "Race conditions"
+                        }
+                    ]
+                },
+                {
+                    "category": "Advanced Level",
+                    "content": [
+                        {
+                            "id": 4,
+                            "name": "Flowchart diagrams"
+                        },
+                        {
+                            "id": 5,
+                            "name": "MDS Diagrams"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

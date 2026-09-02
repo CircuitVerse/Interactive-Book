@@ -1,0 +1,242 @@
+{
+    "name": "Race conditions",
+    "views": [
+        {
+            "type": "widget",
+            "sub_type": "toc",
+            "items": [
+                "Introduction",
+                "Methods to eliminate race around condition"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Introduction",
+            "scrollToId": 0
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Before getting into the race around condition, let us have a look at the JK flip-flop's truth table."
+        },
+        {
+            "type": "widget",
+            "sub_type": "table",
+            "content": {
+                "heading": [
+                    "Clock Input",
+                    "Inputs",
+                    "",
+                    "Outputs",
+                    "",
+                    "Comments"
+                ],
+                "rows": [
+                    [
+                        "",
+                        "J",
+                        "K",
+                        "Q",
+                        "Q'",
+                        ""
+                    ],
+                    [
+                        "0",
+                        "X",
+                        "X",
+                        "Same as previous",
+                        "Same as previous",
+                        "No change"
+                    ],
+                    [
+                        "1",
+                        "0",
+                        "0",
+                        "Same as previous",
+                        "Same as previous",
+                        "No change"
+                    ],
+                    [
+                        "1",
+                        "0",
+                        "1",
+                        "0",
+                        "1",
+                        "Reset"
+                    ],
+                    [
+                        "1",
+                        "1",
+                        "0",
+                        "1",
+                        "0",
+                        "Set"
+                    ],
+                    [
+                        "1",
+                        "1",
+                        "1",
+                        "Opposite of previous",
+                        "Opposite of previous",
+                        "Toggle"
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Here, Q is the present state and Q' is the next state. As you can see, when J, K and Clock are equal to 1, toggling takes place, i.e. The next state will be equal to the complement of the present state."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Now, let us look at the timing diagram of JK flip-flop."
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/JK_timingdiagram.png"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Here, T is the time period of the clock whereas delta t is the propagation delay. The delay between input and output is called a propagation delay."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "This is what was expected, but the output may not be like this all the time. This is where Race around condition comes into the play."
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Let us look at the timing diagram of JK flip-flop when the race around condition is considered."
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/JK_timingdiagram_race.png"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "As you already know, when J, K and Clock are equal to 1, toggling takes place. Here, propagation delay has also been reduced, so the output will be given out at the instant input is given. So there is a toggling again. Therefore, whenever Clock is equal to 1 there are consecutive toggling. This condition is called as Race around condition. To put it in words, \" For JK flip-flop if J, K and Clock are equal to 1 the state of flip-flop keeps on toggling which leads to uncertainty in determining the output of the flip-flop. This problem is called Race around the condition. \"' This condition also exists in T flip-flop since T flip-flop also has toggling options."
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Methods to eliminate race around condition",
+            "scrollToId": 1
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "There are three methods to eliminate race around condition as described below:"
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Increasing the delay of flip-flop"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "The propagation delay (delta t) should be made greater than the duration of the clock pulse (T). But it is not a good solution as increasing the delay will decrease the speed of the system."
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Use of edge-triggered flip-flop"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "If the clock is High for a time interval less than the propagation delay of the flip flop then racing around condition can be eliminated. This is done by using the edge-triggered flip flop rather than using the level-triggered flip-flop."
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Use of master-slave JK flip-flop"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "If the flip flop is made to toggle over one clock period then racing around condition can be eliminated. This is done by using Master-Slave JK flip-flop."
+        },
+        {
+            "type": "widget",
+            "sub_type": "pop-quiz",
+            "content": [
+                {
+                    "question": "The delay between input and output is called __.",
+                    "options": [
+                        {
+                            "option": "Propagation delay",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "Contamination delay",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "Rise time",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "Edge rate",
+                            "isAnswer": false
+                        }
+                    ]
+                },
+                {
+                    "question": "What are the methods to eliminate race around condition ?",
+                    "options": [
+                        {
+                            "option": "All of these",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "Edge-triggered flip-flop",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "Master-slave JK flip-flop",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "Increase flip-flop delay",
+                            "isAnswer": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Which among the following is the race around condition ?",
+                    "options": [
+                        {
+                            "option": "J=1,K=1,Clock=1",
+                            "isAnswer": true
+                        },
+                        {
+                            "option": "S=1,R=1,Clock=1",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "J=0,K=0,Clock=0",
+                            "isAnswer": false
+                        },
+                        {
+                            "option": "All of these",
+                            "isAnswer": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

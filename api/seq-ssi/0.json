@@ -1,0 +1,152 @@
+{
+    "name": "Sequential SSI",
+    "views": [
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Sequential SSI components"
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Introduction",
+            "scrollToId": 0
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Unlike Combinational Circuits, most systems that one will encounter in practice will include Memory element thus being described in terms of sequential logic. The memory elements are devices capable of storing binary information within them. The binary information stored in the memory elements at a given time defines the state of the circuit. Thus a sequential circuit is specified by time sequence of inputs, outputs and internal states."
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/sequential_circuit_blockdiagram.jpg"
+            }
+        },
+        {
+            "type": "widget",
+            "sub_type": "bullet_list",
+            "items": [
+                "This sequential circuit contains a set of inputs and output(s).",
+                "The output(s) of sequential circuit depends not only on the combination of present inputs but also on the previous output(s).",
+                "Previous output is nothing but the present state.",
+                "Therefore, sequential circuits contain combinational circuits along with memory (storage) elements.",
+                "Some sequential circuits may not contain combinational circuits, but only memory elements."
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Following table shows the differences between combinational circuits and sequential circuits."
+        },
+        {
+            "type": "widget",
+            "sub_type": "table",
+            "content": {
+                "heading": [
+                    "Combinational Circuits",
+                    "Sequential Circuits"
+                ],
+                "rows": [
+                    [
+                        "Outputs depend only on present inputs.",
+                        "Outputs depend on both present inputs and present state."
+                    ],
+                    [
+                        "Feedback path is not present.",
+                        "Feedback path is present."
+                    ],
+                    [
+                        "Memory elements are not required.",
+                        "Memory elements are required."
+                    ],
+                    [
+                        "Clock signal is not required.",
+                        "Clock signal is required."
+                    ],
+                    [
+                        "Easy to design.",
+                        "Difficult to design."
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "size": "H1",
+            "content": "Types of sequential circuits",
+            "scrollToId": 1
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "Following are the two types of sequential circuits −"
+        },
+        {
+            "type": "widget",
+            "sub_type": "bullet_list",
+            "items": [
+                "Asynchronous sequential circuits",
+                "Synchronous sequential circuits"
+            ]
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Asynchronous sequential circuits"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "If some or all the outputs of a sequential circuit do not change (affect) with respect to active transition of clock signal, then that sequential circuit is called as Asynchronous sequential circuit. That means, all the outputs of asynchronous sequential circuits do not change (affect) at the same time. Therefore, most of the outputs of asynchronous sequential circuits are not in synchronous with either only positive edges or only negative edges of clock signal."
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/sequential_asynchronous_circuit.jpg"
+            }
+        },
+        {
+            "type": "text",
+            "size": "H2",
+            "content": "Synchronous sequential circuits"
+        },
+        {
+            "type": "text",
+            "size": "H3",
+            "content": "If all the outputs of a sequential circuit change (affect) with respect to active transition of clock signal, then that sequential circuit is called as Synchronous sequential circuit. That means, all the outputs of synchronous sequential circuits change (affect) at the same time. Therefore, the outputs of synchronous sequential circuits are in synchronous with either only positive edges or only negative edges of clock signal."
+        },
+        {
+            "type": "widget",
+            "sub_type": "image",
+            "content": {
+                "link": "/assets/images/sequential_synchronous_circuit.jpg"
+            }
+        },
+        {
+            "type": "widget",
+            "sub_type": "chapter_contents",
+            "items": [
+                {
+                    "category": "Basic Level",
+                    "content": [
+                        {
+                            "id": 1,
+                            "name": "Latches"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Flip-flops"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Clock signals"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
