@@ -7,3 +7,7 @@ out
 *~
 
 /.idea
+
+/chapters/
+__pycache__/
+*.py[co]

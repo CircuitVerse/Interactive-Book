@@ -19,15 +19,10 @@ jobs:
       
       - name: Build
         run: bundle exec jekyll build -d out
-      
-      - name: Run temp server
-        run: bundle exec jekyll serve --port=4000 --detach
 
+      # Runs after the build: jekyll clears its destination directory.
       - name: API Generation
-        run: sudo python utils/api_generator.py
-
-      - name: Kill Temporary Server
-        run: pkill -f jekyll
+        run: python3 utils/md2json
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
