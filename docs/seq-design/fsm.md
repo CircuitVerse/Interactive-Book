@@ -68,6 +68,19 @@ In the above figure, there are four states, namely A, B, C & D. These states and
 
 In general, the number of states required in Moore state machine is more than or equal to the number of states required in Mealy state machine. There is an equivalent Mealy state machine for each Moore state machine. So, based on the requirement you can use only one of them.
 
+## Moore vs Mealy comparison
+
+| Feature | Moore Machine | Mealy Machine |
+|---------|--------------|---------------|
+| Output depends on | Present state only | Present state + Input |
+| Output labelled on | Inside state circles | On transition arrows |
+| Number of states | More or equal | Less or equal |
+| Output changes | Only on clock edge | Depends on current input (combinational path) |
+| Complexity | Simpler to design | More complex |
+
+### Simple way to remember
+- **Moore** → Output is inside the circle
+- **Mealy** → Output is on the arrow
 
 ## Interactive FSM
 
@@ -95,9 +108,107 @@ There are quite some options like:
 5. putting 10¢ followed by 5¢ and getting the can.
 6. putting 5$ followed by 5¢ followed by 5¢ => getting a can.
 
+## State transition table
+
+The vending machine FSM can be represented as a 
+state transition table. Each row shows what happens 
+in a given state when a coin is inserted:
+
+| Current State | Input / Condition | Next State | Output |
+|--------------|-----------|------------|--------|
+| M0  (0¢)  | 5¢  (01) | W5         | None   |
+| M0  (0¢)  | 10¢ (10) | W10        | None   |
+| W0        | auto     | M5         | None   |
+| W10       | auto     | M10        | None   |
+| M5  (5¢)  | 5¢  (01) | W10        | None   |
+| M5  (5¢)  | 10¢ (10) | W15        | None   |
+| M10 (10¢) | 5¢  (01) | W15        | None   |
+| M10 (10¢) | 10¢ (10) | W20        | None   |
+| W15       | auto     | M15        | None   |
+| W20       | auto     | M20        | None   |
+| M20       | auto     | M15        | Change |
+| M15       | auto     | M0         | Soda   |
+
+**Note:** W states are temporary wait states where 
+the machine processes the coin before updating 
+the total amount collected.
+
 ## FSM diagram
 Now translate the options which are listed above into an FSM diagram/flow-chart:
 
 {% include fsm.html %}
 
-Lets try the soda can vending machine and look for the corresponding state changes FSM diagram in each of the above mentioned possibilities.
+## Understanding the state labels
+
+Each state in the diagram is labelled with a symbol.
+Here is what each symbol means:
+
+| Symbol | Meaning |
+|--------|---------|
+| M0  | 0¢ collected — Idle state |
+| M5  | 5¢ collected |
+| M10 | 10¢ collected |
+| M15 | 15¢ collected — dispense soda |
+| M20 | 20¢ collected — give change |
+| W0  | Wait state after 5¢ inserted |
+| W10 | Wait state after 10¢ inserted |
+| W15 | Wait state at 15¢ |
+| W20 | Wait state at 20¢ |
+
+The numbers on transition arrows represent binary input:
+
+| Arrow Label | Meaning |
+|------------|---------|
+| 00 | No coin / Reset |
+| 01 | 5¢ coin inserted |
+| 10 | 10¢ coin inserted |
+
+**Note:** The number "20" shown inside each circle 
+in the diagram is a display value used internally 
+by the animation — it is NOT the price of the soda. 
+The actual price is 15¢ as stated in the problem.
+
+## Experiment
+
+Let's try the soda can vending machine and look for 
+the corresponding state changes in the FSM diagram 
+for each of the above-mentioned possibilities.
+
+## Quiz
+
+{:.quiz}
+
+1. In a Moore machine, the output depends on:
+   1. Present state only
+   2. Present state and present input
+   3. Present input only
+   4. Next state only
+
+2. How many flip-flops are needed to implement
+   an FSM with 8 states?
+   1. 2
+   2. 8
+   3. 3
+   4. 4
+
+3. A Mealy machine has 3 states and one binary input.
+   The minimum number of rows in its state
+   transition table will be:
+   1. 3
+   2. 6
+   3. 8
+   4. 9
+
+4. Which sequence of coins gives soda AND change?
+   1. 5¢ + 5¢ + 5¢
+   2. 10¢ + 10¢
+   3. 5¢ + 10¢
+   4. 10¢ + 5¢
+
+5. Converting a Mealy machine to Moore machine
+   will result in:
+   1. Same number of states
+   2. Fewer states
+   3. More or equal number of states
+   4. Exactly double the states
+   
